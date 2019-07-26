@@ -1,5 +1,3 @@
-@import '~highlightjs_css';
-
 body, html {
   font-family: var(--sn-stylekit-sans-serif-font);
   height: 100%;
@@ -16,9 +14,10 @@ body, html {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-/* Simple Markdown Editor */
-
-#simple-markdown {
+/*
+  sn-preview
+*/
+#sn-preview {
   display: flex;
   width: 100%;
   height: 100%;
@@ -30,55 +29,6 @@ body, html {
 
   .sk-label {
     width: 48px;
-  }
-}
-
-#editor-container {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden; // required for footer bar to display in Firefox
-}
-
-#editor {
-  background-color: var(--sn-stylekit-editor-background-color);
-  color: var(--sn-stylekit-editor-foreground-color);
-  font-size: var(--sn-stylekit-font-size-editor);
-  -webkit-overflow-scrolling: touch;
-  font-family: var(--sn-stylekit-sans-serif-font);
-
-  &.edit {
-    width: 100% !important;
-  }
-
-  &.split {
-    width: calc(50% - 4px);
-  }
-
-  &.preview {
-    width: 0 !important;
-    padding: 0;
-    padding-left: 0;
-  }
-
-  flex-grow: 0;
-  border: 0px;
-  outline: 0;
-  resize: none;
-  padding: 12px;
-}
-
-#column-resizer {
-  width: 8px;
-  background-color: var(--sn-stylekit-border-color);
-  cursor: col-resize;
-
-  &.edit, &.preview {
-    display: none;
-  }
-
-  &.dragging {
-
   }
 }
 
@@ -199,37 +149,90 @@ body, html {
   }
 }
 
-// #preview *:first-child {
-//   margin-top: 12px;
-// }
-
-#header {
-  border-bottom: 1px solid var(--sn-stylekit-border-color);
-  padding: 5px;
-  background-color: var(--sn-stylekit-background-color);
-  color: var(--sn-stylekit-foreground-color);
-
-  .segmented-buttons-container {
-    display: flex;
-    justify-content: center;
-    user-select: none;
-  }
-
-  .buttons {
-    display: flex;
-
-    .button {
-      padding: 4px 12px;
-      margin-right: 4px;
-      border: 1px solid var(--sn-component-inner-border-color);
-      border-radius: 0;
-
-      &.selected {
-        font-weight: bold;
-      }
-    }
-  }
+/*
+  Highlight JS theming
+*/
+.hljs-comment,
+.hljs-quote {
+  font-style: italic;
+  color: var(--sn-stylekit-neutral-color);
 }
 
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  font-weight: bold;
+}
+
+.hljs-attribute {
+  color: var(--sn-stylekit-warning-color);
+}
+
+.hljs-number,
+.hljs-literal {
+  color: var(--sn-stylekit-info-color);
+}
+
+.hljs-string,
+.hljs-doctag,
+.hljs-formula {
+  color: var(--sn-stylekit-success-color);
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-class .hljs-title,
+.hljs-type,
+.hljs-name {
+  color: var(--sn-stylekit-danger-color);
+  font-weight: bold;
+}
+
+.hljs-tag {
+  color: var(--sn-stylekit-neutral-color);
+}
+
+.hljs-regexp {
+  color: var(--sn-stylekit-success-color);
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: var(--sn-stylekit-info-color);
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  text-decoration: underline;
+}
+
+.hljs-meta {
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  color: var(--sn-stylekit-danger-color);
+}
+
+.hljs-addition {
+  color: var(--sn-stylekit-success-color);
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
 
 @import '~stylekit';

@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 21);
+/******/ 	return __webpack_require__(__webpack_require__.s = 20);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -147,7 +147,7 @@ var UNESCAPE_ALL_RE = new RegExp(UNESCAPE_MD_RE.source + '|' + ENTITY_RE.source,
 
 var DIGITAL_ENTITY_TEST_RE = /^#((?:x[a-f0-9]{1,8}|[0-9]{1,8}))/i;
 
-var entities = __webpack_require__(13);
+var entities = __webpack_require__(12);
 
 function replaceEntityPattern(match, name) {
   var code = 0;
@@ -324,8 +324,8 @@ function normalizeReference(str) {
 // bundled size (e.g. a browser build).
 //
 exports.lib                 = {};
-exports.lib.mdurl           = __webpack_require__(14);
-exports.lib.ucmicro         = __webpack_require__(41);
+exports.lib.mdurl           = __webpack_require__(13);
+exports.lib.ucmicro         = __webpack_require__(40);
 
 exports.assign              = assign;
 exports.isString            = isString;
@@ -353,7 +353,7 @@ exports.normalizeReference  = normalizeReference;
 
 
 if (true) {
-  module.exports = __webpack_require__(23);
+  module.exports = __webpack_require__(22);
 } else {
   module.exports = require('./cjs/react.development.js');
 }
@@ -363,7 +363,7 @@ if (true) {
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports=/[!-#%-\*,-/:;\?@\[-\]_\{\}\xA1\xA7\xAB\xB6\xB7\xBB\xBF\u037E\u0387\u055A-\u055F\u0589\u058A\u05BE\u05C0\u05C3\u05C6\u05F3\u05F4\u0609\u060A\u060C\u060D\u061B\u061E\u061F\u066A-\u066D\u06D4\u0700-\u070D\u07F7-\u07F9\u0830-\u083E\u085E\u0964\u0965\u0970\u09FD\u0AF0\u0DF4\u0E4F\u0E5A\u0E5B\u0F04-\u0F12\u0F14\u0F3A-\u0F3D\u0F85\u0FD0-\u0FD4\u0FD9\u0FDA\u104A-\u104F\u10FB\u1360-\u1368\u1400\u166D\u166E\u169B\u169C\u16EB-\u16ED\u1735\u1736\u17D4-\u17D6\u17D8-\u17DA\u1800-\u180A\u1944\u1945\u1A1E\u1A1F\u1AA0-\u1AA6\u1AA8-\u1AAD\u1B5A-\u1B60\u1BFC-\u1BFF\u1C3B-\u1C3F\u1C7E\u1C7F\u1CC0-\u1CC7\u1CD3\u2010-\u2027\u2030-\u2043\u2045-\u2051\u2053-\u205E\u207D\u207E\u208D\u208E\u2308-\u230B\u2329\u232A\u2768-\u2775\u27C5\u27C6\u27E6-\u27EF\u2983-\u2998\u29D8-\u29DB\u29FC\u29FD\u2CF9-\u2CFC\u2CFE\u2CFF\u2D70\u2E00-\u2E2E\u2E30-\u2E49\u3001-\u3003\u3008-\u3011\u3014-\u301F\u3030\u303D\u30A0\u30FB\uA4FE\uA4FF\uA60D-\uA60F\uA673\uA67E\uA6F2-\uA6F7\uA874-\uA877\uA8CE\uA8CF\uA8F8-\uA8FA\uA8FC\uA92E\uA92F\uA95F\uA9C1-\uA9CD\uA9DE\uA9DF\uAA5C-\uAA5F\uAADE\uAADF\uAAF0\uAAF1\uABEB\uFD3E\uFD3F\uFE10-\uFE19\uFE30-\uFE52\uFE54-\uFE61\uFE63\uFE68\uFE6A\uFE6B\uFF01-\uFF03\uFF05-\uFF0A\uFF0C-\uFF0F\uFF1A\uFF1B\uFF1F\uFF20\uFF3B-\uFF3D\uFF3F\uFF5B\uFF5D\uFF5F-\uFF65]|\uD800[\uDD00-\uDD02\uDF9F\uDFD0]|\uD801\uDD6F|\uD802[\uDC57\uDD1F\uDD3F\uDE50-\uDE58\uDE7F\uDEF0-\uDEF6\uDF39-\uDF3F\uDF99-\uDF9C]|\uD804[\uDC47-\uDC4D\uDCBB\uDCBC\uDCBE-\uDCC1\uDD40-\uDD43\uDD74\uDD75\uDDC5-\uDDC9\uDDCD\uDDDB\uDDDD-\uDDDF\uDE38-\uDE3D\uDEA9]|\uD805[\uDC4B-\uDC4F\uDC5B\uDC5D\uDCC6\uDDC1-\uDDD7\uDE41-\uDE43\uDE60-\uDE6C\uDF3C-\uDF3E]|\uD806[\uDE3F-\uDE46\uDE9A-\uDE9C\uDE9E-\uDEA2]|\uD807[\uDC41-\uDC45\uDC70\uDC71]|\uD809[\uDC70-\uDC74]|\uD81A[\uDE6E\uDE6F\uDEF5\uDF37-\uDF3B\uDF44]|\uD82F\uDC9F|\uD836[\uDE87-\uDE8B]|\uD83A[\uDD5E\uDD5F]/
+module.exports=/[!-#%-\*,-\/:;\?@\[-\]_\{\}\xA1\xA7\xAB\xB6\xB7\xBB\xBF\u037E\u0387\u055A-\u055F\u0589\u058A\u05BE\u05C0\u05C3\u05C6\u05F3\u05F4\u0609\u060A\u060C\u060D\u061B\u061E\u061F\u066A-\u066D\u06D4\u0700-\u070D\u07F7-\u07F9\u0830-\u083E\u085E\u0964\u0965\u0970\u09FD\u0A76\u0AF0\u0C84\u0DF4\u0E4F\u0E5A\u0E5B\u0F04-\u0F12\u0F14\u0F3A-\u0F3D\u0F85\u0FD0-\u0FD4\u0FD9\u0FDA\u104A-\u104F\u10FB\u1360-\u1368\u1400\u166D\u166E\u169B\u169C\u16EB-\u16ED\u1735\u1736\u17D4-\u17D6\u17D8-\u17DA\u1800-\u180A\u1944\u1945\u1A1E\u1A1F\u1AA0-\u1AA6\u1AA8-\u1AAD\u1B5A-\u1B60\u1BFC-\u1BFF\u1C3B-\u1C3F\u1C7E\u1C7F\u1CC0-\u1CC7\u1CD3\u2010-\u2027\u2030-\u2043\u2045-\u2051\u2053-\u205E\u207D\u207E\u208D\u208E\u2308-\u230B\u2329\u232A\u2768-\u2775\u27C5\u27C6\u27E6-\u27EF\u2983-\u2998\u29D8-\u29DB\u29FC\u29FD\u2CF9-\u2CFC\u2CFE\u2CFF\u2D70\u2E00-\u2E2E\u2E30-\u2E4E\u3001-\u3003\u3008-\u3011\u3014-\u301F\u3030\u303D\u30A0\u30FB\uA4FE\uA4FF\uA60D-\uA60F\uA673\uA67E\uA6F2-\uA6F7\uA874-\uA877\uA8CE\uA8CF\uA8F8-\uA8FA\uA8FC\uA92E\uA92F\uA95F\uA9C1-\uA9CD\uA9DE\uA9DF\uAA5C-\uAA5F\uAADE\uAADF\uAAF0\uAAF1\uABEB\uFD3E\uFD3F\uFE10-\uFE19\uFE30-\uFE52\uFE54-\uFE61\uFE63\uFE68\uFE6A\uFE6B\uFF01-\uFF03\uFF05-\uFF0A\uFF0C-\uFF0F\uFF1A\uFF1B\uFF1F\uFF20\uFF3B-\uFF3D\uFF3F\uFF5B\uFF5D\uFF5F-\uFF65]|\uD800[\uDD00-\uDD02\uDF9F\uDFD0]|\uD801\uDD6F|\uD802[\uDC57\uDD1F\uDD3F\uDE50-\uDE58\uDE7F\uDEF0-\uDEF6\uDF39-\uDF3F\uDF99-\uDF9C]|\uD803[\uDF55-\uDF59]|\uD804[\uDC47-\uDC4D\uDCBB\uDCBC\uDCBE-\uDCC1\uDD40-\uDD43\uDD74\uDD75\uDDC5-\uDDC8\uDDCD\uDDDB\uDDDD-\uDDDF\uDE38-\uDE3D\uDEA9]|\uD805[\uDC4B-\uDC4F\uDC5B\uDC5D\uDCC6\uDDC1-\uDDD7\uDE41-\uDE43\uDE60-\uDE6C\uDF3C-\uDF3E]|\uD806[\uDC3B\uDE3F-\uDE46\uDE9A-\uDE9C\uDE9E-\uDEA2]|\uD807[\uDC41-\uDC45\uDC70\uDC71\uDEF7\uDEF8]|\uD809[\uDC70-\uDC74]|\uD81A[\uDE6E\uDE6F\uDEF5\uDF37-\uDF3B\uDF44]|\uD81B[\uDE97-\uDE9A]|\uD82F\uDC9F|\uD836[\uDE87-\uDE8B]|\uD83A[\uDD5E\uDD5F]/
 
 /***/ }),
 /* 3 */
@@ -476,7 +476,7 @@ Ruler.prototype.__compile__ = function () {
  *
  * ##### Example
  *
- * Replace existing typorgapher replacement rule with new one:
+ * Replace existing typographer replacement rule with new one:
  *
  * ```javascript
  * var md = require('markdown-it')();
@@ -1090,9 +1090,9 @@ module.exports = _createClass;
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _typeof = __webpack_require__(29);
+var _typeof = __webpack_require__(28);
 
-var assertThisInitialized = __webpack_require__(10);
+var assertThisInitialized = __webpack_require__(29);
 
 function _possibleConstructorReturn(self, call) {
   if (call && (_typeof(call) === "object" || typeof call === "function")) {
@@ -1108,20 +1108,6 @@ module.exports = _possibleConstructorReturn;
 /* 10 */
 /***/ (function(module, exports) {
 
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-module.exports = _assertThisInitialized;
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports) {
-
 function _getPrototypeOf(o) {
   module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
     return o.__proto__ || Object.getPrototypeOf(o);
@@ -1132,7 +1118,7 @@ function _getPrototypeOf(o) {
 module.exports = _getPrototypeOf;
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var setPrototypeOf = __webpack_require__(30);
@@ -1155,7 +1141,7 @@ function _inherits(subClass, superClass) {
 module.exports = _inherits;
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1164,43 +1150,43 @@ module.exports = _inherits;
 
 
 /*eslint quotes:0*/
-module.exports = __webpack_require__(36);
+module.exports = __webpack_require__(35);
 
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 
-module.exports.encode = __webpack_require__(37);
-module.exports.decode = __webpack_require__(38);
-module.exports.format = __webpack_require__(39);
-module.exports.parse  = __webpack_require__(40);
+module.exports.encode = __webpack_require__(36);
+module.exports.decode = __webpack_require__(37);
+module.exports.format = __webpack_require__(38);
+module.exports.parse  = __webpack_require__(39);
 
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports=/[\0-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]/
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports=/[\0-\x1F\x7F-\x9F]/
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports) {
 
-module.exports=/[ \xA0\u1680\u2000-\u200A\u202F\u205F\u3000]/
+module.exports=/[ \xA0\u1680\u2000-\u200A\u2028\u2029\u202F\u205F\u3000]/
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1235,7 +1221,7 @@ module.exports.HTML_OPEN_CLOSE_TAG_RE = HTML_OPEN_CLOSE_TAG_RE;
 
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1359,7 +1345,7 @@ module.exports.postProcess = function strikethrough(state) {
 
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1493,35 +1479,35 @@ module.exports.postProcess = function emphasis(state) {
 
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(22);
-module.exports = __webpack_require__(271);
+__webpack_require__(21);
+module.exports = __webpack_require__(279);
 
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App__ = __webpack_require__(27);
 
 
 
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__App__["a" /* default */], null), document.body.appendChild(document.createElement('div')));
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v16.6.1
+/** @license React v16.8.6
  * react.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -1530,25 +1516,26 @@ __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
  * LICENSE file in the root directory of this source tree.
  */
 
-var k=__webpack_require__(5),n="function"===typeof Symbol&&Symbol.for,p=n?Symbol.for("react.element"):60103,q=n?Symbol.for("react.portal"):60106,r=n?Symbol.for("react.fragment"):60107,t=n?Symbol.for("react.strict_mode"):60108,u=n?Symbol.for("react.profiler"):60114,v=n?Symbol.for("react.provider"):60109,w=n?Symbol.for("react.context"):60110,x=n?Symbol.for("react.concurrent_mode"):60111,y=n?Symbol.for("react.forward_ref"):60112,z=n?Symbol.for("react.suspense"):60113,A=n?Symbol.for("react.memo"):
-60115,B=n?Symbol.for("react.lazy"):60116,C="function"===typeof Symbol&&Symbol.iterator;function aa(a,b,e,c,d,g,h,f){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[e,c,d,g,h,f],m=0;a=Error(b.replace(/%s/g,function(){return l[m++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
-function D(a){for(var b=arguments.length-1,e="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=0;c<b;c++)e+="&args[]="+encodeURIComponent(arguments[c+1]);aa(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",e)}var E={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},F={};
-function G(a,b,e){this.props=a;this.context=b;this.refs=F;this.updater=e||E}G.prototype.isReactComponent={};G.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?D("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};G.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};function H(){}H.prototype=G.prototype;function I(a,b,e){this.props=a;this.context=b;this.refs=F;this.updater=e||E}var J=I.prototype=new H;
-J.constructor=I;k(J,G.prototype);J.isPureReactComponent=!0;var K={current:null,currentDispatcher:null},L=Object.prototype.hasOwnProperty,M={key:!0,ref:!0,__self:!0,__source:!0};
-function N(a,b,e){var c=void 0,d={},g=null,h=null;if(null!=b)for(c in void 0!==b.ref&&(h=b.ref),void 0!==b.key&&(g=""+b.key),b)L.call(b,c)&&!M.hasOwnProperty(c)&&(d[c]=b[c]);var f=arguments.length-2;if(1===f)d.children=e;else if(1<f){for(var l=Array(f),m=0;m<f;m++)l[m]=arguments[m+2];d.children=l}if(a&&a.defaultProps)for(c in f=a.defaultProps,f)void 0===d[c]&&(d[c]=f[c]);return{$$typeof:p,type:a,key:g,ref:h,props:d,_owner:K.current}}
-function ba(a,b){return{$$typeof:p,type:a.type,key:b,ref:a.ref,props:a.props,_owner:a._owner}}function O(a){return"object"===typeof a&&null!==a&&a.$$typeof===p}function escape(a){var b={"=":"=0",":":"=2"};return"$"+(""+a).replace(/[=:]/g,function(a){return b[a]})}var P=/\/+/g,Q=[];function R(a,b,e,c){if(Q.length){var d=Q.pop();d.result=a;d.keyPrefix=b;d.func=e;d.context=c;d.count=0;return d}return{result:a,keyPrefix:b,func:e,context:c,count:0}}
-function S(a){a.result=null;a.keyPrefix=null;a.func=null;a.context=null;a.count=0;10>Q.length&&Q.push(a)}
-function T(a,b,e,c){var d=typeof a;if("undefined"===d||"boolean"===d)a=null;var g=!1;if(null===a)g=!0;else switch(d){case "string":case "number":g=!0;break;case "object":switch(a.$$typeof){case p:case q:g=!0}}if(g)return e(c,a,""===b?"."+U(a,0):b),1;g=0;b=""===b?".":b+":";if(Array.isArray(a))for(var h=0;h<a.length;h++){d=a[h];var f=b+U(d,h);g+=T(d,f,e,c)}else if(null===a||"object"!==typeof a?f=null:(f=C&&a[C]||a["@@iterator"],f="function"===typeof f?f:null),"function"===typeof f)for(a=f.call(a),h=
-0;!(d=a.next()).done;)d=d.value,f=b+U(d,h++),g+=T(d,f,e,c);else"object"===d&&(e=""+a,D("31","[object Object]"===e?"object with keys {"+Object.keys(a).join(", ")+"}":e,""));return g}function V(a,b,e){return null==a?0:T(a,"",b,e)}function U(a,b){return"object"===typeof a&&null!==a&&null!=a.key?escape(a.key):b.toString(36)}function ca(a,b){a.func.call(a.context,b,a.count++)}
-function da(a,b,e){var c=a.result,d=a.keyPrefix;a=a.func.call(a.context,b,a.count++);Array.isArray(a)?W(a,c,e,function(a){return a}):null!=a&&(O(a)&&(a=ba(a,d+(!a.key||b&&b.key===a.key?"":(""+a.key).replace(P,"$&/")+"/")+e)),c.push(a))}function W(a,b,e,c,d){var g="";null!=e&&(g=(""+e).replace(P,"$&/")+"/");b=R(b,g,c,d);V(a,da,b);S(b)}
-var X={Children:{map:function(a,b,e){if(null==a)return a;var c=[];W(a,c,null,b,e);return c},forEach:function(a,b,e){if(null==a)return a;b=R(null,null,b,e);V(a,ca,b);S(b)},count:function(a){return V(a,function(){return null},null)},toArray:function(a){var b=[];W(a,b,null,function(a){return a});return b},only:function(a){O(a)?void 0:D("143");return a}},createRef:function(){return{current:null}},Component:G,PureComponent:I,createContext:function(a,b){void 0===b&&(b=null);a={$$typeof:w,_calculateChangedBits:b,
-_currentValue:a,_currentValue2:a,_threadCount:0,Provider:null,Consumer:null};a.Provider={$$typeof:v,_context:a};return a.Consumer=a},forwardRef:function(a){return{$$typeof:y,render:a}},lazy:function(a){return{$$typeof:B,_ctor:a,_status:-1,_result:null}},memo:function(a,b){return{$$typeof:A,type:a,compare:void 0===b?null:b}},Fragment:r,StrictMode:t,Suspense:z,createElement:N,cloneElement:function(a,b,e){null===a||void 0===a?D("267",a):void 0;var c=void 0,d=k({},a.props),g=a.key,h=a.ref,f=a._owner;
-if(null!=b){void 0!==b.ref&&(h=b.ref,f=K.current);void 0!==b.key&&(g=""+b.key);var l=void 0;a.type&&a.type.defaultProps&&(l=a.type.defaultProps);for(c in b)L.call(b,c)&&!M.hasOwnProperty(c)&&(d[c]=void 0===b[c]&&void 0!==l?l[c]:b[c])}c=arguments.length-2;if(1===c)d.children=e;else if(1<c){l=Array(c);for(var m=0;m<c;m++)l[m]=arguments[m+2];d.children=l}return{$$typeof:p,type:a.type,key:g,ref:h,props:d,_owner:f}},createFactory:function(a){var b=N.bind(null,a);b.type=a;return b},isValidElement:O,version:"16.6.3",
-__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:K,assign:k}};X.unstable_ConcurrentMode=x;X.unstable_Profiler=u;var Y={default:X},Z=Y&&X||Y;module.exports=Z.default||Z;
+var k=__webpack_require__(5),n="function"===typeof Symbol&&Symbol.for,p=n?Symbol.for("react.element"):60103,q=n?Symbol.for("react.portal"):60106,r=n?Symbol.for("react.fragment"):60107,t=n?Symbol.for("react.strict_mode"):60108,u=n?Symbol.for("react.profiler"):60114,v=n?Symbol.for("react.provider"):60109,w=n?Symbol.for("react.context"):60110,x=n?Symbol.for("react.concurrent_mode"):60111,y=n?Symbol.for("react.forward_ref"):60112,z=n?Symbol.for("react.suspense"):60113,aa=n?Symbol.for("react.memo"):
+60115,ba=n?Symbol.for("react.lazy"):60116,A="function"===typeof Symbol&&Symbol.iterator;function ca(a,b,d,c,e,g,h,f){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[d,c,e,g,h,f],m=0;a=Error(b.replace(/%s/g,function(){return l[m++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
+function B(a){for(var b=arguments.length-1,d="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=0;c<b;c++)d+="&args[]="+encodeURIComponent(arguments[c+1]);ca(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",d)}var C={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},D={};
+function E(a,b,d){this.props=a;this.context=b;this.refs=D;this.updater=d||C}E.prototype.isReactComponent={};E.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?B("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};E.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};function F(){}F.prototype=E.prototype;function G(a,b,d){this.props=a;this.context=b;this.refs=D;this.updater=d||C}var H=G.prototype=new F;
+H.constructor=G;k(H,E.prototype);H.isPureReactComponent=!0;var I={current:null},J={current:null},K=Object.prototype.hasOwnProperty,L={key:!0,ref:!0,__self:!0,__source:!0};
+function M(a,b,d){var c=void 0,e={},g=null,h=null;if(null!=b)for(c in void 0!==b.ref&&(h=b.ref),void 0!==b.key&&(g=""+b.key),b)K.call(b,c)&&!L.hasOwnProperty(c)&&(e[c]=b[c]);var f=arguments.length-2;if(1===f)e.children=d;else if(1<f){for(var l=Array(f),m=0;m<f;m++)l[m]=arguments[m+2];e.children=l}if(a&&a.defaultProps)for(c in f=a.defaultProps,f)void 0===e[c]&&(e[c]=f[c]);return{$$typeof:p,type:a,key:g,ref:h,props:e,_owner:J.current}}
+function da(a,b){return{$$typeof:p,type:a.type,key:b,ref:a.ref,props:a.props,_owner:a._owner}}function N(a){return"object"===typeof a&&null!==a&&a.$$typeof===p}function escape(a){var b={"=":"=0",":":"=2"};return"$"+(""+a).replace(/[=:]/g,function(a){return b[a]})}var O=/\/+/g,P=[];function Q(a,b,d,c){if(P.length){var e=P.pop();e.result=a;e.keyPrefix=b;e.func=d;e.context=c;e.count=0;return e}return{result:a,keyPrefix:b,func:d,context:c,count:0}}
+function R(a){a.result=null;a.keyPrefix=null;a.func=null;a.context=null;a.count=0;10>P.length&&P.push(a)}
+function S(a,b,d,c){var e=typeof a;if("undefined"===e||"boolean"===e)a=null;var g=!1;if(null===a)g=!0;else switch(e){case "string":case "number":g=!0;break;case "object":switch(a.$$typeof){case p:case q:g=!0}}if(g)return d(c,a,""===b?"."+T(a,0):b),1;g=0;b=""===b?".":b+":";if(Array.isArray(a))for(var h=0;h<a.length;h++){e=a[h];var f=b+T(e,h);g+=S(e,f,d,c)}else if(null===a||"object"!==typeof a?f=null:(f=A&&a[A]||a["@@iterator"],f="function"===typeof f?f:null),"function"===typeof f)for(a=f.call(a),h=
+0;!(e=a.next()).done;)e=e.value,f=b+T(e,h++),g+=S(e,f,d,c);else"object"===e&&(d=""+a,B("31","[object Object]"===d?"object with keys {"+Object.keys(a).join(", ")+"}":d,""));return g}function U(a,b,d){return null==a?0:S(a,"",b,d)}function T(a,b){return"object"===typeof a&&null!==a&&null!=a.key?escape(a.key):b.toString(36)}function ea(a,b){a.func.call(a.context,b,a.count++)}
+function fa(a,b,d){var c=a.result,e=a.keyPrefix;a=a.func.call(a.context,b,a.count++);Array.isArray(a)?V(a,c,d,function(a){return a}):null!=a&&(N(a)&&(a=da(a,e+(!a.key||b&&b.key===a.key?"":(""+a.key).replace(O,"$&/")+"/")+d)),c.push(a))}function V(a,b,d,c,e){var g="";null!=d&&(g=(""+d).replace(O,"$&/")+"/");b=Q(b,g,c,e);U(a,fa,b);R(b)}function W(){var a=I.current;null===a?B("321"):void 0;return a}
+var X={Children:{map:function(a,b,d){if(null==a)return a;var c=[];V(a,c,null,b,d);return c},forEach:function(a,b,d){if(null==a)return a;b=Q(null,null,b,d);U(a,ea,b);R(b)},count:function(a){return U(a,function(){return null},null)},toArray:function(a){var b=[];V(a,b,null,function(a){return a});return b},only:function(a){N(a)?void 0:B("143");return a}},createRef:function(){return{current:null}},Component:E,PureComponent:G,createContext:function(a,b){void 0===b&&(b=null);a={$$typeof:w,_calculateChangedBits:b,
+_currentValue:a,_currentValue2:a,_threadCount:0,Provider:null,Consumer:null};a.Provider={$$typeof:v,_context:a};return a.Consumer=a},forwardRef:function(a){return{$$typeof:y,render:a}},lazy:function(a){return{$$typeof:ba,_ctor:a,_status:-1,_result:null}},memo:function(a,b){return{$$typeof:aa,type:a,compare:void 0===b?null:b}},useCallback:function(a,b){return W().useCallback(a,b)},useContext:function(a,b){return W().useContext(a,b)},useEffect:function(a,b){return W().useEffect(a,b)},useImperativeHandle:function(a,
+b,d){return W().useImperativeHandle(a,b,d)},useDebugValue:function(){},useLayoutEffect:function(a,b){return W().useLayoutEffect(a,b)},useMemo:function(a,b){return W().useMemo(a,b)},useReducer:function(a,b,d){return W().useReducer(a,b,d)},useRef:function(a){return W().useRef(a)},useState:function(a){return W().useState(a)},Fragment:r,StrictMode:t,Suspense:z,createElement:M,cloneElement:function(a,b,d){null===a||void 0===a?B("267",a):void 0;var c=void 0,e=k({},a.props),g=a.key,h=a.ref,f=a._owner;if(null!=
+b){void 0!==b.ref&&(h=b.ref,f=J.current);void 0!==b.key&&(g=""+b.key);var l=void 0;a.type&&a.type.defaultProps&&(l=a.type.defaultProps);for(c in b)K.call(b,c)&&!L.hasOwnProperty(c)&&(e[c]=void 0===b[c]&&void 0!==l?l[c]:b[c])}c=arguments.length-2;if(1===c)e.children=d;else if(1<c){l=Array(c);for(var m=0;m<c;m++)l[m]=arguments[m+2];e.children=l}return{$$typeof:p,type:a.type,key:g,ref:h,props:e,_owner:f}},createFactory:function(a){var b=M.bind(null,a);b.type=a;return b},isValidElement:N,version:"16.8.6",
+unstable_ConcurrentMode:x,unstable_Profiler:u,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentDispatcher:I,ReactCurrentOwner:J,assign:k}},Y={default:X},Z=Y&&X||Y;module.exports=Z.default||Z;
 
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1586,18 +1573,18 @@ if (true) {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(25);
+  module.exports = __webpack_require__(24);
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
 
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v16.6.1
+/** @license React v16.8.6
  * react-dom.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -1609,243 +1596,277 @@ if (true) {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(1),n=__webpack_require__(5),ba=__webpack_require__(26);function ca(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var k=[c,d,e,f,g,h],l=0;a=Error(b.replace(/%s/g,function(){return k[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
-function t(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);ca(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}aa?void 0:t("227");function da(a,b,c,d,e,f,g,h,k){var l=Array.prototype.slice.call(arguments,3);try{b.apply(c,l)}catch(m){this.onError(m)}}
-var ea=!1,fa=null,ha=!1,ia=null,ja={onError:function(a){ea=!0;fa=a}};function ka(a,b,c,d,e,f,g,h,k){ea=!1;fa=null;da.apply(ja,arguments)}function la(a,b,c,d,e,f,g,h,k){ka.apply(this,arguments);if(ea){if(ea){var l=fa;ea=!1;fa=null}else t("198"),l=void 0;ha||(ha=!0,ia=l)}}var ma=null,na={};
-function oa(){if(ma)for(var a in na){var b=na[a],c=ma.indexOf(a);-1<c?void 0:t("96",a);if(!pa[c]){b.extractEvents?void 0:t("97",a);pa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,h=d;qa.hasOwnProperty(h)?t("99",h):void 0;qa[h]=f;var k=f.phasedRegistrationNames;if(k){for(e in k)k.hasOwnProperty(e)&&ra(k[e],g,h);e=!0}else f.registrationName?(ra(f.registrationName,g,h),e=!0):e=!1;e?void 0:t("98",d,a)}}}}
-function ra(a,b,c){sa[a]?t("100",a):void 0;sa[a]=b;ta[a]=b.eventTypes[c].dependencies}var pa=[],qa={},sa={},ta={},ua=null,va=null,wa=null;function xa(a,b,c){var d=a.type||"unknown-event";a.currentTarget=wa(c);la(d,b,void 0,a);a.currentTarget=null}function ya(a,b){null==b?t("30"):void 0;if(null==a)return b;if(Array.isArray(a)){if(Array.isArray(b))return a.push.apply(a,b),a;a.push(b);return a}return Array.isArray(b)?[a].concat(b):[a,b]}
-function za(a,b,c){Array.isArray(a)?a.forEach(b,c):a&&b.call(c,a)}var Aa=null;function Ba(a){if(a){var b=a._dispatchListeners,c=a._dispatchInstances;if(Array.isArray(b))for(var d=0;d<b.length&&!a.isPropagationStopped();d++)xa(a,b[d],c[d]);else b&&xa(a,b,c);a._dispatchListeners=null;a._dispatchInstances=null;a.isPersistent()||a.constructor.release(a)}}
-var Ca={injectEventPluginOrder:function(a){ma?t("101"):void 0;ma=Array.prototype.slice.call(a);oa()},injectEventPluginsByName:function(a){var b=!1,c;for(c in a)if(a.hasOwnProperty(c)){var d=a[c];na.hasOwnProperty(c)&&na[c]===d||(na[c]?t("102",c):void 0,na[c]=d,b=!0)}b&&oa()}};
-function Da(a,b){var c=a.stateNode;if(!c)return null;var d=ua(c);if(!d)return null;c=d[b];a:switch(b){case "onClick":case "onClickCapture":case "onDoubleClick":case "onDoubleClickCapture":case "onMouseDown":case "onMouseDownCapture":case "onMouseMove":case "onMouseMoveCapture":case "onMouseUp":case "onMouseUpCapture":(d=!d.disabled)||(a=a.type,d=!("button"===a||"input"===a||"select"===a||"textarea"===a));a=!d;break a;default:a=!1}if(a)return null;c&&"function"!==typeof c?t("231",b,typeof c):void 0;
-return c}function Ea(a){null!==a&&(Aa=ya(Aa,a));a=Aa;Aa=null;if(a&&(za(a,Ba),Aa?t("95"):void 0,ha))throw a=ia,ha=!1,ia=null,a;}var Fa=Math.random().toString(36).slice(2),Ga="__reactInternalInstance$"+Fa,Ha="__reactEventHandlers$"+Fa;function Ia(a){if(a[Ga])return a[Ga];for(;!a[Ga];)if(a.parentNode)a=a.parentNode;else return null;a=a[Ga];return 5===a.tag||6===a.tag?a:null}function Ja(a){a=a[Ga];return!a||5!==a.tag&&6!==a.tag?null:a}
-function Ka(a){if(5===a.tag||6===a.tag)return a.stateNode;t("33")}function La(a){return a[Ha]||null}function Ma(a){do a=a.return;while(a&&5!==a.tag);return a?a:null}function Na(a,b,c){if(b=Da(a,c.dispatchConfig.phasedRegistrationNames[b]))c._dispatchListeners=ya(c._dispatchListeners,b),c._dispatchInstances=ya(c._dispatchInstances,a)}
-function Oa(a){if(a&&a.dispatchConfig.phasedRegistrationNames){for(var b=a._targetInst,c=[];b;)c.push(b),b=Ma(b);for(b=c.length;0<b--;)Na(c[b],"captured",a);for(b=0;b<c.length;b++)Na(c[b],"bubbled",a)}}function Pa(a,b,c){a&&c&&c.dispatchConfig.registrationName&&(b=Da(a,c.dispatchConfig.registrationName))&&(c._dispatchListeners=ya(c._dispatchListeners,b),c._dispatchInstances=ya(c._dispatchInstances,a))}function Qa(a){a&&a.dispatchConfig.registrationName&&Pa(a._targetInst,null,a)}
-function Ra(a){za(a,Oa)}var Sa=!("undefined"===typeof window||!window.document||!window.document.createElement);function Ta(a,b){var c={};c[a.toLowerCase()]=b.toLowerCase();c["Webkit"+a]="webkit"+b;c["Moz"+a]="moz"+b;return c}var Ua={animationend:Ta("Animation","AnimationEnd"),animationiteration:Ta("Animation","AnimationIteration"),animationstart:Ta("Animation","AnimationStart"),transitionend:Ta("Transition","TransitionEnd")},Va={},Wa={};
-Sa&&(Wa=document.createElement("div").style,"AnimationEvent"in window||(delete Ua.animationend.animation,delete Ua.animationiteration.animation,delete Ua.animationstart.animation),"TransitionEvent"in window||delete Ua.transitionend.transition);function Xa(a){if(Va[a])return Va[a];if(!Ua[a])return a;var b=Ua[a],c;for(c in b)if(b.hasOwnProperty(c)&&c in Wa)return Va[a]=b[c];return a}
-var Ya=Xa("animationend"),Za=Xa("animationiteration"),$a=Xa("animationstart"),ab=Xa("transitionend"),bb="abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange seeked seeking stalled suspend timeupdate volumechange waiting".split(" "),cb=null,eb=null,fb=null;
-function gb(){if(fb)return fb;var a,b=eb,c=b.length,d,e="value"in cb?cb.value:cb.textContent,f=e.length;for(a=0;a<c&&b[a]===e[a];a++);var g=c-a;for(d=1;d<=g&&b[c-d]===e[f-d];d++);return fb=e.slice(a,1<d?1-d:void 0)}function hb(){return!0}function ib(){return!1}
-function A(a,b,c,d){this.dispatchConfig=a;this._targetInst=b;this.nativeEvent=c;a=this.constructor.Interface;for(var e in a)a.hasOwnProperty(e)&&((b=a[e])?this[e]=b(c):"target"===e?this.target=d:this[e]=c[e]);this.isDefaultPrevented=(null!=c.defaultPrevented?c.defaultPrevented:!1===c.returnValue)?hb:ib;this.isPropagationStopped=ib;return this}
-n(A.prototype,{preventDefault:function(){this.defaultPrevented=!0;var a=this.nativeEvent;a&&(a.preventDefault?a.preventDefault():"unknown"!==typeof a.returnValue&&(a.returnValue=!1),this.isDefaultPrevented=hb)},stopPropagation:function(){var a=this.nativeEvent;a&&(a.stopPropagation?a.stopPropagation():"unknown"!==typeof a.cancelBubble&&(a.cancelBubble=!0),this.isPropagationStopped=hb)},persist:function(){this.isPersistent=hb},isPersistent:ib,destructor:function(){var a=this.constructor.Interface,
-b;for(b in a)this[b]=null;this.nativeEvent=this._targetInst=this.dispatchConfig=null;this.isPropagationStopped=this.isDefaultPrevented=ib;this._dispatchInstances=this._dispatchListeners=null}});A.Interface={type:null,target:null,currentTarget:function(){return null},eventPhase:null,bubbles:null,cancelable:null,timeStamp:function(a){return a.timeStamp||Date.now()},defaultPrevented:null,isTrusted:null};
-A.extend=function(a){function b(){}function c(){return d.apply(this,arguments)}var d=this;b.prototype=d.prototype;var e=new b;n(e,c.prototype);c.prototype=e;c.prototype.constructor=c;c.Interface=n({},d.Interface,a);c.extend=d.extend;jb(c);return c};jb(A);function kb(a,b,c,d){if(this.eventPool.length){var e=this.eventPool.pop();this.call(e,a,b,c,d);return e}return new this(a,b,c,d)}function lb(a){a instanceof this?void 0:t("279");a.destructor();10>this.eventPool.length&&this.eventPool.push(a)}
-function jb(a){a.eventPool=[];a.getPooled=kb;a.release=lb}var mb=A.extend({data:null}),nb=A.extend({data:null}),ob=[9,13,27,32],pb=Sa&&"CompositionEvent"in window,qb=null;Sa&&"documentMode"in document&&(qb=document.documentMode);
-var rb=Sa&&"TextEvent"in window&&!qb,sb=Sa&&(!pb||qb&&8<qb&&11>=qb),tb=String.fromCharCode(32),ub={beforeInput:{phasedRegistrationNames:{bubbled:"onBeforeInput",captured:"onBeforeInputCapture"},dependencies:["compositionend","keypress","textInput","paste"]},compositionEnd:{phasedRegistrationNames:{bubbled:"onCompositionEnd",captured:"onCompositionEndCapture"},dependencies:"blur compositionend keydown keypress keyup mousedown".split(" ")},compositionStart:{phasedRegistrationNames:{bubbled:"onCompositionStart",
-captured:"onCompositionStartCapture"},dependencies:"blur compositionstart keydown keypress keyup mousedown".split(" ")},compositionUpdate:{phasedRegistrationNames:{bubbled:"onCompositionUpdate",captured:"onCompositionUpdateCapture"},dependencies:"blur compositionupdate keydown keypress keyup mousedown".split(" ")}},vb=!1;
-function wb(a,b){switch(a){case "keyup":return-1!==ob.indexOf(b.keyCode);case "keydown":return 229!==b.keyCode;case "keypress":case "mousedown":case "blur":return!0;default:return!1}}function xb(a){a=a.detail;return"object"===typeof a&&"data"in a?a.data:null}var yb=!1;function zb(a,b){switch(a){case "compositionend":return xb(b);case "keypress":if(32!==b.which)return null;vb=!0;return tb;case "textInput":return a=b.data,a===tb&&vb?null:a;default:return null}}
-function Ab(a,b){if(yb)return"compositionend"===a||!pb&&wb(a,b)?(a=gb(),fb=eb=cb=null,yb=!1,a):null;switch(a){case "paste":return null;case "keypress":if(!(b.ctrlKey||b.altKey||b.metaKey)||b.ctrlKey&&b.altKey){if(b.char&&1<b.char.length)return b.char;if(b.which)return String.fromCharCode(b.which)}return null;case "compositionend":return sb&&"ko"!==b.locale?null:b.data;default:return null}}
-var Bb={eventTypes:ub,extractEvents:function(a,b,c,d){var e=void 0;var f=void 0;if(pb)b:{switch(a){case "compositionstart":e=ub.compositionStart;break b;case "compositionend":e=ub.compositionEnd;break b;case "compositionupdate":e=ub.compositionUpdate;break b}e=void 0}else yb?wb(a,c)&&(e=ub.compositionEnd):"keydown"===a&&229===c.keyCode&&(e=ub.compositionStart);e?(sb&&"ko"!==c.locale&&(yb||e!==ub.compositionStart?e===ub.compositionEnd&&yb&&(f=gb()):(cb=d,eb="value"in cb?cb.value:cb.textContent,yb=
-!0)),e=mb.getPooled(e,b,c,d),f?e.data=f:(f=xb(c),null!==f&&(e.data=f)),Ra(e),f=e):f=null;(a=rb?zb(a,c):Ab(a,c))?(b=nb.getPooled(ub.beforeInput,b,c,d),b.data=a,Ra(b)):b=null;return null===f?b:null===b?f:[f,b]}},Cb=null,Db=null,Eb=null;function Hb(a){if(a=va(a)){"function"!==typeof Cb?t("280"):void 0;var b=ua(a.stateNode);Cb(a.stateNode,a.type,b)}}function Ib(a){Db?Eb?Eb.push(a):Eb=[a]:Db=a}function Jb(){if(Db){var a=Db,b=Eb;Eb=Db=null;Hb(a);if(b)for(a=0;a<b.length;a++)Hb(b[a])}}
-function Kb(a,b){return a(b)}function Lb(a,b,c){return a(b,c)}function Mb(){}var Nb=!1;function Ob(a,b){if(Nb)return a(b);Nb=!0;try{return Kb(a,b)}finally{if(Nb=!1,null!==Db||null!==Eb)Mb(),Jb()}}var Pb={color:!0,date:!0,datetime:!0,"datetime-local":!0,email:!0,month:!0,number:!0,password:!0,range:!0,search:!0,tel:!0,text:!0,time:!0,url:!0,week:!0};function Qb(a){var b=a&&a.nodeName&&a.nodeName.toLowerCase();return"input"===b?!!Pb[a.type]:"textarea"===b?!0:!1}
-function Rb(a){a=a.target||a.srcElement||window;a.correspondingUseElement&&(a=a.correspondingUseElement);return 3===a.nodeType?a.parentNode:a}function Sb(a){if(!Sa)return!1;a="on"+a;var b=a in document;b||(b=document.createElement("div"),b.setAttribute(a,"return;"),b="function"===typeof b[a]);return b}function Tb(a){var b=a.type;return(a=a.nodeName)&&"input"===a.toLowerCase()&&("checkbox"===b||"radio"===b)}
-function Ub(a){var b=Tb(a)?"checked":"value",c=Object.getOwnPropertyDescriptor(a.constructor.prototype,b),d=""+a[b];if(!a.hasOwnProperty(b)&&"undefined"!==typeof c&&"function"===typeof c.get&&"function"===typeof c.set){var e=c.get,f=c.set;Object.defineProperty(a,b,{configurable:!0,get:function(){return e.call(this)},set:function(a){d=""+a;f.call(this,a)}});Object.defineProperty(a,b,{enumerable:c.enumerable});return{getValue:function(){return d},setValue:function(a){d=""+a},stopTracking:function(){a._valueTracker=
-null;delete a[b]}}}}function Vb(a){a._valueTracker||(a._valueTracker=Ub(a))}function Wb(a){if(!a)return!1;var b=a._valueTracker;if(!b)return!0;var c=b.getValue();var d="";a&&(d=Tb(a)?a.checked?"true":"false":a.value);a=d;return a!==c?(b.setValue(a),!0):!1}
-var Xb=aa.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED,Yb=/^(.*)[\\\/]/,D="function"===typeof Symbol&&Symbol.for,Zb=D?Symbol.for("react.element"):60103,$b=D?Symbol.for("react.portal"):60106,ac=D?Symbol.for("react.fragment"):60107,bc=D?Symbol.for("react.strict_mode"):60108,cc=D?Symbol.for("react.profiler"):60114,dc=D?Symbol.for("react.provider"):60109,ec=D?Symbol.for("react.context"):60110,fc=D?Symbol.for("react.concurrent_mode"):60111,gc=D?Symbol.for("react.forward_ref"):60112,hc=D?Symbol.for("react.suspense"):
-60113,ic=D?Symbol.for("react.memo"):60115,jc=D?Symbol.for("react.lazy"):60116,kc="function"===typeof Symbol&&Symbol.iterator;function lc(a){if(null===a||"object"!==typeof a)return null;a=kc&&a[kc]||a["@@iterator"];return"function"===typeof a?a:null}
-function mc(a){if(null==a)return null;if("function"===typeof a)return a.displayName||a.name||null;if("string"===typeof a)return a;switch(a){case fc:return"ConcurrentMode";case ac:return"Fragment";case $b:return"Portal";case cc:return"Profiler";case bc:return"StrictMode";case hc:return"Suspense"}if("object"===typeof a)switch(a.$$typeof){case ec:return"Context.Consumer";case dc:return"Context.Provider";case gc:var b=a.render;b=b.displayName||b.name||"";return a.displayName||(""!==b?"ForwardRef("+b+
-")":"ForwardRef");case ic:return mc(a.type);case jc:if(a=1===a._status?a._result:null)return mc(a)}return null}function nc(a){var b="";do{a:switch(a.tag){case 2:case 16:case 0:case 1:case 5:case 8:case 13:var c=a._debugOwner,d=a._debugSource,e=mc(a.type);var f=null;c&&(f=mc(c.type));c=e;e="";d?e=" (at "+d.fileName.replace(Yb,"")+":"+d.lineNumber+")":f&&(e=" (created by "+f+")");f="\n    in "+(c||"Unknown")+e;break a;default:f=""}b+=f;a=a.return}while(a);return b}
-var oc=/^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,pc=Object.prototype.hasOwnProperty,qc={},rc={};
-function sc(a){if(pc.call(rc,a))return!0;if(pc.call(qc,a))return!1;if(oc.test(a))return rc[a]=!0;qc[a]=!0;return!1}function tc(a,b,c,d){if(null!==c&&0===c.type)return!1;switch(typeof b){case "function":case "symbol":return!0;case "boolean":if(d)return!1;if(null!==c)return!c.acceptsBooleans;a=a.toLowerCase().slice(0,5);return"data-"!==a&&"aria-"!==a;default:return!1}}
-function uc(a,b,c,d){if(null===b||"undefined"===typeof b||tc(a,b,c,d))return!0;if(d)return!1;if(null!==c)switch(c.type){case 3:return!b;case 4:return!1===b;case 5:return isNaN(b);case 6:return isNaN(b)||1>b}return!1}function E(a,b,c,d,e){this.acceptsBooleans=2===b||3===b||4===b;this.attributeName=d;this.attributeNamespace=e;this.mustUseProperty=c;this.propertyName=a;this.type=b}var F={};
-"children dangerouslySetInnerHTML defaultValue defaultChecked innerHTML suppressContentEditableWarning suppressHydrationWarning style".split(" ").forEach(function(a){F[a]=new E(a,0,!1,a,null)});[["acceptCharset","accept-charset"],["className","class"],["htmlFor","for"],["httpEquiv","http-equiv"]].forEach(function(a){var b=a[0];F[b]=new E(b,1,!1,a[1],null)});["contentEditable","draggable","spellCheck","value"].forEach(function(a){F[a]=new E(a,2,!1,a.toLowerCase(),null)});
-["autoReverse","externalResourcesRequired","focusable","preserveAlpha"].forEach(function(a){F[a]=new E(a,2,!1,a,null)});"allowFullScreen async autoFocus autoPlay controls default defer disabled formNoValidate hidden loop noModule noValidate open playsInline readOnly required reversed scoped seamless itemScope".split(" ").forEach(function(a){F[a]=new E(a,3,!1,a.toLowerCase(),null)});["checked","multiple","muted","selected"].forEach(function(a){F[a]=new E(a,3,!0,a,null)});
-["capture","download"].forEach(function(a){F[a]=new E(a,4,!1,a,null)});["cols","rows","size","span"].forEach(function(a){F[a]=new E(a,6,!1,a,null)});["rowSpan","start"].forEach(function(a){F[a]=new E(a,5,!1,a.toLowerCase(),null)});var vc=/[\-:]([a-z])/g;function xc(a){return a[1].toUpperCase()}
-"accent-height alignment-baseline arabic-form baseline-shift cap-height clip-path clip-rule color-interpolation color-interpolation-filters color-profile color-rendering dominant-baseline enable-background fill-opacity fill-rule flood-color flood-opacity font-family font-size font-size-adjust font-stretch font-style font-variant font-weight glyph-name glyph-orientation-horizontal glyph-orientation-vertical horiz-adv-x horiz-origin-x image-rendering letter-spacing lighting-color marker-end marker-mid marker-start overline-position overline-thickness paint-order panose-1 pointer-events rendering-intent shape-rendering stop-color stop-opacity strikethrough-position strikethrough-thickness stroke-dasharray stroke-dashoffset stroke-linecap stroke-linejoin stroke-miterlimit stroke-opacity stroke-width text-anchor text-decoration text-rendering underline-position underline-thickness unicode-bidi unicode-range units-per-em v-alphabetic v-hanging v-ideographic v-mathematical vector-effect vert-adv-y vert-origin-x vert-origin-y word-spacing writing-mode xmlns:xlink x-height".split(" ").forEach(function(a){var b=a.replace(vc,
-xc);F[b]=new E(b,1,!1,a,null)});"xlink:actuate xlink:arcrole xlink:href xlink:role xlink:show xlink:title xlink:type".split(" ").forEach(function(a){var b=a.replace(vc,xc);F[b]=new E(b,1,!1,a,"http://www.w3.org/1999/xlink")});["xml:base","xml:lang","xml:space"].forEach(function(a){var b=a.replace(vc,xc);F[b]=new E(b,1,!1,a,"http://www.w3.org/XML/1998/namespace")});F.tabIndex=new E("tabIndex",1,!1,"tabindex",null);
-function yc(a,b,c,d){var e=F.hasOwnProperty(b)?F[b]:null;var f=null!==e?0===e.type:d?!1:!(2<b.length)||"o"!==b[0]&&"O"!==b[0]||"n"!==b[1]&&"N"!==b[1]?!1:!0;f||(uc(b,c,e,d)&&(c=null),d||null===e?sc(b)&&(null===c?a.removeAttribute(b):a.setAttribute(b,""+c)):e.mustUseProperty?a[e.propertyName]=null===c?3===e.type?!1:"":c:(b=e.attributeName,d=e.attributeNamespace,null===c?a.removeAttribute(b):(e=e.type,c=3===e||4===e&&!0===c?"":""+c,d?a.setAttributeNS(d,b,c):a.setAttribute(b,c))))}
-function zc(a){switch(typeof a){case "boolean":case "number":case "object":case "string":case "undefined":return a;default:return""}}function Ac(a,b){var c=b.checked;return n({},b,{defaultChecked:void 0,defaultValue:void 0,value:void 0,checked:null!=c?c:a._wrapperState.initialChecked})}
-function Bc(a,b){var c=null==b.defaultValue?"":b.defaultValue,d=null!=b.checked?b.checked:b.defaultChecked;c=zc(null!=b.value?b.value:c);a._wrapperState={initialChecked:d,initialValue:c,controlled:"checkbox"===b.type||"radio"===b.type?null!=b.checked:null!=b.value}}function Cc(a,b){b=b.checked;null!=b&&yc(a,"checked",b,!1)}
-function Dc(a,b){Cc(a,b);var c=zc(b.value),d=b.type;if(null!=c)if("number"===d){if(0===c&&""===a.value||a.value!=c)a.value=""+c}else a.value!==""+c&&(a.value=""+c);else if("submit"===d||"reset"===d){a.removeAttribute("value");return}b.hasOwnProperty("value")?Ec(a,b.type,c):b.hasOwnProperty("defaultValue")&&Ec(a,b.type,zc(b.defaultValue));null==b.checked&&null!=b.defaultChecked&&(a.defaultChecked=!!b.defaultChecked)}
-function Fc(a,b,c){if(b.hasOwnProperty("value")||b.hasOwnProperty("defaultValue")){var d=b.type;if(!("submit"!==d&&"reset"!==d||void 0!==b.value&&null!==b.value))return;b=""+a._wrapperState.initialValue;c||b===a.value||(a.value=b);a.defaultValue=b}c=a.name;""!==c&&(a.name="");a.defaultChecked=!a.defaultChecked;a.defaultChecked=!!a._wrapperState.initialChecked;""!==c&&(a.name=c)}
-function Ec(a,b,c){if("number"!==b||a.ownerDocument.activeElement!==a)null==c?a.defaultValue=""+a._wrapperState.initialValue:a.defaultValue!==""+c&&(a.defaultValue=""+c)}var Gc={change:{phasedRegistrationNames:{bubbled:"onChange",captured:"onChangeCapture"},dependencies:"blur change click focus input keydown keyup selectionchange".split(" ")}};function Hc(a,b,c){a=A.getPooled(Gc.change,a,b,c);a.type="change";Ib(c);Ra(a);return a}var Jc=null,Kc=null;function Lc(a){Ea(a)}
-function Mc(a){var b=Ka(a);if(Wb(b))return a}function Nc(a,b){if("change"===a)return b}var Oc=!1;Sa&&(Oc=Sb("input")&&(!document.documentMode||9<document.documentMode));function Pc(){Jc&&(Jc.detachEvent("onpropertychange",Qc),Kc=Jc=null)}function Qc(a){"value"===a.propertyName&&Mc(Kc)&&(a=Hc(Kc,a,Rb(a)),Ob(Lc,a))}function Rc(a,b,c){"focus"===a?(Pc(),Jc=b,Kc=c,Jc.attachEvent("onpropertychange",Qc)):"blur"===a&&Pc()}function Sc(a){if("selectionchange"===a||"keyup"===a||"keydown"===a)return Mc(Kc)}
-function Tc(a,b){if("click"===a)return Mc(b)}function Uc(a,b){if("input"===a||"change"===a)return Mc(b)}
-var Vc={eventTypes:Gc,_isInputEventSupported:Oc,extractEvents:function(a,b,c,d){var e=b?Ka(b):window,f=void 0,g=void 0,h=e.nodeName&&e.nodeName.toLowerCase();"select"===h||"input"===h&&"file"===e.type?f=Nc:Qb(e)?Oc?f=Uc:(f=Sc,g=Rc):(h=e.nodeName)&&"input"===h.toLowerCase()&&("checkbox"===e.type||"radio"===e.type)&&(f=Tc);if(f&&(f=f(a,b)))return Hc(f,c,d);g&&g(a,e,b);"blur"===a&&(a=e._wrapperState)&&a.controlled&&"number"===e.type&&Ec(e,"number",e.value)}},Wc=A.extend({view:null,detail:null}),Xc={Alt:"altKey",
-Control:"ctrlKey",Meta:"metaKey",Shift:"shiftKey"};function Yc(a){var b=this.nativeEvent;return b.getModifierState?b.getModifierState(a):(a=Xc[a])?!!b[a]:!1}function Zc(){return Yc}
-var $c=0,ad=0,bd=!1,cd=!1,dd=Wc.extend({screenX:null,screenY:null,clientX:null,clientY:null,pageX:null,pageY:null,ctrlKey:null,shiftKey:null,altKey:null,metaKey:null,getModifierState:Zc,button:null,buttons:null,relatedTarget:function(a){return a.relatedTarget||(a.fromElement===a.srcElement?a.toElement:a.fromElement)},movementX:function(a){if("movementX"in a)return a.movementX;var b=$c;$c=a.screenX;return bd?"mousemove"===a.type?a.screenX-b:0:(bd=!0,0)},movementY:function(a){if("movementY"in a)return a.movementY;
-var b=ad;ad=a.screenY;return cd?"mousemove"===a.type?a.screenY-b:0:(cd=!0,0)}}),ed=dd.extend({pointerId:null,width:null,height:null,pressure:null,tangentialPressure:null,tiltX:null,tiltY:null,twist:null,pointerType:null,isPrimary:null}),fd={mouseEnter:{registrationName:"onMouseEnter",dependencies:["mouseout","mouseover"]},mouseLeave:{registrationName:"onMouseLeave",dependencies:["mouseout","mouseover"]},pointerEnter:{registrationName:"onPointerEnter",dependencies:["pointerout","pointerover"]},pointerLeave:{registrationName:"onPointerLeave",
-dependencies:["pointerout","pointerover"]}},gd={eventTypes:fd,extractEvents:function(a,b,c,d){var e="mouseover"===a||"pointerover"===a,f="mouseout"===a||"pointerout"===a;if(e&&(c.relatedTarget||c.fromElement)||!f&&!e)return null;e=d.window===d?d:(e=d.ownerDocument)?e.defaultView||e.parentWindow:window;f?(f=b,b=(b=c.relatedTarget||c.toElement)?Ia(b):null):f=null;if(f===b)return null;var g=void 0,h=void 0,k=void 0,l=void 0;if("mouseout"===a||"mouseover"===a)g=dd,h=fd.mouseLeave,k=fd.mouseEnter,l="mouse";
-else if("pointerout"===a||"pointerover"===a)g=ed,h=fd.pointerLeave,k=fd.pointerEnter,l="pointer";var m=null==f?e:Ka(f);e=null==b?e:Ka(b);a=g.getPooled(h,f,c,d);a.type=l+"leave";a.target=m;a.relatedTarget=e;c=g.getPooled(k,b,c,d);c.type=l+"enter";c.target=e;c.relatedTarget=m;d=b;if(f&&d)a:{b=f;e=d;l=0;for(g=b;g;g=Ma(g))l++;g=0;for(k=e;k;k=Ma(k))g++;for(;0<l-g;)b=Ma(b),l--;for(;0<g-l;)e=Ma(e),g--;for(;l--;){if(b===e||b===e.alternate)break a;b=Ma(b);e=Ma(e)}b=null}else b=null;e=b;for(b=[];f&&f!==e;){l=
-f.alternate;if(null!==l&&l===e)break;b.push(f);f=Ma(f)}for(f=[];d&&d!==e;){l=d.alternate;if(null!==l&&l===e)break;f.push(d);d=Ma(d)}for(d=0;d<b.length;d++)Pa(b[d],"bubbled",a);for(d=f.length;0<d--;)Pa(f[d],"captured",c);return[a,c]}},hd=Object.prototype.hasOwnProperty;function id(a,b){return a===b?0!==a||0!==b||1/a===1/b:a!==a&&b!==b}
-function jd(a,b){if(id(a,b))return!0;if("object"!==typeof a||null===a||"object"!==typeof b||null===b)return!1;var c=Object.keys(a),d=Object.keys(b);if(c.length!==d.length)return!1;for(d=0;d<c.length;d++)if(!hd.call(b,c[d])||!id(a[c[d]],b[c[d]]))return!1;return!0}function kd(a){var b=a;if(a.alternate)for(;b.return;)b=b.return;else{if(0!==(b.effectTag&2))return 1;for(;b.return;)if(b=b.return,0!==(b.effectTag&2))return 1}return 3===b.tag?2:3}function ld(a){2!==kd(a)?t("188"):void 0}
-function md(a){var b=a.alternate;if(!b)return b=kd(a),3===b?t("188"):void 0,1===b?null:a;for(var c=a,d=b;;){var e=c.return,f=e?e.alternate:null;if(!e||!f)break;if(e.child===f.child){for(var g=e.child;g;){if(g===c)return ld(e),a;if(g===d)return ld(e),b;g=g.sibling}t("188")}if(c.return!==d.return)c=e,d=f;else{g=!1;for(var h=e.child;h;){if(h===c){g=!0;c=e;d=f;break}if(h===d){g=!0;d=e;c=f;break}h=h.sibling}if(!g){for(h=f.child;h;){if(h===c){g=!0;c=f;d=e;break}if(h===d){g=!0;d=f;c=e;break}h=h.sibling}g?
-void 0:t("189")}}c.alternate!==d?t("190"):void 0}3!==c.tag?t("188"):void 0;return c.stateNode.current===c?a:b}function nd(a){a=md(a);if(!a)return null;for(var b=a;;){if(5===b.tag||6===b.tag)return b;if(b.child)b.child.return=b,b=b.child;else{if(b===a)break;for(;!b.sibling;){if(!b.return||b.return===a)return null;b=b.return}b.sibling.return=b.return;b=b.sibling}}return null}
-var od=A.extend({animationName:null,elapsedTime:null,pseudoElement:null}),pd=A.extend({clipboardData:function(a){return"clipboardData"in a?a.clipboardData:window.clipboardData}}),qd=Wc.extend({relatedTarget:null});function rd(a){var b=a.keyCode;"charCode"in a?(a=a.charCode,0===a&&13===b&&(a=13)):a=b;10===a&&(a=13);return 32<=a||13===a?a:0}
-var sd={Esc:"Escape",Spacebar:" ",Left:"ArrowLeft",Up:"ArrowUp",Right:"ArrowRight",Down:"ArrowDown",Del:"Delete",Win:"OS",Menu:"ContextMenu",Apps:"ContextMenu",Scroll:"ScrollLock",MozPrintableKey:"Unidentified"},td={8:"Backspace",9:"Tab",12:"Clear",13:"Enter",16:"Shift",17:"Control",18:"Alt",19:"Pause",20:"CapsLock",27:"Escape",32:" ",33:"PageUp",34:"PageDown",35:"End",36:"Home",37:"ArrowLeft",38:"ArrowUp",39:"ArrowRight",40:"ArrowDown",45:"Insert",46:"Delete",112:"F1",113:"F2",114:"F3",115:"F4",
-116:"F5",117:"F6",118:"F7",119:"F8",120:"F9",121:"F10",122:"F11",123:"F12",144:"NumLock",145:"ScrollLock",224:"Meta"},ud=Wc.extend({key:function(a){if(a.key){var b=sd[a.key]||a.key;if("Unidentified"!==b)return b}return"keypress"===a.type?(a=rd(a),13===a?"Enter":String.fromCharCode(a)):"keydown"===a.type||"keyup"===a.type?td[a.keyCode]||"Unidentified":""},location:null,ctrlKey:null,shiftKey:null,altKey:null,metaKey:null,repeat:null,locale:null,getModifierState:Zc,charCode:function(a){return"keypress"===
-a.type?rd(a):0},keyCode:function(a){return"keydown"===a.type||"keyup"===a.type?a.keyCode:0},which:function(a){return"keypress"===a.type?rd(a):"keydown"===a.type||"keyup"===a.type?a.keyCode:0}}),vd=dd.extend({dataTransfer:null}),wd=Wc.extend({touches:null,targetTouches:null,changedTouches:null,altKey:null,metaKey:null,ctrlKey:null,shiftKey:null,getModifierState:Zc}),xd=A.extend({propertyName:null,elapsedTime:null,pseudoElement:null}),yd=dd.extend({deltaX:function(a){return"deltaX"in a?a.deltaX:"wheelDeltaX"in
-a?-a.wheelDeltaX:0},deltaY:function(a){return"deltaY"in a?a.deltaY:"wheelDeltaY"in a?-a.wheelDeltaY:"wheelDelta"in a?-a.wheelDelta:0},deltaZ:null,deltaMode:null}),zd=[["abort","abort"],[Ya,"animationEnd"],[Za,"animationIteration"],[$a,"animationStart"],["canplay","canPlay"],["canplaythrough","canPlayThrough"],["drag","drag"],["dragenter","dragEnter"],["dragexit","dragExit"],["dragleave","dragLeave"],["dragover","dragOver"],["durationchange","durationChange"],["emptied","emptied"],["encrypted","encrypted"],
+var aa=__webpack_require__(1),n=__webpack_require__(5),r=__webpack_require__(25);function ba(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[c,d,e,f,g,h],k=0;a=Error(b.replace(/%s/g,function(){return l[k++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
+function x(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);ba(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}aa?void 0:x("227");function ca(a,b,c,d,e,f,g,h,l){var k=Array.prototype.slice.call(arguments,3);try{b.apply(c,k)}catch(m){this.onError(m)}}
+var da=!1,ea=null,fa=!1,ha=null,ia={onError:function(a){da=!0;ea=a}};function ja(a,b,c,d,e,f,g,h,l){da=!1;ea=null;ca.apply(ia,arguments)}function ka(a,b,c,d,e,f,g,h,l){ja.apply(this,arguments);if(da){if(da){var k=ea;da=!1;ea=null}else x("198"),k=void 0;fa||(fa=!0,ha=k)}}var la=null,ma={};
+function na(){if(la)for(var a in ma){var b=ma[a],c=la.indexOf(a);-1<c?void 0:x("96",a);if(!oa[c]){b.extractEvents?void 0:x("97",a);oa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,h=d;pa.hasOwnProperty(h)?x("99",h):void 0;pa[h]=f;var l=f.phasedRegistrationNames;if(l){for(e in l)l.hasOwnProperty(e)&&qa(l[e],g,h);e=!0}else f.registrationName?(qa(f.registrationName,g,h),e=!0):e=!1;e?void 0:x("98",d,a)}}}}
+function qa(a,b,c){ra[a]?x("100",a):void 0;ra[a]=b;sa[a]=b.eventTypes[c].dependencies}var oa=[],pa={},ra={},sa={},ta=null,ua=null,va=null;function wa(a,b,c){var d=a.type||"unknown-event";a.currentTarget=va(c);ka(d,b,void 0,a);a.currentTarget=null}function xa(a,b){null==b?x("30"):void 0;if(null==a)return b;if(Array.isArray(a)){if(Array.isArray(b))return a.push.apply(a,b),a;a.push(b);return a}return Array.isArray(b)?[a].concat(b):[a,b]}
+function ya(a,b,c){Array.isArray(a)?a.forEach(b,c):a&&b.call(c,a)}var za=null;function Aa(a){if(a){var b=a._dispatchListeners,c=a._dispatchInstances;if(Array.isArray(b))for(var d=0;d<b.length&&!a.isPropagationStopped();d++)wa(a,b[d],c[d]);else b&&wa(a,b,c);a._dispatchListeners=null;a._dispatchInstances=null;a.isPersistent()||a.constructor.release(a)}}
+var Ba={injectEventPluginOrder:function(a){la?x("101"):void 0;la=Array.prototype.slice.call(a);na()},injectEventPluginsByName:function(a){var b=!1,c;for(c in a)if(a.hasOwnProperty(c)){var d=a[c];ma.hasOwnProperty(c)&&ma[c]===d||(ma[c]?x("102",c):void 0,ma[c]=d,b=!0)}b&&na()}};
+function Ca(a,b){var c=a.stateNode;if(!c)return null;var d=ta(c);if(!d)return null;c=d[b];a:switch(b){case "onClick":case "onClickCapture":case "onDoubleClick":case "onDoubleClickCapture":case "onMouseDown":case "onMouseDownCapture":case "onMouseMove":case "onMouseMoveCapture":case "onMouseUp":case "onMouseUpCapture":(d=!d.disabled)||(a=a.type,d=!("button"===a||"input"===a||"select"===a||"textarea"===a));a=!d;break a;default:a=!1}if(a)return null;c&&"function"!==typeof c?x("231",b,typeof c):void 0;
+return c}function Da(a){null!==a&&(za=xa(za,a));a=za;za=null;if(a&&(ya(a,Aa),za?x("95"):void 0,fa))throw a=ha,fa=!1,ha=null,a;}var Ea=Math.random().toString(36).slice(2),Fa="__reactInternalInstance$"+Ea,Ga="__reactEventHandlers$"+Ea;function Ha(a){if(a[Fa])return a[Fa];for(;!a[Fa];)if(a.parentNode)a=a.parentNode;else return null;a=a[Fa];return 5===a.tag||6===a.tag?a:null}function Ia(a){a=a[Fa];return!a||5!==a.tag&&6!==a.tag?null:a}
+function Ja(a){if(5===a.tag||6===a.tag)return a.stateNode;x("33")}function Ka(a){return a[Ga]||null}function La(a){do a=a.return;while(a&&5!==a.tag);return a?a:null}function Ma(a,b,c){if(b=Ca(a,c.dispatchConfig.phasedRegistrationNames[b]))c._dispatchListeners=xa(c._dispatchListeners,b),c._dispatchInstances=xa(c._dispatchInstances,a)}
+function Na(a){if(a&&a.dispatchConfig.phasedRegistrationNames){for(var b=a._targetInst,c=[];b;)c.push(b),b=La(b);for(b=c.length;0<b--;)Ma(c[b],"captured",a);for(b=0;b<c.length;b++)Ma(c[b],"bubbled",a)}}function Oa(a,b,c){a&&c&&c.dispatchConfig.registrationName&&(b=Ca(a,c.dispatchConfig.registrationName))&&(c._dispatchListeners=xa(c._dispatchListeners,b),c._dispatchInstances=xa(c._dispatchInstances,a))}function Pa(a){a&&a.dispatchConfig.registrationName&&Oa(a._targetInst,null,a)}
+function Qa(a){ya(a,Na)}var Ra=!("undefined"===typeof window||!window.document||!window.document.createElement);function Sa(a,b){var c={};c[a.toLowerCase()]=b.toLowerCase();c["Webkit"+a]="webkit"+b;c["Moz"+a]="moz"+b;return c}var Ta={animationend:Sa("Animation","AnimationEnd"),animationiteration:Sa("Animation","AnimationIteration"),animationstart:Sa("Animation","AnimationStart"),transitionend:Sa("Transition","TransitionEnd")},Ua={},Va={};
+Ra&&(Va=document.createElement("div").style,"AnimationEvent"in window||(delete Ta.animationend.animation,delete Ta.animationiteration.animation,delete Ta.animationstart.animation),"TransitionEvent"in window||delete Ta.transitionend.transition);function Wa(a){if(Ua[a])return Ua[a];if(!Ta[a])return a;var b=Ta[a],c;for(c in b)if(b.hasOwnProperty(c)&&c in Va)return Ua[a]=b[c];return a}
+var Xa=Wa("animationend"),Ya=Wa("animationiteration"),Za=Wa("animationstart"),$a=Wa("transitionend"),ab="abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange seeked seeking stalled suspend timeupdate volumechange waiting".split(" "),bb=null,cb=null,db=null;
+function eb(){if(db)return db;var a,b=cb,c=b.length,d,e="value"in bb?bb.value:bb.textContent,f=e.length;for(a=0;a<c&&b[a]===e[a];a++);var g=c-a;for(d=1;d<=g&&b[c-d]===e[f-d];d++);return db=e.slice(a,1<d?1-d:void 0)}function fb(){return!0}function gb(){return!1}
+function y(a,b,c,d){this.dispatchConfig=a;this._targetInst=b;this.nativeEvent=c;a=this.constructor.Interface;for(var e in a)a.hasOwnProperty(e)&&((b=a[e])?this[e]=b(c):"target"===e?this.target=d:this[e]=c[e]);this.isDefaultPrevented=(null!=c.defaultPrevented?c.defaultPrevented:!1===c.returnValue)?fb:gb;this.isPropagationStopped=gb;return this}
+n(y.prototype,{preventDefault:function(){this.defaultPrevented=!0;var a=this.nativeEvent;a&&(a.preventDefault?a.preventDefault():"unknown"!==typeof a.returnValue&&(a.returnValue=!1),this.isDefaultPrevented=fb)},stopPropagation:function(){var a=this.nativeEvent;a&&(a.stopPropagation?a.stopPropagation():"unknown"!==typeof a.cancelBubble&&(a.cancelBubble=!0),this.isPropagationStopped=fb)},persist:function(){this.isPersistent=fb},isPersistent:gb,destructor:function(){var a=this.constructor.Interface,
+b;for(b in a)this[b]=null;this.nativeEvent=this._targetInst=this.dispatchConfig=null;this.isPropagationStopped=this.isDefaultPrevented=gb;this._dispatchInstances=this._dispatchListeners=null}});y.Interface={type:null,target:null,currentTarget:function(){return null},eventPhase:null,bubbles:null,cancelable:null,timeStamp:function(a){return a.timeStamp||Date.now()},defaultPrevented:null,isTrusted:null};
+y.extend=function(a){function b(){}function c(){return d.apply(this,arguments)}var d=this;b.prototype=d.prototype;var e=new b;n(e,c.prototype);c.prototype=e;c.prototype.constructor=c;c.Interface=n({},d.Interface,a);c.extend=d.extend;hb(c);return c};hb(y);function ib(a,b,c,d){if(this.eventPool.length){var e=this.eventPool.pop();this.call(e,a,b,c,d);return e}return new this(a,b,c,d)}function jb(a){a instanceof this?void 0:x("279");a.destructor();10>this.eventPool.length&&this.eventPool.push(a)}
+function hb(a){a.eventPool=[];a.getPooled=ib;a.release=jb}var kb=y.extend({data:null}),lb=y.extend({data:null}),mb=[9,13,27,32],nb=Ra&&"CompositionEvent"in window,ob=null;Ra&&"documentMode"in document&&(ob=document.documentMode);
+var pb=Ra&&"TextEvent"in window&&!ob,qb=Ra&&(!nb||ob&&8<ob&&11>=ob),rb=String.fromCharCode(32),sb={beforeInput:{phasedRegistrationNames:{bubbled:"onBeforeInput",captured:"onBeforeInputCapture"},dependencies:["compositionend","keypress","textInput","paste"]},compositionEnd:{phasedRegistrationNames:{bubbled:"onCompositionEnd",captured:"onCompositionEndCapture"},dependencies:"blur compositionend keydown keypress keyup mousedown".split(" ")},compositionStart:{phasedRegistrationNames:{bubbled:"onCompositionStart",
+captured:"onCompositionStartCapture"},dependencies:"blur compositionstart keydown keypress keyup mousedown".split(" ")},compositionUpdate:{phasedRegistrationNames:{bubbled:"onCompositionUpdate",captured:"onCompositionUpdateCapture"},dependencies:"blur compositionupdate keydown keypress keyup mousedown".split(" ")}},tb=!1;
+function ub(a,b){switch(a){case "keyup":return-1!==mb.indexOf(b.keyCode);case "keydown":return 229!==b.keyCode;case "keypress":case "mousedown":case "blur":return!0;default:return!1}}function vb(a){a=a.detail;return"object"===typeof a&&"data"in a?a.data:null}var wb=!1;function xb(a,b){switch(a){case "compositionend":return vb(b);case "keypress":if(32!==b.which)return null;tb=!0;return rb;case "textInput":return a=b.data,a===rb&&tb?null:a;default:return null}}
+function yb(a,b){if(wb)return"compositionend"===a||!nb&&ub(a,b)?(a=eb(),db=cb=bb=null,wb=!1,a):null;switch(a){case "paste":return null;case "keypress":if(!(b.ctrlKey||b.altKey||b.metaKey)||b.ctrlKey&&b.altKey){if(b.char&&1<b.char.length)return b.char;if(b.which)return String.fromCharCode(b.which)}return null;case "compositionend":return qb&&"ko"!==b.locale?null:b.data;default:return null}}
+var zb={eventTypes:sb,extractEvents:function(a,b,c,d){var e=void 0;var f=void 0;if(nb)b:{switch(a){case "compositionstart":e=sb.compositionStart;break b;case "compositionend":e=sb.compositionEnd;break b;case "compositionupdate":e=sb.compositionUpdate;break b}e=void 0}else wb?ub(a,c)&&(e=sb.compositionEnd):"keydown"===a&&229===c.keyCode&&(e=sb.compositionStart);e?(qb&&"ko"!==c.locale&&(wb||e!==sb.compositionStart?e===sb.compositionEnd&&wb&&(f=eb()):(bb=d,cb="value"in bb?bb.value:bb.textContent,wb=
+!0)),e=kb.getPooled(e,b,c,d),f?e.data=f:(f=vb(c),null!==f&&(e.data=f)),Qa(e),f=e):f=null;(a=pb?xb(a,c):yb(a,c))?(b=lb.getPooled(sb.beforeInput,b,c,d),b.data=a,Qa(b)):b=null;return null===f?b:null===b?f:[f,b]}},Ab=null,Bb=null,Cb=null;function Db(a){if(a=ua(a)){"function"!==typeof Ab?x("280"):void 0;var b=ta(a.stateNode);Ab(a.stateNode,a.type,b)}}function Eb(a){Bb?Cb?Cb.push(a):Cb=[a]:Bb=a}function Fb(){if(Bb){var a=Bb,b=Cb;Cb=Bb=null;Db(a);if(b)for(a=0;a<b.length;a++)Db(b[a])}}
+function Gb(a,b){return a(b)}function Hb(a,b,c){return a(b,c)}function Ib(){}var Jb=!1;function Kb(a,b){if(Jb)return a(b);Jb=!0;try{return Gb(a,b)}finally{if(Jb=!1,null!==Bb||null!==Cb)Ib(),Fb()}}var Lb={color:!0,date:!0,datetime:!0,"datetime-local":!0,email:!0,month:!0,number:!0,password:!0,range:!0,search:!0,tel:!0,text:!0,time:!0,url:!0,week:!0};function Mb(a){var b=a&&a.nodeName&&a.nodeName.toLowerCase();return"input"===b?!!Lb[a.type]:"textarea"===b?!0:!1}
+function Nb(a){a=a.target||a.srcElement||window;a.correspondingUseElement&&(a=a.correspondingUseElement);return 3===a.nodeType?a.parentNode:a}function Ob(a){if(!Ra)return!1;a="on"+a;var b=a in document;b||(b=document.createElement("div"),b.setAttribute(a,"return;"),b="function"===typeof b[a]);return b}function Pb(a){var b=a.type;return(a=a.nodeName)&&"input"===a.toLowerCase()&&("checkbox"===b||"radio"===b)}
+function Qb(a){var b=Pb(a)?"checked":"value",c=Object.getOwnPropertyDescriptor(a.constructor.prototype,b),d=""+a[b];if(!a.hasOwnProperty(b)&&"undefined"!==typeof c&&"function"===typeof c.get&&"function"===typeof c.set){var e=c.get,f=c.set;Object.defineProperty(a,b,{configurable:!0,get:function(){return e.call(this)},set:function(a){d=""+a;f.call(this,a)}});Object.defineProperty(a,b,{enumerable:c.enumerable});return{getValue:function(){return d},setValue:function(a){d=""+a},stopTracking:function(){a._valueTracker=
+null;delete a[b]}}}}function Rb(a){a._valueTracker||(a._valueTracker=Qb(a))}function Sb(a){if(!a)return!1;var b=a._valueTracker;if(!b)return!0;var c=b.getValue();var d="";a&&(d=Pb(a)?a.checked?"true":"false":a.value);a=d;return a!==c?(b.setValue(a),!0):!1}var Tb=aa.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;Tb.hasOwnProperty("ReactCurrentDispatcher")||(Tb.ReactCurrentDispatcher={current:null});
+var Ub=/^(.*)[\\\/]/,z="function"===typeof Symbol&&Symbol.for,Vb=z?Symbol.for("react.element"):60103,Wb=z?Symbol.for("react.portal"):60106,Xb=z?Symbol.for("react.fragment"):60107,Yb=z?Symbol.for("react.strict_mode"):60108,Zb=z?Symbol.for("react.profiler"):60114,$b=z?Symbol.for("react.provider"):60109,ac=z?Symbol.for("react.context"):60110,bc=z?Symbol.for("react.concurrent_mode"):60111,cc=z?Symbol.for("react.forward_ref"):60112,dc=z?Symbol.for("react.suspense"):60113,ec=z?Symbol.for("react.memo"):
+60115,fc=z?Symbol.for("react.lazy"):60116,gc="function"===typeof Symbol&&Symbol.iterator;function hc(a){if(null===a||"object"!==typeof a)return null;a=gc&&a[gc]||a["@@iterator"];return"function"===typeof a?a:null}
+function ic(a){if(null==a)return null;if("function"===typeof a)return a.displayName||a.name||null;if("string"===typeof a)return a;switch(a){case bc:return"ConcurrentMode";case Xb:return"Fragment";case Wb:return"Portal";case Zb:return"Profiler";case Yb:return"StrictMode";case dc:return"Suspense"}if("object"===typeof a)switch(a.$$typeof){case ac:return"Context.Consumer";case $b:return"Context.Provider";case cc:var b=a.render;b=b.displayName||b.name||"";return a.displayName||(""!==b?"ForwardRef("+b+
+")":"ForwardRef");case ec:return ic(a.type);case fc:if(a=1===a._status?a._result:null)return ic(a)}return null}function jc(a){var b="";do{a:switch(a.tag){case 3:case 4:case 6:case 7:case 10:case 9:var c="";break a;default:var d=a._debugOwner,e=a._debugSource,f=ic(a.type);c=null;d&&(c=ic(d.type));d=f;f="";e?f=" (at "+e.fileName.replace(Ub,"")+":"+e.lineNumber+")":c&&(f=" (created by "+c+")");c="\n    in "+(d||"Unknown")+f}b+=c;a=a.return}while(a);return b}
+var kc=/^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,lc=Object.prototype.hasOwnProperty,mc={},nc={};
+function oc(a){if(lc.call(nc,a))return!0;if(lc.call(mc,a))return!1;if(kc.test(a))return nc[a]=!0;mc[a]=!0;return!1}function pc(a,b,c,d){if(null!==c&&0===c.type)return!1;switch(typeof b){case "function":case "symbol":return!0;case "boolean":if(d)return!1;if(null!==c)return!c.acceptsBooleans;a=a.toLowerCase().slice(0,5);return"data-"!==a&&"aria-"!==a;default:return!1}}
+function qc(a,b,c,d){if(null===b||"undefined"===typeof b||pc(a,b,c,d))return!0;if(d)return!1;if(null!==c)switch(c.type){case 3:return!b;case 4:return!1===b;case 5:return isNaN(b);case 6:return isNaN(b)||1>b}return!1}function C(a,b,c,d,e){this.acceptsBooleans=2===b||3===b||4===b;this.attributeName=d;this.attributeNamespace=e;this.mustUseProperty=c;this.propertyName=a;this.type=b}var D={};
+"children dangerouslySetInnerHTML defaultValue defaultChecked innerHTML suppressContentEditableWarning suppressHydrationWarning style".split(" ").forEach(function(a){D[a]=new C(a,0,!1,a,null)});[["acceptCharset","accept-charset"],["className","class"],["htmlFor","for"],["httpEquiv","http-equiv"]].forEach(function(a){var b=a[0];D[b]=new C(b,1,!1,a[1],null)});["contentEditable","draggable","spellCheck","value"].forEach(function(a){D[a]=new C(a,2,!1,a.toLowerCase(),null)});
+["autoReverse","externalResourcesRequired","focusable","preserveAlpha"].forEach(function(a){D[a]=new C(a,2,!1,a,null)});"allowFullScreen async autoFocus autoPlay controls default defer disabled formNoValidate hidden loop noModule noValidate open playsInline readOnly required reversed scoped seamless itemScope".split(" ").forEach(function(a){D[a]=new C(a,3,!1,a.toLowerCase(),null)});["checked","multiple","muted","selected"].forEach(function(a){D[a]=new C(a,3,!0,a,null)});
+["capture","download"].forEach(function(a){D[a]=new C(a,4,!1,a,null)});["cols","rows","size","span"].forEach(function(a){D[a]=new C(a,6,!1,a,null)});["rowSpan","start"].forEach(function(a){D[a]=new C(a,5,!1,a.toLowerCase(),null)});var rc=/[\-:]([a-z])/g;function sc(a){return a[1].toUpperCase()}
+"accent-height alignment-baseline arabic-form baseline-shift cap-height clip-path clip-rule color-interpolation color-interpolation-filters color-profile color-rendering dominant-baseline enable-background fill-opacity fill-rule flood-color flood-opacity font-family font-size font-size-adjust font-stretch font-style font-variant font-weight glyph-name glyph-orientation-horizontal glyph-orientation-vertical horiz-adv-x horiz-origin-x image-rendering letter-spacing lighting-color marker-end marker-mid marker-start overline-position overline-thickness paint-order panose-1 pointer-events rendering-intent shape-rendering stop-color stop-opacity strikethrough-position strikethrough-thickness stroke-dasharray stroke-dashoffset stroke-linecap stroke-linejoin stroke-miterlimit stroke-opacity stroke-width text-anchor text-decoration text-rendering underline-position underline-thickness unicode-bidi unicode-range units-per-em v-alphabetic v-hanging v-ideographic v-mathematical vector-effect vert-adv-y vert-origin-x vert-origin-y word-spacing writing-mode xmlns:xlink x-height".split(" ").forEach(function(a){var b=a.replace(rc,
+sc);D[b]=new C(b,1,!1,a,null)});"xlink:actuate xlink:arcrole xlink:href xlink:role xlink:show xlink:title xlink:type".split(" ").forEach(function(a){var b=a.replace(rc,sc);D[b]=new C(b,1,!1,a,"http://www.w3.org/1999/xlink")});["xml:base","xml:lang","xml:space"].forEach(function(a){var b=a.replace(rc,sc);D[b]=new C(b,1,!1,a,"http://www.w3.org/XML/1998/namespace")});["tabIndex","crossOrigin"].forEach(function(a){D[a]=new C(a,1,!1,a.toLowerCase(),null)});
+function tc(a,b,c,d){var e=D.hasOwnProperty(b)?D[b]:null;var f=null!==e?0===e.type:d?!1:!(2<b.length)||"o"!==b[0]&&"O"!==b[0]||"n"!==b[1]&&"N"!==b[1]?!1:!0;f||(qc(b,c,e,d)&&(c=null),d||null===e?oc(b)&&(null===c?a.removeAttribute(b):a.setAttribute(b,""+c)):e.mustUseProperty?a[e.propertyName]=null===c?3===e.type?!1:"":c:(b=e.attributeName,d=e.attributeNamespace,null===c?a.removeAttribute(b):(e=e.type,c=3===e||4===e&&!0===c?"":""+c,d?a.setAttributeNS(d,b,c):a.setAttribute(b,c))))}
+function uc(a){switch(typeof a){case "boolean":case "number":case "object":case "string":case "undefined":return a;default:return""}}function vc(a,b){var c=b.checked;return n({},b,{defaultChecked:void 0,defaultValue:void 0,value:void 0,checked:null!=c?c:a._wrapperState.initialChecked})}
+function wc(a,b){var c=null==b.defaultValue?"":b.defaultValue,d=null!=b.checked?b.checked:b.defaultChecked;c=uc(null!=b.value?b.value:c);a._wrapperState={initialChecked:d,initialValue:c,controlled:"checkbox"===b.type||"radio"===b.type?null!=b.checked:null!=b.value}}function xc(a,b){b=b.checked;null!=b&&tc(a,"checked",b,!1)}
+function yc(a,b){xc(a,b);var c=uc(b.value),d=b.type;if(null!=c)if("number"===d){if(0===c&&""===a.value||a.value!=c)a.value=""+c}else a.value!==""+c&&(a.value=""+c);else if("submit"===d||"reset"===d){a.removeAttribute("value");return}b.hasOwnProperty("value")?zc(a,b.type,c):b.hasOwnProperty("defaultValue")&&zc(a,b.type,uc(b.defaultValue));null==b.checked&&null!=b.defaultChecked&&(a.defaultChecked=!!b.defaultChecked)}
+function Ac(a,b,c){if(b.hasOwnProperty("value")||b.hasOwnProperty("defaultValue")){var d=b.type;if(!("submit"!==d&&"reset"!==d||void 0!==b.value&&null!==b.value))return;b=""+a._wrapperState.initialValue;c||b===a.value||(a.value=b);a.defaultValue=b}c=a.name;""!==c&&(a.name="");a.defaultChecked=!a.defaultChecked;a.defaultChecked=!!a._wrapperState.initialChecked;""!==c&&(a.name=c)}
+function zc(a,b,c){if("number"!==b||a.ownerDocument.activeElement!==a)null==c?a.defaultValue=""+a._wrapperState.initialValue:a.defaultValue!==""+c&&(a.defaultValue=""+c)}var Bc={change:{phasedRegistrationNames:{bubbled:"onChange",captured:"onChangeCapture"},dependencies:"blur change click focus input keydown keyup selectionchange".split(" ")}};function Cc(a,b,c){a=y.getPooled(Bc.change,a,b,c);a.type="change";Eb(c);Qa(a);return a}var Dc=null,Ec=null;function Fc(a){Da(a)}
+function Gc(a){var b=Ja(a);if(Sb(b))return a}function Hc(a,b){if("change"===a)return b}var Ic=!1;Ra&&(Ic=Ob("input")&&(!document.documentMode||9<document.documentMode));function Jc(){Dc&&(Dc.detachEvent("onpropertychange",Kc),Ec=Dc=null)}function Kc(a){"value"===a.propertyName&&Gc(Ec)&&(a=Cc(Ec,a,Nb(a)),Kb(Fc,a))}function Lc(a,b,c){"focus"===a?(Jc(),Dc=b,Ec=c,Dc.attachEvent("onpropertychange",Kc)):"blur"===a&&Jc()}function Mc(a){if("selectionchange"===a||"keyup"===a||"keydown"===a)return Gc(Ec)}
+function Nc(a,b){if("click"===a)return Gc(b)}function Oc(a,b){if("input"===a||"change"===a)return Gc(b)}
+var Pc={eventTypes:Bc,_isInputEventSupported:Ic,extractEvents:function(a,b,c,d){var e=b?Ja(b):window,f=void 0,g=void 0,h=e.nodeName&&e.nodeName.toLowerCase();"select"===h||"input"===h&&"file"===e.type?f=Hc:Mb(e)?Ic?f=Oc:(f=Mc,g=Lc):(h=e.nodeName)&&"input"===h.toLowerCase()&&("checkbox"===e.type||"radio"===e.type)&&(f=Nc);if(f&&(f=f(a,b)))return Cc(f,c,d);g&&g(a,e,b);"blur"===a&&(a=e._wrapperState)&&a.controlled&&"number"===e.type&&zc(e,"number",e.value)}},Qc=y.extend({view:null,detail:null}),Rc={Alt:"altKey",
+Control:"ctrlKey",Meta:"metaKey",Shift:"shiftKey"};function Sc(a){var b=this.nativeEvent;return b.getModifierState?b.getModifierState(a):(a=Rc[a])?!!b[a]:!1}function Tc(){return Sc}
+var Uc=0,Vc=0,Wc=!1,Xc=!1,Yc=Qc.extend({screenX:null,screenY:null,clientX:null,clientY:null,pageX:null,pageY:null,ctrlKey:null,shiftKey:null,altKey:null,metaKey:null,getModifierState:Tc,button:null,buttons:null,relatedTarget:function(a){return a.relatedTarget||(a.fromElement===a.srcElement?a.toElement:a.fromElement)},movementX:function(a){if("movementX"in a)return a.movementX;var b=Uc;Uc=a.screenX;return Wc?"mousemove"===a.type?a.screenX-b:0:(Wc=!0,0)},movementY:function(a){if("movementY"in a)return a.movementY;
+var b=Vc;Vc=a.screenY;return Xc?"mousemove"===a.type?a.screenY-b:0:(Xc=!0,0)}}),Zc=Yc.extend({pointerId:null,width:null,height:null,pressure:null,tangentialPressure:null,tiltX:null,tiltY:null,twist:null,pointerType:null,isPrimary:null}),$c={mouseEnter:{registrationName:"onMouseEnter",dependencies:["mouseout","mouseover"]},mouseLeave:{registrationName:"onMouseLeave",dependencies:["mouseout","mouseover"]},pointerEnter:{registrationName:"onPointerEnter",dependencies:["pointerout","pointerover"]},pointerLeave:{registrationName:"onPointerLeave",
+dependencies:["pointerout","pointerover"]}},ad={eventTypes:$c,extractEvents:function(a,b,c,d){var e="mouseover"===a||"pointerover"===a,f="mouseout"===a||"pointerout"===a;if(e&&(c.relatedTarget||c.fromElement)||!f&&!e)return null;e=d.window===d?d:(e=d.ownerDocument)?e.defaultView||e.parentWindow:window;f?(f=b,b=(b=c.relatedTarget||c.toElement)?Ha(b):null):f=null;if(f===b)return null;var g=void 0,h=void 0,l=void 0,k=void 0;if("mouseout"===a||"mouseover"===a)g=Yc,h=$c.mouseLeave,l=$c.mouseEnter,k="mouse";
+else if("pointerout"===a||"pointerover"===a)g=Zc,h=$c.pointerLeave,l=$c.pointerEnter,k="pointer";var m=null==f?e:Ja(f);e=null==b?e:Ja(b);a=g.getPooled(h,f,c,d);a.type=k+"leave";a.target=m;a.relatedTarget=e;c=g.getPooled(l,b,c,d);c.type=k+"enter";c.target=e;c.relatedTarget=m;d=b;if(f&&d)a:{b=f;e=d;k=0;for(g=b;g;g=La(g))k++;g=0;for(l=e;l;l=La(l))g++;for(;0<k-g;)b=La(b),k--;for(;0<g-k;)e=La(e),g--;for(;k--;){if(b===e||b===e.alternate)break a;b=La(b);e=La(e)}b=null}else b=null;e=b;for(b=[];f&&f!==e;){k=
+f.alternate;if(null!==k&&k===e)break;b.push(f);f=La(f)}for(f=[];d&&d!==e;){k=d.alternate;if(null!==k&&k===e)break;f.push(d);d=La(d)}for(d=0;d<b.length;d++)Oa(b[d],"bubbled",a);for(d=f.length;0<d--;)Oa(f[d],"captured",c);return[a,c]}};function bd(a,b){return a===b&&(0!==a||1/a===1/b)||a!==a&&b!==b}var cd=Object.prototype.hasOwnProperty;
+function dd(a,b){if(bd(a,b))return!0;if("object"!==typeof a||null===a||"object"!==typeof b||null===b)return!1;var c=Object.keys(a),d=Object.keys(b);if(c.length!==d.length)return!1;for(d=0;d<c.length;d++)if(!cd.call(b,c[d])||!bd(a[c[d]],b[c[d]]))return!1;return!0}function ed(a){var b=a;if(a.alternate)for(;b.return;)b=b.return;else{if(0!==(b.effectTag&2))return 1;for(;b.return;)if(b=b.return,0!==(b.effectTag&2))return 1}return 3===b.tag?2:3}function fd(a){2!==ed(a)?x("188"):void 0}
+function gd(a){var b=a.alternate;if(!b)return b=ed(a),3===b?x("188"):void 0,1===b?null:a;for(var c=a,d=b;;){var e=c.return,f=e?e.alternate:null;if(!e||!f)break;if(e.child===f.child){for(var g=e.child;g;){if(g===c)return fd(e),a;if(g===d)return fd(e),b;g=g.sibling}x("188")}if(c.return!==d.return)c=e,d=f;else{g=!1;for(var h=e.child;h;){if(h===c){g=!0;c=e;d=f;break}if(h===d){g=!0;d=e;c=f;break}h=h.sibling}if(!g){for(h=f.child;h;){if(h===c){g=!0;c=f;d=e;break}if(h===d){g=!0;d=f;c=e;break}h=h.sibling}g?
+void 0:x("189")}}c.alternate!==d?x("190"):void 0}3!==c.tag?x("188"):void 0;return c.stateNode.current===c?a:b}function hd(a){a=gd(a);if(!a)return null;for(var b=a;;){if(5===b.tag||6===b.tag)return b;if(b.child)b.child.return=b,b=b.child;else{if(b===a)break;for(;!b.sibling;){if(!b.return||b.return===a)return null;b=b.return}b.sibling.return=b.return;b=b.sibling}}return null}
+var id=y.extend({animationName:null,elapsedTime:null,pseudoElement:null}),jd=y.extend({clipboardData:function(a){return"clipboardData"in a?a.clipboardData:window.clipboardData}}),kd=Qc.extend({relatedTarget:null});function ld(a){var b=a.keyCode;"charCode"in a?(a=a.charCode,0===a&&13===b&&(a=13)):a=b;10===a&&(a=13);return 32<=a||13===a?a:0}
+var md={Esc:"Escape",Spacebar:" ",Left:"ArrowLeft",Up:"ArrowUp",Right:"ArrowRight",Down:"ArrowDown",Del:"Delete",Win:"OS",Menu:"ContextMenu",Apps:"ContextMenu",Scroll:"ScrollLock",MozPrintableKey:"Unidentified"},nd={8:"Backspace",9:"Tab",12:"Clear",13:"Enter",16:"Shift",17:"Control",18:"Alt",19:"Pause",20:"CapsLock",27:"Escape",32:" ",33:"PageUp",34:"PageDown",35:"End",36:"Home",37:"ArrowLeft",38:"ArrowUp",39:"ArrowRight",40:"ArrowDown",45:"Insert",46:"Delete",112:"F1",113:"F2",114:"F3",115:"F4",
+116:"F5",117:"F6",118:"F7",119:"F8",120:"F9",121:"F10",122:"F11",123:"F12",144:"NumLock",145:"ScrollLock",224:"Meta"},od=Qc.extend({key:function(a){if(a.key){var b=md[a.key]||a.key;if("Unidentified"!==b)return b}return"keypress"===a.type?(a=ld(a),13===a?"Enter":String.fromCharCode(a)):"keydown"===a.type||"keyup"===a.type?nd[a.keyCode]||"Unidentified":""},location:null,ctrlKey:null,shiftKey:null,altKey:null,metaKey:null,repeat:null,locale:null,getModifierState:Tc,charCode:function(a){return"keypress"===
+a.type?ld(a):0},keyCode:function(a){return"keydown"===a.type||"keyup"===a.type?a.keyCode:0},which:function(a){return"keypress"===a.type?ld(a):"keydown"===a.type||"keyup"===a.type?a.keyCode:0}}),pd=Yc.extend({dataTransfer:null}),qd=Qc.extend({touches:null,targetTouches:null,changedTouches:null,altKey:null,metaKey:null,ctrlKey:null,shiftKey:null,getModifierState:Tc}),rd=y.extend({propertyName:null,elapsedTime:null,pseudoElement:null}),sd=Yc.extend({deltaX:function(a){return"deltaX"in a?a.deltaX:"wheelDeltaX"in
+a?-a.wheelDeltaX:0},deltaY:function(a){return"deltaY"in a?a.deltaY:"wheelDeltaY"in a?-a.wheelDeltaY:"wheelDelta"in a?-a.wheelDelta:0},deltaZ:null,deltaMode:null}),td=[["abort","abort"],[Xa,"animationEnd"],[Ya,"animationIteration"],[Za,"animationStart"],["canplay","canPlay"],["canplaythrough","canPlayThrough"],["drag","drag"],["dragenter","dragEnter"],["dragexit","dragExit"],["dragleave","dragLeave"],["dragover","dragOver"],["durationchange","durationChange"],["emptied","emptied"],["encrypted","encrypted"],
 ["ended","ended"],["error","error"],["gotpointercapture","gotPointerCapture"],["load","load"],["loadeddata","loadedData"],["loadedmetadata","loadedMetadata"],["loadstart","loadStart"],["lostpointercapture","lostPointerCapture"],["mousemove","mouseMove"],["mouseout","mouseOut"],["mouseover","mouseOver"],["playing","playing"],["pointermove","pointerMove"],["pointerout","pointerOut"],["pointerover","pointerOver"],["progress","progress"],["scroll","scroll"],["seeking","seeking"],["stalled","stalled"],
-["suspend","suspend"],["timeupdate","timeUpdate"],["toggle","toggle"],["touchmove","touchMove"],[ab,"transitionEnd"],["waiting","waiting"],["wheel","wheel"]],Ad={},Bd={};function Cd(a,b){var c=a[0];a=a[1];var d="on"+(a[0].toUpperCase()+a.slice(1));b={phasedRegistrationNames:{bubbled:d,captured:d+"Capture"},dependencies:[c],isInteractive:b};Ad[a]=b;Bd[c]=b}
+["suspend","suspend"],["timeupdate","timeUpdate"],["toggle","toggle"],["touchmove","touchMove"],[$a,"transitionEnd"],["waiting","waiting"],["wheel","wheel"]],ud={},vd={};function wd(a,b){var c=a[0];a=a[1];var d="on"+(a[0].toUpperCase()+a.slice(1));b={phasedRegistrationNames:{bubbled:d,captured:d+"Capture"},dependencies:[c],isInteractive:b};ud[a]=b;vd[c]=b}
 [["blur","blur"],["cancel","cancel"],["click","click"],["close","close"],["contextmenu","contextMenu"],["copy","copy"],["cut","cut"],["auxclick","auxClick"],["dblclick","doubleClick"],["dragend","dragEnd"],["dragstart","dragStart"],["drop","drop"],["focus","focus"],["input","input"],["invalid","invalid"],["keydown","keyDown"],["keypress","keyPress"],["keyup","keyUp"],["mousedown","mouseDown"],["mouseup","mouseUp"],["paste","paste"],["pause","pause"],["play","play"],["pointercancel","pointerCancel"],
-["pointerdown","pointerDown"],["pointerup","pointerUp"],["ratechange","rateChange"],["reset","reset"],["seeked","seeked"],["submit","submit"],["touchcancel","touchCancel"],["touchend","touchEnd"],["touchstart","touchStart"],["volumechange","volumeChange"]].forEach(function(a){Cd(a,!0)});zd.forEach(function(a){Cd(a,!1)});
-var Dd={eventTypes:Ad,isInteractiveTopLevelEventType:function(a){a=Bd[a];return void 0!==a&&!0===a.isInteractive},extractEvents:function(a,b,c,d){var e=Bd[a];if(!e)return null;switch(a){case "keypress":if(0===rd(c))return null;case "keydown":case "keyup":a=ud;break;case "blur":case "focus":a=qd;break;case "click":if(2===c.button)return null;case "auxclick":case "dblclick":case "mousedown":case "mousemove":case "mouseup":case "mouseout":case "mouseover":case "contextmenu":a=dd;break;case "drag":case "dragend":case "dragenter":case "dragexit":case "dragleave":case "dragover":case "dragstart":case "drop":a=
-vd;break;case "touchcancel":case "touchend":case "touchmove":case "touchstart":a=wd;break;case Ya:case Za:case $a:a=od;break;case ab:a=xd;break;case "scroll":a=Wc;break;case "wheel":a=yd;break;case "copy":case "cut":case "paste":a=pd;break;case "gotpointercapture":case "lostpointercapture":case "pointercancel":case "pointerdown":case "pointermove":case "pointerout":case "pointerover":case "pointerup":a=ed;break;default:a=A}b=a.getPooled(e,b,c,d);Ra(b);return b}},Ed=Dd.isInteractiveTopLevelEventType,
-Fd=[];function Gd(a){var b=a.targetInst,c=b;do{if(!c){a.ancestors.push(c);break}var d;for(d=c;d.return;)d=d.return;d=3!==d.tag?null:d.stateNode.containerInfo;if(!d)break;a.ancestors.push(c);c=Ia(d)}while(c);for(c=0;c<a.ancestors.length;c++){b=a.ancestors[c];var e=Rb(a.nativeEvent);d=a.topLevelType;for(var f=a.nativeEvent,g=null,h=0;h<pa.length;h++){var k=pa[h];k&&(k=k.extractEvents(d,b,f,e))&&(g=ya(g,k))}Ea(g)}}var Hd=!0;
-function G(a,b){if(!b)return null;var c=(Ed(a)?Id:Jd).bind(null,a);b.addEventListener(a,c,!1)}function Kd(a,b){if(!b)return null;var c=(Ed(a)?Id:Jd).bind(null,a);b.addEventListener(a,c,!0)}function Id(a,b){Lb(Jd,a,b)}
-function Jd(a,b){if(Hd){var c=Rb(b);c=Ia(c);null===c||"number"!==typeof c.tag||2===kd(c)||(c=null);if(Fd.length){var d=Fd.pop();d.topLevelType=a;d.nativeEvent=b;d.targetInst=c;a=d}else a={topLevelType:a,nativeEvent:b,targetInst:c,ancestors:[]};try{Ob(Gd,a)}finally{a.topLevelType=null,a.nativeEvent=null,a.targetInst=null,a.ancestors.length=0,10>Fd.length&&Fd.push(a)}}}var Ld={},Md=0,Nd="_reactListenersID"+(""+Math.random()).slice(2);
-function Od(a){Object.prototype.hasOwnProperty.call(a,Nd)||(a[Nd]=Md++,Ld[a[Nd]]={});return Ld[a[Nd]]}function Pd(a){a=a||("undefined"!==typeof document?document:void 0);if("undefined"===typeof a)return null;try{return a.activeElement||a.body}catch(b){return a.body}}function Qd(a){for(;a&&a.firstChild;)a=a.firstChild;return a}
-function Rd(a,b){var c=Qd(a);a=0;for(var d;c;){if(3===c.nodeType){d=a+c.textContent.length;if(a<=b&&d>=b)return{node:c,offset:b-a};a=d}a:{for(;c;){if(c.nextSibling){c=c.nextSibling;break a}c=c.parentNode}c=void 0}c=Qd(c)}}function Sd(a,b){return a&&b?a===b?!0:a&&3===a.nodeType?!1:b&&3===b.nodeType?Sd(a,b.parentNode):"contains"in a?a.contains(b):a.compareDocumentPosition?!!(a.compareDocumentPosition(b)&16):!1:!1}
-function Td(){for(var a=window,b=Pd();b instanceof a.HTMLIFrameElement;){try{a=b.contentDocument.defaultView}catch(c){break}b=Pd(a.document)}return b}function Ud(a){var b=a&&a.nodeName&&a.nodeName.toLowerCase();return b&&("input"===b&&("text"===a.type||"search"===a.type||"tel"===a.type||"url"===a.type||"password"===a.type)||"textarea"===b||"true"===a.contentEditable)}
-var Vd=Sa&&"documentMode"in document&&11>=document.documentMode,Wd={select:{phasedRegistrationNames:{bubbled:"onSelect",captured:"onSelectCapture"},dependencies:"blur contextmenu dragend focus keydown keyup mousedown mouseup selectionchange".split(" ")}},Xd=null,Yd=null,Zd=null,$d=!1;
-function ae(a,b){var c=b.window===b?b.document:9===b.nodeType?b:b.ownerDocument;if($d||null==Xd||Xd!==Pd(c))return null;c=Xd;"selectionStart"in c&&Ud(c)?c={start:c.selectionStart,end:c.selectionEnd}:(c=(c.ownerDocument&&c.ownerDocument.defaultView||window).getSelection(),c={anchorNode:c.anchorNode,anchorOffset:c.anchorOffset,focusNode:c.focusNode,focusOffset:c.focusOffset});return Zd&&jd(Zd,c)?null:(Zd=c,a=A.getPooled(Wd.select,Yd,a,b),a.type="select",a.target=Xd,Ra(a),a)}
-var be={eventTypes:Wd,extractEvents:function(a,b,c,d){var e=d.window===d?d.document:9===d.nodeType?d:d.ownerDocument,f;if(!(f=!e)){a:{e=Od(e);f=ta.onSelect;for(var g=0;g<f.length;g++){var h=f[g];if(!e.hasOwnProperty(h)||!e[h]){e=!1;break a}}e=!0}f=!e}if(f)return null;e=b?Ka(b):window;switch(a){case "focus":if(Qb(e)||"true"===e.contentEditable)Xd=e,Yd=b,Zd=null;break;case "blur":Zd=Yd=Xd=null;break;case "mousedown":$d=!0;break;case "contextmenu":case "mouseup":case "dragend":return $d=!1,ae(c,d);case "selectionchange":if(Vd)break;
-case "keydown":case "keyup":return ae(c,d)}return null}};Ca.injectEventPluginOrder("ResponderEventPlugin SimpleEventPlugin EnterLeaveEventPlugin ChangeEventPlugin SelectEventPlugin BeforeInputEventPlugin".split(" "));ua=La;va=Ja;wa=Ka;Ca.injectEventPluginsByName({SimpleEventPlugin:Dd,EnterLeaveEventPlugin:gd,ChangeEventPlugin:Vc,SelectEventPlugin:be,BeforeInputEventPlugin:Bb});function de(a){var b="";aa.Children.forEach(a,function(a){null!=a&&(b+=a)});return b}
-function ee(a,b){a=n({children:void 0},b);if(b=de(b.children))a.children=b;return a}function fe(a,b,c,d){a=a.options;if(b){b={};for(var e=0;e<c.length;e++)b["$"+c[e]]=!0;for(c=0;c<a.length;c++)e=b.hasOwnProperty("$"+a[c].value),a[c].selected!==e&&(a[c].selected=e),e&&d&&(a[c].defaultSelected=!0)}else{c=""+zc(c);b=null;for(e=0;e<a.length;e++){if(a[e].value===c){a[e].selected=!0;d&&(a[e].defaultSelected=!0);return}null!==b||a[e].disabled||(b=a[e])}null!==b&&(b.selected=!0)}}
-function ge(a,b){null!=b.dangerouslySetInnerHTML?t("91"):void 0;return n({},b,{value:void 0,defaultValue:void 0,children:""+a._wrapperState.initialValue})}function he(a,b){var c=b.value;null==c&&(c=b.defaultValue,b=b.children,null!=b&&(null!=c?t("92"):void 0,Array.isArray(b)&&(1>=b.length?void 0:t("93"),b=b[0]),c=b),null==c&&(c=""));a._wrapperState={initialValue:zc(c)}}
-function ie(a,b){var c=zc(b.value),d=zc(b.defaultValue);null!=c&&(c=""+c,c!==a.value&&(a.value=c),null==b.defaultValue&&a.defaultValue!==c&&(a.defaultValue=c));null!=d&&(a.defaultValue=""+d)}function je(a){var b=a.textContent;b===a._wrapperState.initialValue&&(a.value=b)}var ke={html:"http://www.w3.org/1999/xhtml",mathml:"http://www.w3.org/1998/Math/MathML",svg:"http://www.w3.org/2000/svg"};
-function le(a){switch(a){case "svg":return"http://www.w3.org/2000/svg";case "math":return"http://www.w3.org/1998/Math/MathML";default:return"http://www.w3.org/1999/xhtml"}}function me(a,b){return null==a||"http://www.w3.org/1999/xhtml"===a?le(b):"http://www.w3.org/2000/svg"===a&&"foreignObject"===b?"http://www.w3.org/1999/xhtml":a}
-var ne=void 0,oe=function(a){return"undefined"!==typeof MSApp&&MSApp.execUnsafeLocalFunction?function(b,c,d,e){MSApp.execUnsafeLocalFunction(function(){return a(b,c,d,e)})}:a}(function(a,b){if(a.namespaceURI!==ke.svg||"innerHTML"in a)a.innerHTML=b;else{ne=ne||document.createElement("div");ne.innerHTML="<svg>"+b+"</svg>";for(b=ne.firstChild;a.firstChild;)a.removeChild(a.firstChild);for(;b.firstChild;)a.appendChild(b.firstChild)}});
-function pe(a,b){if(b){var c=a.firstChild;if(c&&c===a.lastChild&&3===c.nodeType){c.nodeValue=b;return}}a.textContent=b}
-var qe={animationIterationCount:!0,borderImageOutset:!0,borderImageSlice:!0,borderImageWidth:!0,boxFlex:!0,boxFlexGroup:!0,boxOrdinalGroup:!0,columnCount:!0,columns:!0,flex:!0,flexGrow:!0,flexPositive:!0,flexShrink:!0,flexNegative:!0,flexOrder:!0,gridArea:!0,gridRow:!0,gridRowEnd:!0,gridRowSpan:!0,gridRowStart:!0,gridColumn:!0,gridColumnEnd:!0,gridColumnSpan:!0,gridColumnStart:!0,fontWeight:!0,lineClamp:!0,lineHeight:!0,opacity:!0,order:!0,orphans:!0,tabSize:!0,widows:!0,zIndex:!0,zoom:!0,fillOpacity:!0,
-floodOpacity:!0,stopOpacity:!0,strokeDasharray:!0,strokeDashoffset:!0,strokeMiterlimit:!0,strokeOpacity:!0,strokeWidth:!0},re=["Webkit","ms","Moz","O"];Object.keys(qe).forEach(function(a){re.forEach(function(b){b=b+a.charAt(0).toUpperCase()+a.substring(1);qe[b]=qe[a]})});function se(a,b,c){return null==b||"boolean"===typeof b||""===b?"":c||"number"!==typeof b||0===b||qe.hasOwnProperty(a)&&qe[a]?(""+b).trim():b+"px"}
-function te(a,b){a=a.style;for(var c in b)if(b.hasOwnProperty(c)){var d=0===c.indexOf("--"),e=se(c,b[c],d);"float"===c&&(c="cssFloat");d?a.setProperty(c,e):a[c]=e}}var ue=n({menuitem:!0},{area:!0,base:!0,br:!0,col:!0,embed:!0,hr:!0,img:!0,input:!0,keygen:!0,link:!0,meta:!0,param:!0,source:!0,track:!0,wbr:!0});
-function ve(a,b){b&&(ue[a]&&(null!=b.children||null!=b.dangerouslySetInnerHTML?t("137",a,""):void 0),null!=b.dangerouslySetInnerHTML&&(null!=b.children?t("60"):void 0,"object"===typeof b.dangerouslySetInnerHTML&&"__html"in b.dangerouslySetInnerHTML?void 0:t("61")),null!=b.style&&"object"!==typeof b.style?t("62",""):void 0)}
-function we(a,b){if(-1===a.indexOf("-"))return"string"===typeof b.is;switch(a){case "annotation-xml":case "color-profile":case "font-face":case "font-face-src":case "font-face-uri":case "font-face-format":case "font-face-name":case "missing-glyph":return!1;default:return!0}}
-function xe(a,b){a=9===a.nodeType||11===a.nodeType?a:a.ownerDocument;var c=Od(a);b=ta[b];for(var d=0;d<b.length;d++){var e=b[d];if(!c.hasOwnProperty(e)||!c[e]){switch(e){case "scroll":Kd("scroll",a);break;case "focus":case "blur":Kd("focus",a);Kd("blur",a);c.blur=!0;c.focus=!0;break;case "cancel":case "close":Sb(e)&&Kd(e,a);break;case "invalid":case "submit":case "reset":break;default:-1===bb.indexOf(e)&&G(e,a)}c[e]=!0}}}function ye(){}var ze=null,Ae=null;
-function Be(a,b){switch(a){case "button":case "input":case "select":case "textarea":return!!b.autoFocus}return!1}function Ce(a,b){return"textarea"===a||"option"===a||"noscript"===a||"string"===typeof b.children||"number"===typeof b.children||"object"===typeof b.dangerouslySetInnerHTML&&null!==b.dangerouslySetInnerHTML&&null!=b.dangerouslySetInnerHTML.__html}var De="function"===typeof setTimeout?setTimeout:void 0,Ee="function"===typeof clearTimeout?clearTimeout:void 0;
-function Fe(a){for(a=a.nextSibling;a&&1!==a.nodeType&&3!==a.nodeType;)a=a.nextSibling;return a}function Ge(a){for(a=a.firstChild;a&&1!==a.nodeType&&3!==a.nodeType;)a=a.nextSibling;return a}new Set;var He=[],Ie=-1;function H(a){0>Ie||(a.current=He[Ie],He[Ie]=null,Ie--)}function I(a,b){Ie++;He[Ie]=a.current;a.current=b}var Je={},J={current:Je},K={current:!1},Ke=Je;
-function Le(a,b){var c=a.type.contextTypes;if(!c)return Je;var d=a.stateNode;if(d&&d.__reactInternalMemoizedUnmaskedChildContext===b)return d.__reactInternalMemoizedMaskedChildContext;var e={},f;for(f in c)e[f]=b[f];d&&(a=a.stateNode,a.__reactInternalMemoizedUnmaskedChildContext=b,a.__reactInternalMemoizedMaskedChildContext=e);return e}function L(a){a=a.childContextTypes;return null!==a&&void 0!==a}function Me(a){H(K,a);H(J,a)}function Ne(a){H(K,a);H(J,a)}
-function Oe(a,b,c){J.current!==Je?t("168"):void 0;I(J,b,a);I(K,c,a)}function Pe(a,b,c){var d=a.stateNode;a=b.childContextTypes;if("function"!==typeof d.getChildContext)return c;d=d.getChildContext();for(var e in d)e in a?void 0:t("108",mc(b)||"Unknown",e);return n({},c,d)}function Qe(a){var b=a.stateNode;b=b&&b.__reactInternalMemoizedMergedChildContext||Je;Ke=J.current;I(J,b,a);I(K,K.current,a);return!0}
-function Re(a,b,c){var d=a.stateNode;d?void 0:t("169");c?(b=Pe(a,b,Ke),d.__reactInternalMemoizedMergedChildContext=b,H(K,a),H(J,a),I(J,b,a)):H(K,a);I(K,c,a)}var Se=null,Te=null;function Ue(a){return function(b){try{return a(b)}catch(c){}}}
-function Ve(a){if("undefined"===typeof __REACT_DEVTOOLS_GLOBAL_HOOK__)return!1;var b=__REACT_DEVTOOLS_GLOBAL_HOOK__;if(b.isDisabled||!b.supportsFiber)return!0;try{var c=b.inject(a);Se=Ue(function(a){return b.onCommitFiberRoot(c,a)});Te=Ue(function(a){return b.onCommitFiberUnmount(c,a)})}catch(d){}return!0}
-function We(a,b,c,d){this.tag=a;this.key=c;this.sibling=this.child=this.return=this.stateNode=this.type=this.elementType=null;this.index=0;this.ref=null;this.pendingProps=b;this.firstContextDependency=this.memoizedState=this.updateQueue=this.memoizedProps=null;this.mode=d;this.effectTag=0;this.lastEffect=this.firstEffect=this.nextEffect=null;this.childExpirationTime=this.expirationTime=0;this.alternate=null}function M(a,b,c,d){return new We(a,b,c,d)}
-function Xe(a){a=a.prototype;return!(!a||!a.isReactComponent)}function Ye(a){if("function"===typeof a)return Xe(a)?1:0;if(void 0!==a&&null!==a){a=a.$$typeof;if(a===gc)return 11;if(a===ic)return 14}return 2}
-function Ze(a,b){var c=a.alternate;null===c?(c=M(a.tag,b,a.key,a.mode),c.elementType=a.elementType,c.type=a.type,c.stateNode=a.stateNode,c.alternate=a,a.alternate=c):(c.pendingProps=b,c.effectTag=0,c.nextEffect=null,c.firstEffect=null,c.lastEffect=null);c.childExpirationTime=a.childExpirationTime;c.expirationTime=a.expirationTime;c.child=a.child;c.memoizedProps=a.memoizedProps;c.memoizedState=a.memoizedState;c.updateQueue=a.updateQueue;c.firstContextDependency=a.firstContextDependency;c.sibling=a.sibling;
+["pointerdown","pointerDown"],["pointerup","pointerUp"],["ratechange","rateChange"],["reset","reset"],["seeked","seeked"],["submit","submit"],["touchcancel","touchCancel"],["touchend","touchEnd"],["touchstart","touchStart"],["volumechange","volumeChange"]].forEach(function(a){wd(a,!0)});td.forEach(function(a){wd(a,!1)});
+var xd={eventTypes:ud,isInteractiveTopLevelEventType:function(a){a=vd[a];return void 0!==a&&!0===a.isInteractive},extractEvents:function(a,b,c,d){var e=vd[a];if(!e)return null;switch(a){case "keypress":if(0===ld(c))return null;case "keydown":case "keyup":a=od;break;case "blur":case "focus":a=kd;break;case "click":if(2===c.button)return null;case "auxclick":case "dblclick":case "mousedown":case "mousemove":case "mouseup":case "mouseout":case "mouseover":case "contextmenu":a=Yc;break;case "drag":case "dragend":case "dragenter":case "dragexit":case "dragleave":case "dragover":case "dragstart":case "drop":a=
+pd;break;case "touchcancel":case "touchend":case "touchmove":case "touchstart":a=qd;break;case Xa:case Ya:case Za:a=id;break;case $a:a=rd;break;case "scroll":a=Qc;break;case "wheel":a=sd;break;case "copy":case "cut":case "paste":a=jd;break;case "gotpointercapture":case "lostpointercapture":case "pointercancel":case "pointerdown":case "pointermove":case "pointerout":case "pointerover":case "pointerup":a=Zc;break;default:a=y}b=a.getPooled(e,b,c,d);Qa(b);return b}},yd=xd.isInteractiveTopLevelEventType,
+zd=[];function Ad(a){var b=a.targetInst,c=b;do{if(!c){a.ancestors.push(c);break}var d;for(d=c;d.return;)d=d.return;d=3!==d.tag?null:d.stateNode.containerInfo;if(!d)break;a.ancestors.push(c);c=Ha(d)}while(c);for(c=0;c<a.ancestors.length;c++){b=a.ancestors[c];var e=Nb(a.nativeEvent);d=a.topLevelType;for(var f=a.nativeEvent,g=null,h=0;h<oa.length;h++){var l=oa[h];l&&(l=l.extractEvents(d,b,f,e))&&(g=xa(g,l))}Da(g)}}var Bd=!0;
+function E(a,b){if(!b)return null;var c=(yd(a)?Cd:Dd).bind(null,a);b.addEventListener(a,c,!1)}function Ed(a,b){if(!b)return null;var c=(yd(a)?Cd:Dd).bind(null,a);b.addEventListener(a,c,!0)}function Cd(a,b){Hb(Dd,a,b)}
+function Dd(a,b){if(Bd){var c=Nb(b);c=Ha(c);null===c||"number"!==typeof c.tag||2===ed(c)||(c=null);if(zd.length){var d=zd.pop();d.topLevelType=a;d.nativeEvent=b;d.targetInst=c;a=d}else a={topLevelType:a,nativeEvent:b,targetInst:c,ancestors:[]};try{Kb(Ad,a)}finally{a.topLevelType=null,a.nativeEvent=null,a.targetInst=null,a.ancestors.length=0,10>zd.length&&zd.push(a)}}}var Fd={},Gd=0,Hd="_reactListenersID"+(""+Math.random()).slice(2);
+function Id(a){Object.prototype.hasOwnProperty.call(a,Hd)||(a[Hd]=Gd++,Fd[a[Hd]]={});return Fd[a[Hd]]}function Jd(a){a=a||("undefined"!==typeof document?document:void 0);if("undefined"===typeof a)return null;try{return a.activeElement||a.body}catch(b){return a.body}}function Kd(a){for(;a&&a.firstChild;)a=a.firstChild;return a}
+function Ld(a,b){var c=Kd(a);a=0;for(var d;c;){if(3===c.nodeType){d=a+c.textContent.length;if(a<=b&&d>=b)return{node:c,offset:b-a};a=d}a:{for(;c;){if(c.nextSibling){c=c.nextSibling;break a}c=c.parentNode}c=void 0}c=Kd(c)}}function Md(a,b){return a&&b?a===b?!0:a&&3===a.nodeType?!1:b&&3===b.nodeType?Md(a,b.parentNode):"contains"in a?a.contains(b):a.compareDocumentPosition?!!(a.compareDocumentPosition(b)&16):!1:!1}
+function Nd(){for(var a=window,b=Jd();b instanceof a.HTMLIFrameElement;){try{var c="string"===typeof b.contentWindow.location.href}catch(d){c=!1}if(c)a=b.contentWindow;else break;b=Jd(a.document)}return b}function Od(a){var b=a&&a.nodeName&&a.nodeName.toLowerCase();return b&&("input"===b&&("text"===a.type||"search"===a.type||"tel"===a.type||"url"===a.type||"password"===a.type)||"textarea"===b||"true"===a.contentEditable)}
+function Pd(){var a=Nd();if(Od(a)){if("selectionStart"in a)var b={start:a.selectionStart,end:a.selectionEnd};else a:{b=(b=a.ownerDocument)&&b.defaultView||window;var c=b.getSelection&&b.getSelection();if(c&&0!==c.rangeCount){b=c.anchorNode;var d=c.anchorOffset,e=c.focusNode;c=c.focusOffset;try{b.nodeType,e.nodeType}catch(A){b=null;break a}var f=0,g=-1,h=-1,l=0,k=0,m=a,p=null;b:for(;;){for(var t;;){m!==b||0!==d&&3!==m.nodeType||(g=f+d);m!==e||0!==c&&3!==m.nodeType||(h=f+c);3===m.nodeType&&(f+=m.nodeValue.length);
+if(null===(t=m.firstChild))break;p=m;m=t}for(;;){if(m===a)break b;p===b&&++l===d&&(g=f);p===e&&++k===c&&(h=f);if(null!==(t=m.nextSibling))break;m=p;p=m.parentNode}m=t}b=-1===g||-1===h?null:{start:g,end:h}}else b=null}b=b||{start:0,end:0}}else b=null;return{focusedElem:a,selectionRange:b}}
+function Qd(a){var b=Nd(),c=a.focusedElem,d=a.selectionRange;if(b!==c&&c&&c.ownerDocument&&Md(c.ownerDocument.documentElement,c)){if(null!==d&&Od(c))if(b=d.start,a=d.end,void 0===a&&(a=b),"selectionStart"in c)c.selectionStart=b,c.selectionEnd=Math.min(a,c.value.length);else if(a=(b=c.ownerDocument||document)&&b.defaultView||window,a.getSelection){a=a.getSelection();var e=c.textContent.length,f=Math.min(d.start,e);d=void 0===d.end?f:Math.min(d.end,e);!a.extend&&f>d&&(e=d,d=f,f=e);e=Ld(c,f);var g=Ld(c,
+d);e&&g&&(1!==a.rangeCount||a.anchorNode!==e.node||a.anchorOffset!==e.offset||a.focusNode!==g.node||a.focusOffset!==g.offset)&&(b=b.createRange(),b.setStart(e.node,e.offset),a.removeAllRanges(),f>d?(a.addRange(b),a.extend(g.node,g.offset)):(b.setEnd(g.node,g.offset),a.addRange(b)))}b=[];for(a=c;a=a.parentNode;)1===a.nodeType&&b.push({element:a,left:a.scrollLeft,top:a.scrollTop});"function"===typeof c.focus&&c.focus();for(c=0;c<b.length;c++)a=b[c],a.element.scrollLeft=a.left,a.element.scrollTop=a.top}}
+var Rd=Ra&&"documentMode"in document&&11>=document.documentMode,Sd={select:{phasedRegistrationNames:{bubbled:"onSelect",captured:"onSelectCapture"},dependencies:"blur contextmenu dragend focus keydown keyup mousedown mouseup selectionchange".split(" ")}},Td=null,Ud=null,Vd=null,Wd=!1;
+function Xd(a,b){var c=b.window===b?b.document:9===b.nodeType?b:b.ownerDocument;if(Wd||null==Td||Td!==Jd(c))return null;c=Td;"selectionStart"in c&&Od(c)?c={start:c.selectionStart,end:c.selectionEnd}:(c=(c.ownerDocument&&c.ownerDocument.defaultView||window).getSelection(),c={anchorNode:c.anchorNode,anchorOffset:c.anchorOffset,focusNode:c.focusNode,focusOffset:c.focusOffset});return Vd&&dd(Vd,c)?null:(Vd=c,a=y.getPooled(Sd.select,Ud,a,b),a.type="select",a.target=Td,Qa(a),a)}
+var Yd={eventTypes:Sd,extractEvents:function(a,b,c,d){var e=d.window===d?d.document:9===d.nodeType?d:d.ownerDocument,f;if(!(f=!e)){a:{e=Id(e);f=sa.onSelect;for(var g=0;g<f.length;g++){var h=f[g];if(!e.hasOwnProperty(h)||!e[h]){e=!1;break a}}e=!0}f=!e}if(f)return null;e=b?Ja(b):window;switch(a){case "focus":if(Mb(e)||"true"===e.contentEditable)Td=e,Ud=b,Vd=null;break;case "blur":Vd=Ud=Td=null;break;case "mousedown":Wd=!0;break;case "contextmenu":case "mouseup":case "dragend":return Wd=!1,Xd(c,d);case "selectionchange":if(Rd)break;
+case "keydown":case "keyup":return Xd(c,d)}return null}};Ba.injectEventPluginOrder("ResponderEventPlugin SimpleEventPlugin EnterLeaveEventPlugin ChangeEventPlugin SelectEventPlugin BeforeInputEventPlugin".split(" "));ta=Ka;ua=Ia;va=Ja;Ba.injectEventPluginsByName({SimpleEventPlugin:xd,EnterLeaveEventPlugin:ad,ChangeEventPlugin:Pc,SelectEventPlugin:Yd,BeforeInputEventPlugin:zb});function Zd(a){var b="";aa.Children.forEach(a,function(a){null!=a&&(b+=a)});return b}
+function $d(a,b){a=n({children:void 0},b);if(b=Zd(b.children))a.children=b;return a}function ae(a,b,c,d){a=a.options;if(b){b={};for(var e=0;e<c.length;e++)b["$"+c[e]]=!0;for(c=0;c<a.length;c++)e=b.hasOwnProperty("$"+a[c].value),a[c].selected!==e&&(a[c].selected=e),e&&d&&(a[c].defaultSelected=!0)}else{c=""+uc(c);b=null;for(e=0;e<a.length;e++){if(a[e].value===c){a[e].selected=!0;d&&(a[e].defaultSelected=!0);return}null!==b||a[e].disabled||(b=a[e])}null!==b&&(b.selected=!0)}}
+function be(a,b){null!=b.dangerouslySetInnerHTML?x("91"):void 0;return n({},b,{value:void 0,defaultValue:void 0,children:""+a._wrapperState.initialValue})}function ce(a,b){var c=b.value;null==c&&(c=b.defaultValue,b=b.children,null!=b&&(null!=c?x("92"):void 0,Array.isArray(b)&&(1>=b.length?void 0:x("93"),b=b[0]),c=b),null==c&&(c=""));a._wrapperState={initialValue:uc(c)}}
+function de(a,b){var c=uc(b.value),d=uc(b.defaultValue);null!=c&&(c=""+c,c!==a.value&&(a.value=c),null==b.defaultValue&&a.defaultValue!==c&&(a.defaultValue=c));null!=d&&(a.defaultValue=""+d)}function ee(a){var b=a.textContent;b===a._wrapperState.initialValue&&(a.value=b)}var fe={html:"http://www.w3.org/1999/xhtml",mathml:"http://www.w3.org/1998/Math/MathML",svg:"http://www.w3.org/2000/svg"};
+function ge(a){switch(a){case "svg":return"http://www.w3.org/2000/svg";case "math":return"http://www.w3.org/1998/Math/MathML";default:return"http://www.w3.org/1999/xhtml"}}function he(a,b){return null==a||"http://www.w3.org/1999/xhtml"===a?ge(b):"http://www.w3.org/2000/svg"===a&&"foreignObject"===b?"http://www.w3.org/1999/xhtml":a}
+var ie=void 0,je=function(a){return"undefined"!==typeof MSApp&&MSApp.execUnsafeLocalFunction?function(b,c,d,e){MSApp.execUnsafeLocalFunction(function(){return a(b,c,d,e)})}:a}(function(a,b){if(a.namespaceURI!==fe.svg||"innerHTML"in a)a.innerHTML=b;else{ie=ie||document.createElement("div");ie.innerHTML="<svg>"+b+"</svg>";for(b=ie.firstChild;a.firstChild;)a.removeChild(a.firstChild);for(;b.firstChild;)a.appendChild(b.firstChild)}});
+function ke(a,b){if(b){var c=a.firstChild;if(c&&c===a.lastChild&&3===c.nodeType){c.nodeValue=b;return}}a.textContent=b}
+var le={animationIterationCount:!0,borderImageOutset:!0,borderImageSlice:!0,borderImageWidth:!0,boxFlex:!0,boxFlexGroup:!0,boxOrdinalGroup:!0,columnCount:!0,columns:!0,flex:!0,flexGrow:!0,flexPositive:!0,flexShrink:!0,flexNegative:!0,flexOrder:!0,gridArea:!0,gridRow:!0,gridRowEnd:!0,gridRowSpan:!0,gridRowStart:!0,gridColumn:!0,gridColumnEnd:!0,gridColumnSpan:!0,gridColumnStart:!0,fontWeight:!0,lineClamp:!0,lineHeight:!0,opacity:!0,order:!0,orphans:!0,tabSize:!0,widows:!0,zIndex:!0,zoom:!0,fillOpacity:!0,
+floodOpacity:!0,stopOpacity:!0,strokeDasharray:!0,strokeDashoffset:!0,strokeMiterlimit:!0,strokeOpacity:!0,strokeWidth:!0},me=["Webkit","ms","Moz","O"];Object.keys(le).forEach(function(a){me.forEach(function(b){b=b+a.charAt(0).toUpperCase()+a.substring(1);le[b]=le[a]})});function ne(a,b,c){return null==b||"boolean"===typeof b||""===b?"":c||"number"!==typeof b||0===b||le.hasOwnProperty(a)&&le[a]?(""+b).trim():b+"px"}
+function oe(a,b){a=a.style;for(var c in b)if(b.hasOwnProperty(c)){var d=0===c.indexOf("--"),e=ne(c,b[c],d);"float"===c&&(c="cssFloat");d?a.setProperty(c,e):a[c]=e}}var pe=n({menuitem:!0},{area:!0,base:!0,br:!0,col:!0,embed:!0,hr:!0,img:!0,input:!0,keygen:!0,link:!0,meta:!0,param:!0,source:!0,track:!0,wbr:!0});
+function qe(a,b){b&&(pe[a]&&(null!=b.children||null!=b.dangerouslySetInnerHTML?x("137",a,""):void 0),null!=b.dangerouslySetInnerHTML&&(null!=b.children?x("60"):void 0,"object"===typeof b.dangerouslySetInnerHTML&&"__html"in b.dangerouslySetInnerHTML?void 0:x("61")),null!=b.style&&"object"!==typeof b.style?x("62",""):void 0)}
+function re(a,b){if(-1===a.indexOf("-"))return"string"===typeof b.is;switch(a){case "annotation-xml":case "color-profile":case "font-face":case "font-face-src":case "font-face-uri":case "font-face-format":case "font-face-name":case "missing-glyph":return!1;default:return!0}}
+function se(a,b){a=9===a.nodeType||11===a.nodeType?a:a.ownerDocument;var c=Id(a);b=sa[b];for(var d=0;d<b.length;d++){var e=b[d];if(!c.hasOwnProperty(e)||!c[e]){switch(e){case "scroll":Ed("scroll",a);break;case "focus":case "blur":Ed("focus",a);Ed("blur",a);c.blur=!0;c.focus=!0;break;case "cancel":case "close":Ob(e)&&Ed(e,a);break;case "invalid":case "submit":case "reset":break;default:-1===ab.indexOf(e)&&E(e,a)}c[e]=!0}}}function te(){}var ue=null,ve=null;
+function we(a,b){switch(a){case "button":case "input":case "select":case "textarea":return!!b.autoFocus}return!1}function xe(a,b){return"textarea"===a||"option"===a||"noscript"===a||"string"===typeof b.children||"number"===typeof b.children||"object"===typeof b.dangerouslySetInnerHTML&&null!==b.dangerouslySetInnerHTML&&null!=b.dangerouslySetInnerHTML.__html}
+var ye="function"===typeof setTimeout?setTimeout:void 0,ze="function"===typeof clearTimeout?clearTimeout:void 0,Ae=r.unstable_scheduleCallback,Be=r.unstable_cancelCallback;
+function Ce(a,b,c,d,e){a[Ga]=e;"input"===c&&"radio"===e.type&&null!=e.name&&xc(a,e);re(c,d);d=re(c,e);for(var f=0;f<b.length;f+=2){var g=b[f],h=b[f+1];"style"===g?oe(a,h):"dangerouslySetInnerHTML"===g?je(a,h):"children"===g?ke(a,h):tc(a,g,h,d)}switch(c){case "input":yc(a,e);break;case "textarea":de(a,e);break;case "select":b=a._wrapperState.wasMultiple,a._wrapperState.wasMultiple=!!e.multiple,c=e.value,null!=c?ae(a,!!e.multiple,c,!1):b!==!!e.multiple&&(null!=e.defaultValue?ae(a,!!e.multiple,e.defaultValue,
+!0):ae(a,!!e.multiple,e.multiple?[]:"",!1))}}function De(a){for(a=a.nextSibling;a&&1!==a.nodeType&&3!==a.nodeType;)a=a.nextSibling;return a}function Ee(a){for(a=a.firstChild;a&&1!==a.nodeType&&3!==a.nodeType;)a=a.nextSibling;return a}new Set;var Fe=[],Ge=-1;function F(a){0>Ge||(a.current=Fe[Ge],Fe[Ge]=null,Ge--)}function G(a,b){Ge++;Fe[Ge]=a.current;a.current=b}var He={},H={current:He},I={current:!1},Ie=He;
+function Je(a,b){var c=a.type.contextTypes;if(!c)return He;var d=a.stateNode;if(d&&d.__reactInternalMemoizedUnmaskedChildContext===b)return d.__reactInternalMemoizedMaskedChildContext;var e={},f;for(f in c)e[f]=b[f];d&&(a=a.stateNode,a.__reactInternalMemoizedUnmaskedChildContext=b,a.__reactInternalMemoizedMaskedChildContext=e);return e}function J(a){a=a.childContextTypes;return null!==a&&void 0!==a}function Ke(a){F(I,a);F(H,a)}function Le(a){F(I,a);F(H,a)}
+function Me(a,b,c){H.current!==He?x("168"):void 0;G(H,b,a);G(I,c,a)}function Ne(a,b,c){var d=a.stateNode;a=b.childContextTypes;if("function"!==typeof d.getChildContext)return c;d=d.getChildContext();for(var e in d)e in a?void 0:x("108",ic(b)||"Unknown",e);return n({},c,d)}function Oe(a){var b=a.stateNode;b=b&&b.__reactInternalMemoizedMergedChildContext||He;Ie=H.current;G(H,b,a);G(I,I.current,a);return!0}
+function Pe(a,b,c){var d=a.stateNode;d?void 0:x("169");c?(b=Ne(a,b,Ie),d.__reactInternalMemoizedMergedChildContext=b,F(I,a),F(H,a),G(H,b,a)):F(I,a);G(I,c,a)}var Qe=null,Re=null;function Se(a){return function(b){try{return a(b)}catch(c){}}}
+function Te(a){if("undefined"===typeof __REACT_DEVTOOLS_GLOBAL_HOOK__)return!1;var b=__REACT_DEVTOOLS_GLOBAL_HOOK__;if(b.isDisabled||!b.supportsFiber)return!0;try{var c=b.inject(a);Qe=Se(function(a){return b.onCommitFiberRoot(c,a)});Re=Se(function(a){return b.onCommitFiberUnmount(c,a)})}catch(d){}return!0}
+function Ue(a,b,c,d){this.tag=a;this.key=c;this.sibling=this.child=this.return=this.stateNode=this.type=this.elementType=null;this.index=0;this.ref=null;this.pendingProps=b;this.contextDependencies=this.memoizedState=this.updateQueue=this.memoizedProps=null;this.mode=d;this.effectTag=0;this.lastEffect=this.firstEffect=this.nextEffect=null;this.childExpirationTime=this.expirationTime=0;this.alternate=null}function K(a,b,c,d){return new Ue(a,b,c,d)}
+function Ve(a){a=a.prototype;return!(!a||!a.isReactComponent)}function We(a){if("function"===typeof a)return Ve(a)?1:0;if(void 0!==a&&null!==a){a=a.$$typeof;if(a===cc)return 11;if(a===ec)return 14}return 2}
+function Xe(a,b){var c=a.alternate;null===c?(c=K(a.tag,b,a.key,a.mode),c.elementType=a.elementType,c.type=a.type,c.stateNode=a.stateNode,c.alternate=a,a.alternate=c):(c.pendingProps=b,c.effectTag=0,c.nextEffect=null,c.firstEffect=null,c.lastEffect=null);c.childExpirationTime=a.childExpirationTime;c.expirationTime=a.expirationTime;c.child=a.child;c.memoizedProps=a.memoizedProps;c.memoizedState=a.memoizedState;c.updateQueue=a.updateQueue;c.contextDependencies=a.contextDependencies;c.sibling=a.sibling;
 c.index=a.index;c.ref=a.ref;return c}
-function $e(a,b,c,d,e,f){var g=2;d=a;if("function"===typeof a)Xe(a)&&(g=1);else if("string"===typeof a)g=5;else a:switch(a){case ac:return af(c.children,e,f,b);case fc:return bf(c,e|3,f,b);case bc:return bf(c,e|2,f,b);case cc:return a=M(12,c,b,e|4),a.elementType=cc,a.type=cc,a.expirationTime=f,a;case hc:return a=M(13,c,b,e),a.elementType=hc,a.type=hc,a.expirationTime=f,a;default:if("object"===typeof a&&null!==a)switch(a.$$typeof){case dc:g=10;break a;case ec:g=9;break a;case gc:g=11;break a;case ic:g=
-14;break a;case jc:g=16;d=null;break a}t("130",null==a?a:typeof a,"")}b=M(g,c,b,e);b.elementType=a;b.type=d;b.expirationTime=f;return b}function af(a,b,c,d){a=M(7,a,d,b);a.expirationTime=c;return a}function bf(a,b,c,d){a=M(8,a,d,b);b=0===(b&1)?bc:fc;a.elementType=b;a.type=b;a.expirationTime=c;return a}function cf(a,b,c){a=M(6,a,null,b);a.expirationTime=c;return a}
-function df(a,b,c){b=M(4,null!==a.children?a.children:[],a.key,b);b.expirationTime=c;b.stateNode={containerInfo:a.containerInfo,pendingChildren:null,implementation:a.implementation};return b}function ef(a,b){a.didError=!1;var c=a.earliestPendingTime;0===c?a.earliestPendingTime=a.latestPendingTime=b:c<b?a.earliestPendingTime=b:a.latestPendingTime>b&&(a.latestPendingTime=b);ff(b,a)}
-function gf(a,b){a.didError=!1;var c=a.latestPingedTime;0!==c&&c>=b&&(a.latestPingedTime=0);c=a.earliestPendingTime;var d=a.latestPendingTime;c===b?a.earliestPendingTime=d===b?a.latestPendingTime=0:d:d===b&&(a.latestPendingTime=c);c=a.earliestSuspendedTime;d=a.latestSuspendedTime;0===c?a.earliestSuspendedTime=a.latestSuspendedTime=b:c<b?a.earliestSuspendedTime=b:d>b&&(a.latestSuspendedTime=b);ff(b,a)}
-function hf(a,b){var c=a.earliestPendingTime;a=a.earliestSuspendedTime;c>b&&(b=c);a>b&&(b=a);return b}function ff(a,b){var c=b.earliestSuspendedTime,d=b.latestSuspendedTime,e=b.earliestPendingTime,f=b.latestPingedTime;e=0!==e?e:f;0===e&&(0===a||d<a)&&(e=d);a=e;0!==a&&c>a&&(a=c);b.nextExpirationTimeToWorkOn=e;b.expirationTime=a}var jf=!1;
-function kf(a){return{baseState:a,firstUpdate:null,lastUpdate:null,firstCapturedUpdate:null,lastCapturedUpdate:null,firstEffect:null,lastEffect:null,firstCapturedEffect:null,lastCapturedEffect:null}}function lf(a){return{baseState:a.baseState,firstUpdate:a.firstUpdate,lastUpdate:a.lastUpdate,firstCapturedUpdate:null,lastCapturedUpdate:null,firstEffect:null,lastEffect:null,firstCapturedEffect:null,lastCapturedEffect:null}}
-function mf(a){return{expirationTime:a,tag:0,payload:null,callback:null,next:null,nextEffect:null}}function nf(a,b){null===a.lastUpdate?a.firstUpdate=a.lastUpdate=b:(a.lastUpdate.next=b,a.lastUpdate=b)}
-function of(a,b){var c=a.alternate;if(null===c){var d=a.updateQueue;var e=null;null===d&&(d=a.updateQueue=kf(a.memoizedState))}else d=a.updateQueue,e=c.updateQueue,null===d?null===e?(d=a.updateQueue=kf(a.memoizedState),e=c.updateQueue=kf(c.memoizedState)):d=a.updateQueue=lf(e):null===e&&(e=c.updateQueue=lf(d));null===e||d===e?nf(d,b):null===d.lastUpdate||null===e.lastUpdate?(nf(d,b),nf(e,b)):(nf(d,b),e.lastUpdate=b)}
-function pf(a,b){var c=a.updateQueue;c=null===c?a.updateQueue=kf(a.memoizedState):qf(a,c);null===c.lastCapturedUpdate?c.firstCapturedUpdate=c.lastCapturedUpdate=b:(c.lastCapturedUpdate.next=b,c.lastCapturedUpdate=b)}function qf(a,b){var c=a.alternate;null!==c&&b===c.updateQueue&&(b=a.updateQueue=lf(b));return b}
-function rf(a,b,c,d,e,f){switch(c.tag){case 1:return a=c.payload,"function"===typeof a?a.call(f,d,e):a;case 3:a.effectTag=a.effectTag&-2049|64;case 0:a=c.payload;e="function"===typeof a?a.call(f,d,e):a;if(null===e||void 0===e)break;return n({},d,e);case 2:jf=!0}return d}
-function sf(a,b,c,d,e){jf=!1;b=qf(a,b);for(var f=b.baseState,g=null,h=0,k=b.firstUpdate,l=f;null!==k;){var m=k.expirationTime;m<e?(null===g&&(g=k,f=l),h<m&&(h=m)):(l=rf(a,b,k,l,c,d),null!==k.callback&&(a.effectTag|=32,k.nextEffect=null,null===b.lastEffect?b.firstEffect=b.lastEffect=k:(b.lastEffect.nextEffect=k,b.lastEffect=k)));k=k.next}m=null;for(k=b.firstCapturedUpdate;null!==k;){var q=k.expirationTime;q<e?(null===m&&(m=k,null===g&&(f=l)),h<q&&(h=q)):(l=rf(a,b,k,l,c,d),null!==k.callback&&(a.effectTag|=
-32,k.nextEffect=null,null===b.lastCapturedEffect?b.firstCapturedEffect=b.lastCapturedEffect=k:(b.lastCapturedEffect.nextEffect=k,b.lastCapturedEffect=k)));k=k.next}null===g&&(b.lastUpdate=null);null===m?b.lastCapturedUpdate=null:a.effectTag|=32;null===g&&null===m&&(f=l);b.baseState=f;b.firstUpdate=g;b.firstCapturedUpdate=m;a.expirationTime=h;a.memoizedState=l}
-function tf(a,b,c){null!==b.firstCapturedUpdate&&(null!==b.lastUpdate&&(b.lastUpdate.next=b.firstCapturedUpdate,b.lastUpdate=b.lastCapturedUpdate),b.firstCapturedUpdate=b.lastCapturedUpdate=null);uf(b.firstEffect,c);b.firstEffect=b.lastEffect=null;uf(b.firstCapturedEffect,c);b.firstCapturedEffect=b.lastCapturedEffect=null}function uf(a,b){for(;null!==a;){var c=a.callback;if(null!==c){a.callback=null;var d=b;"function"!==typeof c?t("191",c):void 0;c.call(d)}a=a.nextEffect}}
-function vf(a,b){return{value:a,source:b,stack:nc(b)}}var wf={current:null},xf=null,yf=null,zf=null;function Af(a,b){var c=a.type._context;I(wf,c._currentValue,a);c._currentValue=b}function Bf(a){var b=wf.current;H(wf,a);a.type._context._currentValue=b}function Cf(a){xf=a;zf=yf=null;a.firstContextDependency=null}
-function Df(a,b){if(zf!==a&&!1!==b&&0!==b){if("number"!==typeof b||1073741823===b)zf=a,b=1073741823;b={context:a,observedBits:b,next:null};null===yf?(null===xf?t("293"):void 0,xf.firstContextDependency=yf=b):yf=yf.next=b}return a._currentValue}var Ef={},N={current:Ef},Ff={current:Ef},Gf={current:Ef};function Hf(a){a===Ef?t("174"):void 0;return a}
-function If(a,b){I(Gf,b,a);I(Ff,a,a);I(N,Ef,a);var c=b.nodeType;switch(c){case 9:case 11:b=(b=b.documentElement)?b.namespaceURI:me(null,"");break;default:c=8===c?b.parentNode:b,b=c.namespaceURI||null,c=c.tagName,b=me(b,c)}H(N,a);I(N,b,a)}function Jf(a){H(N,a);H(Ff,a);H(Gf,a)}function Kf(a){Hf(Gf.current);var b=Hf(N.current);var c=me(b,a.type);b!==c&&(I(Ff,a,a),I(N,c,a))}function Lf(a){Ff.current===a&&(H(N,a),H(Ff,a))}
-function O(a,b){if(a&&a.defaultProps){b=n({},b);a=a.defaultProps;for(var c in a)void 0===b[c]&&(b[c]=a[c])}return b}function Mf(a){var b=a._result;switch(a._status){case 1:return b;case 2:throw b;case 0:throw b;default:throw a._status=0,b=a._ctor,b=b(),b.then(function(b){0===a._status&&(b=b.default,a._status=1,a._result=b)},function(b){0===a._status&&(a._status=2,a._result=b)}),a._result=b,b;}}var Nf=Xb.ReactCurrentOwner,Of=(new aa.Component).refs;
-function Pf(a,b,c,d){b=a.memoizedState;c=c(d,b);c=null===c||void 0===c?b:n({},b,c);a.memoizedState=c;d=a.updateQueue;null!==d&&0===a.expirationTime&&(d.baseState=c)}
-var Uf={isMounted:function(a){return(a=a._reactInternalFiber)?2===kd(a):!1},enqueueSetState:function(a,b,c){a=a._reactInternalFiber;var d=Qf();d=Rf(d,a);var e=mf(d);e.payload=b;void 0!==c&&null!==c&&(e.callback=c);Sf();of(a,e);Tf(a,d)},enqueueReplaceState:function(a,b,c){a=a._reactInternalFiber;var d=Qf();d=Rf(d,a);var e=mf(d);e.tag=1;e.payload=b;void 0!==c&&null!==c&&(e.callback=c);Sf();of(a,e);Tf(a,d)},enqueueForceUpdate:function(a,b){a=a._reactInternalFiber;var c=Qf();c=Rf(c,a);var d=mf(c);d.tag=
-2;void 0!==b&&null!==b&&(d.callback=b);Sf();of(a,d);Tf(a,c)}};function Vf(a,b,c,d,e,f,g){a=a.stateNode;return"function"===typeof a.shouldComponentUpdate?a.shouldComponentUpdate(d,f,g):b.prototype&&b.prototype.isPureReactComponent?!jd(c,d)||!jd(e,f):!0}
-function Wf(a,b,c){var d=!1,e=Je;var f=b.contextType;"object"===typeof f&&null!==f?f=Nf.currentDispatcher.readContext(f):(e=L(b)?Ke:J.current,d=b.contextTypes,f=(d=null!==d&&void 0!==d)?Le(a,e):Je);b=new b(c,f);a.memoizedState=null!==b.state&&void 0!==b.state?b.state:null;b.updater=Uf;a.stateNode=b;b._reactInternalFiber=a;d&&(a=a.stateNode,a.__reactInternalMemoizedUnmaskedChildContext=e,a.__reactInternalMemoizedMaskedChildContext=f);return b}
-function Xf(a,b,c,d){a=b.state;"function"===typeof b.componentWillReceiveProps&&b.componentWillReceiveProps(c,d);"function"===typeof b.UNSAFE_componentWillReceiveProps&&b.UNSAFE_componentWillReceiveProps(c,d);b.state!==a&&Uf.enqueueReplaceState(b,b.state,null)}
-function Yf(a,b,c,d){var e=a.stateNode;e.props=c;e.state=a.memoizedState;e.refs=Of;var f=b.contextType;"object"===typeof f&&null!==f?e.context=Nf.currentDispatcher.readContext(f):(f=L(b)?Ke:J.current,e.context=Le(a,f));f=a.updateQueue;null!==f&&(sf(a,f,c,e,d),e.state=a.memoizedState);f=b.getDerivedStateFromProps;"function"===typeof f&&(Pf(a,b,f,c),e.state=a.memoizedState);"function"===typeof b.getDerivedStateFromProps||"function"===typeof e.getSnapshotBeforeUpdate||"function"!==typeof e.UNSAFE_componentWillMount&&
-"function"!==typeof e.componentWillMount||(b=e.state,"function"===typeof e.componentWillMount&&e.componentWillMount(),"function"===typeof e.UNSAFE_componentWillMount&&e.UNSAFE_componentWillMount(),b!==e.state&&Uf.enqueueReplaceState(e,e.state,null),f=a.updateQueue,null!==f&&(sf(a,f,c,e,d),e.state=a.memoizedState));"function"===typeof e.componentDidMount&&(a.effectTag|=4)}var Zf=Array.isArray;
-function $f(a,b,c){a=c.ref;if(null!==a&&"function"!==typeof a&&"object"!==typeof a){if(c._owner){c=c._owner;var d=void 0;c&&(1!==c.tag?t("289"):void 0,d=c.stateNode);d?void 0:t("147",a);var e=""+a;if(null!==b&&null!==b.ref&&"function"===typeof b.ref&&b.ref._stringRef===e)return b.ref;b=function(a){var b=d.refs;b===Of&&(b=d.refs={});null===a?delete b[e]:b[e]=a};b._stringRef=e;return b}"string"!==typeof a?t("284"):void 0;c._owner?void 0:t("290",a)}return a}
-function ag(a,b){"textarea"!==a.type&&t("31","[object Object]"===Object.prototype.toString.call(b)?"object with keys {"+Object.keys(b).join(", ")+"}":b,"")}
-function bg(a){function b(b,c){if(a){var d=b.lastEffect;null!==d?(d.nextEffect=c,b.lastEffect=c):b.firstEffect=b.lastEffect=c;c.nextEffect=null;c.effectTag=8}}function c(c,d){if(!a)return null;for(;null!==d;)b(c,d),d=d.sibling;return null}function d(a,b){for(a=new Map;null!==b;)null!==b.key?a.set(b.key,b):a.set(b.index,b),b=b.sibling;return a}function e(a,b,c){a=Ze(a,b,c);a.index=0;a.sibling=null;return a}function f(b,c,d){b.index=d;if(!a)return c;d=b.alternate;if(null!==d)return d=d.index,d<c?(b.effectTag=
-2,c):d;b.effectTag=2;return c}function g(b){a&&null===b.alternate&&(b.effectTag=2);return b}function h(a,b,c,d){if(null===b||6!==b.tag)return b=cf(c,a.mode,d),b.return=a,b;b=e(b,c,d);b.return=a;return b}function k(a,b,c,d){if(null!==b&&b.elementType===c.type)return d=e(b,c.props,d),d.ref=$f(a,b,c),d.return=a,d;d=$e(c.type,c.key,c.props,null,a.mode,d);d.ref=$f(a,b,c);d.return=a;return d}function l(a,b,c,d){if(null===b||4!==b.tag||b.stateNode.containerInfo!==c.containerInfo||b.stateNode.implementation!==
-c.implementation)return b=df(c,a.mode,d),b.return=a,b;b=e(b,c.children||[],d);b.return=a;return b}function m(a,b,c,d,g){if(null===b||7!==b.tag)return b=af(c,a.mode,d,g),b.return=a,b;b=e(b,c,d);b.return=a;return b}function q(a,b,c){if("string"===typeof b||"number"===typeof b)return b=cf(""+b,a.mode,c),b.return=a,b;if("object"===typeof b&&null!==b){switch(b.$$typeof){case Zb:return c=$e(b.type,b.key,b.props,null,a.mode,c),c.ref=$f(a,null,b),c.return=a,c;case $b:return b=df(b,a.mode,c),b.return=a,b}if(Zf(b)||
-lc(b))return b=af(b,a.mode,c,null),b.return=a,b;ag(a,b)}return null}function x(a,b,c,d){var e=null!==b?b.key:null;if("string"===typeof c||"number"===typeof c)return null!==e?null:h(a,b,""+c,d);if("object"===typeof c&&null!==c){switch(c.$$typeof){case Zb:return c.key===e?c.type===ac?m(a,b,c.props.children,d,e):k(a,b,c,d):null;case $b:return c.key===e?l(a,b,c,d):null}if(Zf(c)||lc(c))return null!==e?null:m(a,b,c,d,null);ag(a,c)}return null}function z(a,b,c,d,e){if("string"===typeof d||"number"===typeof d)return a=
-a.get(c)||null,h(b,a,""+d,e);if("object"===typeof d&&null!==d){switch(d.$$typeof){case Zb:return a=a.get(null===d.key?c:d.key)||null,d.type===ac?m(b,a,d.props.children,e,d.key):k(b,a,d,e);case $b:return a=a.get(null===d.key?c:d.key)||null,l(b,a,d,e)}if(Zf(d)||lc(d))return a=a.get(c)||null,m(b,a,d,e,null);ag(b,d)}return null}function B(e,g,h,k){for(var l=null,r=null,m=g,u=g=0,p=null;null!==m&&u<h.length;u++){m.index>u?(p=m,m=null):p=m.sibling;var v=x(e,m,h[u],k);if(null===v){null===m&&(m=p);break}a&&
-m&&null===v.alternate&&b(e,m);g=f(v,g,u);null===r?l=v:r.sibling=v;r=v;m=p}if(u===h.length)return c(e,m),l;if(null===m){for(;u<h.length;u++)if(m=q(e,h[u],k))g=f(m,g,u),null===r?l=m:r.sibling=m,r=m;return l}for(m=d(e,m);u<h.length;u++)if(p=z(m,e,u,h[u],k))a&&null!==p.alternate&&m.delete(null===p.key?u:p.key),g=f(p,g,u),null===r?l=p:r.sibling=p,r=p;a&&m.forEach(function(a){return b(e,a)});return l}function Q(e,g,h,k){var l=lc(h);"function"!==typeof l?t("150"):void 0;h=l.call(h);null==h?t("151"):void 0;
-for(var m=l=null,r=g,u=g=0,p=null,v=h.next();null!==r&&!v.done;u++,v=h.next()){r.index>u?(p=r,r=null):p=r.sibling;var y=x(e,r,v.value,k);if(null===y){r||(r=p);break}a&&r&&null===y.alternate&&b(e,r);g=f(y,g,u);null===m?l=y:m.sibling=y;m=y;r=p}if(v.done)return c(e,r),l;if(null===r){for(;!v.done;u++,v=h.next())v=q(e,v.value,k),null!==v&&(g=f(v,g,u),null===m?l=v:m.sibling=v,m=v);return l}for(r=d(e,r);!v.done;u++,v=h.next())v=z(r,e,u,v.value,k),null!==v&&(a&&null!==v.alternate&&r.delete(null===v.key?u:
-v.key),g=f(v,g,u),null===m?l=v:m.sibling=v,m=v);a&&r.forEach(function(a){return b(e,a)});return l}return function(a,d,f,h){var k="object"===typeof f&&null!==f&&f.type===ac&&null===f.key;k&&(f=f.props.children);var l="object"===typeof f&&null!==f;if(l)switch(f.$$typeof){case Zb:a:{l=f.key;for(k=d;null!==k;){if(k.key===l)if(7===k.tag?f.type===ac:k.elementType===f.type){c(a,k.sibling);d=e(k,f.type===ac?f.props.children:f.props,h);d.ref=$f(a,k,f);d.return=a;a=d;break a}else{c(a,k);break}else b(a,k);k=
-k.sibling}f.type===ac?(d=af(f.props.children,a.mode,h,f.key),d.return=a,a=d):(h=$e(f.type,f.key,f.props,null,a.mode,h),h.ref=$f(a,d,f),h.return=a,a=h)}return g(a);case $b:a:{for(k=f.key;null!==d;){if(d.key===k)if(4===d.tag&&d.stateNode.containerInfo===f.containerInfo&&d.stateNode.implementation===f.implementation){c(a,d.sibling);d=e(d,f.children||[],h);d.return=a;a=d;break a}else{c(a,d);break}else b(a,d);d=d.sibling}d=df(f,a.mode,h);d.return=a;a=d}return g(a)}if("string"===typeof f||"number"===typeof f)return f=
-""+f,null!==d&&6===d.tag?(c(a,d.sibling),d=e(d,f,h),d.return=a,a=d):(c(a,d),d=cf(f,a.mode,h),d.return=a,a=d),g(a);if(Zf(f))return B(a,d,f,h);if(lc(f))return Q(a,d,f,h);l&&ag(a,f);if("undefined"===typeof f&&!k)switch(a.tag){case 1:case 0:h=a.type,t("152",h.displayName||h.name||"Component")}return c(a,d)}}var cg=bg(!0),dg=bg(!1),eg=null,fg=null,gg=!1;
-function hg(a,b){var c=M(5,null,null,0);c.elementType="DELETED";c.type="DELETED";c.stateNode=b;c.return=a;c.effectTag=8;null!==a.lastEffect?(a.lastEffect.nextEffect=c,a.lastEffect=c):a.firstEffect=a.lastEffect=c}function ig(a,b){switch(a.tag){case 5:var c=a.type;b=1!==b.nodeType||c.toLowerCase()!==b.nodeName.toLowerCase()?null:b;return null!==b?(a.stateNode=b,!0):!1;case 6:return b=""===a.pendingProps||3!==b.nodeType?null:b,null!==b?(a.stateNode=b,!0):!1;default:return!1}}
-function jg(a){if(gg){var b=fg;if(b){var c=b;if(!ig(a,b)){b=Fe(c);if(!b||!ig(a,b)){a.effectTag|=2;gg=!1;eg=a;return}hg(eg,c)}eg=a;fg=Ge(b)}else a.effectTag|=2,gg=!1,eg=a}}function kg(a){for(a=a.return;null!==a&&5!==a.tag&&3!==a.tag;)a=a.return;eg=a}function lg(a){if(a!==eg)return!1;if(!gg)return kg(a),gg=!0,!1;var b=a.type;if(5!==a.tag||"head"!==b&&"body"!==b&&!Ce(b,a.memoizedProps))for(b=fg;b;)hg(a,b),b=Fe(b);kg(a);fg=eg?Fe(a.stateNode):null;return!0}function mg(){fg=eg=null;gg=!1}var ng=Xb.ReactCurrentOwner;
-function P(a,b,c,d){b.child=null===a?dg(b,null,c,d):cg(b,a.child,c,d)}function og(a,b,c,d,e){c=c.render;var f=b.ref;Cf(b,e);d=c(d,f);b.effectTag|=1;P(a,b,d,e);return b.child}
-function pg(a,b,c,d,e,f){if(null===a){var g=c.type;if("function"===typeof g&&!Xe(g)&&void 0===g.defaultProps&&null===c.compare)return b.tag=15,b.type=g,qg(a,b,g,d,e,f);a=$e(c.type,null,d,null,b.mode,f);a.ref=b.ref;a.return=b;return b.child=a}g=a.child;if(e<f&&(e=g.memoizedProps,c=c.compare,c=null!==c?c:jd,c(e,d)&&a.ref===b.ref))return rg(a,b,f);b.effectTag|=1;a=Ze(g,d,f);a.ref=b.ref;a.return=b;return b.child=a}
-function qg(a,b,c,d,e,f){return null!==a&&e<f&&jd(a.memoizedProps,d)&&a.ref===b.ref?rg(a,b,f):sg(a,b,c,d,f)}function tg(a,b){var c=b.ref;if(null===a&&null!==c||null!==a&&a.ref!==c)b.effectTag|=128}function sg(a,b,c,d,e){var f=L(c)?Ke:J.current;f=Le(b,f);Cf(b,e);c=c(d,f);b.effectTag|=1;P(a,b,c,e);return b.child}
-function ug(a,b,c,d,e){if(L(c)){var f=!0;Qe(b)}else f=!1;Cf(b,e);if(null===b.stateNode)null!==a&&(a.alternate=null,b.alternate=null,b.effectTag|=2),Wf(b,c,d,e),Yf(b,c,d,e),d=!0;else if(null===a){var g=b.stateNode,h=b.memoizedProps;g.props=h;var k=g.context,l=c.contextType;"object"===typeof l&&null!==l?l=Nf.currentDispatcher.readContext(l):(l=L(c)?Ke:J.current,l=Le(b,l));var m=c.getDerivedStateFromProps,q="function"===typeof m||"function"===typeof g.getSnapshotBeforeUpdate;q||"function"!==typeof g.UNSAFE_componentWillReceiveProps&&
-"function"!==typeof g.componentWillReceiveProps||(h!==d||k!==l)&&Xf(b,g,d,l);jf=!1;var x=b.memoizedState;k=g.state=x;var z=b.updateQueue;null!==z&&(sf(b,z,d,g,e),k=b.memoizedState);h!==d||x!==k||K.current||jf?("function"===typeof m&&(Pf(b,c,m,d),k=b.memoizedState),(h=jf||Vf(b,c,h,d,x,k,l))?(q||"function"!==typeof g.UNSAFE_componentWillMount&&"function"!==typeof g.componentWillMount||("function"===typeof g.componentWillMount&&g.componentWillMount(),"function"===typeof g.UNSAFE_componentWillMount&&
-g.UNSAFE_componentWillMount()),"function"===typeof g.componentDidMount&&(b.effectTag|=4)):("function"===typeof g.componentDidMount&&(b.effectTag|=4),b.memoizedProps=d,b.memoizedState=k),g.props=d,g.state=k,g.context=l,d=h):("function"===typeof g.componentDidMount&&(b.effectTag|=4),d=!1)}else g=b.stateNode,h=b.memoizedProps,g.props=b.type===b.elementType?h:O(b.type,h),k=g.context,l=c.contextType,"object"===typeof l&&null!==l?l=Nf.currentDispatcher.readContext(l):(l=L(c)?Ke:J.current,l=Le(b,l)),m=c.getDerivedStateFromProps,
-(q="function"===typeof m||"function"===typeof g.getSnapshotBeforeUpdate)||"function"!==typeof g.UNSAFE_componentWillReceiveProps&&"function"!==typeof g.componentWillReceiveProps||(h!==d||k!==l)&&Xf(b,g,d,l),jf=!1,k=b.memoizedState,x=g.state=k,z=b.updateQueue,null!==z&&(sf(b,z,d,g,e),x=b.memoizedState),h!==d||k!==x||K.current||jf?("function"===typeof m&&(Pf(b,c,m,d),x=b.memoizedState),(m=jf||Vf(b,c,h,d,k,x,l))?(q||"function"!==typeof g.UNSAFE_componentWillUpdate&&"function"!==typeof g.componentWillUpdate||
-("function"===typeof g.componentWillUpdate&&g.componentWillUpdate(d,x,l),"function"===typeof g.UNSAFE_componentWillUpdate&&g.UNSAFE_componentWillUpdate(d,x,l)),"function"===typeof g.componentDidUpdate&&(b.effectTag|=4),"function"===typeof g.getSnapshotBeforeUpdate&&(b.effectTag|=256)):("function"!==typeof g.componentDidUpdate||h===a.memoizedProps&&k===a.memoizedState||(b.effectTag|=4),"function"!==typeof g.getSnapshotBeforeUpdate||h===a.memoizedProps&&k===a.memoizedState||(b.effectTag|=256),b.memoizedProps=
-d,b.memoizedState=x),g.props=d,g.state=x,g.context=l,d=m):("function"!==typeof g.componentDidUpdate||h===a.memoizedProps&&k===a.memoizedState||(b.effectTag|=4),"function"!==typeof g.getSnapshotBeforeUpdate||h===a.memoizedProps&&k===a.memoizedState||(b.effectTag|=256),d=!1);return vg(a,b,c,d,f,e)}
-function vg(a,b,c,d,e,f){tg(a,b);var g=0!==(b.effectTag&64);if(!d&&!g)return e&&Re(b,c,!1),rg(a,b,f);d=b.stateNode;ng.current=b;var h=g&&"function"!==typeof c.getDerivedStateFromError?null:d.render();b.effectTag|=1;null!==a&&g?(b.child=cg(b,a.child,null,f),b.child=cg(b,null,h,f)):P(a,b,h,f);b.memoizedState=d.state;e&&Re(b,c,!0);return b.child}function wg(a){var b=a.stateNode;b.pendingContext?Oe(a,b.pendingContext,b.pendingContext!==b.context):b.context&&Oe(a,b.context,!1);If(a,b.containerInfo)}
-function xg(a,b,c){var d=b.mode,e=b.pendingProps,f=b.memoizedState;if(0===(b.effectTag&64)){f=null;var g=!1}else f={timedOutAt:null!==f?f.timedOutAt:0},g=!0,b.effectTag&=-65;null===a?g?(g=e.fallback,e=af(null,d,0,null),0===(b.mode&1)&&(e.child=null!==b.memoizedState?b.child.child:b.child),d=af(g,d,c,null),e.sibling=d,c=e,c.return=d.return=b):c=d=dg(b,null,e.children,c):null!==a.memoizedState?(d=a.child,a=d.sibling,g?(c=e.fallback,e=Ze(d,d.pendingProps,0),0===(b.mode&1)&&(g=null!==b.memoizedState?
-b.child.child:b.child,g!==d.child&&(e.child=g)),d=e.sibling=Ze(a,c,a.expirationTime),c=e,e.childExpirationTime=0,c.return=d.return=b):c=d=cg(b,d.child,e.children,c)):(a=a.child,g?(g=e.fallback,e=af(null,d,0,null),e.child=a,0===(b.mode&1)&&(e.child=null!==b.memoizedState?b.child.child:b.child),d=e.sibling=af(g,d,c,null),d.effectTag|=2,c=e,e.childExpirationTime=0,c.return=d.return=b):d=c=cg(b,a,e.children,c));b.memoizedState=f;b.child=c;return d}
-function rg(a,b,c){null!==a&&(b.firstContextDependency=a.firstContextDependency);if(b.childExpirationTime<c)return null;null!==a&&b.child!==a.child?t("153"):void 0;if(null!==b.child){a=b.child;c=Ze(a,a.pendingProps,a.expirationTime);b.child=c;for(c.return=b;null!==a.sibling;)a=a.sibling,c=c.sibling=Ze(a,a.pendingProps,a.expirationTime),c.return=b;c.sibling=null}return b.child}
-function yg(a,b,c){var d=b.expirationTime;if(null!==a&&a.memoizedProps===b.pendingProps&&!K.current&&d<c){switch(b.tag){case 3:wg(b);mg();break;case 5:Kf(b);break;case 1:L(b.type)&&Qe(b);break;case 4:If(b,b.stateNode.containerInfo);break;case 10:Af(b,b.memoizedProps.value);break;case 13:if(null!==b.memoizedState){d=b.child.childExpirationTime;if(0!==d&&d>=c)return xg(a,b,c);b=rg(a,b,c);return null!==b?b.sibling:null}}return rg(a,b,c)}b.expirationTime=0;switch(b.tag){case 2:d=b.elementType;null!==
-a&&(a.alternate=null,b.alternate=null,b.effectTag|=2);a=b.pendingProps;var e=Le(b,J.current);Cf(b,c);e=d(a,e);b.effectTag|=1;if("object"===typeof e&&null!==e&&"function"===typeof e.render&&void 0===e.$$typeof){b.tag=1;if(L(d)){var f=!0;Qe(b)}else f=!1;b.memoizedState=null!==e.state&&void 0!==e.state?e.state:null;var g=d.getDerivedStateFromProps;"function"===typeof g&&Pf(b,d,g,a);e.updater=Uf;b.stateNode=e;e._reactInternalFiber=b;Yf(b,d,a,c);b=vg(null,b,d,!0,f,c)}else b.tag=0,P(null,b,e,c),b=b.child;
-return b;case 16:e=b.elementType;null!==a&&(a.alternate=null,b.alternate=null,b.effectTag|=2);f=b.pendingProps;a=Mf(e);b.type=a;e=b.tag=Ye(a);f=O(a,f);g=void 0;switch(e){case 0:g=sg(null,b,a,f,c);break;case 1:g=ug(null,b,a,f,c);break;case 11:g=og(null,b,a,f,c);break;case 14:g=pg(null,b,a,O(a.type,f),d,c);break;default:t("283",a)}return g;case 0:return d=b.type,e=b.pendingProps,e=b.elementType===d?e:O(d,e),sg(a,b,d,e,c);case 1:return d=b.type,e=b.pendingProps,e=b.elementType===d?e:O(d,e),ug(a,b,d,
-e,c);case 3:wg(b);d=b.updateQueue;null===d?t("282"):void 0;e=b.memoizedState;e=null!==e?e.element:null;sf(b,d,b.pendingProps,null,c);d=b.memoizedState.element;if(d===e)mg(),b=rg(a,b,c);else{e=b.stateNode;if(e=(null===a||null===a.child)&&e.hydrate)fg=Ge(b.stateNode.containerInfo),eg=b,e=gg=!0;e?(b.effectTag|=2,b.child=dg(b,null,d,c)):(P(a,b,d,c),mg());b=b.child}return b;case 5:return Kf(b),null===a&&jg(b),d=b.type,e=b.pendingProps,f=null!==a?a.memoizedProps:null,g=e.children,Ce(d,e)?g=null:null!==
-f&&Ce(d,f)&&(b.effectTag|=16),tg(a,b),1!==c&&b.mode&1&&e.hidden?(b.expirationTime=1,b=null):(P(a,b,g,c),b=b.child),b;case 6:return null===a&&jg(b),null;case 13:return xg(a,b,c);case 4:return If(b,b.stateNode.containerInfo),d=b.pendingProps,null===a?b.child=cg(b,null,d,c):P(a,b,d,c),b.child;case 11:return d=b.type,e=b.pendingProps,e=b.elementType===d?e:O(d,e),og(a,b,d,e,c);case 7:return P(a,b,b.pendingProps,c),b.child;case 8:return P(a,b,b.pendingProps.children,c),b.child;case 12:return P(a,b,b.pendingProps.children,
-c),b.child;case 10:a:{d=b.type._context;e=b.pendingProps;g=b.memoizedProps;f=e.value;Af(b,f);if(null!==g){var h=g.value;f=h===f&&(0!==h||1/h===1/f)||h!==h&&f!==f?0:("function"===typeof d._calculateChangedBits?d._calculateChangedBits(h,f):1073741823)|0;if(0===f){if(g.children===e.children&&!K.current){b=rg(a,b,c);break a}}else for(g=b.child,null!==g&&(g.return=b);null!==g;){h=g.firstContextDependency;if(null!==h){do{if(h.context===d&&0!==(h.observedBits&f)){if(1===g.tag){var k=mf(c);k.tag=2;of(g,k)}g.expirationTime<
-c&&(g.expirationTime=c);k=g.alternate;null!==k&&k.expirationTime<c&&(k.expirationTime=c);for(var l=g.return;null!==l;){k=l.alternate;if(l.childExpirationTime<c)l.childExpirationTime=c,null!==k&&k.childExpirationTime<c&&(k.childExpirationTime=c);else if(null!==k&&k.childExpirationTime<c)k.childExpirationTime=c;else break;l=l.return}}k=g.child;h=h.next}while(null!==h)}else k=10===g.tag?g.type===b.type?null:g.child:g.child;if(null!==k)k.return=g;else for(k=g;null!==k;){if(k===b){k=null;break}g=k.sibling;
-if(null!==g){g.return=k.return;k=g;break}k=k.return}g=k}}P(a,b,e.children,c);b=b.child}return b;case 9:return e=b.type,f=b.pendingProps,d=f.children,Cf(b,c),e=Df(e,f.unstable_observedBits),d=d(e),b.effectTag|=1,P(a,b,d,c),b.child;case 14:return e=b.type,f=O(e.type,b.pendingProps),pg(a,b,e,f,d,c);case 15:return qg(a,b,b.type,b.pendingProps,d,c);case 17:return d=b.type,e=b.pendingProps,e=b.elementType===d?e:O(d,e),null!==a&&(a.alternate=null,b.alternate=null,b.effectTag|=2),b.tag=1,L(d)?(a=!0,Qe(b)):
-a=!1,Cf(b,c),Wf(b,d,e,c),Yf(b,d,e,c),vg(null,b,d,!0,a,c);default:t("156")}}function zg(a){a.effectTag|=4}var Ag=void 0,Bg=void 0,Fg=void 0,Gg=void 0;Ag=function(a,b){for(var c=b.child;null!==c;){if(5===c.tag||6===c.tag)a.appendChild(c.stateNode);else if(4!==c.tag&&null!==c.child){c.child.return=c;c=c.child;continue}if(c===b)break;for(;null===c.sibling;){if(null===c.return||c.return===b)return;c=c.return}c.sibling.return=c.return;c=c.sibling}};Bg=function(){};
-Fg=function(a,b,c,d,e){var f=a.memoizedProps;if(f!==d){var g=b.stateNode;Hf(N.current);a=null;switch(c){case "input":f=Ac(g,f);d=Ac(g,d);a=[];break;case "option":f=ee(g,f);d=ee(g,d);a=[];break;case "select":f=n({},f,{value:void 0});d=n({},d,{value:void 0});a=[];break;case "textarea":f=ge(g,f);d=ge(g,d);a=[];break;default:"function"!==typeof f.onClick&&"function"===typeof d.onClick&&(g.onclick=ye)}ve(c,d);g=c=void 0;var h=null;for(c in f)if(!d.hasOwnProperty(c)&&f.hasOwnProperty(c)&&null!=f[c])if("style"===
-c){var k=f[c];for(g in k)k.hasOwnProperty(g)&&(h||(h={}),h[g]="")}else"dangerouslySetInnerHTML"!==c&&"children"!==c&&"suppressContentEditableWarning"!==c&&"suppressHydrationWarning"!==c&&"autoFocus"!==c&&(sa.hasOwnProperty(c)?a||(a=[]):(a=a||[]).push(c,null));for(c in d){var l=d[c];k=null!=f?f[c]:void 0;if(d.hasOwnProperty(c)&&l!==k&&(null!=l||null!=k))if("style"===c)if(k){for(g in k)!k.hasOwnProperty(g)||l&&l.hasOwnProperty(g)||(h||(h={}),h[g]="");for(g in l)l.hasOwnProperty(g)&&k[g]!==l[g]&&(h||
-(h={}),h[g]=l[g])}else h||(a||(a=[]),a.push(c,h)),h=l;else"dangerouslySetInnerHTML"===c?(l=l?l.__html:void 0,k=k?k.__html:void 0,null!=l&&k!==l&&(a=a||[]).push(c,""+l)):"children"===c?k===l||"string"!==typeof l&&"number"!==typeof l||(a=a||[]).push(c,""+l):"suppressContentEditableWarning"!==c&&"suppressHydrationWarning"!==c&&(sa.hasOwnProperty(c)?(null!=l&&xe(e,c),a||k===l||(a=[])):(a=a||[]).push(c,l))}h&&(a=a||[]).push("style",h);e=a;(b.updateQueue=e)&&zg(b)}};Gg=function(a,b,c,d){c!==d&&zg(b)};
-function Hg(a,b){var c=b.source,d=b.stack;null===d&&null!==c&&(d=nc(c));null!==c&&mc(c.type);b=b.value;null!==a&&1===a.tag&&mc(a.type);try{console.error(b)}catch(e){setTimeout(function(){throw e;})}}function Ig(a){var b=a.ref;if(null!==b)if("function"===typeof b)try{b(null)}catch(c){Jg(a,c)}else b.current=null}
-function Kg(a){"function"===typeof Te&&Te(a);switch(a.tag){case 0:case 11:case 14:case 15:var b=a.updateQueue;if(null!==b&&(b=b.lastEffect,null!==b)){var c=b=b.next;do{var d=c.destroy;if(null!==d){var e=a;try{d()}catch(f){Jg(e,f)}}c=c.next}while(c!==b)}break;case 1:Ig(a);b=a.stateNode;if("function"===typeof b.componentWillUnmount)try{b.props=a.memoizedProps,b.state=a.memoizedState,b.componentWillUnmount()}catch(f){Jg(a,f)}break;case 5:Ig(a);break;case 4:Lg(a)}}
-function Mg(a){return 5===a.tag||3===a.tag||4===a.tag}
-function Ng(a){a:{for(var b=a.return;null!==b;){if(Mg(b)){var c=b;break a}b=b.return}t("160");c=void 0}var d=b=void 0;switch(c.tag){case 5:b=c.stateNode;d=!1;break;case 3:b=c.stateNode.containerInfo;d=!0;break;case 4:b=c.stateNode.containerInfo;d=!0;break;default:t("161")}c.effectTag&16&&(pe(b,""),c.effectTag&=-17);a:b:for(c=a;;){for(;null===c.sibling;){if(null===c.return||Mg(c.return)){c=null;break a}c=c.return}c.sibling.return=c.return;for(c=c.sibling;5!==c.tag&&6!==c.tag;){if(c.effectTag&2)continue b;
-if(null===c.child||4===c.tag)continue b;else c.child.return=c,c=c.child}if(!(c.effectTag&2)){c=c.stateNode;break a}}for(var e=a;;){if(5===e.tag||6===e.tag)if(c)if(d){var f=b,g=e.stateNode,h=c;8===f.nodeType?f.parentNode.insertBefore(g,h):f.insertBefore(g,h)}else b.insertBefore(e.stateNode,c);else d?(g=b,h=e.stateNode,8===g.nodeType?(f=g.parentNode,f.insertBefore(h,g)):(f=g,f.appendChild(h)),g=g._reactRootContainer,null!==g&&void 0!==g||null!==f.onclick||(f.onclick=ye)):b.appendChild(e.stateNode);
+function Ye(a,b,c,d,e,f){var g=2;d=a;if("function"===typeof a)Ve(a)&&(g=1);else if("string"===typeof a)g=5;else a:switch(a){case Xb:return Ze(c.children,e,f,b);case bc:return $e(c,e|3,f,b);case Yb:return $e(c,e|2,f,b);case Zb:return a=K(12,c,b,e|4),a.elementType=Zb,a.type=Zb,a.expirationTime=f,a;case dc:return a=K(13,c,b,e),a.elementType=dc,a.type=dc,a.expirationTime=f,a;default:if("object"===typeof a&&null!==a)switch(a.$$typeof){case $b:g=10;break a;case ac:g=9;break a;case cc:g=11;break a;case ec:g=
+14;break a;case fc:g=16;d=null;break a}x("130",null==a?a:typeof a,"")}b=K(g,c,b,e);b.elementType=a;b.type=d;b.expirationTime=f;return b}function Ze(a,b,c,d){a=K(7,a,d,b);a.expirationTime=c;return a}function $e(a,b,c,d){a=K(8,a,d,b);b=0===(b&1)?Yb:bc;a.elementType=b;a.type=b;a.expirationTime=c;return a}function af(a,b,c){a=K(6,a,null,b);a.expirationTime=c;return a}
+function bf(a,b,c){b=K(4,null!==a.children?a.children:[],a.key,b);b.expirationTime=c;b.stateNode={containerInfo:a.containerInfo,pendingChildren:null,implementation:a.implementation};return b}function cf(a,b){a.didError=!1;var c=a.earliestPendingTime;0===c?a.earliestPendingTime=a.latestPendingTime=b:c<b?a.earliestPendingTime=b:a.latestPendingTime>b&&(a.latestPendingTime=b);df(b,a)}
+function ef(a,b){a.didError=!1;if(0===b)a.earliestPendingTime=0,a.latestPendingTime=0,a.earliestSuspendedTime=0,a.latestSuspendedTime=0,a.latestPingedTime=0;else{b<a.latestPingedTime&&(a.latestPingedTime=0);var c=a.latestPendingTime;0!==c&&(c>b?a.earliestPendingTime=a.latestPendingTime=0:a.earliestPendingTime>b&&(a.earliestPendingTime=a.latestPendingTime));c=a.earliestSuspendedTime;0===c?cf(a,b):b<a.latestSuspendedTime?(a.earliestSuspendedTime=0,a.latestSuspendedTime=0,a.latestPingedTime=0,cf(a,b)):
+b>c&&cf(a,b)}df(0,a)}function ff(a,b){a.didError=!1;a.latestPingedTime>=b&&(a.latestPingedTime=0);var c=a.earliestPendingTime,d=a.latestPendingTime;c===b?a.earliestPendingTime=d===b?a.latestPendingTime=0:d:d===b&&(a.latestPendingTime=c);c=a.earliestSuspendedTime;d=a.latestSuspendedTime;0===c?a.earliestSuspendedTime=a.latestSuspendedTime=b:c<b?a.earliestSuspendedTime=b:d>b&&(a.latestSuspendedTime=b);df(b,a)}
+function gf(a,b){var c=a.earliestPendingTime;a=a.earliestSuspendedTime;c>b&&(b=c);a>b&&(b=a);return b}function df(a,b){var c=b.earliestSuspendedTime,d=b.latestSuspendedTime,e=b.earliestPendingTime,f=b.latestPingedTime;e=0!==e?e:f;0===e&&(0===a||d<a)&&(e=d);a=e;0!==a&&c>a&&(a=c);b.nextExpirationTimeToWorkOn=e;b.expirationTime=a}function L(a,b){if(a&&a.defaultProps){b=n({},b);a=a.defaultProps;for(var c in a)void 0===b[c]&&(b[c]=a[c])}return b}
+function hf(a){var b=a._result;switch(a._status){case 1:return b;case 2:throw b;case 0:throw b;default:a._status=0;b=a._ctor;b=b();b.then(function(b){0===a._status&&(b=b.default,a._status=1,a._result=b)},function(b){0===a._status&&(a._status=2,a._result=b)});switch(a._status){case 1:return a._result;case 2:throw a._result;}a._result=b;throw b;}}var jf=(new aa.Component).refs;
+function kf(a,b,c,d){b=a.memoizedState;c=c(d,b);c=null===c||void 0===c?b:n({},b,c);a.memoizedState=c;d=a.updateQueue;null!==d&&0===a.expirationTime&&(d.baseState=c)}
+var tf={isMounted:function(a){return(a=a._reactInternalFiber)?2===ed(a):!1},enqueueSetState:function(a,b,c){a=a._reactInternalFiber;var d=lf();d=mf(d,a);var e=nf(d);e.payload=b;void 0!==c&&null!==c&&(e.callback=c);of();pf(a,e);qf(a,d)},enqueueReplaceState:function(a,b,c){a=a._reactInternalFiber;var d=lf();d=mf(d,a);var e=nf(d);e.tag=rf;e.payload=b;void 0!==c&&null!==c&&(e.callback=c);of();pf(a,e);qf(a,d)},enqueueForceUpdate:function(a,b){a=a._reactInternalFiber;var c=lf();c=mf(c,a);var d=nf(c);d.tag=
+sf;void 0!==b&&null!==b&&(d.callback=b);of();pf(a,d);qf(a,c)}};function uf(a,b,c,d,e,f,g){a=a.stateNode;return"function"===typeof a.shouldComponentUpdate?a.shouldComponentUpdate(d,f,g):b.prototype&&b.prototype.isPureReactComponent?!dd(c,d)||!dd(e,f):!0}
+function vf(a,b,c){var d=!1,e=He;var f=b.contextType;"object"===typeof f&&null!==f?f=M(f):(e=J(b)?Ie:H.current,d=b.contextTypes,f=(d=null!==d&&void 0!==d)?Je(a,e):He);b=new b(c,f);a.memoizedState=null!==b.state&&void 0!==b.state?b.state:null;b.updater=tf;a.stateNode=b;b._reactInternalFiber=a;d&&(a=a.stateNode,a.__reactInternalMemoizedUnmaskedChildContext=e,a.__reactInternalMemoizedMaskedChildContext=f);return b}
+function wf(a,b,c,d){a=b.state;"function"===typeof b.componentWillReceiveProps&&b.componentWillReceiveProps(c,d);"function"===typeof b.UNSAFE_componentWillReceiveProps&&b.UNSAFE_componentWillReceiveProps(c,d);b.state!==a&&tf.enqueueReplaceState(b,b.state,null)}
+function xf(a,b,c,d){var e=a.stateNode;e.props=c;e.state=a.memoizedState;e.refs=jf;var f=b.contextType;"object"===typeof f&&null!==f?e.context=M(f):(f=J(b)?Ie:H.current,e.context=Je(a,f));f=a.updateQueue;null!==f&&(yf(a,f,c,e,d),e.state=a.memoizedState);f=b.getDerivedStateFromProps;"function"===typeof f&&(kf(a,b,f,c),e.state=a.memoizedState);"function"===typeof b.getDerivedStateFromProps||"function"===typeof e.getSnapshotBeforeUpdate||"function"!==typeof e.UNSAFE_componentWillMount&&"function"!==
+typeof e.componentWillMount||(b=e.state,"function"===typeof e.componentWillMount&&e.componentWillMount(),"function"===typeof e.UNSAFE_componentWillMount&&e.UNSAFE_componentWillMount(),b!==e.state&&tf.enqueueReplaceState(e,e.state,null),f=a.updateQueue,null!==f&&(yf(a,f,c,e,d),e.state=a.memoizedState));"function"===typeof e.componentDidMount&&(a.effectTag|=4)}var zf=Array.isArray;
+function Af(a,b,c){a=c.ref;if(null!==a&&"function"!==typeof a&&"object"!==typeof a){if(c._owner){c=c._owner;var d=void 0;c&&(1!==c.tag?x("309"):void 0,d=c.stateNode);d?void 0:x("147",a);var e=""+a;if(null!==b&&null!==b.ref&&"function"===typeof b.ref&&b.ref._stringRef===e)return b.ref;b=function(a){var b=d.refs;b===jf&&(b=d.refs={});null===a?delete b[e]:b[e]=a};b._stringRef=e;return b}"string"!==typeof a?x("284"):void 0;c._owner?void 0:x("290",a)}return a}
+function Bf(a,b){"textarea"!==a.type&&x("31","[object Object]"===Object.prototype.toString.call(b)?"object with keys {"+Object.keys(b).join(", ")+"}":b,"")}
+function Cf(a){function b(b,c){if(a){var d=b.lastEffect;null!==d?(d.nextEffect=c,b.lastEffect=c):b.firstEffect=b.lastEffect=c;c.nextEffect=null;c.effectTag=8}}function c(c,d){if(!a)return null;for(;null!==d;)b(c,d),d=d.sibling;return null}function d(a,b){for(a=new Map;null!==b;)null!==b.key?a.set(b.key,b):a.set(b.index,b),b=b.sibling;return a}function e(a,b,c){a=Xe(a,b,c);a.index=0;a.sibling=null;return a}function f(b,c,d){b.index=d;if(!a)return c;d=b.alternate;if(null!==d)return d=d.index,d<c?(b.effectTag=
+2,c):d;b.effectTag=2;return c}function g(b){a&&null===b.alternate&&(b.effectTag=2);return b}function h(a,b,c,d){if(null===b||6!==b.tag)return b=af(c,a.mode,d),b.return=a,b;b=e(b,c,d);b.return=a;return b}function l(a,b,c,d){if(null!==b&&b.elementType===c.type)return d=e(b,c.props,d),d.ref=Af(a,b,c),d.return=a,d;d=Ye(c.type,c.key,c.props,null,a.mode,d);d.ref=Af(a,b,c);d.return=a;return d}function k(a,b,c,d){if(null===b||4!==b.tag||b.stateNode.containerInfo!==c.containerInfo||b.stateNode.implementation!==
+c.implementation)return b=bf(c,a.mode,d),b.return=a,b;b=e(b,c.children||[],d);b.return=a;return b}function m(a,b,c,d,f){if(null===b||7!==b.tag)return b=Ze(c,a.mode,d,f),b.return=a,b;b=e(b,c,d);b.return=a;return b}function p(a,b,c){if("string"===typeof b||"number"===typeof b)return b=af(""+b,a.mode,c),b.return=a,b;if("object"===typeof b&&null!==b){switch(b.$$typeof){case Vb:return c=Ye(b.type,b.key,b.props,null,a.mode,c),c.ref=Af(a,null,b),c.return=a,c;case Wb:return b=bf(b,a.mode,c),b.return=a,b}if(zf(b)||
+hc(b))return b=Ze(b,a.mode,c,null),b.return=a,b;Bf(a,b)}return null}function t(a,b,c,d){var e=null!==b?b.key:null;if("string"===typeof c||"number"===typeof c)return null!==e?null:h(a,b,""+c,d);if("object"===typeof c&&null!==c){switch(c.$$typeof){case Vb:return c.key===e?c.type===Xb?m(a,b,c.props.children,d,e):l(a,b,c,d):null;case Wb:return c.key===e?k(a,b,c,d):null}if(zf(c)||hc(c))return null!==e?null:m(a,b,c,d,null);Bf(a,c)}return null}function A(a,b,c,d,e){if("string"===typeof d||"number"===typeof d)return a=
+a.get(c)||null,h(b,a,""+d,e);if("object"===typeof d&&null!==d){switch(d.$$typeof){case Vb:return a=a.get(null===d.key?c:d.key)||null,d.type===Xb?m(b,a,d.props.children,e,d.key):l(b,a,d,e);case Wb:return a=a.get(null===d.key?c:d.key)||null,k(b,a,d,e)}if(zf(d)||hc(d))return a=a.get(c)||null,m(b,a,d,e,null);Bf(b,d)}return null}function v(e,g,h,k){for(var l=null,m=null,q=g,u=g=0,B=null;null!==q&&u<h.length;u++){q.index>u?(B=q,q=null):B=q.sibling;var w=t(e,q,h[u],k);if(null===w){null===q&&(q=B);break}a&&
+q&&null===w.alternate&&b(e,q);g=f(w,g,u);null===m?l=w:m.sibling=w;m=w;q=B}if(u===h.length)return c(e,q),l;if(null===q){for(;u<h.length;u++)if(q=p(e,h[u],k))g=f(q,g,u),null===m?l=q:m.sibling=q,m=q;return l}for(q=d(e,q);u<h.length;u++)if(B=A(q,e,u,h[u],k))a&&null!==B.alternate&&q.delete(null===B.key?u:B.key),g=f(B,g,u),null===m?l=B:m.sibling=B,m=B;a&&q.forEach(function(a){return b(e,a)});return l}function R(e,g,h,k){var l=hc(h);"function"!==typeof l?x("150"):void 0;h=l.call(h);null==h?x("151"):void 0;
+for(var m=l=null,q=g,u=g=0,B=null,w=h.next();null!==q&&!w.done;u++,w=h.next()){q.index>u?(B=q,q=null):B=q.sibling;var v=t(e,q,w.value,k);if(null===v){q||(q=B);break}a&&q&&null===v.alternate&&b(e,q);g=f(v,g,u);null===m?l=v:m.sibling=v;m=v;q=B}if(w.done)return c(e,q),l;if(null===q){for(;!w.done;u++,w=h.next())w=p(e,w.value,k),null!==w&&(g=f(w,g,u),null===m?l=w:m.sibling=w,m=w);return l}for(q=d(e,q);!w.done;u++,w=h.next())w=A(q,e,u,w.value,k),null!==w&&(a&&null!==w.alternate&&q.delete(null===w.key?u:
+w.key),g=f(w,g,u),null===m?l=w:m.sibling=w,m=w);a&&q.forEach(function(a){return b(e,a)});return l}return function(a,d,f,h){var k="object"===typeof f&&null!==f&&f.type===Xb&&null===f.key;k&&(f=f.props.children);var l="object"===typeof f&&null!==f;if(l)switch(f.$$typeof){case Vb:a:{l=f.key;for(k=d;null!==k;){if(k.key===l)if(7===k.tag?f.type===Xb:k.elementType===f.type){c(a,k.sibling);d=e(k,f.type===Xb?f.props.children:f.props,h);d.ref=Af(a,k,f);d.return=a;a=d;break a}else{c(a,k);break}else b(a,k);k=
+k.sibling}f.type===Xb?(d=Ze(f.props.children,a.mode,h,f.key),d.return=a,a=d):(h=Ye(f.type,f.key,f.props,null,a.mode,h),h.ref=Af(a,d,f),h.return=a,a=h)}return g(a);case Wb:a:{for(k=f.key;null!==d;){if(d.key===k)if(4===d.tag&&d.stateNode.containerInfo===f.containerInfo&&d.stateNode.implementation===f.implementation){c(a,d.sibling);d=e(d,f.children||[],h);d.return=a;a=d;break a}else{c(a,d);break}else b(a,d);d=d.sibling}d=bf(f,a.mode,h);d.return=a;a=d}return g(a)}if("string"===typeof f||"number"===typeof f)return f=
+""+f,null!==d&&6===d.tag?(c(a,d.sibling),d=e(d,f,h),d.return=a,a=d):(c(a,d),d=af(f,a.mode,h),d.return=a,a=d),g(a);if(zf(f))return v(a,d,f,h);if(hc(f))return R(a,d,f,h);l&&Bf(a,f);if("undefined"===typeof f&&!k)switch(a.tag){case 1:case 0:h=a.type,x("152",h.displayName||h.name||"Component")}return c(a,d)}}var Df=Cf(!0),Ef=Cf(!1),Ff={},N={current:Ff},Gf={current:Ff},Hf={current:Ff};function If(a){a===Ff?x("174"):void 0;return a}
+function Jf(a,b){G(Hf,b,a);G(Gf,a,a);G(N,Ff,a);var c=b.nodeType;switch(c){case 9:case 11:b=(b=b.documentElement)?b.namespaceURI:he(null,"");break;default:c=8===c?b.parentNode:b,b=c.namespaceURI||null,c=c.tagName,b=he(b,c)}F(N,a);G(N,b,a)}function Kf(a){F(N,a);F(Gf,a);F(Hf,a)}function Lf(a){If(Hf.current);var b=If(N.current);var c=he(b,a.type);b!==c&&(G(Gf,a,a),G(N,c,a))}function Mf(a){Gf.current===a&&(F(N,a),F(Gf,a))}
+var Nf=0,Of=2,Pf=4,Qf=8,Rf=16,Sf=32,Tf=64,Uf=128,Vf=Tb.ReactCurrentDispatcher,Wf=0,Xf=null,O=null,P=null,Yf=null,Q=null,Zf=null,$f=0,ag=null,bg=0,cg=!1,dg=null,eg=0;function fg(){x("321")}function gg(a,b){if(null===b)return!1;for(var c=0;c<b.length&&c<a.length;c++)if(!bd(a[c],b[c]))return!1;return!0}
+function hg(a,b,c,d,e,f){Wf=f;Xf=b;P=null!==a?a.memoizedState:null;Vf.current=null===P?ig:jg;b=c(d,e);if(cg){do cg=!1,eg+=1,P=null!==a?a.memoizedState:null,Zf=Yf,ag=Q=O=null,Vf.current=jg,b=c(d,e);while(cg);dg=null;eg=0}Vf.current=kg;a=Xf;a.memoizedState=Yf;a.expirationTime=$f;a.updateQueue=ag;a.effectTag|=bg;a=null!==O&&null!==O.next;Wf=0;Zf=Q=Yf=P=O=Xf=null;$f=0;ag=null;bg=0;a?x("300"):void 0;return b}function lg(){Vf.current=kg;Wf=0;Zf=Q=Yf=P=O=Xf=null;$f=0;ag=null;bg=0;cg=!1;dg=null;eg=0}
+function mg(){var a={memoizedState:null,baseState:null,queue:null,baseUpdate:null,next:null};null===Q?Yf=Q=a:Q=Q.next=a;return Q}function ng(){if(null!==Zf)Q=Zf,Zf=Q.next,O=P,P=null!==O?O.next:null;else{null===P?x("310"):void 0;O=P;var a={memoizedState:O.memoizedState,baseState:O.baseState,queue:O.queue,baseUpdate:O.baseUpdate,next:null};Q=null===Q?Yf=a:Q.next=a;P=O.next}return Q}function og(a,b){return"function"===typeof b?b(a):b}
+function pg(a){var b=ng(),c=b.queue;null===c?x("311"):void 0;c.lastRenderedReducer=a;if(0<eg){var d=c.dispatch;if(null!==dg){var e=dg.get(c);if(void 0!==e){dg.delete(c);var f=b.memoizedState;do f=a(f,e.action),e=e.next;while(null!==e);bd(f,b.memoizedState)||(qg=!0);b.memoizedState=f;b.baseUpdate===c.last&&(b.baseState=f);c.lastRenderedState=f;return[f,d]}}return[b.memoizedState,d]}d=c.last;var g=b.baseUpdate;f=b.baseState;null!==g?(null!==d&&(d.next=null),d=g.next):d=null!==d?d.next:null;if(null!==
+d){var h=e=null,l=d,k=!1;do{var m=l.expirationTime;m<Wf?(k||(k=!0,h=g,e=f),m>$f&&($f=m)):f=l.eagerReducer===a?l.eagerState:a(f,l.action);g=l;l=l.next}while(null!==l&&l!==d);k||(h=g,e=f);bd(f,b.memoizedState)||(qg=!0);b.memoizedState=f;b.baseUpdate=h;b.baseState=e;c.lastRenderedState=f}return[b.memoizedState,c.dispatch]}
+function rg(a,b,c,d){a={tag:a,create:b,destroy:c,deps:d,next:null};null===ag?(ag={lastEffect:null},ag.lastEffect=a.next=a):(b=ag.lastEffect,null===b?ag.lastEffect=a.next=a:(c=b.next,b.next=a,a.next=c,ag.lastEffect=a));return a}function sg(a,b,c,d){var e=mg();bg|=a;e.memoizedState=rg(b,c,void 0,void 0===d?null:d)}
+function tg(a,b,c,d){var e=ng();d=void 0===d?null:d;var f=void 0;if(null!==O){var g=O.memoizedState;f=g.destroy;if(null!==d&&gg(d,g.deps)){rg(Nf,c,f,d);return}}bg|=a;e.memoizedState=rg(b,c,f,d)}function ug(a,b){if("function"===typeof b)return a=a(),b(a),function(){b(null)};if(null!==b&&void 0!==b)return a=a(),b.current=a,function(){b.current=null}}function vg(){}
+function wg(a,b,c){25>eg?void 0:x("301");var d=a.alternate;if(a===Xf||null!==d&&d===Xf)if(cg=!0,a={expirationTime:Wf,action:c,eagerReducer:null,eagerState:null,next:null},null===dg&&(dg=new Map),c=dg.get(b),void 0===c)dg.set(b,a);else{for(b=c;null!==b.next;)b=b.next;b.next=a}else{of();var e=lf();e=mf(e,a);var f={expirationTime:e,action:c,eagerReducer:null,eagerState:null,next:null},g=b.last;if(null===g)f.next=f;else{var h=g.next;null!==h&&(f.next=h);g.next=f}b.last=f;if(0===a.expirationTime&&(null===
+d||0===d.expirationTime)&&(d=b.lastRenderedReducer,null!==d))try{var l=b.lastRenderedState,k=d(l,c);f.eagerReducer=d;f.eagerState=k;if(bd(k,l))return}catch(m){}finally{}qf(a,e)}}
+var kg={readContext:M,useCallback:fg,useContext:fg,useEffect:fg,useImperativeHandle:fg,useLayoutEffect:fg,useMemo:fg,useReducer:fg,useRef:fg,useState:fg,useDebugValue:fg},ig={readContext:M,useCallback:function(a,b){mg().memoizedState=[a,void 0===b?null:b];return a},useContext:M,useEffect:function(a,b){return sg(516,Uf|Tf,a,b)},useImperativeHandle:function(a,b,c){c=null!==c&&void 0!==c?c.concat([a]):null;return sg(4,Pf|Sf,ug.bind(null,b,a),c)},useLayoutEffect:function(a,b){return sg(4,Pf|Sf,a,b)},
+useMemo:function(a,b){var c=mg();b=void 0===b?null:b;a=a();c.memoizedState=[a,b];return a},useReducer:function(a,b,c){var d=mg();b=void 0!==c?c(b):b;d.memoizedState=d.baseState=b;a=d.queue={last:null,dispatch:null,lastRenderedReducer:a,lastRenderedState:b};a=a.dispatch=wg.bind(null,Xf,a);return[d.memoizedState,a]},useRef:function(a){var b=mg();a={current:a};return b.memoizedState=a},useState:function(a){var b=mg();"function"===typeof a&&(a=a());b.memoizedState=b.baseState=a;a=b.queue={last:null,dispatch:null,
+lastRenderedReducer:og,lastRenderedState:a};a=a.dispatch=wg.bind(null,Xf,a);return[b.memoizedState,a]},useDebugValue:vg},jg={readContext:M,useCallback:function(a,b){var c=ng();b=void 0===b?null:b;var d=c.memoizedState;if(null!==d&&null!==b&&gg(b,d[1]))return d[0];c.memoizedState=[a,b];return a},useContext:M,useEffect:function(a,b){return tg(516,Uf|Tf,a,b)},useImperativeHandle:function(a,b,c){c=null!==c&&void 0!==c?c.concat([a]):null;return tg(4,Pf|Sf,ug.bind(null,b,a),c)},useLayoutEffect:function(a,
+b){return tg(4,Pf|Sf,a,b)},useMemo:function(a,b){var c=ng();b=void 0===b?null:b;var d=c.memoizedState;if(null!==d&&null!==b&&gg(b,d[1]))return d[0];a=a();c.memoizedState=[a,b];return a},useReducer:pg,useRef:function(){return ng().memoizedState},useState:function(a){return pg(og,a)},useDebugValue:vg},xg=null,yg=null,zg=!1;
+function Ag(a,b){var c=K(5,null,null,0);c.elementType="DELETED";c.type="DELETED";c.stateNode=b;c.return=a;c.effectTag=8;null!==a.lastEffect?(a.lastEffect.nextEffect=c,a.lastEffect=c):a.firstEffect=a.lastEffect=c}function Bg(a,b){switch(a.tag){case 5:var c=a.type;b=1!==b.nodeType||c.toLowerCase()!==b.nodeName.toLowerCase()?null:b;return null!==b?(a.stateNode=b,!0):!1;case 6:return b=""===a.pendingProps||3!==b.nodeType?null:b,null!==b?(a.stateNode=b,!0):!1;case 13:return!1;default:return!1}}
+function Cg(a){if(zg){var b=yg;if(b){var c=b;if(!Bg(a,b)){b=De(c);if(!b||!Bg(a,b)){a.effectTag|=2;zg=!1;xg=a;return}Ag(xg,c)}xg=a;yg=Ee(b)}else a.effectTag|=2,zg=!1,xg=a}}function Dg(a){for(a=a.return;null!==a&&5!==a.tag&&3!==a.tag&&18!==a.tag;)a=a.return;xg=a}function Eg(a){if(a!==xg)return!1;if(!zg)return Dg(a),zg=!0,!1;var b=a.type;if(5!==a.tag||"head"!==b&&"body"!==b&&!xe(b,a.memoizedProps))for(b=yg;b;)Ag(a,b),b=De(b);Dg(a);yg=xg?De(a.stateNode):null;return!0}function Fg(){yg=xg=null;zg=!1}
+var Gg=Tb.ReactCurrentOwner,qg=!1;function S(a,b,c,d){b.child=null===a?Ef(b,null,c,d):Df(b,a.child,c,d)}function Hg(a,b,c,d,e){c=c.render;var f=b.ref;Ig(b,e);d=hg(a,b,c,d,f,e);if(null!==a&&!qg)return b.updateQueue=a.updateQueue,b.effectTag&=-517,a.expirationTime<=e&&(a.expirationTime=0),Jg(a,b,e);b.effectTag|=1;S(a,b,d,e);return b.child}
+function Kg(a,b,c,d,e,f){if(null===a){var g=c.type;if("function"===typeof g&&!Ve(g)&&void 0===g.defaultProps&&null===c.compare&&void 0===c.defaultProps)return b.tag=15,b.type=g,Lg(a,b,g,d,e,f);a=Ye(c.type,null,d,null,b.mode,f);a.ref=b.ref;a.return=b;return b.child=a}g=a.child;if(e<f&&(e=g.memoizedProps,c=c.compare,c=null!==c?c:dd,c(e,d)&&a.ref===b.ref))return Jg(a,b,f);b.effectTag|=1;a=Xe(g,d,f);a.ref=b.ref;a.return=b;return b.child=a}
+function Lg(a,b,c,d,e,f){return null!==a&&dd(a.memoizedProps,d)&&a.ref===b.ref&&(qg=!1,e<f)?Jg(a,b,f):Mg(a,b,c,d,f)}function Ng(a,b){var c=b.ref;if(null===a&&null!==c||null!==a&&a.ref!==c)b.effectTag|=128}function Mg(a,b,c,d,e){var f=J(c)?Ie:H.current;f=Je(b,f);Ig(b,e);c=hg(a,b,c,d,f,e);if(null!==a&&!qg)return b.updateQueue=a.updateQueue,b.effectTag&=-517,a.expirationTime<=e&&(a.expirationTime=0),Jg(a,b,e);b.effectTag|=1;S(a,b,c,e);return b.child}
+function Og(a,b,c,d,e){if(J(c)){var f=!0;Oe(b)}else f=!1;Ig(b,e);if(null===b.stateNode)null!==a&&(a.alternate=null,b.alternate=null,b.effectTag|=2),vf(b,c,d,e),xf(b,c,d,e),d=!0;else if(null===a){var g=b.stateNode,h=b.memoizedProps;g.props=h;var l=g.context,k=c.contextType;"object"===typeof k&&null!==k?k=M(k):(k=J(c)?Ie:H.current,k=Je(b,k));var m=c.getDerivedStateFromProps,p="function"===typeof m||"function"===typeof g.getSnapshotBeforeUpdate;p||"function"!==typeof g.UNSAFE_componentWillReceiveProps&&
+"function"!==typeof g.componentWillReceiveProps||(h!==d||l!==k)&&wf(b,g,d,k);Pg=!1;var t=b.memoizedState;l=g.state=t;var A=b.updateQueue;null!==A&&(yf(b,A,d,g,e),l=b.memoizedState);h!==d||t!==l||I.current||Pg?("function"===typeof m&&(kf(b,c,m,d),l=b.memoizedState),(h=Pg||uf(b,c,h,d,t,l,k))?(p||"function"!==typeof g.UNSAFE_componentWillMount&&"function"!==typeof g.componentWillMount||("function"===typeof g.componentWillMount&&g.componentWillMount(),"function"===typeof g.UNSAFE_componentWillMount&&
+g.UNSAFE_componentWillMount()),"function"===typeof g.componentDidMount&&(b.effectTag|=4)):("function"===typeof g.componentDidMount&&(b.effectTag|=4),b.memoizedProps=d,b.memoizedState=l),g.props=d,g.state=l,g.context=k,d=h):("function"===typeof g.componentDidMount&&(b.effectTag|=4),d=!1)}else g=b.stateNode,h=b.memoizedProps,g.props=b.type===b.elementType?h:L(b.type,h),l=g.context,k=c.contextType,"object"===typeof k&&null!==k?k=M(k):(k=J(c)?Ie:H.current,k=Je(b,k)),m=c.getDerivedStateFromProps,(p="function"===
+typeof m||"function"===typeof g.getSnapshotBeforeUpdate)||"function"!==typeof g.UNSAFE_componentWillReceiveProps&&"function"!==typeof g.componentWillReceiveProps||(h!==d||l!==k)&&wf(b,g,d,k),Pg=!1,l=b.memoizedState,t=g.state=l,A=b.updateQueue,null!==A&&(yf(b,A,d,g,e),t=b.memoizedState),h!==d||l!==t||I.current||Pg?("function"===typeof m&&(kf(b,c,m,d),t=b.memoizedState),(m=Pg||uf(b,c,h,d,l,t,k))?(p||"function"!==typeof g.UNSAFE_componentWillUpdate&&"function"!==typeof g.componentWillUpdate||("function"===
+typeof g.componentWillUpdate&&g.componentWillUpdate(d,t,k),"function"===typeof g.UNSAFE_componentWillUpdate&&g.UNSAFE_componentWillUpdate(d,t,k)),"function"===typeof g.componentDidUpdate&&(b.effectTag|=4),"function"===typeof g.getSnapshotBeforeUpdate&&(b.effectTag|=256)):("function"!==typeof g.componentDidUpdate||h===a.memoizedProps&&l===a.memoizedState||(b.effectTag|=4),"function"!==typeof g.getSnapshotBeforeUpdate||h===a.memoizedProps&&l===a.memoizedState||(b.effectTag|=256),b.memoizedProps=d,b.memoizedState=
+t),g.props=d,g.state=t,g.context=k,d=m):("function"!==typeof g.componentDidUpdate||h===a.memoizedProps&&l===a.memoizedState||(b.effectTag|=4),"function"!==typeof g.getSnapshotBeforeUpdate||h===a.memoizedProps&&l===a.memoizedState||(b.effectTag|=256),d=!1);return Qg(a,b,c,d,f,e)}
+function Qg(a,b,c,d,e,f){Ng(a,b);var g=0!==(b.effectTag&64);if(!d&&!g)return e&&Pe(b,c,!1),Jg(a,b,f);d=b.stateNode;Gg.current=b;var h=g&&"function"!==typeof c.getDerivedStateFromError?null:d.render();b.effectTag|=1;null!==a&&g?(b.child=Df(b,a.child,null,f),b.child=Df(b,null,h,f)):S(a,b,h,f);b.memoizedState=d.state;e&&Pe(b,c,!0);return b.child}function Rg(a){var b=a.stateNode;b.pendingContext?Me(a,b.pendingContext,b.pendingContext!==b.context):b.context&&Me(a,b.context,!1);Jf(a,b.containerInfo)}
+function Sg(a,b,c){var d=b.mode,e=b.pendingProps,f=b.memoizedState;if(0===(b.effectTag&64)){f=null;var g=!1}else f={timedOutAt:null!==f?f.timedOutAt:0},g=!0,b.effectTag&=-65;if(null===a)if(g){var h=e.fallback;a=Ze(null,d,0,null);0===(b.mode&1)&&(a.child=null!==b.memoizedState?b.child.child:b.child);d=Ze(h,d,c,null);a.sibling=d;c=a;c.return=d.return=b}else c=d=Ef(b,null,e.children,c);else null!==a.memoizedState?(d=a.child,h=d.sibling,g?(c=e.fallback,e=Xe(d,d.pendingProps,0),0===(b.mode&1)&&(g=null!==
+b.memoizedState?b.child.child:b.child,g!==d.child&&(e.child=g)),d=e.sibling=Xe(h,c,h.expirationTime),c=e,e.childExpirationTime=0,c.return=d.return=b):c=d=Df(b,d.child,e.children,c)):(h=a.child,g?(g=e.fallback,e=Ze(null,d,0,null),e.child=h,0===(b.mode&1)&&(e.child=null!==b.memoizedState?b.child.child:b.child),d=e.sibling=Ze(g,d,c,null),d.effectTag|=2,c=e,e.childExpirationTime=0,c.return=d.return=b):d=c=Df(b,h,e.children,c)),b.stateNode=a.stateNode;b.memoizedState=f;b.child=c;return d}
+function Jg(a,b,c){null!==a&&(b.contextDependencies=a.contextDependencies);if(b.childExpirationTime<c)return null;null!==a&&b.child!==a.child?x("153"):void 0;if(null!==b.child){a=b.child;c=Xe(a,a.pendingProps,a.expirationTime);b.child=c;for(c.return=b;null!==a.sibling;)a=a.sibling,c=c.sibling=Xe(a,a.pendingProps,a.expirationTime),c.return=b;c.sibling=null}return b.child}
+function Tg(a,b,c){var d=b.expirationTime;if(null!==a)if(a.memoizedProps!==b.pendingProps||I.current)qg=!0;else{if(d<c){qg=!1;switch(b.tag){case 3:Rg(b);Fg();break;case 5:Lf(b);break;case 1:J(b.type)&&Oe(b);break;case 4:Jf(b,b.stateNode.containerInfo);break;case 10:Ug(b,b.memoizedProps.value);break;case 13:if(null!==b.memoizedState){d=b.child.childExpirationTime;if(0!==d&&d>=c)return Sg(a,b,c);b=Jg(a,b,c);return null!==b?b.sibling:null}}return Jg(a,b,c)}}else qg=!1;b.expirationTime=0;switch(b.tag){case 2:d=
+b.elementType;null!==a&&(a.alternate=null,b.alternate=null,b.effectTag|=2);a=b.pendingProps;var e=Je(b,H.current);Ig(b,c);e=hg(null,b,d,a,e,c);b.effectTag|=1;if("object"===typeof e&&null!==e&&"function"===typeof e.render&&void 0===e.$$typeof){b.tag=1;lg();if(J(d)){var f=!0;Oe(b)}else f=!1;b.memoizedState=null!==e.state&&void 0!==e.state?e.state:null;var g=d.getDerivedStateFromProps;"function"===typeof g&&kf(b,d,g,a);e.updater=tf;b.stateNode=e;e._reactInternalFiber=b;xf(b,d,a,c);b=Qg(null,b,d,!0,f,
+c)}else b.tag=0,S(null,b,e,c),b=b.child;return b;case 16:e=b.elementType;null!==a&&(a.alternate=null,b.alternate=null,b.effectTag|=2);f=b.pendingProps;a=hf(e);b.type=a;e=b.tag=We(a);f=L(a,f);g=void 0;switch(e){case 0:g=Mg(null,b,a,f,c);break;case 1:g=Og(null,b,a,f,c);break;case 11:g=Hg(null,b,a,f,c);break;case 14:g=Kg(null,b,a,L(a.type,f),d,c);break;default:x("306",a,"")}return g;case 0:return d=b.type,e=b.pendingProps,e=b.elementType===d?e:L(d,e),Mg(a,b,d,e,c);case 1:return d=b.type,e=b.pendingProps,
+e=b.elementType===d?e:L(d,e),Og(a,b,d,e,c);case 3:Rg(b);d=b.updateQueue;null===d?x("282"):void 0;e=b.memoizedState;e=null!==e?e.element:null;yf(b,d,b.pendingProps,null,c);d=b.memoizedState.element;if(d===e)Fg(),b=Jg(a,b,c);else{e=b.stateNode;if(e=(null===a||null===a.child)&&e.hydrate)yg=Ee(b.stateNode.containerInfo),xg=b,e=zg=!0;e?(b.effectTag|=2,b.child=Ef(b,null,d,c)):(S(a,b,d,c),Fg());b=b.child}return b;case 5:return Lf(b),null===a&&Cg(b),d=b.type,e=b.pendingProps,f=null!==a?a.memoizedProps:null,
+g=e.children,xe(d,e)?g=null:null!==f&&xe(d,f)&&(b.effectTag|=16),Ng(a,b),1!==c&&b.mode&1&&e.hidden?(b.expirationTime=b.childExpirationTime=1,b=null):(S(a,b,g,c),b=b.child),b;case 6:return null===a&&Cg(b),null;case 13:return Sg(a,b,c);case 4:return Jf(b,b.stateNode.containerInfo),d=b.pendingProps,null===a?b.child=Df(b,null,d,c):S(a,b,d,c),b.child;case 11:return d=b.type,e=b.pendingProps,e=b.elementType===d?e:L(d,e),Hg(a,b,d,e,c);case 7:return S(a,b,b.pendingProps,c),b.child;case 8:return S(a,b,b.pendingProps.children,
+c),b.child;case 12:return S(a,b,b.pendingProps.children,c),b.child;case 10:a:{d=b.type._context;e=b.pendingProps;g=b.memoizedProps;f=e.value;Ug(b,f);if(null!==g){var h=g.value;f=bd(h,f)?0:("function"===typeof d._calculateChangedBits?d._calculateChangedBits(h,f):1073741823)|0;if(0===f){if(g.children===e.children&&!I.current){b=Jg(a,b,c);break a}}else for(h=b.child,null!==h&&(h.return=b);null!==h;){var l=h.contextDependencies;if(null!==l){g=h.child;for(var k=l.first;null!==k;){if(k.context===d&&0!==
+(k.observedBits&f)){1===h.tag&&(k=nf(c),k.tag=sf,pf(h,k));h.expirationTime<c&&(h.expirationTime=c);k=h.alternate;null!==k&&k.expirationTime<c&&(k.expirationTime=c);k=c;for(var m=h.return;null!==m;){var p=m.alternate;if(m.childExpirationTime<k)m.childExpirationTime=k,null!==p&&p.childExpirationTime<k&&(p.childExpirationTime=k);else if(null!==p&&p.childExpirationTime<k)p.childExpirationTime=k;else break;m=m.return}l.expirationTime<c&&(l.expirationTime=c);break}k=k.next}}else g=10===h.tag?h.type===b.type?
+null:h.child:h.child;if(null!==g)g.return=h;else for(g=h;null!==g;){if(g===b){g=null;break}h=g.sibling;if(null!==h){h.return=g.return;g=h;break}g=g.return}h=g}}S(a,b,e.children,c);b=b.child}return b;case 9:return e=b.type,f=b.pendingProps,d=f.children,Ig(b,c),e=M(e,f.unstable_observedBits),d=d(e),b.effectTag|=1,S(a,b,d,c),b.child;case 14:return e=b.type,f=L(e,b.pendingProps),f=L(e.type,f),Kg(a,b,e,f,d,c);case 15:return Lg(a,b,b.type,b.pendingProps,d,c);case 17:return d=b.type,e=b.pendingProps,e=b.elementType===
+d?e:L(d,e),null!==a&&(a.alternate=null,b.alternate=null,b.effectTag|=2),b.tag=1,J(d)?(a=!0,Oe(b)):a=!1,Ig(b,c),vf(b,d,e,c),xf(b,d,e,c),Qg(null,b,d,!0,a,c)}x("156")}var Vg={current:null},Wg=null,Xg=null,Yg=null;function Ug(a,b){var c=a.type._context;G(Vg,c._currentValue,a);c._currentValue=b}function Zg(a){var b=Vg.current;F(Vg,a);a.type._context._currentValue=b}function Ig(a,b){Wg=a;Yg=Xg=null;var c=a.contextDependencies;null!==c&&c.expirationTime>=b&&(qg=!0);a.contextDependencies=null}
+function M(a,b){if(Yg!==a&&!1!==b&&0!==b){if("number"!==typeof b||1073741823===b)Yg=a,b=1073741823;b={context:a,observedBits:b,next:null};null===Xg?(null===Wg?x("308"):void 0,Xg=b,Wg.contextDependencies={first:b,expirationTime:0}):Xg=Xg.next=b}return a._currentValue}var $g=0,rf=1,sf=2,ah=3,Pg=!1;function bh(a){return{baseState:a,firstUpdate:null,lastUpdate:null,firstCapturedUpdate:null,lastCapturedUpdate:null,firstEffect:null,lastEffect:null,firstCapturedEffect:null,lastCapturedEffect:null}}
+function ch(a){return{baseState:a.baseState,firstUpdate:a.firstUpdate,lastUpdate:a.lastUpdate,firstCapturedUpdate:null,lastCapturedUpdate:null,firstEffect:null,lastEffect:null,firstCapturedEffect:null,lastCapturedEffect:null}}function nf(a){return{expirationTime:a,tag:$g,payload:null,callback:null,next:null,nextEffect:null}}function dh(a,b){null===a.lastUpdate?a.firstUpdate=a.lastUpdate=b:(a.lastUpdate.next=b,a.lastUpdate=b)}
+function pf(a,b){var c=a.alternate;if(null===c){var d=a.updateQueue;var e=null;null===d&&(d=a.updateQueue=bh(a.memoizedState))}else d=a.updateQueue,e=c.updateQueue,null===d?null===e?(d=a.updateQueue=bh(a.memoizedState),e=c.updateQueue=bh(c.memoizedState)):d=a.updateQueue=ch(e):null===e&&(e=c.updateQueue=ch(d));null===e||d===e?dh(d,b):null===d.lastUpdate||null===e.lastUpdate?(dh(d,b),dh(e,b)):(dh(d,b),e.lastUpdate=b)}
+function eh(a,b){var c=a.updateQueue;c=null===c?a.updateQueue=bh(a.memoizedState):fh(a,c);null===c.lastCapturedUpdate?c.firstCapturedUpdate=c.lastCapturedUpdate=b:(c.lastCapturedUpdate.next=b,c.lastCapturedUpdate=b)}function fh(a,b){var c=a.alternate;null!==c&&b===c.updateQueue&&(b=a.updateQueue=ch(b));return b}
+function gh(a,b,c,d,e,f){switch(c.tag){case rf:return a=c.payload,"function"===typeof a?a.call(f,d,e):a;case ah:a.effectTag=a.effectTag&-2049|64;case $g:a=c.payload;e="function"===typeof a?a.call(f,d,e):a;if(null===e||void 0===e)break;return n({},d,e);case sf:Pg=!0}return d}
+function yf(a,b,c,d,e){Pg=!1;b=fh(a,b);for(var f=b.baseState,g=null,h=0,l=b.firstUpdate,k=f;null!==l;){var m=l.expirationTime;m<e?(null===g&&(g=l,f=k),h<m&&(h=m)):(k=gh(a,b,l,k,c,d),null!==l.callback&&(a.effectTag|=32,l.nextEffect=null,null===b.lastEffect?b.firstEffect=b.lastEffect=l:(b.lastEffect.nextEffect=l,b.lastEffect=l)));l=l.next}m=null;for(l=b.firstCapturedUpdate;null!==l;){var p=l.expirationTime;p<e?(null===m&&(m=l,null===g&&(f=k)),h<p&&(h=p)):(k=gh(a,b,l,k,c,d),null!==l.callback&&(a.effectTag|=
+32,l.nextEffect=null,null===b.lastCapturedEffect?b.firstCapturedEffect=b.lastCapturedEffect=l:(b.lastCapturedEffect.nextEffect=l,b.lastCapturedEffect=l)));l=l.next}null===g&&(b.lastUpdate=null);null===m?b.lastCapturedUpdate=null:a.effectTag|=32;null===g&&null===m&&(f=k);b.baseState=f;b.firstUpdate=g;b.firstCapturedUpdate=m;a.expirationTime=h;a.memoizedState=k}
+function hh(a,b,c){null!==b.firstCapturedUpdate&&(null!==b.lastUpdate&&(b.lastUpdate.next=b.firstCapturedUpdate,b.lastUpdate=b.lastCapturedUpdate),b.firstCapturedUpdate=b.lastCapturedUpdate=null);ih(b.firstEffect,c);b.firstEffect=b.lastEffect=null;ih(b.firstCapturedEffect,c);b.firstCapturedEffect=b.lastCapturedEffect=null}function ih(a,b){for(;null!==a;){var c=a.callback;if(null!==c){a.callback=null;var d=b;"function"!==typeof c?x("191",c):void 0;c.call(d)}a=a.nextEffect}}
+function jh(a,b){return{value:a,source:b,stack:jc(b)}}function kh(a){a.effectTag|=4}var lh=void 0,mh=void 0,nh=void 0,oh=void 0;lh=function(a,b){for(var c=b.child;null!==c;){if(5===c.tag||6===c.tag)a.appendChild(c.stateNode);else if(4!==c.tag&&null!==c.child){c.child.return=c;c=c.child;continue}if(c===b)break;for(;null===c.sibling;){if(null===c.return||c.return===b)return;c=c.return}c.sibling.return=c.return;c=c.sibling}};mh=function(){};
+nh=function(a,b,c,d,e){var f=a.memoizedProps;if(f!==d){var g=b.stateNode;If(N.current);a=null;switch(c){case "input":f=vc(g,f);d=vc(g,d);a=[];break;case "option":f=$d(g,f);d=$d(g,d);a=[];break;case "select":f=n({},f,{value:void 0});d=n({},d,{value:void 0});a=[];break;case "textarea":f=be(g,f);d=be(g,d);a=[];break;default:"function"!==typeof f.onClick&&"function"===typeof d.onClick&&(g.onclick=te)}qe(c,d);g=c=void 0;var h=null;for(c in f)if(!d.hasOwnProperty(c)&&f.hasOwnProperty(c)&&null!=f[c])if("style"===
+c){var l=f[c];for(g in l)l.hasOwnProperty(g)&&(h||(h={}),h[g]="")}else"dangerouslySetInnerHTML"!==c&&"children"!==c&&"suppressContentEditableWarning"!==c&&"suppressHydrationWarning"!==c&&"autoFocus"!==c&&(ra.hasOwnProperty(c)?a||(a=[]):(a=a||[]).push(c,null));for(c in d){var k=d[c];l=null!=f?f[c]:void 0;if(d.hasOwnProperty(c)&&k!==l&&(null!=k||null!=l))if("style"===c)if(l){for(g in l)!l.hasOwnProperty(g)||k&&k.hasOwnProperty(g)||(h||(h={}),h[g]="");for(g in k)k.hasOwnProperty(g)&&l[g]!==k[g]&&(h||
+(h={}),h[g]=k[g])}else h||(a||(a=[]),a.push(c,h)),h=k;else"dangerouslySetInnerHTML"===c?(k=k?k.__html:void 0,l=l?l.__html:void 0,null!=k&&l!==k&&(a=a||[]).push(c,""+k)):"children"===c?l===k||"string"!==typeof k&&"number"!==typeof k||(a=a||[]).push(c,""+k):"suppressContentEditableWarning"!==c&&"suppressHydrationWarning"!==c&&(ra.hasOwnProperty(c)?(null!=k&&se(e,c),a||l===k||(a=[])):(a=a||[]).push(c,k))}h&&(a=a||[]).push("style",h);e=a;(b.updateQueue=e)&&kh(b)}};oh=function(a,b,c,d){c!==d&&kh(b)};
+var ph="function"===typeof WeakSet?WeakSet:Set;function qh(a,b){var c=b.source,d=b.stack;null===d&&null!==c&&(d=jc(c));null!==c&&ic(c.type);b=b.value;null!==a&&1===a.tag&&ic(a.type);try{console.error(b)}catch(e){setTimeout(function(){throw e;})}}function rh(a){var b=a.ref;if(null!==b)if("function"===typeof b)try{b(null)}catch(c){sh(a,c)}else b.current=null}
+function th(a,b,c){c=c.updateQueue;c=null!==c?c.lastEffect:null;if(null!==c){var d=c=c.next;do{if((d.tag&a)!==Nf){var e=d.destroy;d.destroy=void 0;void 0!==e&&e()}(d.tag&b)!==Nf&&(e=d.create,d.destroy=e());d=d.next}while(d!==c)}}
+function uh(a,b){for(var c=a;;){if(5===c.tag){var d=c.stateNode;if(b)d.style.display="none";else{d=c.stateNode;var e=c.memoizedProps.style;e=void 0!==e&&null!==e&&e.hasOwnProperty("display")?e.display:null;d.style.display=ne("display",e)}}else if(6===c.tag)c.stateNode.nodeValue=b?"":c.memoizedProps;else if(13===c.tag&&null!==c.memoizedState){d=c.child.sibling;d.return=c;c=d;continue}else if(null!==c.child){c.child.return=c;c=c.child;continue}if(c===a)break;for(;null===c.sibling;){if(null===c.return||
+c.return===a)return;c=c.return}c.sibling.return=c.return;c=c.sibling}}
+function vh(a){"function"===typeof Re&&Re(a);switch(a.tag){case 0:case 11:case 14:case 15:var b=a.updateQueue;if(null!==b&&(b=b.lastEffect,null!==b)){var c=b=b.next;do{var d=c.destroy;if(void 0!==d){var e=a;try{d()}catch(f){sh(e,f)}}c=c.next}while(c!==b)}break;case 1:rh(a);b=a.stateNode;if("function"===typeof b.componentWillUnmount)try{b.props=a.memoizedProps,b.state=a.memoizedState,b.componentWillUnmount()}catch(f){sh(a,f)}break;case 5:rh(a);break;case 4:wh(a)}}
+function xh(a){return 5===a.tag||3===a.tag||4===a.tag}
+function yh(a){a:{for(var b=a.return;null!==b;){if(xh(b)){var c=b;break a}b=b.return}x("160");c=void 0}var d=b=void 0;switch(c.tag){case 5:b=c.stateNode;d=!1;break;case 3:b=c.stateNode.containerInfo;d=!0;break;case 4:b=c.stateNode.containerInfo;d=!0;break;default:x("161")}c.effectTag&16&&(ke(b,""),c.effectTag&=-17);a:b:for(c=a;;){for(;null===c.sibling;){if(null===c.return||xh(c.return)){c=null;break a}c=c.return}c.sibling.return=c.return;for(c=c.sibling;5!==c.tag&&6!==c.tag&&18!==c.tag;){if(c.effectTag&
+2)continue b;if(null===c.child||4===c.tag)continue b;else c.child.return=c,c=c.child}if(!(c.effectTag&2)){c=c.stateNode;break a}}for(var e=a;;){if(5===e.tag||6===e.tag)if(c)if(d){var f=b,g=e.stateNode,h=c;8===f.nodeType?f.parentNode.insertBefore(g,h):f.insertBefore(g,h)}else b.insertBefore(e.stateNode,c);else d?(g=b,h=e.stateNode,8===g.nodeType?(f=g.parentNode,f.insertBefore(h,g)):(f=g,f.appendChild(h)),g=g._reactRootContainer,null!==g&&void 0!==g||null!==f.onclick||(f.onclick=te)):b.appendChild(e.stateNode);
 else if(4!==e.tag&&null!==e.child){e.child.return=e;e=e.child;continue}if(e===a)break;for(;null===e.sibling;){if(null===e.return||e.return===a)return;e=e.return}e.sibling.return=e.return;e=e.sibling}}
-function Lg(a){for(var b=a,c=!1,d=void 0,e=void 0;;){if(!c){c=b.return;a:for(;;){null===c?t("160"):void 0;switch(c.tag){case 5:d=c.stateNode;e=!1;break a;case 3:d=c.stateNode.containerInfo;e=!0;break a;case 4:d=c.stateNode.containerInfo;e=!0;break a}c=c.return}c=!0}if(5===b.tag||6===b.tag){a:for(var f=b,g=f;;)if(Kg(g),null!==g.child&&4!==g.tag)g.child.return=g,g=g.child;else{if(g===f)break;for(;null===g.sibling;){if(null===g.return||g.return===f)break a;g=g.return}g.sibling.return=g.return;g=g.sibling}e?
-(f=d,g=b.stateNode,8===f.nodeType?f.parentNode.removeChild(g):f.removeChild(g)):d.removeChild(b.stateNode)}else if(4===b.tag?(d=b.stateNode.containerInfo,e=!0):Kg(b),null!==b.child){b.child.return=b;b=b.child;continue}if(b===a)break;for(;null===b.sibling;){if(null===b.return||b.return===a)return;b=b.return;4===b.tag&&(c=!1)}b.sibling.return=b.return;b=b.sibling}}
-function Og(a,b){switch(b.tag){case 0:case 11:case 14:case 15:break;case 1:break;case 5:var c=b.stateNode;if(null!=c){var d=b.memoizedProps,e=null!==a?a.memoizedProps:d;a=b.type;var f=b.updateQueue;b.updateQueue=null;if(null!==f){c[Ha]=d;"input"===a&&"radio"===d.type&&null!=d.name&&Cc(c,d);we(a,e);b=we(a,d);for(e=0;e<f.length;e+=2){var g=f[e],h=f[e+1];"style"===g?te(c,h):"dangerouslySetInnerHTML"===g?oe(c,h):"children"===g?pe(c,h):yc(c,g,h,b)}switch(a){case "input":Dc(c,d);break;case "textarea":ie(c,
-d);break;case "select":b=c._wrapperState.wasMultiple,c._wrapperState.wasMultiple=!!d.multiple,a=d.value,null!=a?fe(c,!!d.multiple,a,!1):b!==!!d.multiple&&(null!=d.defaultValue?fe(c,!!d.multiple,d.defaultValue,!0):fe(c,!!d.multiple,d.multiple?[]:"",!1))}}}break;case 6:null===b.stateNode?t("162"):void 0;b.stateNode.nodeValue=b.memoizedProps;break;case 3:break;case 12:break;case 13:c=b.memoizedState;a=b;null===c?d=!1:(d=!0,a=b.child,0===c.timedOutAt&&(c.timedOutAt=Qf()));if(null!==a)a:for(b=c=a;;){if(5===
-b.tag)a=b.stateNode,d?a.style.display="none":(a=b.stateNode,f=b.memoizedProps.style,f=void 0!==f&&null!==f&&f.hasOwnProperty("display")?f.display:null,a.style.display=se("display",f));else if(6===b.tag)b.stateNode.nodeValue=d?"":b.memoizedProps;else if(13===b.tag&&null!==b.memoizedState){a=b.child.sibling;a.return=b;b=a;continue}else if(null!==b.child){b.child.return=b;b=b.child;continue}if(b===c)break a;for(;null===b.sibling;){if(null===b.return||b.return===c)break a;b=b.return}b.sibling.return=
-b.return;b=b.sibling}break;case 17:break;default:t("163")}}function Pg(a,b,c){c=mf(c);c.tag=3;c.payload={element:null};var d=b.value;c.callback=function(){Qg(d);Hg(a,b)};return c}
-function Rg(a,b,c){c=mf(c);c.tag=3;var d=a.type.getDerivedStateFromError;if("function"===typeof d){var e=b.value;c.payload=function(){return d(e)}}var f=a.stateNode;null!==f&&"function"===typeof f.componentDidCatch&&(c.callback=function(){"function"!==typeof d&&(null===Sg?Sg=new Set([this]):Sg.add(this));var c=b.value,e=b.stack;Hg(a,b);this.componentDidCatch(c,{componentStack:null!==e?e:""})});return c}
-function Tg(a){switch(a.tag){case 1:L(a.type)&&Me(a);var b=a.effectTag;return b&2048?(a.effectTag=b&-2049|64,a):null;case 3:return Jf(a),Ne(a),b=a.effectTag,0!==(b&64)?t("285"):void 0,a.effectTag=b&-2049|64,a;case 5:return Lf(a),null;case 13:return b=a.effectTag,b&2048?(a.effectTag=b&-2049|64,a):null;case 4:return Jf(a),null;case 10:return Bf(a),null;default:return null}}
-var Ug={readContext:Df},Vg=Xb.ReactCurrentOwner,Wg=1073741822,Xg=0,Yg=!1,R=null,S=null,T=0,Zg=-1,$g=!1,U=null,ah=!1,bh=null,ch=null,Sg=null;function dh(){if(null!==R)for(var a=R.return;null!==a;){var b=a;switch(b.tag){case 1:var c=b.type.childContextTypes;null!==c&&void 0!==c&&Me(b);break;case 3:Jf(b);Ne(b);break;case 5:Lf(b);break;case 4:Jf(b);break;case 10:Bf(b)}a=a.return}S=null;T=0;Zg=-1;$g=!1;R=null}function Sf(){null!==ch&&(ba.unstable_cancelCallback(bh),ch())}
-function eh(a){for(;;){var b=a.alternate,c=a.return,d=a.sibling;if(0===(a.effectTag&1024)){R=a;a:{var e=b;b=a;var f=T;var g=b.pendingProps;switch(b.tag){case 2:break;case 16:break;case 15:case 0:break;case 1:L(b.type)&&Me(b);break;case 3:Jf(b);Ne(b);g=b.stateNode;g.pendingContext&&(g.context=g.pendingContext,g.pendingContext=null);if(null===e||null===e.child)lg(b),b.effectTag&=-3;Bg(b);break;case 5:Lf(b);var h=Hf(Gf.current);f=b.type;if(null!==e&&null!=b.stateNode)Fg(e,b,f,g,h),e.ref!==b.ref&&(b.effectTag|=
-128);else if(g){var k=Hf(N.current);if(lg(b)){g=b;e=g.stateNode;var l=g.type,m=g.memoizedProps,q=h;e[Ga]=g;e[Ha]=m;f=void 0;h=l;switch(h){case "iframe":case "object":G("load",e);break;case "video":case "audio":for(l=0;l<bb.length;l++)G(bb[l],e);break;case "source":G("error",e);break;case "img":case "image":case "link":G("error",e);G("load",e);break;case "form":G("reset",e);G("submit",e);break;case "details":G("toggle",e);break;case "input":Bc(e,m);G("invalid",e);xe(q,"onChange");break;case "select":e._wrapperState=
-{wasMultiple:!!m.multiple};G("invalid",e);xe(q,"onChange");break;case "textarea":he(e,m),G("invalid",e),xe(q,"onChange")}ve(h,m);l=null;for(f in m)m.hasOwnProperty(f)&&(k=m[f],"children"===f?"string"===typeof k?e.textContent!==k&&(l=["children",k]):"number"===typeof k&&e.textContent!==""+k&&(l=["children",""+k]):sa.hasOwnProperty(f)&&null!=k&&xe(q,f));switch(h){case "input":Vb(e);Fc(e,m,!0);break;case "textarea":Vb(e);je(e,m);break;case "select":case "option":break;default:"function"===typeof m.onClick&&
-(e.onclick=ye)}f=l;g.updateQueue=f;g=null!==f?!0:!1;g&&zg(b)}else{m=b;e=f;q=g;l=9===h.nodeType?h:h.ownerDocument;k===ke.html&&(k=le(e));k===ke.html?"script"===e?(e=l.createElement("div"),e.innerHTML="<script>\x3c/script>",l=e.removeChild(e.firstChild)):"string"===typeof q.is?l=l.createElement(e,{is:q.is}):(l=l.createElement(e),"select"===e&&q.multiple&&(l.multiple=!0)):l=l.createElementNS(k,e);e=l;e[Ga]=m;e[Ha]=g;Ag(e,b,!1,!1);q=e;l=f;m=g;var x=h,z=we(l,m);switch(l){case "iframe":case "object":G("load",
-q);h=m;break;case "video":case "audio":for(h=0;h<bb.length;h++)G(bb[h],q);h=m;break;case "source":G("error",q);h=m;break;case "img":case "image":case "link":G("error",q);G("load",q);h=m;break;case "form":G("reset",q);G("submit",q);h=m;break;case "details":G("toggle",q);h=m;break;case "input":Bc(q,m);h=Ac(q,m);G("invalid",q);xe(x,"onChange");break;case "option":h=ee(q,m);break;case "select":q._wrapperState={wasMultiple:!!m.multiple};h=n({},m,{value:void 0});G("invalid",q);xe(x,"onChange");break;case "textarea":he(q,
-m);h=ge(q,m);G("invalid",q);xe(x,"onChange");break;default:h=m}ve(l,h);k=void 0;var B=l,Q=q,v=h;for(k in v)if(v.hasOwnProperty(k)){var r=v[k];"style"===k?te(Q,r):"dangerouslySetInnerHTML"===k?(r=r?r.__html:void 0,null!=r&&oe(Q,r)):"children"===k?"string"===typeof r?("textarea"!==B||""!==r)&&pe(Q,r):"number"===typeof r&&pe(Q,""+r):"suppressContentEditableWarning"!==k&&"suppressHydrationWarning"!==k&&"autoFocus"!==k&&(sa.hasOwnProperty(k)?null!=r&&xe(x,k):null!=r&&yc(Q,k,r,z))}switch(l){case "input":Vb(q);
-Fc(q,m,!1);break;case "textarea":Vb(q);je(q,m);break;case "option":null!=m.value&&q.setAttribute("value",""+zc(m.value));break;case "select":h=q;h.multiple=!!m.multiple;q=m.value;null!=q?fe(h,!!m.multiple,q,!1):null!=m.defaultValue&&fe(h,!!m.multiple,m.defaultValue,!0);break;default:"function"===typeof h.onClick&&(q.onclick=ye)}(g=Be(f,g))&&zg(b);b.stateNode=e}null!==b.ref&&(b.effectTag|=128)}else null===b.stateNode?t("166"):void 0;break;case 6:e&&null!=b.stateNode?Gg(e,b,e.memoizedProps,g):("string"!==
-typeof g&&(null===b.stateNode?t("166"):void 0),e=Hf(Gf.current),Hf(N.current),lg(b)?(g=b,f=g.stateNode,e=g.memoizedProps,f[Ga]=g,(g=f.nodeValue!==e)&&zg(b)):(f=b,g=(9===e.nodeType?e:e.ownerDocument).createTextNode(g),g[Ga]=b,f.stateNode=g));break;case 11:break;case 13:g=b.memoizedState;if(0!==(b.effectTag&64)){b.expirationTime=f;R=b;break a}g=null!==g;f=null!==e&&null!==e.memoizedState;null!==e&&!g&&f&&(e=e.child.sibling,null!==e&&(h=b.firstEffect,null!==h?(b.firstEffect=e,e.nextEffect=h):(b.firstEffect=
-b.lastEffect=e,e.nextEffect=null),e.effectTag=8));if(g!==f||0===(b.effectTag&1)&&g)b.effectTag|=4;break;case 7:break;case 8:break;case 12:break;case 4:Jf(b);Bg(b);break;case 10:Bf(b);break;case 9:break;case 14:break;case 17:L(b.type)&&Me(b);break;default:t("156")}R=null}b=a;if(1===T||1!==b.childExpirationTime){g=0;for(f=b.child;null!==f;)e=f.expirationTime,h=f.childExpirationTime,e>g&&(g=e),h>g&&(g=h),f=f.sibling;b.childExpirationTime=g}if(null!==R)return R;null!==c&&0===(c.effectTag&1024)&&(null===
-c.firstEffect&&(c.firstEffect=a.firstEffect),null!==a.lastEffect&&(null!==c.lastEffect&&(c.lastEffect.nextEffect=a.firstEffect),c.lastEffect=a.lastEffect),1<a.effectTag&&(null!==c.lastEffect?c.lastEffect.nextEffect=a:c.firstEffect=a,c.lastEffect=a))}else{a=Tg(a,T);if(null!==a)return a.effectTag&=1023,a;null!==c&&(c.firstEffect=c.lastEffect=null,c.effectTag|=1024)}if(null!==d)return d;if(null!==c)a=c;else break}return null}
-function fh(a){var b=yg(a.alternate,a,T);a.memoizedProps=a.pendingProps;null===b&&(b=eh(a));Vg.current=null;return b}
-function gh(a,b){Yg?t("243"):void 0;Sf();Yg=!0;Vg.currentDispatcher=Ug;var c=a.nextExpirationTimeToWorkOn;if(c!==T||a!==S||null===R)dh(),S=a,T=c,R=Ze(S.current,null,T),a.pendingCommitExpirationTime=0;var d=!1;do{try{if(b)for(;null!==R&&!hh();)R=fh(R);else for(;null!==R;)R=fh(R)}catch(B){if(zf=yf=xf=null,null===R)d=!0,Qg(B);else{null===R?t("271"):void 0;var e=R,f=e.return;if(null===f)d=!0,Qg(B);else{a:{var g=a,h=f,k=e,l=B;f=T;k.effectTag|=1024;k.firstEffect=k.lastEffect=null;if(null!==l&&"object"===
-typeof l&&"function"===typeof l.then){var m=l;l=h;var q=-1,x=-1;do{if(13===l.tag){var z=l.alternate;if(null!==z&&(z=z.memoizedState,null!==z)){x=10*(1073741822-z.timedOutAt);break}z=l.pendingProps.maxDuration;if("number"===typeof z)if(0>=z)q=0;else if(-1===q||z<q)q=z}l=l.return}while(null!==l);l=h;do{if(z=13===l.tag)z=void 0===l.memoizedProps.fallback?!1:null===l.memoizedState;if(z){h=ih.bind(null,g,l,k,0===(l.mode&1)?1073741823:f);m.then(h,h);if(0===(l.mode&1)){l.effectTag|=64;k.effectTag&=-1957;
-1===k.tag&&null===k.alternate&&(k.tag=17);k.expirationTime=f;break a}-1===q?g=1073741823:(-1===x&&(x=10*(1073741822-hf(g,f))-5E3),g=x+q);0<=g&&Zg<g&&(Zg=g);l.effectTag|=2048;l.expirationTime=f;break a}l=l.return}while(null!==l);l=Error((mc(k.type)||"A React component")+" suspended while rendering, but no fallback UI was specified.\n\nAdd a <Suspense fallback=...> component higher in the tree to provide a loading indicator or placeholder to display."+nc(k))}$g=!0;l=vf(l,k);g=h;do{switch(g.tag){case 3:k=
-l;g.effectTag|=2048;g.expirationTime=f;f=Pg(g,k,f);pf(g,f);break a;case 1:if(k=l,h=g.type,m=g.stateNode,0===(g.effectTag&64)&&("function"===typeof h.getDerivedStateFromError||null!==m&&"function"===typeof m.componentDidCatch&&(null===Sg||!Sg.has(m)))){g.effectTag|=2048;g.expirationTime=f;f=Rg(g,k,f);pf(g,f);break a}}g=g.return}while(null!==g)}R=eh(e);continue}}}break}while(1);Yg=!1;zf=yf=xf=Vg.currentDispatcher=null;if(d)S=null,a.finishedWork=null;else if(null!==R)a.finishedWork=null;else{d=a.current.alternate;
-null===d?t("281"):void 0;S=null;if($g){e=a.latestPendingTime;f=a.latestSuspendedTime;g=a.latestPingedTime;if(0!==e&&e<c||0!==f&&f<c||0!==g&&g<c){gf(a,c);jh(a,d,c,a.expirationTime,-1);return}if(!a.didError&&b){a.didError=!0;c=a.nextExpirationTimeToWorkOn=c;b=a.expirationTime=1073741823;jh(a,d,c,b,-1);return}}b&&-1!==Zg?(gf(a,c),b=10*(1073741822-hf(a,c)),b<Zg&&(Zg=b),b=10*(1073741822-Qf()),b=Zg-b,jh(a,d,c,a.expirationTime,0>b?0:b)):(a.pendingCommitExpirationTime=c,a.finishedWork=d)}}
-function Jg(a,b){for(var c=a.return;null!==c;){switch(c.tag){case 1:var d=c.stateNode;if("function"===typeof c.type.getDerivedStateFromError||"function"===typeof d.componentDidCatch&&(null===Sg||!Sg.has(d))){a=vf(b,a);a=Rg(c,a,1073741823);of(c,a);Tf(c,1073741823);return}break;case 3:a=vf(b,a);a=Pg(c,a,1073741823);of(c,a);Tf(c,1073741823);return}c=c.return}3===a.tag&&(c=vf(b,a),c=Pg(a,c,1073741823),of(a,c),Tf(a,1073741823))}
-function Rf(a,b){0!==Xg?a=Xg:Yg?a=ah?1073741823:T:b.mode&1?(a=kh?1073741822-10*(((1073741822-a+15)/10|0)+1):1073741822-25*(((1073741822-a+500)/25|0)+1),null!==S&&a===T&&--a):a=1073741823;kh&&(0===lh||a<lh)&&(lh=a);return a}
-function ih(a,b,c,d){var e=a.earliestSuspendedTime;var f=a.latestSuspendedTime;if(0!==e&&d<=e&&d>=f){f=e=d;a.didError=!1;var g=a.latestPingedTime;if(0===g||g>f)a.latestPingedTime=f;ff(f,a)}else e=Qf(),e=Rf(e,b),ef(a,e);0!==(b.mode&1)&&a===S&&T===d&&(S=null);mh(b,e);0===(b.mode&1)&&(mh(c,e),1===c.tag&&null!==c.stateNode&&(b=mf(e),b.tag=2,of(c,b)));c=a.expirationTime;0!==c&&nh(a,c)}
-function mh(a,b){a.expirationTime<b&&(a.expirationTime=b);var c=a.alternate;null!==c&&c.expirationTime<b&&(c.expirationTime=b);var d=a.return,e=null;if(null===d&&3===a.tag)e=a.stateNode;else for(;null!==d;){c=d.alternate;d.childExpirationTime<b&&(d.childExpirationTime=b);null!==c&&c.childExpirationTime<b&&(c.childExpirationTime=b);if(null===d.return&&3===d.tag){e=d.stateNode;break}d=d.return}return e}
-function Tf(a,b){a=mh(a,b);null!==a&&(!Yg&&0!==T&&b>T&&dh(),ef(a,b),Yg&&!ah&&S===a||nh(a,a.expirationTime),oh>ph&&(oh=0,t("185")))}function qh(a,b,c,d,e){var f=Xg;Xg=1073741823;try{return a(b,c,d,e)}finally{Xg=f}}var rh=null,V=null,sh=0,th=void 0,W=!1,uh=null,X=0,lh=0,vh=!1,wh=null,Z=!1,xh=!1,kh=!1,yh=null,zh=ba.unstable_now(),Ah=1073741822-(zh/10|0),Bh=Ah,ph=50,oh=0,Ch=null;function Dh(){Ah=1073741822-((ba.unstable_now()-zh)/10|0)}
-function Eh(a,b){if(0!==sh){if(b<sh)return;null!==th&&ba.unstable_cancelCallback(th)}sh=b;a=ba.unstable_now()-zh;th=ba.unstable_scheduleCallback(Fh,{timeout:10*(1073741822-b)-a})}function jh(a,b,c,d,e){a.expirationTime=d;0!==e||hh()?0<e&&(a.timeoutHandle=De(Gh.bind(null,a,b,c),e)):(a.pendingCommitExpirationTime=c,a.finishedWork=b)}function Gh(a,b,c){a.pendingCommitExpirationTime=c;a.finishedWork=b;Dh();Bh=Ah;Hh(a,c)}function Qf(){if(W)return Bh;Ih();if(0===X||1===X)Dh(),Bh=Ah;return Bh}
-function nh(a,b){null===a.nextScheduledRoot?(a.expirationTime=b,null===V?(rh=V=a,a.nextScheduledRoot=a):(V=V.nextScheduledRoot=a,V.nextScheduledRoot=rh)):b>a.expirationTime&&(a.expirationTime=b);W||(Z?xh&&(uh=a,X=1073741823,Jh(a,1073741823,!1)):1073741823===b?Kh(1073741823,!1):Eh(a,b))}
-function Ih(){var a=0,b=null;if(null!==V)for(var c=V,d=rh;null!==d;){var e=d.expirationTime;if(0===e){null===c||null===V?t("244"):void 0;if(d===d.nextScheduledRoot){rh=V=d.nextScheduledRoot=null;break}else if(d===rh)rh=e=d.nextScheduledRoot,V.nextScheduledRoot=e,d.nextScheduledRoot=null;else if(d===V){V=c;V.nextScheduledRoot=rh;d.nextScheduledRoot=null;break}else c.nextScheduledRoot=d.nextScheduledRoot,d.nextScheduledRoot=null;d=c.nextScheduledRoot}else{e>a&&(a=e,b=d);if(d===V)break;if(1073741823===
-a)break;c=d;d=d.nextScheduledRoot}}uh=b;X=a}var Lh=!1;function hh(){return Lh?!0:ba.unstable_shouldYield()?Lh=!0:!1}function Fh(){try{if(!hh()&&null!==rh){Dh();var a=rh;do{var b=a.expirationTime;0!==b&&Ah<=b&&(a.nextExpirationTimeToWorkOn=Ah);a=a.nextScheduledRoot}while(a!==rh)}Kh(0,!0)}finally{Lh=!1}}
-function Kh(a,b){Ih();if(b)for(Dh(),Bh=Ah;null!==uh&&0!==X&&a<=X&&!(Lh&&Ah>X);)Jh(uh,X,Ah>X),Ih(),Dh(),Bh=Ah;else for(;null!==uh&&0!==X&&a<=X;)Jh(uh,X,!1),Ih();b&&(sh=0,th=null);0!==X&&Eh(uh,X);oh=0;Ch=null;if(null!==yh)for(a=yh,yh=null,b=0;b<a.length;b++){var c=a[b];try{c._onComplete()}catch(d){vh||(vh=!0,wh=d)}}if(vh)throw a=wh,wh=null,vh=!1,a;}function Hh(a,b){W?t("253"):void 0;uh=a;X=b;Jh(a,b,!1);Kh(1073741823,!1)}
-function Jh(a,b,c){W?t("245"):void 0;W=!0;if(c){var d=a.finishedWork;null!==d?Mh(a,d,b):(a.finishedWork=null,d=a.timeoutHandle,-1!==d&&(a.timeoutHandle=-1,Ee(d)),gh(a,c),d=a.finishedWork,null!==d&&(hh()?a.finishedWork=d:Mh(a,d,b)))}else d=a.finishedWork,null!==d?Mh(a,d,b):(a.finishedWork=null,d=a.timeoutHandle,-1!==d&&(a.timeoutHandle=-1,Ee(d)),gh(a,c),d=a.finishedWork,null!==d&&Mh(a,d,b));W=!1}
-function Mh(a,b,c){var d=a.firstBatch;if(null!==d&&d._expirationTime>=c&&(null===yh?yh=[d]:yh.push(d),d._defer)){a.finishedWork=b;a.expirationTime=0;return}a.finishedWork=null;a===Ch?oh++:(Ch=a,oh=0);ah=Yg=!0;a.current===b?t("177"):void 0;c=a.pendingCommitExpirationTime;0===c?t("261"):void 0;a.pendingCommitExpirationTime=0;d=b.expirationTime;var e=b.childExpirationTime;d=e>d?e:d;a.didError=!1;0===d?(a.earliestPendingTime=0,a.latestPendingTime=0,a.earliestSuspendedTime=0,a.latestSuspendedTime=0,a.latestPingedTime=
-0):(e=a.latestPendingTime,0!==e&&(e>d?a.earliestPendingTime=a.latestPendingTime=0:a.earliestPendingTime>d&&(a.earliestPendingTime=a.latestPendingTime)),e=a.earliestSuspendedTime,0===e?ef(a,d):d<a.latestSuspendedTime?(a.earliestSuspendedTime=0,a.latestSuspendedTime=0,a.latestPingedTime=0,ef(a,d)):d>e&&ef(a,d));ff(0,a);Vg.current=null;1<b.effectTag?null!==b.lastEffect?(b.lastEffect.nextEffect=b,d=b.firstEffect):d=b:d=b.firstEffect;ze=Hd;e=Td();if(Ud(e)){if("selectionStart"in e)var f={start:e.selectionStart,
-end:e.selectionEnd};else a:{f=(f=e.ownerDocument)&&f.defaultView||window;var g=f.getSelection&&f.getSelection();if(g&&0!==g.rangeCount){f=g.anchorNode;var h=g.anchorOffset,k=g.focusNode;g=g.focusOffset;try{f.nodeType,k.nodeType}catch(db){f=null;break a}var l=0,m=-1,q=-1,x=0,z=0,B=e,Q=null;b:for(;;){for(var v;;){B!==f||0!==h&&3!==B.nodeType||(m=l+h);B!==k||0!==g&&3!==B.nodeType||(q=l+g);3===B.nodeType&&(l+=B.nodeValue.length);if(null===(v=B.firstChild))break;Q=B;B=v}for(;;){if(B===e)break b;Q===f&&
-++x===h&&(m=l);Q===k&&++z===g&&(q=l);if(null!==(v=B.nextSibling))break;B=Q;Q=B.parentNode}B=v}f=-1===m||-1===q?null:{start:m,end:q}}else f=null}f=f||{start:0,end:0}}else f=null;Ae={focusedElem:e,selectionRange:f};Hd=!1;for(U=d;null!==U;){e=!1;f=void 0;try{for(;null!==U;){if(U.effectTag&256)a:{var r=U.alternate;h=U;switch(h.tag){case 0:case 11:case 15:break a;case 1:if(h.effectTag&256&&null!==r){var u=r.memoizedProps,y=r.memoizedState,Y=h.stateNode,Th=Y.getSnapshotBeforeUpdate(h.elementType===h.type?
-u:O(h.type,u),y);Y.__reactInternalSnapshotBeforeUpdate=Th}break a;case 3:case 5:case 6:case 4:case 17:break a;default:t("163")}}U=U.nextEffect}}catch(db){e=!0,f=db}e&&(null===U?t("178"):void 0,Jg(U,f),null!==U&&(U=U.nextEffect))}for(U=d;null!==U;){r=!1;u=void 0;try{for(;null!==U;){var w=U.effectTag;w&16&&pe(U.stateNode,"");if(w&128){var C=U.alternate;if(null!==C){var p=C.ref;null!==p&&("function"===typeof p?p(null):p.current=null)}}switch(w&14){case 2:Ng(U);U.effectTag&=-3;break;case 6:Ng(U);U.effectTag&=
--3;Og(U.alternate,U);break;case 4:Og(U.alternate,U);break;case 8:y=U,Lg(y),y.return=null,y.child=null,y.alternate&&(y.alternate.child=null,y.alternate.return=null)}U=U.nextEffect}}catch(db){r=!0,u=db}r&&(null===U?t("178"):void 0,Jg(U,u),null!==U&&(U=U.nextEffect))}p=Ae;C=Td();w=p.focusedElem;u=p.selectionRange;if(C!==w&&w&&w.ownerDocument&&Sd(w.ownerDocument.documentElement,w)){null!==u&&Ud(w)&&(C=u.start,p=u.end,void 0===p&&(p=C),"selectionStart"in w?(w.selectionStart=C,w.selectionEnd=Math.min(p,
-w.value.length)):(p=(C=w.ownerDocument||document)&&C.defaultView||window,p.getSelection&&(p=p.getSelection(),y=w.textContent.length,r=Math.min(u.start,y),u=void 0===u.end?r:Math.min(u.end,y),!p.extend&&r>u&&(y=u,u=r,r=y),y=Rd(w,r),Y=Rd(w,u),y&&Y&&(1!==p.rangeCount||p.anchorNode!==y.node||p.anchorOffset!==y.offset||p.focusNode!==Y.node||p.focusOffset!==Y.offset)&&(C=C.createRange(),C.setStart(y.node,y.offset),p.removeAllRanges(),r>u?(p.addRange(C),p.extend(Y.node,Y.offset)):(C.setEnd(Y.node,Y.offset),
-p.addRange(C))))));C=[];for(p=w;p=p.parentNode;)1===p.nodeType&&C.push({element:p,left:p.scrollLeft,top:p.scrollTop});"function"===typeof w.focus&&w.focus();for(w=0;w<C.length;w++)p=C[w],p.element.scrollLeft=p.left,p.element.scrollTop=p.top}Ae=null;Hd=!!ze;ze=null;a.current=b;for(U=d;null!==U;){d=!1;w=void 0;try{for(C=c;null!==U;){var Fb=U.effectTag;if(Fb&36){var Gb=U.alternate;p=U;r=C;switch(p.tag){case 0:case 11:case 15:break;case 1:var wc=p.stateNode;if(p.effectTag&4)if(null===Gb)wc.componentDidMount();
-else{var ci=p.elementType===p.type?Gb.memoizedProps:O(p.type,Gb.memoizedProps);wc.componentDidUpdate(ci,Gb.memoizedState,wc.__reactInternalSnapshotBeforeUpdate)}var Cg=p.updateQueue;null!==Cg&&tf(p,Cg,wc,r);break;case 3:var Dg=p.updateQueue;if(null!==Dg){u=null;if(null!==p.child)switch(p.child.tag){case 5:u=p.child.stateNode;break;case 1:u=p.child.stateNode}tf(p,Dg,u,r)}break;case 5:var di=p.stateNode;null===Gb&&p.effectTag&4&&Be(p.type,p.memoizedProps)&&di.focus();break;case 6:break;case 4:break;
-case 12:break;case 13:break;case 17:break;default:t("163")}}if(Fb&128){var Ic=U.ref;if(null!==Ic){var Eg=U.stateNode;switch(U.tag){case 5:var ce=Eg;break;default:ce=Eg}"function"===typeof Ic?Ic(ce):Ic.current=ce}}U=U.nextEffect}}catch(db){d=!0,w=db}d&&(null===U?t("178"):void 0,Jg(U,w),null!==U&&(U=U.nextEffect))}Yg=ah=!1;"function"===typeof Se&&Se(b.stateNode);Fb=b.expirationTime;b=b.childExpirationTime;b=b>Fb?b:Fb;0===b&&(Sg=null);a.expirationTime=b;a.finishedWork=null}
-function Qg(a){null===uh?t("246"):void 0;uh.expirationTime=0;vh||(vh=!0,wh=a)}function Nh(a,b){var c=Z;Z=!0;try{return a(b)}finally{(Z=c)||W||Kh(1073741823,!1)}}function Oh(a,b){if(Z&&!xh){xh=!0;try{return a(b)}finally{xh=!1}}return a(b)}function Ph(a,b,c){if(kh)return a(b,c);Z||W||0===lh||(Kh(lh,!1),lh=0);var d=kh,e=Z;Z=kh=!0;try{return a(b,c)}finally{kh=d,(Z=e)||W||Kh(1073741823,!1)}}
-function Qh(a,b,c,d,e){var f=b.current;a:if(c){c=c._reactInternalFiber;b:{2===kd(c)&&1===c.tag?void 0:t("170");var g=c;do{switch(g.tag){case 3:g=g.stateNode.context;break b;case 1:if(L(g.type)){g=g.stateNode.__reactInternalMemoizedMergedChildContext;break b}}g=g.return}while(null!==g);t("171");g=void 0}if(1===c.tag){var h=c.type;if(L(h)){c=Pe(c,h,g);break a}}c=g}else c=Je;null===b.context?b.context=c:b.pendingContext=c;b=e;e=mf(d);e.payload={element:a};b=void 0===b?null:b;null!==b&&(e.callback=b);
-Sf();of(f,e);Tf(f,d);return d}function Rh(a,b,c,d){var e=b.current,f=Qf();e=Rf(f,e);return Qh(a,b,c,e,d)}function Sh(a){a=a.current;if(!a.child)return null;switch(a.child.tag){case 5:return a.child.stateNode;default:return a.child.stateNode}}function Uh(a,b,c){var d=3<arguments.length&&void 0!==arguments[3]?arguments[3]:null;return{$$typeof:$b,key:null==d?null:""+d,children:a,containerInfo:b,implementation:c}}
-Cb=function(a,b,c){switch(b){case "input":Dc(a,c);b=c.name;if("radio"===c.type&&null!=b){for(c=a;c.parentNode;)c=c.parentNode;c=c.querySelectorAll("input[name="+JSON.stringify(""+b)+'][type="radio"]');for(b=0;b<c.length;b++){var d=c[b];if(d!==a&&d.form===a.form){var e=La(d);e?void 0:t("90");Wb(d);Dc(d,e)}}}break;case "textarea":ie(a,c);break;case "select":b=c.value,null!=b&&fe(a,!!c.multiple,b,!1)}};
-function Vh(a){var b=1073741822-25*(((1073741822-Qf()+500)/25|0)+1);b>=Wg&&(b=Wg-1);this._expirationTime=Wg=b;this._root=a;this._callbacks=this._next=null;this._hasChildren=this._didComplete=!1;this._children=null;this._defer=!0}Vh.prototype.render=function(a){this._defer?void 0:t("250");this._hasChildren=!0;this._children=a;var b=this._root._internalRoot,c=this._expirationTime,d=new Wh;Qh(a,b,null,c,d._onCommit);return d};
-Vh.prototype.then=function(a){if(this._didComplete)a();else{var b=this._callbacks;null===b&&(b=this._callbacks=[]);b.push(a)}};
-Vh.prototype.commit=function(){var a=this._root._internalRoot,b=a.firstBatch;this._defer&&null!==b?void 0:t("251");if(this._hasChildren){var c=this._expirationTime;if(b!==this){this._hasChildren&&(c=this._expirationTime=b._expirationTime,this.render(this._children));for(var d=null,e=b;e!==this;)d=e,e=e._next;null===d?t("251"):void 0;d._next=e._next;this._next=b;a.firstBatch=this}this._defer=!1;Hh(a,c);b=this._next;this._next=null;b=a.firstBatch=b;null!==b&&b._hasChildren&&b.render(b._children)}else this._next=
-null,this._defer=!1};Vh.prototype._onComplete=function(){if(!this._didComplete){this._didComplete=!0;var a=this._callbacks;if(null!==a)for(var b=0;b<a.length;b++)(0,a[b])()}};function Wh(){this._callbacks=null;this._didCommit=!1;this._onCommit=this._onCommit.bind(this)}Wh.prototype.then=function(a){if(this._didCommit)a();else{var b=this._callbacks;null===b&&(b=this._callbacks=[]);b.push(a)}};
-Wh.prototype._onCommit=function(){if(!this._didCommit){this._didCommit=!0;var a=this._callbacks;if(null!==a)for(var b=0;b<a.length;b++){var c=a[b];"function"!==typeof c?t("191",c):void 0;c()}}};
-function Xh(a,b,c){b=M(3,null,null,b?3:0);a={current:b,containerInfo:a,pendingChildren:null,earliestPendingTime:0,latestPendingTime:0,earliestSuspendedTime:0,latestSuspendedTime:0,latestPingedTime:0,didError:!1,pendingCommitExpirationTime:0,finishedWork:null,timeoutHandle:-1,context:null,pendingContext:null,hydrate:c,nextExpirationTimeToWorkOn:0,expirationTime:0,firstBatch:null,nextScheduledRoot:null};this._internalRoot=b.stateNode=a}
-Xh.prototype.render=function(a,b){var c=this._internalRoot,d=new Wh;b=void 0===b?null:b;null!==b&&d.then(b);Rh(a,c,null,d._onCommit);return d};Xh.prototype.unmount=function(a){var b=this._internalRoot,c=new Wh;a=void 0===a?null:a;null!==a&&c.then(a);Rh(null,b,null,c._onCommit);return c};Xh.prototype.legacy_renderSubtreeIntoContainer=function(a,b,c){var d=this._internalRoot,e=new Wh;c=void 0===c?null:c;null!==c&&e.then(c);Rh(b,d,a,e._onCommit);return e};
-Xh.prototype.createBatch=function(){var a=new Vh(this),b=a._expirationTime,c=this._internalRoot,d=c.firstBatch;if(null===d)c.firstBatch=a,a._next=null;else{for(c=null;null!==d&&d._expirationTime>=b;)c=d,d=d._next;a._next=d;null!==c&&(c._next=a)}return a};function Yh(a){return!(!a||1!==a.nodeType&&9!==a.nodeType&&11!==a.nodeType&&(8!==a.nodeType||" react-mount-point-unstable "!==a.nodeValue))}Kb=Nh;Lb=Ph;Mb=function(){W||0===lh||(Kh(lh,!1),lh=0)};
-function Zh(a,b){b||(b=a?9===a.nodeType?a.documentElement:a.firstChild:null,b=!(!b||1!==b.nodeType||!b.hasAttribute("data-reactroot")));if(!b)for(var c;c=a.lastChild;)a.removeChild(c);return new Xh(a,!1,b)}
-function $h(a,b,c,d,e){Yh(c)?void 0:t("200");var f=c._reactRootContainer;if(f){if("function"===typeof e){var g=e;e=function(){var a=Sh(f._internalRoot);g.call(a)}}null!=a?f.legacy_renderSubtreeIntoContainer(a,b,e):f.render(b,e)}else{f=c._reactRootContainer=Zh(c,d);if("function"===typeof e){var h=e;e=function(){var a=Sh(f._internalRoot);h.call(a)}}Oh(function(){null!=a?f.legacy_renderSubtreeIntoContainer(a,b,e):f.render(b,e)})}return Sh(f._internalRoot)}
-function ai(a,b){var c=2<arguments.length&&void 0!==arguments[2]?arguments[2]:null;Yh(b)?void 0:t("200");return Uh(a,b,null,c)}
-var bi={createPortal:ai,findDOMNode:function(a){if(null==a)return null;if(1===a.nodeType)return a;var b=a._reactInternalFiber;void 0===b&&("function"===typeof a.render?t("188"):t("268",Object.keys(a)));a=nd(b);a=null===a?null:a.stateNode;return a},hydrate:function(a,b,c){return $h(null,a,b,!0,c)},render:function(a,b,c){return $h(null,a,b,!1,c)},unstable_renderSubtreeIntoContainer:function(a,b,c,d){null==a||void 0===a._reactInternalFiber?t("38"):void 0;return $h(a,b,c,!1,d)},unmountComponentAtNode:function(a){Yh(a)?
-void 0:t("40");return a._reactRootContainer?(Oh(function(){$h(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:function(){return ai.apply(void 0,arguments)},unstable_batchedUpdates:Nh,unstable_interactiveUpdates:Ph,flushSync:function(a,b){W?t("187"):void 0;var c=Z;Z=!0;try{return qh(a,b)}finally{Z=c,Kh(1073741823,!1)}},unstable_flushControlled:function(a){var b=Z;Z=!0;try{qh(a)}finally{(Z=b)||W||Kh(1073741823,!1)}},__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{Events:[Ja,
-Ka,La,Ca.injectEventPluginsByName,qa,Ra,function(a){za(a,Qa)},Ib,Jb,Jd,Ea]},unstable_createRoot:function(a,b){Yh(a)?void 0:t("299","unstable_createRoot");return new Xh(a,!0,null!=b&&!0===b.hydrate)}};(function(a){var b=a.findFiberByHostInstance;return Ve(n({},a,{findHostInstanceByFiber:function(a){a=nd(a);return null===a?null:a.stateNode},findFiberByHostInstance:function(a){return b?b(a):null}}))})({findFiberByHostInstance:Ia,bundleType:0,version:"16.6.3",rendererPackageName:"react-dom"});
-var ei={default:bi},fi=ei&&bi||ei;module.exports=fi.default||fi;
+function wh(a){for(var b=a,c=!1,d=void 0,e=void 0;;){if(!c){c=b.return;a:for(;;){null===c?x("160"):void 0;switch(c.tag){case 5:d=c.stateNode;e=!1;break a;case 3:d=c.stateNode.containerInfo;e=!0;break a;case 4:d=c.stateNode.containerInfo;e=!0;break a}c=c.return}c=!0}if(5===b.tag||6===b.tag){a:for(var f=b,g=f;;)if(vh(g),null!==g.child&&4!==g.tag)g.child.return=g,g=g.child;else{if(g===f)break;for(;null===g.sibling;){if(null===g.return||g.return===f)break a;g=g.return}g.sibling.return=g.return;g=g.sibling}e?
+(f=d,g=b.stateNode,8===f.nodeType?f.parentNode.removeChild(g):f.removeChild(g)):d.removeChild(b.stateNode)}else if(4===b.tag){if(null!==b.child){d=b.stateNode.containerInfo;e=!0;b.child.return=b;b=b.child;continue}}else if(vh(b),null!==b.child){b.child.return=b;b=b.child;continue}if(b===a)break;for(;null===b.sibling;){if(null===b.return||b.return===a)return;b=b.return;4===b.tag&&(c=!1)}b.sibling.return=b.return;b=b.sibling}}
+function zh(a,b){switch(b.tag){case 0:case 11:case 14:case 15:th(Pf,Qf,b);break;case 1:break;case 5:var c=b.stateNode;if(null!=c){var d=b.memoizedProps;a=null!==a?a.memoizedProps:d;var e=b.type,f=b.updateQueue;b.updateQueue=null;null!==f&&Ce(c,f,e,a,d,b)}break;case 6:null===b.stateNode?x("162"):void 0;b.stateNode.nodeValue=b.memoizedProps;break;case 3:break;case 12:break;case 13:c=b.memoizedState;d=void 0;a=b;null===c?d=!1:(d=!0,a=b.child,0===c.timedOutAt&&(c.timedOutAt=lf()));null!==a&&uh(a,d);c=
+b.updateQueue;if(null!==c){b.updateQueue=null;var g=b.stateNode;null===g&&(g=b.stateNode=new ph);c.forEach(function(a){var c=Ah.bind(null,b,a);g.has(a)||(g.add(a),a.then(c,c))})}break;case 17:break;default:x("163")}}var Bh="function"===typeof WeakMap?WeakMap:Map;function Ch(a,b,c){c=nf(c);c.tag=ah;c.payload={element:null};var d=b.value;c.callback=function(){Dh(d);qh(a,b)};return c}
+function Eh(a,b,c){c=nf(c);c.tag=ah;var d=a.type.getDerivedStateFromError;if("function"===typeof d){var e=b.value;c.payload=function(){return d(e)}}var f=a.stateNode;null!==f&&"function"===typeof f.componentDidCatch&&(c.callback=function(){"function"!==typeof d&&(null===Fh?Fh=new Set([this]):Fh.add(this));var c=b.value,e=b.stack;qh(a,b);this.componentDidCatch(c,{componentStack:null!==e?e:""})});return c}
+function Gh(a){switch(a.tag){case 1:J(a.type)&&Ke(a);var b=a.effectTag;return b&2048?(a.effectTag=b&-2049|64,a):null;case 3:return Kf(a),Le(a),b=a.effectTag,0!==(b&64)?x("285"):void 0,a.effectTag=b&-2049|64,a;case 5:return Mf(a),null;case 13:return b=a.effectTag,b&2048?(a.effectTag=b&-2049|64,a):null;case 18:return null;case 4:return Kf(a),null;case 10:return Zg(a),null;default:return null}}
+var Hh=Tb.ReactCurrentDispatcher,Ih=Tb.ReactCurrentOwner,Jh=1073741822,Kh=!1,T=null,Lh=null,U=0,Mh=-1,Nh=!1,V=null,Oh=!1,Ph=null,Qh=null,Rh=null,Fh=null;function Sh(){if(null!==T)for(var a=T.return;null!==a;){var b=a;switch(b.tag){case 1:var c=b.type.childContextTypes;null!==c&&void 0!==c&&Ke(b);break;case 3:Kf(b);Le(b);break;case 5:Mf(b);break;case 4:Kf(b);break;case 10:Zg(b)}a=a.return}Lh=null;U=0;Mh=-1;Nh=!1;T=null}
+function Th(){for(;null!==V;){var a=V.effectTag;a&16&&ke(V.stateNode,"");if(a&128){var b=V.alternate;null!==b&&(b=b.ref,null!==b&&("function"===typeof b?b(null):b.current=null))}switch(a&14){case 2:yh(V);V.effectTag&=-3;break;case 6:yh(V);V.effectTag&=-3;zh(V.alternate,V);break;case 4:zh(V.alternate,V);break;case 8:a=V,wh(a),a.return=null,a.child=null,a.memoizedState=null,a.updateQueue=null,a=a.alternate,null!==a&&(a.return=null,a.child=null,a.memoizedState=null,a.updateQueue=null)}V=V.nextEffect}}
+function Uh(){for(;null!==V;){if(V.effectTag&256)a:{var a=V.alternate,b=V;switch(b.tag){case 0:case 11:case 15:th(Of,Nf,b);break a;case 1:if(b.effectTag&256&&null!==a){var c=a.memoizedProps,d=a.memoizedState;a=b.stateNode;b=a.getSnapshotBeforeUpdate(b.elementType===b.type?c:L(b.type,c),d);a.__reactInternalSnapshotBeforeUpdate=b}break a;case 3:case 5:case 6:case 4:case 17:break a;default:x("163")}}V=V.nextEffect}}
+function Vh(a,b){for(;null!==V;){var c=V.effectTag;if(c&36){var d=V.alternate,e=V,f=b;switch(e.tag){case 0:case 11:case 15:th(Rf,Sf,e);break;case 1:var g=e.stateNode;if(e.effectTag&4)if(null===d)g.componentDidMount();else{var h=e.elementType===e.type?d.memoizedProps:L(e.type,d.memoizedProps);g.componentDidUpdate(h,d.memoizedState,g.__reactInternalSnapshotBeforeUpdate)}d=e.updateQueue;null!==d&&hh(e,d,g,f);break;case 3:d=e.updateQueue;if(null!==d){g=null;if(null!==e.child)switch(e.child.tag){case 5:g=
+e.child.stateNode;break;case 1:g=e.child.stateNode}hh(e,d,g,f)}break;case 5:f=e.stateNode;null===d&&e.effectTag&4&&we(e.type,e.memoizedProps)&&f.focus();break;case 6:break;case 4:break;case 12:break;case 13:break;case 17:break;default:x("163")}}c&128&&(e=V.ref,null!==e&&(f=V.stateNode,"function"===typeof e?e(f):e.current=f));c&512&&(Ph=a);V=V.nextEffect}}
+function Wh(a,b){Rh=Qh=Ph=null;var c=W;W=!0;do{if(b.effectTag&512){var d=!1,e=void 0;try{var f=b;th(Uf,Nf,f);th(Nf,Tf,f)}catch(g){d=!0,e=g}d&&sh(b,e)}b=b.nextEffect}while(null!==b);W=c;c=a.expirationTime;0!==c&&Xh(a,c);X||W||Yh(1073741823,!1)}function of(){null!==Qh&&Be(Qh);null!==Rh&&Rh()}
+function Zh(a,b){Oh=Kh=!0;a.current===b?x("177"):void 0;var c=a.pendingCommitExpirationTime;0===c?x("261"):void 0;a.pendingCommitExpirationTime=0;var d=b.expirationTime,e=b.childExpirationTime;ef(a,e>d?e:d);Ih.current=null;d=void 0;1<b.effectTag?null!==b.lastEffect?(b.lastEffect.nextEffect=b,d=b.firstEffect):d=b:d=b.firstEffect;ue=Bd;ve=Pd();Bd=!1;for(V=d;null!==V;){e=!1;var f=void 0;try{Uh()}catch(h){e=!0,f=h}e&&(null===V?x("178"):void 0,sh(V,f),null!==V&&(V=V.nextEffect))}for(V=d;null!==V;){e=!1;
+f=void 0;try{Th()}catch(h){e=!0,f=h}e&&(null===V?x("178"):void 0,sh(V,f),null!==V&&(V=V.nextEffect))}Qd(ve);ve=null;Bd=!!ue;ue=null;a.current=b;for(V=d;null!==V;){e=!1;f=void 0;try{Vh(a,c)}catch(h){e=!0,f=h}e&&(null===V?x("178"):void 0,sh(V,f),null!==V&&(V=V.nextEffect))}if(null!==d&&null!==Ph){var g=Wh.bind(null,a,d);Qh=r.unstable_runWithPriority(r.unstable_NormalPriority,function(){return Ae(g)});Rh=g}Kh=Oh=!1;"function"===typeof Qe&&Qe(b.stateNode);c=b.expirationTime;b=b.childExpirationTime;b=
+b>c?b:c;0===b&&(Fh=null);$h(a,b)}
+function ai(a){for(;;){var b=a.alternate,c=a.return,d=a.sibling;if(0===(a.effectTag&1024)){T=a;a:{var e=b;b=a;var f=U;var g=b.pendingProps;switch(b.tag){case 2:break;case 16:break;case 15:case 0:break;case 1:J(b.type)&&Ke(b);break;case 3:Kf(b);Le(b);g=b.stateNode;g.pendingContext&&(g.context=g.pendingContext,g.pendingContext=null);if(null===e||null===e.child)Eg(b),b.effectTag&=-3;mh(b);break;case 5:Mf(b);var h=If(Hf.current);f=b.type;if(null!==e&&null!=b.stateNode)nh(e,b,f,g,h),e.ref!==b.ref&&(b.effectTag|=
+128);else if(g){var l=If(N.current);if(Eg(b)){g=b;e=g.stateNode;var k=g.type,m=g.memoizedProps,p=h;e[Fa]=g;e[Ga]=m;f=void 0;h=k;switch(h){case "iframe":case "object":E("load",e);break;case "video":case "audio":for(k=0;k<ab.length;k++)E(ab[k],e);break;case "source":E("error",e);break;case "img":case "image":case "link":E("error",e);E("load",e);break;case "form":E("reset",e);E("submit",e);break;case "details":E("toggle",e);break;case "input":wc(e,m);E("invalid",e);se(p,"onChange");break;case "select":e._wrapperState=
+{wasMultiple:!!m.multiple};E("invalid",e);se(p,"onChange");break;case "textarea":ce(e,m),E("invalid",e),se(p,"onChange")}qe(h,m);k=null;for(f in m)m.hasOwnProperty(f)&&(l=m[f],"children"===f?"string"===typeof l?e.textContent!==l&&(k=["children",l]):"number"===typeof l&&e.textContent!==""+l&&(k=["children",""+l]):ra.hasOwnProperty(f)&&null!=l&&se(p,f));switch(h){case "input":Rb(e);Ac(e,m,!0);break;case "textarea":Rb(e);ee(e,m);break;case "select":case "option":break;default:"function"===typeof m.onClick&&
+(e.onclick=te)}f=k;g.updateQueue=f;g=null!==f?!0:!1;g&&kh(b)}else{m=b;p=f;e=g;k=9===h.nodeType?h:h.ownerDocument;l===fe.html&&(l=ge(p));l===fe.html?"script"===p?(e=k.createElement("div"),e.innerHTML="<script>\x3c/script>",k=e.removeChild(e.firstChild)):"string"===typeof e.is?k=k.createElement(p,{is:e.is}):(k=k.createElement(p),"select"===p&&(p=k,e.multiple?p.multiple=!0:e.size&&(p.size=e.size))):k=k.createElementNS(l,p);e=k;e[Fa]=m;e[Ga]=g;lh(e,b,!1,!1);p=e;k=f;m=g;var t=h,A=re(k,m);switch(k){case "iframe":case "object":E("load",
+p);h=m;break;case "video":case "audio":for(h=0;h<ab.length;h++)E(ab[h],p);h=m;break;case "source":E("error",p);h=m;break;case "img":case "image":case "link":E("error",p);E("load",p);h=m;break;case "form":E("reset",p);E("submit",p);h=m;break;case "details":E("toggle",p);h=m;break;case "input":wc(p,m);h=vc(p,m);E("invalid",p);se(t,"onChange");break;case "option":h=$d(p,m);break;case "select":p._wrapperState={wasMultiple:!!m.multiple};h=n({},m,{value:void 0});E("invalid",p);se(t,"onChange");break;case "textarea":ce(p,
+m);h=be(p,m);E("invalid",p);se(t,"onChange");break;default:h=m}qe(k,h);l=void 0;var v=k,R=p,u=h;for(l in u)if(u.hasOwnProperty(l)){var q=u[l];"style"===l?oe(R,q):"dangerouslySetInnerHTML"===l?(q=q?q.__html:void 0,null!=q&&je(R,q)):"children"===l?"string"===typeof q?("textarea"!==v||""!==q)&&ke(R,q):"number"===typeof q&&ke(R,""+q):"suppressContentEditableWarning"!==l&&"suppressHydrationWarning"!==l&&"autoFocus"!==l&&(ra.hasOwnProperty(l)?null!=q&&se(t,l):null!=q&&tc(R,l,q,A))}switch(k){case "input":Rb(p);
+Ac(p,m,!1);break;case "textarea":Rb(p);ee(p,m);break;case "option":null!=m.value&&p.setAttribute("value",""+uc(m.value));break;case "select":h=p;h.multiple=!!m.multiple;p=m.value;null!=p?ae(h,!!m.multiple,p,!1):null!=m.defaultValue&&ae(h,!!m.multiple,m.defaultValue,!0);break;default:"function"===typeof h.onClick&&(p.onclick=te)}(g=we(f,g))&&kh(b);b.stateNode=e}null!==b.ref&&(b.effectTag|=128)}else null===b.stateNode?x("166"):void 0;break;case 6:e&&null!=b.stateNode?oh(e,b,e.memoizedProps,g):("string"!==
+typeof g&&(null===b.stateNode?x("166"):void 0),e=If(Hf.current),If(N.current),Eg(b)?(g=b,f=g.stateNode,e=g.memoizedProps,f[Fa]=g,(g=f.nodeValue!==e)&&kh(b)):(f=b,g=(9===e.nodeType?e:e.ownerDocument).createTextNode(g),g[Fa]=b,f.stateNode=g));break;case 11:break;case 13:g=b.memoizedState;if(0!==(b.effectTag&64)){b.expirationTime=f;T=b;break a}g=null!==g;f=null!==e&&null!==e.memoizedState;null!==e&&!g&&f&&(e=e.child.sibling,null!==e&&(h=b.firstEffect,null!==h?(b.firstEffect=e,e.nextEffect=h):(b.firstEffect=
+b.lastEffect=e,e.nextEffect=null),e.effectTag=8));if(g||f)b.effectTag|=4;break;case 7:break;case 8:break;case 12:break;case 4:Kf(b);mh(b);break;case 10:Zg(b);break;case 9:break;case 14:break;case 17:J(b.type)&&Ke(b);break;case 18:break;default:x("156")}T=null}b=a;if(1===U||1!==b.childExpirationTime){g=0;for(f=b.child;null!==f;)e=f.expirationTime,h=f.childExpirationTime,e>g&&(g=e),h>g&&(g=h),f=f.sibling;b.childExpirationTime=g}if(null!==T)return T;null!==c&&0===(c.effectTag&1024)&&(null===c.firstEffect&&
+(c.firstEffect=a.firstEffect),null!==a.lastEffect&&(null!==c.lastEffect&&(c.lastEffect.nextEffect=a.firstEffect),c.lastEffect=a.lastEffect),1<a.effectTag&&(null!==c.lastEffect?c.lastEffect.nextEffect=a:c.firstEffect=a,c.lastEffect=a))}else{a=Gh(a,U);if(null!==a)return a.effectTag&=1023,a;null!==c&&(c.firstEffect=c.lastEffect=null,c.effectTag|=1024)}if(null!==d)return d;if(null!==c)a=c;else break}return null}
+function bi(a){var b=Tg(a.alternate,a,U);a.memoizedProps=a.pendingProps;null===b&&(b=ai(a));Ih.current=null;return b}
+function ci(a,b){Kh?x("243"):void 0;of();Kh=!0;var c=Hh.current;Hh.current=kg;var d=a.nextExpirationTimeToWorkOn;if(d!==U||a!==Lh||null===T)Sh(),Lh=a,U=d,T=Xe(Lh.current,null,U),a.pendingCommitExpirationTime=0;var e=!1;do{try{if(b)for(;null!==T&&!di();)T=bi(T);else for(;null!==T;)T=bi(T)}catch(u){if(Yg=Xg=Wg=null,lg(),null===T)e=!0,Dh(u);else{null===T?x("271"):void 0;var f=T,g=f.return;if(null===g)e=!0,Dh(u);else{a:{var h=a,l=g,k=f,m=u;g=U;k.effectTag|=1024;k.firstEffect=k.lastEffect=null;if(null!==
+m&&"object"===typeof m&&"function"===typeof m.then){var p=m;m=l;var t=-1,A=-1;do{if(13===m.tag){var v=m.alternate;if(null!==v&&(v=v.memoizedState,null!==v)){A=10*(1073741822-v.timedOutAt);break}v=m.pendingProps.maxDuration;if("number"===typeof v)if(0>=v)t=0;else if(-1===t||v<t)t=v}m=m.return}while(null!==m);m=l;do{if(v=13===m.tag)v=void 0===m.memoizedProps.fallback?!1:null===m.memoizedState;if(v){l=m.updateQueue;null===l?(l=new Set,l.add(p),m.updateQueue=l):l.add(p);if(0===(m.mode&1)){m.effectTag|=
+64;k.effectTag&=-1957;1===k.tag&&(null===k.alternate?k.tag=17:(g=nf(1073741823),g.tag=sf,pf(k,g)));k.expirationTime=1073741823;break a}k=h;l=g;var R=k.pingCache;null===R?(R=k.pingCache=new Bh,v=new Set,R.set(p,v)):(v=R.get(p),void 0===v&&(v=new Set,R.set(p,v)));v.has(l)||(v.add(l),k=ei.bind(null,k,p,l),p.then(k,k));-1===t?h=1073741823:(-1===A&&(A=10*(1073741822-gf(h,g))-5E3),h=A+t);0<=h&&Mh<h&&(Mh=h);m.effectTag|=2048;m.expirationTime=g;break a}m=m.return}while(null!==m);m=Error((ic(k.type)||"A React component")+
+" suspended while rendering, but no fallback UI was specified.\n\nAdd a <Suspense fallback=...> component higher in the tree to provide a loading indicator or placeholder to display."+jc(k))}Nh=!0;m=jh(m,k);h=l;do{switch(h.tag){case 3:h.effectTag|=2048;h.expirationTime=g;g=Ch(h,m,g);eh(h,g);break a;case 1:if(t=m,A=h.type,k=h.stateNode,0===(h.effectTag&64)&&("function"===typeof A.getDerivedStateFromError||null!==k&&"function"===typeof k.componentDidCatch&&(null===Fh||!Fh.has(k)))){h.effectTag|=2048;
+h.expirationTime=g;g=Eh(h,t,g);eh(h,g);break a}}h=h.return}while(null!==h)}T=ai(f);continue}}}break}while(1);Kh=!1;Hh.current=c;Yg=Xg=Wg=null;lg();if(e)Lh=null,a.finishedWork=null;else if(null!==T)a.finishedWork=null;else{c=a.current.alternate;null===c?x("281"):void 0;Lh=null;if(Nh){e=a.latestPendingTime;f=a.latestSuspendedTime;g=a.latestPingedTime;if(0!==e&&e<d||0!==f&&f<d||0!==g&&g<d){ff(a,d);fi(a,c,d,a.expirationTime,-1);return}if(!a.didError&&b){a.didError=!0;d=a.nextExpirationTimeToWorkOn=d;
+b=a.expirationTime=1073741823;fi(a,c,d,b,-1);return}}b&&-1!==Mh?(ff(a,d),b=10*(1073741822-gf(a,d)),b<Mh&&(Mh=b),b=10*(1073741822-lf()),b=Mh-b,fi(a,c,d,a.expirationTime,0>b?0:b)):(a.pendingCommitExpirationTime=d,a.finishedWork=c)}}
+function sh(a,b){for(var c=a.return;null!==c;){switch(c.tag){case 1:var d=c.stateNode;if("function"===typeof c.type.getDerivedStateFromError||"function"===typeof d.componentDidCatch&&(null===Fh||!Fh.has(d))){a=jh(b,a);a=Eh(c,a,1073741823);pf(c,a);qf(c,1073741823);return}break;case 3:a=jh(b,a);a=Ch(c,a,1073741823);pf(c,a);qf(c,1073741823);return}c=c.return}3===a.tag&&(c=jh(b,a),c=Ch(a,c,1073741823),pf(a,c),qf(a,1073741823))}
+function mf(a,b){var c=r.unstable_getCurrentPriorityLevel(),d=void 0;if(0===(b.mode&1))d=1073741823;else if(Kh&&!Oh)d=U;else{switch(c){case r.unstable_ImmediatePriority:d=1073741823;break;case r.unstable_UserBlockingPriority:d=1073741822-10*(((1073741822-a+15)/10|0)+1);break;case r.unstable_NormalPriority:d=1073741822-25*(((1073741822-a+500)/25|0)+1);break;case r.unstable_LowPriority:case r.unstable_IdlePriority:d=1;break;default:x("313")}null!==Lh&&d===U&&--d}c===r.unstable_UserBlockingPriority&&
+(0===gi||d<gi)&&(gi=d);return d}function ei(a,b,c){var d=a.pingCache;null!==d&&d.delete(b);if(null!==Lh&&U===c)Lh=null;else if(b=a.earliestSuspendedTime,d=a.latestSuspendedTime,0!==b&&c<=b&&c>=d){a.didError=!1;b=a.latestPingedTime;if(0===b||b>c)a.latestPingedTime=c;df(c,a);c=a.expirationTime;0!==c&&Xh(a,c)}}function Ah(a,b){var c=a.stateNode;null!==c&&c.delete(b);b=lf();b=mf(b,a);a=hi(a,b);null!==a&&(cf(a,b),b=a.expirationTime,0!==b&&Xh(a,b))}
+function hi(a,b){a.expirationTime<b&&(a.expirationTime=b);var c=a.alternate;null!==c&&c.expirationTime<b&&(c.expirationTime=b);var d=a.return,e=null;if(null===d&&3===a.tag)e=a.stateNode;else for(;null!==d;){c=d.alternate;d.childExpirationTime<b&&(d.childExpirationTime=b);null!==c&&c.childExpirationTime<b&&(c.childExpirationTime=b);if(null===d.return&&3===d.tag){e=d.stateNode;break}d=d.return}return e}
+function qf(a,b){a=hi(a,b);null!==a&&(!Kh&&0!==U&&b>U&&Sh(),cf(a,b),Kh&&!Oh&&Lh===a||Xh(a,a.expirationTime),ii>ji&&(ii=0,x("185")))}function ki(a,b,c,d,e){return r.unstable_runWithPriority(r.unstable_ImmediatePriority,function(){return a(b,c,d,e)})}var li=null,Y=null,mi=0,ni=void 0,W=!1,oi=null,Z=0,gi=0,pi=!1,qi=null,X=!1,ri=!1,si=null,ti=r.unstable_now(),ui=1073741822-(ti/10|0),vi=ui,ji=50,ii=0,wi=null;function xi(){ui=1073741822-((r.unstable_now()-ti)/10|0)}
+function yi(a,b){if(0!==mi){if(b<mi)return;null!==ni&&r.unstable_cancelCallback(ni)}mi=b;a=r.unstable_now()-ti;ni=r.unstable_scheduleCallback(zi,{timeout:10*(1073741822-b)-a})}function fi(a,b,c,d,e){a.expirationTime=d;0!==e||di()?0<e&&(a.timeoutHandle=ye(Ai.bind(null,a,b,c),e)):(a.pendingCommitExpirationTime=c,a.finishedWork=b)}function Ai(a,b,c){a.pendingCommitExpirationTime=c;a.finishedWork=b;xi();vi=ui;Bi(a,c)}function $h(a,b){a.expirationTime=b;a.finishedWork=null}
+function lf(){if(W)return vi;Ci();if(0===Z||1===Z)xi(),vi=ui;return vi}function Xh(a,b){null===a.nextScheduledRoot?(a.expirationTime=b,null===Y?(li=Y=a,a.nextScheduledRoot=a):(Y=Y.nextScheduledRoot=a,Y.nextScheduledRoot=li)):b>a.expirationTime&&(a.expirationTime=b);W||(X?ri&&(oi=a,Z=1073741823,Di(a,1073741823,!1)):1073741823===b?Yh(1073741823,!1):yi(a,b))}
+function Ci(){var a=0,b=null;if(null!==Y)for(var c=Y,d=li;null!==d;){var e=d.expirationTime;if(0===e){null===c||null===Y?x("244"):void 0;if(d===d.nextScheduledRoot){li=Y=d.nextScheduledRoot=null;break}else if(d===li)li=e=d.nextScheduledRoot,Y.nextScheduledRoot=e,d.nextScheduledRoot=null;else if(d===Y){Y=c;Y.nextScheduledRoot=li;d.nextScheduledRoot=null;break}else c.nextScheduledRoot=d.nextScheduledRoot,d.nextScheduledRoot=null;d=c.nextScheduledRoot}else{e>a&&(a=e,b=d);if(d===Y)break;if(1073741823===
+a)break;c=d;d=d.nextScheduledRoot}}oi=b;Z=a}var Ei=!1;function di(){return Ei?!0:r.unstable_shouldYield()?Ei=!0:!1}function zi(){try{if(!di()&&null!==li){xi();var a=li;do{var b=a.expirationTime;0!==b&&ui<=b&&(a.nextExpirationTimeToWorkOn=ui);a=a.nextScheduledRoot}while(a!==li)}Yh(0,!0)}finally{Ei=!1}}
+function Yh(a,b){Ci();if(b)for(xi(),vi=ui;null!==oi&&0!==Z&&a<=Z&&!(Ei&&ui>Z);)Di(oi,Z,ui>Z),Ci(),xi(),vi=ui;else for(;null!==oi&&0!==Z&&a<=Z;)Di(oi,Z,!1),Ci();b&&(mi=0,ni=null);0!==Z&&yi(oi,Z);ii=0;wi=null;if(null!==si)for(a=si,si=null,b=0;b<a.length;b++){var c=a[b];try{c._onComplete()}catch(d){pi||(pi=!0,qi=d)}}if(pi)throw a=qi,qi=null,pi=!1,a;}function Bi(a,b){W?x("253"):void 0;oi=a;Z=b;Di(a,b,!1);Yh(1073741823,!1)}
+function Di(a,b,c){W?x("245"):void 0;W=!0;if(c){var d=a.finishedWork;null!==d?Fi(a,d,b):(a.finishedWork=null,d=a.timeoutHandle,-1!==d&&(a.timeoutHandle=-1,ze(d)),ci(a,c),d=a.finishedWork,null!==d&&(di()?a.finishedWork=d:Fi(a,d,b)))}else d=a.finishedWork,null!==d?Fi(a,d,b):(a.finishedWork=null,d=a.timeoutHandle,-1!==d&&(a.timeoutHandle=-1,ze(d)),ci(a,c),d=a.finishedWork,null!==d&&Fi(a,d,b));W=!1}
+function Fi(a,b,c){var d=a.firstBatch;if(null!==d&&d._expirationTime>=c&&(null===si?si=[d]:si.push(d),d._defer)){a.finishedWork=b;a.expirationTime=0;return}a.finishedWork=null;a===wi?ii++:(wi=a,ii=0);r.unstable_runWithPriority(r.unstable_ImmediatePriority,function(){Zh(a,b)})}function Dh(a){null===oi?x("246"):void 0;oi.expirationTime=0;pi||(pi=!0,qi=a)}function Gi(a,b){var c=X;X=!0;try{return a(b)}finally{(X=c)||W||Yh(1073741823,!1)}}
+function Hi(a,b){if(X&&!ri){ri=!0;try{return a(b)}finally{ri=!1}}return a(b)}function Ii(a,b,c){X||W||0===gi||(Yh(gi,!1),gi=0);var d=X;X=!0;try{return r.unstable_runWithPriority(r.unstable_UserBlockingPriority,function(){return a(b,c)})}finally{(X=d)||W||Yh(1073741823,!1)}}
+function Ji(a,b,c,d,e){var f=b.current;a:if(c){c=c._reactInternalFiber;b:{2===ed(c)&&1===c.tag?void 0:x("170");var g=c;do{switch(g.tag){case 3:g=g.stateNode.context;break b;case 1:if(J(g.type)){g=g.stateNode.__reactInternalMemoizedMergedChildContext;break b}}g=g.return}while(null!==g);x("171");g=void 0}if(1===c.tag){var h=c.type;if(J(h)){c=Ne(c,h,g);break a}}c=g}else c=He;null===b.context?b.context=c:b.pendingContext=c;b=e;e=nf(d);e.payload={element:a};b=void 0===b?null:b;null!==b&&(e.callback=b);
+of();pf(f,e);qf(f,d);return d}function Ki(a,b,c,d){var e=b.current,f=lf();e=mf(f,e);return Ji(a,b,c,e,d)}function Li(a){a=a.current;if(!a.child)return null;switch(a.child.tag){case 5:return a.child.stateNode;default:return a.child.stateNode}}function Mi(a,b,c){var d=3<arguments.length&&void 0!==arguments[3]?arguments[3]:null;return{$$typeof:Wb,key:null==d?null:""+d,children:a,containerInfo:b,implementation:c}}
+Ab=function(a,b,c){switch(b){case "input":yc(a,c);b=c.name;if("radio"===c.type&&null!=b){for(c=a;c.parentNode;)c=c.parentNode;c=c.querySelectorAll("input[name="+JSON.stringify(""+b)+'][type="radio"]');for(b=0;b<c.length;b++){var d=c[b];if(d!==a&&d.form===a.form){var e=Ka(d);e?void 0:x("90");Sb(d);yc(d,e)}}}break;case "textarea":de(a,c);break;case "select":b=c.value,null!=b&&ae(a,!!c.multiple,b,!1)}};
+function Ni(a){var b=1073741822-25*(((1073741822-lf()+500)/25|0)+1);b>=Jh&&(b=Jh-1);this._expirationTime=Jh=b;this._root=a;this._callbacks=this._next=null;this._hasChildren=this._didComplete=!1;this._children=null;this._defer=!0}Ni.prototype.render=function(a){this._defer?void 0:x("250");this._hasChildren=!0;this._children=a;var b=this._root._internalRoot,c=this._expirationTime,d=new Oi;Ji(a,b,null,c,d._onCommit);return d};
+Ni.prototype.then=function(a){if(this._didComplete)a();else{var b=this._callbacks;null===b&&(b=this._callbacks=[]);b.push(a)}};
+Ni.prototype.commit=function(){var a=this._root._internalRoot,b=a.firstBatch;this._defer&&null!==b?void 0:x("251");if(this._hasChildren){var c=this._expirationTime;if(b!==this){this._hasChildren&&(c=this._expirationTime=b._expirationTime,this.render(this._children));for(var d=null,e=b;e!==this;)d=e,e=e._next;null===d?x("251"):void 0;d._next=e._next;this._next=b;a.firstBatch=this}this._defer=!1;Bi(a,c);b=this._next;this._next=null;b=a.firstBatch=b;null!==b&&b._hasChildren&&b.render(b._children)}else this._next=
+null,this._defer=!1};Ni.prototype._onComplete=function(){if(!this._didComplete){this._didComplete=!0;var a=this._callbacks;if(null!==a)for(var b=0;b<a.length;b++)(0,a[b])()}};function Oi(){this._callbacks=null;this._didCommit=!1;this._onCommit=this._onCommit.bind(this)}Oi.prototype.then=function(a){if(this._didCommit)a();else{var b=this._callbacks;null===b&&(b=this._callbacks=[]);b.push(a)}};
+Oi.prototype._onCommit=function(){if(!this._didCommit){this._didCommit=!0;var a=this._callbacks;if(null!==a)for(var b=0;b<a.length;b++){var c=a[b];"function"!==typeof c?x("191",c):void 0;c()}}};
+function Pi(a,b,c){b=K(3,null,null,b?3:0);a={current:b,containerInfo:a,pendingChildren:null,pingCache:null,earliestPendingTime:0,latestPendingTime:0,earliestSuspendedTime:0,latestSuspendedTime:0,latestPingedTime:0,didError:!1,pendingCommitExpirationTime:0,finishedWork:null,timeoutHandle:-1,context:null,pendingContext:null,hydrate:c,nextExpirationTimeToWorkOn:0,expirationTime:0,firstBatch:null,nextScheduledRoot:null};this._internalRoot=b.stateNode=a}
+Pi.prototype.render=function(a,b){var c=this._internalRoot,d=new Oi;b=void 0===b?null:b;null!==b&&d.then(b);Ki(a,c,null,d._onCommit);return d};Pi.prototype.unmount=function(a){var b=this._internalRoot,c=new Oi;a=void 0===a?null:a;null!==a&&c.then(a);Ki(null,b,null,c._onCommit);return c};Pi.prototype.legacy_renderSubtreeIntoContainer=function(a,b,c){var d=this._internalRoot,e=new Oi;c=void 0===c?null:c;null!==c&&e.then(c);Ki(b,d,a,e._onCommit);return e};
+Pi.prototype.createBatch=function(){var a=new Ni(this),b=a._expirationTime,c=this._internalRoot,d=c.firstBatch;if(null===d)c.firstBatch=a,a._next=null;else{for(c=null;null!==d&&d._expirationTime>=b;)c=d,d=d._next;a._next=d;null!==c&&(c._next=a)}return a};function Qi(a){return!(!a||1!==a.nodeType&&9!==a.nodeType&&11!==a.nodeType&&(8!==a.nodeType||" react-mount-point-unstable "!==a.nodeValue))}Gb=Gi;Hb=Ii;Ib=function(){W||0===gi||(Yh(gi,!1),gi=0)};
+function Ri(a,b){b||(b=a?9===a.nodeType?a.documentElement:a.firstChild:null,b=!(!b||1!==b.nodeType||!b.hasAttribute("data-reactroot")));if(!b)for(var c;c=a.lastChild;)a.removeChild(c);return new Pi(a,!1,b)}
+function Si(a,b,c,d,e){var f=c._reactRootContainer;if(f){if("function"===typeof e){var g=e;e=function(){var a=Li(f._internalRoot);g.call(a)}}null!=a?f.legacy_renderSubtreeIntoContainer(a,b,e):f.render(b,e)}else{f=c._reactRootContainer=Ri(c,d);if("function"===typeof e){var h=e;e=function(){var a=Li(f._internalRoot);h.call(a)}}Hi(function(){null!=a?f.legacy_renderSubtreeIntoContainer(a,b,e):f.render(b,e)})}return Li(f._internalRoot)}
+function Ti(a,b){var c=2<arguments.length&&void 0!==arguments[2]?arguments[2]:null;Qi(b)?void 0:x("200");return Mi(a,b,null,c)}
+var Vi={createPortal:Ti,findDOMNode:function(a){if(null==a)return null;if(1===a.nodeType)return a;var b=a._reactInternalFiber;void 0===b&&("function"===typeof a.render?x("188"):x("268",Object.keys(a)));a=hd(b);a=null===a?null:a.stateNode;return a},hydrate:function(a,b,c){Qi(b)?void 0:x("200");return Si(null,a,b,!0,c)},render:function(a,b,c){Qi(b)?void 0:x("200");return Si(null,a,b,!1,c)},unstable_renderSubtreeIntoContainer:function(a,b,c,d){Qi(c)?void 0:x("200");null==a||void 0===a._reactInternalFiber?
+x("38"):void 0;return Si(a,b,c,!1,d)},unmountComponentAtNode:function(a){Qi(a)?void 0:x("40");return a._reactRootContainer?(Hi(function(){Si(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:function(){return Ti.apply(void 0,arguments)},unstable_batchedUpdates:Gi,unstable_interactiveUpdates:Ii,flushSync:function(a,b){W?x("187"):void 0;var c=X;X=!0;try{return ki(a,b)}finally{X=c,Yh(1073741823,!1)}},unstable_createRoot:Ui,unstable_flushControlled:function(a){var b=
+X;X=!0;try{ki(a)}finally{(X=b)||W||Yh(1073741823,!1)}},__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{Events:[Ia,Ja,Ka,Ba.injectEventPluginsByName,pa,Qa,function(a){ya(a,Pa)},Eb,Fb,Dd,Da]}};function Ui(a,b){Qi(a)?void 0:x("299","unstable_createRoot");return new Pi(a,!0,null!=b&&!0===b.hydrate)}
+(function(a){var b=a.findFiberByHostInstance;return Te(n({},a,{overrideProps:null,currentDispatcherRef:Tb.ReactCurrentDispatcher,findHostInstanceByFiber:function(a){a=hd(a);return null===a?null:a.stateNode},findFiberByHostInstance:function(a){return b?b(a):null}}))})({findFiberByHostInstance:Ha,bundleType:0,version:"16.8.6",rendererPackageName:"react-dom"});var Wi={default:Vi},Xi=Wi&&Vi||Wi;module.exports=Xi.default||Xi;
+
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (true) {
+  module.exports = __webpack_require__(26);
+} else {
+  module.exports = require('./cjs/scheduler.development.js');
+}
 
 
 /***/ }),
@@ -1853,21 +1874,7 @@ var ei={default:bi},fi=ei&&bi||ei;module.exports=fi.default||fi;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-if (true) {
-  module.exports = __webpack_require__(27);
-} else {
-  module.exports = require('./cjs/scheduler.development.js');
-}
-
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/** @license React v0.11.3
+/* WEBPACK VAR INJECTION */(function(global) {/** @license React v0.13.6
  * scheduler.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -1876,23 +1883,23 @@ if (true) {
  * LICENSE file in the root directory of this source tree.
  */
 
-Object.defineProperty(exports,"__esModule",{value:!0});var d=null,f=!1,h=3,k=-1,l=-1,m=!1,n=!1;function p(){if(!m){var a=d.expirationTime;n?q():n=!0;r(t,a)}}
-function u(){var a=d,b=d.next;if(d===b)d=null;else{var c=d.previous;d=c.next=b;b.previous=c}a.next=a.previous=null;c=a.callback;b=a.expirationTime;a=a.priorityLevel;var e=h,Q=l;h=a;l=b;try{var g=c()}finally{h=e,l=Q}if("function"===typeof g)if(g={callback:g,priorityLevel:a,expirationTime:b,next:null,previous:null},null===d)d=g.next=g.previous=g;else{c=null;a=d;do{if(a.expirationTime>=b){c=a;break}a=a.next}while(a!==d);null===c?c=d:c===d&&(d=g,p());b=c.previous;b.next=c.previous=g;g.next=c;g.previous=
-b}}function v(){if(-1===k&&null!==d&&1===d.priorityLevel){m=!0;try{do u();while(null!==d&&1===d.priorityLevel)}finally{m=!1,null!==d?p():n=!1}}}function t(a){m=!0;var b=f;f=a;try{if(a)for(;null!==d;){var c=exports.unstable_now();if(d.expirationTime<=c){do u();while(null!==d&&d.expirationTime<=c)}else break}else if(null!==d){do u();while(null!==d&&!w())}}finally{m=!1,f=b,null!==d?p():n=!1,v()}}
+Object.defineProperty(exports,"__esModule",{value:!0});var d=null,e=!1,g=3,k=-1,l=-1,m=!1,n=!1;function p(){if(!m){var a=d.expirationTime;n?q():n=!0;r(t,a)}}
+function u(){var a=d,b=d.next;if(d===b)d=null;else{var c=d.previous;d=c.next=b;b.previous=c}a.next=a.previous=null;c=a.callback;b=a.expirationTime;a=a.priorityLevel;var f=g,Q=l;g=a;l=b;try{var h=c()}finally{g=f,l=Q}if("function"===typeof h)if(h={callback:h,priorityLevel:a,expirationTime:b,next:null,previous:null},null===d)d=h.next=h.previous=h;else{c=null;a=d;do{if(a.expirationTime>=b){c=a;break}a=a.next}while(a!==d);null===c?c=d:c===d&&(d=h,p());b=c.previous;b.next=c.previous=h;h.next=c;h.previous=
+b}}function v(){if(-1===k&&null!==d&&1===d.priorityLevel){m=!0;try{do u();while(null!==d&&1===d.priorityLevel)}finally{m=!1,null!==d?p():n=!1}}}function t(a){m=!0;var b=e;e=a;try{if(a)for(;null!==d;){var c=exports.unstable_now();if(d.expirationTime<=c){do u();while(null!==d&&d.expirationTime<=c)}else break}else if(null!==d){do u();while(null!==d&&!w())}}finally{m=!1,e=b,null!==d?p():n=!1,v()}}
 var x=Date,y="function"===typeof setTimeout?setTimeout:void 0,z="function"===typeof clearTimeout?clearTimeout:void 0,A="function"===typeof requestAnimationFrame?requestAnimationFrame:void 0,B="function"===typeof cancelAnimationFrame?cancelAnimationFrame:void 0,C,D;function E(a){C=A(function(b){z(D);a(b)});D=y(function(){B(C);a(exports.unstable_now())},100)}
 if("object"===typeof performance&&"function"===typeof performance.now){var F=performance;exports.unstable_now=function(){return F.now()}}else exports.unstable_now=function(){return x.now()};var r,q,w,G=null;"undefined"!==typeof window?G=window:"undefined"!==typeof global&&(G=global);
 if(G&&G._schedMock){var H=G._schedMock;r=H[0];q=H[1];w=H[2];exports.unstable_now=H[3]}else if("undefined"===typeof window||"function"!==typeof MessageChannel){var I=null,J=function(a){if(null!==I)try{I(a)}finally{I=null}};r=function(a){null!==I?setTimeout(r,0,a):(I=a,setTimeout(J,0,!1))};q=function(){I=null};w=function(){return!1}}else{"undefined"!==typeof console&&("function"!==typeof A&&console.error("This browser doesn't support requestAnimationFrame. Make sure that you load a polyfill in older browsers. https://fb.me/react-polyfills"),
-"function"!==typeof B&&console.error("This browser doesn't support cancelAnimationFrame. Make sure that you load a polyfill in older browsers. https://fb.me/react-polyfills"));var K=null,L=!1,M=-1,N=!1,O=!1,P=0,R=33,S=33;w=function(){return P<=exports.unstable_now()};var T=new MessageChannel,U=T.port2;T.port1.onmessage=function(){L=!1;var a=K,b=M;K=null;M=-1;var c=exports.unstable_now(),e=!1;if(0>=P-c)if(-1!==b&&b<=c)e=!0;else{N||(N=!0,E(V));K=a;M=b;return}if(null!==a){O=!0;try{a(e)}finally{O=!1}}};
+"function"!==typeof B&&console.error("This browser doesn't support cancelAnimationFrame. Make sure that you load a polyfill in older browsers. https://fb.me/react-polyfills"));var K=null,L=!1,M=-1,N=!1,O=!1,P=0,R=33,S=33;w=function(){return P<=exports.unstable_now()};var T=new MessageChannel,U=T.port2;T.port1.onmessage=function(){L=!1;var a=K,b=M;K=null;M=-1;var c=exports.unstable_now(),f=!1;if(0>=P-c)if(-1!==b&&b<=c)f=!0;else{N||(N=!0,E(V));K=a;M=b;return}if(null!==a){O=!0;try{a(f)}finally{O=!1}}};
 var V=function(a){if(null!==K){E(V);var b=a-P+S;b<S&&R<S?(8>b&&(b=8),S=b<R?R:b):R=b;P=a+S;L||(L=!0,U.postMessage(void 0))}else N=!1};r=function(a,b){K=a;M=b;O||0>b?U.postMessage(void 0):N||(N=!0,E(V))};q=function(){K=null;L=!1;M=-1}}exports.unstable_ImmediatePriority=1;exports.unstable_UserBlockingPriority=2;exports.unstable_NormalPriority=3;exports.unstable_IdlePriority=5;exports.unstable_LowPriority=4;
-exports.unstable_runWithPriority=function(a,b){switch(a){case 1:case 2:case 3:case 4:case 5:break;default:a=3}var c=h,e=k;h=a;k=exports.unstable_now();try{return b()}finally{h=c,k=e,v()}};
-exports.unstable_scheduleCallback=function(a,b){var c=-1!==k?k:exports.unstable_now();if("object"===typeof b&&null!==b&&"number"===typeof b.timeout)b=c+b.timeout;else switch(h){case 1:b=c+-1;break;case 2:b=c+250;break;case 5:b=c+1073741823;break;case 4:b=c+1E4;break;default:b=c+5E3}a={callback:a,priorityLevel:h,expirationTime:b,next:null,previous:null};if(null===d)d=a.next=a.previous=a,p();else{c=null;var e=d;do{if(e.expirationTime>b){c=e;break}e=e.next}while(e!==d);null===c?c=d:c===d&&(d=a,p());
-b=c.previous;b.next=c.previous=a;a.next=c;a.previous=b}return a};exports.unstable_cancelCallback=function(a){var b=a.next;if(null!==b){if(b===a)d=null;else{a===d&&(d=b);var c=a.previous;c.next=b;b.previous=c}a.next=a.previous=null}};exports.unstable_wrapCallback=function(a){var b=h;return function(){var c=h,e=k;h=b;k=exports.unstable_now();try{return a.apply(this,arguments)}finally{h=c,k=e,v()}}};exports.unstable_getCurrentPriorityLevel=function(){return h};
-exports.unstable_shouldYield=function(){return!f&&(null!==d&&d.expirationTime<l||w())};
+exports.unstable_runWithPriority=function(a,b){switch(a){case 1:case 2:case 3:case 4:case 5:break;default:a=3}var c=g,f=k;g=a;k=exports.unstable_now();try{return b()}finally{g=c,k=f,v()}};exports.unstable_next=function(a){switch(g){case 1:case 2:case 3:var b=3;break;default:b=g}var c=g,f=k;g=b;k=exports.unstable_now();try{return a()}finally{g=c,k=f,v()}};
+exports.unstable_scheduleCallback=function(a,b){var c=-1!==k?k:exports.unstable_now();if("object"===typeof b&&null!==b&&"number"===typeof b.timeout)b=c+b.timeout;else switch(g){case 1:b=c+-1;break;case 2:b=c+250;break;case 5:b=c+1073741823;break;case 4:b=c+1E4;break;default:b=c+5E3}a={callback:a,priorityLevel:g,expirationTime:b,next:null,previous:null};if(null===d)d=a.next=a.previous=a,p();else{c=null;var f=d;do{if(f.expirationTime>b){c=f;break}f=f.next}while(f!==d);null===c?c=d:c===d&&(d=a,p());
+b=c.previous;b.next=c.previous=a;a.next=c;a.previous=b}return a};exports.unstable_cancelCallback=function(a){var b=a.next;if(null!==b){if(b===a)d=null;else{a===d&&(d=b);var c=a.previous;c.next=b;b.previous=c}a.next=a.previous=null}};exports.unstable_wrapCallback=function(a){var b=g;return function(){var c=g,f=k;g=b;k=exports.unstable_now();try{return a.apply(this,arguments)}finally{g=c,k=f,v()}}};exports.unstable_getCurrentPriorityLevel=function(){return g};
+exports.unstable_shouldYield=function(){return!e&&(null!==d&&d.expirationTime<l||w())};exports.unstable_continueExecution=function(){null!==d&&p()};exports.unstable_pauseExecution=function(){};exports.unstable_getFirstCallbackNode=function(){return d};
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1903,9 +1910,9 @@ exports.unstable_shouldYield=function(){return!f&&(null!==d&&d.expirationTime<l|
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__babel_runtime_helpers_createClass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__babel_runtime_helpers_createClass__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_possibleConstructorReturn__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_possibleConstructorReturn___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_possibleConstructorReturn__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__babel_runtime_helpers_getPrototypeOf__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__babel_runtime_helpers_getPrototypeOf__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__babel_runtime_helpers_getPrototypeOf___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__babel_runtime_helpers_getPrototypeOf__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_inherits__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_inherits__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_inherits___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_inherits__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react__);
@@ -1942,7 +1949,7 @@ function (_React$Component) {
 
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports) {
 
 function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
@@ -1962,6 +1969,20 @@ function _typeof(obj) {
 }
 
 module.exports = _typeof;
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+module.exports = _assertThisInitialized;
 
 /***/ }),
 /* 30 */
@@ -1990,18 +2011,14 @@ module.exports = _setPrototypeOf;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__babel_runtime_helpers_createClass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__babel_runtime_helpers_createClass__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_possibleConstructorReturn__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_possibleConstructorReturn___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_possibleConstructorReturn__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__babel_runtime_helpers_getPrototypeOf__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__babel_runtime_helpers_getPrototypeOf__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__babel_runtime_helpers_getPrototypeOf___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__babel_runtime_helpers_getPrototypeOf__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_assertThisInitialized__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_assertThisInitialized___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_assertThisInitialized__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__babel_runtime_helpers_inherits__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__babel_runtime_helpers_inherits___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__babel_runtime_helpers_inherits__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__babel_runtime_helpers_defineProperty__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__babel_runtime_helpers_defineProperty___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__babel_runtime_helpers_defineProperty__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_sn_components_api__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_sn_components_api___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_sn_components_api__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_inherits__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_inherits___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_inherits__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_sn_components_api__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_sn_components_api___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_sn_components_api__);
 
 
 
@@ -2010,159 +2027,39 @@ module.exports = _setPrototypeOf;
 
 
 
-
-
-var MarkdownIt = __webpack_require__(34);
-
-var EditMode = 0;
-var SplitMode = 1;
-var PreviewMode = 2;
+var MarkdownIt = __webpack_require__(33);
 
 var Home =
 /*#__PURE__*/
 function (_React$Component) {
-  __WEBPACK_IMPORTED_MODULE_5__babel_runtime_helpers_inherits___default()(Home, _React$Component);
+  __WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_inherits___default()(Home, _React$Component);
 
   function Home(props) {
-    var _this;
-
     __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_classCallCheck___default()(this, Home);
 
-    _this = __WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_possibleConstructorReturn___default()(this, __WEBPACK_IMPORTED_MODULE_3__babel_runtime_helpers_getPrototypeOf___default()(Home).call(this, props));
-
-    __WEBPACK_IMPORTED_MODULE_6__babel_runtime_helpers_defineProperty___default()(__WEBPACK_IMPORTED_MODULE_4__babel_runtime_helpers_assertThisInitialized___default()(_this), "scrollHandler", function (source, destination) {
-      var frameRequested;
-      return function (event) {
-        // Avoid the cascading effect by not handling the event if it was triggered initially by this element
-        if (_this.scrollTriggers[source] === true) {
-          _this.scrollTriggers[source] = false;
-          return;
-        }
-
-        _this.scrollTriggers[source] = true; // Only request the animation frame once until it gets processed
-
-        if (frameRequested) {
-          return;
-        }
-
-        frameRequested = true;
-        window.requestAnimationFrame(function () {
-          var target = event.target;
-          var height = target.scrollHeight - target.clientHeight;
-          var ratio = parseFloat(target.scrollTop) / height;
-          var move = (destination.scrollHeight - destination.clientHeight) * ratio;
-          destination.scrollTop = move;
-          frameRequested = false;
-        });
-      };
-    });
-
-    _this.modes = [{
-      mode: EditMode,
-      label: "Edit",
-      css: "edit"
-    }, {
-      mode: SplitMode,
-      label: "Split",
-      css: "split"
-    }, {
-      mode: PreviewMode,
-      label: "Preview",
-      css: "preview"
-    }];
-    _this.state = {
-      mode: _this.modes[0]
-    };
-    return _this;
+    return __WEBPACK_IMPORTED_MODULE_2__babel_runtime_helpers_possibleConstructorReturn___default()(this, __WEBPACK_IMPORTED_MODULE_3__babel_runtime_helpers_getPrototypeOf___default()(Home).call(this, props));
   }
 
   __WEBPACK_IMPORTED_MODULE_1__babel_runtime_helpers_createClass___default()(Home, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.simpleMarkdown = document.getElementById("simple-markdown");
-      this.editor = document.getElementById("editor");
       this.preview = document.getElementById("preview");
       this.configureMarkdown();
       this.connectToBridge();
-      this.updatePreviewText();
-      this.addChangeListener();
-      this.configureResizer();
-      this.addTabHandler();
-      this.scrollTriggers = {};
-      this.scrollHandlers = [{
-        el: this.editor,
-        handler: this.scrollHandler(this.editor, this.preview)
-      }, {
-        el: this.preview,
-        handler: this.scrollHandler(this.preview, this.editor)
-      }];
     }
   }, {
     key: "componentWillUpdate",
-    value: function componentWillUpdate(nextProps, nextState) {
-      var prevMode = this.state.mode.mode;
-      var nextMode = nextState.mode.mode; // If we changed to Split mode we add the scroll listeners
-
-      if (prevMode !== nextMode) {
-        if (nextMode === SplitMode) {
-          this.addScrollListeners();
-        } else {
-          this.removeScrollListeners();
-        }
-      }
-    }
-  }, {
-    key: "setModeFromModeValue",
-    value: function setModeFromModeValue(value) {
-      var _iteratorNormalCompletion = true;
-      var _didIteratorError = false;
-      var _iteratorError = undefined;
-
-      try {
-        for (var _iterator = this.modes[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-          var mode = _step.value;
-
-          if (mode.mode == value) {
-            this.setState({
-              mode: mode
-            });
-            return;
-          }
-        }
-      } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
-      } finally {
-        try {
-          if (!_iteratorNormalCompletion && _iterator["return"] != null) {
-            _iterator["return"]();
-          }
-        } finally {
-          if (_didIteratorError) {
-            throw _iteratorError;
-          }
-        }
-      }
-    }
-  }, {
-    key: "changeMode",
-    value: function changeMode(mode) {
-      this.setState({
-        mode: mode
-      });
-
-      if (this.note) {
-        this.componentManager.setComponentDataValueForKey("mode", mode.mode);
-      }
+    value: function componentWillUpdate(nextProps, nextState) {// pass
     }
   }, {
     key: "configureMarkdown",
     value: function configureMarkdown() {
       var markdownitOptions = {
         // automatically render raw links as anchors.
-        linkify: true
+        linkify: true,
+        breaks: true
       };
-      this.markdown = MarkdownIt(markdownitOptions).use(__webpack_require__(90)).use(__webpack_require__(91)).use(__webpack_require__(92)); // Remember old renderer, if overriden, or proxy to default renderer
+      this.markdown = MarkdownIt(markdownitOptions).use(__webpack_require__(89)).use(__webpack_require__(90)).use(__webpack_require__(91)); // Remember old renderer, if overriden, or proxy to default renderer
 
       var defaultRender = this.markdown.renderer.rules.link_open || function (tokens, idx, options, env, self) {
         return self.renderToken(tokens, idx, options);
@@ -2185,32 +2082,24 @@ function (_React$Component) {
   }, {
     key: "connectToBridge",
     value: function connectToBridge() {
-      var _this2 = this;
+      var _this = this;
 
       var permissions = [{
         name: "stream-context-item"
       }];
-      this.componentManager = new __WEBPACK_IMPORTED_MODULE_8_sn_components_api___default.a(permissions, function () {
-        var savedMode = _this2.componentManager.componentDataValueForKey("mode");
-
-        if (savedMode) {
-          _this2.setModeFromModeValue(savedMode);
-        }
-
-        _this2.setState({
-          platform: _this2.componentManager.platform
-        });
+      this.componentManager = new __WEBPACK_IMPORTED_MODULE_6_sn_components_api___default.a(permissions, function () {// this.setState({platform: this.componentManager.platform});
       }); // this.componentManager.loggingEnabled = true;
 
       this.componentManager.streamContextItem(function (note) {
-        _this2.note = note; // Only update UI on non-metadata updates.
-
+        // this.note = note;
+        // Only update UI on non-metadata updates.
         if (note.isMetadataUpdate) {
           return;
         }
 
-        _this2.editor.value = note.content.text;
-        _this2.preview.innerHTML = _this2.markdown.render(note.content.text);
+        _this.preview.innerHTML = _this.markdown.render(note.content.text); // note.content.text = this.updatePreviewText();
+        // note.content.preview_plain = this.truncateString(this.preview.textContent || this.preview.innerText);
+        // note.content.preview_html = null;
       });
     }
   }, {
@@ -2229,196 +2118,26 @@ function (_React$Component) {
       }
     }
   }, {
-    key: "updatePreviewText",
-    value: function updatePreviewText() {
-      var text = this.editor.value || "";
-      this.preview.innerHTML = this.markdown.render(text);
-      return text;
-    }
-  }, {
-    key: "addChangeListener",
-    value: function addChangeListener() {
-      var _this3 = this;
-
-      document.getElementById("editor").addEventListener("input", function (event) {
-        if (_this3.note) {
-          // Be sure to capture this object as a variable, as this.note may be reassigned in `streamContextItem`, so by the time
-          // you modify it in the presave block, it may not be the same object anymore, so the presave values will not be applied to
-          // the right object, and it will save incorrectly.
-          var note = _this3.note;
-
-          _this3.componentManager.saveItemWithPresave(note, function () {
-            note.content.text = _this3.updatePreviewText();
-            note.content.preview_plain = _this3.truncateString(_this3.preview.textContent || _this3.preview.innerText);
-            note.content.preview_html = null;
-          });
-        }
-      });
-    }
-  }, {
-    key: "addScrollListeners",
-    value: function addScrollListeners() {
-      this.scrollHandlers.forEach(function (_ref) {
-        var el = _ref.el,
-            handler = _ref.handler;
-        return el.addEventListener('scroll', handler);
-      });
-    }
-  }, {
-    key: "removeScrollListeners",
-    value: function removeScrollListeners() {
-      this.scrollHandlers.forEach(function (_ref2) {
-        var el = _ref2.el,
-            handler = _ref2.handler;
-        return el.removeEventListener('scroll', handler);
-      });
-    }
-  }, {
-    key: "removeSelection",
-    value: function removeSelection() {
-      if (window.getSelection) {
-        window.getSelection().removeAllRanges();
-      } else if (document.selection) {
-        document.selection.empty();
-      }
-    }
-  }, {
-    key: "configureResizer",
-    value: function configureResizer() {
-      var _this4 = this;
-
-      var pressed = false;
-      var startWidth = this.editor.offsetWidth;
-      var startX;
-      var lastDownX;
-      var columnResizer = document.getElementById("column-resizer");
-      var resizerWidth = columnResizer.offsetWidth;
-      var safetyOffset = 15;
-      columnResizer.addEventListener("mousedown", function (event) {
-        pressed = true;
-        lastDownX = event.clientX;
-        columnResizer.classList.add("dragging");
-
-        _this4.editor.classList.add("no-selection");
-      });
-      document.addEventListener("mousemove", function (event) {
-        if (!pressed) {
-          return;
-        }
-
-        var x = event.clientX;
-
-        if (x < resizerWidth / 2 + safetyOffset) {
-          x = resizerWidth / 2 + safetyOffset;
-        } else if (x > _this4.simpleMarkdown.offsetWidth - resizerWidth - safetyOffset) {
-          x = _this4.simpleMarkdown.offsetWidth - resizerWidth - safetyOffset;
-        }
-
-        var colLeft = x - resizerWidth / 2;
-        columnResizer.style.left = colLeft + "px";
-        _this4.editor.style.width = colLeft - safetyOffset + "px";
-
-        _this4.removeSelection();
-      });
-      document.addEventListener("mouseup", function (event) {
-        if (pressed) {
-          pressed = false;
-          columnResizer.classList.remove("dragging");
-
-          _this4.editor.classList.remove("no-selection");
-        }
-      });
-    }
-  }, {
-    key: "addTabHandler",
-    value: function addTabHandler() {
-      // Tab handler
-      this.editor.addEventListener('keydown', function (event) {
-        if (!event.shiftKey && event.which == 9) {
-          event.preventDefault(); // Using document.execCommand gives us undo support
-
-          if (!document.execCommand("insertText", false, "\t")) {
-            // document.execCommand works great on Chrome/Safari but not Firefox
-            var start = this.selectionStart;
-            var end = this.selectionEnd;
-            var spaces = "    "; // Insert 4 spaces
-
-            this.value = this.value.substring(0, start) + spaces + this.value.substring(end); // Place cursor 4 spaces away from where
-            // the tab key was pressed
-
-            this.selectionStart = this.selectionEnd = start + 4;
-          }
-        }
-      });
-    }
-  }, {
     key: "render",
     value: function render() {
-      var _this5 = this;
+      return __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement("div", {
+        id: "sn-preview",
+        className: "sn-component "
+        /*+ this.state.platform*/
 
-      return __WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement("div", {
-        id: "simple-markdown",
-        className: "sn-component " + this.state.platform
-      }, __WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement("div", {
-        id: "header"
-      }, __WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement("div", {
-        className: "segmented-buttons-container sk-segmented-buttons"
-      }, __WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement("div", {
-        className: "buttons"
-      }, this.modes.map(function (mode) {
-        return __WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement("div", {
-          onClick: function onClick() {
-            return _this5.changeMode(mode);
-          },
-          className: "sk-button button " + (_this5.state.mode == mode ? "selected info" : "sk-secondary-contrast")
-        }, __WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement("div", {
-          className: "sk-label"
-        }, mode.label));
-      })))), __WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement("div", {
-        id: "editor-container",
-        className: this.state.mode.css
-      }, __WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement("textarea", {
-        dir: "auto",
-        id: "editor",
-        className: this.state.mode.css
-      }), __WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement("div", {
-        id: "column-resizer",
-        className: this.state.mode.css
-      }), __WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement("div", {
-        id: "preview",
-        className: this.state.mode.css
-      })));
+      }, __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement("div", {
+        id: "preview"
+      }));
     }
   }]);
 
   return Home;
-}(__WEBPACK_IMPORTED_MODULE_7_react___default.a.Component);
+}(__WEBPACK_IMPORTED_MODULE_5_react___default.a.Component);
 
 
 
 /***/ }),
 /* 32 */
-/***/ (function(module, exports) {
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-module.exports = _defineProperty;
-
-/***/ }),
-/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3095,18 +2814,18 @@ if (window) {
 
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 
-module.exports = __webpack_require__(35);
+module.exports = __webpack_require__(34);
 
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3116,20 +2835,20 @@ module.exports = __webpack_require__(35);
 
 
 var utils        = __webpack_require__(0);
-var helpers      = __webpack_require__(43);
-var Renderer     = __webpack_require__(47);
-var ParserCore   = __webpack_require__(48);
-var ParserBlock  = __webpack_require__(56);
-var ParserInline = __webpack_require__(70);
-var LinkifyIt    = __webpack_require__(83);
-var mdurl        = __webpack_require__(14);
-var punycode     = __webpack_require__(85);
+var helpers      = __webpack_require__(42);
+var Renderer     = __webpack_require__(46);
+var ParserCore   = __webpack_require__(47);
+var ParserBlock  = __webpack_require__(55);
+var ParserInline = __webpack_require__(69);
+var LinkifyIt    = __webpack_require__(82);
+var mdurl        = __webpack_require__(13);
+var punycode     = __webpack_require__(84);
 
 
 var config = {
-  'default': __webpack_require__(87),
-  zero: __webpack_require__(88),
-  commonmark: __webpack_require__(89)
+  'default': __webpack_require__(86),
+  zero: __webpack_require__(87),
+  commonmark: __webpack_require__(88)
 };
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -3694,13 +3413,13 @@ module.exports = MarkdownIt;
 
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports) {
 
 module.exports = {"Aacute":"Á","aacute":"á","Abreve":"Ă","abreve":"ă","ac":"∾","acd":"∿","acE":"∾̳","Acirc":"Â","acirc":"â","acute":"´","Acy":"А","acy":"а","AElig":"Æ","aelig":"æ","af":"⁡","Afr":"𝔄","afr":"𝔞","Agrave":"À","agrave":"à","alefsym":"ℵ","aleph":"ℵ","Alpha":"Α","alpha":"α","Amacr":"Ā","amacr":"ā","amalg":"⨿","amp":"&","AMP":"&","andand":"⩕","And":"⩓","and":"∧","andd":"⩜","andslope":"⩘","andv":"⩚","ang":"∠","ange":"⦤","angle":"∠","angmsdaa":"⦨","angmsdab":"⦩","angmsdac":"⦪","angmsdad":"⦫","angmsdae":"⦬","angmsdaf":"⦭","angmsdag":"⦮","angmsdah":"⦯","angmsd":"∡","angrt":"∟","angrtvb":"⊾","angrtvbd":"⦝","angsph":"∢","angst":"Å","angzarr":"⍼","Aogon":"Ą","aogon":"ą","Aopf":"𝔸","aopf":"𝕒","apacir":"⩯","ap":"≈","apE":"⩰","ape":"≊","apid":"≋","apos":"'","ApplyFunction":"⁡","approx":"≈","approxeq":"≊","Aring":"Å","aring":"å","Ascr":"𝒜","ascr":"𝒶","Assign":"≔","ast":"*","asymp":"≈","asympeq":"≍","Atilde":"Ã","atilde":"ã","Auml":"Ä","auml":"ä","awconint":"∳","awint":"⨑","backcong":"≌","backepsilon":"϶","backprime":"‵","backsim":"∽","backsimeq":"⋍","Backslash":"∖","Barv":"⫧","barvee":"⊽","barwed":"⌅","Barwed":"⌆","barwedge":"⌅","bbrk":"⎵","bbrktbrk":"⎶","bcong":"≌","Bcy":"Б","bcy":"б","bdquo":"„","becaus":"∵","because":"∵","Because":"∵","bemptyv":"⦰","bepsi":"϶","bernou":"ℬ","Bernoullis":"ℬ","Beta":"Β","beta":"β","beth":"ℶ","between":"≬","Bfr":"𝔅","bfr":"𝔟","bigcap":"⋂","bigcirc":"◯","bigcup":"⋃","bigodot":"⨀","bigoplus":"⨁","bigotimes":"⨂","bigsqcup":"⨆","bigstar":"★","bigtriangledown":"▽","bigtriangleup":"△","biguplus":"⨄","bigvee":"⋁","bigwedge":"⋀","bkarow":"⤍","blacklozenge":"⧫","blacksquare":"▪","blacktriangle":"▴","blacktriangledown":"▾","blacktriangleleft":"◂","blacktriangleright":"▸","blank":"␣","blk12":"▒","blk14":"░","blk34":"▓","block":"█","bne":"=⃥","bnequiv":"≡⃥","bNot":"⫭","bnot":"⌐","Bopf":"𝔹","bopf":"𝕓","bot":"⊥","bottom":"⊥","bowtie":"⋈","boxbox":"⧉","boxdl":"┐","boxdL":"╕","boxDl":"╖","boxDL":"╗","boxdr":"┌","boxdR":"╒","boxDr":"╓","boxDR":"╔","boxh":"─","boxH":"═","boxhd":"┬","boxHd":"╤","boxhD":"╥","boxHD":"╦","boxhu":"┴","boxHu":"╧","boxhU":"╨","boxHU":"╩","boxminus":"⊟","boxplus":"⊞","boxtimes":"⊠","boxul":"┘","boxuL":"╛","boxUl":"╜","boxUL":"╝","boxur":"└","boxuR":"╘","boxUr":"╙","boxUR":"╚","boxv":"│","boxV":"║","boxvh":"┼","boxvH":"╪","boxVh":"╫","boxVH":"╬","boxvl":"┤","boxvL":"╡","boxVl":"╢","boxVL":"╣","boxvr":"├","boxvR":"╞","boxVr":"╟","boxVR":"╠","bprime":"‵","breve":"˘","Breve":"˘","brvbar":"¦","bscr":"𝒷","Bscr":"ℬ","bsemi":"⁏","bsim":"∽","bsime":"⋍","bsolb":"⧅","bsol":"\\","bsolhsub":"⟈","bull":"•","bullet":"•","bump":"≎","bumpE":"⪮","bumpe":"≏","Bumpeq":"≎","bumpeq":"≏","Cacute":"Ć","cacute":"ć","capand":"⩄","capbrcup":"⩉","capcap":"⩋","cap":"∩","Cap":"⋒","capcup":"⩇","capdot":"⩀","CapitalDifferentialD":"ⅅ","caps":"∩︀","caret":"⁁","caron":"ˇ","Cayleys":"ℭ","ccaps":"⩍","Ccaron":"Č","ccaron":"č","Ccedil":"Ç","ccedil":"ç","Ccirc":"Ĉ","ccirc":"ĉ","Cconint":"∰","ccups":"⩌","ccupssm":"⩐","Cdot":"Ċ","cdot":"ċ","cedil":"¸","Cedilla":"¸","cemptyv":"⦲","cent":"¢","centerdot":"·","CenterDot":"·","cfr":"𝔠","Cfr":"ℭ","CHcy":"Ч","chcy":"ч","check":"✓","checkmark":"✓","Chi":"Χ","chi":"χ","circ":"ˆ","circeq":"≗","circlearrowleft":"↺","circlearrowright":"↻","circledast":"⊛","circledcirc":"⊚","circleddash":"⊝","CircleDot":"⊙","circledR":"®","circledS":"Ⓢ","CircleMinus":"⊖","CirclePlus":"⊕","CircleTimes":"⊗","cir":"○","cirE":"⧃","cire":"≗","cirfnint":"⨐","cirmid":"⫯","cirscir":"⧂","ClockwiseContourIntegral":"∲","CloseCurlyDoubleQuote":"”","CloseCurlyQuote":"’","clubs":"♣","clubsuit":"♣","colon":":","Colon":"∷","Colone":"⩴","colone":"≔","coloneq":"≔","comma":",","commat":"@","comp":"∁","compfn":"∘","complement":"∁","complexes":"ℂ","cong":"≅","congdot":"⩭","Congruent":"≡","conint":"∮","Conint":"∯","ContourIntegral":"∮","copf":"𝕔","Copf":"ℂ","coprod":"∐","Coproduct":"∐","copy":"©","COPY":"©","copysr":"℗","CounterClockwiseContourIntegral":"∳","crarr":"↵","cross":"✗","Cross":"⨯","Cscr":"𝒞","cscr":"𝒸","csub":"⫏","csube":"⫑","csup":"⫐","csupe":"⫒","ctdot":"⋯","cudarrl":"⤸","cudarrr":"⤵","cuepr":"⋞","cuesc":"⋟","cularr":"↶","cularrp":"⤽","cupbrcap":"⩈","cupcap":"⩆","CupCap":"≍","cup":"∪","Cup":"⋓","cupcup":"⩊","cupdot":"⊍","cupor":"⩅","cups":"∪︀","curarr":"↷","curarrm":"⤼","curlyeqprec":"⋞","curlyeqsucc":"⋟","curlyvee":"⋎","curlywedge":"⋏","curren":"¤","curvearrowleft":"↶","curvearrowright":"↷","cuvee":"⋎","cuwed":"⋏","cwconint":"∲","cwint":"∱","cylcty":"⌭","dagger":"†","Dagger":"‡","daleth":"ℸ","darr":"↓","Darr":"↡","dArr":"⇓","dash":"‐","Dashv":"⫤","dashv":"⊣","dbkarow":"⤏","dblac":"˝","Dcaron":"Ď","dcaron":"ď","Dcy":"Д","dcy":"д","ddagger":"‡","ddarr":"⇊","DD":"ⅅ","dd":"ⅆ","DDotrahd":"⤑","ddotseq":"⩷","deg":"°","Del":"∇","Delta":"Δ","delta":"δ","demptyv":"⦱","dfisht":"⥿","Dfr":"𝔇","dfr":"𝔡","dHar":"⥥","dharl":"⇃","dharr":"⇂","DiacriticalAcute":"´","DiacriticalDot":"˙","DiacriticalDoubleAcute":"˝","DiacriticalGrave":"`","DiacriticalTilde":"˜","diam":"⋄","diamond":"⋄","Diamond":"⋄","diamondsuit":"♦","diams":"♦","die":"¨","DifferentialD":"ⅆ","digamma":"ϝ","disin":"⋲","div":"÷","divide":"÷","divideontimes":"⋇","divonx":"⋇","DJcy":"Ђ","djcy":"ђ","dlcorn":"⌞","dlcrop":"⌍","dollar":"$","Dopf":"𝔻","dopf":"𝕕","Dot":"¨","dot":"˙","DotDot":"⃜","doteq":"≐","doteqdot":"≑","DotEqual":"≐","dotminus":"∸","dotplus":"∔","dotsquare":"⊡","doublebarwedge":"⌆","DoubleContourIntegral":"∯","DoubleDot":"¨","DoubleDownArrow":"⇓","DoubleLeftArrow":"⇐","DoubleLeftRightArrow":"⇔","DoubleLeftTee":"⫤","DoubleLongLeftArrow":"⟸","DoubleLongLeftRightArrow":"⟺","DoubleLongRightArrow":"⟹","DoubleRightArrow":"⇒","DoubleRightTee":"⊨","DoubleUpArrow":"⇑","DoubleUpDownArrow":"⇕","DoubleVerticalBar":"∥","DownArrowBar":"⤓","downarrow":"↓","DownArrow":"↓","Downarrow":"⇓","DownArrowUpArrow":"⇵","DownBreve":"̑","downdownarrows":"⇊","downharpoonleft":"⇃","downharpoonright":"⇂","DownLeftRightVector":"⥐","DownLeftTeeVector":"⥞","DownLeftVectorBar":"⥖","DownLeftVector":"↽","DownRightTeeVector":"⥟","DownRightVectorBar":"⥗","DownRightVector":"⇁","DownTeeArrow":"↧","DownTee":"⊤","drbkarow":"⤐","drcorn":"⌟","drcrop":"⌌","Dscr":"𝒟","dscr":"𝒹","DScy":"Ѕ","dscy":"ѕ","dsol":"⧶","Dstrok":"Đ","dstrok":"đ","dtdot":"⋱","dtri":"▿","dtrif":"▾","duarr":"⇵","duhar":"⥯","dwangle":"⦦","DZcy":"Џ","dzcy":"џ","dzigrarr":"⟿","Eacute":"É","eacute":"é","easter":"⩮","Ecaron":"Ě","ecaron":"ě","Ecirc":"Ê","ecirc":"ê","ecir":"≖","ecolon":"≕","Ecy":"Э","ecy":"э","eDDot":"⩷","Edot":"Ė","edot":"ė","eDot":"≑","ee":"ⅇ","efDot":"≒","Efr":"𝔈","efr":"𝔢","eg":"⪚","Egrave":"È","egrave":"è","egs":"⪖","egsdot":"⪘","el":"⪙","Element":"∈","elinters":"⏧","ell":"ℓ","els":"⪕","elsdot":"⪗","Emacr":"Ē","emacr":"ē","empty":"∅","emptyset":"∅","EmptySmallSquare":"◻","emptyv":"∅","EmptyVerySmallSquare":"▫","emsp13":" ","emsp14":" ","emsp":" ","ENG":"Ŋ","eng":"ŋ","ensp":" ","Eogon":"Ę","eogon":"ę","Eopf":"𝔼","eopf":"𝕖","epar":"⋕","eparsl":"⧣","eplus":"⩱","epsi":"ε","Epsilon":"Ε","epsilon":"ε","epsiv":"ϵ","eqcirc":"≖","eqcolon":"≕","eqsim":"≂","eqslantgtr":"⪖","eqslantless":"⪕","Equal":"⩵","equals":"=","EqualTilde":"≂","equest":"≟","Equilibrium":"⇌","equiv":"≡","equivDD":"⩸","eqvparsl":"⧥","erarr":"⥱","erDot":"≓","escr":"ℯ","Escr":"ℰ","esdot":"≐","Esim":"⩳","esim":"≂","Eta":"Η","eta":"η","ETH":"Ð","eth":"ð","Euml":"Ë","euml":"ë","euro":"€","excl":"!","exist":"∃","Exists":"∃","expectation":"ℰ","exponentiale":"ⅇ","ExponentialE":"ⅇ","fallingdotseq":"≒","Fcy":"Ф","fcy":"ф","female":"♀","ffilig":"ﬃ","fflig":"ﬀ","ffllig":"ﬄ","Ffr":"𝔉","ffr":"𝔣","filig":"ﬁ","FilledSmallSquare":"◼","FilledVerySmallSquare":"▪","fjlig":"fj","flat":"♭","fllig":"ﬂ","fltns":"▱","fnof":"ƒ","Fopf":"𝔽","fopf":"𝕗","forall":"∀","ForAll":"∀","fork":"⋔","forkv":"⫙","Fouriertrf":"ℱ","fpartint":"⨍","frac12":"½","frac13":"⅓","frac14":"¼","frac15":"⅕","frac16":"⅙","frac18":"⅛","frac23":"⅔","frac25":"⅖","frac34":"¾","frac35":"⅗","frac38":"⅜","frac45":"⅘","frac56":"⅚","frac58":"⅝","frac78":"⅞","frasl":"⁄","frown":"⌢","fscr":"𝒻","Fscr":"ℱ","gacute":"ǵ","Gamma":"Γ","gamma":"γ","Gammad":"Ϝ","gammad":"ϝ","gap":"⪆","Gbreve":"Ğ","gbreve":"ğ","Gcedil":"Ģ","Gcirc":"Ĝ","gcirc":"ĝ","Gcy":"Г","gcy":"г","Gdot":"Ġ","gdot":"ġ","ge":"≥","gE":"≧","gEl":"⪌","gel":"⋛","geq":"≥","geqq":"≧","geqslant":"⩾","gescc":"⪩","ges":"⩾","gesdot":"⪀","gesdoto":"⪂","gesdotol":"⪄","gesl":"⋛︀","gesles":"⪔","Gfr":"𝔊","gfr":"𝔤","gg":"≫","Gg":"⋙","ggg":"⋙","gimel":"ℷ","GJcy":"Ѓ","gjcy":"ѓ","gla":"⪥","gl":"≷","glE":"⪒","glj":"⪤","gnap":"⪊","gnapprox":"⪊","gne":"⪈","gnE":"≩","gneq":"⪈","gneqq":"≩","gnsim":"⋧","Gopf":"𝔾","gopf":"𝕘","grave":"`","GreaterEqual":"≥","GreaterEqualLess":"⋛","GreaterFullEqual":"≧","GreaterGreater":"⪢","GreaterLess":"≷","GreaterSlantEqual":"⩾","GreaterTilde":"≳","Gscr":"𝒢","gscr":"ℊ","gsim":"≳","gsime":"⪎","gsiml":"⪐","gtcc":"⪧","gtcir":"⩺","gt":">","GT":">","Gt":"≫","gtdot":"⋗","gtlPar":"⦕","gtquest":"⩼","gtrapprox":"⪆","gtrarr":"⥸","gtrdot":"⋗","gtreqless":"⋛","gtreqqless":"⪌","gtrless":"≷","gtrsim":"≳","gvertneqq":"≩︀","gvnE":"≩︀","Hacek":"ˇ","hairsp":" ","half":"½","hamilt":"ℋ","HARDcy":"Ъ","hardcy":"ъ","harrcir":"⥈","harr":"↔","hArr":"⇔","harrw":"↭","Hat":"^","hbar":"ℏ","Hcirc":"Ĥ","hcirc":"ĥ","hearts":"♥","heartsuit":"♥","hellip":"…","hercon":"⊹","hfr":"𝔥","Hfr":"ℌ","HilbertSpace":"ℋ","hksearow":"⤥","hkswarow":"⤦","hoarr":"⇿","homtht":"∻","hookleftarrow":"↩","hookrightarrow":"↪","hopf":"𝕙","Hopf":"ℍ","horbar":"―","HorizontalLine":"─","hscr":"𝒽","Hscr":"ℋ","hslash":"ℏ","Hstrok":"Ħ","hstrok":"ħ","HumpDownHump":"≎","HumpEqual":"≏","hybull":"⁃","hyphen":"‐","Iacute":"Í","iacute":"í","ic":"⁣","Icirc":"Î","icirc":"î","Icy":"И","icy":"и","Idot":"İ","IEcy":"Е","iecy":"е","iexcl":"¡","iff":"⇔","ifr":"𝔦","Ifr":"ℑ","Igrave":"Ì","igrave":"ì","ii":"ⅈ","iiiint":"⨌","iiint":"∭","iinfin":"⧜","iiota":"℩","IJlig":"Ĳ","ijlig":"ĳ","Imacr":"Ī","imacr":"ī","image":"ℑ","ImaginaryI":"ⅈ","imagline":"ℐ","imagpart":"ℑ","imath":"ı","Im":"ℑ","imof":"⊷","imped":"Ƶ","Implies":"⇒","incare":"℅","in":"∈","infin":"∞","infintie":"⧝","inodot":"ı","intcal":"⊺","int":"∫","Int":"∬","integers":"ℤ","Integral":"∫","intercal":"⊺","Intersection":"⋂","intlarhk":"⨗","intprod":"⨼","InvisibleComma":"⁣","InvisibleTimes":"⁢","IOcy":"Ё","iocy":"ё","Iogon":"Į","iogon":"į","Iopf":"𝕀","iopf":"𝕚","Iota":"Ι","iota":"ι","iprod":"⨼","iquest":"¿","iscr":"𝒾","Iscr":"ℐ","isin":"∈","isindot":"⋵","isinE":"⋹","isins":"⋴","isinsv":"⋳","isinv":"∈","it":"⁢","Itilde":"Ĩ","itilde":"ĩ","Iukcy":"І","iukcy":"і","Iuml":"Ï","iuml":"ï","Jcirc":"Ĵ","jcirc":"ĵ","Jcy":"Й","jcy":"й","Jfr":"𝔍","jfr":"𝔧","jmath":"ȷ","Jopf":"𝕁","jopf":"𝕛","Jscr":"𝒥","jscr":"𝒿","Jsercy":"Ј","jsercy":"ј","Jukcy":"Є","jukcy":"є","Kappa":"Κ","kappa":"κ","kappav":"ϰ","Kcedil":"Ķ","kcedil":"ķ","Kcy":"К","kcy":"к","Kfr":"𝔎","kfr":"𝔨","kgreen":"ĸ","KHcy":"Х","khcy":"х","KJcy":"Ќ","kjcy":"ќ","Kopf":"𝕂","kopf":"𝕜","Kscr":"𝒦","kscr":"𝓀","lAarr":"⇚","Lacute":"Ĺ","lacute":"ĺ","laemptyv":"⦴","lagran":"ℒ","Lambda":"Λ","lambda":"λ","lang":"⟨","Lang":"⟪","langd":"⦑","langle":"⟨","lap":"⪅","Laplacetrf":"ℒ","laquo":"«","larrb":"⇤","larrbfs":"⤟","larr":"←","Larr":"↞","lArr":"⇐","larrfs":"⤝","larrhk":"↩","larrlp":"↫","larrpl":"⤹","larrsim":"⥳","larrtl":"↢","latail":"⤙","lAtail":"⤛","lat":"⪫","late":"⪭","lates":"⪭︀","lbarr":"⤌","lBarr":"⤎","lbbrk":"❲","lbrace":"{","lbrack":"[","lbrke":"⦋","lbrksld":"⦏","lbrkslu":"⦍","Lcaron":"Ľ","lcaron":"ľ","Lcedil":"Ļ","lcedil":"ļ","lceil":"⌈","lcub":"{","Lcy":"Л","lcy":"л","ldca":"⤶","ldquo":"“","ldquor":"„","ldrdhar":"⥧","ldrushar":"⥋","ldsh":"↲","le":"≤","lE":"≦","LeftAngleBracket":"⟨","LeftArrowBar":"⇤","leftarrow":"←","LeftArrow":"←","Leftarrow":"⇐","LeftArrowRightArrow":"⇆","leftarrowtail":"↢","LeftCeiling":"⌈","LeftDoubleBracket":"⟦","LeftDownTeeVector":"⥡","LeftDownVectorBar":"⥙","LeftDownVector":"⇃","LeftFloor":"⌊","leftharpoondown":"↽","leftharpoonup":"↼","leftleftarrows":"⇇","leftrightarrow":"↔","LeftRightArrow":"↔","Leftrightarrow":"⇔","leftrightarrows":"⇆","leftrightharpoons":"⇋","leftrightsquigarrow":"↭","LeftRightVector":"⥎","LeftTeeArrow":"↤","LeftTee":"⊣","LeftTeeVector":"⥚","leftthreetimes":"⋋","LeftTriangleBar":"⧏","LeftTriangle":"⊲","LeftTriangleEqual":"⊴","LeftUpDownVector":"⥑","LeftUpTeeVector":"⥠","LeftUpVectorBar":"⥘","LeftUpVector":"↿","LeftVectorBar":"⥒","LeftVector":"↼","lEg":"⪋","leg":"⋚","leq":"≤","leqq":"≦","leqslant":"⩽","lescc":"⪨","les":"⩽","lesdot":"⩿","lesdoto":"⪁","lesdotor":"⪃","lesg":"⋚︀","lesges":"⪓","lessapprox":"⪅","lessdot":"⋖","lesseqgtr":"⋚","lesseqqgtr":"⪋","LessEqualGreater":"⋚","LessFullEqual":"≦","LessGreater":"≶","lessgtr":"≶","LessLess":"⪡","lesssim":"≲","LessSlantEqual":"⩽","LessTilde":"≲","lfisht":"⥼","lfloor":"⌊","Lfr":"𝔏","lfr":"𝔩","lg":"≶","lgE":"⪑","lHar":"⥢","lhard":"↽","lharu":"↼","lharul":"⥪","lhblk":"▄","LJcy":"Љ","ljcy":"љ","llarr":"⇇","ll":"≪","Ll":"⋘","llcorner":"⌞","Lleftarrow":"⇚","llhard":"⥫","lltri":"◺","Lmidot":"Ŀ","lmidot":"ŀ","lmoustache":"⎰","lmoust":"⎰","lnap":"⪉","lnapprox":"⪉","lne":"⪇","lnE":"≨","lneq":"⪇","lneqq":"≨","lnsim":"⋦","loang":"⟬","loarr":"⇽","lobrk":"⟦","longleftarrow":"⟵","LongLeftArrow":"⟵","Longleftarrow":"⟸","longleftrightarrow":"⟷","LongLeftRightArrow":"⟷","Longleftrightarrow":"⟺","longmapsto":"⟼","longrightarrow":"⟶","LongRightArrow":"⟶","Longrightarrow":"⟹","looparrowleft":"↫","looparrowright":"↬","lopar":"⦅","Lopf":"𝕃","lopf":"𝕝","loplus":"⨭","lotimes":"⨴","lowast":"∗","lowbar":"_","LowerLeftArrow":"↙","LowerRightArrow":"↘","loz":"◊","lozenge":"◊","lozf":"⧫","lpar":"(","lparlt":"⦓","lrarr":"⇆","lrcorner":"⌟","lrhar":"⇋","lrhard":"⥭","lrm":"‎","lrtri":"⊿","lsaquo":"‹","lscr":"𝓁","Lscr":"ℒ","lsh":"↰","Lsh":"↰","lsim":"≲","lsime":"⪍","lsimg":"⪏","lsqb":"[","lsquo":"‘","lsquor":"‚","Lstrok":"Ł","lstrok":"ł","ltcc":"⪦","ltcir":"⩹","lt":"<","LT":"<","Lt":"≪","ltdot":"⋖","lthree":"⋋","ltimes":"⋉","ltlarr":"⥶","ltquest":"⩻","ltri":"◃","ltrie":"⊴","ltrif":"◂","ltrPar":"⦖","lurdshar":"⥊","luruhar":"⥦","lvertneqq":"≨︀","lvnE":"≨︀","macr":"¯","male":"♂","malt":"✠","maltese":"✠","Map":"⤅","map":"↦","mapsto":"↦","mapstodown":"↧","mapstoleft":"↤","mapstoup":"↥","marker":"▮","mcomma":"⨩","Mcy":"М","mcy":"м","mdash":"—","mDDot":"∺","measuredangle":"∡","MediumSpace":" ","Mellintrf":"ℳ","Mfr":"𝔐","mfr":"𝔪","mho":"℧","micro":"µ","midast":"*","midcir":"⫰","mid":"∣","middot":"·","minusb":"⊟","minus":"−","minusd":"∸","minusdu":"⨪","MinusPlus":"∓","mlcp":"⫛","mldr":"…","mnplus":"∓","models":"⊧","Mopf":"𝕄","mopf":"𝕞","mp":"∓","mscr":"𝓂","Mscr":"ℳ","mstpos":"∾","Mu":"Μ","mu":"μ","multimap":"⊸","mumap":"⊸","nabla":"∇","Nacute":"Ń","nacute":"ń","nang":"∠⃒","nap":"≉","napE":"⩰̸","napid":"≋̸","napos":"ŉ","napprox":"≉","natural":"♮","naturals":"ℕ","natur":"♮","nbsp":" ","nbump":"≎̸","nbumpe":"≏̸","ncap":"⩃","Ncaron":"Ň","ncaron":"ň","Ncedil":"Ņ","ncedil":"ņ","ncong":"≇","ncongdot":"⩭̸","ncup":"⩂","Ncy":"Н","ncy":"н","ndash":"–","nearhk":"⤤","nearr":"↗","neArr":"⇗","nearrow":"↗","ne":"≠","nedot":"≐̸","NegativeMediumSpace":"​","NegativeThickSpace":"​","NegativeThinSpace":"​","NegativeVeryThinSpace":"​","nequiv":"≢","nesear":"⤨","nesim":"≂̸","NestedGreaterGreater":"≫","NestedLessLess":"≪","NewLine":"\n","nexist":"∄","nexists":"∄","Nfr":"𝔑","nfr":"𝔫","ngE":"≧̸","nge":"≱","ngeq":"≱","ngeqq":"≧̸","ngeqslant":"⩾̸","nges":"⩾̸","nGg":"⋙̸","ngsim":"≵","nGt":"≫⃒","ngt":"≯","ngtr":"≯","nGtv":"≫̸","nharr":"↮","nhArr":"⇎","nhpar":"⫲","ni":"∋","nis":"⋼","nisd":"⋺","niv":"∋","NJcy":"Њ","njcy":"њ","nlarr":"↚","nlArr":"⇍","nldr":"‥","nlE":"≦̸","nle":"≰","nleftarrow":"↚","nLeftarrow":"⇍","nleftrightarrow":"↮","nLeftrightarrow":"⇎","nleq":"≰","nleqq":"≦̸","nleqslant":"⩽̸","nles":"⩽̸","nless":"≮","nLl":"⋘̸","nlsim":"≴","nLt":"≪⃒","nlt":"≮","nltri":"⋪","nltrie":"⋬","nLtv":"≪̸","nmid":"∤","NoBreak":"⁠","NonBreakingSpace":" ","nopf":"𝕟","Nopf":"ℕ","Not":"⫬","not":"¬","NotCongruent":"≢","NotCupCap":"≭","NotDoubleVerticalBar":"∦","NotElement":"∉","NotEqual":"≠","NotEqualTilde":"≂̸","NotExists":"∄","NotGreater":"≯","NotGreaterEqual":"≱","NotGreaterFullEqual":"≧̸","NotGreaterGreater":"≫̸","NotGreaterLess":"≹","NotGreaterSlantEqual":"⩾̸","NotGreaterTilde":"≵","NotHumpDownHump":"≎̸","NotHumpEqual":"≏̸","notin":"∉","notindot":"⋵̸","notinE":"⋹̸","notinva":"∉","notinvb":"⋷","notinvc":"⋶","NotLeftTriangleBar":"⧏̸","NotLeftTriangle":"⋪","NotLeftTriangleEqual":"⋬","NotLess":"≮","NotLessEqual":"≰","NotLessGreater":"≸","NotLessLess":"≪̸","NotLessSlantEqual":"⩽̸","NotLessTilde":"≴","NotNestedGreaterGreater":"⪢̸","NotNestedLessLess":"⪡̸","notni":"∌","notniva":"∌","notnivb":"⋾","notnivc":"⋽","NotPrecedes":"⊀","NotPrecedesEqual":"⪯̸","NotPrecedesSlantEqual":"⋠","NotReverseElement":"∌","NotRightTriangleBar":"⧐̸","NotRightTriangle":"⋫","NotRightTriangleEqual":"⋭","NotSquareSubset":"⊏̸","NotSquareSubsetEqual":"⋢","NotSquareSuperset":"⊐̸","NotSquareSupersetEqual":"⋣","NotSubset":"⊂⃒","NotSubsetEqual":"⊈","NotSucceeds":"⊁","NotSucceedsEqual":"⪰̸","NotSucceedsSlantEqual":"⋡","NotSucceedsTilde":"≿̸","NotSuperset":"⊃⃒","NotSupersetEqual":"⊉","NotTilde":"≁","NotTildeEqual":"≄","NotTildeFullEqual":"≇","NotTildeTilde":"≉","NotVerticalBar":"∤","nparallel":"∦","npar":"∦","nparsl":"⫽⃥","npart":"∂̸","npolint":"⨔","npr":"⊀","nprcue":"⋠","nprec":"⊀","npreceq":"⪯̸","npre":"⪯̸","nrarrc":"⤳̸","nrarr":"↛","nrArr":"⇏","nrarrw":"↝̸","nrightarrow":"↛","nRightarrow":"⇏","nrtri":"⋫","nrtrie":"⋭","nsc":"⊁","nsccue":"⋡","nsce":"⪰̸","Nscr":"𝒩","nscr":"𝓃","nshortmid":"∤","nshortparallel":"∦","nsim":"≁","nsime":"≄","nsimeq":"≄","nsmid":"∤","nspar":"∦","nsqsube":"⋢","nsqsupe":"⋣","nsub":"⊄","nsubE":"⫅̸","nsube":"⊈","nsubset":"⊂⃒","nsubseteq":"⊈","nsubseteqq":"⫅̸","nsucc":"⊁","nsucceq":"⪰̸","nsup":"⊅","nsupE":"⫆̸","nsupe":"⊉","nsupset":"⊃⃒","nsupseteq":"⊉","nsupseteqq":"⫆̸","ntgl":"≹","Ntilde":"Ñ","ntilde":"ñ","ntlg":"≸","ntriangleleft":"⋪","ntrianglelefteq":"⋬","ntriangleright":"⋫","ntrianglerighteq":"⋭","Nu":"Ν","nu":"ν","num":"#","numero":"№","numsp":" ","nvap":"≍⃒","nvdash":"⊬","nvDash":"⊭","nVdash":"⊮","nVDash":"⊯","nvge":"≥⃒","nvgt":">⃒","nvHarr":"⤄","nvinfin":"⧞","nvlArr":"⤂","nvle":"≤⃒","nvlt":"<⃒","nvltrie":"⊴⃒","nvrArr":"⤃","nvrtrie":"⊵⃒","nvsim":"∼⃒","nwarhk":"⤣","nwarr":"↖","nwArr":"⇖","nwarrow":"↖","nwnear":"⤧","Oacute":"Ó","oacute":"ó","oast":"⊛","Ocirc":"Ô","ocirc":"ô","ocir":"⊚","Ocy":"О","ocy":"о","odash":"⊝","Odblac":"Ő","odblac":"ő","odiv":"⨸","odot":"⊙","odsold":"⦼","OElig":"Œ","oelig":"œ","ofcir":"⦿","Ofr":"𝔒","ofr":"𝔬","ogon":"˛","Ograve":"Ò","ograve":"ò","ogt":"⧁","ohbar":"⦵","ohm":"Ω","oint":"∮","olarr":"↺","olcir":"⦾","olcross":"⦻","oline":"‾","olt":"⧀","Omacr":"Ō","omacr":"ō","Omega":"Ω","omega":"ω","Omicron":"Ο","omicron":"ο","omid":"⦶","ominus":"⊖","Oopf":"𝕆","oopf":"𝕠","opar":"⦷","OpenCurlyDoubleQuote":"“","OpenCurlyQuote":"‘","operp":"⦹","oplus":"⊕","orarr":"↻","Or":"⩔","or":"∨","ord":"⩝","order":"ℴ","orderof":"ℴ","ordf":"ª","ordm":"º","origof":"⊶","oror":"⩖","orslope":"⩗","orv":"⩛","oS":"Ⓢ","Oscr":"𝒪","oscr":"ℴ","Oslash":"Ø","oslash":"ø","osol":"⊘","Otilde":"Õ","otilde":"õ","otimesas":"⨶","Otimes":"⨷","otimes":"⊗","Ouml":"Ö","ouml":"ö","ovbar":"⌽","OverBar":"‾","OverBrace":"⏞","OverBracket":"⎴","OverParenthesis":"⏜","para":"¶","parallel":"∥","par":"∥","parsim":"⫳","parsl":"⫽","part":"∂","PartialD":"∂","Pcy":"П","pcy":"п","percnt":"%","period":".","permil":"‰","perp":"⊥","pertenk":"‱","Pfr":"𝔓","pfr":"𝔭","Phi":"Φ","phi":"φ","phiv":"ϕ","phmmat":"ℳ","phone":"☎","Pi":"Π","pi":"π","pitchfork":"⋔","piv":"ϖ","planck":"ℏ","planckh":"ℎ","plankv":"ℏ","plusacir":"⨣","plusb":"⊞","pluscir":"⨢","plus":"+","plusdo":"∔","plusdu":"⨥","pluse":"⩲","PlusMinus":"±","plusmn":"±","plussim":"⨦","plustwo":"⨧","pm":"±","Poincareplane":"ℌ","pointint":"⨕","popf":"𝕡","Popf":"ℙ","pound":"£","prap":"⪷","Pr":"⪻","pr":"≺","prcue":"≼","precapprox":"⪷","prec":"≺","preccurlyeq":"≼","Precedes":"≺","PrecedesEqual":"⪯","PrecedesSlantEqual":"≼","PrecedesTilde":"≾","preceq":"⪯","precnapprox":"⪹","precneqq":"⪵","precnsim":"⋨","pre":"⪯","prE":"⪳","precsim":"≾","prime":"′","Prime":"″","primes":"ℙ","prnap":"⪹","prnE":"⪵","prnsim":"⋨","prod":"∏","Product":"∏","profalar":"⌮","profline":"⌒","profsurf":"⌓","prop":"∝","Proportional":"∝","Proportion":"∷","propto":"∝","prsim":"≾","prurel":"⊰","Pscr":"𝒫","pscr":"𝓅","Psi":"Ψ","psi":"ψ","puncsp":" ","Qfr":"𝔔","qfr":"𝔮","qint":"⨌","qopf":"𝕢","Qopf":"ℚ","qprime":"⁗","Qscr":"𝒬","qscr":"𝓆","quaternions":"ℍ","quatint":"⨖","quest":"?","questeq":"≟","quot":"\"","QUOT":"\"","rAarr":"⇛","race":"∽̱","Racute":"Ŕ","racute":"ŕ","radic":"√","raemptyv":"⦳","rang":"⟩","Rang":"⟫","rangd":"⦒","range":"⦥","rangle":"⟩","raquo":"»","rarrap":"⥵","rarrb":"⇥","rarrbfs":"⤠","rarrc":"⤳","rarr":"→","Rarr":"↠","rArr":"⇒","rarrfs":"⤞","rarrhk":"↪","rarrlp":"↬","rarrpl":"⥅","rarrsim":"⥴","Rarrtl":"⤖","rarrtl":"↣","rarrw":"↝","ratail":"⤚","rAtail":"⤜","ratio":"∶","rationals":"ℚ","rbarr":"⤍","rBarr":"⤏","RBarr":"⤐","rbbrk":"❳","rbrace":"}","rbrack":"]","rbrke":"⦌","rbrksld":"⦎","rbrkslu":"⦐","Rcaron":"Ř","rcaron":"ř","Rcedil":"Ŗ","rcedil":"ŗ","rceil":"⌉","rcub":"}","Rcy":"Р","rcy":"р","rdca":"⤷","rdldhar":"⥩","rdquo":"”","rdquor":"”","rdsh":"↳","real":"ℜ","realine":"ℛ","realpart":"ℜ","reals":"ℝ","Re":"ℜ","rect":"▭","reg":"®","REG":"®","ReverseElement":"∋","ReverseEquilibrium":"⇋","ReverseUpEquilibrium":"⥯","rfisht":"⥽","rfloor":"⌋","rfr":"𝔯","Rfr":"ℜ","rHar":"⥤","rhard":"⇁","rharu":"⇀","rharul":"⥬","Rho":"Ρ","rho":"ρ","rhov":"ϱ","RightAngleBracket":"⟩","RightArrowBar":"⇥","rightarrow":"→","RightArrow":"→","Rightarrow":"⇒","RightArrowLeftArrow":"⇄","rightarrowtail":"↣","RightCeiling":"⌉","RightDoubleBracket":"⟧","RightDownTeeVector":"⥝","RightDownVectorBar":"⥕","RightDownVector":"⇂","RightFloor":"⌋","rightharpoondown":"⇁","rightharpoonup":"⇀","rightleftarrows":"⇄","rightleftharpoons":"⇌","rightrightarrows":"⇉","rightsquigarrow":"↝","RightTeeArrow":"↦","RightTee":"⊢","RightTeeVector":"⥛","rightthreetimes":"⋌","RightTriangleBar":"⧐","RightTriangle":"⊳","RightTriangleEqual":"⊵","RightUpDownVector":"⥏","RightUpTeeVector":"⥜","RightUpVectorBar":"⥔","RightUpVector":"↾","RightVectorBar":"⥓","RightVector":"⇀","ring":"˚","risingdotseq":"≓","rlarr":"⇄","rlhar":"⇌","rlm":"‏","rmoustache":"⎱","rmoust":"⎱","rnmid":"⫮","roang":"⟭","roarr":"⇾","robrk":"⟧","ropar":"⦆","ropf":"𝕣","Ropf":"ℝ","roplus":"⨮","rotimes":"⨵","RoundImplies":"⥰","rpar":")","rpargt":"⦔","rppolint":"⨒","rrarr":"⇉","Rrightarrow":"⇛","rsaquo":"›","rscr":"𝓇","Rscr":"ℛ","rsh":"↱","Rsh":"↱","rsqb":"]","rsquo":"’","rsquor":"’","rthree":"⋌","rtimes":"⋊","rtri":"▹","rtrie":"⊵","rtrif":"▸","rtriltri":"⧎","RuleDelayed":"⧴","ruluhar":"⥨","rx":"℞","Sacute":"Ś","sacute":"ś","sbquo":"‚","scap":"⪸","Scaron":"Š","scaron":"š","Sc":"⪼","sc":"≻","sccue":"≽","sce":"⪰","scE":"⪴","Scedil":"Ş","scedil":"ş","Scirc":"Ŝ","scirc":"ŝ","scnap":"⪺","scnE":"⪶","scnsim":"⋩","scpolint":"⨓","scsim":"≿","Scy":"С","scy":"с","sdotb":"⊡","sdot":"⋅","sdote":"⩦","searhk":"⤥","searr":"↘","seArr":"⇘","searrow":"↘","sect":"§","semi":";","seswar":"⤩","setminus":"∖","setmn":"∖","sext":"✶","Sfr":"𝔖","sfr":"𝔰","sfrown":"⌢","sharp":"♯","SHCHcy":"Щ","shchcy":"щ","SHcy":"Ш","shcy":"ш","ShortDownArrow":"↓","ShortLeftArrow":"←","shortmid":"∣","shortparallel":"∥","ShortRightArrow":"→","ShortUpArrow":"↑","shy":"­","Sigma":"Σ","sigma":"σ","sigmaf":"ς","sigmav":"ς","sim":"∼","simdot":"⩪","sime":"≃","simeq":"≃","simg":"⪞","simgE":"⪠","siml":"⪝","simlE":"⪟","simne":"≆","simplus":"⨤","simrarr":"⥲","slarr":"←","SmallCircle":"∘","smallsetminus":"∖","smashp":"⨳","smeparsl":"⧤","smid":"∣","smile":"⌣","smt":"⪪","smte":"⪬","smtes":"⪬︀","SOFTcy":"Ь","softcy":"ь","solbar":"⌿","solb":"⧄","sol":"/","Sopf":"𝕊","sopf":"𝕤","spades":"♠","spadesuit":"♠","spar":"∥","sqcap":"⊓","sqcaps":"⊓︀","sqcup":"⊔","sqcups":"⊔︀","Sqrt":"√","sqsub":"⊏","sqsube":"⊑","sqsubset":"⊏","sqsubseteq":"⊑","sqsup":"⊐","sqsupe":"⊒","sqsupset":"⊐","sqsupseteq":"⊒","square":"□","Square":"□","SquareIntersection":"⊓","SquareSubset":"⊏","SquareSubsetEqual":"⊑","SquareSuperset":"⊐","SquareSupersetEqual":"⊒","SquareUnion":"⊔","squarf":"▪","squ":"□","squf":"▪","srarr":"→","Sscr":"𝒮","sscr":"𝓈","ssetmn":"∖","ssmile":"⌣","sstarf":"⋆","Star":"⋆","star":"☆","starf":"★","straightepsilon":"ϵ","straightphi":"ϕ","strns":"¯","sub":"⊂","Sub":"⋐","subdot":"⪽","subE":"⫅","sube":"⊆","subedot":"⫃","submult":"⫁","subnE":"⫋","subne":"⊊","subplus":"⪿","subrarr":"⥹","subset":"⊂","Subset":"⋐","subseteq":"⊆","subseteqq":"⫅","SubsetEqual":"⊆","subsetneq":"⊊","subsetneqq":"⫋","subsim":"⫇","subsub":"⫕","subsup":"⫓","succapprox":"⪸","succ":"≻","succcurlyeq":"≽","Succeeds":"≻","SucceedsEqual":"⪰","SucceedsSlantEqual":"≽","SucceedsTilde":"≿","succeq":"⪰","succnapprox":"⪺","succneqq":"⪶","succnsim":"⋩","succsim":"≿","SuchThat":"∋","sum":"∑","Sum":"∑","sung":"♪","sup1":"¹","sup2":"²","sup3":"³","sup":"⊃","Sup":"⋑","supdot":"⪾","supdsub":"⫘","supE":"⫆","supe":"⊇","supedot":"⫄","Superset":"⊃","SupersetEqual":"⊇","suphsol":"⟉","suphsub":"⫗","suplarr":"⥻","supmult":"⫂","supnE":"⫌","supne":"⊋","supplus":"⫀","supset":"⊃","Supset":"⋑","supseteq":"⊇","supseteqq":"⫆","supsetneq":"⊋","supsetneqq":"⫌","supsim":"⫈","supsub":"⫔","supsup":"⫖","swarhk":"⤦","swarr":"↙","swArr":"⇙","swarrow":"↙","swnwar":"⤪","szlig":"ß","Tab":"\t","target":"⌖","Tau":"Τ","tau":"τ","tbrk":"⎴","Tcaron":"Ť","tcaron":"ť","Tcedil":"Ţ","tcedil":"ţ","Tcy":"Т","tcy":"т","tdot":"⃛","telrec":"⌕","Tfr":"𝔗","tfr":"𝔱","there4":"∴","therefore":"∴","Therefore":"∴","Theta":"Θ","theta":"θ","thetasym":"ϑ","thetav":"ϑ","thickapprox":"≈","thicksim":"∼","ThickSpace":"  ","ThinSpace":" ","thinsp":" ","thkap":"≈","thksim":"∼","THORN":"Þ","thorn":"þ","tilde":"˜","Tilde":"∼","TildeEqual":"≃","TildeFullEqual":"≅","TildeTilde":"≈","timesbar":"⨱","timesb":"⊠","times":"×","timesd":"⨰","tint":"∭","toea":"⤨","topbot":"⌶","topcir":"⫱","top":"⊤","Topf":"𝕋","topf":"𝕥","topfork":"⫚","tosa":"⤩","tprime":"‴","trade":"™","TRADE":"™","triangle":"▵","triangledown":"▿","triangleleft":"◃","trianglelefteq":"⊴","triangleq":"≜","triangleright":"▹","trianglerighteq":"⊵","tridot":"◬","trie":"≜","triminus":"⨺","TripleDot":"⃛","triplus":"⨹","trisb":"⧍","tritime":"⨻","trpezium":"⏢","Tscr":"𝒯","tscr":"𝓉","TScy":"Ц","tscy":"ц","TSHcy":"Ћ","tshcy":"ћ","Tstrok":"Ŧ","tstrok":"ŧ","twixt":"≬","twoheadleftarrow":"↞","twoheadrightarrow":"↠","Uacute":"Ú","uacute":"ú","uarr":"↑","Uarr":"↟","uArr":"⇑","Uarrocir":"⥉","Ubrcy":"Ў","ubrcy":"ў","Ubreve":"Ŭ","ubreve":"ŭ","Ucirc":"Û","ucirc":"û","Ucy":"У","ucy":"у","udarr":"⇅","Udblac":"Ű","udblac":"ű","udhar":"⥮","ufisht":"⥾","Ufr":"𝔘","ufr":"𝔲","Ugrave":"Ù","ugrave":"ù","uHar":"⥣","uharl":"↿","uharr":"↾","uhblk":"▀","ulcorn":"⌜","ulcorner":"⌜","ulcrop":"⌏","ultri":"◸","Umacr":"Ū","umacr":"ū","uml":"¨","UnderBar":"_","UnderBrace":"⏟","UnderBracket":"⎵","UnderParenthesis":"⏝","Union":"⋃","UnionPlus":"⊎","Uogon":"Ų","uogon":"ų","Uopf":"𝕌","uopf":"𝕦","UpArrowBar":"⤒","uparrow":"↑","UpArrow":"↑","Uparrow":"⇑","UpArrowDownArrow":"⇅","updownarrow":"↕","UpDownArrow":"↕","Updownarrow":"⇕","UpEquilibrium":"⥮","upharpoonleft":"↿","upharpoonright":"↾","uplus":"⊎","UpperLeftArrow":"↖","UpperRightArrow":"↗","upsi":"υ","Upsi":"ϒ","upsih":"ϒ","Upsilon":"Υ","upsilon":"υ","UpTeeArrow":"↥","UpTee":"⊥","upuparrows":"⇈","urcorn":"⌝","urcorner":"⌝","urcrop":"⌎","Uring":"Ů","uring":"ů","urtri":"◹","Uscr":"𝒰","uscr":"𝓊","utdot":"⋰","Utilde":"Ũ","utilde":"ũ","utri":"▵","utrif":"▴","uuarr":"⇈","Uuml":"Ü","uuml":"ü","uwangle":"⦧","vangrt":"⦜","varepsilon":"ϵ","varkappa":"ϰ","varnothing":"∅","varphi":"ϕ","varpi":"ϖ","varpropto":"∝","varr":"↕","vArr":"⇕","varrho":"ϱ","varsigma":"ς","varsubsetneq":"⊊︀","varsubsetneqq":"⫋︀","varsupsetneq":"⊋︀","varsupsetneqq":"⫌︀","vartheta":"ϑ","vartriangleleft":"⊲","vartriangleright":"⊳","vBar":"⫨","Vbar":"⫫","vBarv":"⫩","Vcy":"В","vcy":"в","vdash":"⊢","vDash":"⊨","Vdash":"⊩","VDash":"⊫","Vdashl":"⫦","veebar":"⊻","vee":"∨","Vee":"⋁","veeeq":"≚","vellip":"⋮","verbar":"|","Verbar":"‖","vert":"|","Vert":"‖","VerticalBar":"∣","VerticalLine":"|","VerticalSeparator":"❘","VerticalTilde":"≀","VeryThinSpace":" ","Vfr":"𝔙","vfr":"𝔳","vltri":"⊲","vnsub":"⊂⃒","vnsup":"⊃⃒","Vopf":"𝕍","vopf":"𝕧","vprop":"∝","vrtri":"⊳","Vscr":"𝒱","vscr":"𝓋","vsubnE":"⫋︀","vsubne":"⊊︀","vsupnE":"⫌︀","vsupne":"⊋︀","Vvdash":"⊪","vzigzag":"⦚","Wcirc":"Ŵ","wcirc":"ŵ","wedbar":"⩟","wedge":"∧","Wedge":"⋀","wedgeq":"≙","weierp":"℘","Wfr":"𝔚","wfr":"𝔴","Wopf":"𝕎","wopf":"𝕨","wp":"℘","wr":"≀","wreath":"≀","Wscr":"𝒲","wscr":"𝓌","xcap":"⋂","xcirc":"◯","xcup":"⋃","xdtri":"▽","Xfr":"𝔛","xfr":"𝔵","xharr":"⟷","xhArr":"⟺","Xi":"Ξ","xi":"ξ","xlarr":"⟵","xlArr":"⟸","xmap":"⟼","xnis":"⋻","xodot":"⨀","Xopf":"𝕏","xopf":"𝕩","xoplus":"⨁","xotime":"⨂","xrarr":"⟶","xrArr":"⟹","Xscr":"𝒳","xscr":"𝓍","xsqcup":"⨆","xuplus":"⨄","xutri":"△","xvee":"⋁","xwedge":"⋀","Yacute":"Ý","yacute":"ý","YAcy":"Я","yacy":"я","Ycirc":"Ŷ","ycirc":"ŷ","Ycy":"Ы","ycy":"ы","yen":"¥","Yfr":"𝔜","yfr":"𝔶","YIcy":"Ї","yicy":"ї","Yopf":"𝕐","yopf":"𝕪","Yscr":"𝒴","yscr":"𝓎","YUcy":"Ю","yucy":"ю","yuml":"ÿ","Yuml":"Ÿ","Zacute":"Ź","zacute":"ź","Zcaron":"Ž","zcaron":"ž","Zcy":"З","zcy":"з","Zdot":"Ż","zdot":"ż","zeetrf":"ℨ","ZeroWidthSpace":"​","Zeta":"Ζ","zeta":"ζ","zfr":"𝔷","Zfr":"ℨ","ZHcy":"Ж","zhcy":"ж","zigrarr":"⇝","zopf":"𝕫","Zopf":"ℤ","Zscr":"𝒵","zscr":"𝓏","zwj":"‍","zwnj":"‌"}
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3805,7 +3524,7 @@ module.exports = encode;
 
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3934,7 +3653,7 @@ module.exports = decode;
 
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3966,7 +3685,7 @@ module.exports = function format(url) {
 
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4285,27 +4004,27 @@ module.exports = urlParse;
 
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.Any = __webpack_require__(15);
-exports.Cc  = __webpack_require__(16);
-exports.Cf  = __webpack_require__(42);
+exports.Any = __webpack_require__(14);
+exports.Cc  = __webpack_require__(15);
+exports.Cf  = __webpack_require__(41);
 exports.P   = __webpack_require__(2);
-exports.Z   = __webpack_require__(17);
+exports.Z   = __webpack_require__(16);
 
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports) {
+
+module.exports=/[\xAD\u0600-\u0605\u061C\u06DD\u070F\u08E2\u180E\u200B-\u200F\u202A-\u202E\u2060-\u2064\u2066-\u206F\uFEFF\uFFF9-\uFFFB]|\uD804[\uDCBD\uDCCD]|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|\uDB40[\uDC01\uDC20-\uDC7F]/
 
 /***/ }),
 /* 42 */
-/***/ (function(module, exports) {
-
-module.exports=/[\xAD\u0600-\u0605\u061C\u06DD\u070F\u08E2\u180E\u200B-\u200F\u202A-\u202E\u2060-\u2064\u2066-\u206F\uFEFF\uFFF9-\uFFFB]|\uD804\uDCBD|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|\uDB40[\uDC01\uDC20-\uDC7F]/
-
-/***/ }),
-/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4313,13 +4032,13 @@ module.exports=/[\xAD\u0600-\u0605\u061C\u06DD\u070F\u08E2\u180E\u200B-\u200F\u2
 
 
 
-exports.parseLinkLabel       = __webpack_require__(44);
-exports.parseLinkDestination = __webpack_require__(45);
-exports.parseLinkTitle       = __webpack_require__(46);
+exports.parseLinkLabel       = __webpack_require__(43);
+exports.parseLinkDestination = __webpack_require__(44);
+exports.parseLinkTitle       = __webpack_require__(45);
 
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4374,7 +4093,7 @@ module.exports = function parseLinkLabel(state, start, disableNested) {
 
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4461,7 +4180,7 @@ module.exports = function parseLinkDestination(str, pos, max) {
 
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4521,7 +4240,7 @@ module.exports = function parseLinkTitle(str, pos, max) {
 
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4863,7 +4582,7 @@ module.exports = Renderer;
 
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4880,12 +4599,12 @@ var Ruler  = __webpack_require__(3);
 
 
 var _rules = [
-  [ 'normalize',      __webpack_require__(49)      ],
-  [ 'block',          __webpack_require__(50)          ],
-  [ 'inline',         __webpack_require__(51)         ],
-  [ 'linkify',        __webpack_require__(52)        ],
-  [ 'replacements',   __webpack_require__(53)   ],
-  [ 'smartquotes',    __webpack_require__(54)    ]
+  [ 'normalize',      __webpack_require__(48)      ],
+  [ 'block',          __webpack_require__(49)          ],
+  [ 'inline',         __webpack_require__(50)         ],
+  [ 'linkify',        __webpack_require__(51)        ],
+  [ 'replacements',   __webpack_require__(52)   ],
+  [ 'smartquotes',    __webpack_require__(53)    ]
 ];
 
 
@@ -4921,14 +4640,14 @@ Core.prototype.process = function (state) {
   }
 };
 
-Core.prototype.State = __webpack_require__(55);
+Core.prototype.State = __webpack_require__(54);
 
 
 module.exports = Core;
 
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4955,7 +4674,7 @@ module.exports = function inline(state) {
 
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4978,7 +4697,7 @@ module.exports = function block(state) {
 
 
 /***/ }),
-/* 51 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4998,7 +4717,7 @@ module.exports = function inline(state) {
 
 
 /***/ }),
-/* 52 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5138,7 +4857,7 @@ module.exports = function linkify(state) {
 
 
 /***/ }),
-/* 53 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5252,7 +4971,7 @@ module.exports = function replace(state) {
 
 
 /***/ }),
-/* 54 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5454,7 +5173,7 @@ module.exports = function smartquotes(state) {
 
 
 /***/ }),
-/* 55 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5481,7 +5200,7 @@ module.exports = StateCore;
 
 
 /***/ }),
-/* 56 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5499,17 +5218,17 @@ var Ruler           = __webpack_require__(3);
 var _rules = [
   // First 2 params - rule name & source. Secondary array - list of rules,
   // which can be terminated by this one.
-  [ 'table',      __webpack_require__(57),      [ 'paragraph', 'reference' ] ],
-  [ 'code',       __webpack_require__(58) ],
-  [ 'fence',      __webpack_require__(59),      [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
-  [ 'blockquote', __webpack_require__(60), [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
-  [ 'hr',         __webpack_require__(61),         [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
-  [ 'list',       __webpack_require__(62),       [ 'paragraph', 'reference', 'blockquote' ] ],
-  [ 'reference',  __webpack_require__(63) ],
-  [ 'heading',    __webpack_require__(64),    [ 'paragraph', 'reference', 'blockquote' ] ],
-  [ 'lheading',   __webpack_require__(65) ],
-  [ 'html_block', __webpack_require__(66), [ 'paragraph', 'reference', 'blockquote' ] ],
-  [ 'paragraph',  __webpack_require__(68) ]
+  [ 'table',      __webpack_require__(56),      [ 'paragraph', 'reference' ] ],
+  [ 'code',       __webpack_require__(57) ],
+  [ 'fence',      __webpack_require__(58),      [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
+  [ 'blockquote', __webpack_require__(59), [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
+  [ 'hr',         __webpack_require__(60),         [ 'paragraph', 'reference', 'blockquote', 'list' ] ],
+  [ 'list',       __webpack_require__(61),       [ 'paragraph', 'reference', 'blockquote' ] ],
+  [ 'reference',  __webpack_require__(62) ],
+  [ 'heading',    __webpack_require__(63),    [ 'paragraph', 'reference', 'blockquote' ] ],
+  [ 'lheading',   __webpack_require__(64) ],
+  [ 'html_block', __webpack_require__(65), [ 'paragraph', 'reference', 'blockquote' ] ],
+  [ 'paragraph',  __webpack_require__(67) ]
 ];
 
 
@@ -5603,14 +5322,14 @@ ParserBlock.prototype.parse = function (src, md, env, outTokens) {
 };
 
 
-ParserBlock.prototype.State = __webpack_require__(69);
+ParserBlock.prototype.State = __webpack_require__(68);
 
 
 module.exports = ParserBlock;
 
 
 /***/ }),
-/* 57 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5813,7 +5532,7 @@ module.exports = function table(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 58 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5854,7 +5573,7 @@ module.exports = function code(state, startLine, endLine/*, silent*/) {
 
 
 /***/ }),
-/* 59 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5955,7 +5674,7 @@ module.exports = function fence(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 60 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6247,7 +5966,7 @@ module.exports = function blockquote(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 61 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6299,7 +6018,7 @@ module.exports = function hr(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 62 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6642,7 +6361,7 @@ module.exports = function list(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 63 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6847,7 +6566,7 @@ module.exports = function reference(state, startLine, _endLine, silent) {
 
 
 /***/ }),
-/* 64 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6909,7 +6628,7 @@ module.exports = function heading(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 65 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6999,7 +6718,7 @@ module.exports = function lheading(state, startLine, endLine/*, silent*/) {
 
 
 /***/ }),
-/* 66 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7008,8 +6727,8 @@ module.exports = function lheading(state, startLine, endLine/*, silent*/) {
 
 
 
-var block_names = __webpack_require__(67);
-var HTML_OPEN_CLOSE_TAG_RE = __webpack_require__(18).HTML_OPEN_CLOSE_TAG_RE;
+var block_names = __webpack_require__(66);
+var HTML_OPEN_CLOSE_TAG_RE = __webpack_require__(17).HTML_OPEN_CLOSE_TAG_RE;
 
 // An array of opening and corresponding closing sequences for html tags,
 // last argument defines whether it can terminate a paragraph or not
@@ -7080,7 +6799,7 @@ module.exports = function html_block(state, startLine, endLine, silent) {
 
 
 /***/ }),
-/* 67 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7158,7 +6877,7 @@ module.exports = [
 
 
 /***/ }),
-/* 68 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7217,7 +6936,7 @@ module.exports = function paragraph(state, startLine/*, endLine*/) {
 
 
 /***/ }),
-/* 69 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7454,7 +7173,7 @@ module.exports = StateBlock;
 
 
 /***/ }),
-/* 70 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7473,24 +7192,24 @@ var Ruler           = __webpack_require__(3);
 // Parser rules
 
 var _rules = [
-  [ 'text',            __webpack_require__(71) ],
-  [ 'newline',         __webpack_require__(72) ],
-  [ 'escape',          __webpack_require__(73) ],
-  [ 'backticks',       __webpack_require__(74) ],
-  [ 'strikethrough',   __webpack_require__(19).tokenize ],
-  [ 'emphasis',        __webpack_require__(20).tokenize ],
-  [ 'link',            __webpack_require__(75) ],
-  [ 'image',           __webpack_require__(76) ],
-  [ 'autolink',        __webpack_require__(77) ],
-  [ 'html_inline',     __webpack_require__(78) ],
-  [ 'entity',          __webpack_require__(79) ]
+  [ 'text',            __webpack_require__(70) ],
+  [ 'newline',         __webpack_require__(71) ],
+  [ 'escape',          __webpack_require__(72) ],
+  [ 'backticks',       __webpack_require__(73) ],
+  [ 'strikethrough',   __webpack_require__(18).tokenize ],
+  [ 'emphasis',        __webpack_require__(19).tokenize ],
+  [ 'link',            __webpack_require__(74) ],
+  [ 'image',           __webpack_require__(75) ],
+  [ 'autolink',        __webpack_require__(76) ],
+  [ 'html_inline',     __webpack_require__(77) ],
+  [ 'entity',          __webpack_require__(78) ]
 ];
 
 var _rules2 = [
-  [ 'balance_pairs',   __webpack_require__(80) ],
-  [ 'strikethrough',   __webpack_require__(19).postProcess ],
-  [ 'emphasis',        __webpack_require__(20).postProcess ],
-  [ 'text_collapse',   __webpack_require__(81) ]
+  [ 'balance_pairs',   __webpack_require__(79) ],
+  [ 'strikethrough',   __webpack_require__(18).postProcess ],
+  [ 'emphasis',        __webpack_require__(19).postProcess ],
+  [ 'text_collapse',   __webpack_require__(80) ]
 ];
 
 
@@ -7631,14 +7350,14 @@ ParserInline.prototype.parse = function (str, md, env, outTokens) {
 };
 
 
-ParserInline.prototype.State = __webpack_require__(82);
+ParserInline.prototype.State = __webpack_require__(81);
 
 
 module.exports = ParserInline;
 
 
 /***/ }),
-/* 71 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7734,7 +7453,7 @@ module.exports = function text(state, silent) {
 
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7783,7 +7502,7 @@ module.exports = function newline(state, silent) {
 
 
 /***/ }),
-/* 73 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7842,7 +7561,7 @@ module.exports = function escape(state, silent) {
 
 
 /***/ }),
-/* 74 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7892,7 +7611,7 @@ module.exports = function backtick(state, silent) {
 
 
 /***/ }),
-/* 75 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8049,7 +7768,7 @@ module.exports = function link(state, silent) {
 
 
 /***/ }),
-/* 76 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8208,7 +7927,7 @@ module.exports = function image(state, silent) {
 
 
 /***/ }),
-/* 77 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8287,7 +8006,7 @@ module.exports = function autolink(state, silent) {
 
 
 /***/ }),
-/* 78 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8296,7 +8015,7 @@ module.exports = function autolink(state, silent) {
 
 
 
-var HTML_TAG_RE = __webpack_require__(18).HTML_TAG_RE;
+var HTML_TAG_RE = __webpack_require__(17).HTML_TAG_RE;
 
 
 function isLetter(ch) {
@@ -8341,7 +8060,7 @@ module.exports = function html_inline(state, silent) {
 
 
 /***/ }),
-/* 79 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8349,7 +8068,7 @@ module.exports = function html_inline(state, silent) {
 
 
 
-var entities          = __webpack_require__(13);
+var entities          = __webpack_require__(12);
 var has               = __webpack_require__(0).has;
 var isValidEntityCode = __webpack_require__(0).isValidEntityCode;
 var fromCodePoint     = __webpack_require__(0).fromCodePoint;
@@ -8396,7 +8115,7 @@ module.exports = function entity(state, silent) {
 
 
 /***/ }),
-/* 80 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8447,7 +8166,7 @@ module.exports = function link_pairs(state) {
 
 
 /***/ }),
-/* 81 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8487,7 +8206,7 @@ module.exports = function text_collapse(state) {
 
 
 /***/ }),
-/* 82 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8624,7 +8343,7 @@ module.exports = StateInline;
 
 
 /***/ }),
-/* 83 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8780,7 +8499,7 @@ function createNormalizer() {
 function compile(self) {
 
   // Load & clone RE patterns.
-  var re = self.re = __webpack_require__(84)(self.__opts__);
+  var re = self.re = __webpack_require__(83)(self.__opts__);
 
   // Define dynamic patterns
   var tlds = self.__tlds__.slice();
@@ -8887,11 +8606,10 @@ function compile(self) {
   self.re.schema_test   = RegExp('(^|(?!_)(?:[><\uff5c]|' + re.src_ZPCc + '))(' + slist + ')', 'i');
   self.re.schema_search = RegExp('(^|(?!_)(?:[><\uff5c]|' + re.src_ZPCc + '))(' + slist + ')', 'ig');
 
-  self.re.pretest       = RegExp(
-                            '(' + self.re.schema_test.source + ')|' +
-                            '(' + self.re.host_fuzzy_test.source + ')|' +
-                            '@',
-                            'i');
+  self.re.pretest = RegExp(
+    '(' + self.re.schema_test.source + ')|(' + self.re.host_fuzzy_test.source + ')|@',
+    'i'
+  );
 
   //
   // Cleanup
@@ -9268,7 +8986,7 @@ module.exports = LinkifyIt;
 
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9279,9 +8997,9 @@ module.exports = function (opts) {
   var re = {};
 
   // Use direct extract instead of `regenerate` to reduse browserified size
-  re.src_Any = __webpack_require__(15).source;
-  re.src_Cc  = __webpack_require__(16).source;
-  re.src_Z   = __webpack_require__(17).source;
+  re.src_Any = __webpack_require__(14).source;
+  re.src_Cc  = __webpack_require__(15).source;
+  re.src_Z   = __webpack_require__(16).source;
   re.src_P   = __webpack_require__(2).source;
 
   // \p{\Z\P\Cc\CF} (white spaces + control + format + punctuation)
@@ -9330,7 +9048,9 @@ module.exports = function (opts) {
           '\\"(?:(?!' + re.src_ZCc + '|["]).)+\\"|' +
           "\\'(?:(?!" + re.src_ZCc + "|[']).)+\\'|" +
           "\\'(?=" + re.src_pseudo_letter + '|[-]).|' +  // allow `I'm_king` if no pair found
-          '\\.{2,3}[a-zA-Z0-9%/]|' + // github has ... in commit range links. Restrict to
+          '\\.{2,4}[a-zA-Z0-9%/]|' + // github has ... in commit range links,
+                                     // google has .... in links (issue #66)
+                                     // Restrict to
                                      // - english
                                      // - percent-encoded
                                      // - parts of file path
@@ -9338,7 +9058,7 @@ module.exports = function (opts) {
           '\\.(?!' + re.src_ZCc + '|[.]).|' +
           (opts && opts['---'] ?
             '\\-(?!--(?:[^-]|$))(?:-*)|' // `---` => long dash, terminate
-          :
+            :
             '\\-+|'
           ) +
           '\\,(?!' + re.src_ZCc + ').|' +      // allow `,,,` in paths
@@ -9348,9 +9068,11 @@ module.exports = function (opts) {
       '|\\/' +
     ')?';
 
+  // Allow anything in markdown spec, forbid quote (") at the first position
+  // because emails enclosed in quotes are far more common
   re.src_email_name =
 
-    '[\\-;:&=\\+\\$,\\"\\.a-zA-Z0-9_]+';
+    '[\\-;:&=\\+\\$,\\.a-zA-Z0-9_][\\-;:&=\\+\\$,\\"\\.a-zA-Z0-9_]*';
 
   re.src_xn =
 
@@ -9375,10 +9097,7 @@ module.exports = function (opts) {
       '|' +
       '(?:' + re.src_pseudo_letter + ')' +
       '|' +
-      // don't allow `--` in domain names, because:
-      // - that can conflict with markdown &mdash; / &ndash;
-      // - nobody use those anyway
-      '(?:' + re.src_pseudo_letter + '(?:-(?!-)|' + re.src_pseudo_letter + '){0,61}' + re.src_pseudo_letter + ')' +
+      '(?:' + re.src_pseudo_letter + '(?:-|' + re.src_pseudo_letter + '){0,61}' + re.src_pseudo_letter + ')' +
     ')';
 
   re.src_host =
@@ -9433,7 +9152,8 @@ module.exports = function (opts) {
 
   re.tpl_email_fuzzy =
 
-      '(^|' + text_separators + '|\\(|' + re.src_ZCc + ')(' + re.src_email_name + '@' + re.tpl_host_fuzzy_strict + ')';
+      '(^|' + text_separators + '|"|\\(|' + re.src_ZCc + ')' +
+      '(' + re.src_email_name + '@' + re.tpl_host_fuzzy_strict + ')';
 
   re.tpl_link_fuzzy =
       // Fuzzy link can't be prepended with .:/\- and non punctuation.
@@ -9452,7 +9172,7 @@ module.exports = function (opts) {
 
 
 /***/ }),
-/* 85 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -9988,10 +9708,10 @@ module.exports = function (opts) {
 
 }(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(86)(module), __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(85)(module), __webpack_require__(6)))
 
 /***/ }),
-/* 86 */
+/* 85 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -10019,7 +9739,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 87 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10067,7 +9787,7 @@ module.exports = {
 
 
 /***/ }),
-/* 88 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10136,7 +9856,7 @@ module.exports = {
 
 
 /***/ }),
-/* 89 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10223,7 +9943,7 @@ module.exports = {
 
 
 /***/ }),
-/* 90 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10441,7 +10161,10 @@ module.exports = function footnote_plugin(md) {
       token      = state.push('footnote_ref', '', 0);
       token.meta = { id: footnoteId };
 
-      state.env.footnotes.list[footnoteId] = { tokens: tokens };
+      state.env.footnotes.list[footnoteId] = {
+        content: state.src.slice(labelStart, labelEnd),
+        tokens: tokens
+      };
     }
 
     state.pos = labelEnd + 1;
@@ -10549,7 +10272,7 @@ module.exports = function footnote_plugin(md) {
 
         token          = new state.Token('inline', '', 0);
         token.children = list[i].tokens;
-        token.content  = '';
+        token.content  = list[i].content;
         tokens.push(token);
 
         token          = new state.Token('paragraph_close', 'p', -1);
@@ -10594,7 +10317,7 @@ module.exports = function footnote_plugin(md) {
 
 
 /***/ }),
-/* 91 */
+/* 90 */
 /***/ (function(module, exports) {
 
 // Markdown-it plugin to render GitHub-style task lists; see
@@ -10716,10 +10439,10 @@ function startsWithTodoMarkdown(token) {
 
 
 /***/ }),
-/* 92 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const hljs = __webpack_require__(93)
+const hljs = __webpack_require__(92)
 
 const maybe = f => {
   try {
@@ -10767,192 +10490,201 @@ module.exports = highlightjs
 
 
 /***/ }),
-/* 93 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var hljs = __webpack_require__(94);
+var hljs = __webpack_require__(93);
 
-hljs.registerLanguage('1c', __webpack_require__(95));
-hljs.registerLanguage('abnf', __webpack_require__(96));
-hljs.registerLanguage('accesslog', __webpack_require__(97));
-hljs.registerLanguage('actionscript', __webpack_require__(98));
-hljs.registerLanguage('ada', __webpack_require__(99));
+hljs.registerLanguage('1c', __webpack_require__(94));
+hljs.registerLanguage('abnf', __webpack_require__(95));
+hljs.registerLanguage('accesslog', __webpack_require__(96));
+hljs.registerLanguage('actionscript', __webpack_require__(97));
+hljs.registerLanguage('ada', __webpack_require__(98));
+hljs.registerLanguage('angelscript', __webpack_require__(99));
 hljs.registerLanguage('apache', __webpack_require__(100));
 hljs.registerLanguage('applescript', __webpack_require__(101));
-hljs.registerLanguage('cpp', __webpack_require__(102));
-hljs.registerLanguage('arduino', __webpack_require__(103));
-hljs.registerLanguage('armasm', __webpack_require__(104));
-hljs.registerLanguage('xml', __webpack_require__(105));
-hljs.registerLanguage('asciidoc', __webpack_require__(106));
-hljs.registerLanguage('aspectj', __webpack_require__(107));
-hljs.registerLanguage('autohotkey', __webpack_require__(108));
-hljs.registerLanguage('autoit', __webpack_require__(109));
-hljs.registerLanguage('avrasm', __webpack_require__(110));
-hljs.registerLanguage('awk', __webpack_require__(111));
-hljs.registerLanguage('axapta', __webpack_require__(112));
-hljs.registerLanguage('bash', __webpack_require__(113));
-hljs.registerLanguage('basic', __webpack_require__(114));
-hljs.registerLanguage('bnf', __webpack_require__(115));
-hljs.registerLanguage('brainfuck', __webpack_require__(116));
-hljs.registerLanguage('cal', __webpack_require__(117));
-hljs.registerLanguage('capnproto', __webpack_require__(118));
-hljs.registerLanguage('ceylon', __webpack_require__(119));
-hljs.registerLanguage('clean', __webpack_require__(120));
-hljs.registerLanguage('clojure', __webpack_require__(121));
-hljs.registerLanguage('clojure-repl', __webpack_require__(122));
-hljs.registerLanguage('cmake', __webpack_require__(123));
-hljs.registerLanguage('coffeescript', __webpack_require__(124));
-hljs.registerLanguage('coq', __webpack_require__(125));
-hljs.registerLanguage('cos', __webpack_require__(126));
-hljs.registerLanguage('crmsh', __webpack_require__(127));
-hljs.registerLanguage('crystal', __webpack_require__(128));
-hljs.registerLanguage('cs', __webpack_require__(129));
-hljs.registerLanguage('csp', __webpack_require__(130));
-hljs.registerLanguage('css', __webpack_require__(131));
-hljs.registerLanguage('d', __webpack_require__(132));
-hljs.registerLanguage('markdown', __webpack_require__(133));
-hljs.registerLanguage('dart', __webpack_require__(134));
-hljs.registerLanguage('delphi', __webpack_require__(135));
-hljs.registerLanguage('diff', __webpack_require__(136));
-hljs.registerLanguage('django', __webpack_require__(137));
-hljs.registerLanguage('dns', __webpack_require__(138));
-hljs.registerLanguage('dockerfile', __webpack_require__(139));
-hljs.registerLanguage('dos', __webpack_require__(140));
-hljs.registerLanguage('dsconfig', __webpack_require__(141));
-hljs.registerLanguage('dts', __webpack_require__(142));
-hljs.registerLanguage('dust', __webpack_require__(143));
-hljs.registerLanguage('ebnf', __webpack_require__(144));
-hljs.registerLanguage('elixir', __webpack_require__(145));
-hljs.registerLanguage('elm', __webpack_require__(146));
-hljs.registerLanguage('ruby', __webpack_require__(147));
-hljs.registerLanguage('erb', __webpack_require__(148));
-hljs.registerLanguage('erlang-repl', __webpack_require__(149));
-hljs.registerLanguage('erlang', __webpack_require__(150));
-hljs.registerLanguage('excel', __webpack_require__(151));
-hljs.registerLanguage('fix', __webpack_require__(152));
-hljs.registerLanguage('flix', __webpack_require__(153));
-hljs.registerLanguage('fortran', __webpack_require__(154));
-hljs.registerLanguage('fsharp', __webpack_require__(155));
-hljs.registerLanguage('gams', __webpack_require__(156));
-hljs.registerLanguage('gauss', __webpack_require__(157));
-hljs.registerLanguage('gcode', __webpack_require__(158));
-hljs.registerLanguage('gherkin', __webpack_require__(159));
-hljs.registerLanguage('glsl', __webpack_require__(160));
-hljs.registerLanguage('go', __webpack_require__(161));
-hljs.registerLanguage('golo', __webpack_require__(162));
-hljs.registerLanguage('gradle', __webpack_require__(163));
-hljs.registerLanguage('groovy', __webpack_require__(164));
-hljs.registerLanguage('haml', __webpack_require__(165));
-hljs.registerLanguage('handlebars', __webpack_require__(166));
-hljs.registerLanguage('haskell', __webpack_require__(167));
-hljs.registerLanguage('haxe', __webpack_require__(168));
-hljs.registerLanguage('hsp', __webpack_require__(169));
-hljs.registerLanguage('htmlbars', __webpack_require__(170));
-hljs.registerLanguage('http', __webpack_require__(171));
-hljs.registerLanguage('hy', __webpack_require__(172));
-hljs.registerLanguage('inform7', __webpack_require__(173));
-hljs.registerLanguage('ini', __webpack_require__(174));
-hljs.registerLanguage('irpf90', __webpack_require__(175));
-hljs.registerLanguage('java', __webpack_require__(176));
-hljs.registerLanguage('javascript', __webpack_require__(177));
-hljs.registerLanguage('jboss-cli', __webpack_require__(178));
-hljs.registerLanguage('json', __webpack_require__(179));
-hljs.registerLanguage('julia', __webpack_require__(180));
-hljs.registerLanguage('julia-repl', __webpack_require__(181));
-hljs.registerLanguage('kotlin', __webpack_require__(182));
-hljs.registerLanguage('lasso', __webpack_require__(183));
-hljs.registerLanguage('ldif', __webpack_require__(184));
-hljs.registerLanguage('leaf', __webpack_require__(185));
-hljs.registerLanguage('less', __webpack_require__(186));
-hljs.registerLanguage('lisp', __webpack_require__(187));
-hljs.registerLanguage('livecodeserver', __webpack_require__(188));
-hljs.registerLanguage('livescript', __webpack_require__(189));
-hljs.registerLanguage('llvm', __webpack_require__(190));
-hljs.registerLanguage('lsl', __webpack_require__(191));
-hljs.registerLanguage('lua', __webpack_require__(192));
-hljs.registerLanguage('makefile', __webpack_require__(193));
-hljs.registerLanguage('mathematica', __webpack_require__(194));
-hljs.registerLanguage('matlab', __webpack_require__(195));
-hljs.registerLanguage('maxima', __webpack_require__(196));
-hljs.registerLanguage('mel', __webpack_require__(197));
-hljs.registerLanguage('mercury', __webpack_require__(198));
-hljs.registerLanguage('mipsasm', __webpack_require__(199));
-hljs.registerLanguage('mizar', __webpack_require__(200));
-hljs.registerLanguage('perl', __webpack_require__(201));
-hljs.registerLanguage('mojolicious', __webpack_require__(202));
-hljs.registerLanguage('monkey', __webpack_require__(203));
-hljs.registerLanguage('moonscript', __webpack_require__(204));
-hljs.registerLanguage('n1ql', __webpack_require__(205));
-hljs.registerLanguage('nginx', __webpack_require__(206));
-hljs.registerLanguage('nimrod', __webpack_require__(207));
-hljs.registerLanguage('nix', __webpack_require__(208));
-hljs.registerLanguage('nsis', __webpack_require__(209));
-hljs.registerLanguage('objectivec', __webpack_require__(210));
-hljs.registerLanguage('ocaml', __webpack_require__(211));
-hljs.registerLanguage('openscad', __webpack_require__(212));
-hljs.registerLanguage('oxygene', __webpack_require__(213));
-hljs.registerLanguage('parser3', __webpack_require__(214));
-hljs.registerLanguage('pf', __webpack_require__(215));
-hljs.registerLanguage('php', __webpack_require__(216));
-hljs.registerLanguage('pony', __webpack_require__(217));
-hljs.registerLanguage('powershell', __webpack_require__(218));
-hljs.registerLanguage('processing', __webpack_require__(219));
-hljs.registerLanguage('profile', __webpack_require__(220));
-hljs.registerLanguage('prolog', __webpack_require__(221));
-hljs.registerLanguage('protobuf', __webpack_require__(222));
-hljs.registerLanguage('puppet', __webpack_require__(223));
-hljs.registerLanguage('purebasic', __webpack_require__(224));
-hljs.registerLanguage('python', __webpack_require__(225));
-hljs.registerLanguage('q', __webpack_require__(226));
-hljs.registerLanguage('qml', __webpack_require__(227));
-hljs.registerLanguage('r', __webpack_require__(228));
-hljs.registerLanguage('rib', __webpack_require__(229));
-hljs.registerLanguage('roboconf', __webpack_require__(230));
-hljs.registerLanguage('routeros', __webpack_require__(231));
-hljs.registerLanguage('rsl', __webpack_require__(232));
-hljs.registerLanguage('ruleslanguage', __webpack_require__(233));
-hljs.registerLanguage('rust', __webpack_require__(234));
-hljs.registerLanguage('scala', __webpack_require__(235));
-hljs.registerLanguage('scheme', __webpack_require__(236));
-hljs.registerLanguage('scilab', __webpack_require__(237));
-hljs.registerLanguage('scss', __webpack_require__(238));
-hljs.registerLanguage('shell', __webpack_require__(239));
-hljs.registerLanguage('smali', __webpack_require__(240));
-hljs.registerLanguage('smalltalk', __webpack_require__(241));
-hljs.registerLanguage('sml', __webpack_require__(242));
-hljs.registerLanguage('sqf', __webpack_require__(243));
-hljs.registerLanguage('sql', __webpack_require__(244));
-hljs.registerLanguage('stan', __webpack_require__(245));
-hljs.registerLanguage('stata', __webpack_require__(246));
-hljs.registerLanguage('step21', __webpack_require__(247));
-hljs.registerLanguage('stylus', __webpack_require__(248));
-hljs.registerLanguage('subunit', __webpack_require__(249));
-hljs.registerLanguage('swift', __webpack_require__(250));
-hljs.registerLanguage('taggerscript', __webpack_require__(251));
-hljs.registerLanguage('yaml', __webpack_require__(252));
-hljs.registerLanguage('tap', __webpack_require__(253));
-hljs.registerLanguage('tcl', __webpack_require__(254));
-hljs.registerLanguage('tex', __webpack_require__(255));
-hljs.registerLanguage('thrift', __webpack_require__(256));
-hljs.registerLanguage('tp', __webpack_require__(257));
-hljs.registerLanguage('twig', __webpack_require__(258));
-hljs.registerLanguage('typescript', __webpack_require__(259));
-hljs.registerLanguage('vala', __webpack_require__(260));
-hljs.registerLanguage('vbnet', __webpack_require__(261));
-hljs.registerLanguage('vbscript', __webpack_require__(262));
-hljs.registerLanguage('vbscript-html', __webpack_require__(263));
-hljs.registerLanguage('verilog', __webpack_require__(264));
-hljs.registerLanguage('vhdl', __webpack_require__(265));
-hljs.registerLanguage('vim', __webpack_require__(266));
-hljs.registerLanguage('x86asm', __webpack_require__(267));
-hljs.registerLanguage('xl', __webpack_require__(268));
-hljs.registerLanguage('xquery', __webpack_require__(269));
-hljs.registerLanguage('zephir', __webpack_require__(270));
+hljs.registerLanguage('arcade', __webpack_require__(102));
+hljs.registerLanguage('cpp', __webpack_require__(103));
+hljs.registerLanguage('arduino', __webpack_require__(104));
+hljs.registerLanguage('armasm', __webpack_require__(105));
+hljs.registerLanguage('xml', __webpack_require__(106));
+hljs.registerLanguage('asciidoc', __webpack_require__(107));
+hljs.registerLanguage('aspectj', __webpack_require__(108));
+hljs.registerLanguage('autohotkey', __webpack_require__(109));
+hljs.registerLanguage('autoit', __webpack_require__(110));
+hljs.registerLanguage('avrasm', __webpack_require__(111));
+hljs.registerLanguage('awk', __webpack_require__(112));
+hljs.registerLanguage('axapta', __webpack_require__(113));
+hljs.registerLanguage('bash', __webpack_require__(114));
+hljs.registerLanguage('basic', __webpack_require__(115));
+hljs.registerLanguage('bnf', __webpack_require__(116));
+hljs.registerLanguage('brainfuck', __webpack_require__(117));
+hljs.registerLanguage('cal', __webpack_require__(118));
+hljs.registerLanguage('capnproto', __webpack_require__(119));
+hljs.registerLanguage('ceylon', __webpack_require__(120));
+hljs.registerLanguage('clean', __webpack_require__(121));
+hljs.registerLanguage('clojure', __webpack_require__(122));
+hljs.registerLanguage('clojure-repl', __webpack_require__(123));
+hljs.registerLanguage('cmake', __webpack_require__(124));
+hljs.registerLanguage('coffeescript', __webpack_require__(125));
+hljs.registerLanguage('coq', __webpack_require__(126));
+hljs.registerLanguage('cos', __webpack_require__(127));
+hljs.registerLanguage('crmsh', __webpack_require__(128));
+hljs.registerLanguage('crystal', __webpack_require__(129));
+hljs.registerLanguage('cs', __webpack_require__(130));
+hljs.registerLanguage('csp', __webpack_require__(131));
+hljs.registerLanguage('css', __webpack_require__(132));
+hljs.registerLanguage('d', __webpack_require__(133));
+hljs.registerLanguage('markdown', __webpack_require__(134));
+hljs.registerLanguage('dart', __webpack_require__(135));
+hljs.registerLanguage('delphi', __webpack_require__(136));
+hljs.registerLanguage('diff', __webpack_require__(137));
+hljs.registerLanguage('django', __webpack_require__(138));
+hljs.registerLanguage('dns', __webpack_require__(139));
+hljs.registerLanguage('dockerfile', __webpack_require__(140));
+hljs.registerLanguage('dos', __webpack_require__(141));
+hljs.registerLanguage('dsconfig', __webpack_require__(142));
+hljs.registerLanguage('dts', __webpack_require__(143));
+hljs.registerLanguage('dust', __webpack_require__(144));
+hljs.registerLanguage('ebnf', __webpack_require__(145));
+hljs.registerLanguage('elixir', __webpack_require__(146));
+hljs.registerLanguage('elm', __webpack_require__(147));
+hljs.registerLanguage('ruby', __webpack_require__(148));
+hljs.registerLanguage('erb', __webpack_require__(149));
+hljs.registerLanguage('erlang-repl', __webpack_require__(150));
+hljs.registerLanguage('erlang', __webpack_require__(151));
+hljs.registerLanguage('excel', __webpack_require__(152));
+hljs.registerLanguage('fix', __webpack_require__(153));
+hljs.registerLanguage('flix', __webpack_require__(154));
+hljs.registerLanguage('fortran', __webpack_require__(155));
+hljs.registerLanguage('fsharp', __webpack_require__(156));
+hljs.registerLanguage('gams', __webpack_require__(157));
+hljs.registerLanguage('gauss', __webpack_require__(158));
+hljs.registerLanguage('gcode', __webpack_require__(159));
+hljs.registerLanguage('gherkin', __webpack_require__(160));
+hljs.registerLanguage('glsl', __webpack_require__(161));
+hljs.registerLanguage('gml', __webpack_require__(162));
+hljs.registerLanguage('go', __webpack_require__(163));
+hljs.registerLanguage('golo', __webpack_require__(164));
+hljs.registerLanguage('gradle', __webpack_require__(165));
+hljs.registerLanguage('groovy', __webpack_require__(166));
+hljs.registerLanguage('haml', __webpack_require__(167));
+hljs.registerLanguage('handlebars', __webpack_require__(168));
+hljs.registerLanguage('haskell', __webpack_require__(169));
+hljs.registerLanguage('haxe', __webpack_require__(170));
+hljs.registerLanguage('hsp', __webpack_require__(171));
+hljs.registerLanguage('htmlbars', __webpack_require__(172));
+hljs.registerLanguage('http', __webpack_require__(173));
+hljs.registerLanguage('hy', __webpack_require__(174));
+hljs.registerLanguage('inform7', __webpack_require__(175));
+hljs.registerLanguage('ini', __webpack_require__(176));
+hljs.registerLanguage('irpf90', __webpack_require__(177));
+hljs.registerLanguage('isbl', __webpack_require__(178));
+hljs.registerLanguage('java', __webpack_require__(179));
+hljs.registerLanguage('javascript', __webpack_require__(180));
+hljs.registerLanguage('jboss-cli', __webpack_require__(181));
+hljs.registerLanguage('json', __webpack_require__(182));
+hljs.registerLanguage('julia', __webpack_require__(183));
+hljs.registerLanguage('julia-repl', __webpack_require__(184));
+hljs.registerLanguage('kotlin', __webpack_require__(185));
+hljs.registerLanguage('lasso', __webpack_require__(186));
+hljs.registerLanguage('ldif', __webpack_require__(187));
+hljs.registerLanguage('leaf', __webpack_require__(188));
+hljs.registerLanguage('less', __webpack_require__(189));
+hljs.registerLanguage('lisp', __webpack_require__(190));
+hljs.registerLanguage('livecodeserver', __webpack_require__(191));
+hljs.registerLanguage('livescript', __webpack_require__(192));
+hljs.registerLanguage('llvm', __webpack_require__(193));
+hljs.registerLanguage('lsl', __webpack_require__(194));
+hljs.registerLanguage('lua', __webpack_require__(195));
+hljs.registerLanguage('makefile', __webpack_require__(196));
+hljs.registerLanguage('mathematica', __webpack_require__(197));
+hljs.registerLanguage('matlab', __webpack_require__(198));
+hljs.registerLanguage('maxima', __webpack_require__(199));
+hljs.registerLanguage('mel', __webpack_require__(200));
+hljs.registerLanguage('mercury', __webpack_require__(201));
+hljs.registerLanguage('mipsasm', __webpack_require__(202));
+hljs.registerLanguage('mizar', __webpack_require__(203));
+hljs.registerLanguage('perl', __webpack_require__(204));
+hljs.registerLanguage('mojolicious', __webpack_require__(205));
+hljs.registerLanguage('monkey', __webpack_require__(206));
+hljs.registerLanguage('moonscript', __webpack_require__(207));
+hljs.registerLanguage('n1ql', __webpack_require__(208));
+hljs.registerLanguage('nginx', __webpack_require__(209));
+hljs.registerLanguage('nimrod', __webpack_require__(210));
+hljs.registerLanguage('nix', __webpack_require__(211));
+hljs.registerLanguage('nsis', __webpack_require__(212));
+hljs.registerLanguage('objectivec', __webpack_require__(213));
+hljs.registerLanguage('ocaml', __webpack_require__(214));
+hljs.registerLanguage('openscad', __webpack_require__(215));
+hljs.registerLanguage('oxygene', __webpack_require__(216));
+hljs.registerLanguage('parser3', __webpack_require__(217));
+hljs.registerLanguage('pf', __webpack_require__(218));
+hljs.registerLanguage('pgsql', __webpack_require__(219));
+hljs.registerLanguage('php', __webpack_require__(220));
+hljs.registerLanguage('plaintext', __webpack_require__(221));
+hljs.registerLanguage('pony', __webpack_require__(222));
+hljs.registerLanguage('powershell', __webpack_require__(223));
+hljs.registerLanguage('processing', __webpack_require__(224));
+hljs.registerLanguage('profile', __webpack_require__(225));
+hljs.registerLanguage('prolog', __webpack_require__(226));
+hljs.registerLanguage('properties', __webpack_require__(227));
+hljs.registerLanguage('protobuf', __webpack_require__(228));
+hljs.registerLanguage('puppet', __webpack_require__(229));
+hljs.registerLanguage('purebasic', __webpack_require__(230));
+hljs.registerLanguage('python', __webpack_require__(231));
+hljs.registerLanguage('q', __webpack_require__(232));
+hljs.registerLanguage('qml', __webpack_require__(233));
+hljs.registerLanguage('r', __webpack_require__(234));
+hljs.registerLanguage('reasonml', __webpack_require__(235));
+hljs.registerLanguage('rib', __webpack_require__(236));
+hljs.registerLanguage('roboconf', __webpack_require__(237));
+hljs.registerLanguage('routeros', __webpack_require__(238));
+hljs.registerLanguage('rsl', __webpack_require__(239));
+hljs.registerLanguage('ruleslanguage', __webpack_require__(240));
+hljs.registerLanguage('rust', __webpack_require__(241));
+hljs.registerLanguage('sas', __webpack_require__(242));
+hljs.registerLanguage('scala', __webpack_require__(243));
+hljs.registerLanguage('scheme', __webpack_require__(244));
+hljs.registerLanguage('scilab', __webpack_require__(245));
+hljs.registerLanguage('scss', __webpack_require__(246));
+hljs.registerLanguage('shell', __webpack_require__(247));
+hljs.registerLanguage('smali', __webpack_require__(248));
+hljs.registerLanguage('smalltalk', __webpack_require__(249));
+hljs.registerLanguage('sml', __webpack_require__(250));
+hljs.registerLanguage('sqf', __webpack_require__(251));
+hljs.registerLanguage('sql', __webpack_require__(252));
+hljs.registerLanguage('stan', __webpack_require__(253));
+hljs.registerLanguage('stata', __webpack_require__(254));
+hljs.registerLanguage('step21', __webpack_require__(255));
+hljs.registerLanguage('stylus', __webpack_require__(256));
+hljs.registerLanguage('subunit', __webpack_require__(257));
+hljs.registerLanguage('swift', __webpack_require__(258));
+hljs.registerLanguage('taggerscript', __webpack_require__(259));
+hljs.registerLanguage('yaml', __webpack_require__(260));
+hljs.registerLanguage('tap', __webpack_require__(261));
+hljs.registerLanguage('tcl', __webpack_require__(262));
+hljs.registerLanguage('tex', __webpack_require__(263));
+hljs.registerLanguage('thrift', __webpack_require__(264));
+hljs.registerLanguage('tp', __webpack_require__(265));
+hljs.registerLanguage('twig', __webpack_require__(266));
+hljs.registerLanguage('typescript', __webpack_require__(267));
+hljs.registerLanguage('vala', __webpack_require__(268));
+hljs.registerLanguage('vbnet', __webpack_require__(269));
+hljs.registerLanguage('vbscript', __webpack_require__(270));
+hljs.registerLanguage('vbscript-html', __webpack_require__(271));
+hljs.registerLanguage('verilog', __webpack_require__(272));
+hljs.registerLanguage('vhdl', __webpack_require__(273));
+hljs.registerLanguage('vim', __webpack_require__(274));
+hljs.registerLanguage('x86asm', __webpack_require__(275));
+hljs.registerLanguage('xl', __webpack_require__(276));
+hljs.registerLanguage('xquery', __webpack_require__(277));
+hljs.registerLanguage('zephir', __webpack_require__(278));
 
 module.exports = hljs;
 
 /***/ }),
-/* 94 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -10996,6 +10728,10 @@ https://highlightjs.org/
   var noHighlightRe    = /^(no-?highlight|plain|text)$/i,
       languagePrefixRe = /\blang(?:uage)?-([\w-]+)\b/i,
       fixMarkupRe      = /((^(<[^>]+>|\t|)+|(?:\n)))/gm;
+
+  // The object will be assigned by the build tool. It used to synchronize API 
+  // of external language files with minified version of the highlight.js library.
+  var API_REPLACES;
 
   var spanEndTag = '</span>';
 
@@ -11043,7 +10779,7 @@ https://highlightjs.org/
     classes = classes.split(/\s+/);
 
     for (i = 0, length = classes.length; i < length; i++) {
-      _class = classes[i]
+      _class = classes[i];
 
       if (isNotHighlighted(_class) || getLanguage(_class)) {
         return _class;
@@ -11181,6 +10917,15 @@ https://highlightjs.org/
     return mode.cached_variants || (mode.endsWithParent && [inherit(mode)]) || [mode];
   }
 
+  function restoreLanguageApi(obj) {
+    if(API_REPLACES && !obj.langApiRestored) {
+      obj.langApiRestored = true;
+      for(var key in API_REPLACES)
+        obj[key] && (obj[API_REPLACES[key]] = obj[key]);
+      (obj.contains || []).concat(obj.variants || []).forEach(restoreLanguageApi);
+    }
+  }
+
   function compileLanguage(language) {
 
     function reStr(re) {
@@ -11192,6 +10937,47 @@ https://highlightjs.org/
         reStr(value),
         'm' + (language.case_insensitive ? 'i' : '') + (global ? 'g' : '')
       );
+    }
+
+    // joinRe logically computes regexps.join(separator), but fixes the
+    // backreferences so they continue to match.
+    function joinRe(regexps, separator) {
+      // backreferenceRe matches an open parenthesis or backreference. To avoid
+      // an incorrect parse, it additionally matches the following:
+      // - [...] elements, where the meaning of parentheses and escapes change
+      // - other escape sequences, so we do not misparse escape sequences as
+      //   interesting elements
+      // - non-matching or lookahead parentheses, which do not capture. These
+      //   follow the '(' with a '?'.
+      var backreferenceRe = /\[(?:[^\\\]]|\\.)*\]|\(\??|\\([1-9][0-9]*)|\\./;
+      var numCaptures = 0;
+      var ret = '';
+      for (var i = 0; i < regexps.length; i++) {
+        var offset = numCaptures;
+        var re = reStr(regexps[i]);
+        if (i > 0) {
+          ret += separator;
+        }
+        while (re.length > 0) {
+          var match = backreferenceRe.exec(re);
+          if (match == null) {
+            ret += re;
+            break;
+          }
+          ret += re.substring(0, match.index);
+          re = re.substring(match.index + match[0].length);
+          if (match[0][0] == '\\' && match[1]) {
+            // Adjust the backreference.
+            ret += '\\' + String(Number(match[1]) + offset);
+          } else {
+            ret += match[0];
+            if (match[0] == '(') {
+              numCaptures++;
+            }
+          }
+        }
+      }
+      return ret;
     }
 
     function compileMode(mode, parent) {
@@ -11231,6 +11017,8 @@ https://highlightjs.org/
         if (!mode.begin)
           mode.begin = /\B|\b/;
         mode.beginRe = langRe(mode.begin);
+        if (mode.endSameAsBegin)
+          mode.end = mode.begin;
         if (!mode.end && !mode.endsWithParent)
           mode.end = /\B|\b/;
         if (mode.end)
@@ -11247,7 +11035,7 @@ https://highlightjs.org/
         mode.contains = [];
       }
       mode.contains = Array.prototype.concat.apply([], mode.contains.map(function(c) {
-        return expand_mode(c === 'self' ? mode : c)
+        return expand_mode(c === 'self' ? mode : c);
       }));
       mode.contains.forEach(function(c) {compileMode(c, mode);});
 
@@ -11257,14 +11045,14 @@ https://highlightjs.org/
 
       var terminators =
         mode.contains.map(function(c) {
-          return c.beginKeywords ? '\\.?(' + c.begin + ')\\.?' : c.begin;
+          return c.beginKeywords ? '\\.?(?:' + c.begin + ')\\.?' : c.begin;
         })
         .concat([mode.terminator_end, mode.illegal])
         .map(reStr)
         .filter(Boolean);
-      mode.terminators = terminators.length ? langRe(terminators.join('|'), true) : {exec: function(/*s*/) {return null;}};
+      mode.terminators = terminators.length ? langRe(joinRe(terminators, '|'), true) : {exec: function(/*s*/) {return null;}};
     }
-
+    
     compileMode(language);
   }
 
@@ -11279,11 +11067,18 @@ https://highlightjs.org/
   */
   function highlight(name, value, ignore_illegals, continuation) {
 
+    function escapeRe(value) {
+      return new RegExp(value.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'), 'm');
+    }
+
     function subMode(lexeme, mode) {
       var i, length;
 
       for (i = 0, length = mode.contains.length; i < length; i++) {
         if (testRe(mode.contains[i].beginRe, lexeme)) {
+          if (mode.contains[i].endSameAsBegin) {
+            mode.contains[i].endRe = escapeRe( mode.contains[i].beginRe.exec(lexeme)[0] );
+          }
           return mode.contains[i];
         }
       }
@@ -11313,10 +11108,11 @@ https://highlightjs.org/
     function buildSpan(classname, insideSpan, leaveOpen, noPrefix) {
       var classPrefix = noPrefix ? '' : options.classPrefix,
           openSpan    = '<span class="' + classPrefix,
-          closeSpan   = leaveOpen ? '' : spanEndTag
+          closeSpan   = leaveOpen ? '' : spanEndTag;
 
       openSpan += classname + '">';
 
+      if (!classname) return insideSpan;
       return openSpan + insideSpan + closeSpan;
     }
 
@@ -11423,12 +11219,15 @@ https://highlightjs.org/
           if (top.className) {
             result += spanEndTag;
           }
-          if (!top.skip) {
+          if (!top.skip && !top.subLanguage) {
             relevance += top.relevance;
           }
           top = top.parent;
         } while (top !== end_mode.parent);
         if (end_mode.starts) {
+          if (end_mode.endSameAsBegin) {
+            end_mode.starts.endRe = end_mode.endRe;
+          }
           startNewMode(end_mode.starts, '');
         }
         return origin.returnEnd ? 0 : lexeme.length;
@@ -11514,7 +11313,7 @@ https://highlightjs.org/
       value: escape(text)
     };
     var second_best = result;
-    languageSubset.filter(getLanguage).forEach(function(name) {
+    languageSubset.filter(getLanguage).filter(autoDetection).forEach(function(name) {
       var current = highlight(name, text, false);
       current.language = name;
       if (current.relevance > second_best.relevance) {
@@ -11637,6 +11436,7 @@ https://highlightjs.org/
 
   function registerLanguage(name, language) {
     var lang = languages[name] = language(hljs);
+    restoreLanguageApi(lang);
     if (lang.aliases) {
       lang.aliases.forEach(function(alias) {aliases[alias] = name;});
     }
@@ -11651,6 +11451,11 @@ https://highlightjs.org/
     return languages[name] || languages[aliases[name]];
   }
 
+  function autoDetection(name) {
+    var lang = getLanguage(name);
+    return lang && !lang.disableAutodetect;
+  }
+
   /* Interface definition */
 
   hljs.highlight = highlight;
@@ -11663,6 +11468,7 @@ https://highlightjs.org/
   hljs.registerLanguage = registerLanguage;
   hljs.listLanguages = listLanguages;
   hljs.getLanguage = getLanguage;
+  hljs.autoDetection = autoDetection;
   hljs.inherit = inherit;
 
   // Common regexps
@@ -11774,7 +11580,7 @@ https://highlightjs.org/
 
 
 /***/ }),
-/* 95 */
+/* 94 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs){
@@ -12288,7 +12094,7 @@ module.exports = function(hljs){
 };
 
 /***/ }),
-/* 96 */
+/* 95 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -12363,7 +12169,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 97 */
+/* 96 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -12405,7 +12211,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 98 */
+/* 97 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -12483,7 +12289,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 99 */
+/* 98 */
 /***/ (function(module, exports) {
 
 module.exports = // We try to support full Ada2012
@@ -12660,6 +12466,117 @@ function(hljs) {
 };
 
 /***/ }),
+/* 99 */
+/***/ (function(module, exports) {
+
+module.exports = function(hljs) {
+  var builtInTypeMode = {
+    className: 'built_in',
+    begin: '\\b(void|bool|int|int8|int16|int32|int64|uint|uint8|uint16|uint32|uint64|string|ref|array|double|float|auto|dictionary)'
+  };
+
+  var objectHandleMode = {
+    className: 'symbol',
+    begin: '[a-zA-Z0-9_]+@'
+  };
+
+  var genericMode = {
+    className: 'keyword',
+    begin: '<', end: '>',
+    contains: [ builtInTypeMode, objectHandleMode ]
+  };
+
+  builtInTypeMode.contains = [ genericMode ];
+  objectHandleMode.contains = [ genericMode ];
+
+  return {
+    aliases: [ 'asc' ],
+
+    keywords:
+      'for in|0 break continue while do|0 return if else case switch namespace is cast ' +
+      'or and xor not get|0 in inout|10 out override set|0 private public const default|0 ' +
+      'final shared external mixin|10 enum typedef funcdef this super import from interface ' +
+      'abstract|0 try catch protected explicit',
+
+    // avoid close detection with C# and JS
+    illegal: '(^using\\s+[A-Za-z0-9_\\.]+;$|\\bfunction\s*[^\\(])',
+
+    contains: [
+      { // 'strings'
+        className: 'string',
+        begin: '\'', end: '\'',
+        illegal: '\\n',
+        contains: [ hljs.BACKSLASH_ESCAPE ],
+        relevance: 0
+      },
+
+      { // "strings"
+        className: 'string',
+        begin: '"', end: '"',
+        illegal: '\\n',
+        contains: [ hljs.BACKSLASH_ESCAPE ],
+        relevance: 0
+      },
+
+      // """heredoc strings"""
+      {
+        className: 'string',
+        begin: '"""', end: '"""'
+      },
+
+      hljs.C_LINE_COMMENT_MODE, // single-line comments
+      hljs.C_BLOCK_COMMENT_MODE, // comment blocks
+
+      { // interface or namespace declaration
+        beginKeywords: 'interface namespace', end: '{',
+        illegal: '[;.\\-]',
+        contains: [
+          { // interface or namespace name
+            className: 'symbol',
+            begin: '[a-zA-Z0-9_]+'
+          }
+        ]
+      },
+
+      { // class declaration
+        beginKeywords: 'class', end: '{',
+        illegal: '[;.\\-]',
+        contains: [
+          { // class name
+            className: 'symbol',
+            begin: '[a-zA-Z0-9_]+',
+            contains: [
+              {
+                begin: '[:,]\\s*',
+                contains: [
+                  {
+                    className: 'symbol',
+                    begin: '[a-zA-Z0-9_]+'
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+
+      builtInTypeMode, // built-in types
+      objectHandleMode, // object handles
+
+      { // literals
+        className: 'literal',
+        begin: '\\b(null|true|false)'
+      },
+
+      { // numbers
+        className: 'number',
+        begin: '(-?)(\\b0[xX][a-fA-F0-9]+|(\\b\\d+(\\.\\d*)?f?|\\.\\d+f?)([eE][-+]?\\d+f?)?)'
+      }
+    ]
+  };
+};
+
+/***/ }),
 /* 100 */
 /***/ (function(module, exports) {
 
@@ -12804,6 +12721,147 @@ module.exports = function(hljs) {
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
+  var IDENT_RE = '[A-Za-z_][0-9A-Za-z_]*';
+  var KEYWORDS = {
+    keyword:
+      'if for while var new function do return void else break',
+    literal:
+      'true false null undefined NaN Infinity PI BackSlash DoubleQuote ForwardSlash NewLine SingleQuote Tab',
+    built_in:
+      'Abs Acos Area AreaGeodetic Asin Atan Atan2 Average Boolean Buffer BufferGeodetic ' +
+      'Ceil Centroid Clip Console Constrain Contains Cos Count Crosses Cut Date DateAdd ' +
+      'DateDiff Day Decode DefaultValue Dictionary Difference Disjoint Distance Distinct ' +
+      'DomainCode DomainName Equals Exp Extent Feature FeatureSet FeatureSetById FeatureSetByTitle ' +
+      'FeatureSetByUrl Filter First Floor Geometry Guid HasKey Hour IIf IndexOf Intersection ' +
+      'Intersects IsEmpty Length LengthGeodetic Log Max Mean Millisecond Min Minute Month ' +
+      'MultiPartToSinglePart Multipoint NextSequenceValue Now Number OrderBy Overlaps Point Polygon ' +
+      'Polyline Pow Random Relate Reverse Round Second SetGeometry Sin Sort Sqrt Stdev Sum ' +
+      'SymmetricDifference Tan Text Timestamp Today ToLocal Top Touches ToUTC TypeOf Union Variance ' +
+      'Weekday When Within Year '
+  };
+  var EXPRESSIONS;
+  var SYMBOL = {
+    className: 'symbol',
+    begin: '\\$[feature|layer|map|value|view]+'
+  };
+  var NUMBER = {
+    className: 'number',
+    variants: [
+      { begin: '\\b(0[bB][01]+)' },
+      { begin: '\\b(0[oO][0-7]+)' },
+      { begin: hljs.C_NUMBER_RE }
+    ],
+    relevance: 0
+  };
+  var SUBST = {
+    className: 'subst',
+    begin: '\\$\\{', end: '\\}',
+    keywords: KEYWORDS,
+    contains: []  // defined later
+  };
+  var TEMPLATE_STRING = {
+    className: 'string',
+    begin: '`', end: '`',
+    contains: [
+      hljs.BACKSLASH_ESCAPE,
+      SUBST
+    ]
+  };
+  SUBST.contains = [
+    hljs.APOS_STRING_MODE,
+    hljs.QUOTE_STRING_MODE,
+    TEMPLATE_STRING,
+    NUMBER,
+    hljs.REGEXP_MODE
+  ];
+  var PARAMS_CONTAINS = SUBST.contains.concat([
+    hljs.C_BLOCK_COMMENT_MODE,
+    hljs.C_LINE_COMMENT_MODE
+  ]);
+
+  return {
+    aliases: ['arcade'],
+    keywords: KEYWORDS,
+    contains: [
+      hljs.APOS_STRING_MODE,
+      hljs.QUOTE_STRING_MODE,
+      TEMPLATE_STRING,
+      hljs.C_LINE_COMMENT_MODE,
+      hljs.C_BLOCK_COMMENT_MODE,
+      SYMBOL,
+      NUMBER,
+      { // object attr container
+        begin: /[{,]\s*/, relevance: 0,
+        contains: [
+          {
+            begin: IDENT_RE + '\\s*:', returnBegin: true,
+            relevance: 0,
+            contains: [{className: 'attr', begin: IDENT_RE, relevance: 0}]
+          }
+        ]
+      },
+      { // "value" container
+        begin: '(' + hljs.RE_STARTERS_RE + '|\\b(return)\\b)\\s*',
+        keywords: 'return',
+        contains: [
+          hljs.C_LINE_COMMENT_MODE,
+          hljs.C_BLOCK_COMMENT_MODE,
+          hljs.REGEXP_MODE,
+          {
+            className: 'function',
+            begin: '(\\(.*?\\)|' + IDENT_RE + ')\\s*=>', returnBegin: true,
+            end: '\\s*=>',
+            contains: [
+              {
+                className: 'params',
+                variants: [
+                  {
+                    begin: IDENT_RE
+                  },
+                  {
+                    begin: /\(\s*\)/,
+                  },
+                  {
+                    begin: /\(/, end: /\)/,
+                    excludeBegin: true, excludeEnd: true,
+                    keywords: KEYWORDS,
+                    contains: PARAMS_CONTAINS
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        relevance: 0
+      },
+      {
+        className: 'function',
+        beginKeywords: 'function', end: /\{/, excludeEnd: true,
+        contains: [
+          hljs.inherit(hljs.TITLE_MODE, {begin: IDENT_RE}),
+          {
+            className: 'params',
+            begin: /\(/, end: /\)/,
+            excludeBegin: true,
+            excludeEnd: true,
+            contains: PARAMS_CONTAINS
+          }
+        ],
+        illegal: /\[|%/
+      },
+      {
+        begin: /\$[(.]/
+      }
+    ],
+    illegal: /#(?!!)/
+  };
+};
+
+/***/ }),
+/* 103 */
+/***/ (function(module, exports) {
+
+module.exports = function(hljs) {
   var CPP_PRIMITIVE_TYPES = {
     className: 'keyword',
     begin: '\\b[a-z\\d_]*_t\\b'
@@ -12813,14 +12871,11 @@ module.exports = function(hljs) {
     className: 'string',
     variants: [
       {
-        begin: '(u8?|U)?L?"', end: '"',
+        begin: '(u8?|U|L)?"', end: '"',
         illegal: '\\n',
         contains: [hljs.BACKSLASH_ESCAPE]
       },
-      {
-        begin: '(u8?|U)?R"', end: '"',
-        contains: [hljs.BACKSLASH_ESCAPE]
-      },
+      { begin: /(?:u8?|U|L)?R"([^()\\ ]{0,16})\((?:.|\n)*?\)\1"/ },
       {
         begin: '\'\\\\?.', end: '\'',
         illegal: '.'
@@ -12896,7 +12951,7 @@ module.exports = function(hljs) {
   ];
 
   return {
-    aliases: ['c', 'cc', 'h', 'c++', 'h++', 'hpp'],
+    aliases: ['c', 'cc', 'h', 'c++', 'h++', 'hpp', 'hh', 'hxx', 'cxx'],
     keywords: CPP_KEYWORDS,
     illegal: '</',
     contains: EXPRESSION_CONTAINS.concat([
@@ -12953,7 +13008,21 @@ module.exports = function(hljs) {
               hljs.C_BLOCK_COMMENT_MODE,
               STRINGS,
               NUMBERS,
-              CPP_PRIMITIVE_TYPES
+              CPP_PRIMITIVE_TYPES,
+              // Count matching parentheses.
+              {
+                begin: /\(/, end: /\)/,
+                keywords: CPP_KEYWORDS,
+                relevance: 0,
+                contains: [
+                  'self',
+                  hljs.C_LINE_COMMENT_MODE,
+                  hljs.C_BLOCK_COMMENT_MODE,
+                  STRINGS,
+                  NUMBERS,
+                  CPP_PRIMITIVE_TYPES
+                ]
+              }
             ]
           },
           hljs.C_LINE_COMMENT_MODE,
@@ -12979,7 +13048,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 103 */
+/* 104 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -13083,7 +13152,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 104 */
+/* 105 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -13179,7 +13248,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 105 */
+/* 106 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -13233,9 +13302,21 @@ module.exports = function(hljs) {
         relevance: 10
       },
       {
+        className: 'meta',
+        begin: /<\?xml/, end: /\?>/, relevance: 10
+      },
+      {
         begin: /<\?(php)?/, end: /\?>/,
         subLanguage: 'php',
-        contains: [{begin: '/\\*', end: '\\*/', skip: true}]
+        contains: [
+          // We don't want the php closing tag ?> to close the PHP block when
+          // inside any of the following blocks:
+          {begin: '/\\*', end: '\\*/', skip: true},
+          {begin: 'b"', end: '"', skip: true},
+          {begin: 'b\'', end: '\'', skip: true},
+          hljs.inherit(hljs.APOS_STRING_MODE, {illegal: null, className: null, contains: null, skip: true}),
+          hljs.inherit(hljs.QUOTE_STRING_MODE, {illegal: null, className: null, contains: null, skip: true})
+        ]
       },
       {
         className: 'tag',
@@ -13265,13 +13346,6 @@ module.exports = function(hljs) {
         }
       },
       {
-        className: 'meta',
-        variants: [
-          {begin: /<\?xml/, end: /\?>/, relevance: 10},
-          {begin: /<\?\w+/, end: /\?>/}
-        ]
-      },
-      {
         className: 'tag',
         begin: '</?', end: '/?>',
         contains: [
@@ -13286,7 +13360,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 106 */
+/* 107 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -13478,7 +13552,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 107 */
+/* 108 */
 /***/ (function(module, exports) {
 
 module.exports = function (hljs) {
@@ -13627,7 +13701,7 @@ module.exports = function (hljs) {
 };
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -13690,7 +13764,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -13830,7 +13904,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 110 */
+/* 111 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -13896,7 +13970,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 111 */
+/* 112 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -13953,7 +14027,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 112 */
+/* 113 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -13988,7 +14062,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 113 */
+/* 114 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -14067,7 +14141,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 114 */
+/* 115 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -14122,7 +14196,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 115 */
+/* 116 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs){
@@ -14155,7 +14229,7 @@ module.exports = function(hljs){
 };
 
 /***/ }),
-/* 116 */
+/* 117 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs){
@@ -14196,7 +14270,7 @@ module.exports = function(hljs){
 };
 
 /***/ }),
-/* 117 */
+/* 118 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -14280,7 +14354,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 118 */
+/* 119 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -14333,7 +14407,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 119 */
+/* 120 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -14404,7 +14478,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -14416,6 +14490,8 @@ module.exports = function(hljs) {
         'implementation definition system module from import qualified as ' +
         'special code inline foreign export ccall stdcall generic derive ' +
         'infix infixl infixr',
+      built_in:
+        'Int Real Char Bool',
       literal:
         'True False'
     },
@@ -14427,13 +14503,13 @@ module.exports = function(hljs) {
       hljs.QUOTE_STRING_MODE,
       hljs.C_NUMBER_MODE,
 
-      {begin: '->|<-[|:]?|::|#!?|>>=|\\{\\||\\|\\}|:==|=:|\\.\\.|<>|`'} // relevance booster
+      {begin: '->|<-[|:]?|#!?|>>=|\\{\\||\\|\\}|:==|=:|<>'} // relevance booster
     ]
   };
 };
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -14533,7 +14609,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -14541,7 +14617,7 @@ module.exports = function(hljs) {
     contains: [
       {
         className: 'meta',
-        begin: /^([\w.-]+|\s*#_)=>/,
+        begin: /^([\w.-]+|\s*#_)?=>/,
         starts: {
           end: /$/,
           subLanguage: 'clojure'
@@ -14552,7 +14628,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -14561,25 +14637,40 @@ module.exports = function(hljs) {
     case_insensitive: true,
     keywords: {
       keyword:
-        'add_custom_command add_custom_target add_definitions add_dependencies ' +
-        'add_executable add_library add_subdirectory add_test aux_source_directory ' +
-        'break build_command cmake_minimum_required cmake_policy configure_file ' +
-        'create_test_sourcelist define_property else elseif enable_language enable_testing ' +
-        'endforeach endfunction endif endmacro endwhile execute_process export find_file ' +
-        'find_library find_package find_path find_program fltk_wrap_ui foreach function ' +
-        'get_cmake_property get_directory_property get_filename_component get_property ' +
-        'get_source_file_property get_target_property get_test_property if include ' +
-        'include_directories include_external_msproject include_regular_expression install ' +
-        'link_directories load_cache load_command macro mark_as_advanced message option ' +
-        'output_required_files project qt_wrap_cpp qt_wrap_ui remove_definitions return ' +
-        'separate_arguments set set_directory_properties set_property ' +
-        'set_source_files_properties set_target_properties set_tests_properties site_name ' +
-        'source_group string target_link_libraries try_compile try_run unset variable_watch ' +
-        'while build_name exec_program export_library_dependencies install_files ' +
-        'install_programs install_targets link_libraries make_directory remove subdir_depends ' +
-        'subdirs use_mangled_mesa utility_source variable_requires write_file ' +
-        'qt5_use_modules qt5_use_package qt5_wrap_cpp on off true false and or ' +
-        'equal less greater strless strgreater strequal matches'
+        // scripting commands
+        'break cmake_host_system_information cmake_minimum_required cmake_parse_arguments ' +
+        'cmake_policy configure_file continue elseif else endforeach endfunction endif endmacro ' +
+        'endwhile execute_process file find_file find_library find_package find_path ' +
+        'find_program foreach function get_cmake_property get_directory_property ' +
+        'get_filename_component get_property if include include_guard list macro ' +
+        'mark_as_advanced math message option return separate_arguments ' +
+        'set_directory_properties set_property set site_name string unset variable_watch while ' +
+        // project commands
+        'add_compile_definitions add_compile_options add_custom_command add_custom_target ' +
+        'add_definitions add_dependencies add_executable add_library add_link_options ' +
+        'add_subdirectory add_test aux_source_directory build_command create_test_sourcelist ' +
+        'define_property enable_language enable_testing export fltk_wrap_ui ' +
+        'get_source_file_property get_target_property get_test_property include_directories ' +
+        'include_external_msproject include_regular_expression install link_directories ' +
+        'link_libraries load_cache project qt_wrap_cpp qt_wrap_ui remove_definitions ' +
+        'set_source_files_properties set_target_properties set_tests_properties source_group ' +
+        'target_compile_definitions target_compile_features target_compile_options ' +
+        'target_include_directories target_link_directories target_link_libraries ' +
+        'target_link_options target_sources try_compile try_run ' +
+        // CTest commands
+        'ctest_build ctest_configure ctest_coverage ctest_empty_binary_directory ctest_memcheck ' +
+        'ctest_read_custom_files ctest_run_script ctest_sleep ctest_start ctest_submit ' +
+        'ctest_test ctest_update ctest_upload ' +
+        // deprecated commands
+        'build_name exec_program export_library_dependencies install_files install_programs ' +
+        'install_targets load_command make_directory output_required_files remove ' +
+        'subdir_depends subdirs use_mangled_mesa utility_source variable_requires write_file ' +
+        'qt5_use_modules qt5_use_package qt5_wrap_cpp ' +
+        // core keywords
+        'on off true false and or not command policy target test exists is_newer_than ' +
+        'is_directory is_symlink is_absolute matches less greater equal less_equal ' +
+        'greater_equal strless strgreater strequal strless_equal strgreater_equal version_less ' +
+        'version_greater version_equal version_less_equal version_greater_equal in_list defined'
     },
     contains: [
       {
@@ -14594,7 +14685,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -14744,7 +14835,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 125 */
+/* 126 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -14815,7 +14906,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 126 */
+/* 127 */
 /***/ (function(module, exports) {
 
 module.exports = function cos (hljs) {
@@ -14943,7 +15034,7 @@ module.exports = function cos (hljs) {
 };
 
 /***/ }),
-/* 127 */
+/* 128 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -15041,20 +15132,20 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 128 */
+/* 129 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
-  var NUM_SUFFIX = '(_[uif](8|16|32|64))?';
+  var INT_SUFFIX = '(_*[ui](8|16|32|64|128))?';
+  var FLOAT_SUFFIX = '(_*f(32|64))?';
   var CRYSTAL_IDENT_RE = '[a-zA-Z_]\\w*[!?=]?';
-  var RE_STARTER = '!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|-|-=|/=|/|:|;|<<|<<=|<=|<|===|==|=|>>>=|>>=|>=|>>>|' +
-    '>>|>|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~';
-  var CRYSTAL_METHOD_RE = '[a-zA-Z_]\\w*[!?=]?|[-+~]\\@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\][=?]?';
+  var CRYSTAL_METHOD_RE = '[a-zA-Z_]\\w*[!?=]?|[-+~]\\@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~|]|//|//=|&[-+*]=?|&\\*\\*|\\[\\][=?]?';
+  var CRYSTAL_PATH_RE = '[A-Za-z_]\\w*(::\\w+)*(\\?|\\!)?';
   var CRYSTAL_KEYWORDS = {
     keyword:
-      'abstract alias as as? asm begin break case class def do else elsif end ensure enum extend for fun if ' +
+      'abstract alias annotation as as? asm begin break case class def do else elsif end ensure enum extend for fun if ' +
       'include instance_sizeof is_a? lib macro module next nil? of out pointerof private protected rescue responds_to? ' +
-      'return require select self sizeof struct super then type typeof union uninitialized unless until when while with yield ' +
+      'return require select self sizeof struct super then type typeof union uninitialized unless until verbatim when while with yield ' +
       '__DIR__ __END_LINE__ __FILE__ __LINE__',
     literal: 'false nil true'
   };
@@ -15085,14 +15176,11 @@ module.exports = function(hljs) {
       {begin: /'/, end: /'/},
       {begin: /"/, end: /"/},
       {begin: /`/, end: /`/},
-      {begin: '%w?\\(', end: '\\)', contains: recursiveParen('\\(', '\\)')},
-      {begin: '%w?\\[', end: '\\]', contains: recursiveParen('\\[', '\\]')},
-      {begin: '%w?{', end: '}', contains: recursiveParen('{', '}')},
-      {begin: '%w?<', end: '>', contains: recursiveParen('<', '>')},
-      {begin: '%w?/', end: '/'},
-      {begin: '%w?%', end: '%'},
-      {begin: '%w?-', end: '-'},
-      {begin: '%w?\\|', end: '\\|'},
+      {begin: '%[Qwi]?\\(', end: '\\)', contains: recursiveParen('\\(', '\\)')},
+      {begin: '%[Qwi]?\\[', end: '\\]', contains: recursiveParen('\\[', '\\]')},
+      {begin: '%[Qwi]?{', end: '}', contains: recursiveParen('{', '}')},
+      {begin: '%[Qwi]?<', end: '>', contains: recursiveParen('<', '>')},
+      {begin: '%[Qwi]?\\|', end: '\\|'},
       {begin: /<<-\w+$/, end: /^\s*\w+$/},
     ],
     relevance: 0,
@@ -15104,31 +15192,21 @@ module.exports = function(hljs) {
       {begin: '%q\\[', end: '\\]', contains: recursiveParen('\\[', '\\]')},
       {begin: '%q{', end: '}', contains: recursiveParen('{', '}')},
       {begin: '%q<', end: '>', contains: recursiveParen('<', '>')},
-      {begin: '%q/', end: '/'},
-      {begin: '%q%', end: '%'},
-      {begin: '%q-', end: '-'},
       {begin: '%q\\|', end: '\\|'},
       {begin: /<<-'\w+'$/, end: /^\s*\w+$/},
     ],
     relevance: 0,
   };
   var REGEXP = {
-    begin: '(' + RE_STARTER + ')\\s*',
+    begin: '(?!%})(' + hljs.RE_STARTERS_RE + '|\\n|\\b(case|if|select|unless|until|when|while)\\b)\\s*',
+    keywords: 'case if select unless until when while',
     contains: [
       {
         className: 'regexp',
         contains: [hljs.BACKSLASH_ESCAPE, SUBST],
         variants: [
           {begin: '//[a-z]*', relevance: 0},
-          {begin: '/', end: '/[a-z]*'},
-          {begin: '%r\\(', end: '\\)', contains: recursiveParen('\\(', '\\)')},
-          {begin: '%r\\[', end: '\\]', contains: recursiveParen('\\[', '\\]')},
-          {begin: '%r{', end: '}', contains: recursiveParen('{', '}')},
-          {begin: '%r<', end: '>', contains: recursiveParen('<', '>')},
-          {begin: '%r/', end: '/'},
-          {begin: '%r%', end: '%'},
-          {begin: '%r-', end: '-'},
-          {begin: '%r\\|', end: '\\|'},
+          {begin: '/(?!\\/)', end: '/[a-z]*'},
         ]
       }
     ],
@@ -15142,9 +15220,6 @@ module.exports = function(hljs) {
       {begin: '%r\\[', end: '\\]', contains: recursiveParen('\\[', '\\]')},
       {begin: '%r{', end: '}', contains: recursiveParen('{', '}')},
       {begin: '%r<', end: '>', contains: recursiveParen('<', '>')},
-      {begin: '%r/', end: '/'},
-      {begin: '%r%', end: '%'},
-      {begin: '%r-', end: '-'},
       {begin: '%r\\|', end: '\\|'},
     ],
     relevance: 0
@@ -15160,8 +15235,8 @@ module.exports = function(hljs) {
     EXPANSION,
     STRING,
     Q_STRING,
-    REGEXP,
     REGEXP2,
+    REGEXP,
     ATTRIBUTE,
     hljs.HASH_COMMENT_MODE,
     {
@@ -15170,7 +15245,7 @@ module.exports = function(hljs) {
       illegal: /=/,
       contains: [
         hljs.HASH_COMMENT_MODE,
-        hljs.inherit(hljs.TITLE_MODE, {begin: '[A-Za-z_]\\w*(::\\w+)*(\\?|\\!)?'}),
+        hljs.inherit(hljs.TITLE_MODE, {begin: CRYSTAL_PATH_RE}),
         {begin: '<'} // relevance booster for inheritance
       ]
     },
@@ -15180,7 +15255,16 @@ module.exports = function(hljs) {
       illegal: /=/,
       contains: [
         hljs.HASH_COMMENT_MODE,
-        hljs.inherit(hljs.TITLE_MODE, {begin: '[A-Za-z_]\\w*(::\\w+)*(\\?|\\!)?'}),
+        hljs.inherit(hljs.TITLE_MODE, {begin: CRYSTAL_PATH_RE}),
+      ],
+      relevance: 10
+    },
+    {
+      beginKeywords: 'annotation', end: '$|;',
+      illegal: /=/,
+      contains: [
+        hljs.HASH_COMMENT_MODE,
+        hljs.inherit(hljs.TITLE_MODE, {begin: CRYSTAL_PATH_RE}),
       ],
       relevance: 10
     },
@@ -15219,10 +15303,11 @@ module.exports = function(hljs) {
     {
       className: 'number',
       variants: [
-        { begin: '\\b0b([01_]*[01])' + NUM_SUFFIX },
-        { begin: '\\b0o([0-7_]*[0-7])' + NUM_SUFFIX },
-        { begin: '\\b0x([A-Fa-f0-9_]*[A-Fa-f0-9])' + NUM_SUFFIX },
-        { begin: '\\b(([0-9][0-9_]*[0-9]|[0-9])(\\.[0-9_]*[0-9])?([eE][+-]?[0-9_]*[0-9])?)' + NUM_SUFFIX}
+        { begin: '\\b0b([01_]+)' + INT_SUFFIX },
+        { begin: '\\b0o([0-7_]+)' + INT_SUFFIX },
+        { begin: '\\b0x([A-Fa-f0-9_]+)' + INT_SUFFIX },
+        { begin: '\\b([1-9][0-9_]*[0-9]|[0-9])(\\.[0-9][0-9_]*)?([eE]_*[-+]?[0-9_]*)?' + FLOAT_SUFFIX + '(?!_)' },
+        { begin: '\\b([1-9][0-9_]*|0)' + INT_SUFFIX }
       ],
       relevance: 0
     }
@@ -15239,7 +15324,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 129 */
+/* 130 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -15258,7 +15343,15 @@ module.exports = function(hljs) {
     literal:
       'null false true'
   };
-
+  var NUMBERS = {
+    className: 'number',
+    variants: [
+      { begin: '\\b(0b[01\']+)' },
+      { begin: '(-?)\\b([\\d\']+(\\.[\\d\']*)?|\\.[\\d\']+)(u|U|l|L|ul|UL|f|F|b|B)' },
+      { begin: '(-?)(\\b0[xX][a-fA-F0-9\']+|(\\b[\\d\']+(\\.[\\d\']*)?|\\.[\\d\']+)([eE][-+]?[\\d\']+)?)' }
+    ],
+    relevance: 0
+  };
   var VERBATIM_STRING = {
     className: 'string',
     begin: '@"', end: '"',
@@ -15292,7 +15385,7 @@ module.exports = function(hljs) {
     VERBATIM_STRING,
     hljs.APOS_STRING_MODE,
     hljs.QUOTE_STRING_MODE,
-    hljs.C_NUMBER_MODE,
+    NUMBERS,
     hljs.C_BLOCK_COMMENT_MODE
   ];
   SUBST_NO_LF.contains = [
@@ -15301,7 +15394,7 @@ module.exports = function(hljs) {
     VERBATIM_STRING_NO_LF,
     hljs.APOS_STRING_MODE,
     hljs.QUOTE_STRING_MODE,
-    hljs.C_NUMBER_MODE,
+    NUMBERS,
     hljs.inherit(hljs.C_BLOCK_COMMENT_MODE, {illegal: /\n/})
   ];
   var STRING = {
@@ -15317,7 +15410,7 @@ module.exports = function(hljs) {
   var TYPE_IDENT_RE = hljs.IDENT_RE + '(<' + hljs.IDENT_RE + '(\\s*,\\s*' + hljs.IDENT_RE + ')*>)?(\\[\\])?';
 
   return {
-    aliases: ['csharp'],
+    aliases: ['csharp', 'c#'],
     keywords: KEYWORDS,
     illegal: /::/,
     contains: [
@@ -15354,10 +15447,10 @@ module.exports = function(hljs) {
         }
       },
       STRING,
-      hljs.C_NUMBER_MODE,
+      NUMBERS,
       {
         beginKeywords: 'class interface', end: /[{;=]/,
-        illegal: /[^\s:]/,
+        illegal: /[^\s:,]/,
         contains: [
           hljs.TITLE_MODE,
           hljs.C_LINE_COMMENT_MODE,
@@ -15390,7 +15483,7 @@ module.exports = function(hljs) {
       {
         className: 'function',
         begin: '(' + TYPE_IDENT_RE + '\\s+)+' + hljs.IDENT_RE + '\\s*\\(', returnBegin: true,
-        end: /[{;=]/, excludeEnd: true,
+        end: /\s*[{;=]/, excludeEnd: true,
         keywords: KEYWORDS,
         contains: [
           {
@@ -15407,7 +15500,7 @@ module.exports = function(hljs) {
             relevance: 0,
             contains: [
               STRING,
-              hljs.C_NUMBER_MODE,
+              NUMBERS,
               hljs.C_BLOCK_COMMENT_MODE
             ]
           },
@@ -15420,7 +15513,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 130 */
+/* 131 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -15446,7 +15539,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 131 */
+/* 132 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -15555,7 +15648,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 132 */
+/* 133 */
 /***/ (function(module, exports) {
 
 module.exports = /**
@@ -15817,7 +15910,7 @@ function(hljs) {
 };
 
 /***/ }),
-/* 133 */
+/* 134 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -15841,7 +15934,7 @@ module.exports = function(hljs) {
       // lists (indicators only)
       {
         className: 'bullet',
-        begin: '^([*+-]|(\\d+\\.))\\s+'
+        begin: '^\\s*([*+-]|(\\d+\\.))\\s+'
       },
       // strong segments
       {
@@ -15929,14 +16022,23 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 134 */
+/* 135 */
 /***/ (function(module, exports) {
 
 module.exports = function (hljs) {
   var SUBST = {
     className: 'subst',
-    begin: '\\$\\{', end: '}',
-    keywords: 'true false null this is new super'
+    variants: [
+       {begin: '\\$[A-Za-z0-9_]+'}
+    ],
+  };
+
+  var BRACED_SUBST = {
+    className: 'subst',
+    variants: [
+       {begin: '\\${', end: '}'},
+    ],
+    keywords: 'true false null this is new super',
   };
 
   var STRING = {
@@ -15958,25 +16060,25 @@ module.exports = function (hljs) {
       },
       {
         begin: '\'\'\'', end: '\'\'\'',
-        contains: [hljs.BACKSLASH_ESCAPE, SUBST]
+        contains: [hljs.BACKSLASH_ESCAPE, SUBST, BRACED_SUBST]
       },
       {
         begin: '"""', end: '"""',
-        contains: [hljs.BACKSLASH_ESCAPE, SUBST]
+        contains: [hljs.BACKSLASH_ESCAPE, SUBST, BRACED_SUBST]
       },
       {
         begin: '\'', end: '\'',
         illegal: '\\n',
-        contains: [hljs.BACKSLASH_ESCAPE, SUBST]
+        contains: [hljs.BACKSLASH_ESCAPE, SUBST, BRACED_SUBST]
       },
       {
         begin: '"', end: '"',
         illegal: '\\n',
-        contains: [hljs.BACKSLASH_ESCAPE, SUBST]
+        contains: [hljs.BACKSLASH_ESCAPE, SUBST, BRACED_SUBST]
       }
     ]
   };
-  SUBST.contains = [
+  BRACED_SUBST.contains = [
     hljs.C_NUMBER_MODE, STRING
   ];
 
@@ -16034,7 +16136,7 @@ module.exports = function (hljs) {
 };
 
 /***/ }),
-/* 135 */
+/* 136 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -16107,7 +16209,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 136 */
+/* 137 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -16151,7 +16253,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 137 */
+/* 138 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -16219,7 +16321,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 138 */
+/* 139 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -16252,7 +16354,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 139 */
+/* 140 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -16268,7 +16370,7 @@ module.exports = function(hljs) {
       {
         beginKeywords: 'run cmd entrypoint volume add copy workdir label healthcheck shell',
         starts: {
-          end: /[^\\]\n/,
+          end: /[^\\]$/,
           subLanguage: 'bash'
         }
       }
@@ -16278,7 +16380,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 140 */
+/* 141 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -16334,7 +16436,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 141 */
+/* 142 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -16385,7 +16487,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 142 */
+/* 143 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -16513,7 +16615,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 143 */
+/* 144 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -16549,7 +16651,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 144 */
+/* 145 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -16586,16 +16688,16 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 145 */
+/* 146 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
-  var ELIXIR_IDENT_RE = '[a-zA-Z_][a-zA-Z0-9_]*(\\!|\\?)?';
+  var ELIXIR_IDENT_RE = '[a-zA-Z_][a-zA-Z0-9_.]*(\\!|\\?)?';
   var ELIXIR_METHOD_RE = '[a-zA-Z_]\\w*[!?=]?|[-+~]\\@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\]=?';
   var ELIXIR_KEYWORDS =
     'and false then defined module in return redo retry end for true self when ' +
     'next until do begin unless nil break not case cond alias while ensure or ' +
-    'include use alias fn quote';
+    'include use alias fn quote require import with|0';
   var SUBST = {
     className: 'subst',
     begin: '#\\{', end: '}',
@@ -16634,14 +16736,17 @@ module.exports = function(hljs) {
     CLASS,
     FUNCTION,
     {
+      begin: '::'
+    },
+    {
       className: 'symbol',
-      begin: ':(?!\\s)',
+      begin: ':(?![\\s:])',
       contains: [STRING, {begin: ELIXIR_METHOD_RE}],
       relevance: 0
     },
     {
       className: 'symbol',
-      begin: ELIXIR_IDENT_RE + ':',
+      begin: ELIXIR_IDENT_RE + ':(?!:)',
       relevance: 0
     },
     {
@@ -16687,7 +16792,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 146 */
+/* 147 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -16722,6 +16827,12 @@ module.exports = function(hljs) {
   var RECORD = {
     begin: '{', end: '}',
     contains: LIST.contains
+  };
+
+  var CHARACTER = {
+    className: 'string',
+    begin: '\'\\\\?.', end: '\'',
+    illegal: '.'
   };
 
   return {
@@ -16761,7 +16872,7 @@ module.exports = function(hljs) {
 
       // Literals and names.
 
-      // TODO: characters.
+      CHARACTER,
       hljs.QUOTE_STRING_MODE,
       hljs.C_NUMBER_MODE,
       CONSTRUCTOR,
@@ -16775,7 +16886,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 147 */
+/* 148 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -16956,7 +17067,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 148 */
+/* 149 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -16975,7 +17086,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 149 */
+/* 150 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -17025,7 +17136,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 150 */
+/* 151 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -17175,7 +17286,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 151 */
+/* 152 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -17227,7 +17338,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 152 */
+/* 153 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -17260,7 +17371,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 153 */
+/* 154 */
 /***/ (function(module, exports) {
 
 module.exports = function (hljs) {
@@ -17309,7 +17420,7 @@ module.exports = function (hljs) {
 };
 
 /***/ }),
-/* 154 */
+/* 155 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -17384,7 +17495,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 155 */
+/* 156 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -17447,7 +17558,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 156 */
+/* 157 */
 /***/ (function(module, exports) {
 
 module.exports = function (hljs) {
@@ -17605,20 +17716,21 @@ module.exports = function (hljs) {
 };
 
 /***/ }),
-/* 157 */
+/* 158 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
   var KEYWORDS = {
-    keyword: 'and bool break call callexe checkinterrupt clear clearg closeall cls comlog compile ' +
+    keyword:  'bool break call callexe checkinterrupt clear clearg closeall cls comlog compile ' +
               'continue create debug declare delete disable dlibrary dllcall do dos ed edit else ' +
               'elseif enable end endfor endif endp endo errorlog errorlogat expr external fn ' +
               'for format goto gosub graph if keyword let lib library line load loadarray loadexe ' +
               'loadf loadk loadm loadp loads loadx local locate loopnextindex lprint lpwidth lshow ' +
-              'matrix msym ndpclex new not open or output outwidth plot plotsym pop prcsn print ' +
+              'matrix msym ndpclex new open output outwidth plot plotsym pop prcsn print ' +
               'printdos proc push retp return rndcon rndmod rndmult rndseed run save saveall screen ' +
               'scroll setarray show sparse stop string struct system trace trap threadfor ' +
-              'threadendfor threadbegin threadjoin threadstat threadend until use while winprint',
+              'threadendfor threadbegin threadjoin threadstat threadend until use while winprint ' +
+              'ne ge le gt lt and xor or not eq eqv',
     built_in: 'abs acf aconcat aeye amax amean AmericanBinomCall AmericanBinomCall_Greeks AmericanBinomCall_ImpVol ' +
               'AmericanBinomPut AmericanBinomPut_Greeks AmericanBinomPut_ImpVol AmericanBSCall AmericanBSCall_Greeks ' +
               'AmericanBSCall_ImpVol AmericanBSPut AmericanBSPut_Greeks AmericanBSPut_ImpVol amin amult annotationGetDefaults ' +
@@ -17694,21 +17806,25 @@ module.exports = function(hljs) {
               'spTScalar spZeros sqpSolve sqpSolveMT sqpSolveMTControlCreate sqpSolveMTlagrangeCreate sqpSolveMToutCreate sqpSolveSet ' +
               'sqrt statements stdc stdsc stocv stof strcombine strindx strlen strput strrindx strsect strsplit strsplitPad strtodt ' +
               'strtof strtofcplx strtriml strtrimr strtrunc strtruncl strtruncpad strtruncr submat subscat substute subvec sumc sumr ' +
-              'surface svd svd1 svd2 svdcusv svds svdusv sysstate tab tan tanh tempname threadBegin threadEnd threadEndFor threadFor ' +
-              'threadJoin threadStat time timedt timestr timeutc title tkf2eps tkf2ps tocart todaydt toeplitz token topolar trapchk ' +
+              'surface svd svd1 svd2 svdcusv svds svdusv sysstate tab tan tanh tempname ' +
+              'time timedt timestr timeutc title tkf2eps tkf2ps tocart todaydt toeplitz token topolar trapchk ' +
               'trigamma trimr trunc type typecv typef union unionsa uniqindx uniqindxsa unique uniquesa upmat upmat1 upper utctodt ' +
               'utctodtv utrisol vals varCovMS varCovXS varget vargetl varmall varmares varput varputl vartypef vcm vcms vcx vcxs ' +
               'vec vech vecr vector vget view viewxyz vlist vnamecv volume vput vread vtypecv wait waitc walkindex where window ' +
               'writer xlabel xlsGetSheetCount xlsGetSheetSize xlsGetSheetTypes xlsMakeRange xlsReadM xlsReadSA xlsWrite xlsWriteM ' +
               'xlsWriteSA xpnd xtics xy xyz ylabel ytics zeros zeta zlabel ztics cdfEmpirical dot h5create h5open h5read h5readAttribute ' +
               'h5write h5writeAttribute ldl plotAddErrorBar plotAddSurface plotCDFEmpirical plotSetColormap plotSetContourLabels ' +
-              'plotSetLegendFont plotSetTextInterpreter plotSetXTicCount plotSetYTicCount plotSetZLevels powerm strjoin strtrim sylvester',
+              'plotSetLegendFont plotSetTextInterpreter plotSetXTicCount plotSetYTicCount plotSetZLevels powerm strjoin sylvester ' +
+              'strtrim',
     literal: 'DB_AFTER_LAST_ROW DB_ALL_TABLES DB_BATCH_OPERATIONS DB_BEFORE_FIRST_ROW DB_BLOB DB_EVENT_NOTIFICATIONS ' +
              'DB_FINISH_QUERY DB_HIGH_PRECISION DB_LAST_INSERT_ID DB_LOW_PRECISION_DOUBLE DB_LOW_PRECISION_INT32 ' +
              'DB_LOW_PRECISION_INT64 DB_LOW_PRECISION_NUMBERS DB_MULTIPLE_RESULT_SETS DB_NAMED_PLACEHOLDERS ' +
              'DB_POSITIONAL_PLACEHOLDERS DB_PREPARED_QUERIES DB_QUERY_SIZE DB_SIMPLE_LOCKING DB_SYSTEM_TABLES DB_TABLES ' +
-             'DB_TRANSACTIONS DB_UNICODE DB_VIEWS'
+             'DB_TRANSACTIONS DB_UNICODE DB_VIEWS __STDIN __STDOUT __STDERR __FILE_DIR'
   };
+
+
+  var AT_COMMENT_MODE = hljs.COMMENT('@', '@');
 
   var PREPROCESSOR =
   {
@@ -17731,109 +17847,171 @@ module.exports = function(hljs) {
         ]
       },
       hljs.C_LINE_COMMENT_MODE,
-      hljs.C_BLOCK_COMMENT_MODE
+      hljs.C_BLOCK_COMMENT_MODE,
+      AT_COMMENT_MODE,
     ]
   };
 
-  var FUNCTION_TITLE = hljs.UNDERSCORE_IDENT_RE + '\\s*\\(?';
+  var STRUCT_TYPE =
+  {
+    begin: /\bstruct\s+/,
+    end: /\s/,
+    keywords: "struct",
+    contains: [
+      {
+        className: "type",
+        begin: hljs.UNDERSCORE_IDENT_RE,
+        relevance: 0,
+      },
+    ],
+  };
+
+  // only for definitions
   var PARSE_PARAMS = [
     {
       className: 'params',
       begin: /\(/, end: /\)/,
-      keywords: KEYWORDS,
+      excludeBegin: true,
+      excludeEnd: true,
+      endsWithParent: true,
       relevance: 0,
       contains: [
+        { // dots
+          className: 'literal',
+          begin: /\.\.\./,
+        },
         hljs.C_NUMBER_MODE,
-        hljs.C_LINE_COMMENT_MODE,
-        hljs.C_BLOCK_COMMENT_MODE
+        hljs.C_BLOCK_COMMENT_MODE,
+        AT_COMMENT_MODE,
+        STRUCT_TYPE,
       ]
     }
   ];
+
+  var FUNCTION_DEF =
+  {
+    className: "title",
+    begin: hljs.UNDERSCORE_IDENT_RE,
+    relevance: 0,
+  };
+
+  var DEFINITION = function (beginKeywords, end, inherits) {
+    var mode = hljs.inherit(
+      {
+        className: "function",
+        beginKeywords: beginKeywords,
+        end: end,
+        excludeEnd: true,
+        contains: [].concat(PARSE_PARAMS),
+      },
+      inherits || {}
+    );
+    mode.contains.push(FUNCTION_DEF);
+    mode.contains.push(hljs.C_NUMBER_MODE);
+    mode.contains.push(hljs.C_BLOCK_COMMENT_MODE);
+    mode.contains.push(AT_COMMENT_MODE);
+    return mode;
+  };
+
+  var BUILT_IN_REF =
+  { // these are explicitly named internal function calls
+    className: 'built_in',
+    begin: '\\b(' + KEYWORDS.built_in.split(' ').join('|') + ')\\b',
+  };
+
+  var STRING_REF =
+  {
+    className: 'string',
+    begin: '"', end: '"',
+    contains: [hljs.BACKSLASH_ESCAPE],
+    relevance: 0,
+  };
+
+  var FUNCTION_REF =
+  {
+    //className: "fn_ref",
+    begin: hljs.UNDERSCORE_IDENT_RE + '\\s*\\(',
+    returnBegin: true,
+    keywords: KEYWORDS,
+    relevance: 0,
+    contains: [
+      {
+        beginKeywords: KEYWORDS.keyword,
+      },
+      BUILT_IN_REF,
+      { // ambiguously named function calls get a relevance of 0
+        className: 'built_in',
+        begin: hljs.UNDERSCORE_IDENT_RE,
+        relevance: 0,
+      },
+    ],
+  };
+
+  var FUNCTION_REF_PARAMS =
+  {
+    //className: "fn_ref_params",
+    begin: /\(/,
+    end: /\)/,
+    relevance: 0,
+    keywords: { built_in: KEYWORDS.built_in, literal: KEYWORDS.literal },
+    contains: [
+      hljs.C_NUMBER_MODE,
+      hljs.C_BLOCK_COMMENT_MODE,
+      AT_COMMENT_MODE,
+      BUILT_IN_REF,
+      FUNCTION_REF,
+      STRING_REF,
+      'self',
+    ],
+  };
+
+  FUNCTION_REF.contains.push(FUNCTION_REF_PARAMS);
 
   return {
     aliases: ['gss'],
     case_insensitive: true, // language is case-insensitive
     keywords: KEYWORDS,
-    illegal: '(\\{[%#]|[%#]\\})',
+    illegal: /(\{[%#]|[%#]\}| <- )/,
     contains: [
       hljs.C_NUMBER_MODE,
       hljs.C_LINE_COMMENT_MODE,
       hljs.C_BLOCK_COMMENT_MODE,
-      hljs.COMMENT('@', '@'),
+      AT_COMMENT_MODE,
+      STRING_REF,
       PREPROCESSOR,
       {
-        className: 'string',
-        begin: '"', end: '"',
-        contains: [hljs.BACKSLASH_ESCAPE]
+        className: 'keyword',
+        begin: /\bexternal (matrix|string|array|sparse matrix|struct|proc|keyword|fn)/,
       },
+      DEFINITION('proc keyword', ';'),
+      DEFINITION('fn', '='),
       {
-        className: 'function',
-        beginKeywords: 'proc keyword',
-        end: ';',
-        excludeEnd: true,
-        keywords: KEYWORDS,
+        beginKeywords: 'for threadfor',
+        end: /;/,
+        //end: /\(/,
+        relevance: 0,
         contains: [
-          {
-            begin: FUNCTION_TITLE, returnBegin: true,
-            contains: [hljs.UNDERSCORE_TITLE_MODE],
-            relevance: 0
-          },
-          hljs.C_NUMBER_MODE,
-          hljs.C_LINE_COMMENT_MODE,
           hljs.C_BLOCK_COMMENT_MODE,
-          PREPROCESSOR
-        ].concat(PARSE_PARAMS)
+          AT_COMMENT_MODE,
+          FUNCTION_REF_PARAMS,
+        ],
       },
-      {
-        className: 'function',
-        beginKeywords: 'fn',
-        end: ';',
-        excludeEnd: true,
-        keywords: KEYWORDS,
-        contains: [
-          {
-            begin: FUNCTION_TITLE + hljs.IDENT_RE + '\\)?\\s*\\=\\s*', returnBegin: true,
-            contains: [hljs.UNDERSCORE_TITLE_MODE],
-            relevance: 0
-          },
-          hljs.C_NUMBER_MODE,
-          hljs.C_LINE_COMMENT_MODE,
-          hljs.C_BLOCK_COMMENT_MODE
-        ].concat(PARSE_PARAMS)
+      { // custom method guard
+        // excludes method names from keyword processing
+        variants: [
+          { begin: hljs.UNDERSCORE_IDENT_RE + '\\.' + hljs.UNDERSCORE_IDENT_RE, },
+          { begin: hljs.UNDERSCORE_IDENT_RE + '\\s*=', },
+        ],
+        relevance: 0,
       },
-      {
-        className: 'function',
-        begin: '\\bexternal (proc|keyword|fn)\\s+',
-        end: ';',
-        excludeEnd: true,
-        keywords: KEYWORDS,
-        contains: [
-          {
-            begin: FUNCTION_TITLE, returnBegin: true,
-            contains: [hljs.UNDERSCORE_TITLE_MODE],
-            relevance: 0
-          },
-          hljs.C_LINE_COMMENT_MODE,
-          hljs.C_BLOCK_COMMENT_MODE
-        ]
-      },
-      {
-        className: 'function',
-        begin: '\\bexternal (matrix|string|array|sparse matrix|struct ' + hljs.IDENT_RE + ')\\s+',
-        end: ';',
-        excludeEnd: true,
-        keywords: KEYWORDS,
-        contains: [
-          hljs.C_LINE_COMMENT_MODE,
-          hljs.C_BLOCK_COMMENT_MODE
-        ]
-      }
+      FUNCTION_REF,
+      STRUCT_TYPE,
     ]
   };
 };
 
 /***/ }),
-/* 158 */
+/* 159 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -17904,7 +18082,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 159 */
+/* 160 */
 /***/ (function(module, exports) {
 
 module.exports = function (hljs) {
@@ -17945,7 +18123,7 @@ module.exports = function (hljs) {
 };
 
 /***/ }),
-/* 160 */
+/* 161 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -18066,7 +18244,884 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 161 */
+/* 162 */
+/***/ (function(module, exports) {
+
+module.exports = function(hljs) {
+  var GML_KEYWORDS = {
+    keywords: 'begin end if then else while do for break continue with until ' +
+      'repeat exit and or xor not return mod div switch case default var ' +
+      'globalvar enum #macro #region #endregion',
+    built_in: 'is_real is_string is_array is_undefined is_int32 is_int64 ' +
+      'is_ptr is_vec3 is_vec4 is_matrix is_bool typeof ' +
+      'variable_global_exists variable_global_get variable_global_set ' +
+      'variable_instance_exists variable_instance_get variable_instance_set ' +
+      'variable_instance_get_names array_length_1d array_length_2d ' +
+      'array_height_2d array_equals array_create array_copy random ' +
+      'random_range irandom irandom_range random_set_seed random_get_seed ' +
+      'randomize randomise choose abs round floor ceil sign frac sqrt sqr ' +
+      'exp ln log2 log10 sin cos tan arcsin arccos arctan arctan2 dsin dcos ' +
+      'dtan darcsin darccos darctan darctan2 degtorad radtodeg power logn ' +
+      'min max mean median clamp lerp dot_product dot_product_3d ' +
+      'dot_product_normalised dot_product_3d_normalised ' +
+      'dot_product_normalized dot_product_3d_normalized math_set_epsilon ' +
+      'math_get_epsilon angle_difference point_distance_3d point_distance ' +
+      'point_direction lengthdir_x lengthdir_y real string int64 ptr ' +
+      'string_format chr ansi_char ord string_length string_byte_length ' +
+      'string_pos string_copy string_char_at string_ord_at string_byte_at ' +
+      'string_set_byte_at string_delete string_insert string_lower ' +
+      'string_upper string_repeat string_letters string_digits ' +
+      'string_lettersdigits string_replace string_replace_all string_count ' +
+      'string_hash_to_newline clipboard_has_text clipboard_set_text ' +
+      'clipboard_get_text date_current_datetime date_create_datetime ' +
+      'date_valid_datetime date_inc_year date_inc_month date_inc_week ' +
+      'date_inc_day date_inc_hour date_inc_minute date_inc_second ' +
+      'date_get_year date_get_month date_get_week date_get_day ' +
+      'date_get_hour date_get_minute date_get_second date_get_weekday ' +
+      'date_get_day_of_year date_get_hour_of_year date_get_minute_of_year ' +
+      'date_get_second_of_year date_year_span date_month_span ' +
+      'date_week_span date_day_span date_hour_span date_minute_span ' +
+      'date_second_span date_compare_datetime date_compare_date ' +
+      'date_compare_time date_date_of date_time_of date_datetime_string ' +
+      'date_date_string date_time_string date_days_in_month ' +
+      'date_days_in_year date_leap_year date_is_today date_set_timezone ' +
+      'date_get_timezone game_set_speed game_get_speed motion_set ' +
+      'motion_add place_free place_empty place_meeting place_snapped ' +
+      'move_random move_snap move_towards_point move_contact_solid ' +
+      'move_contact_all move_outside_solid move_outside_all ' +
+      'move_bounce_solid move_bounce_all move_wrap distance_to_point ' +
+      'distance_to_object position_empty position_meeting path_start ' +
+      'path_end mp_linear_step mp_potential_step mp_linear_step_object ' +
+      'mp_potential_step_object mp_potential_settings mp_linear_path ' +
+      'mp_potential_path mp_linear_path_object mp_potential_path_object ' +
+      'mp_grid_create mp_grid_destroy mp_grid_clear_all mp_grid_clear_cell ' +
+      'mp_grid_clear_rectangle mp_grid_add_cell mp_grid_get_cell ' +
+      'mp_grid_add_rectangle mp_grid_add_instances mp_grid_path ' +
+      'mp_grid_draw mp_grid_to_ds_grid collision_point collision_rectangle ' +
+      'collision_circle collision_ellipse collision_line ' +
+      'collision_point_list collision_rectangle_list collision_circle_list ' +
+      'collision_ellipse_list collision_line_list instance_position_list ' +
+      'instance_place_list point_in_rectangle ' +
+      'point_in_triangle point_in_circle rectangle_in_rectangle ' +
+      'rectangle_in_triangle rectangle_in_circle instance_find ' +
+      'instance_exists instance_number instance_position instance_nearest ' +
+      'instance_furthest instance_place instance_create_depth ' +
+      'instance_create_layer instance_copy instance_change instance_destroy ' +
+      'position_destroy position_change instance_id_get ' +
+      'instance_deactivate_all instance_deactivate_object ' +
+      'instance_deactivate_region instance_activate_all ' +
+      'instance_activate_object instance_activate_region room_goto ' +
+      'room_goto_previous room_goto_next room_previous room_next ' +
+      'room_restart game_end game_restart game_load game_save ' +
+      'game_save_buffer game_load_buffer event_perform event_user ' +
+      'event_perform_object event_inherited show_debug_message ' +
+      'show_debug_overlay debug_event debug_get_callstack alarm_get ' +
+      'alarm_set font_texture_page_size keyboard_set_map keyboard_get_map ' +
+      'keyboard_unset_map keyboard_check keyboard_check_pressed ' +
+      'keyboard_check_released keyboard_check_direct keyboard_get_numlock ' +
+      'keyboard_set_numlock keyboard_key_press keyboard_key_release ' +
+      'keyboard_clear io_clear mouse_check_button ' +
+      'mouse_check_button_pressed mouse_check_button_released ' +
+      'mouse_wheel_up mouse_wheel_down mouse_clear draw_self draw_sprite ' +
+      'draw_sprite_pos draw_sprite_ext draw_sprite_stretched ' +
+      'draw_sprite_stretched_ext draw_sprite_tiled draw_sprite_tiled_ext ' +
+      'draw_sprite_part draw_sprite_part_ext draw_sprite_general draw_clear ' +
+      'draw_clear_alpha draw_point draw_line draw_line_width draw_rectangle ' +
+      'draw_roundrect draw_roundrect_ext draw_triangle draw_circle ' +
+      'draw_ellipse draw_set_circle_precision draw_arrow draw_button ' +
+      'draw_path draw_healthbar draw_getpixel draw_getpixel_ext ' +
+      'draw_set_colour draw_set_color draw_set_alpha draw_get_colour ' +
+      'draw_get_color draw_get_alpha merge_colour make_colour_rgb ' +
+      'make_colour_hsv colour_get_red colour_get_green colour_get_blue ' +
+      'colour_get_hue colour_get_saturation colour_get_value merge_color ' +
+      'make_color_rgb make_color_hsv color_get_red color_get_green ' +
+      'color_get_blue color_get_hue color_get_saturation color_get_value ' +
+      'merge_color screen_save screen_save_part draw_set_font ' +
+      'draw_set_halign draw_set_valign draw_text draw_text_ext string_width ' +
+      'string_height string_width_ext string_height_ext ' +
+      'draw_text_transformed draw_text_ext_transformed draw_text_colour ' +
+      'draw_text_ext_colour draw_text_transformed_colour ' +
+      'draw_text_ext_transformed_colour draw_text_color draw_text_ext_color ' +
+      'draw_text_transformed_color draw_text_ext_transformed_color ' +
+      'draw_point_colour draw_line_colour draw_line_width_colour ' +
+      'draw_rectangle_colour draw_roundrect_colour ' +
+      'draw_roundrect_colour_ext draw_triangle_colour draw_circle_colour ' +
+      'draw_ellipse_colour draw_point_color draw_line_color ' +
+      'draw_line_width_color draw_rectangle_color draw_roundrect_color ' +
+      'draw_roundrect_color_ext draw_triangle_color draw_circle_color ' +
+      'draw_ellipse_color draw_primitive_begin draw_vertex ' +
+      'draw_vertex_colour draw_vertex_color draw_primitive_end ' +
+      'sprite_get_uvs font_get_uvs sprite_get_texture font_get_texture ' +
+      'texture_get_width texture_get_height texture_get_uvs ' +
+      'draw_primitive_begin_texture draw_vertex_texture ' +
+      'draw_vertex_texture_colour draw_vertex_texture_color ' +
+      'texture_global_scale surface_create surface_create_ext ' +
+      'surface_resize surface_free surface_exists surface_get_width ' +
+      'surface_get_height surface_get_texture surface_set_target ' +
+      'surface_set_target_ext surface_reset_target surface_depth_disable ' +
+      'surface_get_depth_disable draw_surface draw_surface_stretched ' +
+      'draw_surface_tiled draw_surface_part draw_surface_ext ' +
+      'draw_surface_stretched_ext draw_surface_tiled_ext ' +
+      'draw_surface_part_ext draw_surface_general surface_getpixel ' +
+      'surface_getpixel_ext surface_save surface_save_part surface_copy ' +
+      'surface_copy_part application_surface_draw_enable ' +
+      'application_get_position application_surface_enable ' +
+      'application_surface_is_enabled display_get_width display_get_height ' +
+      'display_get_orientation display_get_gui_width display_get_gui_height ' +
+      'display_reset display_mouse_get_x display_mouse_get_y ' +
+      'display_mouse_set display_set_ui_visibility ' +
+      'window_set_fullscreen window_get_fullscreen ' +
+      'window_set_caption window_set_min_width window_set_max_width ' +
+      'window_set_min_height window_set_max_height window_get_visible_rects ' +
+      'window_get_caption window_set_cursor window_get_cursor ' +
+      'window_set_colour window_get_colour window_set_color ' +
+      'window_get_color window_set_position window_set_size ' +
+      'window_set_rectangle window_center window_get_x window_get_y ' +
+      'window_get_width window_get_height window_mouse_get_x ' +
+      'window_mouse_get_y window_mouse_set window_view_mouse_get_x ' +
+      'window_view_mouse_get_y window_views_mouse_get_x ' +
+      'window_views_mouse_get_y audio_listener_position ' +
+      'audio_listener_velocity audio_listener_orientation ' +
+      'audio_emitter_position audio_emitter_create audio_emitter_free ' +
+      'audio_emitter_exists audio_emitter_pitch audio_emitter_velocity ' +
+      'audio_emitter_falloff audio_emitter_gain audio_play_sound ' +
+      'audio_play_sound_on audio_play_sound_at audio_stop_sound ' +
+      'audio_resume_music audio_music_is_playing audio_resume_sound ' +
+      'audio_pause_sound audio_pause_music audio_channel_num ' +
+      'audio_sound_length audio_get_type audio_falloff_set_model ' +
+      'audio_play_music audio_stop_music audio_master_gain audio_music_gain ' +
+      'audio_sound_gain audio_sound_pitch audio_stop_all audio_resume_all ' +
+      'audio_pause_all audio_is_playing audio_is_paused audio_exists ' +
+      'audio_sound_set_track_position audio_sound_get_track_position ' +
+      'audio_emitter_get_gain audio_emitter_get_pitch audio_emitter_get_x ' +
+      'audio_emitter_get_y audio_emitter_get_z audio_emitter_get_vx ' +
+      'audio_emitter_get_vy audio_emitter_get_vz ' +
+      'audio_listener_set_position audio_listener_set_velocity ' +
+      'audio_listener_set_orientation audio_listener_get_data ' +
+      'audio_set_master_gain audio_get_master_gain audio_sound_get_gain ' +
+      'audio_sound_get_pitch audio_get_name audio_sound_set_track_position ' +
+      'audio_sound_get_track_position audio_create_stream ' +
+      'audio_destroy_stream audio_create_sync_group ' +
+      'audio_destroy_sync_group audio_play_in_sync_group ' +
+      'audio_start_sync_group audio_stop_sync_group audio_pause_sync_group ' +
+      'audio_resume_sync_group audio_sync_group_get_track_pos ' +
+      'audio_sync_group_debug audio_sync_group_is_playing audio_debug ' +
+      'audio_group_load audio_group_unload audio_group_is_loaded ' +
+      'audio_group_load_progress audio_group_name audio_group_stop_all ' +
+      'audio_group_set_gain audio_create_buffer_sound ' +
+      'audio_free_buffer_sound audio_create_play_queue ' +
+      'audio_free_play_queue audio_queue_sound audio_get_recorder_count ' +
+      'audio_get_recorder_info audio_start_recording audio_stop_recording ' +
+      'audio_sound_get_listener_mask audio_emitter_get_listener_mask ' +
+      'audio_get_listener_mask audio_sound_set_listener_mask ' +
+      'audio_emitter_set_listener_mask audio_set_listener_mask ' +
+      'audio_get_listener_count audio_get_listener_info audio_system ' +
+      'show_message show_message_async clickable_add clickable_add_ext ' +
+      'clickable_change clickable_change_ext clickable_delete ' +
+      'clickable_exists clickable_set_style show_question ' +
+      'show_question_async get_integer get_string get_integer_async ' +
+      'get_string_async get_login_async get_open_filename get_save_filename ' +
+      'get_open_filename_ext get_save_filename_ext show_error ' +
+      'highscore_clear highscore_add highscore_value highscore_name ' +
+      'draw_highscore sprite_exists sprite_get_name sprite_get_number ' +
+      'sprite_get_width sprite_get_height sprite_get_xoffset ' +
+      'sprite_get_yoffset sprite_get_bbox_left sprite_get_bbox_right ' +
+      'sprite_get_bbox_top sprite_get_bbox_bottom sprite_save ' +
+      'sprite_save_strip sprite_set_cache_size sprite_set_cache_size_ext ' +
+      'sprite_get_tpe sprite_prefetch sprite_prefetch_multi sprite_flush ' +
+      'sprite_flush_multi sprite_set_speed sprite_get_speed_type ' +
+      'sprite_get_speed font_exists font_get_name font_get_fontname ' +
+      'font_get_bold font_get_italic font_get_first font_get_last ' +
+      'font_get_size font_set_cache_size path_exists path_get_name ' +
+      'path_get_length path_get_time path_get_kind path_get_closed ' +
+      'path_get_precision path_get_number path_get_point_x path_get_point_y ' +
+      'path_get_point_speed path_get_x path_get_y path_get_speed ' +
+      'script_exists script_get_name timeline_add timeline_delete ' +
+      'timeline_clear timeline_exists timeline_get_name ' +
+      'timeline_moment_clear timeline_moment_add_script timeline_size ' +
+      'timeline_max_moment object_exists object_get_name object_get_sprite ' +
+      'object_get_solid object_get_visible object_get_persistent ' +
+      'object_get_mask object_get_parent object_get_physics ' +
+      'object_is_ancestor room_exists room_get_name sprite_set_offset ' +
+      'sprite_duplicate sprite_assign sprite_merge sprite_add ' +
+      'sprite_replace sprite_create_from_surface sprite_add_from_surface ' +
+      'sprite_delete sprite_set_alpha_from_sprite sprite_collision_mask ' +
+      'font_add_enable_aa font_add_get_enable_aa font_add font_add_sprite ' +
+      'font_add_sprite_ext font_replace font_replace_sprite ' +
+      'font_replace_sprite_ext font_delete path_set_kind path_set_closed ' +
+      'path_set_precision path_add path_assign path_duplicate path_append ' +
+      'path_delete path_add_point path_insert_point path_change_point ' +
+      'path_delete_point path_clear_points path_reverse path_mirror ' +
+      'path_flip path_rotate path_rescale path_shift script_execute ' +
+      'object_set_sprite object_set_solid object_set_visible ' +
+      'object_set_persistent object_set_mask room_set_width room_set_height ' +
+      'room_set_persistent room_set_background_colour ' +
+      'room_set_background_color room_set_view room_set_viewport ' +
+      'room_get_viewport room_set_view_enabled room_add room_duplicate ' +
+      'room_assign room_instance_add room_instance_clear room_get_camera ' +
+      'room_set_camera asset_get_index asset_get_type ' +
+      'file_text_open_from_string file_text_open_read file_text_open_write ' +
+      'file_text_open_append file_text_close file_text_write_string ' +
+      'file_text_write_real file_text_writeln file_text_read_string ' +
+      'file_text_read_real file_text_readln file_text_eof file_text_eoln ' +
+      'file_exists file_delete file_rename file_copy directory_exists ' +
+      'directory_create directory_destroy file_find_first file_find_next ' +
+      'file_find_close file_attributes filename_name filename_path ' +
+      'filename_dir filename_drive filename_ext filename_change_ext ' +
+      'file_bin_open file_bin_rewrite file_bin_close file_bin_position ' +
+      'file_bin_size file_bin_seek file_bin_write_byte file_bin_read_byte ' +
+      'parameter_count parameter_string environment_get_variable ' +
+      'ini_open_from_string ini_open ini_close ini_read_string ' +
+      'ini_read_real ini_write_string ini_write_real ini_key_exists ' +
+      'ini_section_exists ini_key_delete ini_section_delete ' +
+      'ds_set_precision ds_exists ds_stack_create ds_stack_destroy ' +
+      'ds_stack_clear ds_stack_copy ds_stack_size ds_stack_empty ' +
+      'ds_stack_push ds_stack_pop ds_stack_top ds_stack_write ds_stack_read ' +
+      'ds_queue_create ds_queue_destroy ds_queue_clear ds_queue_copy ' +
+      'ds_queue_size ds_queue_empty ds_queue_enqueue ds_queue_dequeue ' +
+      'ds_queue_head ds_queue_tail ds_queue_write ds_queue_read ' +
+      'ds_list_create ds_list_destroy ds_list_clear ds_list_copy ' +
+      'ds_list_size ds_list_empty ds_list_add ds_list_insert ' +
+      'ds_list_replace ds_list_delete ds_list_find_index ds_list_find_value ' +
+      'ds_list_mark_as_list ds_list_mark_as_map ds_list_sort ' +
+      'ds_list_shuffle ds_list_write ds_list_read ds_list_set ds_map_create ' +
+      'ds_map_destroy ds_map_clear ds_map_copy ds_map_size ds_map_empty ' +
+      'ds_map_add ds_map_add_list ds_map_add_map ds_map_replace ' +
+      'ds_map_replace_map ds_map_replace_list ds_map_delete ds_map_exists ' +
+      'ds_map_find_value ds_map_find_previous ds_map_find_next ' +
+      'ds_map_find_first ds_map_find_last ds_map_write ds_map_read ' +
+      'ds_map_secure_save ds_map_secure_load ds_map_secure_load_buffer ' +
+      'ds_map_secure_save_buffer ds_map_set ds_priority_create ' +
+      'ds_priority_destroy ds_priority_clear ds_priority_copy ' +
+      'ds_priority_size ds_priority_empty ds_priority_add ' +
+      'ds_priority_change_priority ds_priority_find_priority ' +
+      'ds_priority_delete_value ds_priority_delete_min ds_priority_find_min ' +
+      'ds_priority_delete_max ds_priority_find_max ds_priority_write ' +
+      'ds_priority_read ds_grid_create ds_grid_destroy ds_grid_copy ' +
+      'ds_grid_resize ds_grid_width ds_grid_height ds_grid_clear ' +
+      'ds_grid_set ds_grid_add ds_grid_multiply ds_grid_set_region ' +
+      'ds_grid_add_region ds_grid_multiply_region ds_grid_set_disk ' +
+      'ds_grid_add_disk ds_grid_multiply_disk ds_grid_set_grid_region ' +
+      'ds_grid_add_grid_region ds_grid_multiply_grid_region ds_grid_get ' +
+      'ds_grid_get_sum ds_grid_get_max ds_grid_get_min ds_grid_get_mean ' +
+      'ds_grid_get_disk_sum ds_grid_get_disk_min ds_grid_get_disk_max ' +
+      'ds_grid_get_disk_mean ds_grid_value_exists ds_grid_value_x ' +
+      'ds_grid_value_y ds_grid_value_disk_exists ds_grid_value_disk_x ' +
+      'ds_grid_value_disk_y ds_grid_shuffle ds_grid_write ds_grid_read ' +
+      'ds_grid_sort ds_grid_set ds_grid_get effect_create_below ' +
+      'effect_create_above effect_clear part_type_create part_type_destroy ' +
+      'part_type_exists part_type_clear part_type_shape part_type_sprite ' +
+      'part_type_size part_type_scale part_type_orientation part_type_life ' +
+      'part_type_step part_type_death part_type_speed part_type_direction ' +
+      'part_type_gravity part_type_colour1 part_type_colour2 ' +
+      'part_type_colour3 part_type_colour_mix part_type_colour_rgb ' +
+      'part_type_colour_hsv part_type_color1 part_type_color2 ' +
+      'part_type_color3 part_type_color_mix part_type_color_rgb ' +
+      'part_type_color_hsv part_type_alpha1 part_type_alpha2 ' +
+      'part_type_alpha3 part_type_blend part_system_create ' +
+      'part_system_create_layer part_system_destroy part_system_exists ' +
+      'part_system_clear part_system_draw_order part_system_depth ' +
+      'part_system_position part_system_automatic_update ' +
+      'part_system_automatic_draw part_system_update part_system_drawit ' +
+      'part_system_get_layer part_system_layer part_particles_create ' +
+      'part_particles_create_colour part_particles_create_color ' +
+      'part_particles_clear part_particles_count part_emitter_create ' +
+      'part_emitter_destroy part_emitter_destroy_all part_emitter_exists ' +
+      'part_emitter_clear part_emitter_region part_emitter_burst ' +
+      'part_emitter_stream external_call external_define external_free ' +
+      'window_handle window_device matrix_get matrix_set ' +
+      'matrix_build_identity matrix_build matrix_build_lookat ' +
+      'matrix_build_projection_ortho matrix_build_projection_perspective ' +
+      'matrix_build_projection_perspective_fov matrix_multiply ' +
+      'matrix_transform_vertex matrix_stack_push matrix_stack_pop ' +
+      'matrix_stack_multiply matrix_stack_set matrix_stack_clear ' +
+      'matrix_stack_top matrix_stack_is_empty browser_input_capture ' +
+      'os_get_config os_get_info os_get_language os_get_region ' +
+      'os_lock_orientation display_get_dpi_x display_get_dpi_y ' +
+      'display_set_gui_size display_set_gui_maximise ' +
+      'display_set_gui_maximize device_mouse_dbclick_enable ' +
+      'display_set_timing_method display_get_timing_method ' +
+      'display_set_sleep_margin display_get_sleep_margin virtual_key_add ' +
+      'virtual_key_hide virtual_key_delete virtual_key_show ' +
+      'draw_enable_drawevent draw_enable_swf_aa draw_set_swf_aa_level ' +
+      'draw_get_swf_aa_level draw_texture_flush draw_flush ' +
+      'gpu_set_blendenable gpu_set_ztestenable gpu_set_zfunc ' +
+      'gpu_set_zwriteenable gpu_set_lightingenable gpu_set_fog ' +
+      'gpu_set_cullmode gpu_set_blendmode gpu_set_blendmode_ext ' +
+      'gpu_set_blendmode_ext_sepalpha gpu_set_colorwriteenable ' +
+      'gpu_set_colourwriteenable gpu_set_alphatestenable ' +
+      'gpu_set_alphatestref gpu_set_alphatestfunc gpu_set_texfilter ' +
+      'gpu_set_texfilter_ext gpu_set_texrepeat gpu_set_texrepeat_ext ' +
+      'gpu_set_tex_filter gpu_set_tex_filter_ext gpu_set_tex_repeat ' +
+      'gpu_set_tex_repeat_ext gpu_set_tex_mip_filter ' +
+      'gpu_set_tex_mip_filter_ext gpu_set_tex_mip_bias ' +
+      'gpu_set_tex_mip_bias_ext gpu_set_tex_min_mip gpu_set_tex_min_mip_ext ' +
+      'gpu_set_tex_max_mip gpu_set_tex_max_mip_ext gpu_set_tex_max_aniso ' +
+      'gpu_set_tex_max_aniso_ext gpu_set_tex_mip_enable ' +
+      'gpu_set_tex_mip_enable_ext gpu_get_blendenable gpu_get_ztestenable ' +
+      'gpu_get_zfunc gpu_get_zwriteenable gpu_get_lightingenable ' +
+      'gpu_get_fog gpu_get_cullmode gpu_get_blendmode gpu_get_blendmode_ext ' +
+      'gpu_get_blendmode_ext_sepalpha gpu_get_blendmode_src ' +
+      'gpu_get_blendmode_dest gpu_get_blendmode_srcalpha ' +
+      'gpu_get_blendmode_destalpha gpu_get_colorwriteenable ' +
+      'gpu_get_colourwriteenable gpu_get_alphatestenable ' +
+      'gpu_get_alphatestref gpu_get_alphatestfunc gpu_get_texfilter ' +
+      'gpu_get_texfilter_ext gpu_get_texrepeat gpu_get_texrepeat_ext ' +
+      'gpu_get_tex_filter gpu_get_tex_filter_ext gpu_get_tex_repeat ' +
+      'gpu_get_tex_repeat_ext gpu_get_tex_mip_filter ' +
+      'gpu_get_tex_mip_filter_ext gpu_get_tex_mip_bias ' +
+      'gpu_get_tex_mip_bias_ext gpu_get_tex_min_mip gpu_get_tex_min_mip_ext ' +
+      'gpu_get_tex_max_mip gpu_get_tex_max_mip_ext gpu_get_tex_max_aniso ' +
+      'gpu_get_tex_max_aniso_ext gpu_get_tex_mip_enable ' +
+      'gpu_get_tex_mip_enable_ext gpu_push_state gpu_pop_state ' +
+      'gpu_get_state gpu_set_state draw_light_define_ambient ' +
+      'draw_light_define_direction draw_light_define_point ' +
+      'draw_light_enable draw_set_lighting draw_light_get_ambient ' +
+      'draw_light_get draw_get_lighting shop_leave_rating url_get_domain ' +
+      'url_open url_open_ext url_open_full get_timer achievement_login ' +
+      'achievement_logout achievement_post achievement_increment ' +
+      'achievement_post_score achievement_available ' +
+      'achievement_show_achievements achievement_show_leaderboards ' +
+      'achievement_load_friends achievement_load_leaderboard ' +
+      'achievement_send_challenge achievement_load_progress ' +
+      'achievement_reset achievement_login_status achievement_get_pic ' +
+      'achievement_show_challenge_notifications achievement_get_challenges ' +
+      'achievement_event achievement_show achievement_get_info ' +
+      'cloud_file_save cloud_string_save cloud_synchronise ads_enable ' +
+      'ads_disable ads_setup ads_engagement_launch ads_engagement_available ' +
+      'ads_engagement_active ads_event ads_event_preload ' +
+      'ads_set_reward_callback ads_get_display_height ads_get_display_width ' +
+      'ads_move ads_interstitial_available ads_interstitial_display ' +
+      'device_get_tilt_x device_get_tilt_y device_get_tilt_z ' +
+      'device_is_keypad_open device_mouse_check_button ' +
+      'device_mouse_check_button_pressed device_mouse_check_button_released ' +
+      'device_mouse_x device_mouse_y device_mouse_raw_x device_mouse_raw_y ' +
+      'device_mouse_x_to_gui device_mouse_y_to_gui iap_activate iap_status ' +
+      'iap_enumerate_products iap_restore_all iap_acquire iap_consume ' +
+      'iap_product_details iap_purchase_details facebook_init ' +
+      'facebook_login facebook_status facebook_graph_request ' +
+      'facebook_dialog facebook_logout facebook_launch_offerwall ' +
+      'facebook_post_message facebook_send_invite facebook_user_id ' +
+      'facebook_accesstoken facebook_check_permission ' +
+      'facebook_request_read_permissions ' +
+      'facebook_request_publish_permissions gamepad_is_supported ' +
+      'gamepad_get_device_count gamepad_is_connected ' +
+      'gamepad_get_description gamepad_get_button_threshold ' +
+      'gamepad_set_button_threshold gamepad_get_axis_deadzone ' +
+      'gamepad_set_axis_deadzone gamepad_button_count gamepad_button_check ' +
+      'gamepad_button_check_pressed gamepad_button_check_released ' +
+      'gamepad_button_value gamepad_axis_count gamepad_axis_value ' +
+      'gamepad_set_vibration gamepad_set_colour gamepad_set_color ' +
+      'os_is_paused window_has_focus code_is_compiled http_get ' +
+      'http_get_file http_post_string http_request json_encode json_decode ' +
+      'zip_unzip load_csv base64_encode base64_decode md5_string_unicode ' +
+      'md5_string_utf8 md5_file os_is_network_connected sha1_string_unicode ' +
+      'sha1_string_utf8 sha1_file os_powersave_enable analytics_event ' +
+      'analytics_event_ext win8_livetile_tile_notification ' +
+      'win8_livetile_tile_clear win8_livetile_badge_notification ' +
+      'win8_livetile_badge_clear win8_livetile_queue_enable ' +
+      'win8_secondarytile_pin win8_secondarytile_badge_notification ' +
+      'win8_secondarytile_delete win8_livetile_notification_begin ' +
+      'win8_livetile_notification_secondary_begin ' +
+      'win8_livetile_notification_expiry win8_livetile_notification_tag ' +
+      'win8_livetile_notification_text_add ' +
+      'win8_livetile_notification_image_add win8_livetile_notification_end ' +
+      'win8_appbar_enable win8_appbar_add_element ' +
+      'win8_appbar_remove_element win8_settingscharm_add_entry ' +
+      'win8_settingscharm_add_html_entry win8_settingscharm_add_xaml_entry ' +
+      'win8_settingscharm_set_xaml_property ' +
+      'win8_settingscharm_get_xaml_property win8_settingscharm_remove_entry ' +
+      'win8_share_image win8_share_screenshot win8_share_file ' +
+      'win8_share_url win8_share_text win8_search_enable ' +
+      'win8_search_disable win8_search_add_suggestions ' +
+      'win8_device_touchscreen_available win8_license_initialize_sandbox ' +
+      'win8_license_trial_version winphone_license_trial_version ' +
+      'winphone_tile_title winphone_tile_count winphone_tile_back_title ' +
+      'winphone_tile_back_content winphone_tile_back_content_wide ' +
+      'winphone_tile_front_image winphone_tile_front_image_small ' +
+      'winphone_tile_front_image_wide winphone_tile_back_image ' +
+      'winphone_tile_back_image_wide winphone_tile_background_colour ' +
+      'winphone_tile_background_color winphone_tile_icon_image ' +
+      'winphone_tile_small_icon_image winphone_tile_wide_content ' +
+      'winphone_tile_cycle_images winphone_tile_small_background_image ' +
+      'physics_world_create physics_world_gravity ' +
+      'physics_world_update_speed physics_world_update_iterations ' +
+      'physics_world_draw_debug physics_pause_enable physics_fixture_create ' +
+      'physics_fixture_set_kinematic physics_fixture_set_density ' +
+      'physics_fixture_set_awake physics_fixture_set_restitution ' +
+      'physics_fixture_set_friction physics_fixture_set_collision_group ' +
+      'physics_fixture_set_sensor physics_fixture_set_linear_damping ' +
+      'physics_fixture_set_angular_damping physics_fixture_set_circle_shape ' +
+      'physics_fixture_set_box_shape physics_fixture_set_edge_shape ' +
+      'physics_fixture_set_polygon_shape physics_fixture_set_chain_shape ' +
+      'physics_fixture_add_point physics_fixture_bind ' +
+      'physics_fixture_bind_ext physics_fixture_delete physics_apply_force ' +
+      'physics_apply_impulse physics_apply_angular_impulse ' +
+      'physics_apply_local_force physics_apply_local_impulse ' +
+      'physics_apply_torque physics_mass_properties physics_draw_debug ' +
+      'physics_test_overlap physics_remove_fixture physics_set_friction ' +
+      'physics_set_density physics_set_restitution physics_get_friction ' +
+      'physics_get_density physics_get_restitution ' +
+      'physics_joint_distance_create physics_joint_rope_create ' +
+      'physics_joint_revolute_create physics_joint_prismatic_create ' +
+      'physics_joint_pulley_create physics_joint_wheel_create ' +
+      'physics_joint_weld_create physics_joint_friction_create ' +
+      'physics_joint_gear_create physics_joint_enable_motor ' +
+      'physics_joint_get_value physics_joint_set_value physics_joint_delete ' +
+      'physics_particle_create physics_particle_delete ' +
+      'physics_particle_delete_region_circle ' +
+      'physics_particle_delete_region_box ' +
+      'physics_particle_delete_region_poly physics_particle_set_flags ' +
+      'physics_particle_set_category_flags physics_particle_draw ' +
+      'physics_particle_draw_ext physics_particle_count ' +
+      'physics_particle_get_data physics_particle_get_data_particle ' +
+      'physics_particle_group_begin physics_particle_group_circle ' +
+      'physics_particle_group_box physics_particle_group_polygon ' +
+      'physics_particle_group_add_point physics_particle_group_end ' +
+      'physics_particle_group_join physics_particle_group_delete ' +
+      'physics_particle_group_count physics_particle_group_get_data ' +
+      'physics_particle_group_get_mass physics_particle_group_get_inertia ' +
+      'physics_particle_group_get_centre_x ' +
+      'physics_particle_group_get_centre_y physics_particle_group_get_vel_x ' +
+      'physics_particle_group_get_vel_y physics_particle_group_get_ang_vel ' +
+      'physics_particle_group_get_x physics_particle_group_get_y ' +
+      'physics_particle_group_get_angle physics_particle_set_group_flags ' +
+      'physics_particle_get_group_flags physics_particle_get_max_count ' +
+      'physics_particle_get_radius physics_particle_get_density ' +
+      'physics_particle_get_damping physics_particle_get_gravity_scale ' +
+      'physics_particle_set_max_count physics_particle_set_radius ' +
+      'physics_particle_set_density physics_particle_set_damping ' +
+      'physics_particle_set_gravity_scale network_create_socket ' +
+      'network_create_socket_ext network_create_server ' +
+      'network_create_server_raw network_connect network_connect_raw ' +
+      'network_send_packet network_send_raw network_send_broadcast ' +
+      'network_send_udp network_send_udp_raw network_set_timeout ' +
+      'network_set_config network_resolve network_destroy buffer_create ' +
+      'buffer_write buffer_read buffer_seek buffer_get_surface ' +
+      'buffer_set_surface buffer_delete buffer_exists buffer_get_type ' +
+      'buffer_get_alignment buffer_poke buffer_peek buffer_save ' +
+      'buffer_save_ext buffer_load buffer_load_ext buffer_load_partial ' +
+      'buffer_copy buffer_fill buffer_get_size buffer_tell buffer_resize ' +
+      'buffer_md5 buffer_sha1 buffer_base64_encode buffer_base64_decode ' +
+      'buffer_base64_decode_ext buffer_sizeof buffer_get_address ' +
+      'buffer_create_from_vertex_buffer ' +
+      'buffer_create_from_vertex_buffer_ext buffer_copy_from_vertex_buffer ' +
+      'buffer_async_group_begin buffer_async_group_option ' +
+      'buffer_async_group_end buffer_load_async buffer_save_async ' +
+      'gml_release_mode gml_pragma steam_activate_overlay ' +
+      'steam_is_overlay_enabled steam_is_overlay_activated ' +
+      'steam_get_persona_name steam_initialised ' +
+      'steam_is_cloud_enabled_for_app steam_is_cloud_enabled_for_account ' +
+      'steam_file_persisted steam_get_quota_total steam_get_quota_free ' +
+      'steam_file_write steam_file_write_file steam_file_read ' +
+      'steam_file_delete steam_file_exists steam_file_size steam_file_share ' +
+      'steam_is_screenshot_requested steam_send_screenshot ' +
+      'steam_is_user_logged_on steam_get_user_steam_id steam_user_owns_dlc ' +
+      'steam_user_installed_dlc steam_set_achievement steam_get_achievement ' +
+      'steam_clear_achievement steam_set_stat_int steam_set_stat_float ' +
+      'steam_set_stat_avg_rate steam_get_stat_int steam_get_stat_float ' +
+      'steam_get_stat_avg_rate steam_reset_all_stats ' +
+      'steam_reset_all_stats_achievements steam_stats_ready ' +
+      'steam_create_leaderboard steam_upload_score steam_upload_score_ext ' +
+      'steam_download_scores_around_user steam_download_scores ' +
+      'steam_download_friends_scores steam_upload_score_buffer ' +
+      'steam_upload_score_buffer_ext steam_current_game_language ' +
+      'steam_available_languages steam_activate_overlay_browser ' +
+      'steam_activate_overlay_user steam_activate_overlay_store ' +
+      'steam_get_user_persona_name steam_get_app_id ' +
+      'steam_get_user_account_id steam_ugc_download steam_ugc_create_item ' +
+      'steam_ugc_start_item_update steam_ugc_set_item_title ' +
+      'steam_ugc_set_item_description steam_ugc_set_item_visibility ' +
+      'steam_ugc_set_item_tags steam_ugc_set_item_content ' +
+      'steam_ugc_set_item_preview steam_ugc_submit_item_update ' +
+      'steam_ugc_get_item_update_progress steam_ugc_subscribe_item ' +
+      'steam_ugc_unsubscribe_item steam_ugc_num_subscribed_items ' +
+      'steam_ugc_get_subscribed_items steam_ugc_get_item_install_info ' +
+      'steam_ugc_get_item_update_info steam_ugc_request_item_details ' +
+      'steam_ugc_create_query_user steam_ugc_create_query_user_ex ' +
+      'steam_ugc_create_query_all steam_ugc_create_query_all_ex ' +
+      'steam_ugc_query_set_cloud_filename_filter ' +
+      'steam_ugc_query_set_match_any_tag steam_ugc_query_set_search_text ' +
+      'steam_ugc_query_set_ranked_by_trend_days ' +
+      'steam_ugc_query_add_required_tag steam_ugc_query_add_excluded_tag ' +
+      'steam_ugc_query_set_return_long_description ' +
+      'steam_ugc_query_set_return_total_only ' +
+      'steam_ugc_query_set_allow_cached_response steam_ugc_send_query ' +
+      'shader_set shader_get_name shader_reset shader_current ' +
+      'shader_is_compiled shader_get_sampler_index shader_get_uniform ' +
+      'shader_set_uniform_i shader_set_uniform_i_array shader_set_uniform_f ' +
+      'shader_set_uniform_f_array shader_set_uniform_matrix ' +
+      'shader_set_uniform_matrix_array shader_enable_corner_id ' +
+      'texture_set_stage texture_get_texel_width texture_get_texel_height ' +
+      'shaders_are_supported vertex_format_begin vertex_format_end ' +
+      'vertex_format_delete vertex_format_add_position ' +
+      'vertex_format_add_position_3d vertex_format_add_colour ' +
+      'vertex_format_add_color vertex_format_add_normal ' +
+      'vertex_format_add_texcoord vertex_format_add_textcoord ' +
+      'vertex_format_add_custom vertex_create_buffer ' +
+      'vertex_create_buffer_ext vertex_delete_buffer vertex_begin ' +
+      'vertex_end vertex_position vertex_position_3d vertex_colour ' +
+      'vertex_color vertex_argb vertex_texcoord vertex_normal vertex_float1 ' +
+      'vertex_float2 vertex_float3 vertex_float4 vertex_ubyte4 ' +
+      'vertex_submit vertex_freeze vertex_get_number vertex_get_buffer_size ' +
+      'vertex_create_buffer_from_buffer ' +
+      'vertex_create_buffer_from_buffer_ext push_local_notification ' +
+      'push_get_first_local_notification push_get_next_local_notification ' +
+      'push_cancel_local_notification skeleton_animation_set ' +
+      'skeleton_animation_get skeleton_animation_mix ' +
+      'skeleton_animation_set_ext skeleton_animation_get_ext ' +
+      'skeleton_animation_get_duration skeleton_animation_get_frames ' +
+      'skeleton_animation_clear skeleton_skin_set skeleton_skin_get ' +
+      'skeleton_attachment_set skeleton_attachment_get ' +
+      'skeleton_attachment_create skeleton_collision_draw_set ' +
+      'skeleton_bone_data_get skeleton_bone_data_set ' +
+      'skeleton_bone_state_get skeleton_bone_state_set skeleton_get_minmax ' +
+      'skeleton_get_num_bounds skeleton_get_bounds ' +
+      'skeleton_animation_get_frame skeleton_animation_set_frame ' +
+      'draw_skeleton draw_skeleton_time draw_skeleton_instance ' +
+      'draw_skeleton_collision skeleton_animation_list skeleton_skin_list ' +
+      'skeleton_slot_data layer_get_id layer_get_id_at_depth ' +
+      'layer_get_depth layer_create layer_destroy layer_destroy_instances ' +
+      'layer_add_instance layer_has_instance layer_set_visible ' +
+      'layer_get_visible layer_exists layer_x layer_y layer_get_x ' +
+      'layer_get_y layer_hspeed layer_vspeed layer_get_hspeed ' +
+      'layer_get_vspeed layer_script_begin layer_script_end layer_shader ' +
+      'layer_get_script_begin layer_get_script_end layer_get_shader ' +
+      'layer_set_target_room layer_get_target_room layer_reset_target_room ' +
+      'layer_get_all layer_get_all_elements layer_get_name layer_depth ' +
+      'layer_get_element_layer layer_get_element_type layer_element_move ' +
+      'layer_force_draw_depth layer_is_draw_depth_forced ' +
+      'layer_get_forced_depth layer_background_get_id ' +
+      'layer_background_exists layer_background_create ' +
+      'layer_background_destroy layer_background_visible ' +
+      'layer_background_change layer_background_sprite ' +
+      'layer_background_htiled layer_background_vtiled ' +
+      'layer_background_stretch layer_background_yscale ' +
+      'layer_background_xscale layer_background_blend ' +
+      'layer_background_alpha layer_background_index layer_background_speed ' +
+      'layer_background_get_visible layer_background_get_sprite ' +
+      'layer_background_get_htiled layer_background_get_vtiled ' +
+      'layer_background_get_stretch layer_background_get_yscale ' +
+      'layer_background_get_xscale layer_background_get_blend ' +
+      'layer_background_get_alpha layer_background_get_index ' +
+      'layer_background_get_speed layer_sprite_get_id layer_sprite_exists ' +
+      'layer_sprite_create layer_sprite_destroy layer_sprite_change ' +
+      'layer_sprite_index layer_sprite_speed layer_sprite_xscale ' +
+      'layer_sprite_yscale layer_sprite_angle layer_sprite_blend ' +
+      'layer_sprite_alpha layer_sprite_x layer_sprite_y ' +
+      'layer_sprite_get_sprite layer_sprite_get_index ' +
+      'layer_sprite_get_speed layer_sprite_get_xscale ' +
+      'layer_sprite_get_yscale layer_sprite_get_angle ' +
+      'layer_sprite_get_blend layer_sprite_get_alpha layer_sprite_get_x ' +
+      'layer_sprite_get_y layer_tilemap_get_id layer_tilemap_exists ' +
+      'layer_tilemap_create layer_tilemap_destroy tilemap_tileset tilemap_x ' +
+      'tilemap_y tilemap_set tilemap_set_at_pixel tilemap_get_tileset ' +
+      'tilemap_get_tile_width tilemap_get_tile_height tilemap_get_width ' +
+      'tilemap_get_height tilemap_get_x tilemap_get_y tilemap_get ' +
+      'tilemap_get_at_pixel tilemap_get_cell_x_at_pixel ' +
+      'tilemap_get_cell_y_at_pixel tilemap_clear draw_tilemap draw_tile ' +
+      'tilemap_set_global_mask tilemap_get_global_mask tilemap_set_mask ' +
+      'tilemap_get_mask tilemap_get_frame tile_set_empty tile_set_index ' +
+      'tile_set_flip tile_set_mirror tile_set_rotate tile_get_empty ' +
+      'tile_get_index tile_get_flip tile_get_mirror tile_get_rotate ' +
+      'layer_tile_exists layer_tile_create layer_tile_destroy ' +
+      'layer_tile_change layer_tile_xscale layer_tile_yscale ' +
+      'layer_tile_blend layer_tile_alpha layer_tile_x layer_tile_y ' +
+      'layer_tile_region layer_tile_visible layer_tile_get_sprite ' +
+      'layer_tile_get_xscale layer_tile_get_yscale layer_tile_get_blend ' +
+      'layer_tile_get_alpha layer_tile_get_x layer_tile_get_y ' +
+      'layer_tile_get_region layer_tile_get_visible ' +
+      'layer_instance_get_instance instance_activate_layer ' +
+      'instance_deactivate_layer camera_create camera_create_view ' +
+      'camera_destroy camera_apply camera_get_active camera_get_default ' +
+      'camera_set_default camera_set_view_mat camera_set_proj_mat ' +
+      'camera_set_update_script camera_set_begin_script ' +
+      'camera_set_end_script camera_set_view_pos camera_set_view_size ' +
+      'camera_set_view_speed camera_set_view_border camera_set_view_angle ' +
+      'camera_set_view_target camera_get_view_mat camera_get_proj_mat ' +
+      'camera_get_update_script camera_get_begin_script ' +
+      'camera_get_end_script camera_get_view_x camera_get_view_y ' +
+      'camera_get_view_width camera_get_view_height camera_get_view_speed_x ' +
+      'camera_get_view_speed_y camera_get_view_border_x ' +
+      'camera_get_view_border_y camera_get_view_angle ' +
+      'camera_get_view_target view_get_camera view_get_visible ' +
+      'view_get_xport view_get_yport view_get_wport view_get_hport ' +
+      'view_get_surface_id view_set_camera view_set_visible view_set_xport ' +
+      'view_set_yport view_set_wport view_set_hport view_set_surface_id ' +
+      'gesture_drag_time gesture_drag_distance gesture_flick_speed ' +
+      'gesture_double_tap_time gesture_double_tap_distance ' +
+      'gesture_pinch_distance gesture_pinch_angle_towards ' +
+      'gesture_pinch_angle_away gesture_rotate_time gesture_rotate_angle ' +
+      'gesture_tap_count gesture_get_drag_time gesture_get_drag_distance ' +
+      'gesture_get_flick_speed gesture_get_double_tap_time ' +
+      'gesture_get_double_tap_distance gesture_get_pinch_distance ' +
+      'gesture_get_pinch_angle_towards gesture_get_pinch_angle_away ' +
+      'gesture_get_rotate_time gesture_get_rotate_angle ' +
+      'gesture_get_tap_count keyboard_virtual_show keyboard_virtual_hide ' +
+      'keyboard_virtual_status keyboard_virtual_height',
+    literal: 'self other all noone global local undefined pointer_invalid ' +
+      'pointer_null path_action_stop path_action_restart ' +
+      'path_action_continue path_action_reverse true false pi GM_build_date ' +
+      'GM_version GM_runtime_version  timezone_local timezone_utc ' +
+      'gamespeed_fps gamespeed_microseconds  ev_create ev_destroy ev_step ' +
+      'ev_alarm ev_keyboard ev_mouse ev_collision ev_other ev_draw ' +
+      'ev_draw_begin ev_draw_end ev_draw_pre ev_draw_post ev_keypress ' +
+      'ev_keyrelease ev_trigger ev_left_button ev_right_button ' +
+      'ev_middle_button ev_no_button ev_left_press ev_right_press ' +
+      'ev_middle_press ev_left_release ev_right_release ev_middle_release ' +
+      'ev_mouse_enter ev_mouse_leave ev_mouse_wheel_up ev_mouse_wheel_down ' +
+      'ev_global_left_button ev_global_right_button ev_global_middle_button ' +
+      'ev_global_left_press ev_global_right_press ev_global_middle_press ' +
+      'ev_global_left_release ev_global_right_release ' +
+      'ev_global_middle_release ev_joystick1_left ev_joystick1_right ' +
+      'ev_joystick1_up ev_joystick1_down ev_joystick1_button1 ' +
+      'ev_joystick1_button2 ev_joystick1_button3 ev_joystick1_button4 ' +
+      'ev_joystick1_button5 ev_joystick1_button6 ev_joystick1_button7 ' +
+      'ev_joystick1_button8 ev_joystick2_left ev_joystick2_right ' +
+      'ev_joystick2_up ev_joystick2_down ev_joystick2_button1 ' +
+      'ev_joystick2_button2 ev_joystick2_button3 ev_joystick2_button4 ' +
+      'ev_joystick2_button5 ev_joystick2_button6 ev_joystick2_button7 ' +
+      'ev_joystick2_button8 ev_outside ev_boundary ev_game_start ' +
+      'ev_game_end ev_room_start ev_room_end ev_no_more_lives ' +
+      'ev_animation_end ev_end_of_path ev_no_more_health ev_close_button ' +
+      'ev_user0 ev_user1 ev_user2 ev_user3 ev_user4 ev_user5 ev_user6 ' +
+      'ev_user7 ev_user8 ev_user9 ev_user10 ev_user11 ev_user12 ev_user13 ' +
+      'ev_user14 ev_user15 ev_step_normal ev_step_begin ev_step_end ev_gui ' +
+      'ev_gui_begin ev_gui_end ev_cleanup ev_gesture ev_gesture_tap ' +
+      'ev_gesture_double_tap ev_gesture_drag_start ev_gesture_dragging ' +
+      'ev_gesture_drag_end ev_gesture_flick ev_gesture_pinch_start ' +
+      'ev_gesture_pinch_in ev_gesture_pinch_out ev_gesture_pinch_end ' +
+      'ev_gesture_rotate_start ev_gesture_rotating ev_gesture_rotate_end ' +
+      'ev_global_gesture_tap ev_global_gesture_double_tap ' +
+      'ev_global_gesture_drag_start ev_global_gesture_dragging ' +
+      'ev_global_gesture_drag_end ev_global_gesture_flick ' +
+      'ev_global_gesture_pinch_start ev_global_gesture_pinch_in ' +
+      'ev_global_gesture_pinch_out ev_global_gesture_pinch_end ' +
+      'ev_global_gesture_rotate_start ev_global_gesture_rotating ' +
+      'ev_global_gesture_rotate_end vk_nokey vk_anykey vk_enter vk_return ' +
+      'vk_shift vk_control vk_alt vk_escape vk_space vk_backspace vk_tab ' +
+      'vk_pause vk_printscreen vk_left vk_right vk_up vk_down vk_home ' +
+      'vk_end vk_delete vk_insert vk_pageup vk_pagedown vk_f1 vk_f2 vk_f3 ' +
+      'vk_f4 vk_f5 vk_f6 vk_f7 vk_f8 vk_f9 vk_f10 vk_f11 vk_f12 vk_numpad0 ' +
+      'vk_numpad1 vk_numpad2 vk_numpad3 vk_numpad4 vk_numpad5 vk_numpad6 ' +
+      'vk_numpad7 vk_numpad8 vk_numpad9 vk_divide vk_multiply vk_subtract ' +
+      'vk_add vk_decimal vk_lshift vk_lcontrol vk_lalt vk_rshift ' +
+      'vk_rcontrol vk_ralt  mb_any mb_none mb_left mb_right mb_middle ' +
+      'c_aqua c_black c_blue c_dkgray c_fuchsia c_gray c_green c_lime ' +
+      'c_ltgray c_maroon c_navy c_olive c_purple c_red c_silver c_teal ' +
+      'c_white c_yellow c_orange fa_left fa_center fa_right fa_top ' +
+      'fa_middle fa_bottom pr_pointlist pr_linelist pr_linestrip ' +
+      'pr_trianglelist pr_trianglestrip pr_trianglefan bm_complex bm_normal ' +
+      'bm_add bm_max bm_subtract bm_zero bm_one bm_src_colour ' +
+      'bm_inv_src_colour bm_src_color bm_inv_src_color bm_src_alpha ' +
+      'bm_inv_src_alpha bm_dest_alpha bm_inv_dest_alpha bm_dest_colour ' +
+      'bm_inv_dest_colour bm_dest_color bm_inv_dest_color bm_src_alpha_sat ' +
+      'tf_point tf_linear tf_anisotropic mip_off mip_on mip_markedonly ' +
+      'audio_falloff_none audio_falloff_inverse_distance ' +
+      'audio_falloff_inverse_distance_clamped audio_falloff_linear_distance ' +
+      'audio_falloff_linear_distance_clamped ' +
+      'audio_falloff_exponent_distance ' +
+      'audio_falloff_exponent_distance_clamped audio_old_system ' +
+      'audio_new_system audio_mono audio_stereo audio_3d cr_default cr_none ' +
+      'cr_arrow cr_cross cr_beam cr_size_nesw cr_size_ns cr_size_nwse ' +
+      'cr_size_we cr_uparrow cr_hourglass cr_drag cr_appstart cr_handpoint ' +
+      'cr_size_all spritespeed_framespersecond ' +
+      'spritespeed_framespergameframe asset_object asset_unknown ' +
+      'asset_sprite asset_sound asset_room asset_path asset_script ' +
+      'asset_font asset_timeline asset_tiles asset_shader fa_readonly ' +
+      'fa_hidden fa_sysfile fa_volumeid fa_directory fa_archive  ' +
+      'ds_type_map ds_type_list ds_type_stack ds_type_queue ds_type_grid ' +
+      'ds_type_priority ef_explosion ef_ring ef_ellipse ef_firework ' +
+      'ef_smoke ef_smokeup ef_star ef_spark ef_flare ef_cloud ef_rain ' +
+      'ef_snow pt_shape_pixel pt_shape_disk pt_shape_square pt_shape_line ' +
+      'pt_shape_star pt_shape_circle pt_shape_ring pt_shape_sphere ' +
+      'pt_shape_flare pt_shape_spark pt_shape_explosion pt_shape_cloud ' +
+      'pt_shape_smoke pt_shape_snow ps_distr_linear ps_distr_gaussian ' +
+      'ps_distr_invgaussian ps_shape_rectangle ps_shape_ellipse ' +
+      'ps_shape_diamond ps_shape_line ty_real ty_string dll_cdecl ' +
+      'dll_stdcall matrix_view matrix_projection matrix_world os_win32 ' +
+      'os_windows os_macosx os_ios os_android os_symbian os_linux ' +
+      'os_unknown os_winphone os_tizen os_win8native ' +
+      'os_wiiu os_3ds  os_psvita os_bb10 os_ps4 os_xboxone ' +
+      'os_ps3 os_xbox360 os_uwp os_tvos os_switch ' +
+      'browser_not_a_browser browser_unknown browser_ie browser_firefox ' +
+      'browser_chrome browser_safari browser_safari_mobile browser_opera ' +
+      'browser_tizen browser_edge browser_windows_store browser_ie_mobile  ' +
+      'device_ios_unknown device_ios_iphone device_ios_iphone_retina ' +
+      'device_ios_ipad device_ios_ipad_retina device_ios_iphone5 ' +
+      'device_ios_iphone6 device_ios_iphone6plus device_emulator ' +
+      'device_tablet display_landscape display_landscape_flipped ' +
+      'display_portrait display_portrait_flipped tm_sleep tm_countvsyncs ' +
+      'of_challenge_win of_challen ge_lose of_challenge_tie ' +
+      'leaderboard_type_number leaderboard_type_time_mins_secs ' +
+      'cmpfunc_never cmpfunc_less cmpfunc_equal cmpfunc_lessequal ' +
+      'cmpfunc_greater cmpfunc_notequal cmpfunc_greaterequal cmpfunc_always ' +
+      'cull_noculling cull_clockwise cull_counterclockwise lighttype_dir ' +
+      'lighttype_point iap_ev_storeload iap_ev_product iap_ev_purchase ' +
+      'iap_ev_consume iap_ev_restore iap_storeload_ok iap_storeload_failed ' +
+      'iap_status_uninitialised iap_status_unavailable iap_status_loading ' +
+      'iap_status_available iap_status_processing iap_status_restoring ' +
+      'iap_failed iap_unavailable iap_available iap_purchased iap_canceled ' +
+      'iap_refunded fb_login_default fb_login_fallback_to_webview ' +
+      'fb_login_no_fallback_to_webview fb_login_forcing_webview ' +
+      'fb_login_use_system_account fb_login_forcing_safari  ' +
+      'phy_joint_anchor_1_x phy_joint_anchor_1_y phy_joint_anchor_2_x ' +
+      'phy_joint_anchor_2_y phy_joint_reaction_force_x ' +
+      'phy_joint_reaction_force_y phy_joint_reaction_torque ' +
+      'phy_joint_motor_speed phy_joint_angle phy_joint_motor_torque ' +
+      'phy_joint_max_motor_torque phy_joint_translation phy_joint_speed ' +
+      'phy_joint_motor_force phy_joint_max_motor_force phy_joint_length_1 ' +
+      'phy_joint_length_2 phy_joint_damping_ratio phy_joint_frequency ' +
+      'phy_joint_lower_angle_limit phy_joint_upper_angle_limit ' +
+      'phy_joint_angle_limits phy_joint_max_length phy_joint_max_torque ' +
+      'phy_joint_max_force phy_debug_render_aabb ' +
+      'phy_debug_render_collision_pairs phy_debug_render_coms ' +
+      'phy_debug_render_core_shapes phy_debug_render_joints ' +
+      'phy_debug_render_obb phy_debug_render_shapes  ' +
+      'phy_particle_flag_water phy_particle_flag_zombie ' +
+      'phy_particle_flag_wall phy_particle_flag_spring ' +
+      'phy_particle_flag_elastic phy_particle_flag_viscous ' +
+      'phy_particle_flag_powder phy_particle_flag_tensile ' +
+      'phy_particle_flag_colourmixing phy_particle_flag_colormixing ' +
+      'phy_particle_group_flag_solid phy_particle_group_flag_rigid ' +
+      'phy_particle_data_flag_typeflags phy_particle_data_flag_position ' +
+      'phy_particle_data_flag_velocity phy_particle_data_flag_colour ' +
+      'phy_particle_data_flag_color phy_particle_data_flag_category  ' +
+      'achievement_our_info achievement_friends_info ' +
+      'achievement_leaderboard_info achievement_achievement_info ' +
+      'achievement_filter_all_players achievement_filter_friends_only ' +
+      'achievement_filter_favorites_only ' +
+      'achievement_type_achievement_challenge ' +
+      'achievement_type_score_challenge achievement_pic_loaded  ' +
+      'achievement_show_ui achievement_show_profile ' +
+      'achievement_show_leaderboard achievement_show_achievement ' +
+      'achievement_show_bank achievement_show_friend_picker ' +
+      'achievement_show_purchase_prompt network_socket_tcp ' +
+      'network_socket_udp network_socket_bluetooth network_type_connect ' +
+      'network_type_disconnect network_type_data ' +
+      'network_type_non_blocking_connect network_config_connect_timeout ' +
+      'network_config_use_non_blocking_socket ' +
+      'network_config_enable_reliable_udp ' +
+      'network_config_disable_reliable_udp buffer_fixed buffer_grow ' +
+      'buffer_wrap buffer_fast buffer_vbuffer buffer_network buffer_u8 ' +
+      'buffer_s8 buffer_u16 buffer_s16 buffer_u32 buffer_s32 buffer_u64 ' +
+      'buffer_f16 buffer_f32 buffer_f64 buffer_bool buffer_text ' +
+      'buffer_string buffer_surface_copy buffer_seek_start ' +
+      'buffer_seek_relative buffer_seek_end ' +
+      'buffer_generalerror buffer_outofspace buffer_outofbounds ' +
+      'buffer_invalidtype  text_type button_type input_type ANSI_CHARSET ' +
+      'DEFAULT_CHARSET EASTEUROPE_CHARSET RUSSIAN_CHARSET SYMBOL_CHARSET ' +
+      'SHIFTJIS_CHARSET HANGEUL_CHARSET GB2312_CHARSET CHINESEBIG5_CHARSET ' +
+      'JOHAB_CHARSET HEBREW_CHARSET ARABIC_CHARSET GREEK_CHARSET ' +
+      'TURKISH_CHARSET VIETNAMESE_CHARSET THAI_CHARSET MAC_CHARSET ' +
+      'BALTIC_CHARSET OEM_CHARSET  gp_face1 gp_face2 gp_face3 gp_face4 ' +
+      'gp_shoulderl gp_shoulderr gp_shoulderlb gp_shoulderrb gp_select ' +
+      'gp_start gp_stickl gp_stickr gp_padu gp_padd gp_padl gp_padr ' +
+      'gp_axislh gp_axislv gp_axisrh gp_axisrv ov_friends ov_community ' +
+      'ov_players ov_settings ov_gamegroup ov_achievements lb_sort_none ' +
+      'lb_sort_ascending lb_sort_descending lb_disp_none lb_disp_numeric ' +
+      'lb_disp_time_sec lb_disp_time_ms ugc_result_success ' +
+      'ugc_filetype_community ugc_filetype_microtrans ugc_visibility_public ' +
+      'ugc_visibility_friends_only ugc_visibility_private ' +
+      'ugc_query_RankedByVote ugc_query_RankedByPublicationDate ' +
+      'ugc_query_AcceptedForGameRankedByAcceptanceDate ' +
+      'ugc_query_RankedByTrend ' +
+      'ugc_query_FavoritedByFriendsRankedByPublicationDate ' +
+      'ugc_query_CreatedByFriendsRankedByPublicationDate ' +
+      'ugc_query_RankedByNumTimesReported ' +
+      'ugc_query_CreatedByFollowedUsersRankedByPublicationDate ' +
+      'ugc_query_NotYetRated ugc_query_RankedByTotalVotesAsc ' +
+      'ugc_query_RankedByVotesUp ugc_query_RankedByTextSearch ' +
+      'ugc_sortorder_CreationOrderDesc ugc_sortorder_CreationOrderAsc ' +
+      'ugc_sortorder_TitleAsc ugc_sortorder_LastUpdatedDesc ' +
+      'ugc_sortorder_SubscriptionDateDesc ugc_sortorder_VoteScoreDesc ' +
+      'ugc_sortorder_ForModeration ugc_list_Published ugc_list_VotedOn ' +
+      'ugc_list_VotedUp ugc_list_VotedDown ugc_list_WillVoteLater ' +
+      'ugc_list_Favorited ugc_list_Subscribed ugc_list_UsedOrPlayed ' +
+      'ugc_list_Followed ugc_match_Items ugc_match_Items_Mtx ' +
+      'ugc_match_Items_ReadyToUse ugc_match_Collections ugc_match_Artwork ' +
+      'ugc_match_Videos ugc_match_Screenshots ugc_match_AllGuides ' +
+      'ugc_match_WebGuides ugc_match_IntegratedGuides ' +
+      'ugc_match_UsableInGame ugc_match_ControllerBindings  ' +
+      'vertex_usage_position vertex_usage_colour vertex_usage_color ' +
+      'vertex_usage_normal vertex_usage_texcoord vertex_usage_textcoord ' +
+      'vertex_usage_blendweight vertex_usage_blendindices ' +
+      'vertex_usage_psize vertex_usage_tangent vertex_usage_binormal ' +
+      'vertex_usage_fog vertex_usage_depth vertex_usage_sample ' +
+      'vertex_type_float1 vertex_type_float2 vertex_type_float3 ' +
+      'vertex_type_float4 vertex_type_colour vertex_type_color ' +
+      'vertex_type_ubyte4 layerelementtype_undefined ' +
+      'layerelementtype_background layerelementtype_instance ' +
+      'layerelementtype_oldtilemap layerelementtype_sprite ' +
+      'layerelementtype_tilemap layerelementtype_particlesystem ' +
+      'layerelementtype_tile tile_rotate tile_flip tile_mirror ' +
+      'tile_index_mask kbv_type_default kbv_type_ascii kbv_type_url ' +
+      'kbv_type_email kbv_type_numbers kbv_type_phone kbv_type_phone_name ' +
+      'kbv_returnkey_default kbv_returnkey_go kbv_returnkey_google ' +
+      'kbv_returnkey_join kbv_returnkey_next kbv_returnkey_route ' +
+      'kbv_returnkey_search kbv_returnkey_send kbv_returnkey_yahoo ' +
+      'kbv_returnkey_done kbv_returnkey_continue kbv_returnkey_emergency ' +
+      'kbv_autocapitalize_none kbv_autocapitalize_words ' +
+      'kbv_autocapitalize_sentences kbv_autocapitalize_characters',
+    symbol: 'argument_relative argument argument0 argument1 argument2 ' +
+      'argument3 argument4 argument5 argument6 argument7 argument8 ' +
+      'argument9 argument10 argument11 argument12 argument13 argument14 ' +
+      'argument15 argument_count x y xprevious yprevious xstart ystart ' +
+      'hspeed vspeed direction speed friction gravity gravity_direction ' +
+      'path_index path_position path_positionprevious path_speed ' +
+      'path_scale path_orientation path_endaction object_index id solid ' +
+      'persistent mask_index instance_count instance_id room_speed fps ' +
+      'fps_real current_time current_year current_month current_day ' +
+      'current_weekday current_hour current_minute current_second alarm ' +
+      'timeline_index timeline_position timeline_speed timeline_running ' +
+      'timeline_loop room room_first room_last room_width room_height ' +
+      'room_caption room_persistent score lives health show_score ' +
+      'show_lives show_health caption_score caption_lives caption_health ' +
+      'event_type event_number event_object event_action ' +
+      'application_surface gamemaker_pro gamemaker_registered ' +
+      'gamemaker_version error_occurred error_last debug_mode ' +
+      'keyboard_key keyboard_lastkey keyboard_lastchar keyboard_string ' +
+      'mouse_x mouse_y mouse_button mouse_lastbutton cursor_sprite ' +
+      'visible sprite_index sprite_width sprite_height sprite_xoffset ' +
+      'sprite_yoffset image_number image_index image_speed depth ' +
+      'image_xscale image_yscale image_angle image_alpha image_blend ' +
+      'bbox_left bbox_right bbox_top bbox_bottom layer background_colour  ' +
+      'background_showcolour background_color background_showcolor ' +
+      'view_enabled view_current view_visible view_xview view_yview ' +
+      'view_wview view_hview view_xport view_yport view_wport view_hport ' +
+      'view_angle view_hborder view_vborder view_hspeed view_vspeed ' +
+      'view_object view_surface_id view_camera game_id game_display_name ' +
+      'game_project_name game_save_id working_directory temp_directory ' +
+      'program_directory browser_width browser_height os_type os_device ' +
+      'os_browser os_version display_aa async_load delta_time ' +
+      'webgl_enabled event_data iap_data phy_rotation phy_position_x ' +
+      'phy_position_y phy_angular_velocity phy_linear_velocity_x ' +
+      'phy_linear_velocity_y phy_speed_x phy_speed_y phy_speed ' +
+      'phy_angular_damping phy_linear_damping phy_bullet ' +
+      'phy_fixed_rotation phy_active phy_mass phy_inertia phy_com_x ' +
+      'phy_com_y phy_dynamic phy_kinematic phy_sleeping ' +
+      'phy_collision_points phy_collision_x phy_collision_y ' +
+      'phy_col_normal_x phy_col_normal_y phy_position_xprevious ' +
+      'phy_position_yprevious'
+  };
+
+  return {
+    aliases: ['gml', 'GML'],
+    case_insensitive: false, // language is case-insensitive
+    keywords: GML_KEYWORDS,
+
+    contains: [
+      hljs.C_LINE_COMMENT_MODE,
+      hljs.C_BLOCK_COMMENT_MODE,
+      hljs.APOS_STRING_MODE,
+      hljs.QUOTE_STRING_MODE,
+      hljs.C_NUMBER_MODE
+    ]
+  };
+};
+
+/***/ }),
+/* 163 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -18124,7 +19179,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 162 */
+/* 164 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -18151,7 +19206,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 163 */
+/* 165 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -18190,7 +19245,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 164 */
+/* 166 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -18288,7 +19343,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 165 */
+/* 167 */
 /***/ (function(module, exports) {
 
 module.exports = // TODO support filter tags like :javascript, support inline HTML
@@ -18399,7 +19454,7 @@ function(hljs) {
 };
 
 /***/ }),
-/* 166 */
+/* 168 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -18437,7 +19492,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 167 */
+/* 169 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -18563,7 +19618,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 168 */
+/* 170 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -18679,7 +19734,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 169 */
+/* 171 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -18729,7 +19784,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 170 */
+/* 172 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -18804,7 +19859,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 171 */
+/* 173 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -18849,7 +19904,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 172 */
+/* 174 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -18955,7 +20010,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 173 */
+/* 175 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -19016,7 +20071,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 174 */
+/* 176 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -19049,17 +20104,19 @@ module.exports = function(hljs) {
         begin: /^\s*\[+/, end: /\]+/
       },
       {
-        begin: /^[a-z0-9\[\]_-]+\s*=\s*/, end: '$',
+        begin: /^[a-z0-9\[\]_\.-]+\s*=\s*/, end: '$',
         returnBegin: true,
         contains: [
           {
             className: 'attr',
-            begin: /[a-z0-9\[\]_-]+/
+            begin: /[a-z0-9\[\]_\.-]+/
           },
           {
             begin: /=/, endsWithParent: true,
             relevance: 0,
             contains: [
+              hljs.COMMENT(';', '$'),
+              hljs.HASH_COMMENT_MODE,
               {
                 className: 'literal',
                 begin: /\bon|off|true|false|yes|no\b/
@@ -19086,7 +20143,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 175 */
+/* 177 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -19166,14 +20223,3191 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 176 */
+/* 178 */
+/***/ (function(module, exports) {
+
+module.exports = function(hljs) {
+  // Определение идентификаторов
+  var UNDERSCORE_IDENT_RE = "[A-Za-zА-Яа-яёЁ_!][A-Za-zА-Яа-яёЁ_0-9]*";
+
+  // Определение имен функций
+  var FUNCTION_NAME_IDENT_RE = "[A-Za-zА-Яа-яёЁ_][A-Za-zА-Яа-яёЁ_0-9]*";
+
+  // keyword : ключевые слова
+  var KEYWORD =
+    "and и else иначе endexcept endfinally endforeach конецвсе endif конецесли endwhile конецпока " +
+    "except exitfor finally foreach все if если in в not не or или try while пока ";
+
+  // SYSRES Constants
+  var sysres_constants =
+    "SYSRES_CONST_ACCES_RIGHT_TYPE_EDIT " +
+    "SYSRES_CONST_ACCES_RIGHT_TYPE_FULL " +
+    "SYSRES_CONST_ACCES_RIGHT_TYPE_VIEW " +
+    "SYSRES_CONST_ACCESS_MODE_REQUISITE_CODE " +
+    "SYSRES_CONST_ACCESS_NO_ACCESS_VIEW " +
+    "SYSRES_CONST_ACCESS_NO_ACCESS_VIEW_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_ADD_REQUISITE_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_ADD_REQUISITE_YES_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_CHANGE_REQUISITE_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_CHANGE_REQUISITE_YES_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_DELETE_REQUISITE_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_DELETE_REQUISITE_YES_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_EXECUTE_REQUISITE_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_EXECUTE_REQUISITE_YES_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_NO_ACCESS_REQUISITE_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_NO_ACCESS_REQUISITE_YES_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_RATIFY_REQUISITE_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_RATIFY_REQUISITE_YES_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_REQUISITE_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_VIEW " +
+    "SYSRES_CONST_ACCESS_RIGHTS_VIEW_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_VIEW_REQUISITE_CODE " +
+    "SYSRES_CONST_ACCESS_RIGHTS_VIEW_REQUISITE_YES_CODE " +
+    "SYSRES_CONST_ACCESS_TYPE_CHANGE " +
+    "SYSRES_CONST_ACCESS_TYPE_CHANGE_CODE " +
+    "SYSRES_CONST_ACCESS_TYPE_EXISTS " +
+    "SYSRES_CONST_ACCESS_TYPE_EXISTS_CODE " +
+    "SYSRES_CONST_ACCESS_TYPE_FULL " +
+    "SYSRES_CONST_ACCESS_TYPE_FULL_CODE " +
+    "SYSRES_CONST_ACCESS_TYPE_VIEW " +
+    "SYSRES_CONST_ACCESS_TYPE_VIEW_CODE " +
+    "SYSRES_CONST_ACTION_TYPE_ABORT " +
+    "SYSRES_CONST_ACTION_TYPE_ACCEPT " +
+    "SYSRES_CONST_ACTION_TYPE_ACCESS_RIGHTS " +
+    "SYSRES_CONST_ACTION_TYPE_ADD_ATTACHMENT " +
+    "SYSRES_CONST_ACTION_TYPE_CHANGE_CARD " +
+    "SYSRES_CONST_ACTION_TYPE_CHANGE_KIND " +
+    "SYSRES_CONST_ACTION_TYPE_CHANGE_STORAGE " +
+    "SYSRES_CONST_ACTION_TYPE_CONTINUE " +
+    "SYSRES_CONST_ACTION_TYPE_COPY " +
+    "SYSRES_CONST_ACTION_TYPE_CREATE " +
+    "SYSRES_CONST_ACTION_TYPE_CREATE_VERSION " +
+    "SYSRES_CONST_ACTION_TYPE_DELETE " +
+    "SYSRES_CONST_ACTION_TYPE_DELETE_ATTACHMENT " +
+    "SYSRES_CONST_ACTION_TYPE_DELETE_VERSION " +
+    "SYSRES_CONST_ACTION_TYPE_DISABLE_DELEGATE_ACCESS_RIGHTS " +
+    "SYSRES_CONST_ACTION_TYPE_ENABLE_DELEGATE_ACCESS_RIGHTS " +
+    "SYSRES_CONST_ACTION_TYPE_ENCRYPTION_BY_CERTIFICATE " +
+    "SYSRES_CONST_ACTION_TYPE_ENCRYPTION_BY_CERTIFICATE_AND_PASSWORD " +
+    "SYSRES_CONST_ACTION_TYPE_ENCRYPTION_BY_PASSWORD " +
+    "SYSRES_CONST_ACTION_TYPE_EXPORT_WITH_LOCK " +
+    "SYSRES_CONST_ACTION_TYPE_EXPORT_WITHOUT_LOCK " +
+    "SYSRES_CONST_ACTION_TYPE_IMPORT_WITH_UNLOCK " +
+    "SYSRES_CONST_ACTION_TYPE_IMPORT_WITHOUT_UNLOCK " +
+    "SYSRES_CONST_ACTION_TYPE_LIFE_CYCLE_STAGE " +
+    "SYSRES_CONST_ACTION_TYPE_LOCK " +
+    "SYSRES_CONST_ACTION_TYPE_LOCK_FOR_SERVER " +
+    "SYSRES_CONST_ACTION_TYPE_LOCK_MODIFY " +
+    "SYSRES_CONST_ACTION_TYPE_MARK_AS_READED " +
+    "SYSRES_CONST_ACTION_TYPE_MARK_AS_UNREADED " +
+    "SYSRES_CONST_ACTION_TYPE_MODIFY " +
+    "SYSRES_CONST_ACTION_TYPE_MODIFY_CARD " +
+    "SYSRES_CONST_ACTION_TYPE_MOVE_TO_ARCHIVE " +
+    "SYSRES_CONST_ACTION_TYPE_OFF_ENCRYPTION " +
+    "SYSRES_CONST_ACTION_TYPE_PASSWORD_CHANGE " +
+    "SYSRES_CONST_ACTION_TYPE_PERFORM " +
+    "SYSRES_CONST_ACTION_TYPE_RECOVER_FROM_LOCAL_COPY " +
+    "SYSRES_CONST_ACTION_TYPE_RESTART " +
+    "SYSRES_CONST_ACTION_TYPE_RESTORE_FROM_ARCHIVE " +
+    "SYSRES_CONST_ACTION_TYPE_REVISION " +
+    "SYSRES_CONST_ACTION_TYPE_SEND_BY_MAIL " +
+    "SYSRES_CONST_ACTION_TYPE_SIGN " +
+    "SYSRES_CONST_ACTION_TYPE_START " +
+    "SYSRES_CONST_ACTION_TYPE_UNLOCK " +
+    "SYSRES_CONST_ACTION_TYPE_UNLOCK_FROM_SERVER " +
+    "SYSRES_CONST_ACTION_TYPE_VERSION_STATE " +
+    "SYSRES_CONST_ACTION_TYPE_VERSION_VISIBILITY " +
+    "SYSRES_CONST_ACTION_TYPE_VIEW " +
+    "SYSRES_CONST_ACTION_TYPE_VIEW_SHADOW_COPY " +
+    "SYSRES_CONST_ACTION_TYPE_WORKFLOW_DESCRIPTION_MODIFY " +
+    "SYSRES_CONST_ACTION_TYPE_WRITE_HISTORY " +
+    "SYSRES_CONST_ACTIVE_VERSION_STATE_PICK_VALUE " +
+    "SYSRES_CONST_ADD_REFERENCE_MODE_NAME " +
+    "SYSRES_CONST_ADDITION_REQUISITE_CODE " +
+    "SYSRES_CONST_ADDITIONAL_PARAMS_REQUISITE_CODE " +
+    "SYSRES_CONST_ADITIONAL_JOB_END_DATE_REQUISITE_NAME " +
+    "SYSRES_CONST_ADITIONAL_JOB_READ_REQUISITE_NAME " +
+    "SYSRES_CONST_ADITIONAL_JOB_START_DATE_REQUISITE_NAME " +
+    "SYSRES_CONST_ADITIONAL_JOB_STATE_REQUISITE_NAME " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_ADDING_USER_TO_GROUP_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_ADDING_USER_TO_GROUP_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_CREATION_COMP_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_CREATION_COMP_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_CREATION_GROUP_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_CREATION_GROUP_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_CREATION_USER_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_CREATION_USER_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_DATABASE_USER_CREATION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_DATABASE_USER_CREATION_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_DATABASE_USER_DELETION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_DATABASE_USER_DELETION_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_DELETION_COMP_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_DELETION_COMP_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_DELETION_GROUP_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_DELETION_GROUP_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_DELETION_USER_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_DELETION_USER_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_DELETION_USER_FROM_GROUP_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_DELETION_USER_FROM_GROUP_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_GRANTING_FILTERER_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_GRANTING_FILTERER_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_GRANTING_FILTERER_RESTRICTION_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_GRANTING_FILTERER_RESTRICTION_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_GRANTING_PRIVILEGE_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_GRANTING_PRIVILEGE_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_GRANTING_RIGHTS_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_GRANTING_RIGHTS_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_IS_MAIN_SERVER_CHANGED_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_IS_MAIN_SERVER_CHANGED_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_IS_PUBLIC_CHANGED_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_IS_PUBLIC_CHANGED_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_REMOVING_FILTERER_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_REMOVING_FILTERER_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_REMOVING_FILTERER_RESTRICTION_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_REMOVING_FILTERER_RESTRICTION_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_REMOVING_PRIVILEGE_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_REMOVING_PRIVILEGE_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_REMOVING_RIGHTS_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_REMOVING_RIGHTS_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_SERVER_LOGIN_CREATION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_SERVER_LOGIN_CREATION_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_SERVER_LOGIN_DELETION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_SERVER_LOGIN_DELETION_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_CATEGORY_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_CATEGORY_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_COMP_TITLE_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_COMP_TITLE_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_FULL_NAME_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_FULL_NAME_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_GROUP_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_GROUP_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_PARENT_GROUP_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_PARENT_GROUP_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_USER_AUTH_TYPE_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_USER_AUTH_TYPE_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_USER_LOGIN_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_USER_LOGIN_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_USER_STATUS_ACTION " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_UPDATING_USER_STATUS_ACTION_CODE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_USER_PASSWORD_CHANGE " +
+    "SYSRES_CONST_ADMINISTRATION_HISTORY_USER_PASSWORD_CHANGE_ACTION " +
+    "SYSRES_CONST_ALL_ACCEPT_CONDITION_RUS " +
+    "SYSRES_CONST_ALL_USERS_GROUP " +
+    "SYSRES_CONST_ALL_USERS_GROUP_NAME " +
+    "SYSRES_CONST_ALL_USERS_SERVER_GROUP_NAME " +
+    "SYSRES_CONST_ALLOWED_ACCESS_TYPE_CODE " +
+    "SYSRES_CONST_ALLOWED_ACCESS_TYPE_NAME " +
+    "SYSRES_CONST_APP_VIEWER_TYPE_REQUISITE_CODE " +
+    "SYSRES_CONST_APPROVING_SIGNATURE_NAME " +
+    "SYSRES_CONST_APPROVING_SIGNATURE_REQUISITE_CODE " +
+    "SYSRES_CONST_ASSISTANT_SUBSTITUE_TYPE " +
+    "SYSRES_CONST_ASSISTANT_SUBSTITUE_TYPE_CODE " +
+    "SYSRES_CONST_ATTACH_TYPE_COMPONENT_TOKEN " +
+    "SYSRES_CONST_ATTACH_TYPE_DOC " +
+    "SYSRES_CONST_ATTACH_TYPE_EDOC " +
+    "SYSRES_CONST_ATTACH_TYPE_FOLDER " +
+    "SYSRES_CONST_ATTACH_TYPE_JOB " +
+    "SYSRES_CONST_ATTACH_TYPE_REFERENCE " +
+    "SYSRES_CONST_ATTACH_TYPE_TASK " +
+    "SYSRES_CONST_AUTH_ENCODED_PASSWORD " +
+    "SYSRES_CONST_AUTH_ENCODED_PASSWORD_CODE " +
+    "SYSRES_CONST_AUTH_NOVELL " +
+    "SYSRES_CONST_AUTH_PASSWORD " +
+    "SYSRES_CONST_AUTH_PASSWORD_CODE " +
+    "SYSRES_CONST_AUTH_WINDOWS " +
+    "SYSRES_CONST_AUTHENTICATING_SIGNATURE_NAME " +
+    "SYSRES_CONST_AUTHENTICATING_SIGNATURE_REQUISITE_CODE " +
+    "SYSRES_CONST_AUTO_ENUM_METHOD_FLAG " +
+    "SYSRES_CONST_AUTO_NUMERATION_CODE " +
+    "SYSRES_CONST_AUTO_STRONG_ENUM_METHOD_FLAG " +
+    "SYSRES_CONST_AUTOTEXT_NAME_REQUISITE_CODE " +
+    "SYSRES_CONST_AUTOTEXT_TEXT_REQUISITE_CODE " +
+    "SYSRES_CONST_AUTOTEXT_USAGE_ALL " +
+    "SYSRES_CONST_AUTOTEXT_USAGE_ALL_CODE " +
+    "SYSRES_CONST_AUTOTEXT_USAGE_SIGN " +
+    "SYSRES_CONST_AUTOTEXT_USAGE_SIGN_CODE " +
+    "SYSRES_CONST_AUTOTEXT_USAGE_WORK " +
+    "SYSRES_CONST_AUTOTEXT_USAGE_WORK_CODE " +
+    "SYSRES_CONST_AUTOTEXT_USE_ANYWHERE_CODE " +
+    "SYSRES_CONST_AUTOTEXT_USE_ON_SIGNING_CODE " +
+    "SYSRES_CONST_AUTOTEXT_USE_ON_WORK_CODE " +
+    "SYSRES_CONST_BEGIN_DATE_REQUISITE_CODE " +
+    "SYSRES_CONST_BLACK_LIFE_CYCLE_STAGE_FONT_COLOR " +
+    "SYSRES_CONST_BLUE_LIFE_CYCLE_STAGE_FONT_COLOR " +
+    "SYSRES_CONST_BTN_PART " +
+    "SYSRES_CONST_CALCULATED_ROLE_TYPE_CODE " +
+    "SYSRES_CONST_CALL_TYPE_VARIABLE_BUTTON_VALUE " +
+    "SYSRES_CONST_CALL_TYPE_VARIABLE_PROGRAM_VALUE " +
+    "SYSRES_CONST_CANCEL_MESSAGE_FUNCTION_RESULT " +
+    "SYSRES_CONST_CARD_PART " +
+    "SYSRES_CONST_CARD_REFERENCE_MODE_NAME " +
+    "SYSRES_CONST_CERTIFICATE_TYPE_REQUISITE_ENCRYPT_VALUE " +
+    "SYSRES_CONST_CERTIFICATE_TYPE_REQUISITE_SIGN_AND_ENCRYPT_VALUE " +
+    "SYSRES_CONST_CERTIFICATE_TYPE_REQUISITE_SIGN_VALUE " +
+    "SYSRES_CONST_CHECK_PARAM_VALUE_DATE_PARAM_TYPE " +
+    "SYSRES_CONST_CHECK_PARAM_VALUE_FLOAT_PARAM_TYPE " +
+    "SYSRES_CONST_CHECK_PARAM_VALUE_INTEGER_PARAM_TYPE " +
+    "SYSRES_CONST_CHECK_PARAM_VALUE_PICK_PARAM_TYPE " +
+    "SYSRES_CONST_CHECK_PARAM_VALUE_REEFRENCE_PARAM_TYPE " +
+    "SYSRES_CONST_CLOSED_RECORD_FLAG_VALUE_FEMININE " +
+    "SYSRES_CONST_CLOSED_RECORD_FLAG_VALUE_MASCULINE " +
+    "SYSRES_CONST_CODE_COMPONENT_TYPE_ADMIN " +
+    "SYSRES_CONST_CODE_COMPONENT_TYPE_DEVELOPER " +
+    "SYSRES_CONST_CODE_COMPONENT_TYPE_DOCS " +
+    "SYSRES_CONST_CODE_COMPONENT_TYPE_EDOC_CARDS " +
+    "SYSRES_CONST_CODE_COMPONENT_TYPE_EXTERNAL_EXECUTABLE " +
+    "SYSRES_CONST_CODE_COMPONENT_TYPE_OTHER " +
+    "SYSRES_CONST_CODE_COMPONENT_TYPE_REFERENCE " +
+    "SYSRES_CONST_CODE_COMPONENT_TYPE_REPORT " +
+    "SYSRES_CONST_CODE_COMPONENT_TYPE_SCRIPT " +
+    "SYSRES_CONST_CODE_COMPONENT_TYPE_URL " +
+    "SYSRES_CONST_CODE_REQUISITE_ACCESS " +
+    "SYSRES_CONST_CODE_REQUISITE_CODE " +
+    "SYSRES_CONST_CODE_REQUISITE_COMPONENT " +
+    "SYSRES_CONST_CODE_REQUISITE_DESCRIPTION " +
+    "SYSRES_CONST_CODE_REQUISITE_EXCLUDE_COMPONENT " +
+    "SYSRES_CONST_CODE_REQUISITE_RECORD " +
+    "SYSRES_CONST_COMMENT_REQ_CODE " +
+    "SYSRES_CONST_COMMON_SETTINGS_REQUISITE_CODE " +
+    "SYSRES_CONST_COMP_CODE_GRD " +
+    "SYSRES_CONST_COMPONENT_GROUP_TYPE_REQUISITE_CODE " +
+    "SYSRES_CONST_COMPONENT_TYPE_ADMIN_COMPONENTS " +
+    "SYSRES_CONST_COMPONENT_TYPE_DEVELOPER_COMPONENTS " +
+    "SYSRES_CONST_COMPONENT_TYPE_DOCS " +
+    "SYSRES_CONST_COMPONENT_TYPE_EDOC_CARDS " +
+    "SYSRES_CONST_COMPONENT_TYPE_EDOCS " +
+    "SYSRES_CONST_COMPONENT_TYPE_EXTERNAL_EXECUTABLE " +
+    "SYSRES_CONST_COMPONENT_TYPE_OTHER " +
+    "SYSRES_CONST_COMPONENT_TYPE_REFERENCE_TYPES " +
+    "SYSRES_CONST_COMPONENT_TYPE_REFERENCES " +
+    "SYSRES_CONST_COMPONENT_TYPE_REPORTS " +
+    "SYSRES_CONST_COMPONENT_TYPE_SCRIPTS " +
+    "SYSRES_CONST_COMPONENT_TYPE_URL " +
+    "SYSRES_CONST_COMPONENTS_REMOTE_SERVERS_VIEW_CODE " +
+    "SYSRES_CONST_CONDITION_BLOCK_DESCRIPTION " +
+    "SYSRES_CONST_CONST_FIRM_STATUS_COMMON " +
+    "SYSRES_CONST_CONST_FIRM_STATUS_INDIVIDUAL " +
+    "SYSRES_CONST_CONST_NEGATIVE_VALUE " +
+    "SYSRES_CONST_CONST_POSITIVE_VALUE " +
+    "SYSRES_CONST_CONST_SERVER_STATUS_DONT_REPLICATE " +
+    "SYSRES_CONST_CONST_SERVER_STATUS_REPLICATE " +
+    "SYSRES_CONST_CONTENTS_REQUISITE_CODE " +
+    "SYSRES_CONST_DATA_TYPE_BOOLEAN " +
+    "SYSRES_CONST_DATA_TYPE_DATE " +
+    "SYSRES_CONST_DATA_TYPE_FLOAT " +
+    "SYSRES_CONST_DATA_TYPE_INTEGER " +
+    "SYSRES_CONST_DATA_TYPE_PICK " +
+    "SYSRES_CONST_DATA_TYPE_REFERENCE " +
+    "SYSRES_CONST_DATA_TYPE_STRING " +
+    "SYSRES_CONST_DATA_TYPE_TEXT " +
+    "SYSRES_CONST_DATA_TYPE_VARIANT " +
+    "SYSRES_CONST_DATE_CLOSE_REQ_CODE " +
+    "SYSRES_CONST_DATE_FORMAT_DATE_ONLY_CHAR " +
+    "SYSRES_CONST_DATE_OPEN_REQ_CODE " +
+    "SYSRES_CONST_DATE_REQUISITE " +
+    "SYSRES_CONST_DATE_REQUISITE_CODE " +
+    "SYSRES_CONST_DATE_REQUISITE_NAME " +
+    "SYSRES_CONST_DATE_REQUISITE_TYPE " +
+    "SYSRES_CONST_DATE_TYPE_CHAR " +
+    "SYSRES_CONST_DATETIME_FORMAT_VALUE " +
+    "SYSRES_CONST_DEA_ACCESS_RIGHTS_ACTION_CODE " +
+    "SYSRES_CONST_DESCRIPTION_LOCALIZE_ID_REQUISITE_CODE " +
+    "SYSRES_CONST_DESCRIPTION_REQUISITE_CODE " +
+    "SYSRES_CONST_DET1_PART " +
+    "SYSRES_CONST_DET2_PART " +
+    "SYSRES_CONST_DET3_PART " +
+    "SYSRES_CONST_DET4_PART " +
+    "SYSRES_CONST_DET5_PART " +
+    "SYSRES_CONST_DET6_PART " +
+    "SYSRES_CONST_DETAIL_DATASET_KEY_REQUISITE_CODE " +
+    "SYSRES_CONST_DETAIL_PICK_REQUISITE_CODE " +
+    "SYSRES_CONST_DETAIL_REQ_CODE " +
+    "SYSRES_CONST_DO_NOT_USE_ACCESS_TYPE_CODE " +
+    "SYSRES_CONST_DO_NOT_USE_ACCESS_TYPE_NAME " +
+    "SYSRES_CONST_DO_NOT_USE_ON_VIEW_ACCESS_TYPE_CODE " +
+    "SYSRES_CONST_DO_NOT_USE_ON_VIEW_ACCESS_TYPE_NAME " +
+    "SYSRES_CONST_DOCUMENT_STORAGES_CODE " +
+    "SYSRES_CONST_DOCUMENT_TEMPLATES_TYPE_NAME " +
+    "SYSRES_CONST_DOUBLE_REQUISITE_CODE " +
+    "SYSRES_CONST_EDITOR_CLOSE_FILE_OBSERV_TYPE_CODE " +
+    "SYSRES_CONST_EDITOR_CLOSE_PROCESS_OBSERV_TYPE_CODE " +
+    "SYSRES_CONST_EDITOR_TYPE_REQUISITE_CODE " +
+    "SYSRES_CONST_EDITORS_APPLICATION_NAME_REQUISITE_CODE " +
+    "SYSRES_CONST_EDITORS_CREATE_SEVERAL_PROCESSES_REQUISITE_CODE " +
+    "SYSRES_CONST_EDITORS_EXTENSION_REQUISITE_CODE " +
+    "SYSRES_CONST_EDITORS_OBSERVER_BY_PROCESS_TYPE " +
+    "SYSRES_CONST_EDITORS_REFERENCE_CODE " +
+    "SYSRES_CONST_EDITORS_REPLACE_SPEC_CHARS_REQUISITE_CODE " +
+    "SYSRES_CONST_EDITORS_USE_PLUGINS_REQUISITE_CODE " +
+    "SYSRES_CONST_EDITORS_VIEW_DOCUMENT_OPENED_TO_EDIT_CODE " +
+    "SYSRES_CONST_EDOC_CARD_TYPE_REQUISITE_CODE " +
+    "SYSRES_CONST_EDOC_CARD_TYPES_LINK_REQUISITE_CODE " +
+    "SYSRES_CONST_EDOC_CERTIFICATE_AND_PASSWORD_ENCODE_CODE " +
+    "SYSRES_CONST_EDOC_CERTIFICATE_ENCODE_CODE " +
+    "SYSRES_CONST_EDOC_DATE_REQUISITE_CODE " +
+    "SYSRES_CONST_EDOC_KIND_REFERENCE_CODE " +
+    "SYSRES_CONST_EDOC_KINDS_BY_TEMPLATE_ACTION_CODE " +
+    "SYSRES_CONST_EDOC_MANAGE_ACCESS_CODE " +
+    "SYSRES_CONST_EDOC_NONE_ENCODE_CODE " +
+    "SYSRES_CONST_EDOC_NUMBER_REQUISITE_CODE " +
+    "SYSRES_CONST_EDOC_PASSWORD_ENCODE_CODE " +
+    "SYSRES_CONST_EDOC_READONLY_ACCESS_CODE " +
+    "SYSRES_CONST_EDOC_SHELL_LIFE_TYPE_VIEW_VALUE " +
+    "SYSRES_CONST_EDOC_SIZE_RESTRICTION_PRIORITY_REQUISITE_CODE " +
+    "SYSRES_CONST_EDOC_STORAGE_CHECK_ACCESS_RIGHTS_REQUISITE_CODE " +
+    "SYSRES_CONST_EDOC_STORAGE_COMPUTER_NAME_REQUISITE_CODE " +
+    "SYSRES_CONST_EDOC_STORAGE_DATABASE_NAME_REQUISITE_CODE " +
+    "SYSRES_CONST_EDOC_STORAGE_EDIT_IN_STORAGE_REQUISITE_CODE " +
+    "SYSRES_CONST_EDOC_STORAGE_LOCAL_PATH_REQUISITE_CODE " +
+    "SYSRES_CONST_EDOC_STORAGE_SHARED_SOURCE_NAME_REQUISITE_CODE " +
+    "SYSRES_CONST_EDOC_TEMPLATE_REQUISITE_CODE " +
+    "SYSRES_CONST_EDOC_TYPES_REFERENCE_CODE " +
+    "SYSRES_CONST_EDOC_VERSION_ACTIVE_STAGE_CODE " +
+    "SYSRES_CONST_EDOC_VERSION_DESIGN_STAGE_CODE " +
+    "SYSRES_CONST_EDOC_VERSION_OBSOLETE_STAGE_CODE " +
+    "SYSRES_CONST_EDOC_WRITE_ACCES_CODE " +
+    "SYSRES_CONST_EDOCUMENT_CARD_REQUISITES_REFERENCE_CODE_SELECTED_REQUISITE " +
+    "SYSRES_CONST_ENCODE_CERTIFICATE_TYPE_CODE " +
+    "SYSRES_CONST_END_DATE_REQUISITE_CODE " +
+    "SYSRES_CONST_ENUMERATION_TYPE_REQUISITE_CODE " +
+    "SYSRES_CONST_EXECUTE_ACCESS_RIGHTS_TYPE_CODE " +
+    "SYSRES_CONST_EXECUTIVE_FILE_STORAGE_TYPE " +
+    "SYSRES_CONST_EXIST_CONST " +
+    "SYSRES_CONST_EXIST_VALUE " +
+    "SYSRES_CONST_EXPORT_LOCK_TYPE_ASK " +
+    "SYSRES_CONST_EXPORT_LOCK_TYPE_WITH_LOCK " +
+    "SYSRES_CONST_EXPORT_LOCK_TYPE_WITHOUT_LOCK " +
+    "SYSRES_CONST_EXPORT_VERSION_TYPE_ASK " +
+    "SYSRES_CONST_EXPORT_VERSION_TYPE_LAST " +
+    "SYSRES_CONST_EXPORT_VERSION_TYPE_LAST_ACTIVE " +
+    "SYSRES_CONST_EXTENSION_REQUISITE_CODE " +
+    "SYSRES_CONST_FILTER_NAME_REQUISITE_CODE " +
+    "SYSRES_CONST_FILTER_REQUISITE_CODE " +
+    "SYSRES_CONST_FILTER_TYPE_COMMON_CODE " +
+    "SYSRES_CONST_FILTER_TYPE_COMMON_NAME " +
+    "SYSRES_CONST_FILTER_TYPE_USER_CODE " +
+    "SYSRES_CONST_FILTER_TYPE_USER_NAME " +
+    "SYSRES_CONST_FILTER_VALUE_REQUISITE_NAME " +
+    "SYSRES_CONST_FLOAT_NUMBER_FORMAT_CHAR " +
+    "SYSRES_CONST_FLOAT_REQUISITE_TYPE " +
+    "SYSRES_CONST_FOLDER_AUTHOR_VALUE " +
+    "SYSRES_CONST_FOLDER_KIND_ANY_OBJECTS " +
+    "SYSRES_CONST_FOLDER_KIND_COMPONENTS " +
+    "SYSRES_CONST_FOLDER_KIND_EDOCS " +
+    "SYSRES_CONST_FOLDER_KIND_JOBS " +
+    "SYSRES_CONST_FOLDER_KIND_TASKS " +
+    "SYSRES_CONST_FOLDER_TYPE_COMMON " +
+    "SYSRES_CONST_FOLDER_TYPE_COMPONENT " +
+    "SYSRES_CONST_FOLDER_TYPE_FAVORITES " +
+    "SYSRES_CONST_FOLDER_TYPE_INBOX " +
+    "SYSRES_CONST_FOLDER_TYPE_OUTBOX " +
+    "SYSRES_CONST_FOLDER_TYPE_QUICK_LAUNCH " +
+    "SYSRES_CONST_FOLDER_TYPE_SEARCH " +
+    "SYSRES_CONST_FOLDER_TYPE_SHORTCUTS " +
+    "SYSRES_CONST_FOLDER_TYPE_USER " +
+    "SYSRES_CONST_FROM_DICTIONARY_ENUM_METHOD_FLAG " +
+    "SYSRES_CONST_FULL_SUBSTITUTE_TYPE " +
+    "SYSRES_CONST_FULL_SUBSTITUTE_TYPE_CODE " +
+    "SYSRES_CONST_FUNCTION_CANCEL_RESULT " +
+    "SYSRES_CONST_FUNCTION_CATEGORY_SYSTEM " +
+    "SYSRES_CONST_FUNCTION_CATEGORY_USER " +
+    "SYSRES_CONST_FUNCTION_FAILURE_RESULT " +
+    "SYSRES_CONST_FUNCTION_SAVE_RESULT " +
+    "SYSRES_CONST_GENERATED_REQUISITE " +
+    "SYSRES_CONST_GREEN_LIFE_CYCLE_STAGE_FONT_COLOR " +
+    "SYSRES_CONST_GROUP_ACCOUNT_TYPE_VALUE_CODE " +
+    "SYSRES_CONST_GROUP_CATEGORY_NORMAL_CODE " +
+    "SYSRES_CONST_GROUP_CATEGORY_NORMAL_NAME " +
+    "SYSRES_CONST_GROUP_CATEGORY_SERVICE_CODE " +
+    "SYSRES_CONST_GROUP_CATEGORY_SERVICE_NAME " +
+    "SYSRES_CONST_GROUP_COMMON_CATEGORY_FIELD_VALUE " +
+    "SYSRES_CONST_GROUP_FULL_NAME_REQUISITE_CODE " +
+    "SYSRES_CONST_GROUP_NAME_REQUISITE_CODE " +
+    "SYSRES_CONST_GROUP_RIGHTS_T_REQUISITE_CODE " +
+    "SYSRES_CONST_GROUP_SERVER_CODES_REQUISITE_CODE " +
+    "SYSRES_CONST_GROUP_SERVER_NAME_REQUISITE_CODE " +
+    "SYSRES_CONST_GROUP_SERVICE_CATEGORY_FIELD_VALUE " +
+    "SYSRES_CONST_GROUP_USER_REQUISITE_CODE " +
+    "SYSRES_CONST_GROUPS_REFERENCE_CODE " +
+    "SYSRES_CONST_GROUPS_REQUISITE_CODE " +
+    "SYSRES_CONST_HIDDEN_MODE_NAME " +
+    "SYSRES_CONST_HIGH_LVL_REQUISITE_CODE " +
+    "SYSRES_CONST_HISTORY_ACTION_CREATE_CODE " +
+    "SYSRES_CONST_HISTORY_ACTION_DELETE_CODE " +
+    "SYSRES_CONST_HISTORY_ACTION_EDIT_CODE " +
+    "SYSRES_CONST_HOUR_CHAR " +
+    "SYSRES_CONST_ID_REQUISITE_CODE " +
+    "SYSRES_CONST_IDSPS_REQUISITE_CODE " +
+    "SYSRES_CONST_IMAGE_MODE_COLOR " +
+    "SYSRES_CONST_IMAGE_MODE_GREYSCALE " +
+    "SYSRES_CONST_IMAGE_MODE_MONOCHROME " +
+    "SYSRES_CONST_IMPORTANCE_HIGH " +
+    "SYSRES_CONST_IMPORTANCE_LOW " +
+    "SYSRES_CONST_IMPORTANCE_NORMAL " +
+    "SYSRES_CONST_IN_DESIGN_VERSION_STATE_PICK_VALUE " +
+    "SYSRES_CONST_INCOMING_WORK_RULE_TYPE_CODE " +
+    "SYSRES_CONST_INT_REQUISITE " +
+    "SYSRES_CONST_INT_REQUISITE_TYPE " +
+    "SYSRES_CONST_INTEGER_NUMBER_FORMAT_CHAR " +
+    "SYSRES_CONST_INTEGER_TYPE_CHAR " +
+    "SYSRES_CONST_IS_GENERATED_REQUISITE_NEGATIVE_VALUE " +
+    "SYSRES_CONST_IS_PUBLIC_ROLE_REQUISITE_CODE " +
+    "SYSRES_CONST_IS_REMOTE_USER_NEGATIVE_VALUE " +
+    "SYSRES_CONST_IS_REMOTE_USER_POSITIVE_VALUE " +
+    "SYSRES_CONST_IS_STORED_REQUISITE_NEGATIVE_VALUE " +
+    "SYSRES_CONST_IS_STORED_REQUISITE_STORED_VALUE " +
+    "SYSRES_CONST_ITALIC_LIFE_CYCLE_STAGE_DRAW_STYLE " +
+    "SYSRES_CONST_JOB_BLOCK_DESCRIPTION " +
+    "SYSRES_CONST_JOB_KIND_CONTROL_JOB " +
+    "SYSRES_CONST_JOB_KIND_JOB " +
+    "SYSRES_CONST_JOB_KIND_NOTICE " +
+    "SYSRES_CONST_JOB_STATE_ABORTED " +
+    "SYSRES_CONST_JOB_STATE_COMPLETE " +
+    "SYSRES_CONST_JOB_STATE_WORKING " +
+    "SYSRES_CONST_KIND_REQUISITE_CODE " +
+    "SYSRES_CONST_KIND_REQUISITE_NAME " +
+    "SYSRES_CONST_KINDS_CREATE_SHADOW_COPIES_REQUISITE_CODE " +
+    "SYSRES_CONST_KINDS_DEFAULT_EDOC_LIFE_STAGE_REQUISITE_CODE " +
+    "SYSRES_CONST_KINDS_EDOC_ALL_TEPLATES_ALLOWED_REQUISITE_CODE " +
+    "SYSRES_CONST_KINDS_EDOC_ALLOW_LIFE_CYCLE_STAGE_CHANGING_REQUISITE_CODE " +
+    "SYSRES_CONST_KINDS_EDOC_ALLOW_MULTIPLE_ACTIVE_VERSIONS_REQUISITE_CODE " +
+    "SYSRES_CONST_KINDS_EDOC_SHARE_ACCES_RIGHTS_BY_DEFAULT_CODE " +
+    "SYSRES_CONST_KINDS_EDOC_TEMPLATE_REQUISITE_CODE " +
+    "SYSRES_CONST_KINDS_EDOC_TYPE_REQUISITE_CODE " +
+    "SYSRES_CONST_KINDS_SIGNERS_REQUISITES_CODE " +
+    "SYSRES_CONST_KOD_INPUT_TYPE " +
+    "SYSRES_CONST_LAST_UPDATE_DATE_REQUISITE_CODE " +
+    "SYSRES_CONST_LIFE_CYCLE_START_STAGE_REQUISITE_CODE " +
+    "SYSRES_CONST_LILAC_LIFE_CYCLE_STAGE_FONT_COLOR " +
+    "SYSRES_CONST_LINK_OBJECT_KIND_COMPONENT " +
+    "SYSRES_CONST_LINK_OBJECT_KIND_DOCUMENT " +
+    "SYSRES_CONST_LINK_OBJECT_KIND_EDOC " +
+    "SYSRES_CONST_LINK_OBJECT_KIND_FOLDER " +
+    "SYSRES_CONST_LINK_OBJECT_KIND_JOB " +
+    "SYSRES_CONST_LINK_OBJECT_KIND_REFERENCE " +
+    "SYSRES_CONST_LINK_OBJECT_KIND_TASK " +
+    "SYSRES_CONST_LINK_REF_TYPE_REQUISITE_CODE " +
+    "SYSRES_CONST_LIST_REFERENCE_MODE_NAME " +
+    "SYSRES_CONST_LOCALIZATION_DICTIONARY_MAIN_VIEW_CODE " +
+    "SYSRES_CONST_MAIN_VIEW_CODE " +
+    "SYSRES_CONST_MANUAL_ENUM_METHOD_FLAG " +
+    "SYSRES_CONST_MASTER_COMP_TYPE_REQUISITE_CODE " +
+    "SYSRES_CONST_MASTER_TABLE_REC_ID_REQUISITE_CODE " +
+    "SYSRES_CONST_MAXIMIZED_MODE_NAME " +
+    "SYSRES_CONST_ME_VALUE " +
+    "SYSRES_CONST_MESSAGE_ATTENTION_CAPTION " +
+    "SYSRES_CONST_MESSAGE_CONFIRMATION_CAPTION " +
+    "SYSRES_CONST_MESSAGE_ERROR_CAPTION " +
+    "SYSRES_CONST_MESSAGE_INFORMATION_CAPTION " +
+    "SYSRES_CONST_MINIMIZED_MODE_NAME " +
+    "SYSRES_CONST_MINUTE_CHAR " +
+    "SYSRES_CONST_MODULE_REQUISITE_CODE " +
+    "SYSRES_CONST_MONITORING_BLOCK_DESCRIPTION " +
+    "SYSRES_CONST_MONTH_FORMAT_VALUE " +
+    "SYSRES_CONST_NAME_LOCALIZE_ID_REQUISITE_CODE " +
+    "SYSRES_CONST_NAME_REQUISITE_CODE " +
+    "SYSRES_CONST_NAME_SINGULAR_REQUISITE_CODE " +
+    "SYSRES_CONST_NAMEAN_INPUT_TYPE " +
+    "SYSRES_CONST_NEGATIVE_PICK_VALUE " +
+    "SYSRES_CONST_NEGATIVE_VALUE " +
+    "SYSRES_CONST_NO " +
+    "SYSRES_CONST_NO_PICK_VALUE " +
+    "SYSRES_CONST_NO_SIGNATURE_REQUISITE_CODE " +
+    "SYSRES_CONST_NO_VALUE " +
+    "SYSRES_CONST_NONE_ACCESS_RIGHTS_TYPE_CODE " +
+    "SYSRES_CONST_NONOPERATING_RECORD_FLAG_VALUE " +
+    "SYSRES_CONST_NONOPERATING_RECORD_FLAG_VALUE_MASCULINE " +
+    "SYSRES_CONST_NORMAL_ACCESS_RIGHTS_TYPE_CODE " +
+    "SYSRES_CONST_NORMAL_LIFE_CYCLE_STAGE_DRAW_STYLE " +
+    "SYSRES_CONST_NORMAL_MODE_NAME " +
+    "SYSRES_CONST_NOT_ALLOWED_ACCESS_TYPE_CODE " +
+    "SYSRES_CONST_NOT_ALLOWED_ACCESS_TYPE_NAME " +
+    "SYSRES_CONST_NOTE_REQUISITE_CODE " +
+    "SYSRES_CONST_NOTICE_BLOCK_DESCRIPTION " +
+    "SYSRES_CONST_NUM_REQUISITE " +
+    "SYSRES_CONST_NUM_STR_REQUISITE_CODE " +
+    "SYSRES_CONST_NUMERATION_AUTO_NOT_STRONG " +
+    "SYSRES_CONST_NUMERATION_AUTO_STRONG " +
+    "SYSRES_CONST_NUMERATION_FROM_DICTONARY " +
+    "SYSRES_CONST_NUMERATION_MANUAL " +
+    "SYSRES_CONST_NUMERIC_TYPE_CHAR " +
+    "SYSRES_CONST_NUMREQ_REQUISITE_CODE " +
+    "SYSRES_CONST_OBSOLETE_VERSION_STATE_PICK_VALUE " +
+    "SYSRES_CONST_OPERATING_RECORD_FLAG_VALUE " +
+    "SYSRES_CONST_OPERATING_RECORD_FLAG_VALUE_CODE " +
+    "SYSRES_CONST_OPERATING_RECORD_FLAG_VALUE_FEMININE " +
+    "SYSRES_CONST_OPERATING_RECORD_FLAG_VALUE_MASCULINE " +
+    "SYSRES_CONST_OPTIONAL_FORM_COMP_REQCODE_PREFIX " +
+    "SYSRES_CONST_ORANGE_LIFE_CYCLE_STAGE_FONT_COLOR " +
+    "SYSRES_CONST_ORIGINALREF_REQUISITE_CODE " +
+    "SYSRES_CONST_OURFIRM_REF_CODE " +
+    "SYSRES_CONST_OURFIRM_REQUISITE_CODE " +
+    "SYSRES_CONST_OURFIRM_VAR " +
+    "SYSRES_CONST_OUTGOING_WORK_RULE_TYPE_CODE " +
+    "SYSRES_CONST_PICK_NEGATIVE_RESULT " +
+    "SYSRES_CONST_PICK_POSITIVE_RESULT " +
+    "SYSRES_CONST_PICK_REQUISITE " +
+    "SYSRES_CONST_PICK_REQUISITE_TYPE " +
+    "SYSRES_CONST_PICK_TYPE_CHAR " +
+    "SYSRES_CONST_PLAN_STATUS_REQUISITE_CODE " +
+    "SYSRES_CONST_PLATFORM_VERSION_COMMENT " +
+    "SYSRES_CONST_PLUGINS_SETTINGS_DESCRIPTION_REQUISITE_CODE " +
+    "SYSRES_CONST_POSITIVE_PICK_VALUE " +
+    "SYSRES_CONST_POWER_TO_CREATE_ACTION_CODE " +
+    "SYSRES_CONST_POWER_TO_SIGN_ACTION_CODE " +
+    "SYSRES_CONST_PRIORITY_REQUISITE_CODE " +
+    "SYSRES_CONST_QUALIFIED_TASK_TYPE " +
+    "SYSRES_CONST_QUALIFIED_TASK_TYPE_CODE " +
+    "SYSRES_CONST_RECSTAT_REQUISITE_CODE " +
+    "SYSRES_CONST_RED_LIFE_CYCLE_STAGE_FONT_COLOR " +
+    "SYSRES_CONST_REF_ID_T_REF_TYPE_REQUISITE_CODE " +
+    "SYSRES_CONST_REF_REQUISITE " +
+    "SYSRES_CONST_REF_REQUISITE_TYPE " +
+    "SYSRES_CONST_REF_REQUISITES_REFERENCE_CODE_SELECTED_REQUISITE " +
+    "SYSRES_CONST_REFERENCE_RECORD_HISTORY_CREATE_ACTION_CODE " +
+    "SYSRES_CONST_REFERENCE_RECORD_HISTORY_DELETE_ACTION_CODE " +
+    "SYSRES_CONST_REFERENCE_RECORD_HISTORY_MODIFY_ACTION_CODE " +
+    "SYSRES_CONST_REFERENCE_TYPE_CHAR " +
+    "SYSRES_CONST_REFERENCE_TYPE_REQUISITE_NAME " +
+    "SYSRES_CONST_REFERENCES_ADD_PARAMS_REQUISITE_CODE " +
+    "SYSRES_CONST_REFERENCES_DISPLAY_REQUISITE_REQUISITE_CODE " +
+    "SYSRES_CONST_REMOTE_SERVER_STATUS_WORKING " +
+    "SYSRES_CONST_REMOTE_SERVER_TYPE_MAIN " +
+    "SYSRES_CONST_REMOTE_SERVER_TYPE_SECONDARY " +
+    "SYSRES_CONST_REMOTE_USER_FLAG_VALUE_CODE " +
+    "SYSRES_CONST_REPORT_APP_EDITOR_INTERNAL " +
+    "SYSRES_CONST_REPORT_BASE_REPORT_ID_REQUISITE_CODE " +
+    "SYSRES_CONST_REPORT_BASE_REPORT_REQUISITE_CODE " +
+    "SYSRES_CONST_REPORT_SCRIPT_REQUISITE_CODE " +
+    "SYSRES_CONST_REPORT_TEMPLATE_REQUISITE_CODE " +
+    "SYSRES_CONST_REPORT_VIEWER_CODE_REQUISITE_CODE " +
+    "SYSRES_CONST_REQ_ALLOW_COMPONENT_DEFAULT_VALUE " +
+    "SYSRES_CONST_REQ_ALLOW_RECORD_DEFAULT_VALUE " +
+    "SYSRES_CONST_REQ_ALLOW_SERVER_COMPONENT_DEFAULT_VALUE " +
+    "SYSRES_CONST_REQ_MODE_AVAILABLE_CODE " +
+    "SYSRES_CONST_REQ_MODE_EDIT_CODE " +
+    "SYSRES_CONST_REQ_MODE_HIDDEN_CODE " +
+    "SYSRES_CONST_REQ_MODE_NOT_AVAILABLE_CODE " +
+    "SYSRES_CONST_REQ_MODE_VIEW_CODE " +
+    "SYSRES_CONST_REQ_NUMBER_REQUISITE_CODE " +
+    "SYSRES_CONST_REQ_SECTION_VALUE " +
+    "SYSRES_CONST_REQ_TYPE_VALUE " +
+    "SYSRES_CONST_REQUISITE_FORMAT_BY_UNIT " +
+    "SYSRES_CONST_REQUISITE_FORMAT_DATE_FULL " +
+    "SYSRES_CONST_REQUISITE_FORMAT_DATE_TIME " +
+    "SYSRES_CONST_REQUISITE_FORMAT_LEFT " +
+    "SYSRES_CONST_REQUISITE_FORMAT_RIGHT " +
+    "SYSRES_CONST_REQUISITE_FORMAT_WITHOUT_UNIT " +
+    "SYSRES_CONST_REQUISITE_NUMBER_REQUISITE_CODE " +
+    "SYSRES_CONST_REQUISITE_SECTION_ACTIONS " +
+    "SYSRES_CONST_REQUISITE_SECTION_BUTTON " +
+    "SYSRES_CONST_REQUISITE_SECTION_BUTTONS " +
+    "SYSRES_CONST_REQUISITE_SECTION_CARD " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE10 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE11 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE12 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE13 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE14 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE15 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE16 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE17 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE18 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE19 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE2 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE20 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE21 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE22 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE23 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE24 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE3 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE4 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE5 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE6 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE7 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE8 " +
+    "SYSRES_CONST_REQUISITE_SECTION_TABLE9 " +
+    "SYSRES_CONST_REQUISITES_PSEUDOREFERENCE_REQUISITE_NUMBER_REQUISITE_CODE " +
+    "SYSRES_CONST_RIGHT_ALIGNMENT_CODE " +
+    "SYSRES_CONST_ROLES_REFERENCE_CODE " +
+    "SYSRES_CONST_ROUTE_STEP_AFTER_RUS " +
+    "SYSRES_CONST_ROUTE_STEP_AND_CONDITION_RUS " +
+    "SYSRES_CONST_ROUTE_STEP_OR_CONDITION_RUS " +
+    "SYSRES_CONST_ROUTE_TYPE_COMPLEX " +
+    "SYSRES_CONST_ROUTE_TYPE_PARALLEL " +
+    "SYSRES_CONST_ROUTE_TYPE_SERIAL " +
+    "SYSRES_CONST_SBDATASETDESC_NEGATIVE_VALUE " +
+    "SYSRES_CONST_SBDATASETDESC_POSITIVE_VALUE " +
+    "SYSRES_CONST_SBVIEWSDESC_POSITIVE_VALUE " +
+    "SYSRES_CONST_SCRIPT_BLOCK_DESCRIPTION " +
+    "SYSRES_CONST_SEARCH_BY_TEXT_REQUISITE_CODE " +
+    "SYSRES_CONST_SEARCHES_COMPONENT_CONTENT " +
+    "SYSRES_CONST_SEARCHES_CRITERIA_ACTION_NAME " +
+    "SYSRES_CONST_SEARCHES_EDOC_CONTENT " +
+    "SYSRES_CONST_SEARCHES_FOLDER_CONTENT " +
+    "SYSRES_CONST_SEARCHES_JOB_CONTENT " +
+    "SYSRES_CONST_SEARCHES_REFERENCE_CODE " +
+    "SYSRES_CONST_SEARCHES_TASK_CONTENT " +
+    "SYSRES_CONST_SECOND_CHAR " +
+    "SYSRES_CONST_SECTION_REQUISITE_ACTIONS_VALUE " +
+    "SYSRES_CONST_SECTION_REQUISITE_CARD_VALUE " +
+    "SYSRES_CONST_SECTION_REQUISITE_CODE " +
+    "SYSRES_CONST_SECTION_REQUISITE_DETAIL_1_VALUE " +
+    "SYSRES_CONST_SECTION_REQUISITE_DETAIL_2_VALUE " +
+    "SYSRES_CONST_SECTION_REQUISITE_DETAIL_3_VALUE " +
+    "SYSRES_CONST_SECTION_REQUISITE_DETAIL_4_VALUE " +
+    "SYSRES_CONST_SECTION_REQUISITE_DETAIL_5_VALUE " +
+    "SYSRES_CONST_SECTION_REQUISITE_DETAIL_6_VALUE " +
+    "SYSRES_CONST_SELECT_REFERENCE_MODE_NAME " +
+    "SYSRES_CONST_SELECT_TYPE_SELECTABLE " +
+    "SYSRES_CONST_SELECT_TYPE_SELECTABLE_ONLY_CHILD " +
+    "SYSRES_CONST_SELECT_TYPE_SELECTABLE_WITH_CHILD " +
+    "SYSRES_CONST_SELECT_TYPE_UNSLECTABLE " +
+    "SYSRES_CONST_SERVER_TYPE_MAIN " +
+    "SYSRES_CONST_SERVICE_USER_CATEGORY_FIELD_VALUE " +
+    "SYSRES_CONST_SETTINGS_USER_REQUISITE_CODE " +
+    "SYSRES_CONST_SIGNATURE_AND_ENCODE_CERTIFICATE_TYPE_CODE " +
+    "SYSRES_CONST_SIGNATURE_CERTIFICATE_TYPE_CODE " +
+    "SYSRES_CONST_SINGULAR_TITLE_REQUISITE_CODE " +
+    "SYSRES_CONST_SQL_SERVER_AUTHENTIFICATION_FLAG_VALUE_CODE " +
+    "SYSRES_CONST_SQL_SERVER_ENCODE_AUTHENTIFICATION_FLAG_VALUE_CODE " +
+    "SYSRES_CONST_STANDART_ROUTE_REFERENCE_CODE " +
+    "SYSRES_CONST_STANDART_ROUTE_REFERENCE_COMMENT_REQUISITE_CODE " +
+    "SYSRES_CONST_STANDART_ROUTES_GROUPS_REFERENCE_CODE " +
+    "SYSRES_CONST_STATE_REQ_NAME " +
+    "SYSRES_CONST_STATE_REQUISITE_ACTIVE_VALUE " +
+    "SYSRES_CONST_STATE_REQUISITE_CLOSED_VALUE " +
+    "SYSRES_CONST_STATE_REQUISITE_CODE " +
+    "SYSRES_CONST_STATIC_ROLE_TYPE_CODE " +
+    "SYSRES_CONST_STATUS_PLAN_DEFAULT_VALUE " +
+    "SYSRES_CONST_STATUS_VALUE_AUTOCLEANING " +
+    "SYSRES_CONST_STATUS_VALUE_BLUE_SQUARE " +
+    "SYSRES_CONST_STATUS_VALUE_COMPLETE " +
+    "SYSRES_CONST_STATUS_VALUE_GREEN_SQUARE " +
+    "SYSRES_CONST_STATUS_VALUE_ORANGE_SQUARE " +
+    "SYSRES_CONST_STATUS_VALUE_PURPLE_SQUARE " +
+    "SYSRES_CONST_STATUS_VALUE_RED_SQUARE " +
+    "SYSRES_CONST_STATUS_VALUE_SUSPEND " +
+    "SYSRES_CONST_STATUS_VALUE_YELLOW_SQUARE " +
+    "SYSRES_CONST_STDROUTE_SHOW_TO_USERS_REQUISITE_CODE " +
+    "SYSRES_CONST_STORAGE_TYPE_FILE " +
+    "SYSRES_CONST_STORAGE_TYPE_SQL_SERVER " +
+    "SYSRES_CONST_STR_REQUISITE " +
+    "SYSRES_CONST_STRIKEOUT_LIFE_CYCLE_STAGE_DRAW_STYLE " +
+    "SYSRES_CONST_STRING_FORMAT_LEFT_ALIGN_CHAR " +
+    "SYSRES_CONST_STRING_FORMAT_RIGHT_ALIGN_CHAR " +
+    "SYSRES_CONST_STRING_REQUISITE_CODE " +
+    "SYSRES_CONST_STRING_REQUISITE_TYPE " +
+    "SYSRES_CONST_STRING_TYPE_CHAR " +
+    "SYSRES_CONST_SUBSTITUTES_PSEUDOREFERENCE_CODE " +
+    "SYSRES_CONST_SUBTASK_BLOCK_DESCRIPTION " +
+    "SYSRES_CONST_SYSTEM_SETTING_CURRENT_USER_PARAM_VALUE " +
+    "SYSRES_CONST_SYSTEM_SETTING_EMPTY_VALUE_PARAM_VALUE " +
+    "SYSRES_CONST_SYSTEM_VERSION_COMMENT " +
+    "SYSRES_CONST_TASK_ACCESS_TYPE_ALL " +
+    "SYSRES_CONST_TASK_ACCESS_TYPE_ALL_MEMBERS " +
+    "SYSRES_CONST_TASK_ACCESS_TYPE_MANUAL " +
+    "SYSRES_CONST_TASK_ENCODE_TYPE_CERTIFICATION " +
+    "SYSRES_CONST_TASK_ENCODE_TYPE_CERTIFICATION_AND_PASSWORD " +
+    "SYSRES_CONST_TASK_ENCODE_TYPE_NONE " +
+    "SYSRES_CONST_TASK_ENCODE_TYPE_PASSWORD " +
+    "SYSRES_CONST_TASK_ROUTE_ALL_CONDITION " +
+    "SYSRES_CONST_TASK_ROUTE_AND_CONDITION " +
+    "SYSRES_CONST_TASK_ROUTE_OR_CONDITION " +
+    "SYSRES_CONST_TASK_STATE_ABORTED " +
+    "SYSRES_CONST_TASK_STATE_COMPLETE " +
+    "SYSRES_CONST_TASK_STATE_CONTINUED " +
+    "SYSRES_CONST_TASK_STATE_CONTROL " +
+    "SYSRES_CONST_TASK_STATE_INIT " +
+    "SYSRES_CONST_TASK_STATE_WORKING " +
+    "SYSRES_CONST_TASK_TITLE " +
+    "SYSRES_CONST_TASK_TYPES_GROUPS_REFERENCE_CODE " +
+    "SYSRES_CONST_TASK_TYPES_REFERENCE_CODE " +
+    "SYSRES_CONST_TEMPLATES_REFERENCE_CODE " +
+    "SYSRES_CONST_TEST_DATE_REQUISITE_NAME " +
+    "SYSRES_CONST_TEST_DEV_DATABASE_NAME " +
+    "SYSRES_CONST_TEST_DEV_SYSTEM_CODE " +
+    "SYSRES_CONST_TEST_EDMS_DATABASE_NAME " +
+    "SYSRES_CONST_TEST_EDMS_MAIN_CODE " +
+    "SYSRES_CONST_TEST_EDMS_MAIN_DB_NAME " +
+    "SYSRES_CONST_TEST_EDMS_SECOND_CODE " +
+    "SYSRES_CONST_TEST_EDMS_SECOND_DB_NAME " +
+    "SYSRES_CONST_TEST_EDMS_SYSTEM_CODE " +
+    "SYSRES_CONST_TEST_NUMERIC_REQUISITE_NAME " +
+    "SYSRES_CONST_TEXT_REQUISITE " +
+    "SYSRES_CONST_TEXT_REQUISITE_CODE " +
+    "SYSRES_CONST_TEXT_REQUISITE_TYPE " +
+    "SYSRES_CONST_TEXT_TYPE_CHAR " +
+    "SYSRES_CONST_TYPE_CODE_REQUISITE_CODE " +
+    "SYSRES_CONST_TYPE_REQUISITE_CODE " +
+    "SYSRES_CONST_UNDEFINED_LIFE_CYCLE_STAGE_FONT_COLOR " +
+    "SYSRES_CONST_UNITS_SECTION_ID_REQUISITE_CODE " +
+    "SYSRES_CONST_UNITS_SECTION_REQUISITE_CODE " +
+    "SYSRES_CONST_UNOPERATING_RECORD_FLAG_VALUE_CODE " +
+    "SYSRES_CONST_UNSTORED_DATA_REQUISITE_CODE " +
+    "SYSRES_CONST_UNSTORED_DATA_REQUISITE_NAME " +
+    "SYSRES_CONST_USE_ACCESS_TYPE_CODE " +
+    "SYSRES_CONST_USE_ACCESS_TYPE_NAME " +
+    "SYSRES_CONST_USER_ACCOUNT_TYPE_VALUE_CODE " +
+    "SYSRES_CONST_USER_ADDITIONAL_INFORMATION_REQUISITE_CODE " +
+    "SYSRES_CONST_USER_AND_GROUP_ID_FROM_PSEUDOREFERENCE_REQUISITE_CODE " +
+    "SYSRES_CONST_USER_CATEGORY_NORMAL " +
+    "SYSRES_CONST_USER_CERTIFICATE_REQUISITE_CODE " +
+    "SYSRES_CONST_USER_CERTIFICATE_STATE_REQUISITE_CODE " +
+    "SYSRES_CONST_USER_CERTIFICATE_SUBJECT_NAME_REQUISITE_CODE " +
+    "SYSRES_CONST_USER_CERTIFICATE_THUMBPRINT_REQUISITE_CODE " +
+    "SYSRES_CONST_USER_COMMON_CATEGORY " +
+    "SYSRES_CONST_USER_COMMON_CATEGORY_CODE " +
+    "SYSRES_CONST_USER_FULL_NAME_REQUISITE_CODE " +
+    "SYSRES_CONST_USER_GROUP_TYPE_REQUISITE_CODE " +
+    "SYSRES_CONST_USER_LOGIN_REQUISITE_CODE " +
+    "SYSRES_CONST_USER_REMOTE_CONTROLLER_REQUISITE_CODE " +
+    "SYSRES_CONST_USER_REMOTE_SYSTEM_REQUISITE_CODE " +
+    "SYSRES_CONST_USER_RIGHTS_T_REQUISITE_CODE " +
+    "SYSRES_CONST_USER_SERVER_NAME_REQUISITE_CODE " +
+    "SYSRES_CONST_USER_SERVICE_CATEGORY " +
+    "SYSRES_CONST_USER_SERVICE_CATEGORY_CODE " +
+    "SYSRES_CONST_USER_STATUS_ADMINISTRATOR_CODE " +
+    "SYSRES_CONST_USER_STATUS_ADMINISTRATOR_NAME " +
+    "SYSRES_CONST_USER_STATUS_DEVELOPER_CODE " +
+    "SYSRES_CONST_USER_STATUS_DEVELOPER_NAME " +
+    "SYSRES_CONST_USER_STATUS_DISABLED_CODE " +
+    "SYSRES_CONST_USER_STATUS_DISABLED_NAME " +
+    "SYSRES_CONST_USER_STATUS_SYSTEM_DEVELOPER_CODE " +
+    "SYSRES_CONST_USER_STATUS_USER_CODE " +
+    "SYSRES_CONST_USER_STATUS_USER_NAME " +
+    "SYSRES_CONST_USER_STATUS_USER_NAME_DEPRECATED " +
+    "SYSRES_CONST_USER_TYPE_FIELD_VALUE_USER " +
+    "SYSRES_CONST_USER_TYPE_REQUISITE_CODE " +
+    "SYSRES_CONST_USERS_CONTROLLER_REQUISITE_CODE " +
+    "SYSRES_CONST_USERS_IS_MAIN_SERVER_REQUISITE_CODE " +
+    "SYSRES_CONST_USERS_REFERENCE_CODE " +
+    "SYSRES_CONST_USERS_REGISTRATION_CERTIFICATES_ACTION_NAME " +
+    "SYSRES_CONST_USERS_REQUISITE_CODE " +
+    "SYSRES_CONST_USERS_SYSTEM_REQUISITE_CODE " +
+    "SYSRES_CONST_USERS_USER_ACCESS_RIGHTS_TYPR_REQUISITE_CODE " +
+    "SYSRES_CONST_USERS_USER_AUTHENTICATION_REQUISITE_CODE " +
+    "SYSRES_CONST_USERS_USER_COMPONENT_REQUISITE_CODE " +
+    "SYSRES_CONST_USERS_USER_GROUP_REQUISITE_CODE " +
+    "SYSRES_CONST_USERS_VIEW_CERTIFICATES_ACTION_NAME " +
+    "SYSRES_CONST_VIEW_DEFAULT_CODE " +
+    "SYSRES_CONST_VIEW_DEFAULT_NAME " +
+    "SYSRES_CONST_VIEWER_REQUISITE_CODE " +
+    "SYSRES_CONST_WAITING_BLOCK_DESCRIPTION " +
+    "SYSRES_CONST_WIZARD_FORM_LABEL_TEST_STRING  " +
+    "SYSRES_CONST_WIZARD_QUERY_PARAM_HEIGHT_ETALON_STRING " +
+    "SYSRES_CONST_WIZARD_REFERENCE_COMMENT_REQUISITE_CODE " +
+    "SYSRES_CONST_WORK_RULES_DESCRIPTION_REQUISITE_CODE " +
+    "SYSRES_CONST_WORK_TIME_CALENDAR_REFERENCE_CODE " +
+    "SYSRES_CONST_WORK_WORKFLOW_HARD_ROUTE_TYPE_VALUE " +
+    "SYSRES_CONST_WORK_WORKFLOW_HARD_ROUTE_TYPE_VALUE_CODE " +
+    "SYSRES_CONST_WORK_WORKFLOW_HARD_ROUTE_TYPE_VALUE_CODE_RUS " +
+    "SYSRES_CONST_WORK_WORKFLOW_SOFT_ROUTE_TYPE_VALUE_CODE_RUS " +
+    "SYSRES_CONST_WORKFLOW_ROUTE_TYPR_HARD " +
+    "SYSRES_CONST_WORKFLOW_ROUTE_TYPR_SOFT " +
+    "SYSRES_CONST_XML_ENCODING " +
+    "SYSRES_CONST_XREC_STAT_REQUISITE_CODE " +
+    "SYSRES_CONST_XRECID_FIELD_NAME " +
+    "SYSRES_CONST_YES " +
+    "SYSRES_CONST_YES_NO_2_REQUISITE_CODE " +
+    "SYSRES_CONST_YES_NO_REQUISITE_CODE " +
+    "SYSRES_CONST_YES_NO_T_REF_TYPE_REQUISITE_CODE " +
+    "SYSRES_CONST_YES_PICK_VALUE " +
+    "SYSRES_CONST_YES_VALUE ";
+
+  // Base constant
+  var base_constants = "CR FALSE nil NO_VALUE NULL TAB TRUE YES_VALUE ";
+
+  // Base group name
+  var base_group_name_constants =
+    "ADMINISTRATORS_GROUP_NAME CUSTOMIZERS_GROUP_NAME DEVELOPERS_GROUP_NAME SERVICE_USERS_GROUP_NAME ";
+
+  // Decision block properties
+  var decision_block_properties_constants =
+    "DECISION_BLOCK_FIRST_OPERAND_PROPERTY DECISION_BLOCK_NAME_PROPERTY DECISION_BLOCK_OPERATION_PROPERTY " +
+    "DECISION_BLOCK_RESULT_TYPE_PROPERTY DECISION_BLOCK_SECOND_OPERAND_PROPERTY ";
+
+  // File extension
+  var file_extension_constants =
+    "ANY_FILE_EXTENTION COMPRESSED_DOCUMENT_EXTENSION EXTENDED_DOCUMENT_EXTENSION " +
+    "SHORT_COMPRESSED_DOCUMENT_EXTENSION SHORT_EXTENDED_DOCUMENT_EXTENSION ";
+
+  // Job block properties
+  var job_block_properties_constants =
+    "JOB_BLOCK_ABORT_DEADLINE_PROPERTY " +
+    "JOB_BLOCK_AFTER_FINISH_EVENT " +
+    "JOB_BLOCK_AFTER_QUERY_PARAMETERS_EVENT " +
+    "JOB_BLOCK_ATTACHMENT_PROPERTY " +
+    "JOB_BLOCK_ATTACHMENTS_RIGHTS_GROUP_PROPERTY " +
+    "JOB_BLOCK_ATTACHMENTS_RIGHTS_TYPE_PROPERTY " +
+    "JOB_BLOCK_BEFORE_QUERY_PARAMETERS_EVENT " +
+    "JOB_BLOCK_BEFORE_START_EVENT " +
+    "JOB_BLOCK_CREATED_JOBS_PROPERTY " +
+    "JOB_BLOCK_DEADLINE_PROPERTY " +
+    "JOB_BLOCK_EXECUTION_RESULTS_PROPERTY " +
+    "JOB_BLOCK_IS_PARALLEL_PROPERTY " +
+    "JOB_BLOCK_IS_RELATIVE_ABORT_DEADLINE_PROPERTY " +
+    "JOB_BLOCK_IS_RELATIVE_DEADLINE_PROPERTY " +
+    "JOB_BLOCK_JOB_TEXT_PROPERTY " +
+    "JOB_BLOCK_NAME_PROPERTY " +
+    "JOB_BLOCK_NEED_SIGN_ON_PERFORM_PROPERTY " +
+    "JOB_BLOCK_PERFORMER_PROPERTY " +
+    "JOB_BLOCK_RELATIVE_ABORT_DEADLINE_TYPE_PROPERTY " +
+    "JOB_BLOCK_RELATIVE_DEADLINE_TYPE_PROPERTY " +
+    "JOB_BLOCK_SUBJECT_PROPERTY ";
+
+  // Language code
+  var language_code_constants = "ENGLISH_LANGUAGE_CODE RUSSIAN_LANGUAGE_CODE ";
+
+  // Launching external applications
+  var launching_external_applications_constants =
+    "smHidden smMaximized smMinimized smNormal wmNo wmYes ";
+
+  // Link kind
+  var link_kind_constants =
+    "COMPONENT_TOKEN_LINK_KIND " +
+    "DOCUMENT_LINK_KIND " +
+    "EDOCUMENT_LINK_KIND " +
+    "FOLDER_LINK_KIND " +
+    "JOB_LINK_KIND " +
+    "REFERENCE_LINK_KIND " +
+    "TASK_LINK_KIND ";
+
+  // Lock type
+  var lock_type_constants =
+    "COMPONENT_TOKEN_LOCK_TYPE EDOCUMENT_VERSION_LOCK_TYPE ";
+
+  // Monitor block properties
+  var monitor_block_properties_constants =
+    "MONITOR_BLOCK_AFTER_FINISH_EVENT " +
+    "MONITOR_BLOCK_BEFORE_START_EVENT " +
+    "MONITOR_BLOCK_DEADLINE_PROPERTY " +
+    "MONITOR_BLOCK_INTERVAL_PROPERTY " +
+    "MONITOR_BLOCK_INTERVAL_TYPE_PROPERTY " +
+    "MONITOR_BLOCK_IS_RELATIVE_DEADLINE_PROPERTY " +
+    "MONITOR_BLOCK_NAME_PROPERTY " +
+    "MONITOR_BLOCK_RELATIVE_DEADLINE_TYPE_PROPERTY " +
+    "MONITOR_BLOCK_SEARCH_SCRIPT_PROPERTY ";
+
+  // Notice block properties
+  var notice_block_properties_constants =
+    "NOTICE_BLOCK_AFTER_FINISH_EVENT " +
+    "NOTICE_BLOCK_ATTACHMENT_PROPERTY " +
+    "NOTICE_BLOCK_ATTACHMENTS_RIGHTS_GROUP_PROPERTY " +
+    "NOTICE_BLOCK_ATTACHMENTS_RIGHTS_TYPE_PROPERTY " +
+    "NOTICE_BLOCK_BEFORE_START_EVENT " +
+    "NOTICE_BLOCK_CREATED_NOTICES_PROPERTY " +
+    "NOTICE_BLOCK_DEADLINE_PROPERTY " +
+    "NOTICE_BLOCK_IS_RELATIVE_DEADLINE_PROPERTY " +
+    "NOTICE_BLOCK_NAME_PROPERTY " +
+    "NOTICE_BLOCK_NOTICE_TEXT_PROPERTY " +
+    "NOTICE_BLOCK_PERFORMER_PROPERTY " +
+    "NOTICE_BLOCK_RELATIVE_DEADLINE_TYPE_PROPERTY " +
+    "NOTICE_BLOCK_SUBJECT_PROPERTY ";
+
+  // Object events
+  var object_events_constants =
+    "dseAfterCancel " +
+    "dseAfterClose " +
+    "dseAfterDelete " +
+    "dseAfterDeleteOutOfTransaction " +
+    "dseAfterInsert " +
+    "dseAfterOpen " +
+    "dseAfterScroll " +
+    "dseAfterUpdate " +
+    "dseAfterUpdateOutOfTransaction " +
+    "dseBeforeCancel " +
+    "dseBeforeClose " +
+    "dseBeforeDelete " +
+    "dseBeforeDetailUpdate " +
+    "dseBeforeInsert " +
+    "dseBeforeOpen " +
+    "dseBeforeUpdate " +
+    "dseOnAnyRequisiteChange " +
+    "dseOnCloseRecord " +
+    "dseOnDeleteError " +
+    "dseOnOpenRecord " +
+    "dseOnPrepareUpdate " +
+    "dseOnUpdateError " +
+    "dseOnUpdateRatifiedRecord " +
+    "dseOnValidDelete " +
+    "dseOnValidUpdate " +
+    "reOnChange " +
+    "reOnChangeValues " +
+    "SELECTION_BEGIN_ROUTE_EVENT " +
+    "SELECTION_END_ROUTE_EVENT ";
+
+  // Object params
+  var object_params_constants =
+    "CURRENT_PERIOD_IS_REQUIRED " +
+    "PREVIOUS_CARD_TYPE_NAME " +
+    "SHOW_RECORD_PROPERTIES_FORM ";
+
+  // Other
+  var other_constants =
+    "ACCESS_RIGHTS_SETTING_DIALOG_CODE " +
+    "ADMINISTRATOR_USER_CODE " +
+    "ANALYTIC_REPORT_TYPE " +
+    "asrtHideLocal " +
+    "asrtHideRemote " +
+    "CALCULATED_ROLE_TYPE_CODE " +
+    "COMPONENTS_REFERENCE_DEVELOPER_VIEW_CODE " +
+    "DCTS_TEST_PROTOCOLS_FOLDER_PATH " +
+    "E_EDOC_VERSION_ALREADY_APPROVINGLY_SIGNED " +
+    "E_EDOC_VERSION_ALREADY_APPROVINGLY_SIGNED_BY_USER " +
+    "E_EDOC_VERSION_ALREDY_SIGNED " +
+    "E_EDOC_VERSION_ALREDY_SIGNED_BY_USER " +
+    "EDOC_TYPES_CODE_REQUISITE_FIELD_NAME " +
+    "EDOCUMENTS_ALIAS_NAME " +
+    "FILES_FOLDER_PATH " +
+    "FILTER_OPERANDS_DELIMITER " +
+    "FILTER_OPERATIONS_DELIMITER " +
+    "FORMCARD_NAME " +
+    "FORMLIST_NAME " +
+    "GET_EXTENDED_DOCUMENT_EXTENSION_CREATION_MODE " +
+    "GET_EXTENDED_DOCUMENT_EXTENSION_IMPORT_MODE " +
+    "INTEGRATED_REPORT_TYPE " +
+    "IS_BUILDER_APPLICATION_ROLE " +
+    "IS_BUILDER_APPLICATION_ROLE2 " +
+    "IS_BUILDER_USERS " +
+    "ISBSYSDEV " +
+    "LOG_FOLDER_PATH " +
+    "mbCancel " +
+    "mbNo " +
+    "mbNoToAll " +
+    "mbOK " +
+    "mbYes " +
+    "mbYesToAll " +
+    "MEMORY_DATASET_DESRIPTIONS_FILENAME " +
+    "mrNo " +
+    "mrNoToAll " +
+    "mrYes " +
+    "mrYesToAll " +
+    "MULTIPLE_SELECT_DIALOG_CODE " +
+    "NONOPERATING_RECORD_FLAG_FEMININE " +
+    "NONOPERATING_RECORD_FLAG_MASCULINE " +
+    "OPERATING_RECORD_FLAG_FEMININE " +
+    "OPERATING_RECORD_FLAG_MASCULINE " +
+    "PROFILING_SETTINGS_COMMON_SETTINGS_CODE_VALUE " +
+    "PROGRAM_INITIATED_LOOKUP_ACTION " +
+    "ratDelete " +
+    "ratEdit " +
+    "ratInsert " +
+    "REPORT_TYPE " +
+    "REQUIRED_PICK_VALUES_VARIABLE " +
+    "rmCard " +
+    "rmList " +
+    "SBRTE_PROGID_DEV " +
+    "SBRTE_PROGID_RELEASE " +
+    "STATIC_ROLE_TYPE_CODE " +
+    "SUPPRESS_EMPTY_TEMPLATE_CREATION " +
+    "SYSTEM_USER_CODE " +
+    "UPDATE_DIALOG_DATASET " +
+    "USED_IN_OBJECT_HINT_PARAM " +
+    "USER_INITIATED_LOOKUP_ACTION " +
+    "USER_NAME_FORMAT " +
+    "USER_SELECTION_RESTRICTIONS " +
+    "WORKFLOW_TEST_PROTOCOLS_FOLDER_PATH " +
+    "ELS_SUBTYPE_CONTROL_NAME " +
+    "ELS_FOLDER_KIND_CONTROL_NAME " +
+    "REPEAT_PROCESS_CURRENT_OBJECT_EXCEPTION_NAME ";
+
+  // Privileges
+  var privileges_constants =
+    "PRIVILEGE_COMPONENT_FULL_ACCESS " +
+    "PRIVILEGE_DEVELOPMENT_EXPORT " +
+    "PRIVILEGE_DEVELOPMENT_IMPORT " +
+    "PRIVILEGE_DOCUMENT_DELETE " +
+    "PRIVILEGE_ESD " +
+    "PRIVILEGE_FOLDER_DELETE " +
+    "PRIVILEGE_MANAGE_ACCESS_RIGHTS " +
+    "PRIVILEGE_MANAGE_REPLICATION " +
+    "PRIVILEGE_MANAGE_SESSION_SERVER " +
+    "PRIVILEGE_OBJECT_FULL_ACCESS " +
+    "PRIVILEGE_OBJECT_VIEW " +
+    "PRIVILEGE_RESERVE_LICENSE " +
+    "PRIVILEGE_SYSTEM_CUSTOMIZE " +
+    "PRIVILEGE_SYSTEM_DEVELOP " +
+    "PRIVILEGE_SYSTEM_INSTALL " +
+    "PRIVILEGE_TASK_DELETE " +
+    "PRIVILEGE_USER_PLUGIN_SETTINGS_CUSTOMIZE " +
+    "PRIVILEGES_PSEUDOREFERENCE_CODE ";
+
+  // Pseudoreference code
+  var pseudoreference_code_constants =
+    "ACCESS_TYPES_PSEUDOREFERENCE_CODE " +
+    "ALL_AVAILABLE_COMPONENTS_PSEUDOREFERENCE_CODE " +
+    "ALL_AVAILABLE_PRIVILEGES_PSEUDOREFERENCE_CODE " +
+    "ALL_REPLICATE_COMPONENTS_PSEUDOREFERENCE_CODE " +
+    "AVAILABLE_DEVELOPERS_COMPONENTS_PSEUDOREFERENCE_CODE " +
+    "COMPONENTS_PSEUDOREFERENCE_CODE " +
+    "FILTRATER_SETTINGS_CONFLICTS_PSEUDOREFERENCE_CODE " +
+    "GROUPS_PSEUDOREFERENCE_CODE " +
+    "RECEIVE_PROTOCOL_PSEUDOREFERENCE_CODE " +
+    "REFERENCE_REQUISITE_PSEUDOREFERENCE_CODE " +
+    "REFERENCE_REQUISITES_PSEUDOREFERENCE_CODE " +
+    "REFTYPES_PSEUDOREFERENCE_CODE " +
+    "REPLICATION_SEANCES_DIARY_PSEUDOREFERENCE_CODE " +
+    "SEND_PROTOCOL_PSEUDOREFERENCE_CODE " +
+    "SUBSTITUTES_PSEUDOREFERENCE_CODE " +
+    "SYSTEM_SETTINGS_PSEUDOREFERENCE_CODE " +
+    "UNITS_PSEUDOREFERENCE_CODE " +
+    "USERS_PSEUDOREFERENCE_CODE " +
+    "VIEWERS_PSEUDOREFERENCE_CODE ";
+
+  // Requisite ISBCertificateType values
+  var requisite_ISBCertificateType_values_constants =
+    "CERTIFICATE_TYPE_ENCRYPT " +
+    "CERTIFICATE_TYPE_SIGN " +
+    "CERTIFICATE_TYPE_SIGN_AND_ENCRYPT ";
+
+  // Requisite ISBEDocStorageType values
+  var requisite_ISBEDocStorageType_values_constants =
+    "STORAGE_TYPE_FILE " +
+    "STORAGE_TYPE_NAS_CIFS " +
+    "STORAGE_TYPE_SAPERION " +
+    "STORAGE_TYPE_SQL_SERVER ";
+
+  // Requisite CompType2 values
+  var requisite_compType2_values_constants =
+    "COMPTYPE2_REQUISITE_DOCUMENTS_VALUE " +
+    "COMPTYPE2_REQUISITE_TASKS_VALUE " +
+    "COMPTYPE2_REQUISITE_FOLDERS_VALUE " +
+    "COMPTYPE2_REQUISITE_REFERENCES_VALUE ";
+
+  // Requisite name
+  var requisite_name_constants =
+    "SYSREQ_CODE " +
+    "SYSREQ_COMPTYPE2 " +
+    "SYSREQ_CONST_AVAILABLE_FOR_WEB " +
+    "SYSREQ_CONST_COMMON_CODE " +
+    "SYSREQ_CONST_COMMON_VALUE " +
+    "SYSREQ_CONST_FIRM_CODE " +
+    "SYSREQ_CONST_FIRM_STATUS " +
+    "SYSREQ_CONST_FIRM_VALUE " +
+    "SYSREQ_CONST_SERVER_STATUS " +
+    "SYSREQ_CONTENTS " +
+    "SYSREQ_DATE_OPEN " +
+    "SYSREQ_DATE_CLOSE " +
+    "SYSREQ_DESCRIPTION " +
+    "SYSREQ_DESCRIPTION_LOCALIZE_ID " +
+    "SYSREQ_DOUBLE " +
+    "SYSREQ_EDOC_ACCESS_TYPE " +
+    "SYSREQ_EDOC_AUTHOR " +
+    "SYSREQ_EDOC_CREATED " +
+    "SYSREQ_EDOC_DELEGATE_RIGHTS_REQUISITE_CODE " +
+    "SYSREQ_EDOC_EDITOR " +
+    "SYSREQ_EDOC_ENCODE_TYPE " +
+    "SYSREQ_EDOC_ENCRYPTION_PLUGIN_NAME " +
+    "SYSREQ_EDOC_ENCRYPTION_PLUGIN_VERSION " +
+    "SYSREQ_EDOC_EXPORT_DATE " +
+    "SYSREQ_EDOC_EXPORTER " +
+    "SYSREQ_EDOC_KIND " +
+    "SYSREQ_EDOC_LIFE_STAGE_NAME " +
+    "SYSREQ_EDOC_LOCKED_FOR_SERVER_CODE " +
+    "SYSREQ_EDOC_MODIFIED " +
+    "SYSREQ_EDOC_NAME " +
+    "SYSREQ_EDOC_NOTE " +
+    "SYSREQ_EDOC_QUALIFIED_ID " +
+    "SYSREQ_EDOC_SESSION_KEY " +
+    "SYSREQ_EDOC_SESSION_KEY_ENCRYPTION_PLUGIN_NAME " +
+    "SYSREQ_EDOC_SESSION_KEY_ENCRYPTION_PLUGIN_VERSION " +
+    "SYSREQ_EDOC_SIGNATURE_TYPE " +
+    "SYSREQ_EDOC_SIGNED " +
+    "SYSREQ_EDOC_STORAGE " +
+    "SYSREQ_EDOC_STORAGES_ARCHIVE_STORAGE " +
+    "SYSREQ_EDOC_STORAGES_CHECK_RIGHTS " +
+    "SYSREQ_EDOC_STORAGES_COMPUTER_NAME " +
+    "SYSREQ_EDOC_STORAGES_EDIT_IN_STORAGE " +
+    "SYSREQ_EDOC_STORAGES_EXECUTIVE_STORAGE " +
+    "SYSREQ_EDOC_STORAGES_FUNCTION " +
+    "SYSREQ_EDOC_STORAGES_INITIALIZED " +
+    "SYSREQ_EDOC_STORAGES_LOCAL_PATH " +
+    "SYSREQ_EDOC_STORAGES_SAPERION_DATABASE_NAME " +
+    "SYSREQ_EDOC_STORAGES_SEARCH_BY_TEXT " +
+    "SYSREQ_EDOC_STORAGES_SERVER_NAME " +
+    "SYSREQ_EDOC_STORAGES_SHARED_SOURCE_NAME " +
+    "SYSREQ_EDOC_STORAGES_TYPE " +
+    "SYSREQ_EDOC_TEXT_MODIFIED " +
+    "SYSREQ_EDOC_TYPE_ACT_CODE " +
+    "SYSREQ_EDOC_TYPE_ACT_DESCRIPTION " +
+    "SYSREQ_EDOC_TYPE_ACT_DESCRIPTION_LOCALIZE_ID " +
+    "SYSREQ_EDOC_TYPE_ACT_ON_EXECUTE " +
+    "SYSREQ_EDOC_TYPE_ACT_ON_EXECUTE_EXISTS " +
+    "SYSREQ_EDOC_TYPE_ACT_SECTION " +
+    "SYSREQ_EDOC_TYPE_ADD_PARAMS " +
+    "SYSREQ_EDOC_TYPE_COMMENT " +
+    "SYSREQ_EDOC_TYPE_EVENT_TEXT " +
+    "SYSREQ_EDOC_TYPE_NAME_IN_SINGULAR " +
+    "SYSREQ_EDOC_TYPE_NAME_IN_SINGULAR_LOCALIZE_ID " +
+    "SYSREQ_EDOC_TYPE_NAME_LOCALIZE_ID " +
+    "SYSREQ_EDOC_TYPE_NUMERATION_METHOD " +
+    "SYSREQ_EDOC_TYPE_PSEUDO_REQUISITE_CODE " +
+    "SYSREQ_EDOC_TYPE_REQ_CODE " +
+    "SYSREQ_EDOC_TYPE_REQ_DESCRIPTION " +
+    "SYSREQ_EDOC_TYPE_REQ_DESCRIPTION_LOCALIZE_ID " +
+    "SYSREQ_EDOC_TYPE_REQ_IS_LEADING " +
+    "SYSREQ_EDOC_TYPE_REQ_IS_REQUIRED " +
+    "SYSREQ_EDOC_TYPE_REQ_NUMBER " +
+    "SYSREQ_EDOC_TYPE_REQ_ON_CHANGE " +
+    "SYSREQ_EDOC_TYPE_REQ_ON_CHANGE_EXISTS " +
+    "SYSREQ_EDOC_TYPE_REQ_ON_SELECT " +
+    "SYSREQ_EDOC_TYPE_REQ_ON_SELECT_KIND " +
+    "SYSREQ_EDOC_TYPE_REQ_SECTION " +
+    "SYSREQ_EDOC_TYPE_VIEW_CARD " +
+    "SYSREQ_EDOC_TYPE_VIEW_CODE " +
+    "SYSREQ_EDOC_TYPE_VIEW_COMMENT " +
+    "SYSREQ_EDOC_TYPE_VIEW_IS_MAIN " +
+    "SYSREQ_EDOC_TYPE_VIEW_NAME " +
+    "SYSREQ_EDOC_TYPE_VIEW_NAME_LOCALIZE_ID " +
+    "SYSREQ_EDOC_VERSION_AUTHOR " +
+    "SYSREQ_EDOC_VERSION_CRC " +
+    "SYSREQ_EDOC_VERSION_DATA " +
+    "SYSREQ_EDOC_VERSION_EDITOR " +
+    "SYSREQ_EDOC_VERSION_EXPORT_DATE " +
+    "SYSREQ_EDOC_VERSION_EXPORTER " +
+    "SYSREQ_EDOC_VERSION_HIDDEN " +
+    "SYSREQ_EDOC_VERSION_LIFE_STAGE " +
+    "SYSREQ_EDOC_VERSION_MODIFIED " +
+    "SYSREQ_EDOC_VERSION_NOTE " +
+    "SYSREQ_EDOC_VERSION_SIGNATURE_TYPE " +
+    "SYSREQ_EDOC_VERSION_SIGNED " +
+    "SYSREQ_EDOC_VERSION_SIZE " +
+    "SYSREQ_EDOC_VERSION_SOURCE " +
+    "SYSREQ_EDOC_VERSION_TEXT_MODIFIED " +
+    "SYSREQ_EDOCKIND_DEFAULT_VERSION_STATE_CODE " +
+    "SYSREQ_FOLDER_KIND " +
+    "SYSREQ_FUNC_CATEGORY " +
+    "SYSREQ_FUNC_COMMENT " +
+    "SYSREQ_FUNC_GROUP " +
+    "SYSREQ_FUNC_GROUP_COMMENT " +
+    "SYSREQ_FUNC_GROUP_NUMBER " +
+    "SYSREQ_FUNC_HELP " +
+    "SYSREQ_FUNC_PARAM_DEF_VALUE " +
+    "SYSREQ_FUNC_PARAM_IDENT " +
+    "SYSREQ_FUNC_PARAM_NUMBER " +
+    "SYSREQ_FUNC_PARAM_TYPE " +
+    "SYSREQ_FUNC_TEXT " +
+    "SYSREQ_GROUP_CATEGORY " +
+    "SYSREQ_ID " +
+    "SYSREQ_LAST_UPDATE " +
+    "SYSREQ_LEADER_REFERENCE " +
+    "SYSREQ_LINE_NUMBER " +
+    "SYSREQ_MAIN_RECORD_ID " +
+    "SYSREQ_NAME " +
+    "SYSREQ_NAME_LOCALIZE_ID " +
+    "SYSREQ_NOTE " +
+    "SYSREQ_ORIGINAL_RECORD " +
+    "SYSREQ_OUR_FIRM " +
+    "SYSREQ_PROFILING_SETTINGS_BATCH_LOGING " +
+    "SYSREQ_PROFILING_SETTINGS_BATCH_SIZE " +
+    "SYSREQ_PROFILING_SETTINGS_PROFILING_ENABLED " +
+    "SYSREQ_PROFILING_SETTINGS_SQL_PROFILING_ENABLED " +
+    "SYSREQ_PROFILING_SETTINGS_START_LOGGED " +
+    "SYSREQ_RECORD_STATUS " +
+    "SYSREQ_REF_REQ_FIELD_NAME " +
+    "SYSREQ_REF_REQ_FORMAT " +
+    "SYSREQ_REF_REQ_GENERATED " +
+    "SYSREQ_REF_REQ_LENGTH " +
+    "SYSREQ_REF_REQ_PRECISION " +
+    "SYSREQ_REF_REQ_REFERENCE " +
+    "SYSREQ_REF_REQ_SECTION " +
+    "SYSREQ_REF_REQ_STORED " +
+    "SYSREQ_REF_REQ_TOKENS " +
+    "SYSREQ_REF_REQ_TYPE " +
+    "SYSREQ_REF_REQ_VIEW " +
+    "SYSREQ_REF_TYPE_ACT_CODE " +
+    "SYSREQ_REF_TYPE_ACT_DESCRIPTION " +
+    "SYSREQ_REF_TYPE_ACT_DESCRIPTION_LOCALIZE_ID " +
+    "SYSREQ_REF_TYPE_ACT_ON_EXECUTE " +
+    "SYSREQ_REF_TYPE_ACT_ON_EXECUTE_EXISTS " +
+    "SYSREQ_REF_TYPE_ACT_SECTION " +
+    "SYSREQ_REF_TYPE_ADD_PARAMS " +
+    "SYSREQ_REF_TYPE_COMMENT " +
+    "SYSREQ_REF_TYPE_COMMON_SETTINGS " +
+    "SYSREQ_REF_TYPE_DISPLAY_REQUISITE_NAME " +
+    "SYSREQ_REF_TYPE_EVENT_TEXT " +
+    "SYSREQ_REF_TYPE_MAIN_LEADING_REF " +
+    "SYSREQ_REF_TYPE_NAME_IN_SINGULAR " +
+    "SYSREQ_REF_TYPE_NAME_IN_SINGULAR_LOCALIZE_ID " +
+    "SYSREQ_REF_TYPE_NAME_LOCALIZE_ID " +
+    "SYSREQ_REF_TYPE_NUMERATION_METHOD " +
+    "SYSREQ_REF_TYPE_REQ_CODE " +
+    "SYSREQ_REF_TYPE_REQ_DESCRIPTION " +
+    "SYSREQ_REF_TYPE_REQ_DESCRIPTION_LOCALIZE_ID " +
+    "SYSREQ_REF_TYPE_REQ_IS_CONTROL " +
+    "SYSREQ_REF_TYPE_REQ_IS_FILTER " +
+    "SYSREQ_REF_TYPE_REQ_IS_LEADING " +
+    "SYSREQ_REF_TYPE_REQ_IS_REQUIRED " +
+    "SYSREQ_REF_TYPE_REQ_NUMBER " +
+    "SYSREQ_REF_TYPE_REQ_ON_CHANGE " +
+    "SYSREQ_REF_TYPE_REQ_ON_CHANGE_EXISTS " +
+    "SYSREQ_REF_TYPE_REQ_ON_SELECT " +
+    "SYSREQ_REF_TYPE_REQ_ON_SELECT_KIND " +
+    "SYSREQ_REF_TYPE_REQ_SECTION " +
+    "SYSREQ_REF_TYPE_VIEW_CARD " +
+    "SYSREQ_REF_TYPE_VIEW_CODE " +
+    "SYSREQ_REF_TYPE_VIEW_COMMENT " +
+    "SYSREQ_REF_TYPE_VIEW_IS_MAIN " +
+    "SYSREQ_REF_TYPE_VIEW_NAME " +
+    "SYSREQ_REF_TYPE_VIEW_NAME_LOCALIZE_ID " +
+    "SYSREQ_REFERENCE_TYPE_ID " +
+    "SYSREQ_STATE " +
+    "SYSREQ_STATЕ " +
+    "SYSREQ_SYSTEM_SETTINGS_VALUE " +
+    "SYSREQ_TYPE " +
+    "SYSREQ_UNIT " +
+    "SYSREQ_UNIT_ID " +
+    "SYSREQ_USER_GROUPS_GROUP_FULL_NAME " +
+    "SYSREQ_USER_GROUPS_GROUP_NAME " +
+    "SYSREQ_USER_GROUPS_GROUP_SERVER_NAME " +
+    "SYSREQ_USERS_ACCESS_RIGHTS " +
+    "SYSREQ_USERS_AUTHENTICATION " +
+    "SYSREQ_USERS_CATEGORY " +
+    "SYSREQ_USERS_COMPONENT " +
+    "SYSREQ_USERS_COMPONENT_USER_IS_PUBLIC " +
+    "SYSREQ_USERS_DOMAIN " +
+    "SYSREQ_USERS_FULL_USER_NAME " +
+    "SYSREQ_USERS_GROUP " +
+    "SYSREQ_USERS_IS_MAIN_SERVER " +
+    "SYSREQ_USERS_LOGIN " +
+    "SYSREQ_USERS_REFERENCE_USER_IS_PUBLIC " +
+    "SYSREQ_USERS_STATUS " +
+    "SYSREQ_USERS_USER_CERTIFICATE " +
+    "SYSREQ_USERS_USER_CERTIFICATE_INFO " +
+    "SYSREQ_USERS_USER_CERTIFICATE_PLUGIN_NAME " +
+    "SYSREQ_USERS_USER_CERTIFICATE_PLUGIN_VERSION " +
+    "SYSREQ_USERS_USER_CERTIFICATE_STATE " +
+    "SYSREQ_USERS_USER_CERTIFICATE_SUBJECT_NAME " +
+    "SYSREQ_USERS_USER_CERTIFICATE_THUMBPRINT " +
+    "SYSREQ_USERS_USER_DEFAULT_CERTIFICATE " +
+    "SYSREQ_USERS_USER_DESCRIPTION " +
+    "SYSREQ_USERS_USER_GLOBAL_NAME " +
+    "SYSREQ_USERS_USER_LOGIN " +
+    "SYSREQ_USERS_USER_MAIN_SERVER " +
+    "SYSREQ_USERS_USER_TYPE " +
+    "SYSREQ_WORK_RULES_FOLDER_ID ";
+
+  // Result
+  var result_constants = "RESULT_VAR_NAME RESULT_VAR_NAME_ENG ";
+
+  // Rule identification
+  var rule_identification_constants =
+    "AUTO_NUMERATION_RULE_ID " +
+    "CANT_CHANGE_ID_REQUISITE_RULE_ID " +
+    "CANT_CHANGE_OURFIRM_REQUISITE_RULE_ID " +
+    "CHECK_CHANGING_REFERENCE_RECORD_USE_RULE_ID " +
+    "CHECK_CODE_REQUISITE_RULE_ID " +
+    "CHECK_DELETING_REFERENCE_RECORD_USE_RULE_ID " +
+    "CHECK_FILTRATER_CHANGES_RULE_ID " +
+    "CHECK_RECORD_INTERVAL_RULE_ID " +
+    "CHECK_REFERENCE_INTERVAL_RULE_ID " +
+    "CHECK_REQUIRED_DATA_FULLNESS_RULE_ID " +
+    "CHECK_REQUIRED_REQUISITES_FULLNESS_RULE_ID " +
+    "MAKE_RECORD_UNRATIFIED_RULE_ID " +
+    "RESTORE_AUTO_NUMERATION_RULE_ID " +
+    "SET_FIRM_CONTEXT_FROM_RECORD_RULE_ID " +
+    "SET_FIRST_RECORD_IN_LIST_FORM_RULE_ID " +
+    "SET_IDSPS_VALUE_RULE_ID " +
+    "SET_NEXT_CODE_VALUE_RULE_ID " +
+    "SET_OURFIRM_BOUNDS_RULE_ID " +
+    "SET_OURFIRM_REQUISITE_RULE_ID ";
+
+  // Script block properties
+  var script_block_properties_constants =
+    "SCRIPT_BLOCK_AFTER_FINISH_EVENT " +
+    "SCRIPT_BLOCK_BEFORE_START_EVENT " +
+    "SCRIPT_BLOCK_EXECUTION_RESULTS_PROPERTY " +
+    "SCRIPT_BLOCK_NAME_PROPERTY " +
+    "SCRIPT_BLOCK_SCRIPT_PROPERTY ";
+
+  // Subtask block properties
+  var subtask_block_properties_constants =
+    "SUBTASK_BLOCK_ABORT_DEADLINE_PROPERTY " +
+    "SUBTASK_BLOCK_AFTER_FINISH_EVENT " +
+    "SUBTASK_BLOCK_ASSIGN_PARAMS_EVENT " +
+    "SUBTASK_BLOCK_ATTACHMENTS_PROPERTY " +
+    "SUBTASK_BLOCK_ATTACHMENTS_RIGHTS_GROUP_PROPERTY " +
+    "SUBTASK_BLOCK_ATTACHMENTS_RIGHTS_TYPE_PROPERTY " +
+    "SUBTASK_BLOCK_BEFORE_START_EVENT " +
+    "SUBTASK_BLOCK_CREATED_TASK_PROPERTY " +
+    "SUBTASK_BLOCK_CREATION_EVENT " +
+    "SUBTASK_BLOCK_DEADLINE_PROPERTY " +
+    "SUBTASK_BLOCK_IMPORTANCE_PROPERTY " +
+    "SUBTASK_BLOCK_INITIATOR_PROPERTY " +
+    "SUBTASK_BLOCK_IS_RELATIVE_ABORT_DEADLINE_PROPERTY " +
+    "SUBTASK_BLOCK_IS_RELATIVE_DEADLINE_PROPERTY " +
+    "SUBTASK_BLOCK_JOBS_TYPE_PROPERTY " +
+    "SUBTASK_BLOCK_NAME_PROPERTY " +
+    "SUBTASK_BLOCK_PARALLEL_ROUTE_PROPERTY " +
+    "SUBTASK_BLOCK_PERFORMERS_PROPERTY " +
+    "SUBTASK_BLOCK_RELATIVE_ABORT_DEADLINE_TYPE_PROPERTY " +
+    "SUBTASK_BLOCK_RELATIVE_DEADLINE_TYPE_PROPERTY " +
+    "SUBTASK_BLOCK_REQUIRE_SIGN_PROPERTY " +
+    "SUBTASK_BLOCK_STANDARD_ROUTE_PROPERTY " +
+    "SUBTASK_BLOCK_START_EVENT " +
+    "SUBTASK_BLOCK_STEP_CONTROL_PROPERTY " +
+    "SUBTASK_BLOCK_SUBJECT_PROPERTY " +
+    "SUBTASK_BLOCK_TASK_CONTROL_PROPERTY " +
+    "SUBTASK_BLOCK_TEXT_PROPERTY " +
+    "SUBTASK_BLOCK_UNLOCK_ATTACHMENTS_ON_STOP_PROPERTY " +
+    "SUBTASK_BLOCK_USE_STANDARD_ROUTE_PROPERTY " +
+    "SUBTASK_BLOCK_WAIT_FOR_TASK_COMPLETE_PROPERTY ";
+
+  // System component
+  var system_component_constants =
+    "SYSCOMP_CONTROL_JOBS " +
+    "SYSCOMP_FOLDERS " +
+    "SYSCOMP_JOBS " +
+    "SYSCOMP_NOTICES " +
+    "SYSCOMP_TASKS ";
+
+  // System dialogs
+  var system_dialogs_constants =
+    "SYSDLG_CREATE_EDOCUMENT " +
+    "SYSDLG_CREATE_EDOCUMENT_VERSION " +
+    "SYSDLG_CURRENT_PERIOD " +
+    "SYSDLG_EDIT_FUNCTION_HELP " +
+    "SYSDLG_EDOCUMENT_KINDS_FOR_TEMPLATE " +
+    "SYSDLG_EXPORT_MULTIPLE_EDOCUMENTS " +
+    "SYSDLG_EXPORT_SINGLE_EDOCUMENT " +
+    "SYSDLG_IMPORT_EDOCUMENT " +
+    "SYSDLG_MULTIPLE_SELECT " +
+    "SYSDLG_SETUP_ACCESS_RIGHTS " +
+    "SYSDLG_SETUP_DEFAULT_RIGHTS " +
+    "SYSDLG_SETUP_FILTER_CONDITION " +
+    "SYSDLG_SETUP_SIGN_RIGHTS " +
+    "SYSDLG_SETUP_TASK_OBSERVERS " +
+    "SYSDLG_SETUP_TASK_ROUTE " +
+    "SYSDLG_SETUP_USERS_LIST " +
+    "SYSDLG_SIGN_EDOCUMENT " +
+    "SYSDLG_SIGN_MULTIPLE_EDOCUMENTS ";
+
+  // System reference names
+  var system_reference_names_constants =
+    "SYSREF_ACCESS_RIGHTS_TYPES " +
+    "SYSREF_ADMINISTRATION_HISTORY " +
+    "SYSREF_ALL_AVAILABLE_COMPONENTS " +
+    "SYSREF_ALL_AVAILABLE_PRIVILEGES " +
+    "SYSREF_ALL_REPLICATING_COMPONENTS " +
+    "SYSREF_AVAILABLE_DEVELOPERS_COMPONENTS " +
+    "SYSREF_CALENDAR_EVENTS " +
+    "SYSREF_COMPONENT_TOKEN_HISTORY " +
+    "SYSREF_COMPONENT_TOKENS " +
+    "SYSREF_COMPONENTS " +
+    "SYSREF_CONSTANTS " +
+    "SYSREF_DATA_RECEIVE_PROTOCOL " +
+    "SYSREF_DATA_SEND_PROTOCOL " +
+    "SYSREF_DIALOGS " +
+    "SYSREF_DIALOGS_REQUISITES " +
+    "SYSREF_EDITORS " +
+    "SYSREF_EDOC_CARDS " +
+    "SYSREF_EDOC_TYPES " +
+    "SYSREF_EDOCUMENT_CARD_REQUISITES " +
+    "SYSREF_EDOCUMENT_CARD_TYPES " +
+    "SYSREF_EDOCUMENT_CARD_TYPES_REFERENCE " +
+    "SYSREF_EDOCUMENT_CARDS " +
+    "SYSREF_EDOCUMENT_HISTORY " +
+    "SYSREF_EDOCUMENT_KINDS " +
+    "SYSREF_EDOCUMENT_REQUISITES " +
+    "SYSREF_EDOCUMENT_SIGNATURES " +
+    "SYSREF_EDOCUMENT_TEMPLATES " +
+    "SYSREF_EDOCUMENT_TEXT_STORAGES " +
+    "SYSREF_EDOCUMENT_VIEWS " +
+    "SYSREF_FILTERER_SETUP_CONFLICTS " +
+    "SYSREF_FILTRATER_SETTING_CONFLICTS " +
+    "SYSREF_FOLDER_HISTORY " +
+    "SYSREF_FOLDERS " +
+    "SYSREF_FUNCTION_GROUPS " +
+    "SYSREF_FUNCTION_PARAMS " +
+    "SYSREF_FUNCTIONS " +
+    "SYSREF_JOB_HISTORY " +
+    "SYSREF_LINKS " +
+    "SYSREF_LOCALIZATION_DICTIONARY " +
+    "SYSREF_LOCALIZATION_LANGUAGES " +
+    "SYSREF_MODULES " +
+    "SYSREF_PRIVILEGES " +
+    "SYSREF_RECORD_HISTORY " +
+    "SYSREF_REFERENCE_REQUISITES " +
+    "SYSREF_REFERENCE_TYPE_VIEWS " +
+    "SYSREF_REFERENCE_TYPES " +
+    "SYSREF_REFERENCES " +
+    "SYSREF_REFERENCES_REQUISITES " +
+    "SYSREF_REMOTE_SERVERS " +
+    "SYSREF_REPLICATION_SESSIONS_LOG " +
+    "SYSREF_REPLICATION_SESSIONS_PROTOCOL " +
+    "SYSREF_REPORTS " +
+    "SYSREF_ROLES " +
+    "SYSREF_ROUTE_BLOCK_GROUPS " +
+    "SYSREF_ROUTE_BLOCKS " +
+    "SYSREF_SCRIPTS " +
+    "SYSREF_SEARCHES " +
+    "SYSREF_SERVER_EVENTS " +
+    "SYSREF_SERVER_EVENTS_HISTORY " +
+    "SYSREF_STANDARD_ROUTE_GROUPS " +
+    "SYSREF_STANDARD_ROUTES " +
+    "SYSREF_STATUSES " +
+    "SYSREF_SYSTEM_SETTINGS " +
+    "SYSREF_TASK_HISTORY " +
+    "SYSREF_TASK_KIND_GROUPS " +
+    "SYSREF_TASK_KINDS " +
+    "SYSREF_TASK_RIGHTS " +
+    "SYSREF_TASK_SIGNATURES " +
+    "SYSREF_TASKS " +
+    "SYSREF_UNITS " +
+    "SYSREF_USER_GROUPS " +
+    "SYSREF_USER_GROUPS_REFERENCE " +
+    "SYSREF_USER_SUBSTITUTION " +
+    "SYSREF_USERS " +
+    "SYSREF_USERS_REFERENCE " +
+    "SYSREF_VIEWERS " +
+    "SYSREF_WORKING_TIME_CALENDARS ";
+
+  // Table name
+  var table_name_constants =
+    "ACCESS_RIGHTS_TABLE_NAME " +
+    "EDMS_ACCESS_TABLE_NAME " +
+    "EDOC_TYPES_TABLE_NAME ";
+
+  // Test
+  var test_constants =
+    "TEST_DEV_DB_NAME " +
+    "TEST_DEV_SYSTEM_CODE " +
+    "TEST_EDMS_DB_NAME " +
+    "TEST_EDMS_MAIN_CODE " +
+    "TEST_EDMS_MAIN_DB_NAME " +
+    "TEST_EDMS_SECOND_CODE " +
+    "TEST_EDMS_SECOND_DB_NAME " +
+    "TEST_EDMS_SYSTEM_CODE " +
+    "TEST_ISB5_MAIN_CODE " +
+    "TEST_ISB5_SECOND_CODE " +
+    "TEST_SQL_SERVER_2005_NAME " +
+    "TEST_SQL_SERVER_NAME ";
+
+  // Using the dialog windows
+  var using_the_dialog_windows_constants =
+    "ATTENTION_CAPTION " +
+    "cbsCommandLinks " +
+    "cbsDefault " +
+    "CONFIRMATION_CAPTION " +
+    "ERROR_CAPTION " +
+    "INFORMATION_CAPTION " +
+    "mrCancel " +
+    "mrOk ";
+
+  // Using the document
+  var using_the_document_constants =
+    "EDOC_VERSION_ACTIVE_STAGE_CODE " +
+    "EDOC_VERSION_DESIGN_STAGE_CODE " +
+    "EDOC_VERSION_OBSOLETE_STAGE_CODE ";
+
+  // Using the EA and encryption
+  var using_the_EA_and_encryption_constants =
+    "cpDataEnciphermentEnabled " +
+    "cpDigitalSignatureEnabled " +
+    "cpID " +
+    "cpIssuer " +
+    "cpPluginVersion " +
+    "cpSerial " +
+    "cpSubjectName " +
+    "cpSubjSimpleName " +
+    "cpValidFromDate " +
+    "cpValidToDate ";
+
+  // Using the ISBL-editor
+  var using_the_ISBL_editor_constants =
+    "ISBL_SYNTAX " + "NO_SYNTAX " + "XML_SYNTAX ";
+
+  // Wait block properties
+  var wait_block_properties_constants =
+    "WAIT_BLOCK_AFTER_FINISH_EVENT " +
+    "WAIT_BLOCK_BEFORE_START_EVENT " +
+    "WAIT_BLOCK_DEADLINE_PROPERTY " +
+    "WAIT_BLOCK_IS_RELATIVE_DEADLINE_PROPERTY " +
+    "WAIT_BLOCK_NAME_PROPERTY " +
+    "WAIT_BLOCK_RELATIVE_DEADLINE_TYPE_PROPERTY ";
+
+  // SYSRES Common
+  var sysres_common_constants =
+    "SYSRES_COMMON " +
+    "SYSRES_CONST " +
+    "SYSRES_MBFUNC " +
+    "SYSRES_SBDATA " +
+    "SYSRES_SBGUI " +
+    "SYSRES_SBINTF " +
+    "SYSRES_SBREFDSC " +
+    "SYSRES_SQLERRORS " +
+    "SYSRES_SYSCOMP ";
+
+  // Константы ==> built_in
+  var CONSTANTS =
+    sysres_constants +
+    base_constants +
+    base_group_name_constants +
+    decision_block_properties_constants +
+    file_extension_constants +
+    job_block_properties_constants +
+    language_code_constants +
+    launching_external_applications_constants +
+    link_kind_constants +
+    lock_type_constants +
+    monitor_block_properties_constants +
+    notice_block_properties_constants +
+    object_events_constants +
+    object_params_constants +
+    other_constants +
+    privileges_constants +
+    pseudoreference_code_constants +
+    requisite_ISBCertificateType_values_constants +
+    requisite_ISBEDocStorageType_values_constants +
+    requisite_compType2_values_constants +
+    requisite_name_constants +
+    result_constants +
+    rule_identification_constants +
+    script_block_properties_constants +
+    subtask_block_properties_constants +
+    system_component_constants +
+    system_dialogs_constants +
+    system_reference_names_constants +
+    table_name_constants +
+    test_constants +
+    using_the_dialog_windows_constants +
+    using_the_document_constants +
+    using_the_EA_and_encryption_constants +
+    using_the_ISBL_editor_constants +
+    wait_block_properties_constants +
+    sysres_common_constants;
+
+  // enum TAccountType
+  var TAccountType = "atUser atGroup atRole ";
+
+  // enum TActionEnabledMode
+  var TActionEnabledMode =
+    "aemEnabledAlways " +
+    "aemDisabledAlways " +
+    "aemEnabledOnBrowse " +
+    "aemEnabledOnEdit " +
+    "aemDisabledOnBrowseEmpty ";
+
+  // enum TAddPosition
+  var TAddPosition = "apBegin apEnd ";
+
+  // enum TAlignment
+  var TAlignment = "alLeft alRight ";
+
+  // enum TAreaShowMode
+  var TAreaShowMode =
+    "asmNever " +
+    "asmNoButCustomize " +
+    "asmAsLastTime " +
+    "asmYesButCustomize " +
+    "asmAlways ";
+
+  // enum TCertificateInvalidationReason
+  var TCertificateInvalidationReason = "cirCommon cirRevoked ";
+
+  // enum TCertificateType
+  var TCertificateType = "ctSignature ctEncode ctSignatureEncode ";
+
+  // enum TCheckListBoxItemState
+  var TCheckListBoxItemState = "clbUnchecked clbChecked clbGrayed ";
+
+  // enum TCloseOnEsc
+  var TCloseOnEsc = "ceISB ceAlways ceNever ";
+
+  // enum TCompType
+  var TCompType =
+    "ctDocument " +
+    "ctReference " +
+    "ctScript " +
+    "ctUnknown " +
+    "ctReport " +
+    "ctDialog " +
+    "ctFunction " +
+    "ctFolder " +
+    "ctEDocument " +
+    "ctTask " +
+    "ctJob " +
+    "ctNotice " +
+    "ctControlJob ";
+
+  // enum TConditionFormat
+  var TConditionFormat = "cfInternal cfDisplay ";
+
+  // enum TConnectionIntent
+  var TConnectionIntent = "ciUnspecified ciWrite ciRead ";
+
+  // enum TContentKind
+  var TContentKind =
+    "ckFolder " +
+    "ckEDocument " +
+    "ckTask " +
+    "ckJob " +
+    "ckComponentToken " +
+    "ckAny " +
+    "ckReference " +
+    "ckScript " +
+    "ckReport " +
+    "ckDialog ";
+
+  // enum TControlType
+  var TControlType =
+    "ctISBLEditor " +
+    "ctBevel " +
+    "ctButton " +
+    "ctCheckListBox " +
+    "ctComboBox " +
+    "ctComboEdit " +
+    "ctGrid " +
+    "ctDBCheckBox " +
+    "ctDBComboBox " +
+    "ctDBEdit " +
+    "ctDBEllipsis " +
+    "ctDBMemo " +
+    "ctDBNavigator " +
+    "ctDBRadioGroup " +
+    "ctDBStatusLabel " +
+    "ctEdit " +
+    "ctGroupBox " +
+    "ctInplaceHint " +
+    "ctMemo " +
+    "ctPanel " +
+    "ctListBox " +
+    "ctRadioButton " +
+    "ctRichEdit " +
+    "ctTabSheet " +
+    "ctWebBrowser " +
+    "ctImage " +
+    "ctHyperLink " +
+    "ctLabel " +
+    "ctDBMultiEllipsis " +
+    "ctRibbon " +
+    "ctRichView " +
+    "ctInnerPanel " +
+    "ctPanelGroup " +
+    "ctBitButton ";
+
+  // enum TCriterionContentType
+  var TCriterionContentType =
+    "cctDate " +
+    "cctInteger " +
+    "cctNumeric " +
+    "cctPick " +
+    "cctReference " +
+    "cctString " +
+    "cctText ";
+
+  // enum TCultureType
+  var TCultureType = "cltInternal cltPrimary cltGUI ";
+
+  // enum TDataSetEventType
+  var TDataSetEventType =
+    "dseBeforeOpen " +
+    "dseAfterOpen " +
+    "dseBeforeClose " +
+    "dseAfterClose " +
+    "dseOnValidDelete " +
+    "dseBeforeDelete " +
+    "dseAfterDelete " +
+    "dseAfterDeleteOutOfTransaction " +
+    "dseOnDeleteError " +
+    "dseBeforeInsert " +
+    "dseAfterInsert " +
+    "dseOnValidUpdate " +
+    "dseBeforeUpdate " +
+    "dseOnUpdateRatifiedRecord " +
+    "dseAfterUpdate " +
+    "dseAfterUpdateOutOfTransaction " +
+    "dseOnUpdateError " +
+    "dseAfterScroll " +
+    "dseOnOpenRecord " +
+    "dseOnCloseRecord " +
+    "dseBeforeCancel " +
+    "dseAfterCancel " +
+    "dseOnUpdateDeadlockError " +
+    "dseBeforeDetailUpdate " +
+    "dseOnPrepareUpdate " +
+    "dseOnAnyRequisiteChange ";
+
+  // enum TDataSetState
+  var TDataSetState = "dssEdit dssInsert dssBrowse dssInActive ";
+
+  // enum TDateFormatType
+  var TDateFormatType = "dftDate dftShortDate dftDateTime dftTimeStamp ";
+
+  // enum TDateOffsetType
+  var TDateOffsetType = "dotDays dotHours dotMinutes dotSeconds ";
+
+  // enum TDateTimeKind
+  var TDateTimeKind = "dtkndLocal dtkndUTC ";
+
+  // enum TDeaAccessRights
+  var TDeaAccessRights = "arNone arView arEdit arFull ";
+
+  // enum TDocumentDefaultAction
+  var TDocumentDefaultAction = "ddaView ddaEdit ";
+
+  // enum TEditMode
+  var TEditMode =
+    "emLock " +
+    "emEdit " +
+    "emSign " +
+    "emExportWithLock " +
+    "emImportWithUnlock " +
+    "emChangeVersionNote " +
+    "emOpenForModify " +
+    "emChangeLifeStage " +
+    "emDelete " +
+    "emCreateVersion " +
+    "emImport " +
+    "emUnlockExportedWithLock " +
+    "emStart " +
+    "emAbort " +
+    "emReInit " +
+    "emMarkAsReaded " +
+    "emMarkAsUnreaded " +
+    "emPerform " +
+    "emAccept " +
+    "emResume " +
+    "emChangeRights " +
+    "emEditRoute " +
+    "emEditObserver " +
+    "emRecoveryFromLocalCopy " +
+    "emChangeWorkAccessType " +
+    "emChangeEncodeTypeToCertificate " +
+    "emChangeEncodeTypeToPassword " +
+    "emChangeEncodeTypeToNone " +
+    "emChangeEncodeTypeToCertificatePassword " +
+    "emChangeStandardRoute " +
+    "emGetText " +
+    "emOpenForView " +
+    "emMoveToStorage " +
+    "emCreateObject " +
+    "emChangeVersionHidden " +
+    "emDeleteVersion " +
+    "emChangeLifeCycleStage " +
+    "emApprovingSign " +
+    "emExport " +
+    "emContinue " +
+    "emLockFromEdit " +
+    "emUnLockForEdit " +
+    "emLockForServer " +
+    "emUnlockFromServer " +
+    "emDelegateAccessRights " +
+    "emReEncode ";
+
+  // enum TEditorCloseObservType
+  var TEditorCloseObservType = "ecotFile ecotProcess ";
+
+  // enum TEdmsApplicationAction
+  var TEdmsApplicationAction = "eaGet eaCopy eaCreate eaCreateStandardRoute ";
+
+  // enum TEDocumentLockType
+  var TEDocumentLockType = "edltAll edltNothing edltQuery ";
+
+  // enum TEDocumentStepShowMode
+  var TEDocumentStepShowMode = "essmText essmCard ";
+
+  // enum TEDocumentStepVersionType
+  var TEDocumentStepVersionType = "esvtLast esvtLastActive esvtSpecified ";
+
+  // enum TEDocumentStorageFunction
+  var TEDocumentStorageFunction = "edsfExecutive edsfArchive ";
+
+  // enum TEDocumentStorageType
+  var TEDocumentStorageType = "edstSQLServer edstFile ";
+
+  // enum TEDocumentVersionSourceType
+  var TEDocumentVersionSourceType =
+    "edvstNone edvstEDocumentVersionCopy edvstFile edvstTemplate edvstScannedFile ";
+
+  // enum TEDocumentVersionState
+  var TEDocumentVersionState = "vsDefault vsDesign vsActive vsObsolete ";
+
+  // enum TEncodeType
+  var TEncodeType = "etNone etCertificate etPassword etCertificatePassword ";
+
+  // enum TExceptionCategory
+  var TExceptionCategory = "ecException ecWarning ecInformation ";
+
+  // enum TExportedSignaturesType
+  var TExportedSignaturesType = "estAll estApprovingOnly ";
+
+  // enum TExportedVersionType
+  var TExportedVersionType = "evtLast evtLastActive evtQuery ";
+
+  // enum TFieldDataType
+  var TFieldDataType =
+    "fdtString " +
+    "fdtNumeric " +
+    "fdtInteger " +
+    "fdtDate " +
+    "fdtText " +
+    "fdtUnknown " +
+    "fdtWideString " +
+    "fdtLargeInteger ";
+
+  // enum TFolderType
+  var TFolderType =
+    "ftInbox " +
+    "ftOutbox " +
+    "ftFavorites " +
+    "ftCommonFolder " +
+    "ftUserFolder " +
+    "ftComponents " +
+    "ftQuickLaunch " +
+    "ftShortcuts " +
+    "ftSearch ";
+
+  // enum TGridRowHeight
+  var TGridRowHeight = "grhAuto " + "grhX1 " + "grhX2 " + "grhX3 ";
+
+  // enum THyperlinkType
+  var THyperlinkType = "hltText " + "hltRTF " + "hltHTML ";
+
+  // enum TImageFileFormat
+  var TImageFileFormat =
+    "iffBMP " +
+    "iffJPEG " +
+    "iffMultiPageTIFF " +
+    "iffSinglePageTIFF " +
+    "iffTIFF " +
+    "iffPNG ";
+
+  // enum TImageMode
+  var TImageMode = "im8bGrayscale " + "im24bRGB " + "im1bMonochrome ";
+
+  // enum TImageType
+  var TImageType = "itBMP " + "itJPEG " + "itWMF " + "itPNG ";
+
+  // enum TInplaceHintKind
+  var TInplaceHintKind =
+    "ikhInformation " + "ikhWarning " + "ikhError " + "ikhNoIcon ";
+
+  // enum TISBLContext
+  var TISBLContext =
+    "icUnknown " +
+    "icScript " +
+    "icFunction " +
+    "icIntegratedReport " +
+    "icAnalyticReport " +
+    "icDataSetEventHandler " +
+    "icActionHandler " +
+    "icFormEventHandler " +
+    "icLookUpEventHandler " +
+    "icRequisiteChangeEventHandler " +
+    "icBeforeSearchEventHandler " +
+    "icRoleCalculation " +
+    "icSelectRouteEventHandler " +
+    "icBlockPropertyCalculation " +
+    "icBlockQueryParamsEventHandler " +
+    "icChangeSearchResultEventHandler " +
+    "icBlockEventHandler " +
+    "icSubTaskInitEventHandler " +
+    "icEDocDataSetEventHandler " +
+    "icEDocLookUpEventHandler " +
+    "icEDocActionHandler " +
+    "icEDocFormEventHandler " +
+    "icEDocRequisiteChangeEventHandler " +
+    "icStructuredConversionRule " +
+    "icStructuredConversionEventBefore " +
+    "icStructuredConversionEventAfter " +
+    "icWizardEventHandler " +
+    "icWizardFinishEventHandler " +
+    "icWizardStepEventHandler " +
+    "icWizardStepFinishEventHandler " +
+    "icWizardActionEnableEventHandler " +
+    "icWizardActionExecuteEventHandler " +
+    "icCreateJobsHandler " +
+    "icCreateNoticesHandler " +
+    "icBeforeLookUpEventHandler " +
+    "icAfterLookUpEventHandler " +
+    "icTaskAbortEventHandler " +
+    "icWorkflowBlockActionHandler " +
+    "icDialogDataSetEventHandler " +
+    "icDialogActionHandler " +
+    "icDialogLookUpEventHandler " +
+    "icDialogRequisiteChangeEventHandler " +
+    "icDialogFormEventHandler " +
+    "icDialogValidCloseEventHandler " +
+    "icBlockFormEventHandler " +
+    "icTaskFormEventHandler " +
+    "icReferenceMethod " +
+    "icEDocMethod " +
+    "icDialogMethod " +
+    "icProcessMessageHandler ";
+
+  // enum TItemShow
+  var TItemShow = "isShow " + "isHide " + "isByUserSettings ";
+
+  // enum TJobKind
+  var TJobKind = "jkJob " + "jkNotice " + "jkControlJob ";
+
+  // enum TJoinType
+  var TJoinType = "jtInner " + "jtLeft " + "jtRight " + "jtFull " + "jtCross ";
+
+  // enum TLabelPos
+  var TLabelPos = "lbpAbove " + "lbpBelow " + "lbpLeft " + "lbpRight ";
+
+  // enum TLicensingType
+  var TLicensingType = "eltPerConnection " + "eltPerUser ";
+
+  // enum TLifeCycleStageFontColor
+  var TLifeCycleStageFontColor =
+    "sfcUndefined " +
+    "sfcBlack " +
+    "sfcGreen " +
+    "sfcRed " +
+    "sfcBlue " +
+    "sfcOrange " +
+    "sfcLilac ";
+
+  // enum TLifeCycleStageFontStyle
+  var TLifeCycleStageFontStyle = "sfsItalic " + "sfsStrikeout " + "sfsNormal ";
+
+  // enum TLockableDevelopmentComponentType
+  var TLockableDevelopmentComponentType =
+    "ldctStandardRoute " +
+    "ldctWizard " +
+    "ldctScript " +
+    "ldctFunction " +
+    "ldctRouteBlock " +
+    "ldctIntegratedReport " +
+    "ldctAnalyticReport " +
+    "ldctReferenceType " +
+    "ldctEDocumentType " +
+    "ldctDialog " +
+    "ldctServerEvents ";
+
+  // enum TMaxRecordCountRestrictionType
+  var TMaxRecordCountRestrictionType =
+    "mrcrtNone " + "mrcrtUser " + "mrcrtMaximal " + "mrcrtCustom ";
+
+  // enum TRangeValueType
+  var TRangeValueType =
+    "vtEqual " + "vtGreaterOrEqual " + "vtLessOrEqual " + "vtRange ";
+
+  // enum TRelativeDate
+  var TRelativeDate =
+    "rdYesterday " +
+    "rdToday " +
+    "rdTomorrow " +
+    "rdThisWeek " +
+    "rdThisMonth " +
+    "rdThisYear " +
+    "rdNextMonth " +
+    "rdNextWeek " +
+    "rdLastWeek " +
+    "rdLastMonth ";
+
+  // enum TReportDestination
+  var TReportDestination = "rdWindow " + "rdFile " + "rdPrinter ";
+
+  // enum TReqDataType
+  var TReqDataType =
+    "rdtString " +
+    "rdtNumeric " +
+    "rdtInteger " +
+    "rdtDate " +
+    "rdtReference " +
+    "rdtAccount " +
+    "rdtText " +
+    "rdtPick " +
+    "rdtUnknown " +
+    "rdtLargeInteger " +
+    "rdtDocument ";
+
+  // enum TRequisiteEventType
+  var TRequisiteEventType = "reOnChange " + "reOnChangeValues ";
+
+  // enum TSBTimeType
+  var TSBTimeType = "ttGlobal " + "ttLocal " + "ttUser " + "ttSystem ";
+
+  // enum TSearchShowMode
+  var TSearchShowMode =
+    "ssmBrowse " + "ssmSelect " + "ssmMultiSelect " + "ssmBrowseModal ";
+
+  // enum TSelectMode
+  var TSelectMode = "smSelect " + "smLike " + "smCard ";
+
+  // enum TSignatureType
+  var TSignatureType = "stNone " + "stAuthenticating " + "stApproving ";
+
+  // enum TSignerContentType
+  var TSignerContentType = "sctString " + "sctStream ";
+
+  // enum TStringsSortType
+  var TStringsSortType = "sstAnsiSort " + "sstNaturalSort ";
+
+  // enum TStringValueType
+  var TStringValueType = "svtEqual " + "svtContain ";
+
+  // enum TStructuredObjectAttributeType
+  var TStructuredObjectAttributeType =
+    "soatString " +
+    "soatNumeric " +
+    "soatInteger " +
+    "soatDatetime " +
+    "soatReferenceRecord " +
+    "soatText " +
+    "soatPick " +
+    "soatBoolean " +
+    "soatEDocument " +
+    "soatAccount " +
+    "soatIntegerCollection " +
+    "soatNumericCollection " +
+    "soatStringCollection " +
+    "soatPickCollection " +
+    "soatDatetimeCollection " +
+    "soatBooleanCollection " +
+    "soatReferenceRecordCollection " +
+    "soatEDocumentCollection " +
+    "soatAccountCollection " +
+    "soatContents " +
+    "soatUnknown ";
+
+  // enum TTaskAbortReason
+  var TTaskAbortReason = "tarAbortByUser " + "tarAbortByWorkflowException ";
+
+  // enum TTextValueType
+  var TTextValueType = "tvtAllWords " + "tvtExactPhrase " + "tvtAnyWord ";
+
+  // enum TUserObjectStatus
+  var TUserObjectStatus =
+    "usNone " +
+    "usCompleted " +
+    "usRedSquare " +
+    "usBlueSquare " +
+    "usYellowSquare " +
+    "usGreenSquare " +
+    "usOrangeSquare " +
+    "usPurpleSquare " +
+    "usFollowUp ";
+
+  // enum TUserType
+  var TUserType =
+    "utUnknown " +
+    "utUser " +
+    "utDeveloper " +
+    "utAdministrator " +
+    "utSystemDeveloper " +
+    "utDisconnected ";
+
+  // enum TValuesBuildType
+  var TValuesBuildType =
+    "btAnd " + "btDetailAnd " + "btOr " + "btNotOr " + "btOnly ";
+
+  // enum TViewMode
+  var TViewMode = "vmView " + "vmSelect " + "vmNavigation ";
+
+  // enum TViewSelectionMode
+  var TViewSelectionMode =
+    "vsmSingle " + "vsmMultiple " + "vsmMultipleCheck " + "vsmNoSelection ";
+
+  // enum TWizardActionType
+  var TWizardActionType =
+    "wfatPrevious " + "wfatNext " + "wfatCancel " + "wfatFinish ";
+
+  // enum TWizardFormElementProperty
+  var TWizardFormElementProperty =
+    "wfepUndefined " +
+    "wfepText3 " +
+    "wfepText6 " +
+    "wfepText9 " +
+    "wfepSpinEdit " +
+    "wfepDropDown " +
+    "wfepRadioGroup " +
+    "wfepFlag " +
+    "wfepText12 " +
+    "wfepText15 " +
+    "wfepText18 " +
+    "wfepText21 " +
+    "wfepText24 " +
+    "wfepText27 " +
+    "wfepText30 " +
+    "wfepRadioGroupColumn1 " +
+    "wfepRadioGroupColumn2 " +
+    "wfepRadioGroupColumn3 ";
+
+  // enum TWizardFormElementType
+  var TWizardFormElementType =
+    "wfetQueryParameter " + "wfetText " + "wfetDelimiter " + "wfetLabel ";
+
+  // enum TWizardParamType
+  var TWizardParamType =
+    "wptString " +
+    "wptInteger " +
+    "wptNumeric " +
+    "wptBoolean " +
+    "wptDateTime " +
+    "wptPick " +
+    "wptText " +
+    "wptUser " +
+    "wptUserList " +
+    "wptEDocumentInfo " +
+    "wptEDocumentInfoList " +
+    "wptReferenceRecordInfo " +
+    "wptReferenceRecordInfoList " +
+    "wptFolderInfo " +
+    "wptTaskInfo " +
+    "wptContents " +
+    "wptFileName " +
+    "wptDate ";
+
+  // enum TWizardStepResult
+  var TWizardStepResult =
+    "wsrComplete " +
+    "wsrGoNext " +
+    "wsrGoPrevious " +
+    "wsrCustom " +
+    "wsrCancel " +
+    "wsrGoFinal ";
+
+  // enum TWizardStepType
+  var TWizardStepType =
+    "wstForm " +
+    "wstEDocument " +
+    "wstTaskCard " +
+    "wstReferenceRecordCard " +
+    "wstFinal ";
+
+  // enum TWorkAccessType
+  var TWorkAccessType = "waAll " + "waPerformers " + "waManual ";
+
+  // enum TWorkflowBlockType
+  var TWorkflowBlockType =
+    "wsbStart " +
+    "wsbFinish " +
+    "wsbNotice " +
+    "wsbStep " +
+    "wsbDecision " +
+    "wsbWait " +
+    "wsbMonitor " +
+    "wsbScript " +
+    "wsbConnector " +
+    "wsbSubTask " +
+    "wsbLifeCycleStage " +
+    "wsbPause ";
+
+  // enum TWorkflowDataType
+  var TWorkflowDataType =
+    "wdtInteger " +
+    "wdtFloat " +
+    "wdtString " +
+    "wdtPick " +
+    "wdtDateTime " +
+    "wdtBoolean " +
+    "wdtTask " +
+    "wdtJob " +
+    "wdtFolder " +
+    "wdtEDocument " +
+    "wdtReferenceRecord " +
+    "wdtUser " +
+    "wdtGroup " +
+    "wdtRole " +
+    "wdtIntegerCollection " +
+    "wdtFloatCollection " +
+    "wdtStringCollection " +
+    "wdtPickCollection " +
+    "wdtDateTimeCollection " +
+    "wdtBooleanCollection " +
+    "wdtTaskCollection " +
+    "wdtJobCollection " +
+    "wdtFolderCollection " +
+    "wdtEDocumentCollection " +
+    "wdtReferenceRecordCollection " +
+    "wdtUserCollection " +
+    "wdtGroupCollection " +
+    "wdtRoleCollection " +
+    "wdtContents " +
+    "wdtUserList " +
+    "wdtSearchDescription " +
+    "wdtDeadLine " +
+    "wdtPickSet " +
+    "wdtAccountCollection ";
+
+  // enum TWorkImportance
+  var TWorkImportance = "wiLow " + "wiNormal " + "wiHigh ";
+
+  // enum TWorkRouteType
+  var TWorkRouteType = "wrtSoft " + "wrtHard ";
+
+  // enum TWorkState
+  var TWorkState =
+    "wsInit " +
+    "wsRunning " +
+    "wsDone " +
+    "wsControlled " +
+    "wsAborted " +
+    "wsContinued ";
+
+  // enum TWorkTextBuildingMode
+  var TWorkTextBuildingMode =
+    "wtmFull " + "wtmFromCurrent " + "wtmOnlyCurrent ";
+
+  // Перечисления
+  var ENUMS =
+    TAccountType +
+    TActionEnabledMode +
+    TAddPosition +
+    TAlignment +
+    TAreaShowMode +
+    TCertificateInvalidationReason +
+    TCertificateType +
+    TCheckListBoxItemState +
+    TCloseOnEsc +
+    TCompType +
+    TConditionFormat +
+    TConnectionIntent +
+    TContentKind +
+    TControlType +
+    TCriterionContentType +
+    TCultureType +
+    TDataSetEventType +
+    TDataSetState +
+    TDateFormatType +
+    TDateOffsetType +
+    TDateTimeKind +
+    TDeaAccessRights +
+    TDocumentDefaultAction +
+    TEditMode +
+    TEditorCloseObservType +
+    TEdmsApplicationAction +
+    TEDocumentLockType +
+    TEDocumentStepShowMode +
+    TEDocumentStepVersionType +
+    TEDocumentStorageFunction +
+    TEDocumentStorageType +
+    TEDocumentVersionSourceType +
+    TEDocumentVersionState +
+    TEncodeType +
+    TExceptionCategory +
+    TExportedSignaturesType +
+    TExportedVersionType +
+    TFieldDataType +
+    TFolderType +
+    TGridRowHeight +
+    THyperlinkType +
+    TImageFileFormat +
+    TImageMode +
+    TImageType +
+    TInplaceHintKind +
+    TISBLContext +
+    TItemShow +
+    TJobKind +
+    TJoinType +
+    TLabelPos +
+    TLicensingType +
+    TLifeCycleStageFontColor +
+    TLifeCycleStageFontStyle +
+    TLockableDevelopmentComponentType +
+    TMaxRecordCountRestrictionType +
+    TRangeValueType +
+    TRelativeDate +
+    TReportDestination +
+    TReqDataType +
+    TRequisiteEventType +
+    TSBTimeType +
+    TSearchShowMode +
+    TSelectMode +
+    TSignatureType +
+    TSignerContentType +
+    TStringsSortType +
+    TStringValueType +
+    TStructuredObjectAttributeType +
+    TTaskAbortReason +
+    TTextValueType +
+    TUserObjectStatus +
+    TUserType +
+    TValuesBuildType +
+    TViewMode +
+    TViewSelectionMode +
+    TWizardActionType +
+    TWizardFormElementProperty +
+    TWizardFormElementType +
+    TWizardParamType +
+    TWizardStepResult +
+    TWizardStepType +
+    TWorkAccessType +
+    TWorkflowBlockType +
+    TWorkflowDataType +
+    TWorkImportance +
+    TWorkRouteType +
+    TWorkState +
+    TWorkTextBuildingMode;
+
+  // Системные функции ==> SYSFUNCTIONS
+  var system_functions =
+    "AddSubString " +
+    "AdjustLineBreaks " +
+    "AmountInWords " +
+    "Analysis " +
+    "ArrayDimCount " +
+    "ArrayHighBound " +
+    "ArrayLowBound " +
+    "ArrayOf " +
+    "ArrayReDim " +
+    "Assert " +
+    "Assigned " +
+    "BeginOfMonth " +
+    "BeginOfPeriod " +
+    "BuildProfilingOperationAnalysis " +
+    "CallProcedure " +
+    "CanReadFile " +
+    "CArrayElement " +
+    "CDataSetRequisite " +
+    "ChangeDate " +
+    "ChangeReferenceDataset " +
+    "Char " +
+    "CharPos " +
+    "CheckParam " +
+    "CheckParamValue " +
+    "CompareStrings " +
+    "ConstantExists " +
+    "ControlState " +
+    "ConvertDateStr " +
+    "Copy " +
+    "CopyFile " +
+    "CreateArray " +
+    "CreateCachedReference " +
+    "CreateConnection " +
+    "CreateDialog " +
+    "CreateDualListDialog " +
+    "CreateEditor " +
+    "CreateException " +
+    "CreateFile " +
+    "CreateFolderDialog " +
+    "CreateInputDialog " +
+    "CreateLinkFile " +
+    "CreateList " +
+    "CreateLock " +
+    "CreateMemoryDataSet " +
+    "CreateObject " +
+    "CreateOpenDialog " +
+    "CreateProgress " +
+    "CreateQuery " +
+    "CreateReference " +
+    "CreateReport " +
+    "CreateSaveDialog " +
+    "CreateScript " +
+    "CreateSQLPivotFunction " +
+    "CreateStringList " +
+    "CreateTreeListSelectDialog " +
+    "CSelectSQL " +
+    "CSQL " +
+    "CSubString " +
+    "CurrentUserID " +
+    "CurrentUserName " +
+    "CurrentVersion " +
+    "DataSetLocateEx " +
+    "DateDiff " +
+    "DateTimeDiff " +
+    "DateToStr " +
+    "DayOfWeek " +
+    "DeleteFile " +
+    "DirectoryExists " +
+    "DisableCheckAccessRights " +
+    "DisableCheckFullShowingRestriction " +
+    "DisableMassTaskSendingRestrictions " +
+    "DropTable " +
+    "DupeString " +
+    "EditText " +
+    "EnableCheckAccessRights " +
+    "EnableCheckFullShowingRestriction " +
+    "EnableMassTaskSendingRestrictions " +
+    "EndOfMonth " +
+    "EndOfPeriod " +
+    "ExceptionExists " +
+    "ExceptionsOff " +
+    "ExceptionsOn " +
+    "Execute " +
+    "ExecuteProcess " +
+    "Exit " +
+    "ExpandEnvironmentVariables " +
+    "ExtractFileDrive " +
+    "ExtractFileExt " +
+    "ExtractFileName " +
+    "ExtractFilePath " +
+    "ExtractParams " +
+    "FileExists " +
+    "FileSize " +
+    "FindFile " +
+    "FindSubString " +
+    "FirmContext " +
+    "ForceDirectories " +
+    "Format " +
+    "FormatDate " +
+    "FormatNumeric " +
+    "FormatSQLDate " +
+    "FormatString " +
+    "FreeException " +
+    "GetComponent " +
+    "GetComponentLaunchParam " +
+    "GetConstant " +
+    "GetLastException " +
+    "GetReferenceRecord " +
+    "GetRefTypeByRefID " +
+    "GetTableID " +
+    "GetTempFolder " +
+    "IfThen " +
+    "In " +
+    "IndexOf " +
+    "InputDialog " +
+    "InputDialogEx " +
+    "InteractiveMode " +
+    "IsFileLocked " +
+    "IsGraphicFile " +
+    "IsNumeric " +
+    "Length " +
+    "LoadString " +
+    "LoadStringFmt " +
+    "LocalTimeToUTC " +
+    "LowerCase " +
+    "Max " +
+    "MessageBox " +
+    "MessageBoxEx " +
+    "MimeDecodeBinary " +
+    "MimeDecodeString " +
+    "MimeEncodeBinary " +
+    "MimeEncodeString " +
+    "Min " +
+    "MoneyInWords " +
+    "MoveFile " +
+    "NewID " +
+    "Now " +
+    "OpenFile " +
+    "Ord " +
+    "Precision " +
+    "Raise " +
+    "ReadCertificateFromFile " +
+    "ReadFile " +
+    "ReferenceCodeByID " +
+    "ReferenceNumber " +
+    "ReferenceRequisiteMode " +
+    "ReferenceRequisiteValue " +
+    "RegionDateSettings " +
+    "RegionNumberSettings " +
+    "RegionTimeSettings " +
+    "RegRead " +
+    "RegWrite " +
+    "RenameFile " +
+    "Replace " +
+    "Round " +
+    "SelectServerCode " +
+    "SelectSQL " +
+    "ServerDateTime " +
+    "SetConstant " +
+    "SetManagedFolderFieldsState " +
+    "ShowConstantsInputDialog " +
+    "ShowMessage " +
+    "Sleep " +
+    "Split " +
+    "SQL " +
+    "SQL2XLSTAB " +
+    "SQLProfilingSendReport " +
+    "StrToDate " +
+    "SubString " +
+    "SubStringCount " +
+    "SystemSetting " +
+    "Time " +
+    "TimeDiff " +
+    "Today " +
+    "Transliterate " +
+    "Trim " +
+    "UpperCase " +
+    "UserStatus " +
+    "UTCToLocalTime " +
+    "ValidateXML " +
+    "VarIsClear " +
+    "VarIsEmpty " +
+    "VarIsNull " +
+    "WorkTimeDiff " +
+    "WriteFile " +
+    "WriteFileEx " +
+    "WriteObjectHistory " +
+    "Анализ " +
+    "БазаДанных " +
+    "БлокЕсть " +
+    "БлокЕстьРасш " +
+    "БлокИнфо " +
+    "БлокСнять " +
+    "БлокСнятьРасш " +
+    "БлокУстановить " +
+    "Ввод " +
+    "ВводМеню " +
+    "ВедС " +
+    "ВедСпр " +
+    "ВерхняяГраницаМассива " +
+    "ВнешПрогр " +
+    "Восст " +
+    "ВременнаяПапка " +
+    "Время " +
+    "ВыборSQL " +
+    "ВыбратьЗапись " +
+    "ВыделитьСтр " +
+    "Вызвать " +
+    "Выполнить " +
+    "ВыпПрогр " +
+    "ГрафическийФайл " +
+    "ГруппаДополнительно " +
+    "ДатаВремяСерв " +
+    "ДеньНедели " +
+    "ДиалогДаНет " +
+    "ДлинаСтр " +
+    "ДобПодстр " +
+    "ЕПусто " +
+    "ЕслиТо " +
+    "ЕЧисло " +
+    "ЗамПодстр " +
+    "ЗаписьСправочника " +
+    "ЗначПоляСпр " +
+    "ИДТипСпр " +
+    "ИзвлечьДиск " +
+    "ИзвлечьИмяФайла " +
+    "ИзвлечьПуть " +
+    "ИзвлечьРасширение " +
+    "ИзмДат " +
+    "ИзменитьРазмерМассива " +
+    "ИзмеренийМассива " +
+    "ИмяОрг " +
+    "ИмяПоляСпр " +
+    "Индекс " +
+    "ИндикаторЗакрыть " +
+    "ИндикаторОткрыть " +
+    "ИндикаторШаг " +
+    "ИнтерактивныйРежим " +
+    "ИтогТблСпр " +
+    "КодВидВедСпр " +
+    "КодВидСпрПоИД " +
+    "КодПоAnalit " +
+    "КодСимвола " +
+    "КодСпр " +
+    "КолПодстр " +
+    "КолПроп " +
+    "КонМес " +
+    "Конст " +
+    "КонстЕсть " +
+    "КонстЗнач " +
+    "КонТран " +
+    "КопироватьФайл " +
+    "КопияСтр " +
+    "КПериод " +
+    "КСтрТблСпр " +
+    "Макс " +
+    "МаксСтрТблСпр " +
+    "Массив " +
+    "Меню " +
+    "МенюРасш " +
+    "Мин " +
+    "НаборДанныхНайтиРасш " +
+    "НаимВидСпр " +
+    "НаимПоAnalit " +
+    "НаимСпр " +
+    "НастроитьПереводыСтрок " +
+    "НачМес " +
+    "НачТран " +
+    "НижняяГраницаМассива " +
+    "НомерСпр " +
+    "НПериод " +
+    "Окно " +
+    "Окр " +
+    "Окружение " +
+    "ОтлИнфДобавить " +
+    "ОтлИнфУдалить " +
+    "Отчет " +
+    "ОтчетАнал " +
+    "ОтчетИнт " +
+    "ПапкаСуществует " +
+    "Пауза " +
+    "ПВыборSQL " +
+    "ПереименоватьФайл " +
+    "Переменные " +
+    "ПереместитьФайл " +
+    "Подстр " +
+    "ПоискПодстр " +
+    "ПоискСтр " +
+    "ПолучитьИДТаблицы " +
+    "ПользовательДополнительно " +
+    "ПользовательИД " +
+    "ПользовательИмя " +
+    "ПользовательСтатус " +
+    "Прервать " +
+    "ПроверитьПараметр " +
+    "ПроверитьПараметрЗнач " +
+    "ПроверитьУсловие " +
+    "РазбСтр " +
+    "РазнВремя " +
+    "РазнДат " +
+    "РазнДатаВремя " +
+    "РазнРабВремя " +
+    "РегУстВрем " +
+    "РегУстДат " +
+    "РегУстЧсл " +
+    "РедТекст " +
+    "РеестрЗапись " +
+    "РеестрСписокИменПарам " +
+    "РеестрЧтение " +
+    "РеквСпр " +
+    "РеквСпрПр " +
+    "Сегодня " +
+    "Сейчас " +
+    "Сервер " +
+    "СерверПроцессИД " +
+    "СертификатФайлСчитать " +
+    "СжПроб " +
+    "Символ " +
+    "СистемаДиректумКод " +
+    "СистемаИнформация " +
+    "СистемаКод " +
+    "Содержит " +
+    "СоединениеЗакрыть " +
+    "СоединениеОткрыть " +
+    "СоздатьДиалог " +
+    "СоздатьДиалогВыбораИзДвухСписков " +
+    "СоздатьДиалогВыбораПапки " +
+    "СоздатьДиалогОткрытияФайла " +
+    "СоздатьДиалогСохраненияФайла " +
+    "СоздатьЗапрос " +
+    "СоздатьИндикатор " +
+    "СоздатьИсключение " +
+    "СоздатьКэшированныйСправочник " +
+    "СоздатьМассив " +
+    "СоздатьНаборДанных " +
+    "СоздатьОбъект " +
+    "СоздатьОтчет " +
+    "СоздатьПапку " +
+    "СоздатьРедактор " +
+    "СоздатьСоединение " +
+    "СоздатьСписок " +
+    "СоздатьСписокСтрок " +
+    "СоздатьСправочник " +
+    "СоздатьСценарий " +
+    "СоздСпр " +
+    "СостСпр " +
+    "Сохр " +
+    "СохрСпр " +
+    "СписокСистем " +
+    "Спр " +
+    "Справочник " +
+    "СпрБлокЕсть " +
+    "СпрБлокСнять " +
+    "СпрБлокСнятьРасш " +
+    "СпрБлокУстановить " +
+    "СпрИзмНабДан " +
+    "СпрКод " +
+    "СпрНомер " +
+    "СпрОбновить " +
+    "СпрОткрыть " +
+    "СпрОтменить " +
+    "СпрПарам " +
+    "СпрПолеЗнач " +
+    "СпрПолеИмя " +
+    "СпрРекв " +
+    "СпрРеквВведЗн " +
+    "СпрРеквНовые " +
+    "СпрРеквПр " +
+    "СпрРеквПредЗн " +
+    "СпрРеквРежим " +
+    "СпрРеквТипТекст " +
+    "СпрСоздать " +
+    "СпрСост " +
+    "СпрСохранить " +
+    "СпрТблИтог " +
+    "СпрТблСтр " +
+    "СпрТблСтрКол " +
+    "СпрТблСтрМакс " +
+    "СпрТблСтрМин " +
+    "СпрТблСтрПред " +
+    "СпрТблСтрСлед " +
+    "СпрТблСтрСозд " +
+    "СпрТблСтрУд " +
+    "СпрТекПредст " +
+    "СпрУдалить " +
+    "СравнитьСтр " +
+    "СтрВерхРегистр " +
+    "СтрНижнРегистр " +
+    "СтрТблСпр " +
+    "СумПроп " +
+    "Сценарий " +
+    "СценарийПарам " +
+    "ТекВерсия " +
+    "ТекОрг " +
+    "Точн " +
+    "Тран " +
+    "Транслитерация " +
+    "УдалитьТаблицу " +
+    "УдалитьФайл " +
+    "УдСпр " +
+    "УдСтрТблСпр " +
+    "Уст " +
+    "УстановкиКонстант " +
+    "ФайлАтрибутСчитать " +
+    "ФайлАтрибутУстановить " +
+    "ФайлВремя " +
+    "ФайлВремяУстановить " +
+    "ФайлВыбрать " +
+    "ФайлЗанят " +
+    "ФайлЗаписать " +
+    "ФайлИскать " +
+    "ФайлКопировать " +
+    "ФайлМожноЧитать " +
+    "ФайлОткрыть " +
+    "ФайлПереименовать " +
+    "ФайлПерекодировать " +
+    "ФайлПереместить " +
+    "ФайлПросмотреть " +
+    "ФайлРазмер " +
+    "ФайлСоздать " +
+    "ФайлСсылкаСоздать " +
+    "ФайлСуществует " +
+    "ФайлСчитать " +
+    "ФайлУдалить " +
+    "ФмтSQLДат " +
+    "ФмтДат " +
+    "ФмтСтр " +
+    "ФмтЧсл " +
+    "Формат " +
+    "ЦМассивЭлемент " +
+    "ЦНаборДанныхРеквизит " +
+    "ЦПодстр ";
+
+  // Предопределенные переменные ==> built_in
+  var predefined_variables =
+    "AltState " +
+    "Application " +
+    "CallType " +
+    "ComponentTokens " +
+    "CreatedJobs " +
+    "CreatedNotices " +
+    "ControlState " +
+    "DialogResult " +
+    "Dialogs " +
+    "EDocuments " +
+    "EDocumentVersionSource " +
+    "Folders " +
+    "GlobalIDs " +
+    "Job " +
+    "Jobs " +
+    "InputValue " +
+    "LookUpReference " +
+    "LookUpRequisiteNames " +
+    "LookUpSearch " +
+    "Object " +
+    "ParentComponent " +
+    "Processes " +
+    "References " +
+    "Requisite " +
+    "ReportName " +
+    "Reports " +
+    "Result " +
+    "Scripts " +
+    "Searches " +
+    "SelectedAttachments " +
+    "SelectedItems " +
+    "SelectMode " +
+    "Sender " +
+    "ServerEvents " +
+    "ServiceFactory " +
+    "ShiftState " +
+    "SubTask " +
+    "SystemDialogs " +
+    "Tasks " +
+    "Wizard " +
+    "Wizards " +
+    "Work " +
+    "ВызовСпособ " +
+    "ИмяОтчета " +
+    "РеквЗнач ";
+
+  // Интерфейсы ==> type
+  var interfaces =
+    "IApplication " +
+    "IAccessRights " +
+    "IAccountRepository " +
+    "IAccountSelectionRestrictions " +
+    "IAction " +
+    "IActionList " +
+    "IAdministrationHistoryDescription " +
+    "IAnchors " +
+    "IApplication " +
+    "IArchiveInfo " +
+    "IAttachment " +
+    "IAttachmentList " +
+    "ICheckListBox " +
+    "ICheckPointedList " +
+    "IColumn " +
+    "IComponent " +
+    "IComponentDescription " +
+    "IComponentToken " +
+    "IComponentTokenFactory " +
+    "IComponentTokenInfo " +
+    "ICompRecordInfo " +
+    "IConnection " +
+    "IContents " +
+    "IControl " +
+    "IControlJob " +
+    "IControlJobInfo " +
+    "IControlList " +
+    "ICrypto " +
+    "ICrypto2 " +
+    "ICustomJob " +
+    "ICustomJobInfo " +
+    "ICustomListBox " +
+    "ICustomObjectWizardStep " +
+    "ICustomWork " +
+    "ICustomWorkInfo " +
+    "IDataSet " +
+    "IDataSetAccessInfo " +
+    "IDataSigner " +
+    "IDateCriterion " +
+    "IDateRequisite " +
+    "IDateRequisiteDescription " +
+    "IDateValue " +
+    "IDeaAccessRights " +
+    "IDeaObjectInfo " +
+    "IDevelopmentComponentLock " +
+    "IDialog " +
+    "IDialogFactory " +
+    "IDialogPickRequisiteItems " +
+    "IDialogsFactory " +
+    "IDICSFactory " +
+    "IDocRequisite " +
+    "IDocumentInfo " +
+    "IDualListDialog " +
+    "IECertificate " +
+    "IECertificateInfo " +
+    "IECertificates " +
+    "IEditControl " +
+    "IEditorForm " +
+    "IEdmsExplorer " +
+    "IEdmsObject " +
+    "IEdmsObjectDescription " +
+    "IEdmsObjectFactory " +
+    "IEdmsObjectInfo " +
+    "IEDocument " +
+    "IEDocumentAccessRights " +
+    "IEDocumentDescription " +
+    "IEDocumentEditor " +
+    "IEDocumentFactory " +
+    "IEDocumentInfo " +
+    "IEDocumentStorage " +
+    "IEDocumentVersion " +
+    "IEDocumentVersionListDialog " +
+    "IEDocumentVersionSource " +
+    "IEDocumentWizardStep " +
+    "IEDocVerSignature " +
+    "IEDocVersionState " +
+    "IEnabledMode " +
+    "IEncodeProvider " +
+    "IEncrypter " +
+    "IEvent " +
+    "IEventList " +
+    "IException " +
+    "IExternalEvents " +
+    "IExternalHandler " +
+    "IFactory " +
+    "IField " +
+    "IFileDialog " +
+    "IFolder " +
+    "IFolderDescription " +
+    "IFolderDialog " +
+    "IFolderFactory " +
+    "IFolderInfo " +
+    "IForEach " +
+    "IForm " +
+    "IFormTitle " +
+    "IFormWizardStep " +
+    "IGlobalIDFactory " +
+    "IGlobalIDInfo " +
+    "IGrid " +
+    "IHasher " +
+    "IHistoryDescription " +
+    "IHyperLinkControl " +
+    "IImageButton " +
+    "IImageControl " +
+    "IInnerPanel " +
+    "IInplaceHint " +
+    "IIntegerCriterion " +
+    "IIntegerList " +
+    "IIntegerRequisite " +
+    "IIntegerValue " +
+    "IISBLEditorForm " +
+    "IJob " +
+    "IJobDescription " +
+    "IJobFactory " +
+    "IJobForm " +
+    "IJobInfo " +
+    "ILabelControl " +
+    "ILargeIntegerCriterion " +
+    "ILargeIntegerRequisite " +
+    "ILargeIntegerValue " +
+    "ILicenseInfo " +
+    "ILifeCycleStage " +
+    "IList " +
+    "IListBox " +
+    "ILocalIDInfo " +
+    "ILocalization " +
+    "ILock " +
+    "IMemoryDataSet " +
+    "IMessagingFactory " +
+    "IMetadataRepository " +
+    "INotice " +
+    "INoticeInfo " +
+    "INumericCriterion " +
+    "INumericRequisite " +
+    "INumericValue " +
+    "IObject " +
+    "IObjectDescription " +
+    "IObjectImporter " +
+    "IObjectInfo " +
+    "IObserver " +
+    "IPanelGroup " +
+    "IPickCriterion " +
+    "IPickProperty " +
+    "IPickRequisite " +
+    "IPickRequisiteDescription " +
+    "IPickRequisiteItem " +
+    "IPickRequisiteItems " +
+    "IPickValue " +
+    "IPrivilege " +
+    "IPrivilegeList " +
+    "IProcess " +
+    "IProcessFactory " +
+    "IProcessMessage " +
+    "IProgress " +
+    "IProperty " +
+    "IPropertyChangeEvent " +
+    "IQuery " +
+    "IReference " +
+    "IReferenceCriterion " +
+    "IReferenceEnabledMode " +
+    "IReferenceFactory " +
+    "IReferenceHistoryDescription " +
+    "IReferenceInfo " +
+    "IReferenceRecordCardWizardStep " +
+    "IReferenceRequisiteDescription " +
+    "IReferencesFactory " +
+    "IReferenceValue " +
+    "IRefRequisite " +
+    "IReport " +
+    "IReportFactory " +
+    "IRequisite " +
+    "IRequisiteDescription " +
+    "IRequisiteDescriptionList " +
+    "IRequisiteFactory " +
+    "IRichEdit " +
+    "IRouteStep " +
+    "IRule " +
+    "IRuleList " +
+    "ISchemeBlock " +
+    "IScript " +
+    "IScriptFactory " +
+    "ISearchCriteria " +
+    "ISearchCriterion " +
+    "ISearchDescription " +
+    "ISearchFactory " +
+    "ISearchFolderInfo " +
+    "ISearchForObjectDescription " +
+    "ISearchResultRestrictions " +
+    "ISecuredContext " +
+    "ISelectDialog " +
+    "IServerEvent " +
+    "IServerEventFactory " +
+    "IServiceDialog " +
+    "IServiceFactory " +
+    "ISignature " +
+    "ISignProvider " +
+    "ISignProvider2 " +
+    "ISignProvider3 " +
+    "ISimpleCriterion " +
+    "IStringCriterion " +
+    "IStringList " +
+    "IStringRequisite " +
+    "IStringRequisiteDescription " +
+    "IStringValue " +
+    "ISystemDialogsFactory " +
+    "ISystemInfo " +
+    "ITabSheet " +
+    "ITask " +
+    "ITaskAbortReasonInfo " +
+    "ITaskCardWizardStep " +
+    "ITaskDescription " +
+    "ITaskFactory " +
+    "ITaskInfo " +
+    "ITaskRoute " +
+    "ITextCriterion " +
+    "ITextRequisite " +
+    "ITextValue " +
+    "ITreeListSelectDialog " +
+    "IUser " +
+    "IUserList " +
+    "IValue " +
+    "IView " +
+    "IWebBrowserControl " +
+    "IWizard " +
+    "IWizardAction " +
+    "IWizardFactory " +
+    "IWizardFormElement " +
+    "IWizardParam " +
+    "IWizardPickParam " +
+    "IWizardReferenceParam " +
+    "IWizardStep " +
+    "IWorkAccessRights " +
+    "IWorkDescription " +
+    "IWorkflowAskableParam " +
+    "IWorkflowAskableParams " +
+    "IWorkflowBlock " +
+    "IWorkflowBlockResult " +
+    "IWorkflowEnabledMode " +
+    "IWorkflowParam " +
+    "IWorkflowPickParam " +
+    "IWorkflowReferenceParam " +
+    "IWorkState " +
+    "IWorkTreeCustomNode " +
+    "IWorkTreeJobNode " +
+    "IWorkTreeTaskNode " +
+    "IXMLEditorForm " +
+    "SBCrypto ";
+
+  // built_in : встроенные или библиотечные объекты (константы, перечисления)
+  var BUILTIN = CONSTANTS + ENUMS;
+
+  // class: встроенные наборы значений, системные объекты, фабрики
+  var CLASS = predefined_variables;
+
+  // literal : примитивные типы
+  var LITERAL = "null true false nil ";
+
+  // number : числа
+  var NUMBERS = {
+    className: "number",
+    begin: hljs.NUMBER_RE,
+    relevance: 0,
+  };
+
+  // string : строки
+  var STRINGS = {
+    className: "string",
+    variants: [{ begin: '"', end: '"' }, { begin: "'", end: "'" }],
+  };
+
+  // Токены
+  var DOCTAGS = {
+    className: "doctag",
+    begin: "\\b(?:TODO|DONE|BEGIN|END|STUB|CHG|FIXME|NOTE|BUG|XXX)\\b",
+    relevance: 0,
+  };
+
+  // Однострочный комментарий
+  var ISBL_LINE_COMMENT_MODE = {
+    className: "comment",
+    begin: "//",
+    end: "$",
+    relevance: 0,
+    contains: [hljs.PHRASAL_WORDS_MODE, DOCTAGS],
+  };
+
+  // Многострочный комментарий
+  var ISBL_BLOCK_COMMENT_MODE = {
+    className: "comment",
+    begin: "/\\*",
+    end: "\\*/",
+    relevance: 0,
+    contains: [hljs.PHRASAL_WORDS_MODE, DOCTAGS],
+  };
+
+  // comment : комментарии
+  var COMMENTS = {
+    variants: [ISBL_LINE_COMMENT_MODE, ISBL_BLOCK_COMMENT_MODE],
+  };
+
+  // keywords : ключевые слова
+  var KEYWORDS = {
+    keyword: KEYWORD,
+    built_in: BUILTIN,
+    class: CLASS,
+    literal: LITERAL,
+  };
+
+  // methods : методы
+  var METHODS = {
+    begin: "\\.\\s*" + hljs.UNDERSCORE_IDENT_RE,
+    keywords: KEYWORDS,
+    relevance: 0,
+  };
+
+  // type : встроенные типы
+  var TYPES = {
+    className: "type",
+    begin: ":[ \\t]*(" + interfaces.trim().replace(/\s/g, "|") + ")",
+    end: "[ \\t]*=",
+    excludeEnd: true,
+  };
+
+  // variables : переменные
+  var VARIABLES = {
+    className: "variable",
+    lexemes: UNDERSCORE_IDENT_RE,
+    keywords: KEYWORDS,
+    begin: UNDERSCORE_IDENT_RE,
+    relevance: 0,
+    containts: [TYPES, METHODS],
+  };
+
+  // Имена функций
+  var FUNCTION_TITLE = FUNCTION_NAME_IDENT_RE + "\\(";
+
+  var TITLE_MODE = {
+    className: "title",
+    lexemes: UNDERSCORE_IDENT_RE,
+    keywords: {
+      built_in: system_functions,
+    },
+    begin: FUNCTION_TITLE,
+    end: "\\(",
+    returnBegin: true,
+    excludeEnd: true,
+  };
+
+  // function : функции
+  var FUNCTIONS = {
+    className: "function",
+    begin: FUNCTION_TITLE,
+    end: "\\)$",
+    returnBegin: true,
+    lexemes: UNDERSCORE_IDENT_RE,
+    keywords: KEYWORDS,
+    illegal: "[\\[\\]\\|\\$\\?%,~#@]",
+    contains: [TITLE_MODE, METHODS, VARIABLES, STRINGS, NUMBERS, COMMENTS],
+  };
+
+  return {
+    aliases: ["isbl"],
+    case_insensitive: true,
+    lexemes: UNDERSCORE_IDENT_RE,
+    keywords: KEYWORDS,
+    illegal: "\\$|\\?|%|,|;$|~|#|@|</",
+    contains: [
+      FUNCTIONS,
+      TYPES,
+      METHODS,
+      VARIABLES,
+      STRINGS,
+      NUMBERS,
+      COMMENTS,
+    ],
+  };
+};
+
+/***/ }),
+/* 179 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
   var JAVA_IDENT_RE = '[\u00C0-\u02B8a-zA-Z_$][\u00C0-\u02B8a-zA-Z_$0-9]*';
   var GENERIC_IDENT_RE = JAVA_IDENT_RE + '(<' + JAVA_IDENT_RE + '(\\s*,\\s*' + JAVA_IDENT_RE + ')*>)?';
   var KEYWORDS =
-    'false synchronized int abstract float private char boolean static null if const ' +
+    'false synchronized int abstract float private char boolean var static null if const ' +
     'for true while long strictfp finally protected import native final void ' +
     'enum else break transient catch instanceof byte super volatile case assert short ' +
     'package default double public try this switch continue throws protected public private ' +
@@ -19278,7 +23512,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 177 */
+/* 180 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -19303,7 +23537,6 @@ module.exports = function(hljs) {
       'module console window document Symbol Set Map WeakSet WeakMap Proxy Reflect ' +
       'Promise'
   };
-  var EXPRESSIONS;
   var NUMBER = {
     className: 'number',
     variants: [
@@ -19333,7 +23566,7 @@ module.exports = function(hljs) {
     TEMPLATE_STRING,
     NUMBER,
     hljs.REGEXP_MODE
-  ]
+  ];
   var PARAMS_CONTAINS = SUBST.contains.concat([
     hljs.C_BLOCK_COMMENT_MODE,
     hljs.C_LINE_COMMENT_MODE
@@ -19399,15 +23632,21 @@ module.exports = function(hljs) {
               }
             ]
           },
+          {
+            className: '',
+            begin: /\s/,
+            end: /\s*/,
+            skip: true,
+          },
           { // E4X / JSX
-            begin: /</, end: /(\/\w+|\w+\/)>/,
+            begin: /</, end: /(\/[A-Za-z0-9\\._:-]+|[A-Za-z0-9\\._:-]+\/)>/,
             subLanguage: 'xml',
             contains: [
-              {begin: /<\w+\s*\/>/, skip: true},
+              { begin: /<[A-Za-z0-9\\._:-]+\s*\/>/, skip: true },
               {
-                begin: /<\w+/, end: /(\/\w+|\w+\/)>/, skip: true,
+                begin: /<[A-Za-z0-9\\._:-]+/, end: /(\/[A-Za-z0-9\\._:-]+|[A-Za-z0-9\\._:-]+\/)>/, skip: true,
                 contains: [
-                  {begin: /<\w+\s*\/>/, skip: true},
+                  { begin: /<[A-Za-z0-9\\._:-]+\s*\/>/, skip: true },
                   'self'
                 ]
               }
@@ -19445,7 +23684,7 @@ module.exports = function(hljs) {
         ]
       },
       {
-        beginKeywords: 'constructor', end: /\{/, excludeEnd: true
+        beginKeywords: 'constructor get set', end: /\{/, excludeEnd: true
       }
     ],
     illegal: /#(?!!)/
@@ -19453,7 +23692,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 178 */
+/* 181 */
 /***/ (function(module, exports) {
 
 module.exports = function (hljs) {
@@ -19504,7 +23743,7 @@ module.exports = function (hljs) {
 };
 
 /***/ }),
-/* 179 */
+/* 182 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -19545,7 +23784,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 180 */
+/* 183 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -19711,7 +23950,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 181 */
+/* 184 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -19739,7 +23978,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 182 */
+/* 185 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -19747,8 +23986,9 @@ module.exports = function(hljs) {
     keyword:
       'abstract as val var vararg get set class object open private protected public noinline ' +
       'crossinline dynamic final enum if else do while for when throw try catch finally ' +
-      'import package is in fun override companion reified inline lateinit init' +
+      'import package is in fun override companion reified inline lateinit init ' +
       'interface annotation data sealed internal infix operator out by constructor super ' +
+      'tailrec where const inner suspend typealias external expect actual ' +
       // to be deleted soon
       'trait volatile transient native default',
     built_in:
@@ -19818,7 +24058,31 @@ module.exports = function(hljs) {
     ]
   };
 
+  // https://kotlinlang.org/docs/reference/whatsnew11.html#underscores-in-numeric-literals
+  // According to the doc above, the number mode of kotlin is the same as java 8,
+  // so the code below is copied from java.js
+  var KOTLIN_NUMBER_RE = '\\b' +
+    '(' +
+      '0[bB]([01]+[01_]+[01]+|[01]+)' + // 0b...
+      '|' +
+      '0[xX]([a-fA-F0-9]+[a-fA-F0-9_]+[a-fA-F0-9]+|[a-fA-F0-9]+)' + // 0x...
+      '|' +
+      '(' +
+        '([\\d]+[\\d_]+[\\d]+|[\\d]+)(\\.([\\d]+[\\d_]+[\\d]+|[\\d]+))?' +
+        '|' +
+        '\\.([\\d]+[\\d_]+[\\d]+|[\\d]+)' +
+      ')' +
+      '([eE][-+]?\\d+)?' + // octal, decimal, float
+    ')' +
+    '[lLfF]?';
+  var KOTLIN_NUMBER_MODE = {
+    className: 'number',
+    begin: KOTLIN_NUMBER_RE,
+    relevance: 0
+  };
+
   return {
+    aliases: ['kt'],
     keywords: KEYWORDS,
     contains : [
       hljs.COMMENT(
@@ -19911,13 +24175,13 @@ module.exports = function(hljs) {
         begin: "^#!/usr/bin/env", end: '$',
         illegal: '\n'
       },
-      hljs.C_NUMBER_MODE
+      KOTLIN_NUMBER_MODE
     ]
   };
 };
 
 /***/ }),
-/* 183 */
+/* 186 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -20084,7 +24348,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 184 */
+/* 187 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -20111,7 +24375,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 185 */
+/* 188 */
 /***/ (function(module, exports) {
 
 module.exports = function (hljs) {
@@ -20155,7 +24419,7 @@ module.exports = function (hljs) {
 };
 
 /***/ }),
-/* 186 */
+/* 189 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -20299,7 +24563,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 187 */
+/* 190 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -20406,12 +24670,16 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 188 */
+/* 191 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
   var VARIABLE = {
-    begin: '\\b[gtps][A-Z]+[A-Za-z0-9_\\-]*\\b|\\$_[A-Z]+',
+    className: 'variable',
+    variants: [
+      {begin: '\\b([gtps][A-Z]{1}[a-zA-Z0-9]*)(\\[.+\\])?(?:\\s*?)'},
+      {begin: '\\$_[A-Z]+'}
+    ],
     relevance: 0
   };
   var COMMENT_MODES = [
@@ -20454,12 +24722,12 @@ module.exports = function(hljs) {
         'put abs acos aliasReference annuity arrayDecode arrayEncode asin atan atan2 average avg avgDev base64Decode ' +
         'base64Encode baseConvert binaryDecode binaryEncode byteOffset byteToNum cachedURL cachedURLs charToNum ' +
         'cipherNames codepointOffset codepointProperty codepointToNum codeunitOffset commandNames compound compress ' +
-        'constantNames cos date dateFormat decompress directories ' +
+        'constantNames cos date dateFormat decompress difference directories ' +
         'diskSpace DNSServers exp exp1 exp2 exp10 extents files flushEvents folders format functionNames geometricMean global ' +
         'globals hasMemory harmonicMean hostAddress hostAddressToName hostName hostNameToAddress isNumber ISOToMac itemOffset ' +
         'keys len length libURLErrorData libUrlFormData libURLftpCommand libURLLastHTTPHeaders libURLLastRHHeaders ' +
         'libUrlMultipartFormAddPart libUrlMultipartFormData libURLVersion lineOffset ln ln1 localNames log log2 log10 ' +
-        'longFilePath lower macToISO matchChunk matchText matrixMultiply max md5Digest median merge millisec ' +
+        'longFilePath lower macToISO matchChunk matchText matrixMultiply max md5Digest median merge messageAuthenticationCode messageDigest millisec ' +
         'millisecs millisecond milliseconds min monthNames nativeCharToNum normalizeText num number numToByte numToChar ' +
         'numToCodepoint numToNativeChar offset open openfiles openProcesses openProcessIDs openSockets ' +
         'paragraphOffset paramCount param params peerAddress pendingMessages platform popStdDev populationStandardDeviation ' +
@@ -20489,9 +24757,9 @@ module.exports = function(hljs) {
         'xsltLoadStylesheetFromFile add breakpoint cancel clear local variable file word line folder directory URL close socket process ' +
         'combine constant convert create new alias folder directory decrypt delete variable word line folder ' +
         'directory URL dispatch divide do encrypt filter get include intersect kill libURLDownloadToFile ' +
-        'libURLFollowHttpRedirects libURLftpUpload libURLftpUploadFile libURLresetAll libUrlSetAuthCallback ' +
+        'libURLFollowHttpRedirects libURLftpUpload libURLftpUploadFile libURLresetAll libUrlSetAuthCallback libURLSetDriver ' +
         'libURLSetCustomHTTPHeaders libUrlSetExpect100 libURLSetFTPListCommand libURLSetFTPMode libURLSetFTPStopTime ' +
-        'libURLSetStatusCallback load multiply socket prepare process post seek rel relative read from process rename ' +
+        'libURLSetStatusCallback load extension loadedExtensions multiply socket prepare process post seek rel relative read from process rename ' +
         'replace require resetAll resolve revAddXMLNode revAppendXML revCloseCursor revCloseDatabase revCommitDatabase ' +
         'revCopyFile revCopyFolder revCopyXMLNode revDeleteFolder revDeleteXMLNode revDeleteAllXMLTrees ' +
         'revDeleteXMLTree revExecuteSQL revGoURL revInsertXMLNode revMoveFolder revMoveToFirstRecord revMoveToLastRecord ' +
@@ -20502,7 +24770,7 @@ module.exports = function(hljs) {
         'revZipAddItemWithFile revZipAddUncompressedItemWithData revZipAddUncompressedItemWithFile revZipCancel ' +
         'revZipCloseArchive revZipDeleteItem revZipExtractItemToFile revZipExtractItemToVariable revZipSetProgressCallback ' +
         'revZipRenameItem revZipReplaceItemWithData revZipReplaceItemWithFile revZipOpenArchive send set sort split start stop ' +
-        'subtract union unload wait write'
+        'subtract symmetric union unload vectorDotProduct wait write'
     },
     contains: [
       VARIABLE,
@@ -20567,7 +24835,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 189 */
+/* 192 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -20720,7 +24988,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 190 */
+/* 193 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -20813,7 +25081,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 191 */
+/* 194 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -20900,7 +25168,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 192 */
+/* 195 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -20970,7 +25238,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 193 */
+/* 196 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -21055,7 +25323,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 194 */
+/* 197 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -21117,24 +25385,20 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 195 */
+/* 198 */
 /***/ (function(module, exports) {
 
-module.exports = function(hljs) {
-  var COMMON_CONTAINS = [
-    hljs.C_NUMBER_MODE,
-    {
-      className: 'string',
-      begin: '\'', end: '\'',
-      contains: [hljs.BACKSLASH_ESCAPE, {begin: '\'\''}]
-    }
-  ];
+module.exports = /*
+  Formal syntax is not published, helpful link:
+  https://github.com/kornilova-l/matlab-IntelliJ-plugin/blob/master/src/main/grammar/Matlab.bnf
+*/
+function(hljs) {
+
+  var TRANSPOSE_RE = '(\'|\\.\')+';
   var TRANSPOSE = {
     relevance: 0,
     contains: [
-      {
-        begin: /'['\.]*/
-      }
+      { begin: TRANSPOSE_RE }
     ]
   };
 
@@ -21157,7 +25421,9 @@ module.exports = function(hljs) {
         'triu fliplr flipud flipdim rot90 find sub2ind ind2sub bsxfun ndgrid permute ipermute ' +
         'shiftdim circshift squeeze isscalar isvector ans eps realmax realmin pi i inf nan ' +
         'isnan isinf isfinite j why compan gallery hadamard hankel hilb invhilb magic pascal ' +
-        'rosser toeplitz vander wilkinson'
+        'rosser toeplitz vander wilkinson max min nanmax nanmin mean nanmean type table ' +
+        'readtable writetable sortrows sort figure plot plot3 scatter scatter3 cellfun ' +
+        'legend intersect ismember procrustes hold num2cell '
     },
     illegal: '(//|"|#|/\\*|\\s+/\\w+)',
     contains: [
@@ -21176,40 +25442,50 @@ module.exports = function(hljs) {
         ]
       },
       {
-        begin: /[a-zA-Z_][a-zA-Z_0-9]*'['\.]*/,
-        returnBegin: true,
+        className: 'built_in',
+        begin: /true|false/,
         relevance: 0,
+        starts: TRANSPOSE
+      },
+      {
+        begin: '[a-zA-Z][a-zA-Z_0-9]*' + TRANSPOSE_RE,
+        relevance: 0
+      },
+      {
+        className: 'number',
+        begin: hljs.C_NUMBER_RE,
+        relevance: 0,
+        starts: TRANSPOSE
+      },
+      {
+        className: 'string',
+        begin: '\'', end: '\'',
         contains: [
-          {begin: /[a-zA-Z_][a-zA-Z_0-9]*/, relevance: 0},
-          TRANSPOSE.contains[0]
-        ]
+          hljs.BACKSLASH_ESCAPE,
+          {begin: '\'\''}]
       },
       {
-        begin: '\\[', end: '\\]',
-        contains: COMMON_CONTAINS,
+        begin: /\]|}|\)/,
         relevance: 0,
         starts: TRANSPOSE
       },
       {
-        begin: '\\{', end: /}/,
-        contains: COMMON_CONTAINS,
-        relevance: 0,
-        starts: TRANSPOSE
-      },
-      {
-        // transpose operators at the end of a function call
-        begin: /\)/,
-        relevance: 0,
+        className: 'string',
+        begin: '"', end: '"',
+        contains: [
+          hljs.BACKSLASH_ESCAPE,
+          {begin: '""'}
+        ],
         starts: TRANSPOSE
       },
       hljs.COMMENT('^\\s*\\%\\{\\s*$', '^\\s*\\%\\}\\s*$'),
       hljs.COMMENT('\\%', '$')
-    ].concat(COMMON_CONTAINS)
+    ]
   };
 };
 
 /***/ }),
-/* 196 */
+/* 199 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -21619,7 +25895,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 197 */
+/* 200 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -21848,7 +26124,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 198 */
+/* 201 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -21934,7 +26210,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 199 */
+/* 202 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22024,7 +26300,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 200 */
+/* 203 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22047,7 +26323,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 201 */
+/* 204 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22208,7 +26484,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 202 */
+/* 205 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22237,7 +26513,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 203 */
+/* 206 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22316,7 +26592,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 204 */
+/* 207 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22432,7 +26708,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 205 */
+/* 208 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22505,7 +26781,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 206 */
+/* 209 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22602,7 +26878,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 207 */
+/* 210 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22661,7 +26937,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 208 */
+/* 211 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22714,7 +26990,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 209 */
+/* 212 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22751,12 +27027,12 @@ module.exports = function(hljs) {
   var COMPILER = {
     // !compiler_flags
     className: 'keyword',
-    begin: /\!(addincludedir|addplugindir|appendfile|cd|define|delfile|echo|else|endif|error|execute|finalize|getdllversionsystem|ifdef|ifmacrodef|ifmacrondef|ifndef|if|include|insertmacro|macroend|macro|makensis|packhdr|searchparse|searchreplace|tempfile|undef|verbose|warning)/
+    begin: /\!(addincludedir|addplugindir|appendfile|cd|define|delfile|echo|else|endif|error|execute|finalize|getdllversion|gettlbversion|if|ifdef|ifmacrodef|ifmacrondef|ifndef|include|insertmacro|macro|macroend|makensis|packhdr|searchparse|searchreplace|system|tempfile|undef|verbose|warning)/
   };
 
   var METACHARS = {
     // $\n, $\r, $\t, $$
-    className: 'subst',
+    className: 'meta',
     begin: /\$(\\[nrt]|\$)/
   };
 
@@ -22793,7 +27069,7 @@ module.exports = function(hljs) {
     case_insensitive: false,
     keywords: {
       keyword:
-      'Abort AddBrandingImage AddSize AllowRootDirInstall AllowSkipFiles AutoCloseWindow BGFont BGGradient BrandingText BringToFront Call CallInstDLL Caption ChangeUI CheckBitmap ClearErrors CompletedText ComponentText CopyFiles CRCCheck CreateDirectory CreateFont CreateShortCut Delete DeleteINISec DeleteINIStr DeleteRegKey DeleteRegValue DetailPrint DetailsButtonText DirText DirVar DirVerify EnableWindow EnumRegKey EnumRegValue Exch Exec ExecShell ExecWait ExpandEnvStrings File FileBufSize FileClose FileErrorText FileOpen FileRead FileReadByte FileReadUTF16LE FileReadWord FileSeek FileWrite FileWriteByte FileWriteUTF16LE FileWriteWord FindClose FindFirst FindNext FindWindow FlushINI FunctionEnd GetCurInstType GetCurrentAddress GetDlgItem GetDLLVersion GetDLLVersionLocal GetErrorLevel GetFileTime GetFileTimeLocal GetFullPathName GetFunctionAddress GetInstDirError GetLabelAddress GetTempFileName Goto HideWindow Icon IfAbort IfErrors IfFileExists IfRebootFlag IfSilent InitPluginsDir InstallButtonText InstallColors InstallDir InstallDirRegKey InstProgressFlags InstType InstTypeGetText InstTypeSetText IntCmp IntCmpU IntFmt IntOp IsWindow LangString LicenseBkColor LicenseData LicenseForceSelection LicenseLangString LicenseText LoadLanguageFile LockWindow LogSet LogText ManifestDPIAware ManifestSupportedOS MessageBox MiscButtonText Name Nop OutFile Page PageCallbacks PageExEnd Pop Push Quit ReadEnvStr ReadINIStr ReadRegDWORD ReadRegStr Reboot RegDLL Rename RequestExecutionLevel ReserveFile Return RMDir SearchPath SectionEnd SectionGetFlags SectionGetInstTypes SectionGetSize SectionGetText SectionGroupEnd SectionIn SectionSetFlags SectionSetInstTypes SectionSetSize SectionSetText SendMessage SetAutoClose SetBrandingImage SetCompress SetCompressor SetCompressorDictSize SetCtlColors SetCurInstType SetDatablockOptimize SetDateSave SetDetailsPrint SetDetailsView SetErrorLevel SetErrors SetFileAttributes SetFont SetOutPath SetOverwrite SetRebootFlag SetRegView SetShellVarContext SetSilent ShowInstDetails ShowUninstDetails ShowWindow SilentInstall SilentUnInstall Sleep SpaceTexts StrCmp StrCmpS StrCpy StrLen SubCaption Unicode UninstallButtonText UninstallCaption UninstallIcon UninstallSubCaption UninstallText UninstPage UnRegDLL Var VIAddVersionKey VIFileVersion VIProductVersion WindowIcon WriteINIStr WriteRegBin WriteRegDWORD WriteRegExpandStr WriteRegStr WriteUninstaller XPStyle',
+      'Abort AddBrandingImage AddSize AllowRootDirInstall AllowSkipFiles AutoCloseWindow BGFont BGGradient BrandingText BringToFront Call CallInstDLL Caption ChangeUI CheckBitmap ClearErrors CompletedText ComponentText CopyFiles CRCCheck CreateDirectory CreateFont CreateShortCut Delete DeleteINISec DeleteINIStr DeleteRegKey DeleteRegValue DetailPrint DetailsButtonText DirText DirVar DirVerify EnableWindow EnumRegKey EnumRegValue Exch Exec ExecShell ExecShellWait ExecWait ExpandEnvStrings File FileBufSize FileClose FileErrorText FileOpen FileRead FileReadByte FileReadUTF16LE FileReadWord FileSeek FileWrite FileWriteByte FileWriteUTF16LE FileWriteWord FindClose FindFirst FindNext FindWindow FlushINI FunctionEnd GetCurInstType GetCurrentAddress GetDlgItem GetDLLVersion GetDLLVersionLocal GetErrorLevel GetFileTime GetFileTimeLocal GetFullPathName GetFunctionAddress GetInstDirError GetLabelAddress GetTempFileName Goto HideWindow Icon IfAbort IfErrors IfFileExists IfRebootFlag IfSilent InitPluginsDir InstallButtonText InstallColors InstallDir InstallDirRegKey InstProgressFlags InstType InstTypeGetText InstTypeSetText Int64Cmp Int64CmpU Int64Fmt IntCmp IntCmpU IntFmt IntOp IntPtrCmp IntPtrCmpU IntPtrOp IsWindow LangString LicenseBkColor LicenseData LicenseForceSelection LicenseLangString LicenseText LoadLanguageFile LockWindow LogSet LogText ManifestDPIAware ManifestSupportedOS MessageBox MiscButtonText Name Nop OutFile Page PageCallbacks PageExEnd Pop Push Quit ReadEnvStr ReadINIStr ReadRegDWORD ReadRegStr Reboot RegDLL Rename RequestExecutionLevel ReserveFile Return RMDir SearchPath SectionEnd SectionGetFlags SectionGetInstTypes SectionGetSize SectionGetText SectionGroupEnd SectionIn SectionSetFlags SectionSetInstTypes SectionSetSize SectionSetText SendMessage SetAutoClose SetBrandingImage SetCompress SetCompressor SetCompressorDictSize SetCtlColors SetCurInstType SetDatablockOptimize SetDateSave SetDetailsPrint SetDetailsView SetErrorLevel SetErrors SetFileAttributes SetFont SetOutPath SetOverwrite SetRebootFlag SetRegView SetShellVarContext SetSilent ShowInstDetails ShowUninstDetails ShowWindow SilentInstall SilentUnInstall Sleep SpaceTexts StrCmp StrCmpS StrCpy StrLen SubCaption Unicode UninstallButtonText UninstallCaption UninstallIcon UninstallSubCaption UninstallText UninstPage UnRegDLL Var VIAddVersionKey VIFileVersion VIProductVersion WindowIcon WriteINIStr WriteRegBin WriteRegDWORD WriteRegExpandStr WriteRegMultiStr WriteRegNone WriteRegStr WriteUninstaller XPStyle',
       literal:
       'admin all auto both bottom bzip2 colored components current custom directory false force hide highest ifdiff ifnewer instfiles lastused leave left license listonly lzma nevershow none normal notset off on open print right show silent silentlog smooth textonly top true try un.components un.custom un.directory un.instfiles un.license uninstConfirm user Win10 Win7 Win8 WinVista zlib'
     },
@@ -22824,7 +27100,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 210 */
+/* 213 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22919,7 +27195,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 211 */
+/* 214 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -22994,7 +27270,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 212 */
+/* 215 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23055,7 +27331,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 213 */
+/* 216 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23129,7 +27405,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 214 */
+/* 217 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23181,7 +27457,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 215 */
+/* 218 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23237,7 +27513,499 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 216 */
+/* 219 */
+/***/ (function(module, exports) {
+
+module.exports = function(hljs) {
+  var COMMENT_MODE = hljs.COMMENT('--', '$');
+  var UNQUOTED_IDENT = '[a-zA-Z_][a-zA-Z_0-9$]*';
+  var DOLLAR_STRING = '\\$([a-zA-Z_]?|[a-zA-Z_][a-zA-Z_0-9]*)\\$';
+  var LABEL = '<<\\s*' + UNQUOTED_IDENT + '\\s*>>';
+
+  var SQL_KW = 
+    // https://www.postgresql.org/docs/11/static/sql-keywords-appendix.html
+    // https://www.postgresql.org/docs/11/static/sql-commands.html
+    // SQL commands (starting words)
+    'ABORT ALTER ANALYZE BEGIN CALL CHECKPOINT|10 CLOSE CLUSTER COMMENT COMMIT COPY CREATE DEALLOCATE DECLARE ' +
+    'DELETE DISCARD DO DROP END EXECUTE EXPLAIN FETCH GRANT IMPORT INSERT LISTEN LOAD LOCK MOVE NOTIFY ' +
+    'PREPARE REASSIGN|10 REFRESH REINDEX RELEASE RESET REVOKE ROLLBACK SAVEPOINT SECURITY SELECT SET SHOW ' +
+    'START TRUNCATE UNLISTEN|10 UPDATE VACUUM|10 VALUES ' +
+    // SQL commands (others)
+    'AGGREGATE COLLATION CONVERSION|10 DATABASE DEFAULT PRIVILEGES DOMAIN TRIGGER EXTENSION FOREIGN ' +
+    'WRAPPER|10 TABLE FUNCTION GROUP LANGUAGE LARGE OBJECT MATERIALIZED VIEW OPERATOR CLASS ' +
+    'FAMILY POLICY PUBLICATION|10 ROLE RULE SCHEMA SEQUENCE SERVER STATISTICS SUBSCRIPTION SYSTEM ' +
+    'TABLESPACE CONFIGURATION DICTIONARY PARSER TEMPLATE TYPE USER MAPPING PREPARED ACCESS ' +
+    'METHOD CAST AS TRANSFORM TRANSACTION OWNED TO INTO SESSION AUTHORIZATION ' +
+    'INDEX PROCEDURE ASSERTION ' +
+    // additional reserved key words
+    'ALL ANALYSE AND ANY ARRAY ASC ASYMMETRIC|10 BOTH CASE CHECK ' +
+    'COLLATE COLUMN CONCURRENTLY|10 CONSTRAINT CROSS ' +
+    'DEFERRABLE RANGE ' +
+    'DESC DISTINCT ELSE EXCEPT FOR FREEZE|10 FROM FULL HAVING ' +
+    'ILIKE IN INITIALLY INNER INTERSECT IS ISNULL JOIN LATERAL LEADING LIKE LIMIT ' +
+    'NATURAL NOT NOTNULL NULL OFFSET ON ONLY OR ORDER OUTER OVERLAPS PLACING PRIMARY ' +
+    'REFERENCES RETURNING SIMILAR SOME SYMMETRIC TABLESAMPLE THEN ' +
+    'TRAILING UNION UNIQUE USING VARIADIC|10 VERBOSE WHEN WHERE WINDOW WITH ' +
+    // some of non-reserved (which are used in clauses or as PL/pgSQL keyword)
+    'BY RETURNS INOUT OUT SETOF|10 IF STRICT CURRENT CONTINUE OWNER LOCATION OVER PARTITION WITHIN ' +
+    'BETWEEN ESCAPE EXTERNAL INVOKER DEFINER WORK RENAME VERSION CONNECTION CONNECT ' +
+    'TABLES TEMP TEMPORARY FUNCTIONS SEQUENCES TYPES SCHEMAS OPTION CASCADE RESTRICT ADD ADMIN ' +
+    'EXISTS VALID VALIDATE ENABLE DISABLE REPLICA|10 ALWAYS PASSING COLUMNS PATH ' +
+    'REF VALUE OVERRIDING IMMUTABLE STABLE VOLATILE BEFORE AFTER EACH ROW PROCEDURAL ' +
+    'ROUTINE NO HANDLER VALIDATOR OPTIONS STORAGE OIDS|10 WITHOUT INHERIT DEPENDS CALLED ' +
+    'INPUT LEAKPROOF|10 COST ROWS NOWAIT SEARCH UNTIL ENCRYPTED|10 PASSWORD CONFLICT|10 ' +
+    'INSTEAD INHERITS CHARACTERISTICS WRITE CURSOR ALSO STATEMENT SHARE EXCLUSIVE INLINE ' +
+    'ISOLATION REPEATABLE READ COMMITTED SERIALIZABLE UNCOMMITTED LOCAL GLOBAL SQL PROCEDURES ' +
+    'RECURSIVE SNAPSHOT ROLLUP CUBE TRUSTED|10 INCLUDE FOLLOWING PRECEDING UNBOUNDED RANGE GROUPS ' +
+    'UNENCRYPTED|10 SYSID FORMAT DELIMITER HEADER QUOTE ENCODING FILTER OFF ' +
+    // some parameters of VACUUM/ANALYZE/EXPLAIN
+    'FORCE_QUOTE FORCE_NOT_NULL FORCE_NULL COSTS BUFFERS TIMING SUMMARY DISABLE_PAGE_SKIPPING ' +
+    //
+    'RESTART CYCLE GENERATED IDENTITY DEFERRED IMMEDIATE LEVEL LOGGED UNLOGGED ' +
+    'OF NOTHING NONE EXCLUDE ATTRIBUTE ' +
+    // from GRANT (not keywords actually)
+    'USAGE ROUTINES ' +
+    // actually literals, but look better this way (due to IS TRUE, IS FALSE, ISNULL etc)
+    'TRUE FALSE NAN INFINITY ';
+
+  var ROLE_ATTRS = // only those not in keywrods already
+    'SUPERUSER NOSUPERUSER CREATEDB NOCREATEDB CREATEROLE NOCREATEROLE INHERIT NOINHERIT ' +
+    'LOGIN NOLOGIN REPLICATION NOREPLICATION BYPASSRLS NOBYPASSRLS ';
+
+  var PLPGSQL_KW = 
+    'ALIAS BEGIN CONSTANT DECLARE END EXCEPTION RETURN PERFORM|10 RAISE GET DIAGNOSTICS ' +
+    'STACKED|10 FOREACH LOOP ELSIF EXIT WHILE REVERSE SLICE DEBUG LOG INFO NOTICE WARNING ASSERT ' +
+    'OPEN ';
+
+  var TYPES =
+    // https://www.postgresql.org/docs/11/static/datatype.html
+    'BIGINT INT8 BIGSERIAL SERIAL8 BIT VARYING VARBIT BOOLEAN BOOL BOX BYTEA CHARACTER CHAR VARCHAR ' +
+    'CIDR CIRCLE DATE DOUBLE PRECISION FLOAT8 FLOAT INET INTEGER INT INT4 INTERVAL JSON JSONB LINE LSEG|10 ' +
+    'MACADDR MACADDR8 MONEY NUMERIC DEC DECIMAL PATH POINT POLYGON REAL FLOAT4 SMALLINT INT2 ' +
+    'SMALLSERIAL|10 SERIAL2|10 SERIAL|10 SERIAL4|10 TEXT TIME ZONE TIMETZ|10 TIMESTAMP TIMESTAMPTZ|10 TSQUERY|10 TSVECTOR|10 ' +
+    'TXID_SNAPSHOT|10 UUID XML NATIONAL NCHAR ' +
+    'INT4RANGE|10 INT8RANGE|10 NUMRANGE|10 TSRANGE|10 TSTZRANGE|10 DATERANGE|10 ' +
+    // pseudotypes
+    'ANYELEMENT ANYARRAY ANYNONARRAY ANYENUM ANYRANGE CSTRING INTERNAL ' +
+    'RECORD PG_DDL_COMMAND VOID UNKNOWN OPAQUE REFCURSOR ' +
+    // spec. type
+    'NAME ' +
+    // OID-types
+    'OID REGPROC|10 REGPROCEDURE|10 REGOPER|10 REGOPERATOR|10 REGCLASS|10 REGTYPE|10 REGROLE|10 ' +
+    'REGNAMESPACE|10 REGCONFIG|10 REGDICTIONARY|10 ';// +
+    // some types from standard extensions
+    'HSTORE|10 LO LTREE|10 ';
+    
+  var TYPES_RE = 
+    TYPES.trim()
+         .split(' ')
+         .map( function(val) { return val.split('|')[0]; } )
+         .join('|');
+
+  var SQL_BI =
+    'CURRENT_TIME CURRENT_TIMESTAMP CURRENT_USER CURRENT_CATALOG|10 CURRENT_DATE LOCALTIME LOCALTIMESTAMP ' +
+    'CURRENT_ROLE|10 CURRENT_SCHEMA|10 SESSION_USER PUBLIC ';
+
+  var PLPGSQL_BI =
+    'FOUND NEW OLD TG_NAME|10 TG_WHEN|10 TG_LEVEL|10 TG_OP|10 TG_RELID|10 TG_RELNAME|10 ' +
+    'TG_TABLE_NAME|10 TG_TABLE_SCHEMA|10 TG_NARGS|10 TG_ARGV|10 TG_EVENT|10 TG_TAG|10 ' +
+    // get diagnostics
+    'ROW_COUNT RESULT_OID|10 PG_CONTEXT|10 RETURNED_SQLSTATE COLUMN_NAME CONSTRAINT_NAME ' +
+    'PG_DATATYPE_NAME|10 MESSAGE_TEXT TABLE_NAME SCHEMA_NAME PG_EXCEPTION_DETAIL|10 ' +
+    'PG_EXCEPTION_HINT|10 PG_EXCEPTION_CONTEXT|10 ';
+
+  var PLPGSQL_EXCEPTIONS =
+    // exceptions https://www.postgresql.org/docs/current/static/errcodes-appendix.html
+    'SQLSTATE SQLERRM|10 ' +
+    'SUCCESSFUL_COMPLETION WARNING DYNAMIC_RESULT_SETS_RETURNED IMPLICIT_ZERO_BIT_PADDING ' +
+    'NULL_VALUE_ELIMINATED_IN_SET_FUNCTION PRIVILEGE_NOT_GRANTED PRIVILEGE_NOT_REVOKED ' +
+    'STRING_DATA_RIGHT_TRUNCATION DEPRECATED_FEATURE NO_DATA NO_ADDITIONAL_DYNAMIC_RESULT_SETS_RETURNED ' +
+    'SQL_STATEMENT_NOT_YET_COMPLETE CONNECTION_EXCEPTION CONNECTION_DOES_NOT_EXIST CONNECTION_FAILURE ' +
+    'SQLCLIENT_UNABLE_TO_ESTABLISH_SQLCONNECTION SQLSERVER_REJECTED_ESTABLISHMENT_OF_SQLCONNECTION ' +
+    'TRANSACTION_RESOLUTION_UNKNOWN PROTOCOL_VIOLATION TRIGGERED_ACTION_EXCEPTION FEATURE_NOT_SUPPORTED ' +
+    'INVALID_TRANSACTION_INITIATION LOCATOR_EXCEPTION INVALID_LOCATOR_SPECIFICATION INVALID_GRANTOR ' +
+    'INVALID_GRANT_OPERATION INVALID_ROLE_SPECIFICATION DIAGNOSTICS_EXCEPTION ' +
+    'STACKED_DIAGNOSTICS_ACCESSED_WITHOUT_ACTIVE_HANDLER CASE_NOT_FOUND CARDINALITY_VIOLATION ' +
+    'DATA_EXCEPTION ARRAY_SUBSCRIPT_ERROR CHARACTER_NOT_IN_REPERTOIRE DATETIME_FIELD_OVERFLOW ' +
+    'DIVISION_BY_ZERO ERROR_IN_ASSIGNMENT ESCAPE_CHARACTER_CONFLICT INDICATOR_OVERFLOW ' +
+    'INTERVAL_FIELD_OVERFLOW INVALID_ARGUMENT_FOR_LOGARITHM INVALID_ARGUMENT_FOR_NTILE_FUNCTION ' +
+    'INVALID_ARGUMENT_FOR_NTH_VALUE_FUNCTION INVALID_ARGUMENT_FOR_POWER_FUNCTION ' +
+    'INVALID_ARGUMENT_FOR_WIDTH_BUCKET_FUNCTION INVALID_CHARACTER_VALUE_FOR_CAST ' +
+    'INVALID_DATETIME_FORMAT INVALID_ESCAPE_CHARACTER INVALID_ESCAPE_OCTET INVALID_ESCAPE_SEQUENCE ' +
+    'NONSTANDARD_USE_OF_ESCAPE_CHARACTER INVALID_INDICATOR_PARAMETER_VALUE INVALID_PARAMETER_VALUE ' +
+    'INVALID_REGULAR_EXPRESSION INVALID_ROW_COUNT_IN_LIMIT_CLAUSE ' +
+    'INVALID_ROW_COUNT_IN_RESULT_OFFSET_CLAUSE INVALID_TABLESAMPLE_ARGUMENT INVALID_TABLESAMPLE_REPEAT ' +
+    'INVALID_TIME_ZONE_DISPLACEMENT_VALUE INVALID_USE_OF_ESCAPE_CHARACTER MOST_SPECIFIC_TYPE_MISMATCH ' +
+    'NULL_VALUE_NOT_ALLOWED NULL_VALUE_NO_INDICATOR_PARAMETER NUMERIC_VALUE_OUT_OF_RANGE ' +
+    'SEQUENCE_GENERATOR_LIMIT_EXCEEDED STRING_DATA_LENGTH_MISMATCH STRING_DATA_RIGHT_TRUNCATION ' +
+    'SUBSTRING_ERROR TRIM_ERROR UNTERMINATED_C_STRING ZERO_LENGTH_CHARACTER_STRING ' +
+    'FLOATING_POINT_EXCEPTION INVALID_TEXT_REPRESENTATION INVALID_BINARY_REPRESENTATION ' +
+    'BAD_COPY_FILE_FORMAT UNTRANSLATABLE_CHARACTER NOT_AN_XML_DOCUMENT INVALID_XML_DOCUMENT ' +
+    'INVALID_XML_CONTENT INVALID_XML_COMMENT INVALID_XML_PROCESSING_INSTRUCTION ' +
+    'INTEGRITY_CONSTRAINT_VIOLATION RESTRICT_VIOLATION NOT_NULL_VIOLATION FOREIGN_KEY_VIOLATION ' +
+    'UNIQUE_VIOLATION CHECK_VIOLATION EXCLUSION_VIOLATION INVALID_CURSOR_STATE ' +
+    'INVALID_TRANSACTION_STATE ACTIVE_SQL_TRANSACTION BRANCH_TRANSACTION_ALREADY_ACTIVE ' +
+    'HELD_CURSOR_REQUIRES_SAME_ISOLATION_LEVEL INAPPROPRIATE_ACCESS_MODE_FOR_BRANCH_TRANSACTION ' +
+    'INAPPROPRIATE_ISOLATION_LEVEL_FOR_BRANCH_TRANSACTION ' +
+    'NO_ACTIVE_SQL_TRANSACTION_FOR_BRANCH_TRANSACTION READ_ONLY_SQL_TRANSACTION ' +
+    'SCHEMA_AND_DATA_STATEMENT_MIXING_NOT_SUPPORTED NO_ACTIVE_SQL_TRANSACTION ' +
+    'IN_FAILED_SQL_TRANSACTION IDLE_IN_TRANSACTION_SESSION_TIMEOUT INVALID_SQL_STATEMENT_NAME ' +
+    'TRIGGERED_DATA_CHANGE_VIOLATION INVALID_AUTHORIZATION_SPECIFICATION INVALID_PASSWORD ' +
+    'DEPENDENT_PRIVILEGE_DESCRIPTORS_STILL_EXIST DEPENDENT_OBJECTS_STILL_EXIST ' +
+    'INVALID_TRANSACTION_TERMINATION SQL_ROUTINE_EXCEPTION FUNCTION_EXECUTED_NO_RETURN_STATEMENT ' +
+    'MODIFYING_SQL_DATA_NOT_PERMITTED PROHIBITED_SQL_STATEMENT_ATTEMPTED ' +
+    'READING_SQL_DATA_NOT_PERMITTED INVALID_CURSOR_NAME EXTERNAL_ROUTINE_EXCEPTION ' +
+    'CONTAINING_SQL_NOT_PERMITTED MODIFYING_SQL_DATA_NOT_PERMITTED ' +
+    'PROHIBITED_SQL_STATEMENT_ATTEMPTED READING_SQL_DATA_NOT_PERMITTED ' +
+    'EXTERNAL_ROUTINE_INVOCATION_EXCEPTION INVALID_SQLSTATE_RETURNED NULL_VALUE_NOT_ALLOWED ' +
+    'TRIGGER_PROTOCOL_VIOLATED SRF_PROTOCOL_VIOLATED EVENT_TRIGGER_PROTOCOL_VIOLATED ' +
+    'SAVEPOINT_EXCEPTION INVALID_SAVEPOINT_SPECIFICATION INVALID_CATALOG_NAME ' +
+    'INVALID_SCHEMA_NAME TRANSACTION_ROLLBACK TRANSACTION_INTEGRITY_CONSTRAINT_VIOLATION ' +
+    'SERIALIZATION_FAILURE STATEMENT_COMPLETION_UNKNOWN DEADLOCK_DETECTED ' +
+    'SYNTAX_ERROR_OR_ACCESS_RULE_VIOLATION SYNTAX_ERROR INSUFFICIENT_PRIVILEGE CANNOT_COERCE ' +
+    'GROUPING_ERROR WINDOWING_ERROR INVALID_RECURSION INVALID_FOREIGN_KEY INVALID_NAME ' +
+    'NAME_TOO_LONG RESERVED_NAME DATATYPE_MISMATCH INDETERMINATE_DATATYPE COLLATION_MISMATCH ' +
+    'INDETERMINATE_COLLATION WRONG_OBJECT_TYPE GENERATED_ALWAYS UNDEFINED_COLUMN ' +
+    'UNDEFINED_FUNCTION UNDEFINED_TABLE UNDEFINED_PARAMETER UNDEFINED_OBJECT ' +
+    'DUPLICATE_COLUMN DUPLICATE_CURSOR DUPLICATE_DATABASE DUPLICATE_FUNCTION ' +
+    'DUPLICATE_PREPARED_STATEMENT DUPLICATE_SCHEMA DUPLICATE_TABLE DUPLICATE_ALIAS ' +
+    'DUPLICATE_OBJECT AMBIGUOUS_COLUMN AMBIGUOUS_FUNCTION AMBIGUOUS_PARAMETER AMBIGUOUS_ALIAS ' +
+    'INVALID_COLUMN_REFERENCE INVALID_COLUMN_DEFINITION INVALID_CURSOR_DEFINITION ' +
+    'INVALID_DATABASE_DEFINITION INVALID_FUNCTION_DEFINITION ' +
+    'INVALID_PREPARED_STATEMENT_DEFINITION INVALID_SCHEMA_DEFINITION INVALID_TABLE_DEFINITION ' +
+    'INVALID_OBJECT_DEFINITION WITH_CHECK_OPTION_VIOLATION INSUFFICIENT_RESOURCES DISK_FULL ' +
+    'OUT_OF_MEMORY TOO_MANY_CONNECTIONS CONFIGURATION_LIMIT_EXCEEDED PROGRAM_LIMIT_EXCEEDED ' +
+    'STATEMENT_TOO_COMPLEX TOO_MANY_COLUMNS TOO_MANY_ARGUMENTS OBJECT_NOT_IN_PREREQUISITE_STATE ' +
+    'OBJECT_IN_USE CANT_CHANGE_RUNTIME_PARAM LOCK_NOT_AVAILABLE OPERATOR_INTERVENTION ' +
+    'QUERY_CANCELED ADMIN_SHUTDOWN CRASH_SHUTDOWN CANNOT_CONNECT_NOW DATABASE_DROPPED ' +
+    'SYSTEM_ERROR IO_ERROR UNDEFINED_FILE DUPLICATE_FILE SNAPSHOT_TOO_OLD CONFIG_FILE_ERROR ' +
+    'LOCK_FILE_EXISTS FDW_ERROR FDW_COLUMN_NAME_NOT_FOUND FDW_DYNAMIC_PARAMETER_VALUE_NEEDED ' +
+    'FDW_FUNCTION_SEQUENCE_ERROR FDW_INCONSISTENT_DESCRIPTOR_INFORMATION ' +
+    'FDW_INVALID_ATTRIBUTE_VALUE FDW_INVALID_COLUMN_NAME FDW_INVALID_COLUMN_NUMBER ' +
+    'FDW_INVALID_DATA_TYPE FDW_INVALID_DATA_TYPE_DESCRIPTORS ' +
+    'FDW_INVALID_DESCRIPTOR_FIELD_IDENTIFIER FDW_INVALID_HANDLE FDW_INVALID_OPTION_INDEX ' +
+    'FDW_INVALID_OPTION_NAME FDW_INVALID_STRING_LENGTH_OR_BUFFER_LENGTH ' +
+    'FDW_INVALID_STRING_FORMAT FDW_INVALID_USE_OF_NULL_POINTER FDW_TOO_MANY_HANDLES ' +
+    'FDW_OUT_OF_MEMORY FDW_NO_SCHEMAS FDW_OPTION_NAME_NOT_FOUND FDW_REPLY_HANDLE ' +
+    'FDW_SCHEMA_NOT_FOUND FDW_TABLE_NOT_FOUND FDW_UNABLE_TO_CREATE_EXECUTION ' +
+    'FDW_UNABLE_TO_CREATE_REPLY FDW_UNABLE_TO_ESTABLISH_CONNECTION PLPGSQL_ERROR ' +
+    'RAISE_EXCEPTION NO_DATA_FOUND TOO_MANY_ROWS ASSERT_FAILURE INTERNAL_ERROR DATA_CORRUPTED ' +
+    'INDEX_CORRUPTED ';
+
+  var FUNCTIONS =
+    // https://www.postgresql.org/docs/11/static/functions-aggregate.html
+    'ARRAY_AGG AVG BIT_AND BIT_OR BOOL_AND BOOL_OR COUNT EVERY JSON_AGG JSONB_AGG JSON_OBJECT_AGG ' +
+    'JSONB_OBJECT_AGG MAX MIN MODE STRING_AGG SUM XMLAGG ' +
+    'CORR COVAR_POP COVAR_SAMP REGR_AVGX REGR_AVGY REGR_COUNT REGR_INTERCEPT REGR_R2 REGR_SLOPE ' +
+    'REGR_SXX REGR_SXY REGR_SYY STDDEV STDDEV_POP STDDEV_SAMP VARIANCE VAR_POP VAR_SAMP ' +
+    'PERCENTILE_CONT PERCENTILE_DISC ' +
+    // https://www.postgresql.org/docs/11/static/functions-window.html
+    'ROW_NUMBER RANK DENSE_RANK PERCENT_RANK CUME_DIST NTILE LAG LEAD FIRST_VALUE LAST_VALUE NTH_VALUE ' +
+    // https://www.postgresql.org/docs/11/static/functions-comparison.html
+    'NUM_NONNULLS NUM_NULLS ' +
+    // https://www.postgresql.org/docs/11/static/functions-math.html
+    'ABS CBRT CEIL CEILING DEGREES DIV EXP FLOOR LN LOG MOD PI POWER RADIANS ROUND SCALE SIGN SQRT ' +
+    'TRUNC WIDTH_BUCKET ' +
+    'RANDOM SETSEED ' +
+    'ACOS ACOSD ASIN ASIND ATAN ATAND ATAN2 ATAN2D COS COSD COT COTD SIN SIND TAN TAND ' +
+    // https://www.postgresql.org/docs/11/static/functions-string.html
+    'BIT_LENGTH CHAR_LENGTH CHARACTER_LENGTH LOWER OCTET_LENGTH OVERLAY POSITION SUBSTRING TREAT TRIM UPPER ' +
+    'ASCII BTRIM CHR CONCAT CONCAT_WS CONVERT CONVERT_FROM CONVERT_TO DECODE ENCODE INITCAP' +
+    'LEFT LENGTH LPAD LTRIM MD5 PARSE_IDENT PG_CLIENT_ENCODING QUOTE_IDENT|10 QUOTE_LITERAL|10 ' +
+    'QUOTE_NULLABLE|10 REGEXP_MATCH REGEXP_MATCHES REGEXP_REPLACE REGEXP_SPLIT_TO_ARRAY ' +
+    'REGEXP_SPLIT_TO_TABLE REPEAT REPLACE REVERSE RIGHT RPAD RTRIM SPLIT_PART STRPOS SUBSTR ' +
+    'TO_ASCII TO_HEX TRANSLATE ' +
+    // https://www.postgresql.org/docs/11/static/functions-binarystring.html
+    'OCTET_LENGTH GET_BIT GET_BYTE SET_BIT SET_BYTE ' +
+    // https://www.postgresql.org/docs/11/static/functions-formatting.html
+    'TO_CHAR TO_DATE TO_NUMBER TO_TIMESTAMP ' +
+    // https://www.postgresql.org/docs/11/static/functions-datetime.html
+    'AGE CLOCK_TIMESTAMP|10 DATE_PART DATE_TRUNC ISFINITE JUSTIFY_DAYS JUSTIFY_HOURS JUSTIFY_INTERVAL ' +
+    'MAKE_DATE MAKE_INTERVAL|10 MAKE_TIME MAKE_TIMESTAMP|10 MAKE_TIMESTAMPTZ|10 NOW STATEMENT_TIMESTAMP|10 ' +
+    'TIMEOFDAY TRANSACTION_TIMESTAMP|10 ' +
+    // https://www.postgresql.org/docs/11/static/functions-enum.html
+    'ENUM_FIRST ENUM_LAST ENUM_RANGE ' +
+    // https://www.postgresql.org/docs/11/static/functions-geometry.html
+    'AREA CENTER DIAMETER HEIGHT ISCLOSED ISOPEN NPOINTS PCLOSE POPEN RADIUS WIDTH ' +
+    'BOX BOUND_BOX CIRCLE LINE LSEG PATH POLYGON ' +
+    // https://www.postgresql.org/docs/11/static/functions-net.html
+    'ABBREV BROADCAST HOST HOSTMASK MASKLEN NETMASK NETWORK SET_MASKLEN TEXT INET_SAME_FAMILY' +
+    'INET_MERGE MACADDR8_SET7BIT ' +
+    // https://www.postgresql.org/docs/11/static/functions-textsearch.html
+    'ARRAY_TO_TSVECTOR GET_CURRENT_TS_CONFIG NUMNODE PLAINTO_TSQUERY PHRASETO_TSQUERY WEBSEARCH_TO_TSQUERY ' +
+    'QUERYTREE SETWEIGHT STRIP TO_TSQUERY TO_TSVECTOR JSON_TO_TSVECTOR JSONB_TO_TSVECTOR TS_DELETE ' +
+    'TS_FILTER TS_HEADLINE TS_RANK TS_RANK_CD TS_REWRITE TSQUERY_PHRASE TSVECTOR_TO_ARRAY ' +
+    'TSVECTOR_UPDATE_TRIGGER TSVECTOR_UPDATE_TRIGGER_COLUMN ' +
+    // https://www.postgresql.org/docs/11/static/functions-xml.html
+    'XMLCOMMENT XMLCONCAT XMLELEMENT XMLFOREST XMLPI XMLROOT ' +
+    'XMLEXISTS XML_IS_WELL_FORMED XML_IS_WELL_FORMED_DOCUMENT XML_IS_WELL_FORMED_CONTENT ' +
+    'XPATH XPATH_EXISTS XMLTABLE XMLNAMESPACES ' +
+    'TABLE_TO_XML TABLE_TO_XMLSCHEMA TABLE_TO_XML_AND_XMLSCHEMA ' +
+    'QUERY_TO_XML QUERY_TO_XMLSCHEMA QUERY_TO_XML_AND_XMLSCHEMA ' +
+    'CURSOR_TO_XML CURSOR_TO_XMLSCHEMA ' +
+    'SCHEMA_TO_XML SCHEMA_TO_XMLSCHEMA SCHEMA_TO_XML_AND_XMLSCHEMA ' +
+    'DATABASE_TO_XML DATABASE_TO_XMLSCHEMA DATABASE_TO_XML_AND_XMLSCHEMA ' +
+    'XMLATTRIBUTES ' +
+    // https://www.postgresql.org/docs/11/static/functions-json.html
+    'TO_JSON TO_JSONB ARRAY_TO_JSON ROW_TO_JSON JSON_BUILD_ARRAY JSONB_BUILD_ARRAY JSON_BUILD_OBJECT ' +
+    'JSONB_BUILD_OBJECT JSON_OBJECT JSONB_OBJECT JSON_ARRAY_LENGTH JSONB_ARRAY_LENGTH JSON_EACH ' +
+    'JSONB_EACH JSON_EACH_TEXT JSONB_EACH_TEXT JSON_EXTRACT_PATH JSONB_EXTRACT_PATH ' +
+    'JSON_OBJECT_KEYS JSONB_OBJECT_KEYS JSON_POPULATE_RECORD JSONB_POPULATE_RECORD JSON_POPULATE_RECORDSET ' +
+    'JSONB_POPULATE_RECORDSET JSON_ARRAY_ELEMENTS JSONB_ARRAY_ELEMENTS JSON_ARRAY_ELEMENTS_TEXT ' +
+    'JSONB_ARRAY_ELEMENTS_TEXT JSON_TYPEOF JSONB_TYPEOF JSON_TO_RECORD JSONB_TO_RECORD JSON_TO_RECORDSET ' +
+    'JSONB_TO_RECORDSET JSON_STRIP_NULLS JSONB_STRIP_NULLS JSONB_SET JSONB_INSERT JSONB_PRETTY ' +
+    // https://www.postgresql.org/docs/11/static/functions-sequence.html
+    'CURRVAL LASTVAL NEXTVAL SETVAL ' +
+    // https://www.postgresql.org/docs/11/static/functions-conditional.html
+    'COALESCE NULLIF GREATEST LEAST ' +
+    // https://www.postgresql.org/docs/11/static/functions-array.html
+    'ARRAY_APPEND ARRAY_CAT ARRAY_NDIMS ARRAY_DIMS ARRAY_FILL ARRAY_LENGTH ARRAY_LOWER ARRAY_POSITION ' +
+    'ARRAY_POSITIONS ARRAY_PREPEND ARRAY_REMOVE ARRAY_REPLACE ARRAY_TO_STRING ARRAY_UPPER CARDINALITY ' +
+    'STRING_TO_ARRAY UNNEST ' +
+    // https://www.postgresql.org/docs/11/static/functions-range.html
+    'ISEMPTY LOWER_INC UPPER_INC LOWER_INF UPPER_INF RANGE_MERGE ' +
+    // https://www.postgresql.org/docs/11/static/functions-srf.html
+    'GENERATE_SERIES GENERATE_SUBSCRIPTS ' +
+    // https://www.postgresql.org/docs/11/static/functions-info.html
+    'CURRENT_DATABASE CURRENT_QUERY CURRENT_SCHEMA|10 CURRENT_SCHEMAS|10 INET_CLIENT_ADDR INET_CLIENT_PORT ' +
+    'INET_SERVER_ADDR INET_SERVER_PORT ROW_SECURITY_ACTIVE FORMAT_TYPE ' +
+    'TO_REGCLASS TO_REGPROC TO_REGPROCEDURE TO_REGOPER TO_REGOPERATOR TO_REGTYPE TO_REGNAMESPACE TO_REGROLE ' +
+    'COL_DESCRIPTION OBJ_DESCRIPTION SHOBJ_DESCRIPTION ' +
+    'TXID_CURRENT TXID_CURRENT_IF_ASSIGNED TXID_CURRENT_SNAPSHOT TXID_SNAPSHOT_XIP TXID_SNAPSHOT_XMAX ' +
+    'TXID_SNAPSHOT_XMIN TXID_VISIBLE_IN_SNAPSHOT TXID_STATUS ' +
+    // https://www.postgresql.org/docs/11/static/functions-admin.html
+    'CURRENT_SETTING SET_CONFIG BRIN_SUMMARIZE_NEW_VALUES BRIN_SUMMARIZE_RANGE BRIN_DESUMMARIZE_RANGE ' +
+    'GIN_CLEAN_PENDING_LIST ' +
+    // https://www.postgresql.org/docs/11/static/functions-trigger.html
+    'SUPPRESS_REDUNDANT_UPDATES_TRIGGER ' +
+    // ihttps://www.postgresql.org/docs/devel/static/lo-funcs.html
+    'LO_FROM_BYTEA LO_PUT LO_GET LO_CREAT LO_CREATE LO_UNLINK LO_IMPORT LO_EXPORT LOREAD LOWRITE ' +
+    //
+    'GROUPING CAST ';
+
+    var FUNCTIONS_RE = 
+      FUNCTIONS.trim()
+               .split(' ')
+               .map( function(val) { return val.split('|')[0]; } )
+               .join('|');
+
+    return {
+        aliases: ['postgres','postgresql'],
+        case_insensitive: true,
+        keywords: {
+          keyword:
+            SQL_KW + PLPGSQL_KW + ROLE_ATTRS,
+          built_in:
+            SQL_BI + PLPGSQL_BI + PLPGSQL_EXCEPTIONS,
+        },
+        // Forbid some cunstructs from other languages to improve autodetect. In fact
+        // "[a-z]:" is legal (as part of array slice), but improbabal.
+        illegal: /:==|\W\s*\(\*|(^|\s)\$[a-z]|{{|[a-z]:\s*$|\.\.\.|TO:|DO:/,
+        contains: [
+          // special handling of some words, which are reserved only in some contexts
+          {
+            className: 'keyword',
+            variants: [
+              { begin: /\bTEXT\s*SEARCH\b/ },
+              { begin: /\b(PRIMARY|FOREIGN|FOR(\s+NO)?)\s+KEY\b/ },
+              { begin: /\bPARALLEL\s+(UNSAFE|RESTRICTED|SAFE)\b/ },
+              { begin: /\bSTORAGE\s+(PLAIN|EXTERNAL|EXTENDED|MAIN)\b/ },
+              { begin: /\bMATCH\s+(FULL|PARTIAL|SIMPLE)\b/ },
+              { begin: /\bNULLS\s+(FIRST|LAST)\b/ },
+              { begin: /\bEVENT\s+TRIGGER\b/ },
+              { begin: /\b(MAPPING|OR)\s+REPLACE\b/ },
+              { begin: /\b(FROM|TO)\s+(PROGRAM|STDIN|STDOUT)\b/ },
+              { begin: /\b(SHARE|EXCLUSIVE)\s+MODE\b/ },
+              { begin: /\b(LEFT|RIGHT)\s+(OUTER\s+)?JOIN\b/ },
+              { begin: /\b(FETCH|MOVE)\s+(NEXT|PRIOR|FIRST|LAST|ABSOLUTE|RELATIVE|FORWARD|BACKWARD)\b/ },
+              { begin: /\bPRESERVE\s+ROWS\b/ },
+              { begin: /\bDISCARD\s+PLANS\b/ },
+              { begin: /\bREFERENCING\s+(OLD|NEW)\b/ },
+              { begin: /\bSKIP\s+LOCKED\b/ },
+              { begin: /\bGROUPING\s+SETS\b/ },
+              { begin: /\b(BINARY|INSENSITIVE|SCROLL|NO\s+SCROLL)\s+(CURSOR|FOR)\b/ },
+              { begin: /\b(WITH|WITHOUT)\s+HOLD\b/ },
+              { begin: /\bWITH\s+(CASCADED|LOCAL)\s+CHECK\s+OPTION\b/ },
+              { begin: /\bEXCLUDE\s+(TIES|NO\s+OTHERS)\b/ },
+              { begin: /\bFORMAT\s+(TEXT|XML|JSON|YAML)\b/ },
+              { begin: /\bSET\s+((SESSION|LOCAL)\s+)?NAMES\b/ },
+              { begin: /\bIS\s+(NOT\s+)?UNKNOWN\b/ },
+              { begin: /\bSECURITY\s+LABEL\b/ },
+              { begin: /\bSTANDALONE\s+(YES|NO|NO\s+VALUE)\b/ },
+              { begin: /\bWITH\s+(NO\s+)?DATA\b/ },
+              { begin: /\b(FOREIGN|SET)\s+DATA\b/ },
+              { begin: /\bSET\s+(CATALOG|CONSTRAINTS)\b/ },
+              { begin: /\b(WITH|FOR)\s+ORDINALITY\b/ },
+              { begin: /\bIS\s+(NOT\s+)?DOCUMENT\b/ },
+              { begin: /\bXML\s+OPTION\s+(DOCUMENT|CONTENT)\b/ },
+              { begin: /\b(STRIP|PRESERVE)\s+WHITESPACE\b/ },
+              { begin: /\bNO\s+(ACTION|MAXVALUE|MINVALUE)\b/ },
+              { begin: /\bPARTITION\s+BY\s+(RANGE|LIST|HASH)\b/ },
+              { begin: /\bAT\s+TIME\s+ZONE\b/ },
+              { begin: /\bGRANTED\s+BY\b/ },
+              { begin: /\bRETURN\s+(QUERY|NEXT)\b/ },
+              { begin: /\b(ATTACH|DETACH)\s+PARTITION\b/ },
+              { begin: /\bFORCE\s+ROW\s+LEVEL\s+SECURITY\b/ },
+              { begin: /\b(INCLUDING|EXCLUDING)\s+(COMMENTS|CONSTRAINTS|DEFAULTS|IDENTITY|INDEXES|STATISTICS|STORAGE|ALL)\b/ },
+              { begin: /\bAS\s+(ASSIGNMENT|IMPLICIT|PERMISSIVE|RESTRICTIVE|ENUM|RANGE)\b/ }
+            ]
+          },
+          // functions named as keywords, followed by '('
+          {
+            begin: /\b(FORMAT|FAMILY|VERSION)\s*\(/,
+            //keywords: { built_in: 'FORMAT FAMILY VERSION' }
+          },
+          // INCLUDE ( ... ) in index_parameters in CREATE TABLE
+          {
+            begin: /\bINCLUDE\s*\(/,
+            keywords: 'INCLUDE'
+          },
+          // not highlight RANGE if not in frame_clause (not 100% correct, but seems satisfactory)
+          {
+            begin: /\bRANGE(?!\s*(BETWEEN|UNBOUNDED|CURRENT|[-0-9]+))/
+          },
+          // disable highlighting in commands CREATE AGGREGATE/COLLATION/DATABASE/OPERTOR/TEXT SEARCH .../TYPE
+          // and in PL/pgSQL RAISE ... USING
+          {
+            begin: /\b(VERSION|OWNER|TEMPLATE|TABLESPACE|CONNECTION\s+LIMIT|PROCEDURE|RESTRICT|JOIN|PARSER|COPY|START|END|COLLATION|INPUT|ANALYZE|STORAGE|LIKE|DEFAULT|DELIMITER|ENCODING|COLUMN|CONSTRAINT|TABLE|SCHEMA)\s*=/
+          },
+          // PG_smth; HAS_some_PRIVILEGE
+          {
+            //className: 'built_in',
+            begin: /\b(PG_\w+?|HAS_[A-Z_]+_PRIVILEGE)\b/,
+            relevance: 10
+          },
+          // extract
+          {
+            begin: /\bEXTRACT\s*\(/,
+            end: /\bFROM\b/,
+            returnEnd: true,
+            keywords: {
+              //built_in: 'EXTRACT',
+              type:     'CENTURY DAY DECADE DOW DOY EPOCH HOUR ISODOW ISOYEAR MICROSECONDS ' +
+                        'MILLENNIUM MILLISECONDS MINUTE MONTH QUARTER SECOND TIMEZONE TIMEZONE_HOUR ' +
+                        'TIMEZONE_MINUTE WEEK YEAR'
+            }
+          },
+          // xmlelement, xmlpi - special NAME
+          {
+            begin: /\b(XMLELEMENT|XMLPI)\s*\(\s*NAME/,
+            keywords: {
+              //built_in: 'XMLELEMENT XMLPI',
+              keyword:  'NAME'
+            }
+          },
+          // xmlparse, xmlserialize
+          {
+            begin: /\b(XMLPARSE|XMLSERIALIZE)\s*\(\s*(DOCUMENT|CONTENT)/,
+            keywords: {
+              //built_in: 'XMLPARSE XMLSERIALIZE',
+              keyword:  'DOCUMENT CONTENT'
+            }
+          },
+          // Sequences. We actually skip everything between CACHE|INCREMENT|MAXVALUE|MINVALUE and
+          // nearest following numeric constant. Without with trick we find a lot of "keywords"
+          // in 'avrasm' autodetection test...
+          {
+            beginKeywords: 'CACHE INCREMENT MAXVALUE MINVALUE',
+            end: hljs.C_NUMBER_RE,
+            returnEnd: true,
+            keywords: 'BY CACHE INCREMENT MAXVALUE MINVALUE'
+          },
+          // WITH|WITHOUT TIME ZONE as part of datatype
+          {
+            className: 'type',
+            begin: /\b(WITH|WITHOUT)\s+TIME\s+ZONE\b/
+          },
+          // INTERVAL optional fields
+          {
+            className: 'type',
+            begin: /\bINTERVAL\s+(YEAR|MONTH|DAY|HOUR|MINUTE|SECOND)(\s+TO\s+(MONTH|HOUR|MINUTE|SECOND))?\b/
+          },
+          // Pseudo-types which allowed only as return type
+          {
+            begin: /\bRETURNS\s+(LANGUAGE_HANDLER|TRIGGER|EVENT_TRIGGER|FDW_HANDLER|INDEX_AM_HANDLER|TSM_HANDLER)\b/,
+            keywords: {
+              keyword: 'RETURNS',
+              type: 'LANGUAGE_HANDLER TRIGGER EVENT_TRIGGER FDW_HANDLER INDEX_AM_HANDLER TSM_HANDLER'
+            }
+          },
+          // Known functions - only when followed by '('
+          {
+            begin: '\\b(' + FUNCTIONS_RE + ')\\s*\\('
+            //keywords: { built_in: FUNCTIONS }
+          },
+          // Types
+          {
+            begin: '\\.(' + TYPES_RE + ')\\b' // prevent highlight as type, say, 'oid' in 'pgclass.oid'
+          },
+          {
+            begin: '\\b(' + TYPES_RE + ')\\s+PATH\\b', // in XMLTABLE
+            keywords: {
+              keyword: 'PATH', // hopefully no one would use PATH type in XMLTABLE...
+              type: TYPES.replace('PATH ','')
+            }
+          },
+          {
+            className: 'type',
+            begin: '\\b(' + TYPES_RE + ')\\b'
+          },
+          // Strings, see https://www.postgresql.org/docs/11/static/sql-syntax-lexical.html#SQL-SYNTAX-CONSTANTS
+          {
+            className: 'string',
+            begin: '\'', end: '\'',
+            contains: [{begin: '\'\''}]
+          },
+          {
+            className: 'string',
+            begin: '(e|E|u&|U&)\'', end: '\'',
+            contains: [{begin: '\\\\.'}],
+            relevance: 10
+          },
+          {
+            begin: DOLLAR_STRING,
+            endSameAsBegin: true,
+            contains: [
+              {
+                // actually we want them all except SQL; listed are those with known implementations
+                // and XML + JSON just in case
+                subLanguage: ['pgsql','perl','python','tcl','r','lua','java','php','ruby','bash','scheme','xml','json'],
+                endsWithParent: true
+              }
+            ]
+          },
+          // identifiers in quotes
+          {
+            begin: '"', end: '"',
+            contains: [{begin: '""'}]
+          },
+          // numbers
+          hljs.C_NUMBER_MODE,
+          // comments
+          hljs.C_BLOCK_COMMENT_MODE,
+          COMMENT_MODE,
+          // PL/pgSQL staff
+          // %ROWTYPE, %TYPE, $n
+          {
+            className: 'meta',
+            variants: [
+              {begin: '%(ROW)?TYPE', relevance: 10}, // %TYPE, %ROWTYPE
+              {begin: '\\$\\d+'},                    // $n
+              {begin: '^#\\w', end: '$'}             // #compiler option
+            ]
+          },
+          // <<labeles>>
+          {
+            className: 'symbol',
+            begin: LABEL,
+            relevance: 10
+          }
+        ]
+  };
+};
+
+/***/ }),
+/* 220 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23263,7 +28031,7 @@ module.exports = function(hljs) {
   };
   var NUMBER = {variants: [hljs.BINARY_NUMBER_MODE, hljs.C_NUMBER_MODE]};
   return {
-    aliases: ['php3', 'php4', 'php5', 'php6'],
+    aliases: ['php', 'php3', 'php4', 'php5', 'php6', 'php7'],
     case_insensitive: true,
     keywords:
       'and include_once list abstract global private echo interface as static endswitch ' +
@@ -23368,15 +28136,25 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 217 */
+/* 221 */
+/***/ (function(module, exports) {
+
+module.exports = function(hljs) {
+    return {
+        disableAutodetect: true
+    };
+};
+
+/***/ }),
+/* 222 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
   var KEYWORDS = {
     keyword:
-      'actor addressof and as be break class compile_error compile_intrinsic' +
-      'consume continue delegate digestof do else elseif embed end error' +
-      'for fun if ifdef in interface is isnt lambda let match new not object' +
+      'actor addressof and as be break class compile_error compile_intrinsic ' +
+      'consume continue delegate digestof do else elseif embed end error ' +
+      'for fun if ifdef in interface is isnt lambda let match new not object ' +
       'or primitive recover repeat return struct then trait try type until ' +
       'use var where while with xor',
     meta:
@@ -23414,42 +28192,20 @@ module.exports = function(hljs) {
     begin: hljs.IDENT_RE + '\'', relevance: 0
   };
 
-  var CLASS = {
-    className: 'class',
-    beginKeywords: 'class actor', end: '$',
-    contains: [
-      hljs.TITLE_MODE,
-      hljs.C_LINE_COMMENT_MODE
-    ]
-  }
-
-  var FUNCTION = {
-    className: 'function',
-    beginKeywords: 'new fun', end: '=>',
-    contains: [
-      hljs.TITLE_MODE,
-      {
-        begin: /\(/, end: /\)/,
-        contains: [
-          TYPE_NAME,
-          PRIMED_NAME,
-          hljs.C_NUMBER_MODE,
-          hljs.C_BLOCK_COMMENT_MODE
-        ]
-      },
-      {
-        begin: /:/, endsWithParent: true,
-        contains: [TYPE_NAME]
-      },
-      hljs.C_LINE_COMMENT_MODE
-    ]
-  }
+  /**
+   * The `FUNCTION` and `CLASS` modes were intentionally removed to simplify
+   * highlighting and fix cases like
+   * ```
+   * interface Iterator[A: A]
+   *   fun has_next(): Bool
+   *   fun next(): A?
+   * ```
+   * where it is valid to have a function head without a body
+   */
 
   return {
     keywords: KEYWORDS,
     contains: [
-      CLASS,
-      FUNCTION,
       TYPE_NAME,
       TRIPLE_QUOTE_STRING_MODE,
       QUOTE_STRING_MODE,
@@ -23463,77 +28219,268 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 218 */
+/* 223 */
 /***/ (function(module, exports) {
 
-module.exports = function(hljs) {
+module.exports = function(hljs){
   var BACKTICK_ESCAPE = {
-    begin: '`[\\s\\S]',
-    relevance: 0
+    begin: "`[\\s\\S]",
+    relevance: 0,
   };
   var VAR = {
-    className: 'variable',
-    variants: [
-      {begin: /\$[\w\d][\w\d_:]*/}
-    ]
+    className: "variable",
+    variants: [{ begin: /\$[\w\d][\w\d_:]*/ }],
   };
   var LITERAL = {
-    className: 'literal',
-    begin: /\$(null|true|false)\b/
+    className: "literal",
+    begin: /\$(null|true|false)\b/,
   };
   var QUOTE_STRING = {
-    className: 'string',
-    variants: [
-      { begin: /"/, end: /"/ },
-      { begin: /@"/, end: /^"@/ }
-    ],
+    className: "string",
+    variants: [{ begin: /"/, end: /"/ }, { begin: /@"/, end: /^"@/ }],
     contains: [
       BACKTICK_ESCAPE,
       VAR,
       {
-        className: 'variable',
-        begin: /\$[A-z]/, end: /[^A-z]/
-      }
-    ]
+        className: "variable",
+        begin: /\$[A-z]/,
+        end: /[^A-z]/,
+      },
+    ],
   };
   var APOS_STRING = {
-    className: 'string',
-    variants: [
-      { begin: /'/, end: /'/ },
-      { begin: /@'/, end: /^'@/ }
-    ]
+    className: "string",
+    variants: [{ begin: /'/, end: /'/ }, { begin: /@'/, end: /^'@/ }],
   };
 
   var PS_HELPTAGS = {
-    className: 'doctag',
+    className: "doctag",
     variants: [
-      /* no paramater help tags */ 
-      { begin: /\.(synopsis|description|example|inputs|outputs|notes|link|component|role|functionality)/ },
+      /* no paramater help tags */
+
+      {
+        begin: /\.(synopsis|description|example|inputs|outputs|notes|link|component|role|functionality)/,
+      },
       /* one parameter help tags */
-      { begin: /\.(parameter|forwardhelptargetname|forwardhelpcategory|remotehelprunspace|externalhelp)\s+\S+/ }
-    ]
+      {
+        begin: /\.(parameter|forwardhelptargetname|forwardhelpcategory|remotehelprunspace|externalhelp)\s+\S+/,
+      },
+    ],
   };
-  var PS_COMMENT = hljs.inherit(
-    hljs.COMMENT(null, null),
-    {
-      variants: [
-        /* single-line comment */
-        { begin: /#/, end: /$/ },
-        /* multi-line comment */
-        { begin: /<#/, end: /#>/ }
-      ],
-      contains: [PS_HELPTAGS]
-    }
-  );
+  var PS_COMMENT = hljs.inherit(hljs.COMMENT(null, null), {
+    variants: [
+      /* single-line comment */
+      { begin: /#/, end: /$/ },
+      /* multi-line comment */
+      { begin: /<#/, end: /#>/ },
+    ],
+    contains: [PS_HELPTAGS],
+  });
 
   return {
-    aliases: ['ps'],
+    aliases: ["ps"],
     lexemes: /-?[A-z\.\-]+/,
     case_insensitive: true,
     keywords: {
-      keyword: 'if else foreach return function do while until elseif begin for trap data dynamicparam end break throw param continue finally in switch exit filter try process catch',
-      built_in: 'Add-Computer Add-Content Add-History Add-JobTrigger Add-Member Add-PSSnapin Add-Type Checkpoint-Computer Clear-Content Clear-EventLog Clear-History Clear-Host Clear-Item Clear-ItemProperty Clear-Variable Compare-Object Complete-Transaction Connect-PSSession Connect-WSMan Convert-Path ConvertFrom-Csv ConvertFrom-Json ConvertFrom-SecureString ConvertFrom-StringData ConvertTo-Csv ConvertTo-Html ConvertTo-Json ConvertTo-SecureString ConvertTo-Xml Copy-Item Copy-ItemProperty Debug-Process Disable-ComputerRestore Disable-JobTrigger Disable-PSBreakpoint Disable-PSRemoting Disable-PSSessionConfiguration Disable-WSManCredSSP Disconnect-PSSession Disconnect-WSMan Disable-ScheduledJob Enable-ComputerRestore Enable-JobTrigger Enable-PSBreakpoint Enable-PSRemoting Enable-PSSessionConfiguration Enable-ScheduledJob Enable-WSManCredSSP Enter-PSSession Exit-PSSession Export-Alias Export-Clixml Export-Console Export-Counter Export-Csv Export-FormatData Export-ModuleMember Export-PSSession ForEach-Object Format-Custom Format-List Format-Table Format-Wide Get-Acl Get-Alias Get-AuthenticodeSignature Get-ChildItem Get-Command Get-ComputerRestorePoint Get-Content Get-ControlPanelItem Get-Counter Get-Credential Get-Culture Get-Date Get-Event Get-EventLog Get-EventSubscriber Get-ExecutionPolicy Get-FormatData Get-Host Get-HotFix Get-Help Get-History Get-IseSnippet Get-Item Get-ItemProperty Get-Job Get-JobTrigger Get-Location Get-Member Get-Module Get-PfxCertificate Get-Process Get-PSBreakpoint Get-PSCallStack Get-PSDrive Get-PSProvider Get-PSSession Get-PSSessionConfiguration Get-PSSnapin Get-Random Get-ScheduledJob Get-ScheduledJobOption Get-Service Get-TraceSource Get-Transaction Get-TypeData Get-UICulture Get-Unique Get-Variable Get-Verb Get-WinEvent Get-WmiObject Get-WSManCredSSP Get-WSManInstance Group-Object Import-Alias Import-Clixml Import-Counter Import-Csv Import-IseSnippet Import-LocalizedData Import-PSSession Import-Module Invoke-AsWorkflow Invoke-Command Invoke-Expression Invoke-History Invoke-Item Invoke-RestMethod Invoke-WebRequest Invoke-WmiMethod Invoke-WSManAction Join-Path Limit-EventLog Measure-Command Measure-Object Move-Item Move-ItemProperty New-Alias New-Event New-EventLog New-IseSnippet New-Item New-ItemProperty New-JobTrigger New-Object New-Module New-ModuleManifest New-PSDrive New-PSSession New-PSSessionConfigurationFile New-PSSessionOption New-PSTransportOption New-PSWorkflowExecutionOption New-PSWorkflowSession New-ScheduledJobOption New-Service New-TimeSpan New-Variable New-WebServiceProxy New-WinEvent New-WSManInstance New-WSManSessionOption Out-Default Out-File Out-GridView Out-Host Out-Null Out-Printer Out-String Pop-Location Push-Location Read-Host Receive-Job Register-EngineEvent Register-ObjectEvent Register-PSSessionConfiguration Register-ScheduledJob Register-WmiEvent Remove-Computer Remove-Event Remove-EventLog Remove-Item Remove-ItemProperty Remove-Job Remove-JobTrigger Remove-Module Remove-PSBreakpoint Remove-PSDrive Remove-PSSession Remove-PSSnapin Remove-TypeData Remove-Variable Remove-WmiObject Remove-WSManInstance Rename-Computer Rename-Item Rename-ItemProperty Reset-ComputerMachinePassword Resolve-Path Restart-Computer Restart-Service Restore-Computer Resume-Job Resume-Service Save-Help Select-Object Select-String Select-Xml Send-MailMessage Set-Acl Set-Alias Set-AuthenticodeSignature Set-Content Set-Date Set-ExecutionPolicy Set-Item Set-ItemProperty Set-JobTrigger Set-Location Set-PSBreakpoint Set-PSDebug Set-PSSessionConfiguration Set-ScheduledJob Set-ScheduledJobOption Set-Service Set-StrictMode Set-TraceSource Set-Variable Set-WmiInstance Set-WSManInstance Set-WSManQuickConfig Show-Command Show-ControlPanelItem Show-EventLog Sort-Object Split-Path Start-Job Start-Process Start-Service Start-Sleep Start-Transaction Start-Transcript Stop-Computer Stop-Job Stop-Process Stop-Service Stop-Transcript Suspend-Job Suspend-Service Tee-Object Test-ComputerSecureChannel Test-Connection Test-ModuleManifest Test-Path Test-PSSessionConfigurationFile Trace-Command Unblock-File Undo-Transaction Unregister-Event Unregister-PSSessionConfiguration Unregister-ScheduledJob Update-FormatData Update-Help Update-List Update-TypeData Use-Transaction Wait-Event Wait-Job Wait-Process Where-Object Write-Debug Write-Error Write-EventLog Write-Host Write-Output Write-Progress Write-Verbose Write-Warning Add-MDTPersistentDrive Disable-MDTMonitorService Enable-MDTMonitorService Get-MDTDeploymentShareStatistics Get-MDTMonitorData Get-MDTOperatingSystemCatalog Get-MDTPersistentDrive Import-MDTApplication Import-MDTDriver Import-MDTOperatingSystem Import-MDTPackage Import-MDTTaskSequence New-MDTDatabase Remove-MDTMonitorData Remove-MDTPersistentDrive Restore-MDTPersistentDrive Set-MDTMonitorData Test-MDTDeploymentShare Test-MDTMonitorData Update-MDTDatabaseSchema Update-MDTDeploymentShare Update-MDTLinkedDS Update-MDTMedia Update-MDTMedia Add-VamtProductKey Export-VamtData Find-VamtManagedMachine Get-VamtConfirmationId Get-VamtProduct Get-VamtProductKey Import-VamtData Initialize-VamtData Install-VamtConfirmationId Install-VamtProductActivation Install-VamtProductKey Update-VamtProduct',
-      nomarkup: '-ne -eq -lt -gt -ge -le -not -like -notlike -match -notmatch -contains -notcontains -in -notin -replace'
+      keyword:
+        "if else foreach return function do while until elseif begin for trap data dynamicparam end break throw param continue finally in switch exit filter try process catch" +
+        "ValidateNoCircleInNodeResources ValidateNodeExclusiveResources ValidateNodeManager ValidateNodeResources ValidateNodeResourceSource ValidateNoNameNodeResources ThrowError IsHiddenResource" +
+        "IsPatternMatched ",
+      built_in:
+        "Add-Computer Add-Content Add-History Add-JobTrigger Add-Member Add-PSSnapin Add-Type Checkpoint-Computer Clear-Content " +
+        "Clear-EventLog Clear-History Clear-Host Clear-Item Clear-ItemProperty Clear-Variable Compare-Object Complete-Transaction Connect-PSSession " +
+        "Connect-WSMan Convert-Path ConvertFrom-Csv ConvertFrom-Json ConvertFrom-SecureString ConvertFrom-StringData ConvertTo-Csv ConvertTo-Html " +
+        "ConvertTo-Json ConvertTo-SecureString ConvertTo-Xml Copy-Item Copy-ItemProperty Debug-Process Disable-ComputerRestore Disable-JobTrigger " +
+        "Disable-PSBreakpoint Disable-PSRemoting Disable-PSSessionConfiguration Disable-WSManCredSSP Disconnect-PSSession Disconnect-WSMan " +
+        "Disable-ScheduledJob Enable-ComputerRestore Enable-JobTrigger Enable-PSBreakpoint Enable-PSRemoting Enable-PSSessionConfiguration " +
+        "Enable-ScheduledJob Enable-WSManCredSSP Enter-PSSession Exit-PSSession Export-Alias Export-Clixml Export-Console Export-Counter Export-Csv " +
+        "Export-FormatData Export-ModuleMember Export-PSSession ForEach-Object Format-Custom Format-List Format-Table Format-Wide Get-Acl Get-Alias " +
+        "Get-AuthenticodeSignature Get-ChildItem Get-Command Get-ComputerRestorePoint Get-Content Get-ControlPanelItem Get-Counter Get-Credential " +
+        "Get-Culture Get-Date Get-Event Get-EventLog Get-EventSubscriber Get-ExecutionPolicy Get-FormatData Get-Host Get-HotFix Get-Help Get-History " +
+        "Get-IseSnippet Get-Item Get-ItemProperty Get-Job Get-JobTrigger Get-Location Get-Member Get-Module Get-PfxCertificate Get-Process " +
+        "Get-PSBreakpoint Get-PSCallStack Get-PSDrive Get-PSProvider Get-PSSession Get-PSSessionConfiguration Get-PSSnapin Get-Random Get-ScheduledJob " +
+        "Get-ScheduledJobOption Get-Service Get-TraceSource Get-Transaction Get-TypeData Get-UICulture Get-Unique Get-Variable Get-Verb Get-WinEvent " +
+        "Get-WmiObject Get-WSManCredSSP Get-WSManInstance Group-Object Import-Alias Import-Clixml Import-Counter Import-Csv Import-IseSnippet " +
+        "Import-LocalizedData Import-PSSession Import-Module Invoke-AsWorkflow Invoke-Command Invoke-Expression Invoke-History Invoke-Item " +
+        "Invoke-RestMethod Invoke-WebRequest Invoke-WmiMethod Invoke-WSManAction Join-Path Limit-EventLog Measure-Command Measure-Object Move-Item " +
+        "Move-ItemProperty New-Alias New-Event New-EventLog New-IseSnippet New-Item New-ItemProperty New-JobTrigger New-Object New-Module " +
+        "New-ModuleManifest New-PSDrive New-PSSession New-PSSessionConfigurationFile New-PSSessionOption New-PSTransportOption " +
+        "New-PSWorkflowExecutionOption New-PSWorkflowSession New-ScheduledJobOption New-Service New-TimeSpan New-Variable New-WebServiceProxy " +
+        "New-WinEvent New-WSManInstance New-WSManSessionOption Out-Default Out-File Out-GridView Out-Host Out-Null Out-Printer Out-String Pop-Location " +
+        "Push-Location Read-Host Receive-Job Register-EngineEvent Register-ObjectEvent Register-PSSessionConfiguration Register-ScheduledJob " +
+        "Register-WmiEvent Remove-Computer Remove-Event Remove-EventLog Remove-Item Remove-ItemProperty Remove-Job Remove-JobTrigger Remove-Module " +
+        "Remove-PSBreakpoint Remove-PSDrive Remove-PSSession Remove-PSSnapin Remove-TypeData Remove-Variable Remove-WmiObject Remove-WSManInstance " +
+        "Rename-Computer Rename-Item Rename-ItemProperty Reset-ComputerMachinePassword Resolve-Path Restart-Computer Restart-Service Restore-Computer " +
+        "Resume-Job Resume-Service Save-Help Select-Object Select-String Select-Xml Send-MailMessage Set-Acl Set-Alias Set-AuthenticodeSignature " +
+        "Set-Content Set-Date Set-ExecutionPolicy Set-Item Set-ItemProperty Set-JobTrigger Set-Location Set-PSBreakpoint Set-PSDebug " +
+        "Set-PSSessionConfiguration Set-ScheduledJob Set-ScheduledJobOption Set-Service Set-StrictMode Set-TraceSource Set-Variable Set-WmiInstance " +
+        "Set-WSManInstance Set-WSManQuickConfig Show-Command Show-ControlPanelItem Show-EventLog Sort-Object Split-Path Start-Job Start-Process " +
+        "Start-Service Start-Sleep Start-Transaction Start-Transcript Stop-Computer Stop-Job Stop-Process Stop-Service Stop-Transcript Suspend-Job " +
+        "Suspend-Service Tee-Object Test-ComputerSecureChannel Test-Connection Test-ModuleManifest Test-Path Test-PSSessionConfigurationFile " +
+        "Trace-Command Unblock-File Undo-Transaction Unregister-Event Unregister-PSSessionConfiguration Unregister-ScheduledJob Update-FormatData " +
+        "Update-Help Update-List Update-TypeData Use-Transaction Wait-Event Wait-Job Wait-Process Where-Object Write-Debug Write-Error Write-EventLog " +
+        "Write-Host Write-Output Write-Progress Write-Verbose Write-Warning Add-MDTPersistentDrive Disable-MDTMonitorService Enable-MDTMonitorService " +
+        "Get-MDTDeploymentShareStatistics Get-MDTMonitorData Get-MDTOperatingSystemCatalog Get-MDTPersistentDrive Import-MDTApplication " +
+        "Import-MDTDriver Import-MDTOperatingSystem Import-MDTPackage Import-MDTTaskSequence New-MDTDatabase Remove-MDTMonitorData " +
+        "Remove-MDTPersistentDrive Restore-MDTPersistentDrive Set-MDTMonitorData Test-MDTDeploymentShare Test-MDTMonitorData Update-MDTDatabaseSchema " +
+        "Update-MDTDeploymentShare Update-MDTLinkedDS Update-MDTMedia Add-VamtProductKey Export-VamtData Find-VamtManagedMachine " +
+        "Get-VamtConfirmationId Get-VamtProduct Get-VamtProductKey Import-VamtData Initialize-VamtData Install-VamtConfirmationId " +
+        "Install-VamtProductActivation Install-VamtProductKey Update-VamtProduct Add-CIDatastore Add-KeyManagementServer Add-NodeKeys " +
+        "Add-NsxDynamicCriteria Add-NsxDynamicMemberSet Add-NsxEdgeInterfaceAddress Add-NsxFirewallExclusionListMember Add-NsxFirewallRuleMember " +
+        "Add-NsxIpSetMember Add-NsxLicense Add-NsxLoadBalancerPoolMember Add-NsxLoadBalancerVip Add-NsxSecondaryManager Add-NsxSecurityGroupMember " +
+        "Add-NsxSecurityPolicyRule Add-NsxSecurityPolicyRuleGroup Add-NsxSecurityPolicyRuleService Add-NsxServiceGroupMember " +
+        "Add-NsxTransportZoneMember Add-PassthroughDevice Add-VDSwitchPhysicalNetworkAdapter Add-VDSwitchVMHost Add-VMHost Add-VMHostNtpServer " +
+        "Add-VirtualSwitchPhysicalNetworkAdapter Add-XmlElement Add-vRACustomForm Add-vRAPrincipalToTenantRole Add-vRAReservationNetwork " +
+        "Add-vRAReservationStorage Clear-NsxEdgeInterface Clear-NsxManagerTimeSettings Compress-Archive Connect-CIServer Connect-CisServer " +
+        "Connect-HCXServer Connect-NIServer Connect-NsxLogicalSwitch Connect-NsxServer Connect-NsxtServer Connect-SrmServer Connect-VIServer " +
+        "Connect-Vmc Connect-vRAServer Connect-vRNIServer ConvertFrom-Markdown ConvertTo-MOFInstance Copy-DatastoreItem Copy-HardDisk Copy-NsxEdge " +
+        "Copy-VDisk Copy-VMGuestFile Debug-Runspace Disable-NsxEdgeSsh Disable-RunspaceDebug Disable-vRNIDataSource Disconnect-CIServer " +
+        "Disconnect-CisServer Disconnect-HCXServer Disconnect-NsxLogicalSwitch Disconnect-NsxServer Disconnect-NsxtServer Disconnect-SrmServer " +
+        "Disconnect-VIServer Disconnect-Vmc Disconnect-vRAServer Disconnect-vRNIServer Dismount-Tools Enable-NsxEdgeSsh Enable-RunspaceDebug " +
+        "Enable-vRNIDataSource Expand-Archive Export-NsxObject Export-SpbmStoragePolicy Export-VApp Export-VDPortGroup Export-VDSwitch " +
+        "Export-VMHostProfile Export-vRAIcon Export-vRAPackage Find-Command Find-DscResource Find-Module Find-NsxWhereVMUsed Find-Package " +
+        "Find-PackageProvider Find-RoleCapability Find-Script Format-Hex Format-VMHostDiskPartition Format-XML Generate-VersionInfo " +
+        "Get-AdvancedSetting Get-AlarmAction Get-AlarmActionTrigger Get-AlarmDefinition Get-Annotation Get-CDDrive Get-CIAccessControlRule " +
+        "Get-CIDatastore Get-CINetworkAdapter Get-CIRole Get-CIUser Get-CIVApp Get-CIVAppNetwork Get-CIVAppStartRule Get-CIVAppTemplate Get-CIVM " +
+        "Get-CIVMTemplate Get-CIView Get-Catalog Get-CisCommand Get-CisService Get-CloudCommand Get-Cluster Get-CompatibleVersionAddtionaPropertiesStr " +
+        "Get-ComplexResourceQualifier Get-ConfigurationErrorCount Get-ContentLibraryItem Get-CustomAttribute Get-DSCResourceModules Get-Datacenter " +
+        "Get-Datastore Get-DatastoreCluster Get-DrsClusterGroup Get-DrsRecommendation Get-DrsRule Get-DrsVMHostRule Get-DscResource Get-EdgeGateway " +
+        "Get-EncryptedPassword Get-ErrorReport Get-EsxCli Get-EsxTop Get-ExternalNetwork Get-FileHash Get-FloppyDrive Get-Folder Get-HAPrimaryVMHost " +
+        "Get-HCXAppliance Get-HCXApplianceCompute Get-HCXApplianceDVS Get-HCXApplianceDatastore Get-HCXApplianceNetwork Get-HCXContainer " +
+        "Get-HCXDatastore Get-HCXGateway Get-HCXInterconnectStatus Get-HCXJob Get-HCXMigration Get-HCXNetwork Get-HCXNetworkExtension " +
+        "Get-HCXReplication Get-HCXReplicationSnapshot Get-HCXService Get-HCXSite Get-HCXSitePairing Get-HCXVM Get-HardDisk Get-IScsiHbaTarget " +
+        "Get-InnerMostErrorRecord Get-InstallPath Get-InstalledModule Get-InstalledScript Get-Inventory Get-ItemPropertyValue Get-KeyManagementServer " +
+        "Get-KmipClientCertificate Get-KmsCluster Get-Log Get-LogType Get-MarkdownOption Get-Media Get-MofInstanceName Get-MofInstanceText Get-NetworkAdapter Get-NetworkPool " +
+        "Get-NfsUser Get-NicTeamingPolicy Get-NsxApplicableMember Get-NsxApplicableSecurityAction Get-NsxBackingDVSwitch Get-NsxBackingPortGroup Get-NsxCliDfwAddrSet " +
+        "Get-NsxCliDfwFilter Get-NsxCliDfwRule Get-NsxClusterStatus Get-NsxController Get-NsxDynamicCriteria Get-NsxDynamicMemberSet Get-NsxEdge Get-NsxEdgeBgp " +
+        "Get-NsxEdgeBgpNeighbour Get-NsxEdgeCertificate Get-NsxEdgeCsr Get-NsxEdgeFirewall Get-NsxEdgeFirewallRule Get-NsxEdgeInterface Get-NsxEdgeInterfaceAddress " +
+        "Get-NsxEdgeNat Get-NsxEdgeNatRule Get-NsxEdgeOspf Get-NsxEdgeOspfArea Get-NsxEdgeOspfInterface Get-NsxEdgePrefix Get-NsxEdgeRedistributionRule Get-NsxEdgeRouting " +
+        "Get-NsxEdgeStaticRoute Get-NsxEdgeSubInterface Get-NsxFirewallExclusionListMember Get-NsxFirewallGlobalConfiguration Get-NsxFirewallPublishStatus Get-NsxFirewallRule " +
+        "Get-NsxFirewallRuleMember Get-NsxFirewallSavedConfiguration Get-NsxFirewallSection Get-NsxFirewallThreshold Get-NsxIpPool Get-NsxIpSet Get-NsxLicense Get-NsxLoadBalancer " +
+        "Get-NsxLoadBalancerApplicationProfile Get-NsxLoadBalancerApplicationRule Get-NsxLoadBalancerMonitor Get-NsxLoadBalancerPool Get-NsxLoadBalancerPoolMember Get-NsxLoadBalancerStats " +
+        "Get-NsxLoadBalancerVip Get-NsxLogicalRouter Get-NsxLogicalRouterBgp Get-NsxLogicalRouterBgpNeighbour Get-NsxLogicalRouterBridge Get-NsxLogicalRouterBridging " +
+        "Get-NsxLogicalRouterInterface Get-NsxLogicalRouterOspf Get-NsxLogicalRouterOspfArea Get-NsxLogicalRouterOspfInterface Get-NsxLogicalRouterPrefix " +
+        "Get-NsxLogicalRouterRedistributionRule Get-NsxLogicalRouterRouting Get-NsxLogicalRouterStaticRoute Get-NsxLogicalSwitch Get-NsxMacSet Get-NsxManagerBackup " +
+        "Get-NsxManagerCertificate Get-NsxManagerComponentSummary Get-NsxManagerNetwork Get-NsxManagerRole Get-NsxManagerSsoConfig Get-NsxManagerSyncStatus Get-NsxManagerSyslogServer " +
+        "Get-NsxManagerSystemSummary Get-NsxManagerTimeSettings Get-NsxManagerVcenterConfig Get-NsxSecondaryManager Get-NsxSecurityGroup Get-NsxSecurityGroupEffectiveIpAddress " +
+        "Get-NsxSecurityGroupEffectiveMacAddress Get-NsxSecurityGroupEffectiveMember Get-NsxSecurityGroupEffectiveVirtualMachine Get-NsxSecurityGroupEffectiveVnic " +
+        "Get-NsxSecurityGroupMemberTypes Get-NsxSecurityPolicy Get-NsxSecurityPolicyHighestUsedPrecedence Get-NsxSecurityPolicyRule Get-NsxSecurityTag Get-NsxSecurityTagAssignment " +
+        "Get-NsxSegmentIdRange Get-NsxService Get-NsxServiceDefinition Get-NsxServiceGroup Get-NsxServiceGroupMember Get-NsxServiceProfile Get-NsxSpoofguardNic Get-NsxSpoofguardPolicy " +
+        "Get-NsxSslVpn Get-NsxSslVpnAuthServer Get-NsxSslVpnClientInstallationPackage Get-NsxSslVpnIpPool Get-NsxSslVpnPrivateNetwork Get-NsxSslVpnUser Get-NsxTransportZone " +
+        "Get-NsxUserRole Get-NsxVdsContext Get-NsxtPolicyService Get-NsxtService Get-OSCustomizationNicMapping Get-OSCustomizationSpec Get-Org Get-OrgNetwork Get-OrgVdc " +
+        "Get-OrgVdcNetwork Get-OvfConfiguration Get-PSCurrentConfigurationNode Get-PSDefaultConfigurationDocument Get-PSMetaConfigDocumentInstVersionInfo Get-PSMetaConfigurationProcessed " +
+        "Get-PSReadLineKeyHandler Get-PSReadLineOption Get-PSRepository Get-PSTopConfigurationName Get-PSVersion Get-Package Get-PackageProvider Get-PackageSource Get-PassthroughDevice " +
+        "Get-PositionInfo Get-PowerCLICommunity Get-PowerCLIConfiguration Get-PowerCLIHelp Get-PowerCLIVersion Get-PowerNsxVersion Get-ProviderVdc Get-PublicKeyFromFile " +
+        "Get-PublicKeyFromStore Get-ResourcePool Get-Runspace Get-RunspaceDebug Get-ScsiController Get-ScsiLun Get-ScsiLunPath Get-SecurityInfo Get-SecurityPolicy Get-Snapshot " +
+        "Get-SpbmCapability Get-SpbmCompatibleStorage Get-SpbmEntityConfiguration Get-SpbmFaultDomain Get-SpbmPointInTimeReplica Get-SpbmReplicationGroup Get-SpbmReplicationPair " +
+        "Get-SpbmStoragePolicy Get-Stat Get-StatInterval Get-StatType Get-Tag Get-TagAssignment Get-TagCategory Get-Task Get-Template Get-TimeZone Get-Uptime Get-UsbDevice Get-VAIOFilter " +
+        "Get-VApp Get-VDBlockedPolicy Get-VDPort Get-VDPortgroup Get-VDPortgroupOverridePolicy Get-VDSecurityPolicy Get-VDSwitch Get-VDSwitchPrivateVlan Get-VDTrafficShapingPolicy " +
+        "Get-VDUplinkLacpPolicy Get-VDUplinkTeamingPolicy Get-VDisk Get-VIAccount Get-VICommand Get-VICredentialStoreItem Get-VIEvent Get-VIObjectByVIView Get-VIPermission Get-VIPrivilege " +
+        "Get-VIProperty Get-VIRole Get-VM Get-VMGuest Get-VMHost Get-VMHostAccount Get-VMHostAdvancedConfiguration Get-VMHostAuthentication Get-VMHostAvailableTimeZone " +
+        "Get-VMHostDiagnosticPartition Get-VMHostDisk Get-VMHostDiskPartition Get-VMHostFirewallDefaultPolicy Get-VMHostFirewallException Get-VMHostFirmware Get-VMHostHardware " +
+        "Get-VMHostHba Get-VMHostModule Get-VMHostNetwork Get-VMHostNetworkAdapter Get-VMHostNtpServer Get-VMHostPatch Get-VMHostPciDevice Get-VMHostProfile " +
+        "Get-VMHostProfileImageCacheConfiguration Get-VMHostProfileRequiredInput Get-VMHostProfileStorageDeviceConfiguration Get-VMHostProfileUserConfiguration " +
+        "Get-VMHostProfileVmPortGroupConfiguration Get-VMHostRoute Get-VMHostService Get-VMHostSnmp Get-VMHostStartPolicy Get-VMHostStorage Get-VMHostSysLogServer Get-VMQuestion " +
+        "Get-VMResourceConfiguration Get-VMStartPolicy Get-VTpm Get-VTpmCSR Get-VTpmCertificate Get-VasaProvider Get-VasaStorageArray Get-View Get-VirtualPortGroup Get-VirtualSwitch " +
+        "Get-VmcSddcNetworkService Get-VmcService Get-VsanClusterConfiguration Get-VsanComponent Get-VsanDisk Get-VsanDiskGroup Get-VsanEvacuationPlan Get-VsanFaultDomain " +
+        "Get-VsanIscsiInitiatorGroup Get-VsanIscsiInitiatorGroupTargetAssociation Get-VsanIscsiLun Get-VsanIscsiTarget Get-VsanObject Get-VsanResyncingComponent Get-VsanRuntimeInfo " +
+        "Get-VsanSpaceUsage Get-VsanStat Get-VsanView Get-vRAApplianceServiceStatus Get-vRAAuthorizationRole Get-vRABlueprint Get-vRABusinessGroup Get-vRACatalogItem " +
+        "Get-vRACatalogItemRequestTemplate Get-vRACatalogPrincipal Get-vRAComponentRegistryService Get-vRAComponentRegistryServiceEndpoint Get-vRAComponentRegistryServiceStatus " +
+        "Get-vRAContent Get-vRAContentData Get-vRAContentType Get-vRACustomForm Get-vRAEntitledCatalogItem Get-vRAEntitledService Get-vRAEntitlement Get-vRAExternalNetworkProfile " +
+        "Get-vRAGroupPrincipal Get-vRAIcon Get-vRANATNetworkProfile Get-vRANetworkProfileIPAddressList Get-vRANetworkProfileIPRangeSummary Get-vRAPackage Get-vRAPackageContent " +
+        "Get-vRAPropertyDefinition Get-vRAPropertyGroup Get-vRARequest Get-vRARequestDetail Get-vRAReservation Get-vRAReservationComputeResource Get-vRAReservationComputeResourceMemory " +
+        "Get-vRAReservationComputeResourceNetwork Get-vRAReservationComputeResourceResourcePool Get-vRAReservationComputeResourceStorage Get-vRAReservationPolicy " +
+        "Get-vRAReservationTemplate Get-vRAReservationType Get-vRAResource Get-vRAResourceAction Get-vRAResourceActionRequestTemplate Get-vRAResourceMetric Get-vRAResourceOperation " +
+        "Get-vRAResourceType Get-vRARoutedNetworkProfile Get-vRAService Get-vRAServiceBlueprint Get-vRASourceMachine Get-vRAStorageReservationPolicy Get-vRATenant Get-vRATenantDirectory " +
+        "Get-vRATenantDirectoryStatus Get-vRATenantRole Get-vRAUserPrincipal Get-vRAUserPrincipalGroupMembership Get-vRAVersion Get-vRNIAPIVersion Get-vRNIApplication " +
+        "Get-vRNIApplicationTier Get-vRNIDataSource Get-vRNIDataSourceSNMPConfig Get-vRNIDatastore Get-vRNIDistributedSwitch Get-vRNIDistributedSwitchPortGroup Get-vRNIEntity " +
+        "Get-vRNIEntityName Get-vRNIFirewallRule Get-vRNIFlow Get-vRNIHost Get-vRNIHostVMKNic Get-vRNIIPSet Get-vRNIL2Network Get-vRNINSXManager Get-vRNINodes Get-vRNIProblem " +
+        "Get-vRNIRecommendedRules Get-vRNIRecommendedRulesNsxBundle Get-vRNISecurityGroup Get-vRNISecurityTag Get-vRNIService Get-vRNIServiceGroup Get-vRNIVM Get-vRNIVMvNIC " +
+        "Get-vRNIvCenter Get-vRNIvCenterCluster Get-vRNIvCenterDatacenter Get-vRNIvCenterFolder Grant-NsxSpoofguardNicApproval Import-CIVApp Import-CIVAppTemplate Import-NsxObject " +
+        "Import-PackageProvider Import-PowerShellDataFile Import-SpbmStoragePolicy Import-VApp Import-VMHostProfile Import-vRAContentData Import-vRAIcon Import-vRAPackage " +
+        "Initialize-ConfigurationRuntimeState Install-Module Install-NsxCluster Install-Package Install-PackageProvider Install-Script Install-VMHostPatch Invoke-DrsRecommendation " +
+        "Invoke-NsxCli Invoke-NsxClusterResolveAll Invoke-NsxManagerSync Invoke-NsxRestMethod Invoke-NsxWebRequest Invoke-VMHostProfile Invoke-VMScript Invoke-XpathQuery " +
+        "Invoke-vRADataCollection Invoke-vRARestMethod Invoke-vRATenantDirectorySync Invoke-vRNIRestMethod Join-String Mount-Tools Move-Cluster Move-Datacenter Move-Datastore Move-Folder " +
+        "Move-HardDisk Move-Inventory Move-NsxSecurityPolicyRule Move-ResourcePool Move-Template Move-VApp Move-VDisk Move-VM Move-VMHost New-AdvancedSetting New-AlarmAction " +
+        "New-AlarmActionTrigger New-CDDrive New-CIAccessControlRule New-CIVApp New-CIVAppNetwork New-CIVAppTemplate New-CIVM New-Cluster New-CustomAttribute New-Datacenter New-Datastore " +
+        "New-DatastoreCluster New-DatastoreDrive New-DrsClusterGroup New-DrsRule New-DrsVMHostRule New-DscChecksum New-FloppyDrive New-Folder New-Guid New-HCXAppliance New-HCXMigration " +
+        "New-HCXNetworkExtension New-HCXNetworkMapping New-HCXReplication New-HCXSitePairing New-HCXStaticRoute New-HardDisk New-IScsiHbaTarget New-KmipClientCertificate " +
+        "New-NetworkAdapter New-NfsUser New-NsxAddressSpec New-NsxClusterVxlanConfig New-NsxController New-NsxDynamicCriteriaSpec New-NsxEdge New-NsxEdgeBgpNeighbour New-NsxEdgeCsr " +
+        "New-NsxEdgeFirewallRule New-NsxEdgeInterfaceSpec New-NsxEdgeNatRule New-NsxEdgeOspfArea New-NsxEdgeOspfInterface New-NsxEdgePrefix New-NsxEdgeRedistributionRule " +
+        "New-NsxEdgeSelfSignedCertificate New-NsxEdgeStaticRoute New-NsxEdgeSubInterface New-NsxEdgeSubInterfaceSpec New-NsxFirewallRule New-NsxFirewallSavedConfiguration " +
+        "New-NsxFirewallSection New-NsxIpPool New-NsxIpSet New-NsxLoadBalancerApplicationProfile New-NsxLoadBalancerApplicationRule New-NsxLoadBalancerMemberSpec " +
+        "New-NsxLoadBalancerMonitor New-NsxLoadBalancerPool New-NsxLogicalRouter New-NsxLogicalRouterBgpNeighbour New-NsxLogicalRouterBridge New-NsxLogicalRouterInterface " +
+        "New-NsxLogicalRouterInterfaceSpec New-NsxLogicalRouterOspfArea New-NsxLogicalRouterOspfInterface New-NsxLogicalRouterPrefix New-NsxLogicalRouterRedistributionRule " +
+        "New-NsxLogicalRouterStaticRoute New-NsxLogicalSwitch New-NsxMacSet New-NsxManager New-NsxSecurityGroup New-NsxSecurityPolicy New-NsxSecurityPolicyAssignment " +
+        "New-NsxSecurityPolicyFirewallRuleSpec New-NsxSecurityPolicyGuestIntrospectionSpec New-NsxSecurityPolicyNetworkIntrospectionSpec New-NsxSecurityTag New-NsxSecurityTagAssignment " +
+        "New-NsxSegmentIdRange New-NsxService New-NsxServiceGroup New-NsxSpoofguardPolicy New-NsxSslVpnAuthServer New-NsxSslVpnClientInstallationPackage New-NsxSslVpnIpPool " +
+        "New-NsxSslVpnPrivateNetwork New-NsxSslVpnUser New-NsxTransportZone New-NsxVdsContext New-OSCustomizationNicMapping New-OSCustomizationSpec New-Org New-OrgNetwork New-OrgVdc " +
+        "New-OrgVdcNetwork New-ResourcePool New-ScriptFileInfo New-ScsiController New-Snapshot New-SpbmRule New-SpbmRuleSet New-SpbmStoragePolicy New-StatInterval New-Tag " +
+        "New-TagAssignment New-TagCategory New-Template New-TemporaryFile New-VAIOFilter New-VApp New-VDPortgroup New-VDSwitch New-VDSwitchPrivateVlan New-VDisk " +
+        "New-VICredentialStoreItem New-VIInventoryDrive New-VIPermission New-VIProperty New-VIRole New-VISamlSecurityContext New-VM New-VMHostAccount New-VMHostNetworkAdapter " +
+        "New-VMHostProfile New-VMHostProfileVmPortGroupConfiguration New-VMHostRoute New-VTpm New-VasaProvider New-VcsOAuthSecurityContext New-VirtualPortGroup New-VirtualSwitch " +
+        "New-VsanDisk New-VsanDiskGroup New-VsanFaultDomain New-VsanIscsiInitiatorGroup New-VsanIscsiInitiatorGroupTargetAssociation New-VsanIscsiLun New-VsanIscsiTarget " +
+        "New-vRABusinessGroup New-vRAEntitlement New-vRAExternalNetworkProfile New-vRAGroupPrincipal New-vRANATNetworkProfile New-vRANetworkProfileIPRangeDefinition New-vRAPackage " +
+        "New-vRAPropertyDefinition New-vRAPropertyGroup New-vRAReservation New-vRAReservationNetworkDefinition New-vRAReservationPolicy New-vRAReservationStorageDefinition " +
+        "New-vRARoutedNetworkProfile New-vRAService New-vRAStorageReservationPolicy New-vRATenant New-vRATenantDirectory New-vRAUserPrincipal New-vRNIApplication New-vRNIApplicationTier " +
+        "New-vRNIDataSource Open-VMConsoleWindow Publish-Module Publish-NsxSpoofguardPolicy Publish-Script Register-PSRepository Register-PackageSource Remove-AdvancedSetting " +
+        "Remove-AlarmAction Remove-AlarmActionTrigger Remove-Alias Remove-CDDrive Remove-CIAccessControlRule Remove-CIVApp Remove-CIVAppNetwork Remove-CIVAppTemplate Remove-Cluster " +
+        "Remove-CustomAttribute Remove-Datacenter Remove-Datastore Remove-DatastoreCluster Remove-DrsClusterGroup Remove-DrsRule Remove-DrsVMHostRule Remove-FloppyDrive Remove-Folder " +
+        "Remove-HCXAppliance Remove-HCXNetworkExtension Remove-HCXReplication Remove-HCXSitePairing Remove-HardDisk Remove-IScsiHbaTarget Remove-Inventory Remove-KeyManagementServer " +
+        "Remove-NetworkAdapter Remove-NfsUser Remove-NsxCluster Remove-NsxClusterVxlanConfig Remove-NsxController Remove-NsxDynamicCriteria Remove-NsxDynamicMemberSet Remove-NsxEdge " +
+        "Remove-NsxEdgeBgpNeighbour Remove-NsxEdgeCertificate Remove-NsxEdgeCsr Remove-NsxEdgeFirewallRule Remove-NsxEdgeInterfaceAddress Remove-NsxEdgeNatRule Remove-NsxEdgeOspfArea " +
+        "Remove-NsxEdgeOspfInterface Remove-NsxEdgePrefix Remove-NsxEdgeRedistributionRule Remove-NsxEdgeStaticRoute Remove-NsxEdgeSubInterface Remove-NsxFirewallExclusionListMember " +
+        "Remove-NsxFirewallRule Remove-NsxFirewallRuleMember Remove-NsxFirewallSavedConfiguration Remove-NsxFirewallSection Remove-NsxIpPool Remove-NsxIpSet Remove-NsxIpSetMember " +
+        "Remove-NsxLoadBalancerApplicationProfile Remove-NsxLoadBalancerMonitor Remove-NsxLoadBalancerPool Remove-NsxLoadBalancerPoolMember Remove-NsxLoadBalancerVip " +
+        "Remove-NsxLogicalRouter Remove-NsxLogicalRouterBgpNeighbour Remove-NsxLogicalRouterBridge Remove-NsxLogicalRouterInterface Remove-NsxLogicalRouterOspfArea " +
+        "Remove-NsxLogicalRouterOspfInterface Remove-NsxLogicalRouterPrefix Remove-NsxLogicalRouterRedistributionRule Remove-NsxLogicalRouterStaticRoute Remove-NsxLogicalSwitch " +
+        "Remove-NsxMacSet Remove-NsxSecondaryManager Remove-NsxSecurityGroup Remove-NsxSecurityGroupMember Remove-NsxSecurityPolicy Remove-NsxSecurityPolicyAssignment " +
+        "Remove-NsxSecurityPolicyRule Remove-NsxSecurityPolicyRuleGroup Remove-NsxSecurityPolicyRuleService Remove-NsxSecurityTag Remove-NsxSecurityTagAssignment " +
+        "Remove-NsxSegmentIdRange Remove-NsxService Remove-NsxServiceGroup Remove-NsxSpoofguardPolicy Remove-NsxSslVpnClientInstallationPackage Remove-NsxSslVpnIpPool " +
+        "Remove-NsxSslVpnPrivateNetwork Remove-NsxSslVpnUser Remove-NsxTransportZone Remove-NsxTransportZoneMember Remove-NsxVdsContext Remove-OSCustomizationNicMapping " +
+        "Remove-OSCustomizationSpec Remove-Org Remove-OrgNetwork Remove-OrgVdc Remove-OrgVdcNetwork Remove-PSReadLineKeyHandler Remove-PassthroughDevice Remove-ResourcePool " +
+        "Remove-Snapshot Remove-SpbmStoragePolicy Remove-StatInterval Remove-Tag Remove-TagAssignment Remove-TagCategory Remove-Template Remove-UsbDevice Remove-VAIOFilter Remove-VApp " +
+        "Remove-VDPortGroup Remove-VDSwitch Remove-VDSwitchPhysicalNetworkAdapter Remove-VDSwitchPrivateVlan Remove-VDSwitchVMHost Remove-VDisk Remove-VICredentialStoreItem " +
+        "Remove-VIPermission Remove-VIProperty Remove-VIRole Remove-VM Remove-VMHost Remove-VMHostAccount Remove-VMHostNetworkAdapter Remove-VMHostNtpServer Remove-VMHostProfile " +
+        "Remove-VMHostProfileVmPortGroupConfiguration Remove-VMHostRoute Remove-VTpm Remove-VasaProvider Remove-VirtualPortGroup Remove-VirtualSwitch " +
+        "Remove-VirtualSwitchPhysicalNetworkAdapter Remove-VsanDisk Remove-VsanDiskGroup Remove-VsanFaultDomain Remove-VsanIscsiInitiatorGroup " +
+        "Remove-VsanIscsiInitiatorGroupTargetAssociation Remove-VsanIscsiLun Remove-VsanIscsiTarget Remove-vRABusinessGroup Remove-vRACustomForm Remove-vRAExternalNetworkProfile " +
+        "Remove-vRAGroupPrincipal Remove-vRAIcon Remove-vRANATNetworkProfile Remove-vRAPackage Remove-vRAPrincipalFromTenantRole Remove-vRAPropertyDefinition Remove-vRAPropertyGroup " +
+        "Remove-vRAReservation Remove-vRAReservationNetwork Remove-vRAReservationPolicy Remove-vRAReservationStorage Remove-vRARoutedNetworkProfile Remove-vRAService " +
+        "Remove-vRAStorageReservationPolicy Remove-vRATenant Remove-vRATenantDirectory Remove-vRAUserPrincipal Remove-vRNIApplication Remove-vRNIApplicationTier Remove-vRNIDataSource " +
+        "Repair-NsxEdge Repair-VsanObject Request-vRACatalogItem Request-vRAResourceAction Restart-CIVApp Restart-CIVAppGuest Restart-CIVM Restart-CIVMGuest Restart-VM Restart-VMGuest " +
+        "Restart-VMHost Restart-VMHostService Resume-HCXReplication Revoke-NsxSpoofguardNicApproval Save-Module Save-Package Save-Script Search-Cloud Set-AdvancedSetting " +
+        "Set-AlarmDefinition Set-Annotation Set-CDDrive Set-CIAccessControlRule Set-CINetworkAdapter Set-CIVApp Set-CIVAppNetwork Set-CIVAppStartRule Set-CIVAppTemplate Set-Cluster " +
+        "Set-CustomAttribute Set-Datacenter Set-Datastore Set-DatastoreCluster Set-DrsClusterGroup Set-DrsRule Set-DrsVMHostRule Set-FloppyDrive Set-Folder Set-HCXAppliance " +
+        "Set-HCXMigration Set-HCXReplication Set-HardDisk Set-IScsiHbaTarget Set-KeyManagementServer Set-KmsCluster Set-MarkdownOption Set-NetworkAdapter Set-NfsUser Set-NicTeamingPolicy " +
+        "Set-NodeExclusiveResources Set-NodeManager Set-NodeResourceSource Set-NodeResources Set-NsxEdge Set-NsxEdgeBgp Set-NsxEdgeFirewall Set-NsxEdgeInterface Set-NsxEdgeNat " +
+        "Set-NsxEdgeOspf Set-NsxEdgeRouting Set-NsxFirewallGlobalConfiguration Set-NsxFirewallRule Set-NsxFirewallSavedConfiguration Set-NsxFirewallThreshold Set-NsxLoadBalancer " +
+        "Set-NsxLoadBalancerPoolMember Set-NsxLogicalRouter Set-NsxLogicalRouterBgp Set-NsxLogicalRouterBridging Set-NsxLogicalRouterInterface Set-NsxLogicalRouterOspf " +
+        "Set-NsxLogicalRouterRouting Set-NsxManager Set-NsxManagerRole Set-NsxManagerTimeSettings Set-NsxSecurityPolicy Set-NsxSecurityPolicyFirewallRule Set-NsxSslVpn " +
+        "Set-OSCustomizationNicMapping Set-OSCustomizationSpec Set-Org Set-OrgNetwork Set-OrgVdc Set-OrgVdcNetwork Set-PSCurrentConfigurationNode Set-PSDefaultConfigurationDocument " +
+        "Set-PSMetaConfigDocInsProcessedBeforeMeta Set-PSMetaConfigVersionInfoV2 Set-PSReadLineKeyHandler Set-PSReadLineOption Set-PSRepository Set-PSTopConfigurationName " +
+        "Set-PackageSource Set-PowerCLIConfiguration Set-ResourcePool Set-ScsiController Set-ScsiLun Set-ScsiLunPath Set-SecurityPolicy Set-Snapshot Set-SpbmEntityConfiguration " +
+        "Set-SpbmStoragePolicy Set-StatInterval Set-Tag Set-TagCategory Set-Template Set-VAIOFilter Set-VApp Set-VDBlockedPolicy Set-VDPort Set-VDPortgroup Set-VDPortgroupOverridePolicy " +
+        "Set-VDSecurityPolicy Set-VDSwitch Set-VDTrafficShapingPolicy Set-VDUplinkLacpPolicy Set-VDUplinkTeamingPolicy Set-VDVlanConfiguration Set-VDisk Set-VIPermission Set-VIRole Set-VM " +
+        "Set-VMHost Set-VMHostAccount Set-VMHostAdvancedConfiguration Set-VMHostAuthentication Set-VMHostDiagnosticPartition Set-VMHostFirewallDefaultPolicy Set-VMHostFirewallException " +
+        "Set-VMHostFirmware Set-VMHostHba Set-VMHostModule Set-VMHostNetwork Set-VMHostNetworkAdapter Set-VMHostProfile Set-VMHostProfileImageCacheConfiguration " +
+        "Set-VMHostProfileStorageDeviceConfiguration Set-VMHostProfileUserConfiguration Set-VMHostProfileVmPortGroupConfiguration Set-VMHostRoute Set-VMHostService Set-VMHostSnmp " +
+        "Set-VMHostStartPolicy Set-VMHostStorage Set-VMHostSysLogServer Set-VMQuestion Set-VMResourceConfiguration Set-VMStartPolicy Set-VTpm Set-VirtualPortGroup Set-VirtualSwitch " +
+        "Set-VsanClusterConfiguration Set-VsanFaultDomain Set-VsanIscsiInitiatorGroup Set-VsanIscsiLun Set-VsanIscsiTarget Set-vRABusinessGroup Set-vRACatalogItem Set-vRACustomForm " +
+        "Set-vRAEntitlement Set-vRAExternalNetworkProfile Set-vRANATNetworkProfile Set-vRAReservation Set-vRAReservationNetwork Set-vRAReservationPolicy Set-vRAReservationStorage " +
+        "Set-vRARoutedNetworkProfile Set-vRAService Set-vRAStorageReservationPolicy Set-vRATenant Set-vRATenantDirectory Set-vRAUserPrincipal Set-vRNIDataSourceSNMPConfig Show-Markdown " +
+        "Start-CIVApp Start-CIVM Start-HCXMigration Start-HCXReplication Start-SpbmReplicationFailover Start-SpbmReplicationPrepareFailover Start-SpbmReplicationPromote " +
+        "Start-SpbmReplicationReverse Start-SpbmReplicationTestFailover Start-ThreadJob Start-VApp Start-VM Start-VMHost Start-VMHostService Start-VsanClusterDiskUpdate " +
+        "Start-VsanClusterRebalance Start-VsanEncryptionConfiguration Stop-CIVApp Stop-CIVAppGuest Stop-CIVM Stop-CIVMGuest Stop-SpbmReplicationTestFailover Stop-Task Stop-VApp Stop-VM " +
+        "Stop-VMGuest Stop-VMHost Stop-VMHostService Stop-VsanClusterRebalance Suspend-CIVApp Suspend-CIVM Suspend-HCXReplication Suspend-VM Suspend-VMGuest Suspend-VMHost " +
+        "Sync-SpbmReplicationGroup Test-ConflictingResources Test-HCXMigration Test-HCXReplication Test-Json Test-ModuleReloadRequired Test-MofInstanceText Test-NodeManager " +
+        "Test-NodeResourceSource Test-NodeResources Test-ScriptFileInfo Test-VMHostProfileCompliance Test-VMHostSnmp Test-VsanClusterHealth Test-VsanNetworkPerformance " +
+        "Test-VsanStoragePerformance Test-VsanVMCreation Test-vRAPackage Uninstall-Module Uninstall-Package Uninstall-Script Unlock-VM Unregister-PSRepository Unregister-PackageSource " +
+        "Update-ConfigurationDocumentRef Update-ConfigurationErrorCount Update-DependsOn Update-LocalConfigManager Update-Module Update-ModuleManifest Update-ModuleVersion Update-PowerNsx " +
+        "Update-Script Update-ScriptFileInfo Update-Tools Update-VsanHclDatabase ValidateUpdate-ConfigurationData Wait-Debugger Wait-NsxControllerJob Wait-NsxGenericJob Wait-NsxJob " +
+        "Wait-Task Wait-Tools Write-Information Write-Log Write-MetaConfigFile Write-NodeMOFFile",
+      nomarkup:
+        "-ne -eq -lt -gt -ge -le -not -like -notlike -match -notmatch -contains -notcontains -in -notin -replace",
     },
     contains: [
       BACKTICK_ESCAPE,
@@ -23542,13 +28489,13 @@ module.exports = function(hljs) {
       APOS_STRING,
       LITERAL,
       VAR,
-      PS_COMMENT
-    ]
+      PS_COMMENT,
+    ],
   };
 };
 
 /***/ }),
-/* 219 */
+/* 224 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23600,7 +28547,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 220 */
+/* 225 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23634,7 +28581,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 221 */
+/* 226 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23726,13 +28673,87 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 222 */
+/* 227 */
+/***/ (function(module, exports) {
+
+module.exports = function(hljs) {
+
+  // whitespaces: space, tab, formfeed
+  var WS0 = '[ \\t\\f]*';
+  var WS1 = '[ \\t\\f]+';
+  // delimiter
+  var DELIM = '(' + WS0+'[:=]'+WS0+ '|' + WS1 + ')';
+  var KEY_ALPHANUM = '([^\\\\\\W:= \\t\\f\\n]|\\\\.)+';
+  var KEY_OTHER = '([^\\\\:= \\t\\f\\n]|\\\\.)+';
+
+  var DELIM_AND_VALUE = {
+          // skip DELIM
+          end: DELIM,
+          relevance: 0,
+          starts: {
+            // value: everything until end of line (again, taking into account backslashes)
+            className: 'string',
+            end: /$/,
+            relevance: 0,
+            contains: [
+              { begin: '\\\\\\n' }
+            ]
+          }
+        };
+
+  return {
+    case_insensitive: true,
+    illegal: /\S/,
+    contains: [
+      hljs.COMMENT('^\\s*[!#]', '$'),
+      // key: everything until whitespace or = or : (taking into account backslashes)
+      // case of a "normal" key
+      {
+        begin: KEY_ALPHANUM + DELIM,
+        returnBegin: true,
+        contains: [
+          {
+            className: 'attr',
+            begin: KEY_ALPHANUM,
+            endsParent: true,
+            relevance: 0
+          }
+        ],
+        starts: DELIM_AND_VALUE
+      },
+      // case of key containing non-alphanumeric chars => relevance = 0
+      {
+        begin: KEY_OTHER + DELIM,
+        returnBegin: true,
+        relevance: 0,
+        contains: [
+          {
+            className: 'meta',
+            begin: KEY_OTHER,
+            endsParent: true,
+            relevance: 0
+          }
+        ],
+        starts: DELIM_AND_VALUE
+      },
+      // case of an empty key
+      {
+        className: 'attr',
+        relevance: 0,
+        begin: KEY_OTHER + WS0 + '$'
+      }
+    ]
+  };
+};
+
+/***/ }),
+/* 228 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
   return {
     keywords: {
-      keyword: 'package import option optional required repeated group',
+      keyword: 'package import option optional required repeated group oneof',
       built_in: 'double float int32 int64 uint32 uint64 sint32 sint64 ' +
         'fixed32 fixed64 sfixed32 sfixed64 bool string bytes',
       literal: 'true false'
@@ -23766,7 +28787,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 223 */
+/* 229 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23885,7 +28906,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 224 */
+/* 230 */
 /***/ (function(module, exports) {
 
 module.exports = // Base deafult colors in PB IDE: background: #FFFFDF; foreground: #000000;
@@ -23947,7 +28968,7 @@ function(hljs) {
 };
 
 /***/ }),
-/* 225 */
+/* 231 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -23955,9 +28976,10 @@ module.exports = function(hljs) {
     keyword:
       'and elif is global as in if from raise for except finally print import pass return ' +
       'exec else break not with class assert yield try while continue del or def lambda ' +
-      'async await nonlocal|10 None True False',
+      'async await nonlocal|10',
     built_in:
-      'Ellipsis NotImplemented'
+      'Ellipsis NotImplemented',
+    literal: 'False None True'
   };
   var PROMPT = {
     className: 'meta',  begin: /^(>>>|\.\.\.) /
@@ -23974,21 +28996,21 @@ module.exports = function(hljs) {
     variants: [
       {
         begin: /(u|b)?r?'''/, end: /'''/,
-        contains: [PROMPT],
+        contains: [hljs.BACKSLASH_ESCAPE, PROMPT],
         relevance: 10
       },
       {
         begin: /(u|b)?r?"""/, end: /"""/,
-        contains: [PROMPT],
+        contains: [hljs.BACKSLASH_ESCAPE, PROMPT],
         relevance: 10
       },
       {
         begin: /(fr|rf|f)'''/, end: /'''/,
-        contains: [PROMPT, SUBST]
+        contains: [hljs.BACKSLASH_ESCAPE, PROMPT, SUBST]
       },
       {
         begin: /(fr|rf|f)"""/, end: /"""/,
-        contains: [PROMPT, SUBST]
+        contains: [hljs.BACKSLASH_ESCAPE, PROMPT, SUBST]
       },
       {
         begin: /(u|r|ur)'/, end: /'/,
@@ -24006,11 +29028,11 @@ module.exports = function(hljs) {
       },
       {
         begin: /(fr|rf|f)'/, end: /'/,
-        contains: [SUBST]
+        contains: [hljs.BACKSLASH_ESCAPE, SUBST]
       },
       {
         begin: /(fr|rf|f)"/, end: /"/,
-        contains: [SUBST]
+        contains: [hljs.BACKSLASH_ESCAPE, SUBST]
       },
       hljs.APOS_STRING_MODE,
       hljs.QUOTE_STRING_MODE
@@ -24031,7 +29053,7 @@ module.exports = function(hljs) {
   };
   SUBST.contains = [STRING, NUMBER, PROMPT];
   return {
-    aliases: ['py', 'gyp'],
+    aliases: ['py', 'gyp', 'ipython'],
     keywords: KEYWORDS,
     illegal: /(<\/|->|\?)|=>/,
     contains: [
@@ -24067,7 +29089,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 226 */
+/* 232 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24094,7 +29116,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 227 */
+/* 233 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24267,7 +29289,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 228 */
+/* 234 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24341,7 +29363,311 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 229 */
+/* 235 */
+/***/ (function(module, exports) {
+
+module.exports = function(hljs) {
+  function orReValues(ops){
+    return ops
+    .map(function(op) {
+      return op
+        .split('')
+        .map(function(char) {
+          return '\\' + char;
+        })
+        .join('');
+    })
+    .join('|');
+  }
+
+  var RE_IDENT = '~?[a-z$_][0-9a-zA-Z$_]*';
+  var RE_MODULE_IDENT = '`?[A-Z$_][0-9a-zA-Z$_]*';
+
+  var RE_PARAM_TYPEPARAM = '\'?[a-z$_][0-9a-z$_]*';
+  var RE_PARAM_TYPE = '\s*:\s*[a-z$_][0-9a-z$_]*(\(\s*(' + RE_PARAM_TYPEPARAM + '\s*(,' + RE_PARAM_TYPEPARAM + ')*)?\s*\))?';
+  var RE_PARAM = RE_IDENT + '(' + RE_PARAM_TYPE + ')?(' + RE_PARAM_TYPE + ')?';
+  var RE_OPERATOR = "(" + orReValues(['||', '&&', '++', '**', '+.', '*', '/', '*.', '/.', '...', '|>']) + "|==|===)";
+  var RE_OPERATOR_SPACED = "\\s+" + RE_OPERATOR + "\\s+";
+
+  var KEYWORDS = {
+    keyword:
+      'and as asr assert begin class constraint do done downto else end exception external' +
+      'for fun function functor if in include inherit initializer' +
+      'land lazy let lor lsl lsr lxor match method mod module mutable new nonrec' +
+      'object of open or private rec sig struct then to try type val virtual when while with',
+    built_in:
+      'array bool bytes char exn|5 float int int32 int64 list lazy_t|5 nativeint|5 ref string unit ',
+    literal:
+      'true false'
+  };
+
+  var RE_NUMBER = '\\b(0[xX][a-fA-F0-9_]+[Lln]?|' +
+    '0[oO][0-7_]+[Lln]?|' +
+    '0[bB][01_]+[Lln]?|' +
+    '[0-9][0-9_]*([Lln]|(\\.[0-9_]*)?([eE][-+]?[0-9_]+)?)?)';
+
+  var NUMBER_MODE = {
+    className: 'number',
+    relevance: 0,
+    variants: [
+      {
+        begin: RE_NUMBER
+      },
+      {
+        begin: '\\(\\-' + RE_NUMBER + '\\)'
+      }
+    ]
+  };
+
+  var OPERATOR_MODE = {
+    className: 'operator',
+    relevance: 0,
+    begin: RE_OPERATOR
+  };
+  var LIST_CONTENTS_MODES = [
+    {
+      className: 'identifier',
+      relevance: 0,
+      begin: RE_IDENT
+    },
+    OPERATOR_MODE,
+    NUMBER_MODE
+  ];
+
+  var MODULE_ACCESS_CONTENTS = [
+    hljs.QUOTE_STRING_MODE,
+    OPERATOR_MODE,
+    {
+      className: 'module',
+      begin: "\\b" + RE_MODULE_IDENT, returnBegin: true,
+      end: "\.",
+      contains: [
+        {
+          className: 'identifier',
+          begin: RE_MODULE_IDENT,
+          relevance: 0
+        }
+      ]
+    }
+  ];
+
+  var PARAMS_CONTENTS = [
+    {
+      className: 'module',
+      begin: "\\b" + RE_MODULE_IDENT, returnBegin: true,
+      end: "\.",
+      relevance: 0,
+      contains: [
+        {
+          className: 'identifier',
+          begin: RE_MODULE_IDENT,
+          relevance: 0
+        }
+      ]
+    }
+  ];
+
+  var PARAMS_MODE = {
+    begin: RE_IDENT,
+    end: '(,|\\n|\\))',
+    relevance: 0,
+    contains: [
+      OPERATOR_MODE,
+      {
+        className: 'typing',
+        begin: ':',
+        end: '(,|\\n)',
+        returnBegin: true,
+        relevance: 0,
+        contains: PARAMS_CONTENTS
+      }
+    ]
+  };
+
+  var FUNCTION_BLOCK_MODE = {
+    className: 'function',
+    relevance: 0,
+    keywords: KEYWORDS,
+    variants: [
+      {
+        begin: '\\s(\\(\\.?.*?\\)|' + RE_IDENT + ')\\s*=>',
+        end: '\\s*=>',
+        returnBegin: true,
+        relevance: 0,
+        contains: [
+          {
+            className: 'params',
+            variants: [
+              {
+                begin: RE_IDENT
+              },
+              {
+                begin: RE_PARAM
+              },
+              {
+                begin: /\(\s*\)/,
+              }
+            ]
+          }
+        ]
+      },
+      {
+        begin: '\\s\\(\\.?[^;\\|]*\\)\\s*=>',
+        end: '\\s=>',
+        returnBegin: true,
+        relevance: 0,
+        contains: [
+          {
+            className: 'params',
+            relevance: 0,
+            variants: [
+              PARAMS_MODE
+            ]
+          }
+        ]
+      },
+      {
+        begin: '\\(\\.\\s' + RE_IDENT + '\\)\\s*=>'
+      }
+    ]
+  };
+  MODULE_ACCESS_CONTENTS.push(FUNCTION_BLOCK_MODE);
+
+  var CONSTRUCTOR_MODE = {
+    className: 'constructor',
+    begin: RE_MODULE_IDENT + '\\(',
+    end: '\\)',
+    illegal: '\\n',
+    keywords: KEYWORDS,
+    contains: [
+      hljs.QUOTE_STRING_MODE,
+      OPERATOR_MODE,
+      {
+        className: 'params',
+        begin: '\\b' + RE_IDENT
+      }
+    ]
+  };
+
+  var PATTERN_MATCH_BLOCK_MODE = {
+    className: 'pattern-match',
+    begin: '\\|',
+    returnBegin: true,
+    keywords: KEYWORDS,
+    end: '=>',
+    relevance: 0,
+    contains: [
+      CONSTRUCTOR_MODE,
+      OPERATOR_MODE,
+      {
+        relevance: 0,
+        className: 'constructor',
+        begin: RE_MODULE_IDENT
+      }
+    ]
+  };
+
+  var MODULE_ACCESS_MODE = {
+    className: 'module-access',
+    keywords: KEYWORDS,
+    returnBegin: true,
+    variants: [
+      {
+        begin: "\\b(" + RE_MODULE_IDENT + "\\.)+" + RE_IDENT
+      },
+      {
+        begin: "\\b(" + RE_MODULE_IDENT + "\\.)+\\(",
+        end: "\\)",
+        returnBegin: true,
+        contains: [
+          FUNCTION_BLOCK_MODE,
+          {
+            begin: '\\(',
+            end: '\\)',
+            skip: true
+          }
+        ].concat(MODULE_ACCESS_CONTENTS)
+      },
+      {
+        begin: "\\b(" + RE_MODULE_IDENT + "\\.)+{",
+        end: "}"
+      }
+    ],
+    contains: MODULE_ACCESS_CONTENTS
+  };
+
+  PARAMS_CONTENTS.push(MODULE_ACCESS_MODE);
+
+  return {
+    aliases: ['re'],
+    keywords: KEYWORDS,
+    illegal: '(:\\-|:=|\\${|\\+=)',
+    contains: [
+      hljs.COMMENT('/\\*', '\\*/', { illegal: '^(\\#,\\/\\/)' }),
+      {
+        className: 'character',
+        begin: '\'(\\\\[^\']+|[^\'])\'',
+        illegal: '\\n',
+        relevance: 0
+      },
+      hljs.QUOTE_STRING_MODE,
+      {
+        className: 'literal',
+        begin: '\\(\\)',
+        relevance: 0
+      },
+      {
+        className: 'literal',
+        begin: '\\[\\|',
+        end: '\\|\\]',
+        relevance:  0,
+        contains: LIST_CONTENTS_MODES
+      },
+      {
+        className: 'literal',
+        begin: '\\[',
+        end: '\\]',
+        relevance: 0,
+        contains: LIST_CONTENTS_MODES
+      },
+      CONSTRUCTOR_MODE,
+      {
+        className: 'operator',
+        begin: RE_OPERATOR_SPACED,
+        illegal: '\\-\\->',
+        relevance: 0
+      },
+      NUMBER_MODE,
+      hljs.C_LINE_COMMENT_MODE,
+      PATTERN_MATCH_BLOCK_MODE,
+      FUNCTION_BLOCK_MODE,
+      {
+        className: 'module-def',
+        begin: "\\bmodule\\s+" + RE_IDENT + "\\s+" + RE_MODULE_IDENT + "\\s+=\\s+{",
+        end: "}",
+        returnBegin: true,
+        keywords: KEYWORDS,
+        relevance: 0,
+        contains: [
+          {
+            className: 'module',
+            relevance: 0,
+            begin: RE_MODULE_IDENT
+          },
+          {
+            begin: '{',
+            end: '}',
+            skip: true
+          }
+        ].concat(MODULE_ACCESS_CONTENTS)
+      },
+      MODULE_ACCESS_MODE
+    ]
+  };
+};
+
+/***/ }),
+/* 236 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24372,7 +29698,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 230 */
+/* 237 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24443,7 +29769,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 231 */
+/* 238 */
 /***/ (function(module, exports) {
 
 module.exports = // Colors from RouterOS terminal:
@@ -24606,7 +29932,7 @@ function(hljs) {
 };
 
 /***/ }),
-/* 232 */
+/* 239 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24646,7 +29972,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 233 */
+/* 240 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24711,7 +30037,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 234 */
+/* 241 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24823,7 +30149,137 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 235 */
+/* 242 */
+/***/ (function(module, exports) {
+
+module.exports = function(hljs) {
+
+    // Data step and PROC SQL statements
+    var SAS_KEYWORDS = ''+
+        'do if then else end until while '+
+        ''+
+        'abort array attrib by call cards cards4 catname continue '+
+        'datalines datalines4 delete delim delimiter display dm drop '+
+        'endsas error file filename footnote format goto in infile '+
+        'informat input keep label leave length libname link list '+
+        'lostcard merge missing modify options output out page put '+
+        'redirect remove rename replace retain return select set skip '+
+        'startsas stop title update waitsas where window x systask '+
+        ''+
+        'add and alter as cascade check create delete describe '+
+        'distinct drop foreign from group having index insert into in '+
+        'key like message modify msgtype not null on or order primary '+
+        'references reset restrict select set table unique update '+
+        'validate view where';
+
+    // Built-in SAS functions
+    var SAS_FUN = ''+
+        'abs|addr|airy|arcos|arsin|atan|attrc|attrn|band|'+
+        'betainv|blshift|bnot|bor|brshift|bxor|byte|cdf|ceil|'+
+        'cexist|cinv|close|cnonct|collate|compbl|compound|'+
+        'compress|cos|cosh|css|curobs|cv|daccdb|daccdbsl|'+
+        'daccsl|daccsyd|dacctab|dairy|date|datejul|datepart|'+
+        'datetime|day|dclose|depdb|depdbsl|depdbsl|depsl|'+
+        'depsl|depsyd|depsyd|deptab|deptab|dequote|dhms|dif|'+
+        'digamma|dim|dinfo|dnum|dopen|doptname|doptnum|dread|'+
+        'dropnote|dsname|erf|erfc|exist|exp|fappend|fclose|'+
+        'fcol|fdelete|fetch|fetchobs|fexist|fget|fileexist|'+
+        'filename|fileref|finfo|finv|fipname|fipnamel|'+
+        'fipstate|floor|fnonct|fnote|fopen|foptname|foptnum|'+
+        'fpoint|fpos|fput|fread|frewind|frlen|fsep|fuzz|'+
+        'fwrite|gaminv|gamma|getoption|getvarc|getvarn|hbound|'+
+        'hms|hosthelp|hour|ibessel|index|indexc|indexw|input|'+
+        'inputc|inputn|int|intck|intnx|intrr|irr|jbessel|'+
+        'juldate|kurtosis|lag|lbound|left|length|lgamma|'+
+        'libname|libref|log|log10|log2|logpdf|logpmf|logsdf|'+
+        'lowcase|max|mdy|mean|min|minute|mod|month|mopen|'+
+        'mort|n|netpv|nmiss|normal|note|npv|open|ordinal|'+
+        'pathname|pdf|peek|peekc|pmf|point|poisson|poke|'+
+        'probbeta|probbnml|probchi|probf|probgam|probhypr|'+
+        'probit|probnegb|probnorm|probt|put|putc|putn|qtr|'+
+        'quote|ranbin|rancau|ranexp|rangam|range|rank|rannor|'+
+        'ranpoi|rantbl|rantri|ranuni|repeat|resolve|reverse|'+
+        'rewind|right|round|saving|scan|sdf|second|sign|'+
+        'sin|sinh|skewness|soundex|spedis|sqrt|std|stderr|'+
+        'stfips|stname|stnamel|substr|sum|symget|sysget|'+
+        'sysmsg|sysprod|sysrc|system|tan|tanh|time|timepart|'+
+        'tinv|tnonct|today|translate|tranwrd|trigamma|'+
+        'trim|trimn|trunc|uniform|upcase|uss|var|varfmt|'+
+        'varinfmt|varlabel|varlen|varname|varnum|varray|'+
+        'varrayx|vartype|verify|vformat|vformatd|vformatdx|'+
+        'vformatn|vformatnx|vformatw|vformatwx|vformatx|'+
+        'vinarray|vinarrayx|vinformat|vinformatd|vinformatdx|'+
+        'vinformatn|vinformatnx|vinformatw|vinformatwx|'+
+        'vinformatx|vlabel|vlabelx|vlength|vlengthx|vname|'+
+        'vnamex|vtype|vtypex|weekday|year|yyq|zipfips|zipname|'+
+        'zipnamel|zipstate';
+
+    // Built-in macro functions
+    var SAS_MACRO_FUN = 'bquote|nrbquote|cmpres|qcmpres|compstor|'+
+        'datatyp|display|do|else|end|eval|global|goto|'+
+        'if|index|input|keydef|label|left|length|let|'+
+        'local|lowcase|macro|mend|nrbquote|nrquote|'+
+        'nrstr|put|qcmpres|qleft|qlowcase|qscan|'+
+        'qsubstr|qsysfunc|qtrim|quote|qupcase|scan|str|'+
+        'substr|superq|syscall|sysevalf|sysexec|sysfunc|'+
+        'sysget|syslput|sysprod|sysrc|sysrput|then|to|'+
+        'trim|unquote|until|upcase|verify|while|window';
+
+    return {
+        aliases: ['sas', 'SAS'],
+        case_insensitive: true, // SAS is case-insensitive
+        keywords: {
+            literal:
+                'null missing _all_ _automatic_ _character_ _infile_ '+
+                '_n_ _name_ _null_ _numeric_ _user_ _webout_',
+            meta:
+                SAS_KEYWORDS
+        },
+        contains: [
+            {
+                // Distinct highlight for proc <proc>, data, run, quit
+                className: 'keyword',
+                begin: /^\s*(proc [\w\d_]+|data|run|quit)[\s\;]/
+            },
+            {
+                // Macro variables
+                className: 'variable',
+                begin: /\&[a-zA-Z_\&][a-zA-Z0-9_]*\.?/
+            },
+            {
+                // Special emphasis for datalines|cards
+                className: 'emphasis',
+                begin: /^\s*datalines|cards.*;/,
+                end: /^\s*;\s*$/
+            },
+            {   // Built-in macro variables take precedence
+                className: 'built_in',
+                begin: '%(' + SAS_MACRO_FUN + ')'
+            },
+            {
+                // User-defined macro functions highlighted after
+                className: 'name',
+                begin: /%[a-zA-Z_][a-zA-Z_0-9]*/
+            },
+            {
+                className: 'meta',
+                begin: '[^%](' + SAS_FUN + ')[\(]'
+            },
+            {
+                className: 'string',
+                variants: [
+                    hljs.APOS_STRING_MODE,
+                    hljs.QUOTE_STRING_MODE
+                ]
+            },
+            hljs.COMMENT('\\*', ';'),
+            hljs.C_BLOCK_COMMENT_MODE
+        ]
+    };
+};
+
+/***/ }),
+/* 243 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -24942,7 +30398,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 236 */
+/* 244 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25090,7 +30546,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 237 */
+/* 245 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25148,7 +30604,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 238 */
+/* 246 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25250,7 +30706,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 239 */
+/* 247 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25263,13 +30719,13 @@ module.exports = function(hljs) {
         starts: {
           end: '$', subLanguage: 'bash'
         }
-      },
+      }
     ]
   }
 };
 
 /***/ }),
-/* 240 */
+/* 248 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25329,7 +30785,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 241 */
+/* 249 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25383,7 +30839,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 242 */
+/* 250 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25453,7 +30909,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 243 */
+/* 251 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -25496,60 +30952,63 @@ module.exports = function(hljs) {
     keywords: {
       keyword:
         'case catch default do else exit exitWith for forEach from if ' +
-        'switch then throw to try waitUntil while with',
+        'private switch then throw to try waitUntil while with',
       built_in:
         'abs accTime acos action actionIDs actionKeys actionKeysImages actionKeysNames ' +
         'actionKeysNamesArray actionName actionParams activateAddons activatedAddons activateKey ' +
         'add3DENConnection add3DENEventHandler add3DENLayer addAction addBackpack addBackpackCargo ' +
         'addBackpackCargoGlobal addBackpackGlobal addCamShake addCuratorAddons addCuratorCameraArea ' +
         'addCuratorEditableObjects addCuratorEditingArea addCuratorPoints addEditorObject addEventHandler ' +
-        'addGoggles addGroupIcon addHandgunItem addHeadgear addItem addItemCargo addItemCargoGlobal ' +
-        'addItemPool addItemToBackpack addItemToUniform addItemToVest addLiveStats addMagazine ' +
-        'addMagazineAmmoCargo addMagazineCargo addMagazineCargoGlobal addMagazineGlobal addMagazinePool ' +
-        'addMagazines addMagazineTurret addMenu addMenuItem addMissionEventHandler addMPEventHandler ' +
-        'addMusicEventHandler addOwnedMine addPlayerScores addPrimaryWeaponItem ' +
+        'addForce addGoggles addGroupIcon addHandgunItem addHeadgear addItem addItemCargo ' +
+        'addItemCargoGlobal addItemPool addItemToBackpack addItemToUniform addItemToVest addLiveStats ' +
+        'addMagazine addMagazineAmmoCargo addMagazineCargo addMagazineCargoGlobal addMagazineGlobal ' +
+        'addMagazinePool addMagazines addMagazineTurret addMenu addMenuItem addMissionEventHandler ' +
+        'addMPEventHandler addMusicEventHandler addOwnedMine addPlayerScores addPrimaryWeaponItem ' +
         'addPublicVariableEventHandler addRating addResources addScore addScoreSide addSecondaryWeaponItem ' +
-        'addSwitchableUnit addTeamMember addToRemainsCollector addUniform addVehicle addVest addWaypoint ' +
-        'addWeapon addWeaponCargo addWeaponCargoGlobal addWeaponGlobal addWeaponItem addWeaponPool ' +
-        'addWeaponTurret agent agents AGLToASL aimedAtTarget aimPos airDensityRTD airportSide ' +
-        'AISFinishHeal alive all3DENEntities allControls allCurators allCutLayers allDead allDeadMen ' +
-        'allDisplays allGroups allMapMarkers allMines allMissionObjects allow3DMode allowCrewInImmobile ' +
-        'allowCuratorLogicIgnoreAreas allowDamage allowDammage allowFileOperations allowFleeing allowGetIn ' +
-        'allowSprint allPlayers allSites allTurrets allUnits allUnitsUAV allVariables ammo and animate ' +
-        'animateDoor animateSource animationNames animationPhase animationSourcePhase animationState ' +
-        'append apply armoryPoints arrayIntersect asin ASLToAGL ASLToATL assert assignAsCargo ' +
-        'assignAsCargoIndex assignAsCommander assignAsDriver assignAsGunner assignAsTurret assignCurator ' +
-        'assignedCargo assignedCommander assignedDriver assignedGunner assignedItems assignedTarget ' +
-        'assignedTeam assignedVehicle assignedVehicleRole assignItem assignTeam assignToAirport atan atan2 ' +
-        'atg ATLToASL attachedObject attachedObjects attachedTo attachObject attachTo attackEnabled ' +
-        'backpack backpackCargo backpackContainer backpackItems backpackMagazines backpackSpaceFor ' +
-        'behaviour benchmark binocular blufor boundingBox boundingBoxReal boundingCenter breakOut breakTo ' +
-        'briefingName buildingExit buildingPos buttonAction buttonSetAction cadetMode call callExtension ' +
-        'camCommand camCommit camCommitPrepared camCommitted camConstuctionSetParams camCreate camDestroy ' +
-        'cameraEffect cameraEffectEnableHUD cameraInterest cameraOn cameraView campaignConfigFile ' +
-        'camPreload camPreloaded camPrepareBank camPrepareDir camPrepareDive camPrepareFocus camPrepareFov ' +
-        'camPrepareFovRange camPreparePos camPrepareRelPos camPrepareTarget camSetBank camSetDir ' +
-        'camSetDive camSetFocus camSetFov camSetFovRange camSetPos camSetRelPos camSetTarget camTarget ' +
-        'camUseNVG canAdd canAddItemToBackpack canAddItemToUniform canAddItemToVest ' +
-        'cancelSimpleTaskDestination canFire canMove canSlingLoad canStand canSuspend canUnloadInCombat ' +
-        'canVehicleCargo captive captiveNum cbChecked cbSetChecked ceil channelEnabled cheatsEnabled ' +
-        'checkAIFeature checkVisibility civilian className clearAllItemsFromBackpack clearBackpackCargo ' +
-        'clearBackpackCargoGlobal clearGroupIcons clearItemCargo clearItemCargoGlobal clearItemPool ' +
-        'clearMagazineCargo clearMagazineCargoGlobal clearMagazinePool clearOverlay clearRadio ' +
-        'clearWeaponCargo clearWeaponCargoGlobal clearWeaponPool clientOwner closeDialog closeDisplay ' +
-        'closeOverlay collapseObjectTree collect3DENHistory combatMode commandArtilleryFire commandChat ' +
-        'commander commandFire commandFollow commandFSM commandGetOut commandingMenu commandMove ' +
-        'commandRadio commandStop commandSuppressiveFire commandTarget commandWatch comment commitOverlay ' +
-        'compile compileFinal completedFSM composeText configClasses configFile configHierarchy configName ' +
-        'configNull configProperties configSourceAddonList configSourceMod configSourceModList ' +
-        'connectTerminalToUAV controlNull controlsGroupCtrl copyFromClipboard copyToClipboard ' +
-        'copyWaypoints cos count countEnemy countFriendly countSide countType countUnknown ' +
-        'create3DENComposition create3DENEntity createAgent createCenter createDialog createDiaryLink ' +
-        'createDiaryRecord createDiarySubject createDisplay createGearDialog createGroup ' +
-        'createGuardedPoint createLocation createMarker createMarkerLocal createMenu createMine ' +
-        'createMissionDisplay createMPCampaignDisplay createSimpleObject createSimpleTask createSite ' +
-        'createSoundSource createTask createTeam createTrigger createUnit createVehicle createVehicleCrew ' +
-        'createVehicleLocal crew ctrlActivate ctrlAddEventHandler ctrlAngle ctrlAutoScrollDelay ' +
+        'addSwitchableUnit addTeamMember addToRemainsCollector addTorque addUniform addVehicle addVest ' +
+        'addWaypoint addWeapon addWeaponCargo addWeaponCargoGlobal addWeaponGlobal addWeaponItem ' +
+        'addWeaponPool addWeaponTurret admin agent agents AGLToASL aimedAtTarget aimPos airDensityRTD ' +
+        'airplaneThrottle airportSide AISFinishHeal alive all3DENEntities allAirports allControls ' +
+        'allCurators allCutLayers allDead allDeadMen allDisplays allGroups allMapMarkers allMines ' +
+        'allMissionObjects allow3DMode allowCrewInImmobile allowCuratorLogicIgnoreAreas allowDamage ' +
+        'allowDammage allowFileOperations allowFleeing allowGetIn allowSprint allPlayers allSimpleObjects ' +
+        'allSites allTurrets allUnits allUnitsUAV allVariables ammo ammoOnPylon and animate animateBay ' +
+        'animateDoor animatePylon animateSource animationNames animationPhase animationSourcePhase ' +
+        'animationState append apply armoryPoints arrayIntersect asin ASLToAGL ASLToATL assert ' +
+        'assignAsCargo assignAsCargoIndex assignAsCommander assignAsDriver assignAsGunner assignAsTurret ' +
+        'assignCurator assignedCargo assignedCommander assignedDriver assignedGunner assignedItems ' +
+        'assignedTarget assignedTeam assignedVehicle assignedVehicleRole assignItem assignTeam ' +
+        'assignToAirport atan atan2 atg ATLToASL attachedObject attachedObjects attachedTo attachObject ' +
+        'attachTo attackEnabled backpack backpackCargo backpackContainer backpackItems backpackMagazines ' +
+        'backpackSpaceFor behaviour benchmark binocular boundingBox boundingBoxReal boundingCenter ' +
+        'breakOut breakTo briefingName buildingExit buildingPos buttonAction buttonSetAction cadetMode ' +
+        'call callExtension camCommand camCommit camCommitPrepared camCommitted camConstuctionSetParams ' +
+        'camCreate camDestroy cameraEffect cameraEffectEnableHUD cameraInterest cameraOn cameraView ' +
+        'campaignConfigFile camPreload camPreloaded camPrepareBank camPrepareDir camPrepareDive ' +
+        'camPrepareFocus camPrepareFov camPrepareFovRange camPreparePos camPrepareRelPos camPrepareTarget ' +
+        'camSetBank camSetDir camSetDive camSetFocus camSetFov camSetFovRange camSetPos camSetRelPos ' +
+        'camSetTarget camTarget camUseNVG canAdd canAddItemToBackpack canAddItemToUniform canAddItemToVest ' +
+        'cancelSimpleTaskDestination canFire canMove canSlingLoad canStand canSuspend ' +
+        'canTriggerDynamicSimulation canUnloadInCombat canVehicleCargo captive captiveNum cbChecked ' +
+        'cbSetChecked ceil channelEnabled cheatsEnabled checkAIFeature checkVisibility className ' +
+        'clearAllItemsFromBackpack clearBackpackCargo clearBackpackCargoGlobal clearGroupIcons ' +
+        'clearItemCargo clearItemCargoGlobal clearItemPool clearMagazineCargo clearMagazineCargoGlobal ' +
+        'clearMagazinePool clearOverlay clearRadio clearWeaponCargo clearWeaponCargoGlobal clearWeaponPool ' +
+        'clientOwner closeDialog closeDisplay closeOverlay collapseObjectTree collect3DENHistory ' +
+        'collectiveRTD combatMode commandArtilleryFire commandChat commander commandFire commandFollow ' +
+        'commandFSM commandGetOut commandingMenu commandMove commandRadio commandStop ' +
+        'commandSuppressiveFire commandTarget commandWatch comment commitOverlay compile compileFinal ' +
+        'completedFSM composeText configClasses configFile configHierarchy configName configProperties ' +
+        'configSourceAddonList configSourceMod configSourceModList confirmSensorTarget ' +
+        'connectTerminalToUAV controlsGroupCtrl copyFromClipboard copyToClipboard copyWaypoints cos count ' +
+        'countEnemy countFriendly countSide countType countUnknown create3DENComposition create3DENEntity ' +
+        'createAgent createCenter createDialog createDiaryLink createDiaryRecord createDiarySubject ' +
+        'createDisplay createGearDialog createGroup createGuardedPoint createLocation createMarker ' +
+        'createMarkerLocal createMenu createMine createMissionDisplay createMPCampaignDisplay ' +
+        'createSimpleObject createSimpleTask createSite createSoundSource createTask createTeam ' +
+        'createTrigger createUnit createVehicle createVehicleCrew createVehicleLocal crew ctAddHeader ' +
+        'ctAddRow ctClear ctCurSel ctData ctFindHeaderRows ctFindRowHeader ctHeaderControls ctHeaderCount ' +
+        'ctRemoveHeaders ctRemoveRows ctrlActivate ctrlAddEventHandler ctrlAngle ctrlAutoScrollDelay ' +
         'ctrlAutoScrollRewind ctrlAutoScrollSpeed ctrlChecked ctrlClassName ctrlCommit ctrlCommitted ' +
         'ctrlCreate ctrlDelete ctrlEnable ctrlEnabled ctrlFade ctrlHTMLLoaded ctrlIDC ctrlIDD ' +
         'ctrlMapAnimAdd ctrlMapAnimClear ctrlMapAnimCommit ctrlMapAnimDone ctrlMapCursor ctrlMapMouseOver ' +
@@ -25562,141 +31021,160 @@ module.exports = function(hljs) {
         'ctrlSetFontH6B ctrlSetFontHeight ctrlSetFontHeightH1 ctrlSetFontHeightH2 ctrlSetFontHeightH3 ' +
         'ctrlSetFontHeightH4 ctrlSetFontHeightH5 ctrlSetFontHeightH6 ctrlSetFontHeightSecondary ' +
         'ctrlSetFontP ctrlSetFontPB ctrlSetFontSecondary ctrlSetForegroundColor ctrlSetModel ' +
-        'ctrlSetModelDirAndUp ctrlSetModelScale ctrlSetPosition ctrlSetScale ctrlSetStructuredText ' +
-        'ctrlSetText ctrlSetTextColor ctrlSetTooltip ctrlSetTooltipColorBox ctrlSetTooltipColorShade ' +
-        'ctrlSetTooltipColorText ctrlShow ctrlShown ctrlText ctrlTextHeight ctrlType ctrlVisible ' +
-        'curatorAddons curatorCamera curatorCameraArea curatorCameraAreaCeiling curatorCoef ' +
-        'curatorEditableObjects curatorEditingArea curatorEditingAreaType curatorMouseOver curatorPoints ' +
-        'curatorRegisteredObjects curatorSelected curatorWaypointCost current3DENOperation currentChannel ' +
-        'currentCommand currentMagazine currentMagazineDetail currentMagazineDetailTurret ' +
-        'currentMagazineTurret currentMuzzle currentNamespace currentTask currentTasks currentThrowable ' +
-        'currentVisionMode currentWaypoint currentWeapon currentWeaponMode currentWeaponTurret ' +
-        'currentZeroing cursorObject cursorTarget customChat customRadio cutFadeOut cutObj cutRsc cutText ' +
-        'damage date dateToNumber daytime deActivateKey debriefingText debugFSM debugLog deg ' +
-        'delete3DENEntities deleteAt deleteCenter deleteCollection deleteEditorObject deleteGroup ' +
-        'deleteIdentity deleteLocation deleteMarker deleteMarkerLocal deleteRange deleteResources ' +
-        'deleteSite deleteStatus deleteTeam deleteVehicle deleteVehicleCrew deleteWaypoint detach ' +
-        'detectedMines diag_activeMissionFSMs diag_activeScripts diag_activeSQFScripts ' +
-        'diag_activeSQSScripts diag_captureFrame diag_captureSlowFrame diag_codePerformance diag_drawMode ' +
-        'diag_enable diag_enabled diag_fps diag_fpsMin diag_frameNo diag_list diag_log diag_logSlowFrame ' +
-        'diag_mergeConfigFile diag_recordTurretLimits diag_tickTime diag_toggle dialog diarySubjectExists ' +
-        'didJIP didJIPOwner difficulty difficultyEnabled difficultyEnabledRTD difficultyOption direction ' +
-        'directSay disableAI disableCollisionWith disableConversation disableDebriefingStats ' +
+        'ctrlSetModelDirAndUp ctrlSetModelScale ctrlSetPixelPrecision ctrlSetPosition ctrlSetScale ' +
+        'ctrlSetStructuredText ctrlSetText ctrlSetTextColor ctrlSetTooltip ctrlSetTooltipColorBox ' +
+        'ctrlSetTooltipColorShade ctrlSetTooltipColorText ctrlShow ctrlShown ctrlText ctrlTextHeight ' +
+        'ctrlTextWidth ctrlType ctrlVisible ctRowControls ctRowCount ctSetCurSel ctSetData ' +
+        'ctSetHeaderTemplate ctSetRowTemplate ctSetValue ctValue curatorAddons curatorCamera ' +
+        'curatorCameraArea curatorCameraAreaCeiling curatorCoef curatorEditableObjects curatorEditingArea ' +
+        'curatorEditingAreaType curatorMouseOver curatorPoints curatorRegisteredObjects curatorSelected ' +
+        'curatorWaypointCost current3DENOperation currentChannel currentCommand currentMagazine ' +
+        'currentMagazineDetail currentMagazineDetailTurret currentMagazineTurret currentMuzzle ' +
+        'currentNamespace currentTask currentTasks currentThrowable currentVisionMode currentWaypoint ' +
+        'currentWeapon currentWeaponMode currentWeaponTurret currentZeroing cursorObject cursorTarget ' +
+        'customChat customRadio cutFadeOut cutObj cutRsc cutText damage date dateToNumber daytime ' +
+        'deActivateKey debriefingText debugFSM debugLog deg delete3DENEntities deleteAt deleteCenter ' +
+        'deleteCollection deleteEditorObject deleteGroup deleteGroupWhenEmpty deleteIdentity ' +
+        'deleteLocation deleteMarker deleteMarkerLocal deleteRange deleteResources deleteSite deleteStatus ' +
+        'deleteTeam deleteVehicle deleteVehicleCrew deleteWaypoint detach detectedMines ' +
+        'diag_activeMissionFSMs diag_activeScripts diag_activeSQFScripts diag_activeSQSScripts ' +
+        'diag_captureFrame diag_captureFrameToFile diag_captureSlowFrame diag_codePerformance ' +
+        'diag_drawMode diag_enable diag_enabled diag_fps diag_fpsMin diag_frameNo diag_lightNewLoad ' +
+        'diag_list diag_log diag_logSlowFrame diag_mergeConfigFile diag_recordTurretLimits ' +
+        'diag_setLightNew diag_tickTime diag_toggle dialog diarySubjectExists didJIP didJIPOwner ' +
+        'difficulty difficultyEnabled difficultyEnabledRTD difficultyOption direction directSay disableAI ' +
+        'disableCollisionWith disableConversation disableDebriefingStats disableMapIndicators ' +
         'disableNVGEquipment disableRemoteSensors disableSerialization disableTIEquipment ' +
-        'disableUAVConnectability disableUserInput displayAddEventHandler displayCtrl displayNull ' +
-        'displayParent displayRemoveAllEventHandlers displayRemoveEventHandler displaySetEventHandler ' +
-        'dissolveTeam distance distance2D distanceSqr distributionRegion do3DENAction doArtilleryFire ' +
-        'doFire doFollow doFSM doGetOut doMove doorPhase doStop doSuppressiveFire doTarget doWatch ' +
-        'drawArrow drawEllipse drawIcon drawIcon3D drawLine drawLine3D drawLink drawLocation drawPolygon ' +
-        'drawRectangle driver drop east echo edit3DENMissionAttributes editObject editorSetEventHandler ' +
-        'effectiveCommander emptyPositions enableAI enableAIFeature enableAimPrecision enableAttack ' +
-        'enableAudioFeature enableCamShake enableCaustics enableChannel enableCollisionWith enableCopilot ' +
-        'enableDebriefingStats enableDiagLegend enableEndDialog enableEngineArtillery enableEnvironment ' +
-        'enableFatigue enableGunLights enableIRLasers enableMimics enablePersonTurret enableRadio ' +
-        'enableReload enableRopeAttach enableSatNormalOnDetail enableSaving enableSentences ' +
-        'enableSimulation enableSimulationGlobal enableStamina enableTeamSwitch enableUAVConnectability ' +
-        'enableUAVWaypoints enableVehicleCargo endLoadingScreen endMission engineOn enginesIsOnRTD ' +
-        'enginesRpmRTD enginesTorqueRTD entities estimatedEndServerTime estimatedTimeLeft ' +
-        'evalObjectArgument everyBackpack everyContainer exec execEditorScript execFSM execVM exp ' +
-        'expectedDestination exportJIPMessages eyeDirection eyePos face faction fadeMusic fadeRadio ' +
-        'fadeSound fadeSpeech failMission fillWeaponsFromPool find findCover findDisplay findEditorObject ' +
-        'findEmptyPosition findEmptyPositionReady findNearestEnemy finishMissionInit finite fire ' +
-        'fireAtTarget firstBackpack flag flagOwner flagSide flagTexture fleeing floor flyInHeight ' +
-        'flyInHeightASL fog fogForecast fogParams forceAddUniform forcedMap forceEnd forceMap forceRespawn ' +
-        'forceSpeed forceWalk forceWeaponFire forceWeatherChange forEachMember forEachMemberAgent ' +
-        'forEachMemberTeam format formation formationDirection formationLeader formationMembers ' +
-        'formationPosition formationTask formatText formLeader freeLook fromEditor fuel fullCrew ' +
-        'gearIDCAmmoCount gearSlotAmmoCount gearSlotData get3DENActionState get3DENAttribute get3DENCamera ' +
-        'get3DENConnections get3DENEntity get3DENEntityID get3DENGrid get3DENIconsVisible ' +
-        'get3DENLayerEntities get3DENLinesVisible get3DENMissionAttribute get3DENMouseOver get3DENSelected ' +
-        'getAimingCoef getAllHitPointsDamage getAllOwnedMines getAmmoCargo getAnimAimPrecision ' +
+        'disableUAVConnectability disableUserInput displayAddEventHandler displayCtrl displayParent ' +
+        'displayRemoveAllEventHandlers displayRemoveEventHandler displaySetEventHandler dissolveTeam ' +
+        'distance distance2D distanceSqr distributionRegion do3DENAction doArtilleryFire doFire doFollow ' +
+        'doFSM doGetOut doMove doorPhase doStop doSuppressiveFire doTarget doWatch drawArrow drawEllipse ' +
+        'drawIcon drawIcon3D drawLine drawLine3D drawLink drawLocation drawPolygon drawRectangle ' +
+        'drawTriangle driver drop dynamicSimulationDistance dynamicSimulationDistanceCoef ' +
+        'dynamicSimulationEnabled dynamicSimulationSystemEnabled echo edit3DENMissionAttributes editObject ' +
+        'editorSetEventHandler effectiveCommander emptyPositions enableAI enableAIFeature ' +
+        'enableAimPrecision enableAttack enableAudioFeature enableAutoStartUpRTD enableAutoTrimRTD ' +
+        'enableCamShake enableCaustics enableChannel enableCollisionWith enableCopilot ' +
+        'enableDebriefingStats enableDiagLegend enableDynamicSimulation enableDynamicSimulationSystem ' +
+        'enableEndDialog enableEngineArtillery enableEnvironment enableFatigue enableGunLights ' +
+        'enableInfoPanelComponent enableIRLasers enableMimics enablePersonTurret enableRadio enableReload ' +
+        'enableRopeAttach enableSatNormalOnDetail enableSaving enableSentences enableSimulation ' +
+        'enableSimulationGlobal enableStamina enableTeamSwitch enableTraffic enableUAVConnectability ' +
+        'enableUAVWaypoints enableVehicleCargo enableVehicleSensor enableWeaponDisassembly ' +
+        'endLoadingScreen endMission engineOn enginesIsOnRTD enginesRpmRTD enginesTorqueRTD entities ' +
+        'environmentEnabled estimatedEndServerTime estimatedTimeLeft evalObjectArgument everyBackpack ' +
+        'everyContainer exec execEditorScript execFSM execVM exp expectedDestination exportJIPMessages ' +
+        'eyeDirection eyePos face faction fadeMusic fadeRadio fadeSound fadeSpeech failMission ' +
+        'fillWeaponsFromPool find findCover findDisplay findEditorObject findEmptyPosition ' +
+        'findEmptyPositionReady findIf findNearestEnemy finishMissionInit finite fire fireAtTarget ' +
+        'firstBackpack flag flagAnimationPhase flagOwner flagSide flagTexture fleeing floor flyInHeight ' +
+        'flyInHeightASL fog fogForecast fogParams forceAddUniform forcedMap forceEnd forceFlagTexture ' +
+        'forceFollowRoad forceMap forceRespawn forceSpeed forceWalk forceWeaponFire forceWeatherChange ' +
+        'forEachMember forEachMemberAgent forEachMemberTeam forgetTarget format formation ' +
+        'formationDirection formationLeader formationMembers formationPosition formationTask formatText ' +
+        'formLeader freeLook fromEditor fuel fullCrew gearIDCAmmoCount gearSlotAmmoCount gearSlotData ' +
+        'get3DENActionState get3DENAttribute get3DENCamera get3DENConnections get3DENEntity ' +
+        'get3DENEntityID get3DENGrid get3DENIconsVisible get3DENLayerEntities get3DENLinesVisible ' +
+        'get3DENMissionAttribute get3DENMouseOver get3DENSelected getAimingCoef getAllEnvSoundControllers ' +
+        'getAllHitPointsDamage getAllOwnedMines getAllSoundControllers getAmmoCargo getAnimAimPrecision ' +
         'getAnimSpeedCoef getArray getArtilleryAmmo getArtilleryComputerSettings getArtilleryETA ' +
         'getAssignedCuratorLogic getAssignedCuratorUnit getBackpackCargo getBleedingRemaining ' +
         'getBurningValue getCameraViewDirection getCargoIndex getCenterOfMass getClientState ' +
-        'getClientStateNumber getConnectedUAV getCustomAimingCoef getDammage getDescription getDir ' +
-        'getDirVisual getDLCs getEditorCamera getEditorMode getEditorObjectScope getElevationOffset ' +
-        'getFatigue getFriend getFSMVariable getFuelCargo getGroupIcon getGroupIconParams getGroupIcons ' +
-        'getHideFrom getHit getHitIndex getHitPointDamage getItemCargo getMagazineCargo getMarkerColor ' +
-        'getMarkerPos getMarkerSize getMarkerType getMass getMissionConfig getMissionConfigValue ' +
-        'getMissionDLCs getMissionLayerEntities getModelInfo getMousePosition getNumber getObjectArgument ' +
-        'getObjectChildren getObjectDLC getObjectMaterials getObjectProxy getObjectTextures getObjectType ' +
-        'getObjectViewDistance getOxygenRemaining getPersonUsedDLCs getPilotCameraDirection ' +
-        'getPilotCameraPosition getPilotCameraRotation getPilotCameraTarget getPlayerChannel ' +
-        'getPlayerScores getPlayerUID getPos getPosASL getPosASLVisual getPosASLW getPosATL ' +
-        'getPosATLVisual getPosVisual getPosWorld getRelDir getRelPos getRemoteSensorsDisabled ' +
-        'getRepairCargo getResolution getShadowDistance getShotParents getSlingLoad getSpeed getStamina ' +
-        'getStatValue getSuppression getTerrainHeightASL getText getUnitLoadout getUnitTrait getVariable ' +
-        'getVehicleCargo getWeaponCargo getWeaponSway getWPPos glanceAt globalChat globalRadio goggles ' +
-        'goto group groupChat groupFromNetId groupIconSelectable groupIconsVisible groupId groupOwner ' +
-        'groupRadio groupSelectedUnits groupSelectUnit grpNull gunner gusts halt handgunItems ' +
+        'getClientStateNumber getCompatiblePylonMagazines getConnectedUAV getContainerMaxLoad ' +
+        'getCursorObjectParams getCustomAimCoef getDammage getDescription getDir getDirVisual ' +
+        'getDLCAssetsUsage getDLCAssetsUsageByName getDLCs getEditorCamera getEditorMode ' +
+        'getEditorObjectScope getElevationOffset getEnvSoundController getFatigue getForcedFlagTexture ' +
+        'getFriend getFSMVariable getFuelCargo getGroupIcon getGroupIconParams getGroupIcons getHideFrom ' +
+        'getHit getHitIndex getHitPointDamage getItemCargo getMagazineCargo getMarkerColor getMarkerPos ' +
+        'getMarkerSize getMarkerType getMass getMissionConfig getMissionConfigValue getMissionDLCs ' +
+        'getMissionLayerEntities getModelInfo getMousePosition getMusicPlayedTime getNumber ' +
+        'getObjectArgument getObjectChildren getObjectDLC getObjectMaterials getObjectProxy ' +
+        'getObjectTextures getObjectType getObjectViewDistance getOxygenRemaining getPersonUsedDLCs ' +
+        'getPilotCameraDirection getPilotCameraPosition getPilotCameraRotation getPilotCameraTarget ' +
+        'getPlateNumber getPlayerChannel getPlayerScores getPlayerUID getPos getPosASL getPosASLVisual ' +
+        'getPosASLW getPosATL getPosATLVisual getPosVisual getPosWorld getPylonMagazines getRelDir ' +
+        'getRelPos getRemoteSensorsDisabled getRepairCargo getResolution getShadowDistance getShotParents ' +
+        'getSlingLoad getSoundController getSoundControllerResult getSpeed getStamina getStatValue ' +
+        'getSuppression getTerrainGrid getTerrainHeightASL getText getTotalDLCUsageTime getUnitLoadout ' +
+        'getUnitTrait getUserMFDText getUserMFDvalue getVariable getVehicleCargo getWeaponCargo ' +
+        'getWeaponSway getWingsOrientationRTD getWingsPositionRTD getWPPos glanceAt globalChat globalRadio ' +
+        'goggles goto group groupChat groupFromNetId groupIconSelectable groupIconsVisible groupId ' +
+        'groupOwner groupRadio groupSelectedUnits groupSelectUnit gunner gusts halt handgunItems ' +
         'handgunMagazine handgunWeapon handsHit hasInterface hasPilotCamera hasWeapon hcAllGroups ' +
         'hcGroupParams hcLeader hcRemoveAllGroups hcRemoveGroup hcSelected hcSelectGroup hcSetGroup ' +
         'hcShowBar hcShownBar headgear hideBody hideObject hideObjectGlobal hideSelection hint hintC ' +
         'hintCadet hintSilent hmd hostMission htmlLoad HUDMovementLevels humidity image importAllGroups ' +
-        'importance in inArea inAreaArray incapacitatedState independent inflame inflamed ' +
-        'inGameUISetEventHandler inheritsFrom initAmbientLife inPolygon inputAction inRangeOfArtillery ' +
-        'insertEditorObject intersect is3DEN is3DENMultiplayer isAbleToBreathe isAgent isArray ' +
-        'isAutoHoverOn isAutonomous isAutotest isBleeding isBurning isClass isCollisionLightOn ' +
-        'isCopilotEnabled isDedicated isDLCAvailable isEngineOn isEqualTo isEqualType isEqualTypeAll ' +
-        'isEqualTypeAny isEqualTypeArray isEqualTypeParams isFilePatchingEnabled isFlashlightOn ' +
-        'isFlatEmpty isForcedWalk isFormationLeader isHidden isInRemainsCollector ' +
-        'isInstructorFigureEnabled isIRLaserOn isKeyActive isKindOf isLightOn isLocalized isManualFire ' +
-        'isMarkedForCollection isMultiplayer isMultiplayerSolo isNil isNull isNumber isObjectHidden ' +
-        'isObjectRTD isOnRoad isPipEnabled isPlayer isRealTime isRemoteExecuted isRemoteExecutedJIP ' +
-        'isServer isShowing3DIcons isSprintAllowed isStaminaEnabled isSteamMission ' +
-        'isStreamFriendlyUIEnabled isText isTouchingGround isTurnedOut isTutHintsEnabled isUAVConnectable ' +
-        'isUAVConnected isUniformAllowed isVehicleCargo isWalking isWeaponDeployed isWeaponRested ' +
-        'itemCargo items itemsWithMagazines join joinAs joinAsSilent joinSilent joinString kbAddDatabase ' +
-        'kbAddDatabaseTargets kbAddTopic kbHasTopic kbReact kbRemoveTopic kbTell kbWasSaid keyImage ' +
-        'keyName knowsAbout land landAt landResult language laserTarget lbAdd lbClear lbColor lbCurSel ' +
-        'lbData lbDelete lbIsSelected lbPicture lbSelection lbSetColor lbSetCurSel lbSetData lbSetPicture ' +
-        'lbSetPictureColor lbSetPictureColorDisabled lbSetPictureColorSelected lbSetSelectColor ' +
-        'lbSetSelectColorRight lbSetSelected lbSetTooltip lbSetValue lbSize lbSort lbSortByValue lbText ' +
-        'lbValue leader leaderboardDeInit leaderboardGetRows leaderboardInit leaveVehicle libraryCredits ' +
+        'importance in inArea inAreaArray incapacitatedState inflame inflamed infoPanel ' +
+        'infoPanelComponentEnabled infoPanelComponents infoPanels inGameUISetEventHandler inheritsFrom ' +
+        'initAmbientLife inPolygon inputAction inRangeOfArtillery insertEditorObject intersect is3DEN ' +
+        'is3DENMultiplayer isAbleToBreathe isAgent isArray isAutoHoverOn isAutonomous isAutotest ' +
+        'isBleeding isBurning isClass isCollisionLightOn isCopilotEnabled isDamageAllowed isDedicated ' +
+        'isDLCAvailable isEngineOn isEqualTo isEqualType isEqualTypeAll isEqualTypeAny isEqualTypeArray ' +
+        'isEqualTypeParams isFilePatchingEnabled isFlashlightOn isFlatEmpty isForcedWalk isFormationLeader ' +
+        'isGroupDeletedWhenEmpty isHidden isInRemainsCollector isInstructorFigureEnabled isIRLaserOn ' +
+        'isKeyActive isKindOf isLaserOn isLightOn isLocalized isManualFire isMarkedForCollection ' +
+        'isMultiplayer isMultiplayerSolo isNil isNull isNumber isObjectHidden isObjectRTD isOnRoad ' +
+        'isPipEnabled isPlayer isRealTime isRemoteExecuted isRemoteExecutedJIP isServer isShowing3DIcons ' +
+        'isSimpleObject isSprintAllowed isStaminaEnabled isSteamMission isStreamFriendlyUIEnabled isText ' +
+        'isTouchingGround isTurnedOut isTutHintsEnabled isUAVConnectable isUAVConnected isUIContext ' +
+        'isUniformAllowed isVehicleCargo isVehicleRadarOn isVehicleSensorEnabled isWalking ' +
+        'isWeaponDeployed isWeaponRested itemCargo items itemsWithMagazines join joinAs joinAsSilent ' +
+        'joinSilent joinString kbAddDatabase kbAddDatabaseTargets kbAddTopic kbHasTopic kbReact ' +
+        'kbRemoveTopic kbTell kbWasSaid keyImage keyName knowsAbout land landAt landResult language ' +
+        'laserTarget lbAdd lbClear lbColor lbColorRight lbCurSel lbData lbDelete lbIsSelected lbPicture ' +
+        'lbPictureRight lbSelection lbSetColor lbSetColorRight lbSetCurSel lbSetData lbSetPicture ' +
+        'lbSetPictureColor lbSetPictureColorDisabled lbSetPictureColorSelected lbSetPictureRight ' +
+        'lbSetPictureRightColor lbSetPictureRightColorDisabled lbSetPictureRightColorSelected ' +
+        'lbSetSelectColor lbSetSelectColorRight lbSetSelected lbSetText lbSetTextRight lbSetTooltip ' +
+        'lbSetValue lbSize lbSort lbSortByValue lbText lbTextRight lbValue leader leaderboardDeInit ' +
+        'leaderboardGetRows leaderboardInit leaderboardRequestRowsFriends leaderboardsRequestUploadScore ' +
+        'leaderboardsRequestUploadScoreKeepBest leaderboardState leaveVehicle libraryCredits ' +
         'libraryDisclaimers lifeState lightAttachObject lightDetachObject lightIsOn lightnings limitSpeed ' +
-        'linearConversion lineBreak lineIntersects lineIntersectsObjs lineIntersectsSurfaces ' +
-        'lineIntersectsWith linkItem list listObjects ln lnbAddArray lnbAddColumn lnbAddRow lnbClear ' +
-        'lnbColor lnbCurSelRow lnbData lnbDeleteColumn lnbDeleteRow lnbGetColumnsPosition lnbPicture ' +
-        'lnbSetColor lnbSetColumnsPos lnbSetCurSelRow lnbSetData lnbSetPicture lnbSetText lnbSetValue ' +
-        'lnbSize lnbText lnbValue load loadAbs loadBackpack loadFile loadGame loadIdentity loadMagazine ' +
-        'loadOverlay loadStatus loadUniform loadVest local localize locationNull locationPosition lock ' +
-        'lockCameraTo lockCargo lockDriver locked lockedCargo lockedDriver lockedTurret lockIdentity ' +
-        'lockTurret lockWP log logEntities logNetwork logNetworkTerminate lookAt lookAtPos magazineCargo ' +
-        'magazines magazinesAllTurrets magazinesAmmo magazinesAmmoCargo magazinesAmmoFull magazinesDetail ' +
-        'magazinesDetailBackpack magazinesDetailUniform magazinesDetailVest magazinesTurret ' +
-        'magazineTurretAmmo mapAnimAdd mapAnimClear mapAnimCommit mapAnimDone mapCenterOnCamera ' +
-        'mapGridPosition markAsFinishedOnSteam markerAlpha markerBrush markerColor markerDir markerPos ' +
-        'markerShape markerSize markerText markerType max members menuAction menuAdd menuChecked menuClear ' +
-        'menuCollapse menuData menuDelete menuEnable menuEnabled menuExpand menuHover menuPicture ' +
-        'menuSetAction menuSetCheck menuSetData menuSetPicture menuSetValue menuShortcut menuShortcutText ' +
-        'menuSize menuSort menuText menuURL menuValue min mineActive mineDetectedBy missionConfigFile ' +
-        'missionDifficulty missionName missionNamespace missionStart missionVersion mod modelToWorld ' +
-        'modelToWorldVisual modParams moonIntensity moonPhase morale move move3DENCamera moveInAny ' +
-        'moveInCargo moveInCommander moveInDriver moveInGunner moveInTurret moveObjectToEnd moveOut ' +
-        'moveTime moveTo moveToCompleted moveToFailed musicVolume name nameSound nearEntities ' +
-        'nearestBuilding nearestLocation nearestLocations nearestLocationWithDubbing nearestObject ' +
-        'nearestObjects nearestTerrainObjects nearObjects nearObjectsReady nearRoads nearSupplies ' +
-        'nearTargets needReload netId netObjNull newOverlay nextMenuItemIndex nextWeatherChange nMenuItems ' +
-        'not numberToDate objectCurators objectFromNetId objectParent objNull objStatus onBriefingGroup ' +
-        'onBriefingNotes onBriefingPlan onBriefingTeamSwitch onCommandModeChanged onDoubleClick ' +
-        'onEachFrame onGroupIconClick onGroupIconOverEnter onGroupIconOverLeave onHCGroupSelectionChanged ' +
-        'onMapSingleClick onPlayerConnected onPlayerDisconnected onPreloadFinished onPreloadStarted ' +
-        'onShowNewObject onTeamSwitch openCuratorInterface openDLCPage openMap openYoutubeVideo opfor or ' +
-        'orderGetIn overcast overcastForecast owner param params parseNumber parseText parsingNamespace ' +
-        'particlesQuality pi pickWeaponPool pitch pixelGrid pixelGridBase pixelGridNoUIScale pixelH pixelW ' +
+        'linearConversion lineIntersects lineIntersectsObjs lineIntersectsSurfaces lineIntersectsWith ' +
+        'linkItem list listObjects listRemoteTargets listVehicleSensors ln lnbAddArray lnbAddColumn ' +
+        'lnbAddRow lnbClear lnbColor lnbCurSelRow lnbData lnbDeleteColumn lnbDeleteRow ' +
+        'lnbGetColumnsPosition lnbPicture lnbSetColor lnbSetColumnsPos lnbSetCurSelRow lnbSetData ' +
+        'lnbSetPicture lnbSetText lnbSetValue lnbSize lnbSort lnbSortByValue lnbText lnbValue load loadAbs ' +
+        'loadBackpack loadFile loadGame loadIdentity loadMagazine loadOverlay loadStatus loadUniform ' +
+        'loadVest local localize locationPosition lock lockCameraTo lockCargo lockDriver locked ' +
+        'lockedCargo lockedDriver lockedTurret lockIdentity lockTurret lockWP log logEntities logNetwork ' +
+        'logNetworkTerminate lookAt lookAtPos magazineCargo magazines magazinesAllTurrets magazinesAmmo ' +
+        'magazinesAmmoCargo magazinesAmmoFull magazinesDetail magazinesDetailBackpack ' +
+        'magazinesDetailUniform magazinesDetailVest magazinesTurret magazineTurretAmmo mapAnimAdd ' +
+        'mapAnimClear mapAnimCommit mapAnimDone mapCenterOnCamera mapGridPosition markAsFinishedOnSteam ' +
+        'markerAlpha markerBrush markerColor markerDir markerPos markerShape markerSize markerText ' +
+        'markerType max members menuAction menuAdd menuChecked menuClear menuCollapse menuData menuDelete ' +
+        'menuEnable menuEnabled menuExpand menuHover menuPicture menuSetAction menuSetCheck menuSetData ' +
+        'menuSetPicture menuSetValue menuShortcut menuShortcutText menuSize menuSort menuText menuURL ' +
+        'menuValue min mineActive mineDetectedBy missionConfigFile missionDifficulty missionName ' +
+        'missionNamespace missionStart missionVersion mod modelToWorld modelToWorldVisual ' +
+        'modelToWorldVisualWorld modelToWorldWorld modParams moonIntensity moonPhase morale move ' +
+        'move3DENCamera moveInAny moveInCargo moveInCommander moveInDriver moveInGunner moveInTurret ' +
+        'moveObjectToEnd moveOut moveTime moveTo moveToCompleted moveToFailed musicVolume name nameSound ' +
+        'nearEntities nearestBuilding nearestLocation nearestLocations nearestLocationWithDubbing ' +
+        'nearestObject nearestObjects nearestTerrainObjects nearObjects nearObjectsReady nearRoads ' +
+        'nearSupplies nearTargets needReload netId netObjNull newOverlay nextMenuItemIndex ' +
+        'nextWeatherChange nMenuItems not numberOfEnginesRTD numberToDate objectCurators objectFromNetId ' +
+        'objectParent objStatus onBriefingGroup onBriefingNotes onBriefingPlan onBriefingTeamSwitch ' +
+        'onCommandModeChanged onDoubleClick onEachFrame onGroupIconClick onGroupIconOverEnter ' +
+        'onGroupIconOverLeave onHCGroupSelectionChanged onMapSingleClick onPlayerConnected ' +
+        'onPlayerDisconnected onPreloadFinished onPreloadStarted onShowNewObject onTeamSwitch ' +
+        'openCuratorInterface openDLCPage openMap openSteamApp openYoutubeVideo or orderGetIn overcast ' +
+        'overcastForecast owner param params parseNumber parseSimpleArray parseText parsingNamespace ' +
+        'particlesQuality pickWeaponPool pitch pixelGrid pixelGridBase pixelGridNoUIScale pixelH pixelW ' +
         'playableSlotsNumber playableUnits playAction playActionNow player playerRespawnTime playerSide ' +
         'playersNumber playGesture playMission playMove playMoveNow playMusic playScriptedMission ' +
         'playSound playSound3D position positionCameraToWorld posScreenToWorld posWorldToScreen ' +
         'ppEffectAdjust ppEffectCommit ppEffectCommitted ppEffectCreate ppEffectDestroy ppEffectEnable ' +
         'ppEffectEnabled ppEffectForceInNVG precision preloadCamera preloadObject preloadSound ' +
         'preloadTitleObj preloadTitleRsc preprocessFile preprocessFileLineNumbers primaryWeapon ' +
-        'primaryWeaponItems primaryWeaponMagazine priority private processDiaryLink productVersion ' +
-        'profileName profileNamespace profileNameSteam progressLoadingScreen progressPosition ' +
-        'progressSetPosition publicVariable publicVariableClient publicVariableServer pushBack ' +
-        'pushBackUnique putWeaponPool queryItemsPool queryMagazinePool queryWeaponPool rad radioChannelAdd ' +
-        'radioChannelCreate radioChannelRemove radioChannelSetCallSign radioChannelSetLabel radioVolume ' +
-        'rain rainbow random rank rankId rating rectangular registeredTasks registerTask reload ' +
-        'reloadEnabled remoteControl remoteExec remoteExecCall remove3DENConnection remove3DENEventHandler ' +
+        'primaryWeaponItems primaryWeaponMagazine priority processDiaryLink productVersion profileName ' +
+        'profileNamespace profileNameSteam progressLoadingScreen progressPosition progressSetPosition ' +
+        'publicVariable publicVariableClient publicVariableServer pushBack pushBackUnique putWeaponPool ' +
+        'queryItemsPool queryMagazinePool queryWeaponPool rad radioChannelAdd radioChannelCreate ' +
+        'radioChannelRemove radioChannelSetCallSign radioChannelSetLabel radioVolume rain rainbow random ' +
+        'rank rankId rating rectangular registeredTasks registerTask reload reloadEnabled remoteControl ' +
+        'remoteExec remoteExecCall remoteExecutedOwner remove3DENConnection remove3DENEventHandler ' +
         'remove3DENLayer removeAction removeAll3DENEventHandlers removeAllActions removeAllAssignedItems ' +
         'removeAllContainers removeAllCuratorAddons removeAllCuratorCameraAreas ' +
         'removeAllCuratorEditingAreas removeAllEventHandlers removeAllHandgunItems removeAllItems ' +
@@ -25710,69 +31188,77 @@ module.exports = function(hljs) {
         'removeMagazineTurret removeMenuItem removeMissionEventHandler removeMPEventHandler ' +
         'removeMusicEventHandler removeOwnedMine removePrimaryWeaponItem removeSecondaryWeaponItem ' +
         'removeSimpleTask removeSwitchableUnit removeTeamMember removeUniform removeVest removeWeapon ' +
-        'removeWeaponGlobal removeWeaponTurret requiredVersion resetCamShake resetSubgroupDirection ' +
-        'resistance resize resources respawnVehicle restartEditorCamera reveal revealMine reverse ' +
-        'reversedMouseY roadAt roadsConnectedTo roleDescription ropeAttachedObjects ropeAttachedTo ' +
-        'ropeAttachEnabled ropeAttachTo ropeCreate ropeCut ropeDestroy ropeDetach ropeEndPosition ' +
-        'ropeLength ropes ropeUnwind ropeUnwound rotorsForcesRTD rotorsRpmRTD round runInitScript ' +
-        'safeZoneH safeZoneW safeZoneWAbs safeZoneX safeZoneXAbs safeZoneY save3DENInventory saveGame ' +
-        'saveIdentity saveJoysticks saveOverlay saveProfileNamespace saveStatus saveVar savingEnabled say ' +
-        'say2D say3D scopeName score scoreSide screenshot screenToWorld scriptDone scriptName scriptNull ' +
-        'scudState secondaryWeapon secondaryWeaponItems secondaryWeaponMagazine select selectBestPlaces ' +
+        'removeWeaponAttachmentCargo removeWeaponCargo removeWeaponGlobal removeWeaponTurret ' +
+        'reportRemoteTarget requiredVersion resetCamShake resetSubgroupDirection resize resources ' +
+        'respawnVehicle restartEditorCamera reveal revealMine reverse reversedMouseY roadAt ' +
+        'roadsConnectedTo roleDescription ropeAttachedObjects ropeAttachedTo ropeAttachEnabled ' +
+        'ropeAttachTo ropeCreate ropeCut ropeDestroy ropeDetach ropeEndPosition ropeLength ropes ' +
+        'ropeUnwind ropeUnwound rotorsForcesRTD rotorsRpmRTD round runInitScript safeZoneH safeZoneW ' +
+        'safeZoneWAbs safeZoneX safeZoneXAbs safeZoneY save3DENInventory saveGame saveIdentity ' +
+        'saveJoysticks saveOverlay saveProfileNamespace saveStatus saveVar savingEnabled say say2D say3D ' +
+        'scopeName score scoreSide screenshot screenToWorld scriptDone scriptName scudState ' +
+        'secondaryWeapon secondaryWeaponItems secondaryWeaponMagazine select selectBestPlaces ' +
         'selectDiarySubject selectedEditorObjects selectEditorObject selectionNames selectionPosition ' +
-        'selectLeader selectMax selectMin selectNoPlayer selectPlayer selectRandom selectWeapon ' +
-        'selectWeaponTurret sendAUMessage sendSimpleCommand sendTask sendTaskResult sendUDPMessage ' +
-        'serverCommand serverCommandAvailable serverCommandExecutable serverName serverTime set ' +
-        'set3DENAttribute set3DENAttributes set3DENGrid set3DENIconsVisible set3DENLayer ' +
-        'set3DENLinesVisible set3DENMissionAttributes set3DENModelsVisible set3DENObjectType ' +
-        'set3DENSelected setAccTime setAirportSide setAmmo setAmmoCargo setAnimSpeedCoef setAperture ' +
-        'setApertureNew setArmoryPoints setAttributes setAutonomous setBehaviour setBleedingRemaining ' +
-        'setCameraInterest setCamShakeDefParams setCamShakeParams setCamUseTi setCaptive setCenterOfMass ' +
-        'setCollisionLight setCombatMode setCompassOscillation setCuratorCameraAreaCeiling setCuratorCoef ' +
-        'setCuratorEditingAreaType setCuratorWaypointCost setCurrentChannel setCurrentTask ' +
-        'setCurrentWaypoint setCustomAimCoef setDamage setDammage setDate setDebriefingText ' +
-        'setDefaultCamera setDestination setDetailMapBlendPars setDir setDirection setDrawIcon ' +
-        'setDropInterval setEditorMode setEditorObjectScope setEffectCondition setFace setFaceAnimation ' +
-        'setFatigue setFlagOwner setFlagSide setFlagTexture setFog setFormation setFormationTask ' +
-        'setFormDir setFriend setFromEditor setFSMVariable setFuel setFuelCargo setGroupIcon ' +
-        'setGroupIconParams setGroupIconsSelectable setGroupIconsVisible setGroupId setGroupIdGlobal ' +
-        'setGroupOwner setGusts setHideBehind setHit setHitIndex setHitPointDamage setHorizonParallaxCoef ' +
-        'setHUDMovementLevels setIdentity setImportance setLeader setLightAmbient setLightAttenuation ' +
-        'setLightBrightness setLightColor setLightDayLight setLightFlareMaxDistance setLightFlareSize ' +
-        'setLightIntensity setLightnings setLightUseFlare setLocalWindParams setMagazineTurretAmmo ' +
-        'setMarkerAlpha setMarkerAlphaLocal setMarkerBrush setMarkerBrushLocal setMarkerColor ' +
-        'setMarkerColorLocal setMarkerDir setMarkerDirLocal setMarkerPos setMarkerPosLocal setMarkerShape ' +
-        'setMarkerShapeLocal setMarkerSize setMarkerSizeLocal setMarkerText setMarkerTextLocal ' +
-        'setMarkerType setMarkerTypeLocal setMass setMimic setMousePosition setMusicEffect ' +
-        'setMusicEventHandler setName setNameSound setObjectArguments setObjectMaterial ' +
-        'setObjectMaterialGlobal setObjectProxy setObjectTexture setObjectTextureGlobal ' +
-        'setObjectViewDistance setOvercast setOwner setOxygenRemaining setParticleCircle setParticleClass ' +
-        'setParticleFire setParticleParams setParticleRandom setPilotCameraDirection ' +
-        'setPilotCameraRotation setPilotCameraTarget setPilotLight setPiPEffect setPitch setPlayable ' +
-        'setPlayerRespawnTime setPos setPosASL setPosASL2 setPosASLW setPosATL setPosition setPosWorld ' +
-        'setRadioMsg setRain setRainbow setRandomLip setRank setRectangular setRepairCargo ' +
-        'setShadowDistance setShotParents setSide setSimpleTaskAlwaysVisible setSimpleTaskCustomData ' +
+        'selectLeader selectMax selectMin selectNoPlayer selectPlayer selectRandom selectRandomWeighted ' +
+        'selectWeapon selectWeaponTurret sendAUMessage sendSimpleCommand sendTask sendTaskResult ' +
+        'sendUDPMessage serverCommand serverCommandAvailable serverCommandExecutable serverName serverTime ' +
+        'set set3DENAttribute set3DENAttributes set3DENGrid set3DENIconsVisible set3DENLayer ' +
+        'set3DENLinesVisible set3DENLogicType set3DENMissionAttribute set3DENMissionAttributes ' +
+        'set3DENModelsVisible set3DENObjectType set3DENSelected setAccTime setActualCollectiveRTD ' +
+        'setAirplaneThrottle setAirportSide setAmmo setAmmoCargo setAmmoOnPylon setAnimSpeedCoef ' +
+        'setAperture setApertureNew setArmoryPoints setAttributes setAutonomous setBehaviour ' +
+        'setBleedingRemaining setBrakesRTD setCameraInterest setCamShakeDefParams setCamShakeParams ' +
+        'setCamUseTI setCaptive setCenterOfMass setCollisionLight setCombatMode setCompassOscillation ' +
+        'setConvoySeparation setCuratorCameraAreaCeiling setCuratorCoef setCuratorEditingAreaType ' +
+        'setCuratorWaypointCost setCurrentChannel setCurrentTask setCurrentWaypoint setCustomAimCoef ' +
+        'setCustomWeightRTD setDamage setDammage setDate setDebriefingText setDefaultCamera setDestination ' +
+        'setDetailMapBlendPars setDir setDirection setDrawIcon setDriveOnPath setDropInterval ' +
+        'setDynamicSimulationDistance setDynamicSimulationDistanceCoef setEditorMode setEditorObjectScope ' +
+        'setEffectCondition setEngineRPMRTD setFace setFaceAnimation setFatigue setFeatureType ' +
+        'setFlagAnimationPhase setFlagOwner setFlagSide setFlagTexture setFog setFormation ' +
+        'setFormationTask setFormDir setFriend setFromEditor setFSMVariable setFuel setFuelCargo ' +
+        'setGroupIcon setGroupIconParams setGroupIconsSelectable setGroupIconsVisible setGroupId ' +
+        'setGroupIdGlobal setGroupOwner setGusts setHideBehind setHit setHitIndex setHitPointDamage ' +
+        'setHorizonParallaxCoef setHUDMovementLevels setIdentity setImportance setInfoPanel setLeader ' +
+        'setLightAmbient setLightAttenuation setLightBrightness setLightColor setLightDayLight ' +
+        'setLightFlareMaxDistance setLightFlareSize setLightIntensity setLightnings setLightUseFlare ' +
+        'setLocalWindParams setMagazineTurretAmmo setMarkerAlpha setMarkerAlphaLocal setMarkerBrush ' +
+        'setMarkerBrushLocal setMarkerColor setMarkerColorLocal setMarkerDir setMarkerDirLocal ' +
+        'setMarkerPos setMarkerPosLocal setMarkerShape setMarkerShapeLocal setMarkerSize ' +
+        'setMarkerSizeLocal setMarkerText setMarkerTextLocal setMarkerType setMarkerTypeLocal setMass ' +
+        'setMimic setMousePosition setMusicEffect setMusicEventHandler setName setNameSound ' +
+        'setObjectArguments setObjectMaterial setObjectMaterialGlobal setObjectProxy setObjectTexture ' +
+        'setObjectTextureGlobal setObjectViewDistance setOvercast setOwner setOxygenRemaining ' +
+        'setParticleCircle setParticleClass setParticleFire setParticleParams setParticleRandom ' +
+        'setPilotCameraDirection setPilotCameraRotation setPilotCameraTarget setPilotLight setPiPEffect ' +
+        'setPitch setPlateNumber setPlayable setPlayerRespawnTime setPos setPosASL setPosASL2 setPosASLW ' +
+        'setPosATL setPosition setPosWorld setPylonLoadOut setPylonsPriority setRadioMsg setRain ' +
+        'setRainbow setRandomLip setRank setRectangular setRepairCargo setRotorBrakeRTD setShadowDistance ' +
+        'setShotParents setSide setSimpleTaskAlwaysVisible setSimpleTaskCustomData ' +
         'setSimpleTaskDescription setSimpleTaskDestination setSimpleTaskTarget setSimpleTaskType ' +
         'setSimulWeatherLayers setSize setSkill setSlingLoad setSoundEffect setSpeaker setSpeech ' +
         'setSpeedMode setStamina setStaminaScheme setStatValue setSuppression setSystemOfUnits ' +
-        'setTargetAge setTaskResult setTaskState setTerrainGrid setText setTimeMultiplier setTitleEffect ' +
-        'setTriggerActivation setTriggerArea setTriggerStatements setTriggerText setTriggerTimeout ' +
-        'setTriggerType setType setUnconscious setUnitAbility setUnitLoadout setUnitPos setUnitPosWeak ' +
-        'setUnitRank setUnitRecoilCoefficient setUnitTrait setUnloadInCombat setUserActionText setVariable ' +
-        'setVectorDir setVectorDirAndUp setVectorUp setVehicleAmmo setVehicleAmmoDef setVehicleArmor ' +
-        'setVehicleCargo setVehicleId setVehicleLock setVehiclePosition setVehicleTiPars setVehicleVarName ' +
-        'setVelocity setVelocityTransformation setViewDistance setVisibleIfTreeCollapsed setWaves ' +
-        'setWaypointBehaviour setWaypointCombatMode setWaypointCompletionRadius setWaypointDescription ' +
-        'setWaypointForceBehaviour setWaypointFormation setWaypointHousePosition setWaypointLoiterRadius ' +
-        'setWaypointLoiterType setWaypointName setWaypointPosition setWaypointScript setWaypointSpeed ' +
-        'setWaypointStatements setWaypointTimeout setWaypointType setWaypointVisible ' +
-        'setWeaponReloadingTime setWind setWindDir setWindForce setWindStr setWPPos show3DIcons showChat ' +
-        'showCinemaBorder showCommandingMenu showCompass showCuratorCompass showGPS showHUD showLegend ' +
-        'showMap shownArtilleryComputer shownChat shownCompass shownCuratorCompass showNewEditorObject ' +
-        'shownGPS shownHUD shownMap shownPad shownRadio shownScoretable shownUAVFeed shownWarrant ' +
-        'shownWatch showPad showRadio showScoretable showSubtitles showUAVFeed showWarrant showWatch ' +
-        'showWaypoint showWaypoints side sideAmbientLife sideChat sideEmpty sideEnemy sideFriendly ' +
-        'sideLogic sideRadio sideUnknown simpleTasks simulationEnabled simulCloudDensity ' +
+        'setTargetAge setTaskMarkerOffset setTaskResult setTaskState setTerrainGrid setText ' +
+        'setTimeMultiplier setTitleEffect setTrafficDensity setTrafficDistance setTrafficGap ' +
+        'setTrafficSpeed setTriggerActivation setTriggerArea setTriggerStatements setTriggerText ' +
+        'setTriggerTimeout setTriggerType setType setUnconscious setUnitAbility setUnitLoadout setUnitPos ' +
+        'setUnitPosWeak setUnitRank setUnitRecoilCoefficient setUnitTrait setUnloadInCombat ' +
+        'setUserActionText setUserMFDText setUserMFDvalue setVariable setVectorDir setVectorDirAndUp ' +
+        'setVectorUp setVehicleAmmo setVehicleAmmoDef setVehicleArmor setVehicleCargo setVehicleId ' +
+        'setVehicleLock setVehiclePosition setVehicleRadar setVehicleReceiveRemoteTargets ' +
+        'setVehicleReportOwnPosition setVehicleReportRemoteTargets setVehicleTIPars setVehicleVarName ' +
+        'setVelocity setVelocityModelSpace setVelocityTransformation setViewDistance ' +
+        'setVisibleIfTreeCollapsed setWantedRPMRTD setWaves setWaypointBehaviour setWaypointCombatMode ' +
+        'setWaypointCompletionRadius setWaypointDescription setWaypointForceBehaviour setWaypointFormation ' +
+        'setWaypointHousePosition setWaypointLoiterRadius setWaypointLoiterType setWaypointName ' +
+        'setWaypointPosition setWaypointScript setWaypointSpeed setWaypointStatements setWaypointTimeout ' +
+        'setWaypointType setWaypointVisible setWeaponReloadingTime setWind setWindDir setWindForce ' +
+        'setWindStr setWingForceScaleRTD setWPPos show3DIcons showChat showCinemaBorder showCommandingMenu ' +
+        'showCompass showCuratorCompass showGPS showHUD showLegend showMap shownArtilleryComputer ' +
+        'shownChat shownCompass shownCuratorCompass showNewEditorObject shownGPS shownHUD shownMap ' +
+        'shownPad shownRadio shownScoretable shownUAVFeed shownWarrant shownWatch showPad showRadio ' +
+        'showScoretable showSubtitles showUAVFeed showWarrant showWatch showWaypoint showWaypoints side ' +
+        'sideChat sideEnemy sideFriendly sideRadio simpleTasks simulationEnabled simulCloudDensity ' +
         'simulCloudOcclusion simulInClouds simulWeatherSync sin size sizeOf skill skillFinal skipTime ' +
         'sleep sliderPosition sliderRange sliderSetPosition sliderSetRange sliderSetSpeed sliderSpeed ' +
         'slingLoadAssistantShown soldierMagazines someAmmo sort soundVolume spawn speaker speed speedMode ' +
@@ -25781,38 +31267,42 @@ module.exports = function(hljs) {
         'switchableUnits switchAction switchCamera switchGesture switchLight switchMove ' +
         'synchronizedObjects synchronizedTriggers synchronizedWaypoints synchronizeObjectsAdd ' +
         'synchronizeObjectsRemove synchronizeTrigger synchronizeWaypoint systemChat systemOfUnits tan ' +
-        'targetKnowledge targetsAggregate targetsQuery taskAlwaysVisible taskChildren taskCompleted ' +
-        'taskCustomData taskDescription taskDestination taskHint taskMarkerOffset taskNull taskParent ' +
-        'taskResult taskState taskType teamMember teamMemberNull teamName teams teamSwitch ' +
-        'teamSwitchEnabled teamType terminate terrainIntersect terrainIntersectASL text textLog ' +
-        'textLogFormat tg time timeMultiplier titleCut titleFadeOut titleObj titleRsc titleText toArray ' +
-        'toFixed toLower toString toUpper triggerActivated triggerActivation triggerArea ' +
-        'triggerAttachedVehicle triggerAttachObject triggerAttachVehicle triggerStatements triggerText ' +
+        'targetKnowledge targets targetsAggregate targetsQuery taskAlwaysVisible taskChildren ' +
+        'taskCompleted taskCustomData taskDescription taskDestination taskHint taskMarkerOffset taskParent ' +
+        'taskResult taskState taskType teamMember teamName teams teamSwitch teamSwitchEnabled teamType ' +
+        'terminate terrainIntersect terrainIntersectASL terrainIntersectAtASL text textLog textLogFormat ' +
+        'tg time timeMultiplier titleCut titleFadeOut titleObj titleRsc titleText toArray toFixed toLower ' +
+        'toString toUpper triggerActivated triggerActivation triggerArea triggerAttachedVehicle ' +
+        'triggerAttachObject triggerAttachVehicle triggerDynamicSimulation triggerStatements triggerText ' +
         'triggerTimeout triggerTimeoutCurrent triggerType turretLocal turretOwner turretUnit tvAdd tvClear ' +
-        'tvCollapse tvCount tvCurSel tvData tvDelete tvExpand tvPicture tvSetCurSel tvSetData tvSetPicture ' +
-        'tvSetPictureColor tvSetPictureColorDisabled tvSetPictureColorSelected tvSetPictureRight ' +
-        'tvSetPictureRightColor tvSetPictureRightColorDisabled tvSetPictureRightColorSelected tvSetText ' +
-        'tvSetTooltip tvSetValue tvSort tvSortByValue tvText tvTooltip tvValue type typeName typeOf ' +
-        'UAVControl uiNamespace uiSleep unassignCurator unassignItem unassignTeam unassignVehicle ' +
-        'underwater uniform uniformContainer uniformItems uniformMagazines unitAddons unitAimPosition ' +
-        'unitAimPositionVisual unitBackpack unitIsUAV unitPos unitReady unitRecoilCoefficient units ' +
-        'unitsBelowHeight unlinkItem unlockAchievement unregisterTask updateDrawIcon updateMenuItem ' +
-        'updateObjectTree useAISteeringComponent useAudioTimeForMoves vectorAdd vectorCos ' +
-        'vectorCrossProduct vectorDiff vectorDir vectorDirVisual vectorDistance vectorDistanceSqr ' +
-        'vectorDotProduct vectorFromTo vectorMagnitude vectorMagnitudeSqr vectorMultiply vectorNormalized ' +
-        'vectorUp vectorUpVisual vehicle vehicleCargoEnabled vehicleChat vehicleRadio vehicles ' +
-        'vehicleVarName velocity velocityModelSpace verifySignature vest vestContainer vestItems ' +
-        'vestMagazines viewDistance visibleCompass visibleGPS visibleMap visiblePosition ' +
-        'visiblePositionASL visibleScoretable visibleWatch waves waypointAttachedObject ' +
+        'tvCollapse tvCollapseAll tvCount tvCurSel tvData tvDelete tvExpand tvExpandAll tvPicture ' +
+        'tvSetColor tvSetCurSel tvSetData tvSetPicture tvSetPictureColor tvSetPictureColorDisabled ' +
+        'tvSetPictureColorSelected tvSetPictureRight tvSetPictureRightColor tvSetPictureRightColorDisabled ' +
+        'tvSetPictureRightColorSelected tvSetText tvSetTooltip tvSetValue tvSort tvSortByValue tvText ' +
+        'tvTooltip tvValue type typeName typeOf UAVControl uiNamespace uiSleep unassignCurator ' +
+        'unassignItem unassignTeam unassignVehicle underwater uniform uniformContainer uniformItems ' +
+        'uniformMagazines unitAddons unitAimPosition unitAimPositionVisual unitBackpack unitIsUAV unitPos ' +
+        'unitReady unitRecoilCoefficient units unitsBelowHeight unlinkItem unlockAchievement ' +
+        'unregisterTask updateDrawIcon updateMenuItem updateObjectTree useAISteeringComponent ' +
+        'useAudioTimeForMoves userInputDisabled vectorAdd vectorCos vectorCrossProduct vectorDiff ' +
+        'vectorDir vectorDirVisual vectorDistance vectorDistanceSqr vectorDotProduct vectorFromTo ' +
+        'vectorMagnitude vectorMagnitudeSqr vectorModelToWorld vectorModelToWorldVisual vectorMultiply ' +
+        'vectorNormalized vectorUp vectorUpVisual vectorWorldToModel vectorWorldToModelVisual vehicle ' +
+        'vehicleCargoEnabled vehicleChat vehicleRadio vehicleReceiveRemoteTargets vehicleReportOwnPosition ' +
+        'vehicleReportRemoteTargets vehicles vehicleVarName velocity velocityModelSpace verifySignature ' +
+        'vest vestContainer vestItems vestMagazines viewDistance visibleCompass visibleGPS visibleMap ' +
+        'visiblePosition visiblePositionASL visibleScoretable visibleWatch waves waypointAttachedObject ' +
         'waypointAttachedVehicle waypointAttachObject waypointAttachVehicle waypointBehaviour ' +
         'waypointCombatMode waypointCompletionRadius waypointDescription waypointForceBehaviour ' +
         'waypointFormation waypointHousePosition waypointLoiterRadius waypointLoiterType waypointName ' +
         'waypointPosition waypoints waypointScript waypointsEnabledUAV waypointShow waypointSpeed ' +
         'waypointStatements waypointTimeout waypointTimeoutCurrent waypointType waypointVisible ' +
         'weaponAccessories weaponAccessoriesCargo weaponCargo weaponDirection weaponInertia weaponLowered ' +
-        'weapons weaponsItems weaponsItemsCargo weaponState weaponsTurret weightRTD west WFSideText wind',
+        'weapons weaponsItems weaponsItemsCargo weaponState weaponsTurret weightRTD WFSideText wind ',
       literal:
-        'true false nil'
+        'blufor civilian configNull controlNull displayNull east endl false grpNull independent lineBreak ' +
+        'locationNull nil objNull opfor pi resistance scriptNull sideAmbientLife sideEmpty sideLogic ' +
+        'sideUnknown taskNull teamMemberNull true west',
     },
     contains: [
       hljs.C_LINE_COMMENT_MODE,
@@ -25823,19 +31313,19 @@ module.exports = function(hljs) {
       STRINGS,
       CPP.preprocessor
     ],
-    illegal: /#/
+    illegal: /#|^\$ /
   };
 };
 
 /***/ }),
-/* 244 */
+/* 252 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
   var COMMENT_MODE = hljs.COMMENT('--', '$');
   return {
     case_insensitive: true,
-    illegal: /[<>{}*#]/,
+    illegal: /[<>{}*]/,
     contains: [
       {
         beginKeywords:
@@ -25843,20 +31333,20 @@ module.exports = function(hljs) {
           'delete do handler insert load replace select truncate update set show pragma grant ' +
           'merge describe use explain help declare prepare execute deallocate release ' +
           'unlock purge reset change stop analyze cache flush optimize repair kill ' +
-          'install uninstall checksum restore check backup revoke comment',
+          'install uninstall checksum restore check backup revoke comment values with',
         end: /;/, endsWithParent: true,
         lexemes: /[\w\.]+/,
         keywords: {
           keyword:
-            'abort abs absolute acc acce accep accept access accessed accessible account acos action activate add ' +
+            'as abort abs absolute acc acce accep accept access accessed accessible account acos action activate add ' +
             'addtime admin administer advanced advise aes_decrypt aes_encrypt after agent aggregate ali alia alias ' +
-            'allocate allow alter always analyze ancillary and any anydata anydataset anyschema anytype apply ' +
+            'all allocate allow alter always analyze ancillary and anti any anydata anydataset anyschema anytype apply ' +
             'archive archived archivelog are as asc ascii asin assembly assertion associate asynchronous at atan ' +
             'atn2 attr attri attrib attribu attribut attribute attributes audit authenticated authentication authid ' +
             'authors auto autoallocate autodblink autoextend automatic availability avg backup badfile basicfile ' +
             'before begin beginning benchmark between bfile bfile_base big bigfile bin binary_double binary_float ' +
             'binlog bit_and bit_count bit_length bit_or bit_xor bitmap blob_base block blocksize body both bound ' +
-            'buffer_cache buffer_pool build bulk by byte byteordermark bytes cache caching call calling cancel ' +
+            'bucket buffer_cache buffer_pool build bulk by byte byteordermark bytes cache caching call calling cancel ' +
             'capacity cascade cascaded case cast catalog category ceil ceiling chain change changed char_base ' +
             'char_length character_length characters characterset charindex charset charsetform charsetid check ' +
             'checksum checksum_agg child choose chr chunk class cleanup clear client clob clob_base clone close ' +
@@ -25880,21 +31370,21 @@ module.exports = function(hljs) {
             'editions element ellipsis else elsif elt empty enable enable_all enclosed encode encoding encrypt ' +
             'end end-exec endian enforced engine engines enqueue enterprise entityescaping eomonth error errors ' +
             'escaped evalname evaluate event eventdata events except exception exceptions exchange exclude excluding ' +
-            'execu execut execute exempt exists exit exp expire explain export export_set extended extent external ' +
+            'execu execut execute exempt exists exit exp expire explain explode export export_set extended extent external ' +
             'external_1 external_2 externally extract failed failed_login_attempts failover failure far fast ' +
             'feature_set feature_value fetch field fields file file_name_convert filesystem_like_logging final ' +
-            'finish first first_value fixed flash_cache flashback floor flush following follows for forall force ' +
+            'finish first first_value fixed flash_cache flashback floor flush following follows for forall force foreign ' +
             'form forma format found found_rows freelist freelists freepools fresh from from_base64 from_days ' +
             'ftp full function general generated get get_format get_lock getdate getutcdate global global_name ' +
             'globally go goto grant grants greatest group group_concat group_id grouping grouping_id groups ' +
             'gtid_subtract guarantee guard handler hash hashkeys having hea head headi headin heading heap help hex ' +
-            'hierarchy high high_priority hosts hour http id ident_current ident_incr ident_seed identified ' +
+            'hierarchy high high_priority hosts hour hours http id ident_current ident_incr ident_seed identified ' +
             'identity idle_time if ifnull ignore iif ilike ilm immediate import in include including increment ' +
             'index indexes indexing indextype indicator indices inet6_aton inet6_ntoa inet_aton inet_ntoa infile ' +
             'initial initialized initially initrans inmemory inner innodb input insert install instance instantiable ' +
             'instr interface interleaved intersect into invalidate invisible is is_free_lock is_ipv4 is_ipv4_compat ' +
             'is_not is_not_null is_used_lock isdate isnull isolation iterate java join json json_exists ' +
-            'keep keep_duplicates key keys kill language large last last_day last_insert_id last_value lax lcase ' +
+            'keep keep_duplicates key keys kill language large last last_day last_insert_id last_value lateral lax lcase ' +
             'lead leading least leaves left len lenght length less level levels library like like2 like4 likec limit ' +
             'lines link list listagg little ln load load_file lob lobs local localtime localtimestamp locate ' +
             'locator lock locked log log10 log2 logfile logfiles logging logical logical_reads_per_call ' +
@@ -25902,13 +31392,13 @@ module.exports = function(hljs) {
             'managed management manual map mapping mask master master_pos_wait match matched materialized max ' +
             'maxextents maximize maxinstances maxlen maxlogfiles maxloghistory maxlogmembers maxsize maxtrans ' +
             'md5 measures median medium member memcompress memory merge microsecond mid migration min minextents ' +
-            'minimum mining minus minute minvalue missing mod mode model modification modify module monitoring month ' +
+            'minimum mining minus minute minutes minvalue missing mod mode model modification modify module monitoring month ' +
             'months mount move movement multiset mutex name name_const names nan national native natural nav nchar ' +
             'nclob nested never new newline next nextval no no_write_to_binlog noarchivelog noaudit nobadfile ' +
             'nocheck nocompress nocopy nocycle nodelay nodiscardfile noentityescaping noguarantee nokeep nologfile ' +
             'nomapping nomaxvalue nominimize nominvalue nomonitoring none noneditionable nonschema noorder ' +
             'nopr nopro noprom nopromp noprompt norely noresetlogs noreverse normal norowdependencies noschemacheck ' +
-            'noswitch not nothing notice notrim novalidate now nowait nth_value nullif nulls num numb numbe ' +
+            'noswitch not nothing notice notnull notrim novalidate now nowait nth_value nullif nulls num numb numbe ' +
             'nvarchar nvarchar2 object ocicoll ocidate ocidatetime ociduration ociinterval ociloblocator ocinumber ' +
             'ociref ocirefcursor ocirowid ocistring ocitype oct octet_length of off offline offset oid oidindex old ' +
             'on online only opaque open operations operator optimal optimize option optionally or oracle oracle_date ' +
@@ -25930,8 +31420,8 @@ module.exports = function(hljs) {
             'restricted result result_cache resumable resume retention return returning returns reuse reverse revoke ' +
             'right rlike role roles rollback rolling rollup round row row_count rowdependencies rowid rownum rows ' +
             'rtrim rules safe salt sample save savepoint sb1 sb2 sb4 scan schema schemacheck scn scope scroll ' +
-            'sdo_georaster sdo_topo_geometry search sec_to_time second section securefile security seed segment select ' +
-            'self sequence sequential serializable server servererror session session_user sessions_per_user set ' +
+            'sdo_georaster sdo_topo_geometry search sec_to_time second seconds section securefile security seed segment select ' +
+            'self semi sequence sequential serializable server servererror session session_user sessions_per_user set ' +
             'sets settings sha sha1 sha2 share shared shared_pool short show shrink shutdown si_averagecolor ' +
             'si_colorhistogram si_featurelist si_positionalcolor si_stillimage si_texture siblings sid sign sin ' +
             'size size_t sizes skip slave sleep smalldatetimefromparts smallfile snapshot some soname sort soundex ' +
@@ -25943,26 +31433,26 @@ module.exports = function(hljs) {
             'stop storage store stored str str_to_date straight_join strcmp strict string struct stuff style subdate ' +
             'subpartition subpartitions substitutable substr substring subtime subtring_index subtype success sum ' +
             'suspend switch switchoffset switchover sync synchronous synonym sys sys_xmlagg sysasm sysaux sysdate ' +
-            'sysdatetimeoffset sysdba sysoper system system_user sysutcdatetime table tables tablespace tan tdo ' +
+            'sysdatetimeoffset sysdba sysoper system system_user sysutcdatetime table tables tablespace tablesample tan tdo ' +
             'template temporary terminated tertiary_weights test than then thread through tier ties time time_format ' +
             'time_zone timediff timefromparts timeout timestamp timestampadd timestampdiff timezone_abbr ' +
             'timezone_minute timezone_region to to_base64 to_date to_days to_seconds todatetimeoffset trace tracking ' +
             'transaction transactional translate translation treat trigger trigger_nestlevel triggers trim truncate ' +
             'try_cast try_convert try_parse type ub1 ub2 ub4 ucase unarchived unbounded uncompress ' +
-            'under undo unhex unicode uniform uninstall union unique unix_timestamp unknown unlimited unlock unpivot ' +
+            'under undo unhex unicode uniform uninstall union unique unix_timestamp unknown unlimited unlock unnest unpivot ' +
             'unrecoverable unsafe unsigned until untrusted unusable unused update updated upgrade upped upper upsert ' +
             'url urowid usable usage use use_stored_outlines user user_data user_resources users using utc_date ' +
             'utc_timestamp uuid uuid_short validate validate_password_strength validation valist value values var ' +
             'var_samp varcharc vari varia variab variabl variable variables variance varp varraw varrawc varray ' +
             'verify version versions view virtual visible void wait wallet warning warnings week weekday weekofyear ' +
-            'wellformed when whene whenev wheneve whenever where while whitespace with within without work wrapped ' +
+            'wellformed when whene whenev wheneve whenever where while whitespace window with within without work wrapped ' +
             'xdb xml xmlagg xmlattributes xmlcast xmlcolattval xmlelement xmlexists xmlforest xmlindex xmlnamespaces ' +
             'xmlpi xmlquery xmlroot xmlschema xmlserialize xmltable xmltype xor year year_to_month years yearweek',
           literal:
-            'true false null',
+            'true false null unknown',
           built_in:
-            'array bigint binary bit blob boolean char character date dec decimal float int int8 integer interval number ' +
-            'numeric real record serial serial8 smallint text varchar varying void'
+            'array bigint binary bit blob bool boolean char character date dec decimal float int int8 integer interval number ' +
+            'numeric real record serial serial8 smallint text time timestamp tinyint varchar varying void'
         },
         contains: [
           {
@@ -25982,17 +31472,19 @@ module.exports = function(hljs) {
           },
           hljs.C_NUMBER_MODE,
           hljs.C_BLOCK_COMMENT_MODE,
-          COMMENT_MODE
+          COMMENT_MODE,
+          hljs.HASH_COMMENT_MODE
         ]
       },
       hljs.C_BLOCK_COMMENT_MODE,
-      COMMENT_MODE
+      COMMENT_MODE,
+      hljs.HASH_COMMENT_MODE
     ]
   };
 };
 
 /***/ }),
-/* 245 */
+/* 253 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26079,7 +31571,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 246 */
+/* 254 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26121,7 +31613,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 247 */
+/* 255 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26172,7 +31664,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 248 */
+/* 256 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26630,7 +32122,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 249 */
+/* 257 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26668,13 +32160,15 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 250 */
+/* 258 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
   var SWIFT_KEYWORDS = {
-      keyword: '__COLUMN__ __FILE__ __FUNCTION__ __LINE__ as as! as? associativity ' +
-        'break case catch class continue convenience default defer deinit didSet do ' +
+      keyword: '#available #colorLiteral #column #else #elseif #endif #file ' +
+        '#fileLiteral #function #if #imageLiteral #line #selector #sourceLocation ' +
+        '_ __COLUMN__ __FILE__ __FUNCTION__ __LINE__ Any as as! as? associatedtype ' +
+        'associativity break case catch class continue convenience default defer deinit didSet do ' +
         'dynamic dynamicType else enum extension fallthrough false fileprivate final for func ' +
         'get guard if import in indirect infix init inout internal is lazy left let ' +
         'mutating nil none nonmutating open operator optional override postfix precedence ' +
@@ -26704,6 +32198,11 @@ module.exports = function(hljs) {
     begin: '\\b[A-Z][\\w\u00C0-\u02B8\']*',
     relevance: 0
   };
+  // slightly more special to swift
+  var OPTIONAL_USING_TYPE = {
+    className: 'type',
+    begin: '\\b[A-Z][\\w\u00C0-\u02B8\']*[!?]'
+  }
   var BLOCK_COMMENT = hljs.COMMENT(
     '/\\*',
     '\\*/',
@@ -26717,22 +32216,28 @@ module.exports = function(hljs) {
     keywords: SWIFT_KEYWORDS,
     contains: [] // assigned later
   };
+  var STRING = {
+    className: 'string',
+    contains: [hljs.BACKSLASH_ESCAPE, SUBST],
+    variants: [
+      {begin: /"""/, end: /"""/},
+      {begin: /"/, end: /"/},
+    ]
+  };
   var NUMBERS = {
       className: 'number',
       begin: '\\b([\\d_]+(\\.[\\deE_]+)?|0x[a-fA-F0-9_]+(\\.[a-fA-F0-9p_]+)?|0b[01_]+|0o[0-7_]+)\\b',
       relevance: 0
   };
-  var QUOTE_STRING_MODE = hljs.inherit(hljs.QUOTE_STRING_MODE, {
-    contains: [SUBST, hljs.BACKSLASH_ESCAPE]
-  });
   SUBST.contains = [NUMBERS];
 
   return {
     keywords: SWIFT_KEYWORDS,
     contains: [
-      QUOTE_STRING_MODE,
+      STRING,
       hljs.C_LINE_COMMENT_MODE,
       BLOCK_COMMENT,
+      OPTIONAL_USING_TYPE,
       TYPE,
       NUMBERS,
       {
@@ -26752,7 +32257,7 @@ module.exports = function(hljs) {
             contains: [
               'self',
               NUMBERS,
-              QUOTE_STRING_MODE,
+              STRING,
               hljs.C_BLOCK_COMMENT_MODE,
               {begin: ':'} // relevance booster
             ],
@@ -26773,8 +32278,8 @@ module.exports = function(hljs) {
       },
       {
         className: 'meta', // @attributes
-        begin: '(@warn_unused_result|@exported|@lazy|@noescape|' +
-                  '@NSCopying|@NSManaged|@objc|@convention|@required|' +
+        begin: '(@discardableResult|@warn_unused_result|@exported|@lazy|@noescape|' +
+                  '@NSCopying|@NSManaged|@objc|@objcMembers|@convention|@required|' +
                   '@noreturn|@IBAction|@IBDesignable|@IBInspectable|@IBOutlet|' +
                   '@infix|@prefix|@postfix|@autoclosure|@testable|@available|' +
                   '@nonobjc|@NSApplicationMain|@UIApplicationMain)'
@@ -26789,7 +32294,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 251 */
+/* 259 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26837,7 +32342,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 252 */
+/* 260 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26900,6 +32405,10 @@ module.exports = function(hljs) {
         excludeEnd: true,
         relevance: 0
       },
+      { // local tags
+        className: 'type',
+        begin: '!' + hljs.UNDERSCORE_IDENT_RE,
+      },
       { // data type
         className: 'type',
         begin: '!!' + hljs.UNDERSCORE_IDENT_RE,
@@ -26929,7 +32438,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 253 */
+/* 261 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -26969,7 +32478,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 254 */
+/* 262 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27021,7 +32530,6 @@ module.exports = function(hljs) {
         className: 'string',
         contains: [hljs.BACKSLASH_ESCAPE],
         variants: [
-          hljs.inherit(hljs.APOS_STRING_MODE, {illegal: null}),
           hljs.inherit(hljs.QUOTE_STRING_MODE, {illegal: null})
         ]
       },
@@ -27034,7 +32542,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 255 */
+/* 263 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27046,8 +32554,8 @@ module.exports = function(hljs) {
       {
         className: 'name',
         variants: [
-          {begin: /[a-zA-Zа-яА-я]+[*]?/},
-          {begin: /[^a-zA-Zа-яА-я0-9]/}
+          {begin: /[a-zA-Z\u0430-\u044f\u0410-\u042f]+[*]?/},
+          {begin: /[^a-zA-Z\u0430-\u044f\u0410-\u042f0-9]/}
         ],
         starts: {
           endsWithParent: true,
@@ -27100,7 +32608,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 256 */
+/* 264 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27139,7 +32647,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 257 */
+/* 265 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27154,8 +32662,8 @@ module.exports = function(hljs) {
   };
   var TPDATA = {
     className: 'built_in',
-    begin: '(AR|P|PAYLOAD|PR|R|SR|RSR|LBL|VR|UALM|MESSAGE|UTOOL|UFRAME|TIMER|\
-    TIMER_OVERFLOW|JOINT_MAX_SPEED|RESUME_PROG|DIAG_REC)\\[', end: '\\]',
+    begin: '(AR|P|PAYLOAD|PR|R|SR|RSR|LBL|VR|UALM|MESSAGE|UTOOL|UFRAME|TIMER|' +
+    'TIMER_OVERFLOW|JOINT_MAX_SPEED|RESUME_PROG|DIAG_REC)\\[', end: '\\]',
     contains: [
       'self',
       TPID,
@@ -27227,7 +32735,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 258 */
+/* 266 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27297,10 +32805,11 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 259 */
+/* 267 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
+  var JS_IDENT_RE = '[A-Za-z$_][0-9A-Za-z$_]*';
   var KEYWORDS = {
     keyword:
       'in if for while finally var new function do return void else break catch ' +
@@ -27318,6 +32827,38 @@ module.exports = function(hljs) {
       'Float64Array Int16Array Int32Array Int8Array Uint16Array Uint32Array ' +
       'Uint8Array Uint8ClampedArray ArrayBuffer DataView JSON Intl arguments require ' +
       'module console window document any number boolean string void Promise'
+  };
+
+  var DECORATOR = {
+    className: 'meta',
+    begin: '@' + JS_IDENT_RE,
+  };
+
+  var ARGS =
+  {
+    begin: '\\(',
+    end: /\)/,
+    keywords: KEYWORDS,
+    contains: [
+      'self',
+      hljs.QUOTE_STRING_MODE,
+      hljs.APOS_STRING_MODE,
+      hljs.NUMBER_MODE
+    ]
+  };
+
+  var PARAMS = {
+    className: 'params',
+    begin: /\(/, end: /\)/,
+    excludeBegin: true,
+    excludeEnd: true,
+    keywords: KEYWORDS,
+    contains: [
+      hljs.C_LINE_COMMENT_MODE,
+      hljs.C_BLOCK_COMMENT_MODE,
+      DECORATOR,
+      ARGS
+    ]
   };
 
   return {
@@ -27396,19 +32937,8 @@ module.exports = function(hljs) {
         keywords: KEYWORDS,
         contains: [
           'self',
-          hljs.inherit(hljs.TITLE_MODE, {begin: /[A-Za-z$_][0-9A-Za-z$_]*/}),
-          {
-            className: 'params',
-            begin: /\(/, end: /\)/,
-            excludeBegin: true,
-            excludeEnd: true,
-            keywords: KEYWORDS,
-            contains: [
-              hljs.C_LINE_COMMENT_MODE,
-              hljs.C_BLOCK_COMMENT_MODE
-            ],
-            illegal: /["'\(]/
-          }
+          hljs.inherit(hljs.TITLE_MODE, { begin: JS_IDENT_RE }),
+          PARAMS
         ],
         illegal: /%/,
         relevance: 0 // () => {} is more typical in TypeScript
@@ -27417,23 +32947,12 @@ module.exports = function(hljs) {
         beginKeywords: 'constructor', end: /\{/, excludeEnd: true,
         contains: [
           'self',
-          {
-            className: 'params',
-            begin: /\(/, end: /\)/,
-            excludeBegin: true,
-            excludeEnd: true,
-            keywords: KEYWORDS,
-            contains: [
-              hljs.C_LINE_COMMENT_MODE,
-              hljs.C_BLOCK_COMMENT_MODE
-            ],
-            illegal: /["'\(]/
-          }
+          PARAMS
         ]
       },
       { // prevent references like module.id from being higlighted as module definitions
         begin: /module\./,
-        keywords: {built_in: 'module'},
+        keywords: { built_in: 'module' },
         relevance: 0
       },
       {
@@ -27449,15 +32968,14 @@ module.exports = function(hljs) {
       {
         begin: '\\.' + hljs.IDENT_RE, relevance: 0 // hack: prevents detection of keywords after dots
       },
-      {
-        className: 'meta', begin: '@[A-Za-z]+'
-      }
+      DECORATOR,
+      ARGS
     ]
   };
 };
 
 /***/ }),
-/* 260 */
+/* 268 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27511,7 +33029,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 261 */
+/* 269 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27538,7 +33056,7 @@ module.exports = function(hljs) {
       literal:
         'true false nothing'
     },
-    illegal: '//|{|}|endif|gosub|variant|wend', /* reserved deprecated keywords */
+    illegal: '//|{|}|endif|gosub|variant|wend|^\\$ ', /* reserved deprecated keywords */
     contains: [
       hljs.inherit(hljs.QUOTE_STRING_MODE, {contains: [{begin: '""'}]}),
       hljs.COMMENT(
@@ -27571,7 +33089,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 262 */
+/* 270 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27614,7 +33132,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 263 */
+/* 271 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27630,7 +33148,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 264 */
+/* 272 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27733,7 +33251,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 265 */
+/* 273 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27757,17 +33275,17 @@ module.exports = function(hljs) {
         'begin block body buffer bus case component configuration constant context cover disconnect ' +
         'downto default else elsif end entity exit fairness file for force function generate ' +
         'generic group guarded if impure in inertial inout is label library linkage literal ' +
-        'loop map mod nand new next nor not null of on open or others out package port ' +
+        'loop map mod nand new next nor not null of on open or others out package parameter port ' +
         'postponed procedure process property protected pure range record register reject ' +
         'release rem report restrict restrict_guarantee return rol ror select sequence ' +
         'severity shared signal sla sll sra srl strong subtype then to transport type ' +
-        'unaffected units until use variable vmode vprop vunit wait when while with xnor xor',
+        'unaffected units until use variable view vmode vprop vunit wait when while with xnor xor',
       built_in:
         'boolean bit character ' +
         'integer time delay_length natural positive ' +
         'string bit_vector file_open_kind file_open_status ' +
         'std_logic std_logic_vector unsigned signed boolean_vector integer_vector ' +
-        'std_ulogic std_ulogic_vector unresolved_unsigned u_unsigned unresolved_signed u_signed' +
+        'std_ulogic std_ulogic_vector unresolved_unsigned u_unsigned unresolved_signed u_signed ' +
         'real_vector time_vector',
       literal:
         'false true note warning error failure ' +  // severity_level
@@ -27798,7 +33316,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 266 */
+/* 274 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -27865,7 +33383,11 @@ module.exports = function(hljs) {
     illegal: /;/,
     contains: [
       hljs.NUMBER_MODE,
-      hljs.APOS_STRING_MODE,
+      {
+        className: 'string',
+        begin: '\'', end: '\'',
+        illegal: '\\n'
+      },
 
       /*
       A double quote can start either a string or a line comment. Strings are
@@ -27908,7 +33430,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 267 */
+/* 275 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -28048,7 +33570,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 268 */
+/* 276 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -28125,20 +33647,76 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 269 */
+/* 277 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
-  var KEYWORDS = 'for let if while then else return where group by xquery encoding version' +
-    'module namespace boundary-space preserve strip default collation base-uri ordering' +
-    'copy-namespaces order declare import schema namespace function option in allowing empty' +
-    'at tumbling window sliding window start when only end when previous next stable ascending' +
-    'descending empty greatest least some every satisfies switch case typeswitch try catch and' +
-    'or to union intersect instance of treat as castable cast map array delete insert into' +
-    'replace value rename copy modify update';
-  var LITERAL = 'false true xs:string xs:integer element item xs:date xs:datetime xs:float xs:double xs:decimal QName xs:anyURI xs:long xs:int xs:short xs:byte attribute';
+  // see https://www.w3.org/TR/xquery/#id-terminal-delimitation
+  var KEYWORDS = 'module schema namespace boundary-space preserve no-preserve strip default collation base-uri ordering context decimal-format decimal-separator copy-namespaces empty-sequence except exponent-separator external grouping-separator inherit no-inherit lax minus-sign per-mille percent schema-attribute schema-element strict unordered zero-digit ' +
+  'declare import option function validate variable ' +
+  'for at in let where order group by return if then else ' +
+  'tumbling sliding window start when only end previous next stable ' +
+  'ascending descending allowing empty greatest least some every satisfies switch case typeswitch try catch ' +
+  'and or to union intersect instance of treat as castable cast map array ' +
+  'delete insert into replace value rename copy modify update';
+
+  // Node Types (sorted by inheritance)
+  // atomic types (sorted by inheritance)
+  var TYPE = 'item document-node node attribute document element comment namespace namespace-node processing-instruction text construction ' +
+  'xs:anyAtomicType xs:untypedAtomic xs:duration xs:time xs:decimal xs:float xs:double xs:gYearMonth xs:gYear xs:gMonthDay xs:gMonth xs:gDay xs:boolean xs:base64Binary xs:hexBinary xs:anyURI xs:QName xs:NOTATION xs:dateTime xs:dateTimeStamp xs:date xs:string xs:normalizedString xs:token xs:language xs:NMTOKEN xs:Name xs:NCName xs:ID xs:IDREF xs:ENTITY xs:integer xs:nonPositiveInteger xs:negativeInteger xs:long xs:int xs:short xs:byte xs:nonNegativeInteger xs:unisignedLong xs:unsignedInt xs:unsignedShort xs:unsignedByte xs:positiveInteger xs:yearMonthDuration xs:dayTimeDuration';
+
+  var LITERAL = 'eq ne lt le gt ge is ' +
+    'self:: child:: descendant:: descendant-or-self:: attribute:: following:: following-sibling:: parent:: ancestor:: ancestor-or-self:: preceding:: preceding-sibling:: ' +
+    'NaN';
+
+  // functions (TODO: find regex for op: without breaking build)
+  var BUILT_IN = {
+    className: 'built_in',
+    variants: [{
+      begin: /\barray\:/,
+      end: /(?:append|filter|flatten|fold\-(?:left|right)|for-each(?:\-pair)?|get|head|insert\-before|join|put|remove|reverse|size|sort|subarray|tail)\b/
+    }, {
+      begin: /\bmap\:/,
+      end: /(?:contains|entry|find|for\-each|get|keys|merge|put|remove|size)\b/
+    }, {
+      begin: /\bmath\:/,
+      end: /(?:a(?:cos|sin|tan[2]?)|cos|exp(?:10)?|log(?:10)?|pi|pow|sin|sqrt|tan)\b/
+    }, {
+      begin: /\bop\:/,
+      end: /\(/,
+      excludeEnd: true
+    }, {
+      begin: /\bfn\:/,
+      end: /\(/,
+      excludeEnd: true
+    },
+// do not highlight inbuilt strings as variable or xml element names
+    {
+      begin: /[^<\/\$\:'"-]\b(?:abs|accumulator\-(?:after|before)|adjust\-(?:date(?:Time)?|time)\-to\-timezone|analyze\-string|apply|available\-(?:environment\-variables|system\-properties)|avg|base\-uri|boolean|ceiling|codepoints?\-(?:equal|to\-string)|collation\-key|collection|compare|concat|contains(?:\-token)?|copy\-of|count|current(?:\-)?(?:date(?:Time)?|time|group(?:ing\-key)?|output\-uri|merge\-(?:group|key))?data|dateTime|days?\-from\-(?:date(?:Time)?|duration)|deep\-equal|default\-(?:collation|language)|distinct\-values|document(?:\-uri)?|doc(?:\-available)?|element\-(?:available|with\-id)|empty|encode\-for\-uri|ends\-with|environment\-variable|error|escape\-html\-uri|exactly\-one|exists|false|filter|floor|fold\-(?:left|right)|for\-each(?:\-pair)?|format\-(?:date(?:Time)?|time|integer|number)|function\-(?:arity|available|lookup|name)|generate\-id|has\-children|head|hours\-from\-(?:dateTime|duration|time)|id(?:ref)?|implicit\-timezone|in\-scope\-prefixes|index\-of|innermost|insert\-before|iri\-to\-uri|json\-(?:doc|to\-xml)|key|lang|last|load\-xquery\-module|local\-name(?:\-from\-QName)?|(?:lower|upper)\-case|matches|max|minutes\-from\-(?:dateTime|duration|time)|min|months?\-from\-(?:date(?:Time)?|duration)|name(?:space\-uri\-?(?:for\-prefix|from\-QName)?)?|nilled|node\-name|normalize\-(?:space|unicode)|not|number|one\-or\-more|outermost|parse\-(?:ietf\-date|json)|path|position|(?:prefix\-from\-)?QName|random\-number\-generator|regex\-group|remove|replace|resolve\-(?:QName|uri)|reverse|root|round(?:\-half\-to\-even)?|seconds\-from\-(?:dateTime|duration|time)|snapshot|sort|starts\-with|static\-base\-uri|stream\-available|string\-?(?:join|length|to\-codepoints)?|subsequence|substring\-?(?:after|before)?|sum|system\-property|tail|timezone\-from\-(?:date(?:Time)?|time)|tokenize|trace|trans(?:form|late)|true|type\-available|unordered|unparsed\-(?:entity|text)?\-?(?:public\-id|uri|available|lines)?|uri\-collection|xml\-to\-json|years?\-from\-(?:date(?:Time)?|duration)|zero\-or\-one)\b/,
+    }, {
+      begin: /\blocal\:/,
+      end: /\(/,
+      excludeEnd: true
+    }, {
+      begin: /\bzip\:/,
+      end: /(?:zip\-file|(?:xml|html|text|binary)\-entry| (?:update\-)?entries)\b/
+    }, {
+      begin: /\b(?:util|db|functx|app|xdmp|xmldb)\:/,
+      end: /\(/,
+      excludeEnd: true
+    }
+  ]
+  };
+
+  var TITLE = {
+    className: 'title',
+    begin: /\bxquery version "[13]\.[01]"\s?(?:encoding ".+")?/,
+    end: /;/
+  };
+
   var VAR = {
-    begin: /\$[a-zA-Z0-9\-]+/
+    className: 'variable',
+    begin: /[\$][\w-:]+/
   };
 
   var NUMBER = {
@@ -28149,41 +33727,83 @@ module.exports = function(hljs) {
 
   var STRING = {
     className: 'string',
-    variants: [
-      {begin: /"/, end: /"/, contains: [{begin: /""/, relevance: 0}]},
-      {begin: /'/, end: /'/, contains: [{begin: /''/, relevance: 0}]}
+    variants: [{
+        begin: /"/,
+        end: /"/,
+        contains: [{
+          begin: /""/,
+          relevance: 0
+        }]
+      },
+      {
+        begin: /'/,
+        end: /'/,
+        contains: [{
+          begin: /''/,
+          relevance: 0
+        }]
+      }
     ]
   };
 
   var ANNOTATION = {
     className: 'meta',
-    begin: '%\\w+'
+    begin: /%[\w-:]+/
   };
 
   var COMMENT = {
     className: 'comment',
-    begin: '\\(:', end: ':\\)',
+    begin: '\\(:',
+    end: ':\\)',
     relevance: 10,
-    contains: [
-      {
-        className: 'doctag', begin: '@\\w+'
-      }
-    ]
+    contains: [{
+      className: 'doctag',
+      begin: '@\\w+'
+    }]
   };
 
-  var METHOD = {
-    begin: '{', end: '}'
+  // see https://www.w3.org/TR/xquery/#id-computedConstructors
+  // mocha: computed_inbuilt
+  // see https://www.regexpal.com/?fam=99749
+  var COMPUTED = {
+    beginKeywords: 'element attribute comment document processing-instruction',
+    end: '{',
+    excludeEnd: true
   };
+
+  // mocha: direct_method
+    var DIRECT = {
+      begin: /<([\w\._:\-]+)((\s*.*)=('|").*('|"))?>/,
+      end: /(\/[\w\._:\-]+>)/,
+      subLanguage: 'xml',
+      contains: [{
+        begin: '{',
+        end: '}',
+        subLanguage: 'xquery'
+      }, 'self']
+    };
+
 
   var CONTAINS = [
     VAR,
+    BUILT_IN,
     STRING,
     NUMBER,
     COMMENT,
     ANNOTATION,
-    METHOD
+    TITLE,
+    COMPUTED,
+    DIRECT
   ];
-  METHOD.contains = CONTAINS;
+
+
+
+    var METHOD = {
+      begin: '{',
+      end: '}',
+      contains: CONTAINS
+    };
+
 
 
   return {
@@ -28193,6 +33813,7 @@ module.exports = function(hljs) {
     illegal: /(proc)|(abstract)|(extends)|(until)|(#)/,
     keywords: {
       keyword: KEYWORDS,
+      type: TYPE,
       literal: LITERAL
     },
     contains: CONTAINS
@@ -28200,7 +33821,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 270 */
+/* 278 */
 /***/ (function(module, exports) {
 
 module.exports = function(hljs) {
@@ -28311,7 +33932,7 @@ module.exports = function(hljs) {
 };
 
 /***/ }),
-/* 271 */
+/* 279 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

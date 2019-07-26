@@ -1,1 +1,1 @@
-# Simple Markdown Editor
+# Standard Notes Markdown Preview Component
